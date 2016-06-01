@@ -45,8 +45,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\planeControl.cs" />
-     <Compile Include="Assets\sphereControl.cs" />
+     <Compile Include="Assets\PlaneController.cs" />
+     <Compile Include="Assets\Test.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
