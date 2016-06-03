@@ -4,11 +4,12 @@ using System.Collections.Generic;
 
 public class PlaneController : MonoBehaviour {
 
-	public static int blockNumPerChannel = 5;
+//	private bool playMode = true;		// true: ASDF controll; false: random
+
+	public static int blockNumPerChannel = 20;
 	public Queue<GameObject>[] blocksInPool = new Queue<GameObject>[4], blocksInChannel = new Queue<GameObject>[4];
 	public GameObject prefabBlock;
-	public GameObject[] blockClone = new GameObject[4 * blockNumPerChannel];
-	public MeshRenderer[] rendererBlock = new MeshRenderer[4 * blockNumPerChannel];
+	public GameObject[] blockClone;
 
 	private Vector3[] startingPoints = new Vector3[4], endingPoints = new Vector3[4];
 	private float endingPointLocalMin = 0; 
@@ -16,6 +17,7 @@ public class PlaneController : MonoBehaviour {
 
 
 	void Awake() {
+		blockClone = new GameObject[4 * blockNumPerChannel];
 		calculatePosition ();
 		initiateBlocks (blockNumPerChannel);
 	}
@@ -75,7 +77,7 @@ public class PlaneController : MonoBehaviour {
 		}
 
 		// calculate the local ending position relative to plane
-		endingPointLocalMin = (float)len;
+		endingPointLocalMin = (float)(len * 0.55);
 	}
 
 	void initiateBlocks(int num) {
@@ -95,14 +97,7 @@ public class PlaneController : MonoBehaviour {
 				// initiate block
 				blockClone[tmpIndex] = Instantiate (prefabBlock, 
 					new Vector3(tmpIndex, 100, 0), Quaternion.identity) as GameObject;
-
-				// render the block
-//				rendererBlock[tmpIndex] = blockClone[tmpIndex].gameObject.GetComponent<MeshRenderer> () as MeshRenderer;
-//				if(i == 0) rendererBlock[tmpIndex].material.color = Color.red;
-//				else if(i == 1) rendererBlock[tmpIndex].material.color = Color.black;
-//				else if(i == 2) rendererBlock[tmpIndex].material.color = Color.green;
-//				else rendererBlock[tmpIndex].material.color = Color.blue;
-
+				
 				blocksInPool[i].Enqueue (blockClone[tmpIndex]);
 			}
 		}
