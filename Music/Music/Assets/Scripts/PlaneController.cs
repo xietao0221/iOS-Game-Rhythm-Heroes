@@ -11,8 +11,8 @@ public class PlaneController : MonoBehaviour {
 	public MeshRenderer[] rendererBlock = new MeshRenderer[4 * blockNumPerChannel];
 
 	private Vector3[] startingPoints = new Vector3[4], endingPoints = new Vector3[4];
-//	private float 
-	private int[] speed = new int[]{50, 40, 30, 20};
+	private float endingPointLocalMin = 0; 
+	private int[] speed = new int[]{4, 4, 4, 4};
 
 
 	void Awake() {
@@ -34,9 +34,15 @@ public class PlaneController : MonoBehaviour {
 	void Update () {
 		// make all blocks move forward; move them back to pool if they are at the ending points
 		for(int i=0; i<4; i++) {
-				foreach( GameObject tmpBlock in blocksInChannel[i]) {
-				tmpBlock.transform.position -= this.transform.forward / speed [i];
+			if(blocksInChannel[i].Count > 0) {
+				foreach(GameObject tmpBlock in blocksInChannel[i]) {
+					tmpBlock.transform.position -= this.transform.forward / speed [i];
 
+					if(this.transform.InverseTransformPoint (tmpBlock.transform.position).z <= -endingPointLocalMin) {
+						blocksInPool [i].Enqueue (blocksInChannel[i].Dequeue());
+						tmpBlock.transform.position = new Vector3 (100, 0, 0);
+					}
+				}	
 			}
 		}
 
@@ -67,6 +73,9 @@ public class PlaneController : MonoBehaviour {
 			startingPoints [i] = new Vector3 (leftBottomPoint.x + i * len / 3, rightTopPoint.y, rightTopPoint.z);
 			endingPoints [i] = new Vector3 (leftBottomPoint.x + i * len / 3, leftBottomPoint.y, leftBottomPoint.z);
 		}
+
+		// calculate the local ending position relative to plane
+		endingPointLocalMin = (float)len;
 	}
 
 	void initiateBlocks(int num) {
@@ -100,11 +109,12 @@ public class PlaneController : MonoBehaviour {
 	}
 
 	void generateBlocks(int channel) {
+//		print (this.transform.InverseTransformPoint (blockClone[0].transform.position).z);
 		if(blocksInPool[channel].Count > 0) {
 			GameObject tmpBlock = blocksInPool [channel].Dequeue();
 			blocksInChannel [channel].Enqueue (tmpBlock);
 			tmpBlock.transform.position = new Vector3 (
-				startingPoints[channel].x, startingPoints[channel].y, startingPoints[channel].z);
+				startingPoints [channel].x, startingPoints [channel].y, startingPoints [channel].z);
 		}
 	}
 
