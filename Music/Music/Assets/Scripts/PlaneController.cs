@@ -4,8 +4,7 @@ using System.Collections.Generic;
 
 public class PlaneController : MonoBehaviour {
 
-//	private bool playMode = true;		// true: ASDF controll; false: random
-
+	public bool keepPlaying = true;
 	public static int blockNumPerChannel = 20;
 	public Queue<GameObject>[] blocksInPool = new Queue<GameObject>[4], blocksInChannel = new Queue<GameObject>[4];
 	public GameObject prefabBlock;
@@ -15,21 +14,16 @@ public class PlaneController : MonoBehaviour {
 	private float endingPointLocalMin = 0; 
 	private int[] speed = new int[]{4, 4, 4, 4};
 
-
 	void Awake() {
 		blockClone = new GameObject[4 * blockNumPerChannel];
+		Random.seed = 42;
 		calculatePosition ();
 		initiateBlocks (blockNumPerChannel);
 	}
 		
 
 	void Start () {
-		//move four blocks from pool to channal
-		for(int i=0; i<4; i++) {
-			GameObject tmpBlock = blocksInPool [i].Dequeue();
-			blocksInChannel [i].Enqueue (tmpBlock);
-			tmpBlock.transform.position = new Vector3 (startingPoints[i].x, startingPoints[i].y, startingPoints[i].z);
-		}
+		StartCoroutine(func());
 	}
 
 
@@ -45,18 +39,6 @@ public class PlaneController : MonoBehaviour {
 						tmpBlock.transform.position = new Vector3 (100, 0, 0);
 					}
 				}	
-			}
-		}
-
-		if (Input.anyKeyDown) {
-			if (Input.GetKeyDown (KeyCode.A)) {
-				generateBlocks (0);
-			} else if(Input.GetKeyDown (KeyCode.S)) {
-				generateBlocks (1);
-			} else if(Input.GetKeyDown (KeyCode.D)) {
-				generateBlocks (2);
-			} else if(Input.GetKeyDown (KeyCode.F)) {
-				generateBlocks (3);
 			}
 		}
 	}
@@ -104,12 +86,27 @@ public class PlaneController : MonoBehaviour {
 	}
 
 	void generateBlocks(int channel) {
-//		print (this.transform.InverseTransformPoint (blockClone[0].transform.position).z);
 		if(blocksInPool[channel].Count > 0) {
 			GameObject tmpBlock = blocksInPool [channel].Dequeue();
 			blocksInChannel [channel].Enqueue (tmpBlock);
 			tmpBlock.transform.position = new Vector3 (
 				startingPoints [channel].x, startingPoints [channel].y, startingPoints [channel].z);
+		}
+	}
+
+	IEnumerator func() {
+		while(keepPlaying) {
+			float tmp = Random.value * 4;
+			if(tmp <= 1) {
+				generateBlocks (0);
+			} else if(tmp <= 2) {
+				generateBlocks (1);
+			} else if(tmp <= 3) {
+				generateBlocks (2);
+			} else {
+				generateBlocks (3);
+			}
+			yield return new WaitForSeconds(Random.value / 2);	
 		}
 	}
 
