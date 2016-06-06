@@ -29,16 +29,22 @@ public class PlaneController : MonoBehaviour {
 
 	void Update () {
 		// make all blocks move forward; move them back to pool if they are at the ending points
+		int[] count = new int[4];
 		for(int i=0; i<4; i++) {
-			if(blocksInChannel[i].Count > 0) {
-				foreach(GameObject tmpBlock in blocksInChannel[i]) {
-					tmpBlock.transform.position -= this.transform.forward / speed [i];
+			foreach(GameObject tmpBlock in blocksInChannel[i]) {
+				tmpBlock.transform.position -= this.transform.forward / speed [i];
+				if(this.transform.InverseTransformPoint (tmpBlock.transform.position).z <= -endingPointLocalMin) {
+					blocksInPool [i].Enqueue (tmpBlock);
+					tmpBlock.transform.position = new Vector3 (100, 0, 0);
+					count [i]++;
+				}
+			}
+		}
 
-					if(this.transform.InverseTransformPoint (tmpBlock.transform.position).z <= -endingPointLocalMin) {
-						blocksInPool [i].Enqueue (blocksInChannel[i].Dequeue());
-						tmpBlock.transform.position = new Vector3 (100, 0, 0);
-					}
-				}	
+		// dequeue from blocksInChannel
+		for(int i=0; i<4; i++) {
+			while (count [i]-- > 0) {
+				blocksInChannel [i].Dequeue (); 	
 			}
 		}
 	}
