@@ -23,7 +23,9 @@ public class PlaneController : MonoBehaviour {
 		
 
 	void Start () {
-		StartCoroutine(func());
+		// mode 1: random generate blocks, use StartCoroutine(func()) and comment out Line82 of MusicController.cs
+		// mode 2: music generate blocks, comment this part and use Line82 of MusicController.cs
+//		StartCoroutine(func());
 	}
 
 
@@ -91,7 +93,7 @@ public class PlaneController : MonoBehaviour {
 		}
 	}
 
-	void generateBlocks(int channel) {
+	public void generateBlocks(int channel) {
 		if(blocksInPool[channel].Count > 0) {
 			GameObject tmpBlock = blocksInPool [channel].Dequeue();
 			blocksInChannel [channel].Enqueue (tmpBlock);
