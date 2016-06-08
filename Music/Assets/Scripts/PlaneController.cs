@@ -6,14 +6,14 @@ public class PlaneController : MonoBehaviour {
 
 	public bool keepPlaying = true;
 	public static int blockNumPerChannel = 5;
-	public static int[] blockSpeed = new int[]{30, 50, 40, 60};		// the smaller the val, the faster the speed
+	public static int[] blockSpeed = new int[]{5, 5, 5, 5};		// the smaller the val, the faster the speed
 	public static float blockTimeInterval = 0.4f;					// the bigger the val, the smaller the time interval
 
 
-	public static Queue<GameObject>[] blocksInPool = new Queue<GameObject>[4], 
-	blocksInChannel = new Queue<GameObject>[4];
+	public static Queue<BlockWrapper>[] blocksInPool = new Queue<BlockWrapper>[4];
+	public static Queue<BlockWrapper>[] blocksInChannel = new Queue<BlockWrapper>[4];
 	public GameObject prefabBlock;
-	public static GameObject[] blockClone;
+	public static BlockWrapper[] blockClone;
 
 	private Vector3[] startingPoints = new Vector3[4], endingPoints = new Vector3[4];
 	public static float endingPointLocalMin = 0, touchZoneLocalMin = 0; 
@@ -21,7 +21,7 @@ public class PlaneController : MonoBehaviour {
 	public static float[,] touchZone = new float[4, 4];
 
 	void Awake() {
-		blockClone = new GameObject[4 * blockNumPerChannel];
+		blockClone = new BlockWrapper[4 * blockNumPerChannel];
 		Random.seed = 42;
 		calculatePosition ();
 		initiateBlocks (blockNumPerChannel);
@@ -35,14 +35,23 @@ public class PlaneController : MonoBehaviour {
 
 	void Update () {
 		// make all blocks move forward; move them back to pool if they are at the ending points
-//		int[] count = new int[4];
+		int[] count = new int[4];
 		for(int i=0; i<4; i++) {
-			foreach(GameObject tmpBlock in blocksInChannel[i]) {
-				tmpBlock.transform.position -= this.transform.forward / blockSpeed [i];
-				if(this.transform.InverseTransformPoint (tmpBlock.transform.position).z <= endingPointLocalMin) {
-					blocksInPool [i].Enqueue (blocksInChannel [i].Dequeue ());
-					tmpBlock.transform.position = new Vector3 (100, 0, 0);
+			foreach(BlockWrapper tmpBlockWrapper in blocksInChannel[i]) {
+				tmpBlockWrapper.blockObj.transform.position -= this.transform.forward / blockSpeed [i];
+				if(this.transform.InverseTransformPoint (tmpBlockWrapper.blockObj.transform.position).z <= 
+					endingPointLocalMin) {
+					blocksInPool [i].Enqueue (tmpBlockWrapper);
+					count [i]++;
+					tmpBlockWrapper.blockObj.transform.position = new Vector3 (100, 0, 0);
+					tmpBlockWrapper.isScored = false;
 				}
+			}
+		}
+
+		for(int i=0; i<4; i++) {
+			while(count[i]-- > 0) {
+				blocksInChannel [i].Dequeue ();
 			}
 		}
 	}
@@ -70,11 +79,6 @@ public class PlaneController : MonoBehaviour {
 			touchZone [i, 1] = touchZoneWidthStart + (i + 1) * touchZoneWidthInterval;
 			touchZone [i, 2] = 0;
 			touchZone [i, 3] = touchZoneHeightStart;
-//			print (i);
-//			print (touchZone[i, 0]);
-//			print (touchZone[i, 1]);
-//			print (touchZone[i, 2]);
-//			print (touchZone[i, 3]);
 		}
 
 		// calculate the local ending position relative to plane
@@ -85,20 +89,22 @@ public class PlaneController : MonoBehaviour {
 	void initiateBlocks(int num) {
 		// build 4 pools and 4 channels which contain corresponding blocks
 		for(int i=0; i<4; i++) {
-			blocksInPool[i] = new Queue<GameObject> ();	
-			blocksInChannel [i] = new Queue<GameObject> ();
+			blocksInPool[i] = new Queue<BlockWrapper> ();	
+			blocksInChannel [i] = new Queue<BlockWrapper> ();
 		}
 
 		int tmpIndex = 0;
 		for(int i=0; i<4; i++) {
 			for(int j=0; j<blockNumPerChannel; j++) {
-
 				// calculate the index
 				tmpIndex = i * blockNumPerChannel + j;
 
 				// initiate block
-				blockClone[tmpIndex] = Instantiate (prefabBlock, 
+				GameObject tmpObj = Instantiate (prefabBlock, 
 					new Vector3(tmpIndex, 100, 0), Quaternion.identity) as GameObject;
+				blockClone [tmpIndex] = new BlockWrapper (tmpObj, false);
+
+				// enqueue
 				blocksInPool[i].Enqueue (blockClone[tmpIndex]);
 			}
 		}
@@ -106,9 +112,9 @@ public class PlaneController : MonoBehaviour {
 
 	public void generateBlocks(int channel) {
 		if(blocksInPool[channel].Count > 0) {
-			GameObject tmpBlock = blocksInPool [channel].Dequeue();
-			blocksInChannel [channel].Enqueue (tmpBlock);
-			tmpBlock.transform.position = new Vector3 (
+			BlockWrapper tmpBlockWrapper = blocksInPool [channel].Dequeue();
+			blocksInChannel [channel].Enqueue (tmpBlockWrapper);
+			tmpBlockWrapper.blockObj.transform.position = new Vector3 (
 				startingPoints [channel].x, startingPoints [channel].y, startingPoints [channel].z);
 		}
 	}
