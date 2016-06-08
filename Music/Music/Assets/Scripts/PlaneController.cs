@@ -5,14 +5,19 @@ using System.Collections.Generic;
 public class PlaneController : MonoBehaviour {
 
 	public bool keepPlaying = true;
-	public static int blockNumPerChannel = 20;
-	public Queue<GameObject>[] blocksInPool = new Queue<GameObject>[4], blocksInChannel = new Queue<GameObject>[4];
+	public static int blockNumPerChannel = 5;
+	public static int[] blockSpeed = new int[]{5, 5, 5, 5};		// the smaller the val, the faster the speed
+	public static float blockTimeInterval = 1f;					// the bigger the val, the smaller the time interval
+
+
+	public static Queue<GameObject>[] blocksInPool = new Queue<GameObject>[4], 
+		blocksInChannel = new Queue<GameObject>[4];
 	public GameObject prefabBlock;
-	public GameObject[] blockClone;
+	public static GameObject[] blockClone;
 
 	private Vector3[] startingPoints = new Vector3[4], endingPoints = new Vector3[4];
-	private float endingPointLocalMin = 0; 
-	private int[] speed = new int[]{4, 4, 4, 4};
+	public static float endingPointLocalMin = 0, touchZoneLocalMin = 0; 
+
 
 	void Awake() {
 		blockClone = new GameObject[4 * blockNumPerChannel];
@@ -23,9 +28,7 @@ public class PlaneController : MonoBehaviour {
 		
 
 	void Start () {
-		// mode 1: random generate blocks, use StartCoroutine(func()) and comment out Line82 of MusicController.cs
-		// mode 2: music generate blocks, comment this part and use Line82 of MusicController.cs
-//		StartCoroutine(func());
+		StartCoroutine(func());
 	}
 
 
@@ -34,8 +37,8 @@ public class PlaneController : MonoBehaviour {
 		int[] count = new int[4];
 		for(int i=0; i<4; i++) {
 			foreach(GameObject tmpBlock in blocksInChannel[i]) {
-				tmpBlock.transform.position -= this.transform.forward / speed [i];
-				if(this.transform.InverseTransformPoint (tmpBlock.transform.position).z <= -endingPointLocalMin) {
+				tmpBlock.transform.position -= this.transform.forward / blockSpeed [i];
+				if(this.transform.InverseTransformPoint (tmpBlock.transform.position).z <= touchZoneLocalMin) {
 					blocksInPool [i].Enqueue (tmpBlock);
 					tmpBlock.transform.position = new Vector3 (100, 0, 0);
 					count [i]++;
@@ -56,18 +59,19 @@ public class PlaneController : MonoBehaviour {
 		// calculate the x-coordinate of 4 channels
 		Collider collider = GetComponent<Collider> ();
 		Vector3 leftBottomPoint = collider.bounds.min, rightTopPoint = collider.bounds.max;
-		float len = (float)((rightTopPoint.x - leftBottomPoint.x) * 0.8);
-		leftBottomPoint.x += len / 8;
-		rightTopPoint.x -= len / 8;
+		float planeWidth = (float)((rightTopPoint.x - leftBottomPoint.x) * 0.8);
+		leftBottomPoint.x += planeWidth / 8;
+		rightTopPoint.x -= planeWidth / 8;
 
 		// calculate the starting position and ending position
 		for(int i=0; i<4; i++) {
-			startingPoints [i] = new Vector3 (leftBottomPoint.x + i * len / 3, rightTopPoint.y, rightTopPoint.z);
-			endingPoints [i] = new Vector3 (leftBottomPoint.x + i * len / 3, leftBottomPoint.y, leftBottomPoint.z);
+			startingPoints [i] = new Vector3 (leftBottomPoint.x + i * planeWidth / 3, rightTopPoint.y, rightTopPoint.z);
+			endingPoints [i] = new Vector3 (leftBottomPoint.x + i * planeWidth / 3, leftBottomPoint.y, leftBottomPoint.z);
 		}
 
 		// calculate the local ending position relative to plane
-		endingPointLocalMin = (float)(len * 0.55);
+		endingPointLocalMin = -(float)(this.GetComponent<Renderer>().bounds.size[0]) / 2;
+		touchZoneLocalMin = (float)(endingPointLocalMin * 0.9);
 	}
 
 	void initiateBlocks(int num) {
@@ -114,7 +118,7 @@ public class PlaneController : MonoBehaviour {
 			} else {
 				generateBlocks (3);
 			}
-			yield return new WaitForSeconds(Random.value / 2);	
+			yield return new WaitForSeconds(Random.value / blockTimeInterval);	
 		}
 	}
 
