@@ -2,12 +2,13 @@
 using System.Collections;
 
 public class TouchController : MonoBehaviour {
-	private GameObject planeObj, scoreTextObj;
+	private GameObject planeObj, scoreTextObj, wordTextObj;
 
 	// Use this for initialization
 	void Start () {
 		planeObj = GameObject.Find ("Plane");
 		scoreTextObj = GameObject.Find ("ScoreText");
+		wordTextObj = GameObject.Find ("WordText");
 	}
 	
 	// Update is called once per frame
@@ -26,8 +27,10 @@ public class TouchController : MonoBehaviour {
 								if(!tmpBlockWrapper.isScored && 
 									planeObj.transform.InverseTransformPoint (tmpBlockWrapper.blockObj.transform.position).z <=
 									PlaneController.touchZoneLocalMin) {
+									tmpBlockWrapper.blockObj.transform.position = new Vector3 (100, 0, 0);
 									tmpBlockWrapper.isScored = true;
 									((ScoreController)(scoreTextObj.GetComponent (typeof(ScoreController)))).scorePlus();
+									((ScoreController)(wordTextObj.GetComponent (typeof(ScoreController)))).wordTextDisplay(1);
 								}	
 							}
 						}

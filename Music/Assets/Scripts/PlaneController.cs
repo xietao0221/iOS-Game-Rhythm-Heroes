@@ -6,7 +6,7 @@ public class PlaneController : MonoBehaviour {
 
 	public bool keepPlaying = true;
 	public static int blockNumPerChannel = 5;
-	public static int[] blockSpeed = new int[]{5, 5, 5, 5};		// the smaller the val, the faster the speed
+	public static int[] blockSpeed = new int[]{10, 10, 10, 10};		// the smaller the val, the faster the speed
 	public static float blockTimeInterval = 0.4f;					// the bigger the val, the smaller the time interval
 
 
@@ -16,6 +16,7 @@ public class PlaneController : MonoBehaviour {
 	public static BlockWrapper[] blockClone;
 
 	private Vector3[] startingPoints = new Vector3[4], endingPoints = new Vector3[4];
+	private GameObject wordTextObj;
 	public static float endingPointLocalMin = 0, touchZoneLocalMin = 0; 
 	public static int score = 0;
 	public static float[,] touchZone = new float[4, 4];
@@ -29,6 +30,7 @@ public class PlaneController : MonoBehaviour {
 
 
 	void Start () {
+		wordTextObj = GameObject.Find ("WordText");
 		StartCoroutine(func());
 	}
 
@@ -44,7 +46,11 @@ public class PlaneController : MonoBehaviour {
 					blocksInPool [i].Enqueue (tmpBlockWrapper);
 					count [i]++;
 					tmpBlockWrapper.blockObj.transform.position = new Vector3 (100, 0, 0);
-					tmpBlockWrapper.isScored = false;
+					if(!tmpBlockWrapper.isScored) {
+						((ScoreController)(wordTextObj.GetComponent (typeof(ScoreController)))).wordTextDisplay(2);
+					} else {
+						tmpBlockWrapper.isScored = false;	
+					}
 				}
 			}
 		}
