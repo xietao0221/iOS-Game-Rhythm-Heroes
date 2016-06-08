@@ -17,8 +17,8 @@ public class PlaneController : MonoBehaviour {
 
 	private Vector3[] startingPoints = new Vector3[4], endingPoints = new Vector3[4];
 	public static float endingPointLocalMin = 0, touchZoneLocalMin = 0; 
-	public int score = 0;
-	public float[,] touchZone = new float[4, 4];
+	public static int score = 0;
+	public static float[,] touchZone = new float[4, 4];
 
 	void Awake() {
 		blockClone = new GameObject[4 * blockNumPerChannel];
@@ -35,35 +35,14 @@ public class PlaneController : MonoBehaviour {
 
 	void Update () {
 		// make all blocks move forward; move them back to pool if they are at the ending points
-		int[] count = new int[4];
+//		int[] count = new int[4];
 		for(int i=0; i<4; i++) {
 			foreach(GameObject tmpBlock in blocksInChannel[i]) {
 				tmpBlock.transform.position -= this.transform.forward / blockSpeed [i];
-				if(this.transform.InverseTransformPoint (tmpBlock.transform.position).z <= touchZoneLocalMin) {
-
-					for(int j=0; j<Input.touchCount; j++) {
-						Touch touch = Input.GetTouch (j);
-						print (touch.position);
-						if(touch.phase == TouchPhase.Began) {
-							print (touch.position);
-							if(touch.position.x >= touchZone[i, 0] && touch.position.x <= touchZone[i, 1] && 
-								touch.position.y >= touchZone[i, 2] && touch.position.y <= touchZone[i, 3]) {
-								print (++score);
-							}
-						}
-					}
-						
-					blocksInPool [i].Enqueue (tmpBlock);
+				if(this.transform.InverseTransformPoint (tmpBlock.transform.position).z <= endingPointLocalMin) {
+					blocksInPool [i].Enqueue (blocksInChannel [i].Dequeue ());
 					tmpBlock.transform.position = new Vector3 (100, 0, 0);
-					count [i]++;
 				}
-			}
-		}
-
-		// dequeue from blocksInChannel
-		for(int i=0; i<4; i++) {
-			while (count [i]-- > 0) {
-				blocksInChannel [i].Dequeue (); 	
 			}
 		}
 	}
@@ -148,5 +127,15 @@ public class PlaneController : MonoBehaviour {
 			}
 			yield return new WaitForSeconds(Random.value / blockTimeInterval);	
 		}
+	}
+}
+
+public class BlockWrapper {
+	public GameObject blockObj = null;
+	public bool isScored = false;
+
+	public BlockWrapper(GameObject obj, bool val) {
+		this.blockObj = obj;
+		this.isScored = val;
 	}
 }
