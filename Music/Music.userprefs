@@ -1,10 +1,9 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/ScoreController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/PlaneController.cs">
     <Files>
-      <File FileName="Assets/Scripts/PlaneController.cs" Line="44" Column="30" />
-      <File FileName="Assets/Scripts/TouchController.cs" Line="21" Column="11" />
-      <File FileName="Assets/Scripts/ScoreController.cs" Line="21" Column="2" />
+      <File FileName="Assets/Scripts/PlaneController.cs" Line="58" Column="4" />
+      <File FileName="Assets/Scripts/AudioProcessor.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

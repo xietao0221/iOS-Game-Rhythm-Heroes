@@ -2,7 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 
-public class PlaneController : MonoBehaviour {
+public class PlaneController : MonoBehaviour, AudioProcessor.AudioCallbacks {
 
 	public bool keepPlaying = true;
 	public static int blockNumPerChannel = 5;
@@ -20,7 +20,8 @@ public class PlaneController : MonoBehaviour {
 	public static float endingPointLocalMin = 0, touchZoneLocalMin = 0; 
 	public static int score = 0;
 	public static float[,] touchZone = new float[4, 4];
-
+	int delay = 0;
+	AudioSource audio;
 	void Awake() {
 		blockClone = new BlockWrapper[4 * blockNumPerChannel];
 		Random.seed = 42;
@@ -31,12 +32,42 @@ public class PlaneController : MonoBehaviour {
 
 	void Start () {
 		wordTextObj = GameObject.Find ("WordText");
-		StartCoroutine(func());
+//		StartCoroutine(func());
 	}
 
+	void activeBeat(){
+		audio = GetComponent<AudioSource>();
+		AudioProcessor processor = FindObjectOfType<AudioProcessor>();
+		processor.addAudioCallback(this);
+	}
+	//this event will be called every time a beat is detected.
+	//Change the threshold parameter in the inspector
+	//to adjust the sensitivity
+	public void onOnbeatDetected()
+	{
+		Debug.Log("Beat!!!");
+		float tmp = Random.value * 4;
+		if(tmp <= 1) {
+			generateBlocks (0);
+		} else if(tmp <= 2) {
+			generateBlocks (1);
+		} else if(tmp <= 3) {
+			generateBlocks (2);
+		} else {
+			generateBlocks (3);
+		}
+	}
 
+	//This event will be called every frame while music is playing
+	public void onSpectrum(float[] spectrum)// spectrum.length = 12
+	{
+		
+	}
 	void Update () {
 		// make all blocks move forward; move them back to pool if they are at the ending points
+		if (delay++ == 10) {
+			activeBeat ();
+		}
 		int[] count = new int[4];
 		for(int i=0; i<4; i++) {
 			foreach(BlockWrapper tmpBlockWrapper in blocksInChannel[i]) {
