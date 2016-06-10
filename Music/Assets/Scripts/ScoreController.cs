@@ -4,7 +4,7 @@ using UnityEngine.UI;
 
 public class ScoreController : MonoBehaviour {
 
-	public Text scoreText, wordText;
+	public Text scoreText, wordText, logText, logDynamicText;
 	public float scoreCount;
 
 	// Use this for initialization
@@ -12,6 +12,8 @@ public class ScoreController : MonoBehaviour {
 		scoreCount = 0;
 		scoreText.text = "Score: 0";
 		wordText.text = "";
+		logText.text = "Debug: ";
+		logDynamicText.text = "";
 	}
 	
 	// Update is called once per frame
@@ -29,5 +31,13 @@ public class ScoreController : MonoBehaviour {
 		} else {
 			wordText.text = "Miss!";
 		}
+	}
+
+	public void logTextDisplay(string val) {
+		logText.text = val;
+	}
+
+	public void logDynamicDisplay(string val) {
+		logDynamicText.text = val;
 	}
 }

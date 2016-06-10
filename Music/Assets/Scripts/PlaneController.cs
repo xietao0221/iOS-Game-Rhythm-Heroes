@@ -71,8 +71,8 @@ public class PlaneController : MonoBehaviour {
 		leftBottomPoint.x += planeWidth / 8;
 		rightTopPoint.x -= planeWidth / 8;
 
-		float touchZoneWidthStart = -(float)Screen.width + (float)(Screen.width * 0.1);
-		float touchZoneWidthInterval = (float)(Screen.width * 0.8 / 4);
+		float touchZoneWidthStart = -(float)Screen.width + (float)(Screen.width * 0.05);
+		float touchZoneWidthInterval = (float)(Screen.width * 0.9 / 4);
 		float touchZoneHeightStart = (float)(Screen.height * 0.2);
 
 		for(int i=0; i<4; i++) {
