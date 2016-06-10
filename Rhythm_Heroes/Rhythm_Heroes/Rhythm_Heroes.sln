@@ -1,0 +1,23 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2008
+
+Project("{527903D5-9A8E-B35E-B2F4-71C19E7516F8}") = "Rhythm_Heroes", "Assembly-CSharp.csproj", "{EA65D0B4-B910-2E08-7087-C52F6FD8EBF0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EA65D0B4-B910-2E08-7087-C52F6FD8EBF0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA65D0B4-B910-2E08-7087-C52F6FD8EBF0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA65D0B4-B910-2E08-7087-C52F6FD8EBF0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA65D0B4-B910-2E08-7087-C52F6FD8EBF0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Assembly-CSharp.csproj
+	EndGlobalSection
+EndGlobal
