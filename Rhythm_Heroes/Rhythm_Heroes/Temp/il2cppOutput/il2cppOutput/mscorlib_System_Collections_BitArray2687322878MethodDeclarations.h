@@ -33,6 +33,8 @@ extern "C"  void BitArray__ctor_m4198813761 (BitArray_t2687322878 * __this, int3
 extern "C"  uint8_t BitArray_getByte_m3145028169 (BitArray_t2687322878 * __this, int32_t ___byteIndex0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Int32 System.Collections.BitArray::get_Count()
 extern "C"  int32_t BitArray_get_Count_m3361743632 (BitArray_t2687322878 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Boolean System.Collections.BitArray::get_IsSynchronized()
+extern "C"  bool BitArray_get_IsSynchronized_m1429626361 (BitArray_t2687322878 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Boolean System.Collections.BitArray::get_Item(System.Int32)
 extern "C"  bool BitArray_get_Item_m2410594623 (BitArray_t2687322878 * __this, int32_t ___index0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void System.Collections.BitArray::set_Item(System.Int32,System.Boolean)

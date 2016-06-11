@@ -6,22 +6,24 @@ public class PlaneController : MonoBehaviour {
 	public static bool keepPlaying = true;
 	public static int blockNumPerChannel = 5;
 	public static int[] blockSpeed = new int[]{10, 10, 10, 10};			// the smaller the val, the faster the speed
-	public static float blockTimeInterval = 1f;				// the bigger the val, the smaller the time interval
+	public static float blockTimeInterval = 1f;							// the bigger the val, the smaller the time interval
 
 	public static Queue<BlockWrapper>[] blocksInPool = new Queue<BlockWrapper>[4];
 	public static Queue<BlockWrapper>[] blocksInChannel = new Queue<BlockWrapper>[4];
 	public GameObject prefabBlock;
-	public GameObject[] planeObj = new GameObject[4];
+	public GameObject[] planeObj = new GameObject[4], touchZoneObj = new GameObject[4];
 	public static BlockWrapper[] blockClone;
+	private GameObject wordObj;
 
-	public static Vector3[] startingPoint = new Vector3[4], endingPoint = new Vector3[4];
+	public static Vector3[] startingPoint = new Vector3[4];
 	public static float endingPointLocalMin = 0, touchZoneLocalMin = 0; 
-
 
 	void Awake() {
 		for(int i=0; i<4; i++) {
 			planeObj [i] = GameObject.Find ("Plane" + i);
+			touchZoneObj [i] = GameObject.Find ("TouchZone" + i);
 		}
+		wordObj = GameObject.Find ("Word");
 		blockClone = new BlockWrapper[4 * blockNumPerChannel];
 		Random.seed = 42;
 		calculatePosition ();
@@ -46,7 +48,7 @@ public class PlaneController : MonoBehaviour {
 					count [i]++;
 					tmpBlockWrapper.blockObj.transform.position = new Vector3(100, 0, 0);
 					if(!tmpBlockWrapper.isScored) {
-						// show words
+						((ScoreController)(wordObj.GetComponent (typeof(ScoreController)))).wordTextDisplay(2);
 					} else {
 						tmpBlockWrapper.isScored = false;
 					}
@@ -63,19 +65,20 @@ public class PlaneController : MonoBehaviour {
 
 	void calculatePosition() {
 		// calculate the x-coordinate of this channel
-		Collider[] collider = new Collider[4];
+		Collider[] planeCollider = new Collider[4], touchZoneCollider = new Collider[4];
 		Vector3[] leftBottomPoint = new Vector3[4], rightTopPoint = new Vector3[4];
 		float[] planeWidth = new float[4];
 		for(int i=0; i<4; i++) {
-			collider [i] = planeObj [i].GetComponent<Collider> ();
-			leftBottomPoint [i] = collider [i].bounds.min;
-			rightTopPoint [i] = collider [i].bounds.max;
+			planeCollider [i] = planeObj [i].GetComponent<Collider> ();
+			touchZoneCollider [i] = touchZoneObj [i].GetComponent<Collider> ();
+			leftBottomPoint [i] = planeCollider [i].bounds.min;
+			rightTopPoint [i] = planeCollider [i].bounds.max;
 			planeWidth[i] = (float)(rightTopPoint[i].x - leftBottomPoint[i].x);
 			startingPoint[i] = new Vector3 (leftBottomPoint[i].x + planeWidth[i] / 2, rightTopPoint[i].y, rightTopPoint[i].z);
-			endingPoint[i] = new Vector3 (leftBottomPoint[i].x + planeWidth[i] / 2, leftBottomPoint[i].y, leftBottomPoint[i].z);
 		}
-		endingPointLocalMin = -(float)(planeObj[0].GetComponent<Renderer> ().bounds.size [2]) / 2;
-		touchZoneLocalMin = (float)(endingPointLocalMin * 0.85);
+		endingPointLocalMin = -(float)(planeObj[0].GetComponent<Renderer> ().bounds.size [2] + 
+			touchZoneObj[0].GetComponent<Renderer>().bounds.size[2]*2) / 2;
+		touchZoneLocalMin = -(float)(planeObj[0].GetComponent<Renderer> ().bounds.size [2]) / 2;;
 	}
 
 	void initiateBlocks(int num) {

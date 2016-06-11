@@ -16,6 +16,8 @@ struct Camera_t3533968274;
 struct List_1_t514686775;
 // UnityEngine.GameObject[]
 struct GameObjectU5BU5D_t3499186955;
+// UnityEngine.GameObject
+struct GameObject_t4012695102;
 
 #include "UnityEngine_UnityEngine_MonoBehaviour3012272455.h"
 #include "UnityEngine_UnityEngine_LayerMask1862190090.h"
@@ -41,6 +43,12 @@ public:
 	GameObjectU5BU5D_t3499186955* ___touchesOld_5;
 	// UnityEngine.RaycastHit TouchController::hit
 	RaycastHit_t46221527  ___hit_6;
+	// UnityEngine.GameObject[] TouchController::planeObj
+	GameObjectU5BU5D_t3499186955* ___planeObj_7;
+	// UnityEngine.GameObject TouchController::scoreTextObj
+	GameObject_t4012695102 * ___scoreTextObj_8;
+	// UnityEngine.GameObject TouchController::wordTextObj
+	GameObject_t4012695102 * ___wordTextObj_9;
 
 public:
 	inline static int32_t get_offset_of_myCamera_2() { return static_cast<int32_t>(offsetof(TouchController_t2155287579, ___myCamera_2)); }
@@ -84,6 +92,33 @@ public:
 	inline void set_hit_6(RaycastHit_t46221527  value)
 	{
 		___hit_6 = value;
+	}
+
+	inline static int32_t get_offset_of_planeObj_7() { return static_cast<int32_t>(offsetof(TouchController_t2155287579, ___planeObj_7)); }
+	inline GameObjectU5BU5D_t3499186955* get_planeObj_7() const { return ___planeObj_7; }
+	inline GameObjectU5BU5D_t3499186955** get_address_of_planeObj_7() { return &___planeObj_7; }
+	inline void set_planeObj_7(GameObjectU5BU5D_t3499186955* value)
+	{
+		___planeObj_7 = value;
+		Il2CppCodeGenWriteBarrier(&___planeObj_7, value);
+	}
+
+	inline static int32_t get_offset_of_scoreTextObj_8() { return static_cast<int32_t>(offsetof(TouchController_t2155287579, ___scoreTextObj_8)); }
+	inline GameObject_t4012695102 * get_scoreTextObj_8() const { return ___scoreTextObj_8; }
+	inline GameObject_t4012695102 ** get_address_of_scoreTextObj_8() { return &___scoreTextObj_8; }
+	inline void set_scoreTextObj_8(GameObject_t4012695102 * value)
+	{
+		___scoreTextObj_8 = value;
+		Il2CppCodeGenWriteBarrier(&___scoreTextObj_8, value);
+	}
+
+	inline static int32_t get_offset_of_wordTextObj_9() { return static_cast<int32_t>(offsetof(TouchController_t2155287579, ___wordTextObj_9)); }
+	inline GameObject_t4012695102 * get_wordTextObj_9() const { return ___wordTextObj_9; }
+	inline GameObject_t4012695102 ** get_address_of_wordTextObj_9() { return &___wordTextObj_9; }
+	inline void set_wordTextObj_9(GameObject_t4012695102 * value)
+	{
+		___wordTextObj_9 = value;
+		Il2CppCodeGenWriteBarrier(&___wordTextObj_9, value);
 	}
 };
 

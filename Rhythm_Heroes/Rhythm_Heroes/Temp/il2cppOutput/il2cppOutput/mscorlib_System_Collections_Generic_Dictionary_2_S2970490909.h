@@ -25,13 +25,13 @@ struct  ShimEnumerator_t2970490909  : public Il2CppObject
 {
 public:
 	// System.Collections.Generic.Dictionary`2/Enumerator<TKey,TValue> System.Collections.Generic.Dictionary`2/ShimEnumerator::host_enumerator
-	Enumerator_t1306794162  ___host_enumerator_0;
+	Enumerator_t1306794163  ___host_enumerator_0;
 
 public:
 	inline static int32_t get_offset_of_host_enumerator_0() { return static_cast<int32_t>(offsetof(ShimEnumerator_t2970490909, ___host_enumerator_0)); }
-	inline Enumerator_t1306794162  get_host_enumerator_0() const { return ___host_enumerator_0; }
-	inline Enumerator_t1306794162 * get_address_of_host_enumerator_0() { return &___host_enumerator_0; }
-	inline void set_host_enumerator_0(Enumerator_t1306794162  value)
+	inline Enumerator_t1306794163  get_host_enumerator_0() const { return ___host_enumerator_0; }
+	inline Enumerator_t1306794163 * get_address_of_host_enumerator_0() { return &___host_enumerator_0; }
+	inline void set_host_enumerator_0(Enumerator_t1306794163  value)
 	{
 		___host_enumerator_0 = value;
 	}

@@ -31,6 +31,8 @@ struct IEnumerator_t287207039;
 extern "C"  void HashValues__ctor_m3879614837 (HashValues_t2727322608 * __this, Hashtable_t3875263730 * ___host0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Int32 System.Collections.Hashtable/HashValues::get_Count()
 extern "C"  int32_t HashValues_get_Count_m2417436125 (HashValues_t2727322608 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Boolean System.Collections.Hashtable/HashValues::get_IsSynchronized()
+extern "C"  bool HashValues_get_IsSynchronized_m1643199180 (HashValues_t2727322608 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Object System.Collections.Hashtable/HashValues::get_SyncRoot()
 extern "C"  Il2CppObject * HashValues_get_SyncRoot_m734931640 (HashValues_t2727322608 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void System.Collections.Hashtable/HashValues::CopyTo(System.Array,System.Int32)

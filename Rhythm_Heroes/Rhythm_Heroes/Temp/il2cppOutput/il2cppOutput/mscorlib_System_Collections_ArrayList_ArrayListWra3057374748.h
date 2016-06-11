@@ -26,16 +26,16 @@ struct  ArrayListWrapper_t3057374748  : public ArrayList_t2121638921
 {
 public:
 	// System.Collections.ArrayList System.Collections.ArrayList/ArrayListWrapper::m_InnerArrayList
-	ArrayList_t2121638921 * ___m_InnerArrayList_4;
+	ArrayList_t2121638921 * ___m_InnerArrayList_5;
 
 public:
-	inline static int32_t get_offset_of_m_InnerArrayList_4() { return static_cast<int32_t>(offsetof(ArrayListWrapper_t3057374748, ___m_InnerArrayList_4)); }
-	inline ArrayList_t2121638921 * get_m_InnerArrayList_4() const { return ___m_InnerArrayList_4; }
-	inline ArrayList_t2121638921 ** get_address_of_m_InnerArrayList_4() { return &___m_InnerArrayList_4; }
-	inline void set_m_InnerArrayList_4(ArrayList_t2121638921 * value)
+	inline static int32_t get_offset_of_m_InnerArrayList_5() { return static_cast<int32_t>(offsetof(ArrayListWrapper_t3057374748, ___m_InnerArrayList_5)); }
+	inline ArrayList_t2121638921 * get_m_InnerArrayList_5() const { return ___m_InnerArrayList_5; }
+	inline ArrayList_t2121638921 ** get_address_of_m_InnerArrayList_5() { return &___m_InnerArrayList_5; }
+	inline void set_m_InnerArrayList_5(ArrayList_t2121638921 * value)
 	{
-		___m_InnerArrayList_4 = value;
-		Il2CppCodeGenWriteBarrier(&___m_InnerArrayList_4, value);
+		___m_InnerArrayList_5 = value;
+		Il2CppCodeGenWriteBarrier(&___m_InnerArrayList_5, value);
 	}
 };
 

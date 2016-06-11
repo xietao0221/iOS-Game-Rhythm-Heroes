@@ -46,6 +46,8 @@ extern "C"  Il2CppObject * SyncHashtable_System_Collections_IEnumerable_GetEnume
 extern "C"  void SyncHashtable_GetObjectData_m765378770 (SyncHashtable_t4112770821 * __this, SerializationInfo_t2995724695 * ___info0, StreamingContext_t986364934  ___context1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Int32 System.Collections.Hashtable/SyncHashtable::get_Count()
 extern "C"  int32_t SyncHashtable_get_Count_m3563238812 (SyncHashtable_t4112770821 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Boolean System.Collections.Hashtable/SyncHashtable::get_IsSynchronized()
+extern "C"  bool SyncHashtable_get_IsSynchronized_m3501702649 (SyncHashtable_t4112770821 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Object System.Collections.Hashtable/SyncHashtable::get_SyncRoot()
 extern "C"  Il2CppObject * SyncHashtable_get_SyncRoot_m513487403 (SyncHashtable_t4112770821 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Collections.ICollection System.Collections.Hashtable/SyncHashtable::get_Keys()

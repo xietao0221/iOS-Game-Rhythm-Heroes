@@ -192,6 +192,8 @@ extern "C"  int32_t String_IndexOf_m1991631068 (String_t* __this, String_t* ___v
 extern "C"  int32_t String_IndexOf_m4052910459 (String_t* __this, String_t* ___value0, int32_t ___startIndex1, int32_t ___count2, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Int32 System.String::LastIndexOfAny(System.Char[])
 extern "C"  int32_t String_LastIndexOfAny_m1405458718 (String_t* __this, CharU5BU5D_t3416858730* ___anyOf0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Int32 System.String::LastIndexOfAny(System.Char[],System.Int32)
+extern "C"  int32_t String_LastIndexOfAny_m2835072121 (String_t* __this, CharU5BU5D_t3416858730* ___anyOf0, int32_t ___startIndex1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Int32 System.String::LastIndexOfAnyUnchecked(System.Char[],System.Int32,System.Int32)
 extern "C"  int32_t String_LastIndexOfAnyUnchecked_m3532047592 (String_t* __this, CharU5BU5D_t3416858730* ___anyOf0, int32_t ___startIndex1, int32_t ___count2, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Int32 System.String::LastIndexOf(System.Char)
@@ -206,6 +208,8 @@ extern "C"  int32_t String_LastIndexOfUnchecked_m4042746910 (String_t* __this, u
 extern "C"  int32_t String_LastIndexOf_m2747144337 (String_t* __this, String_t* ___value0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Int32 System.String::LastIndexOf(System.String,System.Int32,System.Int32)
 extern "C"  int32_t String_LastIndexOf_m1189898929 (String_t* __this, String_t* ___value0, int32_t ___startIndex1, int32_t ___count2, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Boolean System.String::Contains(System.String)
+extern "C"  bool String_Contains_m3032019141 (String_t* __this, String_t* ___value0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Boolean System.String::IsNullOrEmpty(System.String)
 extern "C"  bool String_IsNullOrEmpty_m1256468773 (Il2CppObject * __this /* static, unused */, String_t* ___value0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.String System.String::PadRight(System.Int32,System.Char)

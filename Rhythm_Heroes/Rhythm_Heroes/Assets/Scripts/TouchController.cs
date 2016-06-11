@@ -10,6 +10,7 @@ public class TouchController : MonoBehaviour {
 	private RaycastHit hit;
 
 	private GameObject[] planeObj = new GameObject[4];
+	private GameObject scoreTextObj, wordTextObj;
 
 	// Use this for initialization
 	void Start () {
@@ -17,6 +18,8 @@ public class TouchController : MonoBehaviour {
 		for(int i=0; i<4; i++) {
 			planeObj [i] = GameObject.Find ("Plane" + i);
 		}
+		scoreTextObj = GameObject.Find ("Score");
+		wordTextObj = GameObject.Find ("Word");
 	}
 
 	// Update is called once per frame
@@ -43,18 +46,48 @@ public class TouchController : MonoBehaviour {
 				} else {
 					choose = 3;
 				}
-
+					
 				if(Input.GetMouseButtonDown(0)) {
 					recepient.SendMessage ("onTouchDown", hit.point, SendMessageOptions.DontRequireReceiver);
 					planeObj[choose].SendMessage ("onTouchDown", hit.point, SendMessageOptions.DontRequireReceiver);
+
+					if(PlaneController.blocksInChannel[choose].Count > 0) {
+						foreach(BlockWrapper tmpBlockWrapper in PlaneController.blocksInChannel[choose]) {
+							float tmpPos = planeObj[choose].transform.InverseTransformPoint (
+								tmpBlockWrapper.blockObj.transform.position).z;
+							if(!tmpBlockWrapper.isScored && tmpPos <= PlaneController.touchZoneLocalMin && 
+								tmpPos >= PlaneController.endingPointLocalMin) {
+								tmpBlockWrapper.blockObj.transform.position = new Vector3 (100, 0, 0);
+								tmpBlockWrapper.isScored = true;
+								((ScoreController)(scoreTextObj.GetComponent (typeof(ScoreController)))).scorePlus();
+								((ScoreController)(wordTextObj.GetComponent (typeof(ScoreController)))).wordTextDisplay(1);
+							}	
+						}
+					}
 				}
+
 				if(Input.GetMouseButtonUp(0)) {
 					recepient.SendMessage ("onTouchUp", hit.point, SendMessageOptions.DontRequireReceiver);
 					planeObj[choose].SendMessage ("onTouchUp", hit.point, SendMessageOptions.DontRequireReceiver);
 				}
+
 				if(Input.GetMouseButton(0)) {
 					recepient.SendMessage ("onTouchStay", hit.point, SendMessageOptions.DontRequireReceiver);
 					planeObj[choose].SendMessage ("onTouchStay", hit.point, SendMessageOptions.DontRequireReceiver);
+
+//					if(PlaneController.blocksInChannel[choose].Count > 0) {
+//						foreach(BlockWrapper tmpBlockWrapper in PlaneController.blocksInChannel[choose]) {
+//							float tmpPos = planeObj[choose].transform.InverseTransformPoint (
+//								tmpBlockWrapper.blockObj.transform.position).z;
+//							if(!tmpBlockWrapper.isScored && tmpPos <= PlaneController.touchZoneLocalMin && 
+//								tmpPos >= PlaneController.endingPointLocalMin) {
+//								tmpBlockWrapper.blockObj.transform.position = new Vector3 (100, 0, 0);
+//								tmpBlockWrapper.isScored = true;
+//								((ScoreController)(scoreTextObj.GetComponent (typeof(ScoreController)))).scorePlus();
+//								((ScoreController)(wordTextObj.GetComponent (typeof(ScoreController)))).wordTextDisplay(1);
+//							}	
+//						}
+//					}
 				}
 			}
 
@@ -67,6 +100,7 @@ public class TouchController : MonoBehaviour {
 		}
 #endif
 
+#if UNITY_IPHONE
 		if(Input.touchCount > 0) {
 			touchesOld = new GameObject[touchList.Count];
 			touchList.CopyTo (touchesOld);
@@ -93,6 +127,20 @@ public class TouchController : MonoBehaviour {
 					if(touch.phase == TouchPhase.Began) {
 						recepient.SendMessage ("onTouchDown", hit.point, SendMessageOptions.DontRequireReceiver);
 						planeObj[choose].SendMessage ("onTouchDown", hit.point, SendMessageOptions.DontRequireReceiver);
+
+//						if(PlaneController.blocksInChannel[choose].Count > 0) {
+//							foreach(BlockWrapper tmpBlockWrapper in PlaneController.blocksInChannel[choose]) {
+//								float tmpPos = planeObj[choose].transform.InverseTransformPoint (
+//									tmpBlockWrapper.blockObj.transform.position).z;
+//								if(!tmpBlockWrapper.isScored && tmpPos <= PlaneController.touchZoneLocalMin && 
+//									tmpPos >= PlaneController.endingPointLocalMin) {
+//									tmpBlockWrapper.blockObj.transform.position = new Vector3 (100, 0, 0);
+//									tmpBlockWrapper.isScored = true;
+//									((ScoreController)(scoreTextObj.GetComponent (typeof(ScoreController)))).scorePlus();
+//									((ScoreController)(wordTextObj.GetComponent (typeof(ScoreController)))).wordTextDisplay(1);
+//								}	
+//							}
+//						}
 					}
 					if(touch.phase == TouchPhase.Ended) {
 						recepient.SendMessage ("onTouchUp", hit.point, SendMessageOptions.DontRequireReceiver);
@@ -101,6 +149,20 @@ public class TouchController : MonoBehaviour {
 					if(touch.phase == TouchPhase.Stationary || touch.phase == TouchPhase.Moved) {
 						recepient.SendMessage ("onTouchStay", hit.point, SendMessageOptions.DontRequireReceiver);
 						planeObj[choose].SendMessage ("onTouchStay", hit.point, SendMessageOptions.DontRequireReceiver);
+
+//						if(PlaneController.blocksInChannel[choose].Count > 0) {
+//							foreach(BlockWrapper tmpBlockWrapper in PlaneController.blocksInChannel[choose]) {
+//								float tmpPos = planeObj[choose].transform.InverseTransformPoint (
+//									tmpBlockWrapper.blockObj.transform.position).z;
+//								if(!tmpBlockWrapper.isScored && tmpPos <= PlaneController.touchZoneLocalMin && 
+//									tmpPos >= PlaneController.endingPointLocalMin) {
+//									tmpBlockWrapper.blockObj.transform.position = new Vector3 (100, 0, 0);
+//									tmpBlockWrapper.isScored = true;
+//									((ScoreController)(scoreTextObj.GetComponent (typeof(ScoreController)))).scorePlus();
+//									((ScoreController)(wordTextObj.GetComponent (typeof(ScoreController)))).wordTextDisplay(1);
+//								}	
+//							}
+//						}
 					}
 					if(touch.phase == TouchPhase.Canceled) {
 						recepient.SendMessage ("onTouchExit", hit.point, SendMessageOptions.DontRequireReceiver);
@@ -115,5 +177,6 @@ public class TouchController : MonoBehaviour {
 				}
 			}
 		}
+#endif
 	}
 }

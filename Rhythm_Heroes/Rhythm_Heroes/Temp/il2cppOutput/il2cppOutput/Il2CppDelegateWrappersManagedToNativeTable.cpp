@@ -46,15 +46,21 @@ extern "C" void pinvoke_delegate_wrapper_PCMReaderCallback_t749510018 ();
 extern "C" void pinvoke_delegate_wrapper_PCMSetPositionCallback_t2977871350 ();
 extern "C" void pinvoke_delegate_wrapper_AudioConfigurationChangeHandler_t1722466426 ();
 extern "C" void pinvoke_delegate_wrapper_CameraCallback_t1908940458 ();
+extern "C" void pinvoke_delegate_wrapper_WillRenderCanvases_t1153522766 ();
 extern "C" void pinvoke_delegate_wrapper_StateChanged_t1076524291 ();
 extern "C" void pinvoke_delegate_wrapper_DisplaysUpdatedDelegate_t1240057615 ();
+extern "C" void pinvoke_delegate_wrapper_UnityAction_t909267611 ();
+extern "C" void pinvoke_delegate_wrapper_FontTextureRebuildCallback_t401089076 ();
+extern "C" void pinvoke_delegate_wrapper_WindowFunction_t999919624 ();
+extern "C" void pinvoke_delegate_wrapper_SkinChangedDelegate_t914030844 ();
 extern "C" void pinvoke_delegate_wrapper_BannerFailedToLoadDelegate_t2071786927 ();
 extern "C" void pinvoke_delegate_wrapper_BannerWasClickedDelegate_t1325188367 ();
 extern "C" void pinvoke_delegate_wrapper_BannerWasLoadedDelegate_t69910023 ();
 extern "C" void pinvoke_delegate_wrapper_InterstitialWasLoadedDelegate_t2963828231 ();
 extern "C" void pinvoke_delegate_wrapper_InterstitialWasViewedDelegate_t402653446 ();
 extern "C" void pinvoke_delegate_wrapper_ReapplyDrivenProperties_t3247703954 ();
-extern const Il2CppMethodPointer g_DelegateWrappersManagedToNative[43] = 
+extern "C" void pinvoke_delegate_wrapper_OnValidateInput_t3303221397 ();
+extern const Il2CppMethodPointer g_DelegateWrappersManagedToNative[49] = 
 {
 	pinvoke_delegate_wrapper_PrimalityTest_t397689819,
 	pinvoke_delegate_wrapper_KeyGeneratedEventHandler_t1233396096,
@@ -91,12 +97,18 @@ extern const Il2CppMethodPointer g_DelegateWrappersManagedToNative[43] =
 	pinvoke_delegate_wrapper_PCMSetPositionCallback_t2977871350,
 	pinvoke_delegate_wrapper_AudioConfigurationChangeHandler_t1722466426,
 	pinvoke_delegate_wrapper_CameraCallback_t1908940458,
+	pinvoke_delegate_wrapper_WillRenderCanvases_t1153522766,
 	pinvoke_delegate_wrapper_StateChanged_t1076524291,
 	pinvoke_delegate_wrapper_DisplaysUpdatedDelegate_t1240057615,
+	pinvoke_delegate_wrapper_UnityAction_t909267611,
+	pinvoke_delegate_wrapper_FontTextureRebuildCallback_t401089076,
+	pinvoke_delegate_wrapper_WindowFunction_t999919624,
+	pinvoke_delegate_wrapper_SkinChangedDelegate_t914030844,
 	pinvoke_delegate_wrapper_BannerFailedToLoadDelegate_t2071786927,
 	pinvoke_delegate_wrapper_BannerWasClickedDelegate_t1325188367,
 	pinvoke_delegate_wrapper_BannerWasLoadedDelegate_t69910023,
 	pinvoke_delegate_wrapper_InterstitialWasLoadedDelegate_t2963828231,
 	pinvoke_delegate_wrapper_InterstitialWasViewedDelegate_t402653446,
 	pinvoke_delegate_wrapper_ReapplyDrivenProperties_t3247703954,
+	pinvoke_delegate_wrapper_OnValidateInput_t3303221397,
 };

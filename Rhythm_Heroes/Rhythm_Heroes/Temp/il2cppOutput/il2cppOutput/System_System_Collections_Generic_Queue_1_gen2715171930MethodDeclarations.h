@@ -20,6 +20,8 @@
 #define Queue_1__ctor_m3791494188(__this, method) ((  void (*) (Queue_1_t2715171930 *, const MethodInfo*))Queue_1__ctor_m3042804833_gshared)(__this, method)
 // System.Void System.Collections.Generic.Queue`1<BlockWrapper>::System.Collections.ICollection.CopyTo(System.Array,System.Int32)
 #define Queue_1_System_Collections_ICollection_CopyTo_m2363916215(__this, ___array0, ___idx1, method) ((  void (*) (Queue_1_t2715171930 *, Il2CppArray *, int32_t, const MethodInfo*))Queue_1_System_Collections_ICollection_CopyTo_m3260144643_gshared)(__this, ___array0, ___idx1, method)
+// System.Boolean System.Collections.Generic.Queue`1<BlockWrapper>::System.Collections.ICollection.get_IsSynchronized()
+#define Queue_1_System_Collections_ICollection_get_IsSynchronized_m668215739(__this, method) ((  bool (*) (Queue_1_t2715171930 *, const MethodInfo*))Queue_1_System_Collections_ICollection_get_IsSynchronized_m63917275_gshared)(__this, method)
 // System.Object System.Collections.Generic.Queue`1<BlockWrapper>::System.Collections.ICollection.get_SyncRoot()
 #define Queue_1_System_Collections_ICollection_get_SyncRoot_m1880854907(__this, method) ((  Il2CppObject * (*) (Queue_1_t2715171930 *, const MethodInfo*))Queue_1_System_Collections_ICollection_get_SyncRoot_m2093948217_gshared)(__this, method)
 // System.Collections.Generic.IEnumerator`1<T> System.Collections.Generic.Queue`1<BlockWrapper>::System.Collections.Generic.IEnumerable<T>.GetEnumerator()

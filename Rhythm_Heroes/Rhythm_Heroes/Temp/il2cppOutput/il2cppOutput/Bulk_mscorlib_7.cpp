@@ -13,6 +13,14 @@
 #include <limits>
 #include <assert.h>
 
+// System.Threading.EventWaitHandle
+struct EventWaitHandle_t1233883898;
+// System.Threading.ExecutionContext
+struct ExecutionContext_t3375439994;
+// System.Runtime.Serialization.SerializationInfo
+struct SerializationInfo_t2995724695;
+// System.Security.SecurityContext
+struct SecurityContext_t794732212;
 // System.Threading.ManualResetEvent
 struct ManualResetEvent_t2399218676;
 // System.Object
@@ -23,8 +31,6 @@ struct Mutex_t3540010562;
 struct String_t;
 // System.Threading.SynchronizationLockException
 struct SynchronizationLockException_t1158168039;
-// System.Runtime.Serialization.SerializationInfo
-struct SerializationInfo_t2995724695;
 // System.Threading.Thread
 struct Thread_t1674723085;
 // System.Threading.ThreadStart
@@ -37,8 +43,6 @@ struct MulticastDelegate_t2585444626;
 struct CultureInfo_t3603717042;
 // System.Byte[]
 struct ByteU5BU5D_t58506160;
-// System.Threading.ExecutionContext
-struct ExecutionContext_t3375439994;
 // System.Threading.CompressedStack
 struct CompressedStack_t2946347082;
 // System.Threading.ThreadAbortException
@@ -119,44 +123,54 @@ struct WeakReference_t2193916456;
 #include "class-internals.h"
 #include "codegen/il2cpp-codegen.h"
 #include "mscorlib_System_Array2840145358.h"
+#include "mscorlib_System_Threading_EventWaitHandle1233883898.h"
+#include "mscorlib_System_Threading_EventWaitHandle1233883898MethodDeclarations.h"
+#include "mscorlib_System_Threading_EventResetMode1147836187.h"
+#include "mscorlib_System_Void2779279689.h"
+#include "mscorlib_System_Boolean211005341.h"
+#include "mscorlib_System_Threading_WaitHandle361062656MethodDeclarations.h"
+#include "mscorlib_System_Threading_NativeEventCalls3144008661MethodDeclarations.h"
+#include "mscorlib_System_IntPtr676692020.h"
+#include "mscorlib_System_String968488902.h"
+#include "mscorlib_System_Threading_WaitHandle361062656.h"
+#include "mscorlib_System_ArgumentException124305799MethodDeclarations.h"
+#include "mscorlib_System_ArgumentException124305799.h"
+#include "mscorlib_System_Threading_ExecutionContext3375439994.h"
+#include "mscorlib_System_Threading_ExecutionContext3375439994MethodDeclarations.h"
+#include "mscorlib_System_Object837106420MethodDeclarations.h"
+#include "mscorlib_System_Security_SecurityContext794732212MethodDeclarations.h"
+#include "mscorlib_System_Security_SecurityContext794732212.h"
+#include "mscorlib_System_Runtime_Serialization_Serializatio2995724695.h"
+#include "mscorlib_System_Runtime_Serialization_StreamingCont986364934.h"
+#include "mscorlib_System_NotImplementedException1091014741MethodDeclarations.h"
+#include "mscorlib_System_NotImplementedException1091014741.h"
+#include "mscorlib_System_Threading_Thread1674723085MethodDeclarations.h"
+#include "mscorlib_System_Security_SecurityManager678461618MethodDeclarations.h"
+#include "mscorlib_System_Threading_Thread1674723085.h"
+#include "mscorlib_System_ArgumentNullException3214793280MethodDeclarations.h"
+#include "mscorlib_System_ArgumentNullException3214793280.h"
 #include "mscorlib_System_Threading_Interlocked3007803305.h"
 #include "mscorlib_System_Threading_Interlocked3007803305MethodDeclarations.h"
 #include "mscorlib_System_Int322847414787.h"
 #include "mscorlib_System_Threading_ManualResetEvent2399218676.h"
 #include "mscorlib_System_Threading_ManualResetEvent2399218676MethodDeclarations.h"
-#include "mscorlib_System_Void2779279689.h"
-#include "mscorlib_System_Boolean211005341.h"
-#include "mscorlib_System_Threading_EventWaitHandle1233883898MethodDeclarations.h"
-#include "mscorlib_System_Threading_EventResetMode1147836187.h"
 #include "mscorlib_System_Threading_Monitor2071304733.h"
 #include "mscorlib_System_Threading_Monitor2071304733MethodDeclarations.h"
 #include "mscorlib_System_Object837106420.h"
-#include "mscorlib_System_ArgumentNullException3214793280MethodDeclarations.h"
 #include "mscorlib_System_Threading_SynchronizationLockExcep1158168039MethodDeclarations.h"
-#include "mscorlib_System_String968488902.h"
-#include "mscorlib_System_ArgumentNullException3214793280.h"
 #include "mscorlib_System_Threading_SynchronizationLockExcep1158168039.h"
 #include "mscorlib_System_ArgumentOutOfRangeException3479058991MethodDeclarations.h"
 #include "mscorlib_System_ArgumentOutOfRangeException3479058991.h"
 #include "mscorlib_System_Threading_Mutex3540010562.h"
 #include "mscorlib_System_Threading_Mutex3540010562MethodDeclarations.h"
-#include "mscorlib_System_Threading_WaitHandle361062656MethodDeclarations.h"
-#include "mscorlib_System_IntPtr676692020.h"
-#include "mscorlib_System_Threading_WaitHandle361062656.h"
 #include "mscorlib_System_ApplicationException3809199252MethodDeclarations.h"
 #include "mscorlib_System_ApplicationException3809199252.h"
 #include "mscorlib_System_Threading_NativeEventCalls3144008661.h"
-#include "mscorlib_System_Threading_NativeEventCalls3144008661MethodDeclarations.h"
 #include "mscorlib_System_SystemException3155420757MethodDeclarations.h"
-#include "mscorlib_System_Runtime_Serialization_Serializatio2995724695.h"
-#include "mscorlib_System_Runtime_Serialization_StreamingCont986364934.h"
-#include "mscorlib_System_Threading_Thread1674723085.h"
-#include "mscorlib_System_Threading_Thread1674723085MethodDeclarations.h"
 #include "mscorlib_System_Threading_ThreadStart2758142267.h"
 #include "mscorlib_System_Runtime_ConstrainedExecution_Criti3609670849MethodDeclarations.h"
 #include "mscorlib_System_Threading_ThreadState2758142314.h"
 #include "mscorlib_System_MulticastDelegate2585444626.h"
-#include "mscorlib_System_Object837106420MethodDeclarations.h"
 #include "mscorlib_System_Runtime_Remoting_Contexts_Context305277133.h"
 #include "mscorlib_System_AppDomain1551247802MethodDeclarations.h"
 #include "mscorlib_System_Globalization_CultureInfo3603717042.h"
@@ -169,15 +183,11 @@ struct WeakReference_t2193916456;
 #include "mscorlib_System_Runtime_Serialization_Formatters_Bi341659722.h"
 #include "mscorlib_System_IO_MemoryStream2881531048.h"
 #include "mscorlib_System_IO_Stream219029575.h"
-#include "mscorlib_System_Threading_ExecutionContext3375439994MethodDeclarations.h"
 #include "mscorlib_System_IntPtr676692020MethodDeclarations.h"
-#include "mscorlib_System_Threading_ExecutionContext3375439994.h"
 #include "mscorlib_System_SystemException3155420757.h"
 #include "mscorlib_System_Runtime_ConstrainedExecution_Criti3609670849.h"
 #include "mscorlib_System_Threading_CompressedStack2946347082.h"
-#include "mscorlib_System_Security_SecurityContext794732212MethodDeclarations.h"
 #include "mscorlib_System_Threading_CompressedStack2946347082MethodDeclarations.h"
-#include "mscorlib_System_Security_SecurityContext794732212.h"
 #include "mscorlib_System_Threading_ThreadAbortException389307564.h"
 #include "mscorlib_System_Threading_ThreadAbortException389307564MethodDeclarations.h"
 #include "mscorlib_System_Exception1967233988MethodDeclarations.h"
@@ -232,8 +242,6 @@ struct WeakReference_t2193916456;
 #include "mscorlib_Locale2281372282MethodDeclarations.h"
 #include "mscorlib_System_OverflowException3216083426MethodDeclarations.h"
 #include "mscorlib_System_OverflowException3216083426.h"
-#include "mscorlib_System_ArgumentException124305799MethodDeclarations.h"
-#include "mscorlib_System_ArgumentException124305799.h"
 #include "mscorlib_System_Math2778998461MethodDeclarations.h"
 #include "mscorlib_System_Double534516614MethodDeclarations.h"
 #include "mscorlib_System_Int642847414882MethodDeclarations.h"
@@ -350,6 +358,318 @@ struct WeakReference_t2193916456;
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
+// System.Void System.Threading.EventWaitHandle::.ctor(System.Boolean,System.Threading.EventResetMode)
+extern Il2CppClass* WaitHandle_t361062656_il2cpp_TypeInfo_var;
+extern const uint32_t EventWaitHandle__ctor_m1444479942_MetadataUsageId;
+extern "C"  void EventWaitHandle__ctor_m1444479942 (EventWaitHandle_t1233883898 * __this, bool ___initialState0, int32_t ___mode1, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (EventWaitHandle__ctor_m1444479942_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	bool V_0 = false;
+	bool V_1 = false;
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(WaitHandle_t361062656_il2cpp_TypeInfo_var);
+		WaitHandle__ctor_m4240939554(__this, /*hidden argument*/NULL);
+		int32_t L_0 = ___mode1;
+		bool L_1 = EventWaitHandle_IsManualReset_m4097690010(__this, L_0, /*hidden argument*/NULL);
+		V_1 = L_1;
+		bool L_2 = V_1;
+		bool L_3 = ___initialState0;
+		IntPtr_t L_4 = NativeEventCalls_CreateEvent_internal_m3209574737(NULL /*static, unused*/, L_2, L_3, (String_t*)NULL, (&V_0), /*hidden argument*/NULL);
+		VirtActionInvoker1< IntPtr_t >::Invoke(6 /* System.Void System.Threading.WaitHandle::set_Handle(System.IntPtr) */, __this, L_4);
+		return;
+	}
+}
+// System.Boolean System.Threading.EventWaitHandle::IsManualReset(System.Threading.EventResetMode)
+extern Il2CppClass* ArgumentException_t124305799_il2cpp_TypeInfo_var;
+extern Il2CppCodeGenString* _stringLiteral3357091;
+extern const uint32_t EventWaitHandle_IsManualReset_m4097690010_MetadataUsageId;
+extern "C"  bool EventWaitHandle_IsManualReset_m4097690010 (EventWaitHandle_t1233883898 * __this, int32_t ___mode0, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (EventWaitHandle_IsManualReset_m4097690010_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	{
+		int32_t L_0 = ___mode0;
+		if ((((int32_t)L_0) < ((int32_t)0)))
+		{
+			goto IL_000e;
+		}
+	}
+	{
+		int32_t L_1 = ___mode0;
+		if ((((int32_t)L_1) <= ((int32_t)1)))
+		{
+			goto IL_0019;
+		}
+	}
+
+IL_000e:
+	{
+		ArgumentException_t124305799 * L_2 = (ArgumentException_t124305799 *)il2cpp_codegen_object_new(ArgumentException_t124305799_il2cpp_TypeInfo_var);
+		ArgumentException__ctor_m3544856547(L_2, _stringLiteral3357091, /*hidden argument*/NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_2);
+	}
+
+IL_0019:
+	{
+		int32_t L_3 = ___mode0;
+		return (bool)((((int32_t)L_3) == ((int32_t)1))? 1 : 0);
+	}
+}
+// System.Boolean System.Threading.EventWaitHandle::Reset()
+extern "C"  bool EventWaitHandle_Reset_m330657435 (EventWaitHandle_t1233883898 * __this, const MethodInfo* method)
+{
+	{
+		WaitHandle_CheckDisposed_m3718910029(__this, /*hidden argument*/NULL);
+		IntPtr_t L_0 = VirtFuncInvoker0< IntPtr_t >::Invoke(5 /* System.IntPtr System.Threading.WaitHandle::get_Handle() */, __this);
+		bool L_1 = NativeEventCalls_ResetEvent_internal_m2004196566(NULL /*static, unused*/, L_0, /*hidden argument*/NULL);
+		return L_1;
+	}
+}
+// System.Boolean System.Threading.EventWaitHandle::Set()
+extern "C"  bool EventWaitHandle_Set_m224730030 (EventWaitHandle_t1233883898 * __this, const MethodInfo* method)
+{
+	{
+		WaitHandle_CheckDisposed_m3718910029(__this, /*hidden argument*/NULL);
+		IntPtr_t L_0 = VirtFuncInvoker0< IntPtr_t >::Invoke(5 /* System.IntPtr System.Threading.WaitHandle::get_Handle() */, __this);
+		bool L_1 = NativeEventCalls_SetEvent_internal_m2769880995(NULL /*static, unused*/, L_0, /*hidden argument*/NULL);
+		return L_1;
+	}
+}
+// System.Void System.Threading.ExecutionContext::.ctor()
+extern "C"  void ExecutionContext__ctor_m3342294760 (ExecutionContext_t3375439994 * __this, const MethodInfo* method)
+{
+	{
+		Object__ctor_m1772956182(__this, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void System.Threading.ExecutionContext::.ctor(System.Threading.ExecutionContext)
+extern Il2CppClass* SecurityContext_t794732212_il2cpp_TypeInfo_var;
+extern const uint32_t ExecutionContext__ctor_m881535614_MetadataUsageId;
+extern "C"  void ExecutionContext__ctor_m881535614 (ExecutionContext_t3375439994 * __this, ExecutionContext_t3375439994 * ___ec0, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (ExecutionContext__ctor_m881535614_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	{
+		Object__ctor_m1772956182(__this, /*hidden argument*/NULL);
+		ExecutionContext_t3375439994 * L_0 = ___ec0;
+		NullCheck(L_0);
+		SecurityContext_t794732212 * L_1 = L_0->get__sc_0();
+		if (!L_1)
+		{
+			goto IL_0022;
+		}
+	}
+	{
+		ExecutionContext_t3375439994 * L_2 = ___ec0;
+		NullCheck(L_2);
+		SecurityContext_t794732212 * L_3 = L_2->get__sc_0();
+		SecurityContext_t794732212 * L_4 = (SecurityContext_t794732212 *)il2cpp_codegen_object_new(SecurityContext_t794732212_il2cpp_TypeInfo_var);
+		SecurityContext__ctor_m1345715454(L_4, L_3, /*hidden argument*/NULL);
+		__this->set__sc_0(L_4);
+	}
+
+IL_0022:
+	{
+		ExecutionContext_t3375439994 * L_5 = ___ec0;
+		NullCheck(L_5);
+		bool L_6 = L_5->get__suppressFlow_1();
+		__this->set__suppressFlow_1(L_6);
+		__this->set__capture_2((bool)1);
+		return;
+	}
+}
+// System.Void System.Threading.ExecutionContext::.ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+extern Il2CppClass* NotImplementedException_t1091014741_il2cpp_TypeInfo_var;
+extern const uint32_t ExecutionContext__ctor_m469890089_MetadataUsageId;
+extern "C"  void ExecutionContext__ctor_m469890089 (ExecutionContext_t3375439994 * __this, SerializationInfo_t2995724695 * ___info0, StreamingContext_t986364934  ___context1, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (ExecutionContext__ctor_m469890089_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	{
+		Object__ctor_m1772956182(__this, /*hidden argument*/NULL);
+		NotImplementedException_t1091014741 * L_0 = (NotImplementedException_t1091014741 *)il2cpp_codegen_object_new(NotImplementedException_t1091014741_il2cpp_TypeInfo_var);
+		NotImplementedException__ctor_m2063223793(L_0, /*hidden argument*/NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_0);
+	}
+}
+// System.Threading.ExecutionContext System.Threading.ExecutionContext::Capture()
+extern Il2CppClass* Thread_t1674723085_il2cpp_TypeInfo_var;
+extern Il2CppClass* ExecutionContext_t3375439994_il2cpp_TypeInfo_var;
+extern Il2CppClass* SecurityManager_t678461618_il2cpp_TypeInfo_var;
+extern const uint32_t ExecutionContext_Capture_m1949565907_MetadataUsageId;
+extern "C"  ExecutionContext_t3375439994 * ExecutionContext_Capture_m1949565907 (Il2CppObject * __this /* static, unused */, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (ExecutionContext_Capture_m1949565907_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	ExecutionContext_t3375439994 * V_0 = NULL;
+	ExecutionContext_t3375439994 * V_1 = NULL;
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(Thread_t1674723085_il2cpp_TypeInfo_var);
+		Thread_t1674723085 * L_0 = Thread_get_CurrentThread_m1523593825(NULL /*static, unused*/, /*hidden argument*/NULL);
+		NullCheck(L_0);
+		ExecutionContext_t3375439994 * L_1 = Thread_get_ExecutionContext_m1683588744(L_0, /*hidden argument*/NULL);
+		V_0 = L_1;
+		ExecutionContext_t3375439994 * L_2 = V_0;
+		NullCheck(L_2);
+		bool L_3 = ExecutionContext_get_FlowSuppressed_m927554565(L_2, /*hidden argument*/NULL);
+		if (!L_3)
+		{
+			goto IL_0018;
+		}
+	}
+	{
+		return (ExecutionContext_t3375439994 *)NULL;
+	}
+
+IL_0018:
+	{
+		ExecutionContext_t3375439994 * L_4 = V_0;
+		ExecutionContext_t3375439994 * L_5 = (ExecutionContext_t3375439994 *)il2cpp_codegen_object_new(ExecutionContext_t3375439994_il2cpp_TypeInfo_var);
+		ExecutionContext__ctor_m881535614(L_5, L_4, /*hidden argument*/NULL);
+		V_1 = L_5;
+		IL2CPP_RUNTIME_CLASS_INIT(SecurityManager_t678461618_il2cpp_TypeInfo_var);
+		bool L_6 = SecurityManager_get_SecurityEnabled_m2857115566(NULL /*static, unused*/, /*hidden argument*/NULL);
+		if (!L_6)
+		{
+			goto IL_0034;
+		}
+	}
+	{
+		ExecutionContext_t3375439994 * L_7 = V_1;
+		SecurityContext_t794732212 * L_8 = SecurityContext_Capture_m3640798635(NULL /*static, unused*/, /*hidden argument*/NULL);
+		NullCheck(L_7);
+		ExecutionContext_set_SecurityContext_m3974986970(L_7, L_8, /*hidden argument*/NULL);
+	}
+
+IL_0034:
+	{
+		ExecutionContext_t3375439994 * L_9 = V_1;
+		return L_9;
+	}
+}
+// System.Void System.Threading.ExecutionContext::GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+extern Il2CppClass* ArgumentNullException_t3214793280_il2cpp_TypeInfo_var;
+extern Il2CppClass* NotImplementedException_t1091014741_il2cpp_TypeInfo_var;
+extern Il2CppCodeGenString* _stringLiteral3237038;
+extern const uint32_t ExecutionContext_GetObjectData_m67437190_MetadataUsageId;
+extern "C"  void ExecutionContext_GetObjectData_m67437190 (ExecutionContext_t3375439994 * __this, SerializationInfo_t2995724695 * ___info0, StreamingContext_t986364934  ___context1, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (ExecutionContext_GetObjectData_m67437190_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	{
+		SerializationInfo_t2995724695 * L_0 = ___info0;
+		if (L_0)
+		{
+			goto IL_0011;
+		}
+	}
+	{
+		ArgumentNullException_t3214793280 * L_1 = (ArgumentNullException_t3214793280 *)il2cpp_codegen_object_new(ArgumentNullException_t3214793280_il2cpp_TypeInfo_var);
+		ArgumentNullException__ctor_m135444188(L_1, _stringLiteral3237038, /*hidden argument*/NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_1);
+	}
+
+IL_0011:
+	{
+		NotImplementedException_t1091014741 * L_2 = (NotImplementedException_t1091014741 *)il2cpp_codegen_object_new(NotImplementedException_t1091014741_il2cpp_TypeInfo_var);
+		NotImplementedException__ctor_m2063223793(L_2, /*hidden argument*/NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_2);
+	}
+}
+// System.Security.SecurityContext System.Threading.ExecutionContext::get_SecurityContext()
+extern Il2CppClass* SecurityContext_t794732212_il2cpp_TypeInfo_var;
+extern const uint32_t ExecutionContext_get_SecurityContext_m2311120735_MetadataUsageId;
+extern "C"  SecurityContext_t794732212 * ExecutionContext_get_SecurityContext_m2311120735 (ExecutionContext_t3375439994 * __this, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (ExecutionContext_get_SecurityContext_m2311120735_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	{
+		SecurityContext_t794732212 * L_0 = __this->get__sc_0();
+		if (L_0)
+		{
+			goto IL_0016;
+		}
+	}
+	{
+		SecurityContext_t794732212 * L_1 = (SecurityContext_t794732212 *)il2cpp_codegen_object_new(SecurityContext_t794732212_il2cpp_TypeInfo_var);
+		SecurityContext__ctor_m2890261396(L_1, /*hidden argument*/NULL);
+		__this->set__sc_0(L_1);
+	}
+
+IL_0016:
+	{
+		SecurityContext_t794732212 * L_2 = __this->get__sc_0();
+		return L_2;
+	}
+}
+// System.Void System.Threading.ExecutionContext::set_SecurityContext(System.Security.SecurityContext)
+extern "C"  void ExecutionContext_set_SecurityContext_m3974986970 (ExecutionContext_t3375439994 * __this, SecurityContext_t794732212 * ___value0, const MethodInfo* method)
+{
+	{
+		SecurityContext_t794732212 * L_0 = ___value0;
+		__this->set__sc_0(L_0);
+		return;
+	}
+}
+// System.Boolean System.Threading.ExecutionContext::get_FlowSuppressed()
+extern "C"  bool ExecutionContext_get_FlowSuppressed_m927554565 (ExecutionContext_t3375439994 * __this, const MethodInfo* method)
+{
+	{
+		bool L_0 = __this->get__suppressFlow_1();
+		return L_0;
+	}
+}
+// System.Boolean System.Threading.ExecutionContext::IsFlowSuppressed()
+extern Il2CppClass* Thread_t1674723085_il2cpp_TypeInfo_var;
+extern const uint32_t ExecutionContext_IsFlowSuppressed_m2941747654_MetadataUsageId;
+extern "C"  bool ExecutionContext_IsFlowSuppressed_m2941747654 (Il2CppObject * __this /* static, unused */, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (ExecutionContext_IsFlowSuppressed_m2941747654_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(Thread_t1674723085_il2cpp_TypeInfo_var);
+		Thread_t1674723085 * L_0 = Thread_get_CurrentThread_m1523593825(NULL /*static, unused*/, /*hidden argument*/NULL);
+		NullCheck(L_0);
+		ExecutionContext_t3375439994 * L_1 = Thread_get_ExecutionContext_m1683588744(L_0, /*hidden argument*/NULL);
+		NullCheck(L_1);
+		bool L_2 = ExecutionContext_get_FlowSuppressed_m927554565(L_1, /*hidden argument*/NULL);
+		return L_2;
+	}
+}
 // System.Int32 System.Threading.Interlocked::CompareExchange(System.Int32&,System.Int32,System.Int32)
 extern "C"  int32_t Interlocked_CompareExchange_m1859820752 (Il2CppObject * __this /* static, unused */, int32_t* ___location10, int32_t ___value1, int32_t ___comparand2, const MethodInfo* method)
 {
@@ -2042,7 +2362,7 @@ IL_0036:
 			Scheduler_Add_m1591289733(__this, L_9, /*hidden argument*/NULL);
 			SortedList_t3322490541 * L_10 = __this->get_list_1();
 			NullCheck(L_10);
-			Il2CppObject * L_11 = VirtFuncInvoker1< Il2CppObject *, int32_t >::Invoke(31 /* System.Object System.Collections.SortedList::GetByIndex(System.Int32) */, L_10, 0);
+			Il2CppObject * L_11 = VirtFuncInvoker1< Il2CppObject *, int32_t >::Invoke(33 /* System.Object System.Collections.SortedList::GetByIndex(System.Int32) */, L_10, 0);
 			Timer_t3546110984 * L_12 = ___timer0;
 			if ((!(((Il2CppObject*)(Il2CppObject *)L_11) == ((Il2CppObject*)(Timer_t3546110984 *)L_12))))
 			{
@@ -2102,7 +2422,7 @@ extern "C"  void Scheduler_Add_m1591289733 (Scheduler_t1843257499 * __this, Time
 		SortedList_t3322490541 * L_0 = __this->get_list_1();
 		Timer_t3546110984 * L_1 = ___timer0;
 		NullCheck(L_0);
-		int32_t L_2 = VirtFuncInvoker1< int32_t, Il2CppObject * >::Invoke(29 /* System.Int32 System.Collections.SortedList::IndexOfKey(System.Object) */, L_0, L_1);
+		int32_t L_2 = VirtFuncInvoker1< int32_t, Il2CppObject * >::Invoke(31 /* System.Int32 System.Collections.SortedList::IndexOfKey(System.Object) */, L_0, L_1);
 		V_0 = L_2;
 		int32_t L_3 = V_0;
 		if ((((int32_t)L_3) == ((int32_t)(-1))))
@@ -2169,7 +2489,7 @@ IL_0064:
 		int32_t L_14 = V_0;
 		SortedList_t3322490541 * L_15 = __this->get_list_1();
 		NullCheck(L_15);
-		int32_t L_16 = VirtFuncInvoker0< int32_t >::Invoke(14 /* System.Int32 System.Collections.SortedList::get_Count() */, L_15);
+		int32_t L_16 = VirtFuncInvoker0< int32_t >::Invoke(15 /* System.Int32 System.Collections.SortedList::get_Count() */, L_15);
 		if ((((int32_t)L_14) < ((int32_t)L_16)))
 		{
 			goto IL_007a;
@@ -2184,7 +2504,7 @@ IL_007a:
 		SortedList_t3322490541 * L_17 = __this->get_list_1();
 		int32_t L_18 = V_0;
 		NullCheck(L_17);
-		Il2CppObject * L_19 = VirtFuncInvoker1< Il2CppObject *, int32_t >::Invoke(31 /* System.Object System.Collections.SortedList::GetByIndex(System.Int32) */, L_17, L_18);
+		Il2CppObject * L_19 = VirtFuncInvoker1< Il2CppObject *, int32_t >::Invoke(33 /* System.Object System.Collections.SortedList::GetByIndex(System.Int32) */, L_17, L_18);
 		V_2 = ((Timer_t3546110984 *)CastclassSealed(L_19, Timer_t3546110984_il2cpp_TypeInfo_var));
 		Timer_t3546110984 * L_20 = V_2;
 		NullCheck(L_20);
@@ -2212,7 +2532,7 @@ IL_00a7:
 		Timer_t3546110984 * L_25 = ___timer0;
 		Timer_t3546110984 * L_26 = ___timer0;
 		NullCheck(L_24);
-		VirtActionInvoker2< Il2CppObject *, Il2CppObject * >::Invoke(22 /* System.Void System.Collections.SortedList::Add(System.Object,System.Object) */, L_24, L_25, L_26);
+		VirtActionInvoker2< Il2CppObject *, Il2CppObject * >::Invoke(24 /* System.Void System.Collections.SortedList::Add(System.Object,System.Object) */, L_24, L_25, L_26);
 		return;
 	}
 }
@@ -2224,7 +2544,7 @@ extern "C"  int32_t Scheduler_InternalRemove_m1022594523 (Scheduler_t1843257499 
 		SortedList_t3322490541 * L_0 = __this->get_list_1();
 		Timer_t3546110984 * L_1 = ___timer0;
 		NullCheck(L_0);
-		int32_t L_2 = VirtFuncInvoker1< int32_t, Il2CppObject * >::Invoke(29 /* System.Int32 System.Collections.SortedList::IndexOfKey(System.Object) */, L_0, L_1);
+		int32_t L_2 = VirtFuncInvoker1< int32_t, Il2CppObject * >::Invoke(31 /* System.Int32 System.Collections.SortedList::IndexOfKey(System.Object) */, L_0, L_1);
 		V_0 = L_2;
 		int32_t L_3 = V_0;
 		if ((((int32_t)L_3) < ((int32_t)0)))
@@ -2236,7 +2556,7 @@ extern "C"  int32_t Scheduler_InternalRemove_m1022594523 (Scheduler_t1843257499 
 		SortedList_t3322490541 * L_4 = __this->get_list_1();
 		int32_t L_5 = V_0;
 		NullCheck(L_4);
-		VirtActionInvoker1< int32_t >::Invoke(28 /* System.Void System.Collections.SortedList::RemoveAt(System.Int32) */, L_4, L_5);
+		VirtActionInvoker1< int32_t >::Invoke(30 /* System.Void System.Collections.SortedList::RemoveAt(System.Int32) */, L_4, L_5);
 	}
 
 IL_0020:
@@ -2310,7 +2630,7 @@ IL_0028:
 		{
 			SortedList_t3322490541 * L_4 = __this->get_list_1();
 			NullCheck(L_4);
-			int32_t L_5 = VirtFuncInvoker0< int32_t >::Invoke(14 /* System.Int32 System.Collections.SortedList::get_Count() */, L_4);
+			int32_t L_5 = VirtFuncInvoker0< int32_t >::Invoke(15 /* System.Int32 System.Collections.SortedList::get_Count() */, L_4);
 			V_4 = L_5;
 			V_3 = 0;
 			goto IL_0116;
@@ -2321,7 +2641,7 @@ IL_003c:
 			SortedList_t3322490541 * L_6 = __this->get_list_1();
 			int32_t L_7 = V_3;
 			NullCheck(L_6);
-			Il2CppObject * L_8 = VirtFuncInvoker1< Il2CppObject *, int32_t >::Invoke(31 /* System.Object System.Collections.SortedList::GetByIndex(System.Int32) */, L_6, L_7);
+			Il2CppObject * L_8 = VirtFuncInvoker1< Il2CppObject *, int32_t >::Invoke(33 /* System.Object System.Collections.SortedList::GetByIndex(System.Int32) */, L_6, L_7);
 			V_5 = ((Timer_t3546110984 *)CastclassSealed(L_8, Timer_t3546110984_il2cpp_TypeInfo_var));
 			Timer_t3546110984 * L_9 = V_5;
 			NullCheck(L_9);
@@ -2343,7 +2663,7 @@ IL_0061:
 			SortedList_t3322490541 * L_12 = __this->get_list_1();
 			int32_t L_13 = V_3;
 			NullCheck(L_12);
-			VirtActionInvoker1< int32_t >::Invoke(28 /* System.Void System.Collections.SortedList::RemoveAt(System.Int32) */, L_12, L_13);
+			VirtActionInvoker1< int32_t >::Invoke(30 /* System.Void System.Collections.SortedList::RemoveAt(System.Int32) */, L_12, L_13);
 			int32_t L_14 = V_4;
 			V_4 = ((int32_t)((int32_t)L_14-(int32_t)1));
 			int32_t L_15 = V_3;
@@ -2446,7 +2766,7 @@ IL_00ee:
 			ArrayList_t2121638921 * L_36 = V_0;
 			Timer_t3546110984 * L_37 = V_5;
 			NullCheck(L_36);
-			VirtFuncInvoker1< int32_t, Il2CppObject * >::Invoke(26 /* System.Int32 System.Collections.ArrayList::Add(System.Object) */, L_36, L_37);
+			VirtFuncInvoker1< int32_t, Il2CppObject * >::Invoke(30 /* System.Int32 System.Collections.ArrayList::Add(System.Object) */, L_36, L_37);
 		}
 
 IL_0112:
@@ -2469,7 +2789,7 @@ IL_011e:
 		{
 			ArrayList_t2121638921 * L_41 = V_0;
 			NullCheck(L_41);
-			int32_t L_42 = VirtFuncInvoker0< int32_t >::Invoke(20 /* System.Int32 System.Collections.ArrayList::get_Count() */, L_41);
+			int32_t L_42 = VirtFuncInvoker0< int32_t >::Invoke(23 /* System.Int32 System.Collections.ArrayList::get_Count() */, L_41);
 			V_4 = L_42;
 			V_3 = 0;
 			goto IL_0147;
@@ -2480,7 +2800,7 @@ IL_012d:
 			ArrayList_t2121638921 * L_43 = V_0;
 			int32_t L_44 = V_3;
 			NullCheck(L_43);
-			Il2CppObject * L_45 = VirtFuncInvoker1< Il2CppObject *, int32_t >::Invoke(18 /* System.Object System.Collections.ArrayList::get_Item(System.Int32) */, L_43, L_44);
+			Il2CppObject * L_45 = VirtFuncInvoker1< Il2CppObject *, int32_t >::Invoke(21 /* System.Object System.Collections.ArrayList::get_Item(System.Int32) */, L_43, L_44);
 			V_9 = ((Timer_t3546110984 *)CastclassSealed(L_45, Timer_t3546110984_il2cpp_TypeInfo_var));
 			Timer_t3546110984 * L_46 = V_9;
 			Scheduler_Add_m1591289733(__this, L_46, /*hidden argument*/NULL);
@@ -2502,16 +2822,16 @@ IL_014f:
 		{
 			ArrayList_t2121638921 * L_50 = V_0;
 			NullCheck(L_50);
-			VirtActionInvoker0::Invoke(27 /* System.Void System.Collections.ArrayList::Clear() */, L_50);
+			VirtActionInvoker0::Invoke(31 /* System.Void System.Collections.ArrayList::Clear() */, L_50);
 			ArrayList_t2121638921 * L_51 = V_0;
 			Scheduler_ShrinkIfNeeded_m4137944589(__this, L_51, ((int32_t)512), /*hidden argument*/NULL);
 			SortedList_t3322490541 * L_52 = __this->get_list_1();
 			NullCheck(L_52);
-			int32_t L_53 = VirtFuncInvoker0< int32_t >::Invoke(20 /* System.Int32 System.Collections.SortedList::get_Capacity() */, L_52);
+			int32_t L_53 = VirtFuncInvoker0< int32_t >::Invoke(22 /* System.Int32 System.Collections.SortedList::get_Capacity() */, L_52);
 			V_10 = L_53;
 			SortedList_t3322490541 * L_54 = __this->get_list_1();
 			NullCheck(L_54);
-			int32_t L_55 = VirtFuncInvoker0< int32_t >::Invoke(14 /* System.Int32 System.Collections.SortedList::get_Count() */, L_54);
+			int32_t L_55 = VirtFuncInvoker0< int32_t >::Invoke(15 /* System.Int32 System.Collections.SortedList::get_Count() */, L_54);
 			V_4 = L_55;
 			int32_t L_56 = V_10;
 			if ((((int32_t)L_56) <= ((int32_t)((int32_t)1024))))
@@ -2544,7 +2864,7 @@ IL_019a:
 			SortedList_t3322490541 * L_60 = __this->get_list_1();
 			int32_t L_61 = V_4;
 			NullCheck(L_60);
-			VirtActionInvoker1< int32_t >::Invoke(21 /* System.Void System.Collections.SortedList::set_Capacity(System.Int32) */, L_60, ((int32_t)((int32_t)L_61*(int32_t)2)));
+			VirtActionInvoker1< int32_t >::Invoke(23 /* System.Void System.Collections.SortedList::set_Capacity(System.Int32) */, L_60, ((int32_t)((int32_t)L_61*(int32_t)2)));
 		}
 
 IL_01a9:
@@ -2552,7 +2872,7 @@ IL_01a9:
 			V_11 = ((int64_t)std::numeric_limits<int64_t>::max());
 			SortedList_t3322490541 * L_62 = __this->get_list_1();
 			NullCheck(L_62);
-			int32_t L_63 = VirtFuncInvoker0< int32_t >::Invoke(14 /* System.Int32 System.Collections.SortedList::get_Count() */, L_62);
+			int32_t L_63 = VirtFuncInvoker0< int32_t >::Invoke(15 /* System.Int32 System.Collections.SortedList::get_Count() */, L_62);
 			if ((((int32_t)L_63) <= ((int32_t)0)))
 			{
 				goto IL_01dd;
@@ -2563,7 +2883,7 @@ IL_01c5:
 		{
 			SortedList_t3322490541 * L_64 = __this->get_list_1();
 			NullCheck(L_64);
-			Il2CppObject * L_65 = VirtFuncInvoker1< Il2CppObject *, int32_t >::Invoke(31 /* System.Object System.Collections.SortedList::GetByIndex(System.Int32) */, L_64, 0);
+			Il2CppObject * L_65 = VirtFuncInvoker1< Il2CppObject *, int32_t >::Invoke(33 /* System.Object System.Collections.SortedList::GetByIndex(System.Int32) */, L_64, 0);
 			NullCheck(((Timer_t3546110984 *)CastclassSealed(L_65, Timer_t3546110984_il2cpp_TypeInfo_var)));
 			int64_t L_66 = ((Timer_t3546110984 *)CastclassSealed(L_65, Timer_t3546110984_il2cpp_TypeInfo_var))->get_next_run_6();
 			V_11 = L_66;
@@ -2637,11 +2957,11 @@ extern "C"  void Scheduler_ShrinkIfNeeded_m4137944589 (Scheduler_t1843257499 * _
 	{
 		ArrayList_t2121638921 * L_0 = ___list0;
 		NullCheck(L_0);
-		int32_t L_1 = VirtFuncInvoker0< int32_t >::Invoke(21 /* System.Int32 System.Collections.ArrayList::get_Capacity() */, L_0);
+		int32_t L_1 = VirtFuncInvoker0< int32_t >::Invoke(24 /* System.Int32 System.Collections.ArrayList::get_Capacity() */, L_0);
 		V_0 = L_1;
 		ArrayList_t2121638921 * L_2 = ___list0;
 		NullCheck(L_2);
-		int32_t L_3 = VirtFuncInvoker0< int32_t >::Invoke(20 /* System.Int32 System.Collections.ArrayList::get_Count() */, L_2);
+		int32_t L_3 = VirtFuncInvoker0< int32_t >::Invoke(23 /* System.Int32 System.Collections.ArrayList::get_Count() */, L_2);
 		V_1 = L_3;
 		int32_t L_4 = V_0;
 		int32_t L_5 = ___initial1;
@@ -2669,7 +2989,7 @@ extern "C"  void Scheduler_ShrinkIfNeeded_m4137944589 (Scheduler_t1843257499 * _
 		ArrayList_t2121638921 * L_9 = ___list0;
 		int32_t L_10 = V_1;
 		NullCheck(L_9);
-		VirtActionInvoker1< int32_t >::Invoke(22 /* System.Void System.Collections.ArrayList::set_Capacity(System.Int32) */, L_9, ((int32_t)((int32_t)L_10*(int32_t)2)));
+		VirtActionInvoker1< int32_t >::Invoke(25 /* System.Void System.Collections.ArrayList::set_Capacity(System.Int32) */, L_9, ((int32_t)((int32_t)L_10*(int32_t)2)));
 	}
 
 IL_002e:

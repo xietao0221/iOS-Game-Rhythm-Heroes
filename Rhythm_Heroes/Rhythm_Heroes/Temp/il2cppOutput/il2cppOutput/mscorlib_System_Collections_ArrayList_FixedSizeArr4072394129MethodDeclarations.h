@@ -35,6 +35,8 @@ extern "C"  String_t* FixedSizeArrayListWrapper_get_ErrorMessage_m2762836670 (Fi
 extern "C"  int32_t FixedSizeArrayListWrapper_get_Capacity_m3089739858 (FixedSizeArrayListWrapper_t4072394129 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void System.Collections.ArrayList/FixedSizeArrayListWrapper::set_Capacity(System.Int32)
 extern "C"  void FixedSizeArrayListWrapper_set_Capacity_m383644411 (FixedSizeArrayListWrapper_t4072394129 * __this, int32_t ___value0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Boolean System.Collections.ArrayList/FixedSizeArrayListWrapper::get_IsFixedSize()
+extern "C"  bool FixedSizeArrayListWrapper_get_IsFixedSize_m1343011119 (FixedSizeArrayListWrapper_t4072394129 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Int32 System.Collections.ArrayList/FixedSizeArrayListWrapper::Add(System.Object)
 extern "C"  int32_t FixedSizeArrayListWrapper_Add_m1946065152 (FixedSizeArrayListWrapper_t4072394129 * __this, Il2CppObject * ___value0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void System.Collections.ArrayList/FixedSizeArrayListWrapper::AddRange(System.Collections.ICollection)

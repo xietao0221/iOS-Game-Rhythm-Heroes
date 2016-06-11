@@ -27,6 +27,7 @@ struct String_t;
 #include "mscorlib_System_Decimal1688557254.h"
 #include "mscorlib_System_Object837106420.h"
 #include "mscorlib_System_String968488902.h"
+#include "mscorlib_System_TypeCode2164429820.h"
 
 // System.Void System.Boolean::.cctor()
 extern "C"  void Boolean__cctor_m1619527460 (Il2CppObject * __this /* static, unused */, const MethodInfo* method) IL2CPP_METHOD_ATTR;
@@ -74,5 +75,7 @@ extern "C"  int32_t Boolean_GetHashCode_m841540860 (bool* __this, const MethodIn
 extern "C"  bool Boolean_Parse_m3007515274 (Il2CppObject * __this /* static, unused */, String_t* ___value0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.String System.Boolean::ToString()
 extern "C"  String_t* Boolean_ToString_m2512358154 (bool* __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.TypeCode System.Boolean::GetTypeCode()
+extern "C"  int32_t Boolean_GetTypeCode_m1624087223 (bool* __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.String System.Boolean::ToString(System.IFormatProvider)
 extern "C"  String_t* Boolean_ToString_m2019601528 (bool* __this, Il2CppObject * ___provider0, const MethodInfo* method) IL2CPP_METHOD_ATTR;

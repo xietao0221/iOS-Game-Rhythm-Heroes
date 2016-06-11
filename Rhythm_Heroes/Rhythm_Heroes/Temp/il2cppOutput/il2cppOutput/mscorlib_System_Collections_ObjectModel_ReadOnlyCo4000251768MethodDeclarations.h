@@ -85,9 +85,18 @@ extern "C"  void ReadOnlyCollection_1_System_Collections_IList_Remove_m249853976
 // System.Void System.Collections.ObjectModel.ReadOnlyCollection`1<System.Object>::System.Collections.IList.RemoveAt(System.Int32)
 extern "C"  void ReadOnlyCollection_1_System_Collections_IList_RemoveAt_m1730676936_gshared (ReadOnlyCollection_1_t4000251768 * __this, int32_t ___index0, const MethodInfo* method);
 #define ReadOnlyCollection_1_System_Collections_IList_RemoveAt_m1730676936(__this, ___index0, method) ((  void (*) (ReadOnlyCollection_1_t4000251768 *, int32_t, const MethodInfo*))ReadOnlyCollection_1_System_Collections_IList_RemoveAt_m1730676936_gshared)(__this, ___index0, method)
+// System.Boolean System.Collections.ObjectModel.ReadOnlyCollection`1<System.Object>::System.Collections.ICollection.get_IsSynchronized()
+extern "C"  bool ReadOnlyCollection_1_System_Collections_ICollection_get_IsSynchronized_m1373829189_gshared (ReadOnlyCollection_1_t4000251768 * __this, const MethodInfo* method);
+#define ReadOnlyCollection_1_System_Collections_ICollection_get_IsSynchronized_m1373829189(__this, method) ((  bool (*) (ReadOnlyCollection_1_t4000251768 *, const MethodInfo*))ReadOnlyCollection_1_System_Collections_ICollection_get_IsSynchronized_m1373829189_gshared)(__this, method)
 // System.Object System.Collections.ObjectModel.ReadOnlyCollection`1<System.Object>::System.Collections.ICollection.get_SyncRoot()
 extern "C"  Il2CppObject * ReadOnlyCollection_1_System_Collections_ICollection_get_SyncRoot_m918746289_gshared (ReadOnlyCollection_1_t4000251768 * __this, const MethodInfo* method);
 #define ReadOnlyCollection_1_System_Collections_ICollection_get_SyncRoot_m918746289(__this, method) ((  Il2CppObject * (*) (ReadOnlyCollection_1_t4000251768 *, const MethodInfo*))ReadOnlyCollection_1_System_Collections_ICollection_get_SyncRoot_m918746289_gshared)(__this, method)
+// System.Boolean System.Collections.ObjectModel.ReadOnlyCollection`1<System.Object>::System.Collections.IList.get_IsFixedSize()
+extern "C"  bool ReadOnlyCollection_1_System_Collections_IList_get_IsFixedSize_m932754534_gshared (ReadOnlyCollection_1_t4000251768 * __this, const MethodInfo* method);
+#define ReadOnlyCollection_1_System_Collections_IList_get_IsFixedSize_m932754534(__this, method) ((  bool (*) (ReadOnlyCollection_1_t4000251768 *, const MethodInfo*))ReadOnlyCollection_1_System_Collections_IList_get_IsFixedSize_m932754534_gshared)(__this, method)
+// System.Boolean System.Collections.ObjectModel.ReadOnlyCollection`1<System.Object>::System.Collections.IList.get_IsReadOnly()
+extern "C"  bool ReadOnlyCollection_1_System_Collections_IList_get_IsReadOnly_m2423760339_gshared (ReadOnlyCollection_1_t4000251768 * __this, const MethodInfo* method);
+#define ReadOnlyCollection_1_System_Collections_IList_get_IsReadOnly_m2423760339(__this, method) ((  bool (*) (ReadOnlyCollection_1_t4000251768 *, const MethodInfo*))ReadOnlyCollection_1_System_Collections_IList_get_IsReadOnly_m2423760339_gshared)(__this, method)
 // System.Object System.Collections.ObjectModel.ReadOnlyCollection`1<System.Object>::System.Collections.IList.get_Item(System.Int32)
 extern "C"  Il2CppObject * ReadOnlyCollection_1_System_Collections_IList_get_Item_m3512499704_gshared (ReadOnlyCollection_1_t4000251768 * __this, int32_t ___index0, const MethodInfo* method);
 #define ReadOnlyCollection_1_System_Collections_IList_get_Item_m3512499704(__this, ___index0, method) ((  Il2CppObject * (*) (ReadOnlyCollection_1_t4000251768 *, int32_t, const MethodInfo*))ReadOnlyCollection_1_System_Collections_IList_get_Item_m3512499704_gshared)(__this, ___index0, method)

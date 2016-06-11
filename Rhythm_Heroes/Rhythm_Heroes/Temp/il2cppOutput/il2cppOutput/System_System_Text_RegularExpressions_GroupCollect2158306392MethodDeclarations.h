@@ -31,6 +31,8 @@ struct IEnumerator_t287207039;
 extern "C"  void GroupCollection__ctor_m1062211994 (GroupCollection_t2158306392 * __this, int32_t ___n0, int32_t ___gap1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Int32 System.Text.RegularExpressions.GroupCollection::get_Count()
 extern "C"  int32_t GroupCollection_get_Count_m1046622944 (GroupCollection_t2158306392 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Boolean System.Text.RegularExpressions.GroupCollection::get_IsSynchronized()
+extern "C"  bool GroupCollection_get_IsSynchronized_m3587250101 (GroupCollection_t2158306392 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Text.RegularExpressions.Group System.Text.RegularExpressions.GroupCollection::get_Item(System.Int32)
 extern "C"  Group_t3792618586 * GroupCollection_get_Item_m3306908978 (GroupCollection_t2158306392 * __this, int32_t ___i0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void System.Text.RegularExpressions.GroupCollection::SetValue(System.Text.RegularExpressions.Group,System.Int32)

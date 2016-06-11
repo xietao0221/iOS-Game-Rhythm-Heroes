@@ -23,7 +23,7 @@ struct Dictionary_2_t3198324071;
 #endif
 
 // System.Collections.Generic.Dictionary`2/Enumerator<System.Object,System.Boolean>
-struct  Enumerator_t2965352012 
+struct  Enumerator_t2965352013 
 {
 public:
 	// System.Collections.Generic.Dictionary`2<TKey,TValue> System.Collections.Generic.Dictionary`2/Enumerator::dictionary
@@ -36,7 +36,7 @@ public:
 	KeyValuePair_2_t2686855369  ___current_3;
 
 public:
-	inline static int32_t get_offset_of_dictionary_0() { return static_cast<int32_t>(offsetof(Enumerator_t2965352012, ___dictionary_0)); }
+	inline static int32_t get_offset_of_dictionary_0() { return static_cast<int32_t>(offsetof(Enumerator_t2965352013, ___dictionary_0)); }
 	inline Dictionary_2_t3198324071 * get_dictionary_0() const { return ___dictionary_0; }
 	inline Dictionary_2_t3198324071 ** get_address_of_dictionary_0() { return &___dictionary_0; }
 	inline void set_dictionary_0(Dictionary_2_t3198324071 * value)
@@ -45,7 +45,7 @@ public:
 		Il2CppCodeGenWriteBarrier(&___dictionary_0, value);
 	}
 
-	inline static int32_t get_offset_of_next_1() { return static_cast<int32_t>(offsetof(Enumerator_t2965352012, ___next_1)); }
+	inline static int32_t get_offset_of_next_1() { return static_cast<int32_t>(offsetof(Enumerator_t2965352013, ___next_1)); }
 	inline int32_t get_next_1() const { return ___next_1; }
 	inline int32_t* get_address_of_next_1() { return &___next_1; }
 	inline void set_next_1(int32_t value)
@@ -53,7 +53,7 @@ public:
 		___next_1 = value;
 	}
 
-	inline static int32_t get_offset_of_stamp_2() { return static_cast<int32_t>(offsetof(Enumerator_t2965352012, ___stamp_2)); }
+	inline static int32_t get_offset_of_stamp_2() { return static_cast<int32_t>(offsetof(Enumerator_t2965352013, ___stamp_2)); }
 	inline int32_t get_stamp_2() const { return ___stamp_2; }
 	inline int32_t* get_address_of_stamp_2() { return &___stamp_2; }
 	inline void set_stamp_2(int32_t value)
@@ -61,7 +61,7 @@ public:
 		___stamp_2 = value;
 	}
 
-	inline static int32_t get_offset_of_current_3() { return static_cast<int32_t>(offsetof(Enumerator_t2965352012, ___current_3)); }
+	inline static int32_t get_offset_of_current_3() { return static_cast<int32_t>(offsetof(Enumerator_t2965352013, ___current_3)); }
 	inline KeyValuePair_2_t2686855369  get_current_3() const { return ___current_3; }
 	inline KeyValuePair_2_t2686855369 * get_address_of_current_3() { return &___current_3; }
 	inline void set_current_3(KeyValuePair_2_t2686855369  value)

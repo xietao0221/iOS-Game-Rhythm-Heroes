@@ -26,16 +26,16 @@ struct  SynchronizedArrayListWrapper_t139183952  : public ArrayListWrapper_t3057
 {
 public:
 	// System.Object System.Collections.ArrayList/SynchronizedArrayListWrapper::m_SyncRoot
-	Il2CppObject * ___m_SyncRoot_5;
+	Il2CppObject * ___m_SyncRoot_6;
 
 public:
-	inline static int32_t get_offset_of_m_SyncRoot_5() { return static_cast<int32_t>(offsetof(SynchronizedArrayListWrapper_t139183952, ___m_SyncRoot_5)); }
-	inline Il2CppObject * get_m_SyncRoot_5() const { return ___m_SyncRoot_5; }
-	inline Il2CppObject ** get_address_of_m_SyncRoot_5() { return &___m_SyncRoot_5; }
-	inline void set_m_SyncRoot_5(Il2CppObject * value)
+	inline static int32_t get_offset_of_m_SyncRoot_6() { return static_cast<int32_t>(offsetof(SynchronizedArrayListWrapper_t139183952, ___m_SyncRoot_6)); }
+	inline Il2CppObject * get_m_SyncRoot_6() const { return ___m_SyncRoot_6; }
+	inline Il2CppObject ** get_address_of_m_SyncRoot_6() { return &___m_SyncRoot_6; }
+	inline void set_m_SyncRoot_6(Il2CppObject * value)
 	{
-		___m_SyncRoot_5 = value;
-		Il2CppCodeGenWriteBarrier(&___m_SyncRoot_5, value);
+		___m_SyncRoot_6 = value;
+		Il2CppCodeGenWriteBarrier(&___m_SyncRoot_6, value);
 	}
 };
 

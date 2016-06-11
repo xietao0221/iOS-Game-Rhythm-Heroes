@@ -87,6 +87,10 @@ extern "C"  StringBuilder_t3822575854 * StringBuilder_Append_m1038583841 (String
 extern "C"  StringBuilder_t3822575854 * StringBuilder_Append_m2623154804 (StringBuilder_t3822575854 * __this, CharU5BU5D_t3416858730* ___value0, int32_t ___startIndex1, int32_t ___charCount2, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Text.StringBuilder System.Text.StringBuilder::Append(System.String,System.Int32,System.Int32)
 extern "C"  StringBuilder_t3822575854 * StringBuilder_Append_m2996071419 (StringBuilder_t3822575854 * __this, String_t* ___value0, int32_t ___startIndex1, int32_t ___count2, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Text.StringBuilder System.Text.StringBuilder::AppendLine()
+extern "C"  StringBuilder_t3822575854 * StringBuilder_AppendLine_m568622107 (StringBuilder_t3822575854 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Text.StringBuilder System.Text.StringBuilder::AppendLine(System.String)
+extern "C"  StringBuilder_t3822575854 * StringBuilder_AppendLine_m655025863 (StringBuilder_t3822575854 * __this, String_t* ___value0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Text.StringBuilder System.Text.StringBuilder::AppendFormat(System.String,System.Object[])
 extern "C"  StringBuilder_t3822575854 * StringBuilder_AppendFormat_m279545936 (StringBuilder_t3822575854 * __this, String_t* ___format0, ObjectU5BU5D_t11523773* ___args1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Text.StringBuilder System.Text.StringBuilder::AppendFormat(System.IFormatProvider,System.String,System.Object[])

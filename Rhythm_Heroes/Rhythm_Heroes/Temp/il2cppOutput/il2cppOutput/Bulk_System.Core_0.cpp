@@ -25,6 +25,8 @@ struct ByteU5BU5D_t58506160;
 struct SymmetricTransform_t3854241867;
 // System.Security.Cryptography.SymmetricAlgorithm
 struct SymmetricAlgorithm_t839208017;
+// System.Object
+struct Il2CppObject;
 // System.Runtime.CompilerServices.ExtensionAttribute
 struct ExtensionAttribute_t795512515;
 // System.Security.Cryptography.Aes
@@ -90,6 +92,10 @@ struct UInt32U5BU5D_t2133601851;
 #include "mscorlib_System_ObjectDisposedException973246880MethodDeclarations.h"
 #include "mscorlib_System_ObjectDisposedException973246880.h"
 #include "mscorlib_System_Security_Cryptography_PaddingMode1724215917.h"
+#include "System_Core_System_Linq_Check3277941805.h"
+#include "System_Core_System_Linq_Check3277941805MethodDeclarations.h"
+#include "System_Core_System_Linq_Enumerable4285654829.h"
+#include "System_Core_System_Linq_Enumerable4285654829MethodDeclarations.h"
 #include "System_Core_System_Runtime_CompilerServices_Extensi795512515.h"
 #include "System_Core_System_Runtime_CompilerServices_Extensi795512515MethodDeclarations.h"
 #include "mscorlib_System_Attribute498693649MethodDeclarations.h"
@@ -2236,6 +2242,51 @@ IL_0034:
 		int32_t L_12 = ___inputCount2;
 		ByteU5BU5D_t58506160* L_13 = SymmetricTransform_FinalDecrypt_m3742401599(__this, L_10, L_11, L_12, /*hidden argument*/NULL);
 		return L_13;
+	}
+}
+// System.Void System.Linq.Check::SourceAndPredicate(System.Object,System.Object)
+extern Il2CppClass* ArgumentNullException_t3214793280_il2cpp_TypeInfo_var;
+extern Il2CppCodeGenString* _stringLiteral3398461467;
+extern Il2CppCodeGenString* _stringLiteral2946935223;
+extern const uint32_t Check_SourceAndPredicate_m2252398949_MetadataUsageId;
+extern "C"  void Check_SourceAndPredicate_m2252398949 (Il2CppObject * __this /* static, unused */, Il2CppObject * ___source0, Il2CppObject * ___predicate1, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (Check_SourceAndPredicate_m2252398949_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	{
+		Il2CppObject * L_0 = ___source0;
+		if (L_0)
+		{
+			goto IL_0011;
+		}
+	}
+	{
+		ArgumentNullException_t3214793280 * L_1 = (ArgumentNullException_t3214793280 *)il2cpp_codegen_object_new(ArgumentNullException_t3214793280_il2cpp_TypeInfo_var);
+		ArgumentNullException__ctor_m135444188(L_1, _stringLiteral3398461467, /*hidden argument*/NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_1);
+	}
+
+IL_0011:
+	{
+		Il2CppObject * L_2 = ___predicate1;
+		if (L_2)
+		{
+			goto IL_0022;
+		}
+	}
+	{
+		ArgumentNullException_t3214793280 * L_3 = (ArgumentNullException_t3214793280 *)il2cpp_codegen_object_new(ArgumentNullException_t3214793280_il2cpp_TypeInfo_var);
+		ArgumentNullException__ctor_m135444188(L_3, _stringLiteral2946935223, /*hidden argument*/NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_3);
+	}
+
+IL_0022:
+	{
+		return;
 	}
 }
 // System.Void System.Runtime.CompilerServices.ExtensionAttribute::.ctor()

@@ -33,6 +33,8 @@ struct ICollection_t3761522009;
 extern "C"  void MatchCollection__ctor_m1982569902 (MatchCollection_t318449694 * __this, Match_t3797657504 * ___start0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Int32 System.Text.RegularExpressions.MatchCollection::get_Count()
 extern "C"  int32_t MatchCollection_get_Count_m4071817434 (MatchCollection_t318449694 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Boolean System.Text.RegularExpressions.MatchCollection::get_IsSynchronized()
+extern "C"  bool MatchCollection_get_IsSynchronized_m1523540731 (MatchCollection_t318449694 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Text.RegularExpressions.Match System.Text.RegularExpressions.MatchCollection::get_Item(System.Int32)
 extern "C"  Match_t3797657504 * MatchCollection_get_Item_m2495033586 (MatchCollection_t318449694 * __this, int32_t ___i0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Object System.Text.RegularExpressions.MatchCollection::get_SyncRoot()

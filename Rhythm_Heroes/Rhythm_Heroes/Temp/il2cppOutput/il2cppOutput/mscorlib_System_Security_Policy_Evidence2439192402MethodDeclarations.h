@@ -31,6 +31,8 @@ struct IEnumerator_t287207039;
 extern "C"  void Evidence__ctor_m2923485872 (Evidence_t2439192402 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Int32 System.Security.Policy.Evidence::get_Count()
 extern "C"  int32_t Evidence_get_Count_m2256383184 (Evidence_t2439192402 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Boolean System.Security.Policy.Evidence::get_IsSynchronized()
+extern "C"  bool Evidence_get_IsSynchronized_m1680953145 (Evidence_t2439192402 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Object System.Security.Policy.Evidence::get_SyncRoot()
 extern "C"  Il2CppObject * Evidence_get_SyncRoot_m397267429 (Evidence_t2439192402 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Collections.ArrayList System.Security.Policy.Evidence::get_HostEvidenceList()

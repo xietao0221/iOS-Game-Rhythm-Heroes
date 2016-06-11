@@ -30,6 +30,8 @@ struct IEnumerator_t287207039;
 struct IEnumerator_1_t501095600;
 // System.Collections.IDictionaryEnumerator
 struct IDictionaryEnumerator_t1541724277;
+// System.Collections.Generic.Dictionary`2/ValueCollection<System.Object,System.Object>
+struct ValueCollection_t1451594948;
 
 #include "codegen/il2cpp-codegen.h"
 #include "mscorlib_System_Runtime_Serialization_Serializatio2995724695.h"
@@ -64,6 +66,9 @@ extern "C"  void Dictionary_2_System_Collections_IDictionary_Add_m781609539_gsha
 // System.Void System.Collections.Generic.Dictionary`2<System.Object,System.Object>::System.Collections.IDictionary.Remove(System.Object)
 extern "C"  void Dictionary_2_System_Collections_IDictionary_Remove_m2215006604_gshared (Dictionary_2_t3824425150 * __this, Il2CppObject * ___key0, const MethodInfo* method);
 #define Dictionary_2_System_Collections_IDictionary_Remove_m2215006604(__this, ___key0, method) ((  void (*) (Dictionary_2_t3824425150 *, Il2CppObject *, const MethodInfo*))Dictionary_2_System_Collections_IDictionary_Remove_m2215006604_gshared)(__this, ___key0, method)
+// System.Boolean System.Collections.Generic.Dictionary`2<System.Object,System.Object>::System.Collections.ICollection.get_IsSynchronized()
+extern "C"  bool Dictionary_2_System_Collections_ICollection_get_IsSynchronized_m1826238689_gshared (Dictionary_2_t3824425150 * __this, const MethodInfo* method);
+#define Dictionary_2_System_Collections_ICollection_get_IsSynchronized_m1826238689(__this, method) ((  bool (*) (Dictionary_2_t3824425150 *, const MethodInfo*))Dictionary_2_System_Collections_ICollection_get_IsSynchronized_m1826238689_gshared)(__this, method)
 // System.Object System.Collections.Generic.Dictionary`2<System.Object,System.Object>::System.Collections.ICollection.get_SyncRoot()
 extern "C"  Il2CppObject * Dictionary_2_System_Collections_ICollection_get_SyncRoot_m2075478797_gshared (Dictionary_2_t3824425150 * __this, const MethodInfo* method);
 #define Dictionary_2_System_Collections_ICollection_get_SyncRoot_m2075478797(__this, method) ((  Il2CppObject * (*) (Dictionary_2_t3824425150 *, const MethodInfo*))Dictionary_2_System_Collections_ICollection_get_SyncRoot_m2075478797_gshared)(__this, method)
@@ -115,6 +120,9 @@ extern "C"  void Dictionary_2_CopyToCheck_m2536521436_gshared (Dictionary_2_t382
 // System.Collections.Generic.KeyValuePair`2<TKey,TValue> System.Collections.Generic.Dictionary`2<System.Object,System.Object>::make_pair(TKey,TValue)
 extern "C"  KeyValuePair_2_t3312956448  Dictionary_2_make_pair_m2083407400_gshared (Il2CppObject * __this /* static, unused */, Il2CppObject * ___key0, Il2CppObject * ___value1, const MethodInfo* method);
 #define Dictionary_2_make_pair_m2083407400(__this /* static, unused */, ___key0, ___value1, method) ((  KeyValuePair_2_t3312956448  (*) (Il2CppObject * /* static, unused */, Il2CppObject *, Il2CppObject *, const MethodInfo*))Dictionary_2_make_pair_m2083407400_gshared)(__this /* static, unused */, ___key0, ___value1, method)
+// TValue System.Collections.Generic.Dictionary`2<System.Object,System.Object>::pick_value(TKey,TValue)
+extern "C"  Il2CppObject * Dictionary_2_pick_value_m3477594126_gshared (Il2CppObject * __this /* static, unused */, Il2CppObject * ___key0, Il2CppObject * ___value1, const MethodInfo* method);
+#define Dictionary_2_pick_value_m3477594126(__this /* static, unused */, ___key0, ___value1, method) ((  Il2CppObject * (*) (Il2CppObject * /* static, unused */, Il2CppObject *, Il2CppObject *, const MethodInfo*))Dictionary_2_pick_value_m3477594126_gshared)(__this /* static, unused */, ___key0, ___value1, method)
 // System.Void System.Collections.Generic.Dictionary`2<System.Object,System.Object>::CopyTo(System.Collections.Generic.KeyValuePair`2<TKey,TValue>[],System.Int32)
 extern "C"  void Dictionary_2_CopyTo_m3401241971_gshared (Dictionary_2_t3824425150 * __this, KeyValuePair_2U5BU5D_t346249057* ___array0, int32_t ___index1, const MethodInfo* method);
 #define Dictionary_2_CopyTo_m3401241971(__this, ___array0, ___index1, method) ((  void (*) (Dictionary_2_t3824425150 *, KeyValuePair_2U5BU5D_t346249057*, int32_t, const MethodInfo*))Dictionary_2_CopyTo_m3401241971_gshared)(__this, ___array0, ___index1, method)
@@ -130,6 +138,9 @@ extern "C"  void Dictionary_2_Clear_m1200771690_gshared (Dictionary_2_t382442515
 // System.Boolean System.Collections.Generic.Dictionary`2<System.Object,System.Object>::ContainsKey(TKey)
 extern "C"  bool Dictionary_2_ContainsKey_m3006991056_gshared (Dictionary_2_t3824425150 * __this, Il2CppObject * ___key0, const MethodInfo* method);
 #define Dictionary_2_ContainsKey_m3006991056(__this, ___key0, method) ((  bool (*) (Dictionary_2_t3824425150 *, Il2CppObject *, const MethodInfo*))Dictionary_2_ContainsKey_m3006991056_gshared)(__this, ___key0, method)
+// System.Boolean System.Collections.Generic.Dictionary`2<System.Object,System.Object>::ContainsValue(TValue)
+extern "C"  bool Dictionary_2_ContainsValue_m712275664_gshared (Dictionary_2_t3824425150 * __this, Il2CppObject * ___value0, const MethodInfo* method);
+#define Dictionary_2_ContainsValue_m712275664(__this, ___value0, method) ((  bool (*) (Dictionary_2_t3824425150 *, Il2CppObject *, const MethodInfo*))Dictionary_2_ContainsValue_m712275664_gshared)(__this, ___value0, method)
 // System.Void System.Collections.Generic.Dictionary`2<System.Object,System.Object>::GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
 extern "C"  void Dictionary_2_GetObjectData_m1544184413_gshared (Dictionary_2_t3824425150 * __this, SerializationInfo_t2995724695 * ___info0, StreamingContext_t986364934  ___context1, const MethodInfo* method);
 #define Dictionary_2_GetObjectData_m1544184413(__this, ___info0, ___context1, method) ((  void (*) (Dictionary_2_t3824425150 *, SerializationInfo_t2995724695 *, StreamingContext_t986364934 , const MethodInfo*))Dictionary_2_GetObjectData_m1544184413_gshared)(__this, ___info0, ___context1, method)
@@ -142,6 +153,9 @@ extern "C"  bool Dictionary_2_Remove_m2155719712_gshared (Dictionary_2_t38244251
 // System.Boolean System.Collections.Generic.Dictionary`2<System.Object,System.Object>::TryGetValue(TKey,TValue&)
 extern "C"  bool Dictionary_2_TryGetValue_m2075628329_gshared (Dictionary_2_t3824425150 * __this, Il2CppObject * ___key0, Il2CppObject ** ___value1, const MethodInfo* method);
 #define Dictionary_2_TryGetValue_m2075628329(__this, ___key0, ___value1, method) ((  bool (*) (Dictionary_2_t3824425150 *, Il2CppObject *, Il2CppObject **, const MethodInfo*))Dictionary_2_TryGetValue_m2075628329_gshared)(__this, ___key0, ___value1, method)
+// System.Collections.Generic.Dictionary`2/ValueCollection<TKey,TValue> System.Collections.Generic.Dictionary`2<System.Object,System.Object>::get_Values()
+extern "C"  ValueCollection_t1451594948 * Dictionary_2_get_Values_m2070602102_gshared (Dictionary_2_t3824425150 * __this, const MethodInfo* method);
+#define Dictionary_2_get_Values_m2070602102(__this, method) ((  ValueCollection_t1451594948 * (*) (Dictionary_2_t3824425150 *, const MethodInfo*))Dictionary_2_get_Values_m2070602102_gshared)(__this, method)
 // TKey System.Collections.Generic.Dictionary`2<System.Object,System.Object>::ToTKey(System.Object)
 extern "C"  Il2CppObject * Dictionary_2_ToTKey_m3358952489_gshared (Dictionary_2_t3824425150 * __this, Il2CppObject * ___key0, const MethodInfo* method);
 #define Dictionary_2_ToTKey_m3358952489(__this, ___key0, method) ((  Il2CppObject * (*) (Dictionary_2_t3824425150 *, Il2CppObject *, const MethodInfo*))Dictionary_2_ToTKey_m3358952489_gshared)(__this, ___key0, method)
@@ -152,8 +166,8 @@ extern "C"  Il2CppObject * Dictionary_2_ToTValue_m1789908265_gshared (Dictionary
 extern "C"  bool Dictionary_2_ContainsKeyValuePair_m3073235459_gshared (Dictionary_2_t3824425150 * __this, KeyValuePair_2_t3312956448  ___pair0, const MethodInfo* method);
 #define Dictionary_2_ContainsKeyValuePair_m3073235459(__this, ___pair0, method) ((  bool (*) (Dictionary_2_t3824425150 *, KeyValuePair_2_t3312956448 , const MethodInfo*))Dictionary_2_ContainsKeyValuePair_m3073235459_gshared)(__this, ___pair0, method)
 // System.Collections.Generic.Dictionary`2/Enumerator<TKey,TValue> System.Collections.Generic.Dictionary`2<System.Object,System.Object>::GetEnumerator()
-extern "C"  Enumerator_t3591453091  Dictionary_2_GetEnumerator_m65675076_gshared (Dictionary_2_t3824425150 * __this, const MethodInfo* method);
-#define Dictionary_2_GetEnumerator_m65675076(__this, method) ((  Enumerator_t3591453091  (*) (Dictionary_2_t3824425150 *, const MethodInfo*))Dictionary_2_GetEnumerator_m65675076_gshared)(__this, method)
+extern "C"  Enumerator_t3591453092  Dictionary_2_GetEnumerator_m65675076_gshared (Dictionary_2_t3824425150 * __this, const MethodInfo* method);
+#define Dictionary_2_GetEnumerator_m65675076(__this, method) ((  Enumerator_t3591453092  (*) (Dictionary_2_t3824425150 *, const MethodInfo*))Dictionary_2_GetEnumerator_m65675076_gshared)(__this, method)
 // System.Collections.DictionaryEntry System.Collections.Generic.Dictionary`2<System.Object,System.Object>::<CopyTo>m__0(TKey,TValue)
 extern "C"  DictionaryEntry_t130027246  Dictionary_2_U3CCopyToU3Em__0_m3818730131_gshared (Il2CppObject * __this /* static, unused */, Il2CppObject * ___key0, Il2CppObject * ___value1, const MethodInfo* method);
 #define Dictionary_2_U3CCopyToU3Em__0_m3818730131(__this /* static, unused */, ___key0, ___value1, method) ((  DictionaryEntry_t130027246  (*) (Il2CppObject * /* static, unused */, Il2CppObject *, Il2CppObject *, const MethodInfo*))Dictionary_2_U3CCopyToU3Em__0_m3818730131_gshared)(__this /* static, unused */, ___key0, ___value1, method)

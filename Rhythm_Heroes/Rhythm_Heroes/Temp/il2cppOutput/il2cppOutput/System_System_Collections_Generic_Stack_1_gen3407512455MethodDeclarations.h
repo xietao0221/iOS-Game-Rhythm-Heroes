@@ -31,6 +31,9 @@ struct IEnumerator_t287207039;
 // System.Void System.Collections.Generic.Stack`1<System.Object>::.ctor()
 extern "C"  void Stack_1__ctor_m2725689112_gshared (Stack_1_t3407512455 * __this, const MethodInfo* method);
 #define Stack_1__ctor_m2725689112(__this, method) ((  void (*) (Stack_1_t3407512455 *, const MethodInfo*))Stack_1__ctor_m2725689112_gshared)(__this, method)
+// System.Boolean System.Collections.Generic.Stack`1<System.Object>::System.Collections.ICollection.get_IsSynchronized()
+extern "C"  bool Stack_1_System_Collections_ICollection_get_IsSynchronized_m1582336274_gshared (Stack_1_t3407512455 * __this, const MethodInfo* method);
+#define Stack_1_System_Collections_ICollection_get_IsSynchronized_m1582336274(__this, method) ((  bool (*) (Stack_1_t3407512455 *, const MethodInfo*))Stack_1_System_Collections_ICollection_get_IsSynchronized_m1582336274_gshared)(__this, method)
 // System.Object System.Collections.Generic.Stack`1<System.Object>::System.Collections.ICollection.get_SyncRoot()
 extern "C"  Il2CppObject * Stack_1_System_Collections_ICollection_get_SyncRoot_m2938343088_gshared (Stack_1_t3407512455 * __this, const MethodInfo* method);
 #define Stack_1_System_Collections_ICollection_get_SyncRoot_m2938343088(__this, method) ((  Il2CppObject * (*) (Stack_1_t3407512455 *, const MethodInfo*))Stack_1_System_Collections_ICollection_get_SyncRoot_m2938343088_gshared)(__this, method)
@@ -43,6 +46,9 @@ extern "C"  Il2CppObject* Stack_1_System_Collections_Generic_IEnumerableU3CTU3E_
 // System.Collections.IEnumerator System.Collections.Generic.Stack`1<System.Object>::System.Collections.IEnumerable.GetEnumerator()
 extern "C"  Il2CppObject * Stack_1_System_Collections_IEnumerable_GetEnumerator_m4095051687_gshared (Stack_1_t3407512455 * __this, const MethodInfo* method);
 #define Stack_1_System_Collections_IEnumerable_GetEnumerator_m4095051687(__this, method) ((  Il2CppObject * (*) (Stack_1_t3407512455 *, const MethodInfo*))Stack_1_System_Collections_IEnumerable_GetEnumerator_m4095051687_gshared)(__this, method)
+// T System.Collections.Generic.Stack`1<System.Object>::Peek()
+extern "C"  Il2CppObject * Stack_1_Peek_m3418768488_gshared (Stack_1_t3407512455 * __this, const MethodInfo* method);
+#define Stack_1_Peek_m3418768488(__this, method) ((  Il2CppObject * (*) (Stack_1_t3407512455 *, const MethodInfo*))Stack_1_Peek_m3418768488_gshared)(__this, method)
 // T System.Collections.Generic.Stack`1<System.Object>::Pop()
 extern "C"  Il2CppObject * Stack_1_Pop_m4267009222_gshared (Stack_1_t3407512455 * __this, const MethodInfo* method);
 #define Stack_1_Pop_m4267009222(__this, method) ((  Il2CppObject * (*) (Stack_1_t3407512455 *, const MethodInfo*))Stack_1_Pop_m4267009222_gshared)(__this, method)

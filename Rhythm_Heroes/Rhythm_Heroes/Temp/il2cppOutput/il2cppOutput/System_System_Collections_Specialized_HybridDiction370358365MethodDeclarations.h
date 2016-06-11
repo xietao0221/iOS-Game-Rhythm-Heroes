@@ -39,6 +39,8 @@ extern "C"  Il2CppObject * HybridDictionary_System_Collections_IEnumerable_GetEn
 extern "C"  Il2CppObject * HybridDictionary_get_inner_m1544058846 (HybridDictionary_t370358365 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Int32 System.Collections.Specialized.HybridDictionary::get_Count()
 extern "C"  int32_t HybridDictionary_get_Count_m2544735439 (HybridDictionary_t370358365 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Boolean System.Collections.Specialized.HybridDictionary::get_IsSynchronized()
+extern "C"  bool HybridDictionary_get_IsSynchronized_m4103840922 (HybridDictionary_t370358365 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Object System.Collections.Specialized.HybridDictionary::get_Item(System.Object)
 extern "C"  Il2CppObject * HybridDictionary_get_Item_m1101975172 (HybridDictionary_t370358365 * __this, Il2CppObject * ___key0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void System.Collections.Specialized.HybridDictionary::set_Item(System.Object,System.Object)

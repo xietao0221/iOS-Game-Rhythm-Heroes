@@ -748,6 +748,7 @@ extern "C" void Boolean_Equals_m4087985523 ();
 extern "C" void Boolean_GetHashCode_m841540860 ();
 extern "C" void Boolean_Parse_m3007515274 ();
 extern "C" void Boolean_ToString_m2512358154 ();
+extern "C" void Boolean_GetTypeCode_m1624087223 ();
 extern "C" void Boolean_ToString_m2019601528 ();
 extern "C" void Buffer_ByteLength_m3699202119 ();
 extern "C" void Buffer_BlockCopy_m1580643184 ();
@@ -810,6 +811,7 @@ extern "C" void Char_IsLetter_m1699036490 ();
 extern "C" void Char_IsLetterOrDigit_m2290383044 ();
 extern "C" void Char_IsLower_m1584081639 ();
 extern "C" void Char_IsSurrogate_m3822546544 ();
+extern "C" void Char_IsUpper_m1832446694 ();
 extern "C" void Char_IsWhiteSpace_m2745315955 ();
 extern "C" void Char_IsWhiteSpace_m2601279167 ();
 extern "C" void Char_CheckParameter_m3313481947 ();
@@ -821,6 +823,7 @@ extern "C" void Char_ToUpper_m3343442427 ();
 extern "C" void Char_ToUpperInvariant_m4158859197 ();
 extern "C" void Char_ToString_m2089191214 ();
 extern "C" void Char_ToString_m2826712476 ();
+extern "C" void Char_GetTypeCode_m4226232807 ();
 extern "C" void CharEnumerator__ctor_m2119134439 ();
 extern "C" void CharEnumerator_System_Collections_IEnumerator_get_Current_m1493871051 ();
 extern "C" void CharEnumerator_System_IDisposable_Dispose_m2219960452 ();
@@ -839,6 +842,7 @@ extern "C" void ArrayList_set_Item_m2414691872 ();
 extern "C" void ArrayList_get_Count_m2097776283 ();
 extern "C" void ArrayList_get_Capacity_m3412570896 ();
 extern "C" void ArrayList_set_Capacity_m1308073401 ();
+extern "C" void ArrayList_get_IsFixedSize_m251458097 ();
 extern "C" void ArrayList_get_IsReadOnly_m3925803688 ();
 extern "C" void ArrayList_get_IsSynchronized_m3702851162 ();
 extern "C" void ArrayList_get_SyncRoot_m3144760460 ();
@@ -873,6 +877,7 @@ extern "C" void ArrayListWrapper_set_Item_m602076299 ();
 extern "C" void ArrayListWrapper_get_Count_m452148104 ();
 extern "C" void ArrayListWrapper_get_Capacity_m1260206851 ();
 extern "C" void ArrayListWrapper_set_Capacity_m2188723684 ();
+extern "C" void ArrayListWrapper_get_IsFixedSize_m3370166250 ();
 extern "C" void ArrayListWrapper_get_IsReadOnly_m2086744527 ();
 extern "C" void ArrayListWrapper_get_IsSynchronized_m109922817 ();
 extern "C" void ArrayListWrapper_get_SyncRoot_m427241453 ();
@@ -900,6 +905,7 @@ extern "C" void FixedSizeArrayListWrapper__ctor_m193000370 ();
 extern "C" void FixedSizeArrayListWrapper_get_ErrorMessage_m2762836670 ();
 extern "C" void FixedSizeArrayListWrapper_get_Capacity_m3089739858 ();
 extern "C" void FixedSizeArrayListWrapper_set_Capacity_m383644411 ();
+extern "C" void FixedSizeArrayListWrapper_get_IsFixedSize_m1343011119 ();
 extern "C" void FixedSizeArrayListWrapper_Add_m1946065152 ();
 extern "C" void FixedSizeArrayListWrapper_AddRange_m1220667072 ();
 extern "C" void FixedSizeArrayListWrapper_Clear_m2440861404 ();
@@ -926,6 +932,7 @@ extern "C" void SynchronizedArrayListWrapper_set_Item_m3286476863 ();
 extern "C" void SynchronizedArrayListWrapper_get_Count_m3690732372 ();
 extern "C" void SynchronizedArrayListWrapper_get_Capacity_m4073764791 ();
 extern "C" void SynchronizedArrayListWrapper_set_Capacity_m3235728024 ();
+extern "C" void SynchronizedArrayListWrapper_get_IsFixedSize_m954881462 ();
 extern "C" void SynchronizedArrayListWrapper_get_IsReadOnly_m2563021443 ();
 extern "C" void SynchronizedArrayListWrapper_get_IsSynchronized_m4242880693 ();
 extern "C" void SynchronizedArrayListWrapper_get_SyncRoot_m2182052385 ();
@@ -953,6 +960,7 @@ extern "C" void BitArray__ctor_m3201524094 ();
 extern "C" void BitArray__ctor_m4198813761 ();
 extern "C" void BitArray_getByte_m3145028169 ();
 extern "C" void BitArray_get_Count_m3361743632 ();
+extern "C" void BitArray_get_IsSynchronized_m1429626361 ();
 extern "C" void BitArray_get_Item_m2410594623 ();
 extern "C" void BitArray_set_Item_m3947323368 ();
 extern "C" void BitArray_get_Length_m3443319207 ();
@@ -983,11 +991,14 @@ extern "C" void CaseInsensitiveHashCodeProvider_GetHashCode_m517823364 ();
 extern "C" void CollectionBase__ctor_m3181013581 ();
 extern "C" void CollectionBase_System_Collections_ICollection_CopyTo_m634775447 ();
 extern "C" void CollectionBase_System_Collections_ICollection_get_SyncRoot_m3961010597 ();
+extern "C" void CollectionBase_System_Collections_ICollection_get_IsSynchronized_m1284188723 ();
 extern "C" void CollectionBase_System_Collections_IList_Add_m161097623 ();
 extern "C" void CollectionBase_System_Collections_IList_Contains_m2561799305 ();
 extern "C" void CollectionBase_System_Collections_IList_IndexOf_m2310978159 ();
 extern "C" void CollectionBase_System_Collections_IList_Insert_m917928546 ();
 extern "C" void CollectionBase_System_Collections_IList_Remove_m872150918 ();
+extern "C" void CollectionBase_System_Collections_IList_get_IsFixedSize_m2924084920 ();
+extern "C" void CollectionBase_System_Collections_IList_get_IsReadOnly_m271239489 ();
 extern "C" void CollectionBase_System_Collections_IList_get_Item_m2255771116 ();
 extern "C" void CollectionBase_System_Collections_IList_set_Item_m2274989497 ();
 extern "C" void CollectionBase_get_Count_m313265901 ();
@@ -1032,6 +1043,7 @@ extern "C" void Hashtable_System_Collections_IEnumerable_GetEnumerator_m21319713
 extern "C" void Hashtable_set_comparer_m3192953638 ();
 extern "C" void Hashtable_set_hcp_m3304781571 ();
 extern "C" void Hashtable_get_Count_m3337476178 ();
+extern "C" void Hashtable_get_IsSynchronized_m1352381059 ();
 extern "C" void Hashtable_get_SyncRoot_m2620554101 ();
 extern "C" void Hashtable_get_Keys_m17177747 ();
 extern "C" void Hashtable_get_Values_m1695500481 ();
@@ -1070,11 +1082,13 @@ extern "C" void Enumerator_get_Value_m1383107108 ();
 extern "C" void Enumerator_get_Current_m3445727148 ();
 extern "C" void HashKeys__ctor_m1470241507 ();
 extern "C" void HashKeys_get_Count_m3782068299 ();
+extern "C" void HashKeys_get_IsSynchronized_m3549913758 ();
 extern "C" void HashKeys_get_SyncRoot_m3744595786 ();
 extern "C" void HashKeys_CopyTo_m1861978568 ();
 extern "C" void HashKeys_GetEnumerator_m1874815769 ();
 extern "C" void HashValues__ctor_m3879614837 ();
 extern "C" void HashValues_get_Count_m2417436125 ();
+extern "C" void HashValues_get_IsSynchronized_m1643199180 ();
 extern "C" void HashValues_get_SyncRoot_m734931640 ();
 extern "C" void HashValues_CopyTo_m1506944218 ();
 extern "C" void HashValues_GetEnumerator_m3140901163 ();
@@ -1085,6 +1099,7 @@ extern "C" void SyncHashtable__ctor_m330612341 ();
 extern "C" void SyncHashtable_System_Collections_IEnumerable_GetEnumerator_m4026891787 ();
 extern "C" void SyncHashtable_GetObjectData_m765378770 ();
 extern "C" void SyncHashtable_get_Count_m3563238812 ();
+extern "C" void SyncHashtable_get_IsSynchronized_m3501702649 ();
 extern "C" void SyncHashtable_get_SyncRoot_m513487403 ();
 extern "C" void SyncHashtable_get_Keys_m4083312137 ();
 extern "C" void SyncHashtable_get_Values_m830409911 ();
@@ -1105,6 +1120,7 @@ extern "C" void SortedList__ctor_m37047406 ();
 extern "C" void SortedList__cctor_m2648532460 ();
 extern "C" void SortedList_System_Collections_IEnumerable_GetEnumerator_m76581074 ();
 extern "C" void SortedList_get_Count_m418925185 ();
+extern "C" void SortedList_get_IsSynchronized_m2706175784 ();
 extern "C" void SortedList_get_SyncRoot_m808976468 ();
 extern "C" void SortedList_get_IsFixedSize_m296838179 ();
 extern "C" void SortedList_get_IsReadOnly_m47942262 ();
@@ -1141,6 +1157,7 @@ extern "C" void Stack__ctor_m2374718803 ();
 extern "C" void Stack__ctor_m2880977331 ();
 extern "C" void Stack_Resize_m1932726631 ();
 extern "C" void Stack_get_Count_m3511538634 ();
+extern "C" void Stack_get_IsSynchronized_m1915076875 ();
 extern "C" void Stack_get_SyncRoot_m320831869 ();
 extern "C" void Stack_Clear_m3522773901 ();
 extern "C" void Stack_Clone_m2500471496 ();
@@ -1349,6 +1366,7 @@ extern "C" void Convert_ToUInt32_m3676845024 ();
 extern "C" void Convert_ToUInt32_m3903361607 ();
 extern "C" void Convert_ToUInt32_m3310332294 ();
 extern "C" void Convert_ToUInt32_m3310327551 ();
+extern "C" void Convert_ToUInt32_m2991910559 ();
 extern "C" void Convert_ToUInt32_m883469173 ();
 extern "C" void Convert_ToUInt64_m3087942316 ();
 extern "C" void Convert_ToUInt64_m67300950 ();
@@ -2075,6 +2093,7 @@ extern "C" void Int32_ToString_m1286526384 ();
 extern "C" void Int32_ToString_m881186462 ();
 extern "C" void Int32_ToString_m3853485906 ();
 extern "C" void Int32_ToString_m4261017954 ();
+extern "C" void Int32_GetTypeCode_m1231080401 ();
 extern "C" void Int64_System_IConvertible_ToBoolean_m3781149192 ();
 extern "C" void Int64_System_IConvertible_ToByte_m1202689840 ();
 extern "C" void Int64_System_IConvertible_ToChar_m2692925168 ();
@@ -2484,11 +2503,16 @@ extern "C" void MarshalByRefObject_get_ObjectIdentity_m426029982 ();
 extern "C" void Math_Abs_m4017239106 ();
 extern "C" void Math_Abs_m2633004394 ();
 extern "C" void Math_Abs_m651703468 ();
+extern "C" void Math_Ceiling_m3914511415 ();
 extern "C" void Math_Floor_m1625025992 ();
+extern "C" void Math_Log_m2309558476 ();
 extern "C" void Math_Max_m1309380475 ();
 extern "C" void Math_Min_m811624909 ();
 extern "C" void Math_Round_m2659396224 ();
 extern "C" void Math_Round_m2587388934 ();
+extern "C" void Math_Sin_m1832281148 ();
+extern "C" void Math_Cos_m1877789613 ();
+extern "C" void Math_Log_m3325515856 ();
 extern "C" void Math_Pow_m3040135736 ();
 extern "C" void Math_Sqrt_m1131084014 ();
 extern "C" void MemberAccessException__ctor_m1986335264 ();
@@ -2787,6 +2811,7 @@ extern "C" void Assembly_GetModules_m3104205309 ();
 extern "C" void Assembly_GetExecutingAssembly_m1876278943 ();
 extern "C" void ResolveEventHolder__ctor_m1761692565 ();
 extern "C" void AssemblyCompanyAttribute__ctor_m2502605305 ();
+extern "C" void AssemblyConfigurationAttribute__ctor_m4121139744 ();
 extern "C" void AssemblyCopyrightAttribute__ctor_m3725440687 ();
 extern "C" void AssemblyDefaultAliasAttribute__ctor_m3432347153 ();
 extern "C" void AssemblyDelaySignAttribute__ctor_m4221242755 ();
@@ -2812,6 +2837,7 @@ extern "C" void AssemblyName_Clone_m1423794147 ();
 extern "C" void AssemblyName_OnDeserialization_m866678633 ();
 extern "C" void AssemblyProductAttribute__ctor_m2364447559 ();
 extern "C" void AssemblyTitleAttribute__ctor_m432794494 ();
+extern "C" void AssemblyTrademarkAttribute__ctor_m396080901 ();
 extern "C" void Binder__ctor_m1880433924 ();
 extern "C" void Binder__cctor_m1976780585 ();
 extern "C" void Binder_get_DefaultBinder_m695054407 ();
@@ -3713,6 +3739,7 @@ extern "C" void MethodDictionary_get_Values_m1423085072 ();
 extern "C" void MethodDictionary_Add_m3929391976 ();
 extern "C" void MethodDictionary_Remove_m2229484935 ();
 extern "C" void MethodDictionary_get_Count_m2528789795 ();
+extern "C" void MethodDictionary_get_IsSynchronized_m687173714 ();
 extern "C" void MethodDictionary_get_SyncRoot_m1527806020 ();
 extern "C" void MethodDictionary_CopyTo_m3173648216 ();
 extern "C" void MethodDictionary_GetEnumerator_m3961911347 ();
@@ -4516,6 +4543,7 @@ extern "C" void PermissionSet_CreateFromBinaryFormat_m554196038 ();
 extern "C" void ApplicationTrust__ctor_m3384937791 ();
 extern "C" void Evidence__ctor_m2923485872 ();
 extern "C" void Evidence_get_Count_m2256383184 ();
+extern "C" void Evidence_get_IsSynchronized_m1680953145 ();
 extern "C" void Evidence_get_SyncRoot_m397267429 ();
 extern "C" void Evidence_get_HostEvidenceList_m4094307694 ();
 extern "C" void Evidence_get_AssemblyEvidenceList_m2146797868 ();
@@ -4625,6 +4653,7 @@ extern "C" void Single_Parse_m4064562812 ();
 extern "C" void Single_ToString_m5736032 ();
 extern "C" void Single_ToString_m1436803918 ();
 extern "C" void Single_ToString_m3798733330 ();
+extern "C" void Single_GetTypeCode_m4165632757 ();
 extern "C" void String__ctor_m2618237231 ();
 extern "C" void String__ctor_m683273815 ();
 extern "C" void String__ctor_m2956844983 ();
@@ -4696,6 +4725,7 @@ extern "C" void String_IndexOf_m1476794331 ();
 extern "C" void String_IndexOf_m1991631068 ();
 extern "C" void String_IndexOf_m4052910459 ();
 extern "C" void String_LastIndexOfAny_m1405458718 ();
+extern "C" void String_LastIndexOfAny_m2835072121 ();
 extern "C" void String_LastIndexOfAnyUnchecked_m3532047592 ();
 extern "C" void String_LastIndexOf_m3245805612 ();
 extern "C" void String_LastIndexOf_m902083627 ();
@@ -4703,6 +4733,7 @@ extern "C" void String_LastIndexOf_m434357900 ();
 extern "C" void String_LastIndexOfUnchecked_m4042746910 ();
 extern "C" void String_LastIndexOf_m2747144337 ();
 extern "C" void String_LastIndexOf_m1189898929 ();
+extern "C" void String_Contains_m3032019141 ();
 extern "C" void String_IsNullOrEmpty_m1256468773 ();
 extern "C" void String_PadRight_m1932151982 ();
 extern "C" void String_StartsWith_m1500793453 ();
@@ -4765,6 +4796,7 @@ extern "C" void String_op_Inequality_m2125462205 ();
 extern "C" void StringComparer__ctor_m50784983 ();
 extern "C" void StringComparer__cctor_m1092238262 ();
 extern "C" void StringComparer_get_InvariantCultureIgnoreCase_m3518508912 ();
+extern "C" void StringComparer_get_OrdinalIgnoreCase_m2513153269 ();
 extern "C" void StringComparer_Compare_m3931640044 ();
 extern "C" void StringComparer_Equals_m1694946776 ();
 extern "C" void StringComparer_GetHashCode_m1067393138 ();
@@ -4933,6 +4965,8 @@ extern "C" void StringBuilder_Append_m2143093878 ();
 extern "C" void StringBuilder_Append_m1038583841 ();
 extern "C" void StringBuilder_Append_m2623154804 ();
 extern "C" void StringBuilder_Append_m2996071419 ();
+extern "C" void StringBuilder_AppendLine_m568622107 ();
+extern "C" void StringBuilder_AppendLine_m655025863 ();
 extern "C" void StringBuilder_AppendFormat_m279545936 ();
 extern "C" void StringBuilder_AppendFormat_m259793396 ();
 extern "C" void StringBuilder_AppendFormat_m3723191730 ();
@@ -5448,6 +5482,7 @@ extern "C" void HybridDictionary__ctor_m3356743441 ();
 extern "C" void HybridDictionary_System_Collections_IEnumerable_GetEnumerator_m633511108 ();
 extern "C" void HybridDictionary_get_inner_m1544058846 ();
 extern "C" void HybridDictionary_get_Count_m2544735439 ();
+extern "C" void HybridDictionary_get_IsSynchronized_m4103840922 ();
 extern "C" void HybridDictionary_get_Item_m1101975172 ();
 extern "C" void HybridDictionary_set_Item_m2233477417 ();
 extern "C" void HybridDictionary_get_SyncRoot_m1280025498 ();
@@ -5463,6 +5498,7 @@ extern "C" void ListDictionary_FindEntry_m2277169595 ();
 extern "C" void ListDictionary_FindEntry_m831100599 ();
 extern "C" void ListDictionary_AddImpl_m2933606886 ();
 extern "C" void ListDictionary_get_Count_m3433674349 ();
+extern "C" void ListDictionary_get_IsSynchronized_m34636604 ();
 extern "C" void ListDictionary_get_SyncRoot_m1493803004 ();
 extern "C" void ListDictionary_CopyTo_m1026734678 ();
 extern "C" void ListDictionary_get_Item_m151625826 ();
@@ -5483,6 +5519,7 @@ extern "C" void DictionaryNodeEnumerator_get_Key_m3214255105 ();
 extern "C" void DictionaryNodeEnumerator_get_Value_m1866106451 ();
 extern "C" void NameObjectCollectionBase__ctor_m1741929684 ();
 extern "C" void NameObjectCollectionBase__ctor_m355604501 ();
+extern "C" void NameObjectCollectionBase_System_Collections_ICollection_get_IsSynchronized_m4292869198 ();
 extern "C" void NameObjectCollectionBase_System_Collections_ICollection_get_SyncRoot_m625351596 ();
 extern "C" void NameObjectCollectionBase_System_Collections_ICollection_CopyTo_m606865136 ();
 extern "C" void NameObjectCollectionBase_Init_m3194316544 ();
@@ -5504,6 +5541,7 @@ extern "C" void _KeysEnumerator_MoveNext_m2934171782 ();
 extern "C" void _KeysEnumerator_Reset_m2513360761 ();
 extern "C" void KeysCollection__ctor_m571748459 ();
 extern "C" void KeysCollection_System_Collections_ICollection_CopyTo_m3481790195 ();
+extern "C" void KeysCollection_System_Collections_ICollection_get_IsSynchronized_m261821823 ();
 extern "C" void KeysCollection_System_Collections_ICollection_get_SyncRoot_m2421942655 ();
 extern "C" void KeysCollection_get_Count_m1716505797 ();
 extern "C" void KeysCollection_GetEnumerator_m2467788383 ();
@@ -5514,6 +5552,10 @@ extern "C" void NameValueCollection_Get_m2840953239 ();
 extern "C" void NameValueCollection_AsSingleString_m3181933374 ();
 extern "C" void NameValueCollection_GetKey_m4077148652 ();
 extern "C" void NameValueCollection_InvalidateCachedArrays_m3569021030 ();
+extern "C" void EditorBrowsableAttribute__ctor_m2031704921 ();
+extern "C" void EditorBrowsableAttribute_get_State_m2194662776 ();
+extern "C" void EditorBrowsableAttribute_Equals_m2138671840 ();
+extern "C" void EditorBrowsableAttribute_GetHashCode_m2651695940 ();
 extern "C" void TypeConverterAttribute__ctor_m1679891427 ();
 extern "C" void TypeConverterAttribute__ctor_m1621665718 ();
 extern "C" void TypeConverterAttribute__cctor_m54930474 ();
@@ -5678,6 +5720,7 @@ extern "C" void OidCollection__ctor_m3592497479 ();
 extern "C" void OidCollection_System_Collections_ICollection_CopyTo_m3200351709 ();
 extern "C" void OidCollection_System_Collections_IEnumerable_GetEnumerator_m494890284 ();
 extern "C" void OidCollection_get_Count_m924395419 ();
+extern "C" void OidCollection_get_IsSynchronized_m2984568922 ();
 extern "C" void OidCollection_get_Item_m1851824850 ();
 extern "C" void OidCollection_get_SyncRoot_m887599928 ();
 extern "C" void OidCollection_Add_m1834548415 ();
@@ -5803,6 +5846,7 @@ extern "C" void X509ChainElementCollection__ctor_m1079210340 ();
 extern "C" void X509ChainElementCollection_System_Collections_ICollection_CopyTo_m3190543456 ();
 extern "C" void X509ChainElementCollection_System_Collections_IEnumerable_GetEnumerator_m31369455 ();
 extern "C" void X509ChainElementCollection_get_Count_m3531017528 ();
+extern "C" void X509ChainElementCollection_get_IsSynchronized_m2629487837 ();
 extern "C" void X509ChainElementCollection_get_Item_m553083826 ();
 extern "C" void X509ChainElementCollection_get_SyncRoot_m527504827 ();
 extern "C" void X509ChainElementCollection_GetEnumerator_m1375522587 ();
@@ -5840,6 +5884,7 @@ extern "C" void X509ExtensionCollection__ctor_m3888740672 ();
 extern "C" void X509ExtensionCollection_System_Collections_ICollection_CopyTo_m2862251608 ();
 extern "C" void X509ExtensionCollection_System_Collections_IEnumerable_GetEnumerator_m1951031507 ();
 extern "C" void X509ExtensionCollection_get_Count_m2621259424 ();
+extern "C" void X509ExtensionCollection_get_IsSynchronized_m3201439337 ();
 extern "C" void X509ExtensionCollection_get_SyncRoot_m736404969 ();
 extern "C" void X509ExtensionCollection_get_Item_m2341415937 ();
 extern "C" void X509ExtensionCollection_GetEnumerator_m4079469459 ();
@@ -5888,6 +5933,7 @@ extern "C" void Capture_ToString_m1009743248 ();
 extern "C" void Capture_get_Text_m1823829274 ();
 extern "C" void CaptureCollection__ctor_m3212451638 ();
 extern "C" void CaptureCollection_get_Count_m1248230585 ();
+extern "C" void CaptureCollection_get_IsSynchronized_m4208332924 ();
 extern "C" void CaptureCollection_SetValue_m1003011714 ();
 extern "C" void CaptureCollection_get_SyncRoot_m277260698 ();
 extern "C" void CaptureCollection_CopyTo_m3440549378 ();
@@ -5911,6 +5957,7 @@ extern "C" void Group_get_Captures_m3515423896 ();
 extern "C" void Group_get_Success_m3627958764 ();
 extern "C" void GroupCollection__ctor_m1062211994 ();
 extern "C" void GroupCollection_get_Count_m1046622944 ();
+extern "C" void GroupCollection_get_IsSynchronized_m3587250101 ();
 extern "C" void GroupCollection_get_Item_m3306908978 ();
 extern "C" void GroupCollection_SetValue_m3728413090 ();
 extern "C" void GroupCollection_get_SyncRoot_m63200083 ();
@@ -5980,6 +6027,7 @@ extern "C" void IntervalCollection_Normalize_m2061698533 ();
 extern "C" void IntervalCollection_GetMetaCollection_m1423119555 ();
 extern "C" void IntervalCollection_Optimize_m2537418330 ();
 extern "C" void IntervalCollection_get_Count_m3146453934 ();
+extern "C" void IntervalCollection_get_IsSynchronized_m46596635 ();
 extern "C" void IntervalCollection_get_SyncRoot_m165185947 ();
 extern "C" void IntervalCollection_CopyTo_m1005574359 ();
 extern "C" void IntervalCollection_GetEnumerator_m4242145148 ();
@@ -6008,6 +6056,7 @@ extern "C" void Match_NextMatch_m3913445709 ();
 extern "C" void Match_get_Regex_m1260760027 ();
 extern "C" void MatchCollection__ctor_m1982569902 ();
 extern "C" void MatchCollection_get_Count_m4071817434 ();
+extern "C" void MatchCollection_get_IsSynchronized_m1523540731 ();
 extern "C" void MatchCollection_get_Item_m2495033586 ();
 extern "C" void MatchCollection_get_SyncRoot_m2333479705 ();
 extern "C" void MatchCollection_CopyTo_m2665262947 ();
@@ -6565,6 +6614,7 @@ extern "C" void CipherSuite_createDecryptionCipher_m2049229685 ();
 extern "C" void CipherSuiteCollection__ctor_m273269703 ();
 extern "C" void CipherSuiteCollection_System_Collections_IList_get_Item_m3319535496 ();
 extern "C" void CipherSuiteCollection_System_Collections_IList_set_Item_m4255989087 ();
+extern "C" void CipherSuiteCollection_System_Collections_ICollection_get_IsSynchronized_m3698127433 ();
 extern "C" void CipherSuiteCollection_System_Collections_ICollection_get_SyncRoot_m914076225 ();
 extern "C" void CipherSuiteCollection_System_Collections_IEnumerable_GetEnumerator_m1907853496 ();
 extern "C" void CipherSuiteCollection_System_Collections_IList_Contains_m3495236659 ();
@@ -6578,6 +6628,8 @@ extern "C" void CipherSuiteCollection_get_Item_m3036376750 ();
 extern "C" void CipherSuiteCollection_set_Item_m141821933 ();
 extern "C" void CipherSuiteCollection_get_Item_m3036374952 ();
 extern "C" void CipherSuiteCollection_get_Count_m2086503695 ();
+extern "C" void CipherSuiteCollection_get_IsFixedSize_m2874798629 ();
+extern "C" void CipherSuiteCollection_get_IsReadOnly_m3871880244 ();
 extern "C" void CipherSuiteCollection_CopyTo_m2731497872 ();
 extern "C" void CipherSuiteCollection_Clear_m2278434462 ();
 extern "C" void CipherSuiteCollection_IndexOf_m3646145168 ();
@@ -7211,6 +7263,7 @@ extern "C" void SymmetricTransform_ThrowBadPaddingException_m2083216889 ();
 extern "C" void SymmetricTransform_FinalEncrypt_m975601255 ();
 extern "C" void SymmetricTransform_FinalDecrypt_m3742401599 ();
 extern "C" void SymmetricTransform_TransformFinalBlock_m2524388439 ();
+extern "C" void Check_SourceAndPredicate_m2252398949 ();
 extern "C" void ExtensionAttribute__ctor_m1242622322 ();
 extern "C" void Aes__ctor_m380511311 ();
 extern "C" void AesManaged__ctor_m1572578968 ();
@@ -7233,11 +7286,65 @@ extern "C" void AesTransform_ECB_m2589908703 ();
 extern "C" void AesTransform_SubByte_m1214814958 ();
 extern "C" void AesTransform_Encrypt128_m3651261907 ();
 extern "C" void AesTransform_Decrypt128_m3310750971 ();
+extern "C" void AddComponentMenu__ctor_m1521317712 ();
+extern "C" void AddComponentMenu__ctor_m3281913735 ();
 extern "C" void AnimationCurve__ctor_m2436282331 ();
 extern "C" void AnimationCurve__ctor_m4037844610 ();
 extern "C" void AnimationCurve_Cleanup_m386995588 ();
 extern "C" void AnimationCurve_Finalize_m2382224032 ();
 extern "C" void AnimationCurve_Init_m4012213483 ();
+extern "C" void AnimationEvent__ctor_m3893222711 ();
+extern "C" void AnimationEvent_get_data_m2818928483 ();
+extern "C" void AnimationEvent_set_data_m1709280462 ();
+extern "C" void AnimationEvent_get_stringParameter_m774178145 ();
+extern "C" void AnimationEvent_set_stringParameter_m4027163538 ();
+extern "C" void AnimationEvent_get_floatParameter_m585550415 ();
+extern "C" void AnimationEvent_set_floatParameter_m3972419412 ();
+extern "C" void AnimationEvent_get_intParameter_m1837369744 ();
+extern "C" void AnimationEvent_set_intParameter_m1983832533 ();
+extern "C" void AnimationEvent_get_objectReferenceParameter_m1449907980 ();
+extern "C" void AnimationEvent_set_objectReferenceParameter_m2952903185 ();
+extern "C" void AnimationEvent_get_functionName_m508701692 ();
+extern "C" void AnimationEvent_set_functionName_m3347976661 ();
+extern "C" void AnimationEvent_get_time_m4165710255 ();
+extern "C" void AnimationEvent_set_time_m2746909172 ();
+extern "C" void AnimationEvent_get_messageOptions_m501221094 ();
+extern "C" void AnimationEvent_set_messageOptions_m927737387 ();
+extern "C" void AnimationEvent_get_isFiredByLegacy_m1265747114 ();
+extern "C" void AnimationEvent_get_isFiredByAnimator_m877765704 ();
+extern "C" void AnimationEvent_get_animationState_m2712753230 ();
+extern "C" void AnimationEvent_get_animatorStateInfo_m194903218 ();
+extern "C" void AnimationEvent_get_animatorClipInfo_m493861262 ();
+extern "C" void AnimationEvent_GetHash_m2586883417 ();
+extern "C" void Animator_SetTrigger_m514363822 ();
+extern "C" void Animator_ResetTrigger_m4152421915 ();
+extern "C" void Animator_get_runtimeAnimatorController_m1822082727 ();
+extern "C" void Animator_StringToHash_m4020897098 ();
+extern "C" void Animator_SetTriggerString_m1378271133 ();
+extern "C" void Animator_ResetTriggerString_m1817269834 ();
+extern "C" void AnimatorStateInfo_IsName_m1653922768 ();
+extern "C" void AnimatorStateInfo_get_fullPathHash_m3257074542 ();
+extern "C" void AnimatorStateInfo_get_nameHash_m453823205 ();
+extern "C" void AnimatorStateInfo_get_shortNameHash_m994885515 ();
+extern "C" void AnimatorStateInfo_get_normalizedTime_m2531821060 ();
+extern "C" void AnimatorStateInfo_get_length_m3147284742 ();
+extern "C" void AnimatorStateInfo_get_speed_m247405833 ();
+extern "C" void AnimatorStateInfo_get_speedMultiplier_m489756842 ();
+extern "C" void AnimatorStateInfo_get_tagHash_m3543262078 ();
+extern "C" void AnimatorStateInfo_IsTag_m119936877 ();
+extern "C" void AnimatorStateInfo_get_loop_m1495892586 ();
+extern "C" void AnimatorTransitionInfo_IsName_m1283663078 ();
+extern "C" void AnimatorTransitionInfo_IsUserName_m2732197659 ();
+extern "C" void AnimatorTransitionInfo_get_fullPathHash_m3335466636 ();
+extern "C" void AnimatorTransitionInfo_get_nameHash_m2102867203 ();
+extern "C" void AnimatorTransitionInfo_get_userNameHash_m249220782 ();
+extern "C" void AnimatorTransitionInfo_get_normalizedTime_m3258684986 ();
+extern "C" void AnimatorTransitionInfo_get_anyState_m3421556405 ();
+extern "C" void AnimatorTransitionInfo_get_entry_m2038132324 ();
+extern "C" void AnimatorTransitionInfo_get_exit_m2568505102 ();
+extern "C" void Application_get_isPlaying_m987993960 ();
+extern "C" void Application_get_isEditor_m1279348309 ();
+extern "C" void Application_get_platform_m2918632856 ();
 extern "C" void Application_CallLogCallback_m419361836 ();
 extern "C" void LogCallback__ctor_m286543475 ();
 extern "C" void LogCallback_Invoke_m1886455446 ();
@@ -7279,6 +7386,9 @@ extern "C" void AudioConfigurationChangeHandler_Invoke_m3047533822 ();
 extern "C" void AudioConfigurationChangeHandler_BeginInvoke_m194625699 ();
 extern "C" void AudioConfigurationChangeHandler_EndInvoke_m218260925 ();
 extern "C" void Behaviour__ctor_m1624944828 ();
+extern "C" void Behaviour_get_enabled_m1239363704 ();
+extern "C" void Behaviour_set_enabled_m2046806933 ();
+extern "C" void Behaviour_get_isActiveAndEnabled_m210167461 ();
 extern "C" void BitStream__ctor_m922403980 ();
 extern "C" void BitStream_Serializeb_m1472011233 ();
 extern "C" void BitStream_Serializec_m1377214154 ();
@@ -7306,24 +7416,36 @@ extern "C" void BitStream_Serialize_m3563231771 ();
 extern "C" void BitStream_get_isReading_m3929869641 ();
 extern "C" void BitStream_get_isWriting_m3632391065 ();
 extern "C" void BitStream_Serialize_m2763015060 ();
+extern "C" void Bounds__ctor_m4160293652 ();
 extern "C" void Bounds_GetHashCode_m3067388679 ();
 extern "C" void Bounds_Equals_m2517451939 ();
 extern "C" void Bounds_get_center_m4084610404 ();
+extern "C" void Bounds_set_center_m2605643707 ();
 extern "C" void Bounds_get_size_m3666348432 ();
+extern "C" void Bounds_set_size_m4109809039 ();
 extern "C" void Bounds_get_extents_m2111648188 ();
+extern "C" void Bounds_set_extents_m2603836823 ();
 extern "C" void Bounds_get_min_m2329472069 ();
 extern "C" void Bounds_get_max_m2329243351 ();
+extern "C" void Bounds_SetMinMax_m2186020994 ();
+extern "C" void Bounds_Encapsulate_m3624685234 ();
 extern "C" void Bounds_ToString_m1795228795 ();
+extern "C" void Bounds_op_Equality_m2855966622 ();
+extern "C" void Bounds_op_Inequality_m4292292377 ();
 extern "C" void Camera_get_nearClipPlane_m4074655061 ();
 extern "C" void Camera_get_farClipPlane_m388706726 ();
+extern "C" void Camera_get_depth_m3642810036 ();
 extern "C" void Camera_get_cullingMask_m1045975289 ();
 extern "C" void Camera_get_eventMask_m3669132771 ();
 extern "C" void Camera_get_pixelRect_m936851539 ();
 extern "C" void Camera_INTERNAL_get_pixelRect_m1853722860 ();
 extern "C" void Camera_get_targetTexture_m1468336738 ();
 extern "C" void Camera_get_clearFlags_m192466552 ();
+extern "C" void Camera_ScreenToViewportPoint_m3727203754 ();
+extern "C" void Camera_INTERNAL_CALL_ScreenToViewportPoint_m3712526702 ();
 extern "C" void Camera_ScreenPointToRay_m1733083890 ();
 extern "C" void Camera_INTERNAL_CALL_ScreenPointToRay_m371614468 ();
+extern "C" void Camera_get_main_m671815697 ();
 extern "C" void Camera_get_allCamerasCount_m3993434431 ();
 extern "C" void Camera_GetAllCameras_m3771867787 ();
 extern "C" void Camera_FireOnPreCull_m4184591338 ();
@@ -7337,9 +7459,67 @@ extern "C" void CameraCallback__ctor_m3976281469 ();
 extern "C" void CameraCallback_Invoke_m3757410555 ();
 extern "C" void CameraCallback_BeginInvoke_m3719545510 ();
 extern "C" void CameraCallback_EndInvoke_m534836749 ();
+extern "C" void Canvas_add_willRenderCanvases_m716439881 ();
+extern "C" void Canvas_remove_willRenderCanvases_m158291336 ();
+extern "C" void Canvas_get_renderMode_m3669121200 ();
+extern "C" void Canvas_get_isRootCanvas_m4030632706 ();
+extern "C" void Canvas_get_worldCamera_m2621449230 ();
+extern "C" void Canvas_get_scaleFactor_m1187077271 ();
+extern "C" void Canvas_set_scaleFactor_m2206436828 ();
+extern "C" void Canvas_get_referencePixelsPerUnit_m3759589197 ();
+extern "C" void Canvas_set_referencePixelsPerUnit_m1910706966 ();
+extern "C" void Canvas_get_pixelPerfect_m2847994693 ();
+extern "C" void Canvas_get_renderOrder_m2295969794 ();
+extern "C" void Canvas_get_overrideSorting_m3812884636 ();
+extern "C" void Canvas_set_overrideSorting_m1850487749 ();
+extern "C" void Canvas_get_sortingOrder_m1274160674 ();
+extern "C" void Canvas_set_sortingOrder_m1522807655 ();
+extern "C" void Canvas_get_sortingLayerID_m3425838272 ();
+extern "C" void Canvas_set_sortingLayerID_m2317502469 ();
+extern "C" void Canvas_GetDefaultCanvasMaterial_m1655363178 ();
+extern "C" void Canvas_SendWillRenderCanvases_m1768133093 ();
+extern "C" void Canvas_ForceUpdateCanvases_m1970133101 ();
+extern "C" void WillRenderCanvases__ctor_m1509285774 ();
+extern "C" void WillRenderCanvases_Invoke_m4113031528 ();
+extern "C" void WillRenderCanvases_BeginInvoke_m205611811 ();
+extern "C" void WillRenderCanvases_EndInvoke_m2320713886 ();
+extern "C" void CanvasGroup_get_alpha_m2646612977 ();
+extern "C" void CanvasGroup_set_alpha_m2140801370 ();
+extern "C" void CanvasGroup_get_interactable_m2411844645 ();
+extern "C" void CanvasGroup_get_blocksRaycasts_m1777916261 ();
+extern "C" void CanvasGroup_get_ignoreParentGroups_m1831887525 ();
+extern "C" void CanvasGroup_IsRaycastLocationValid_m3946913220 ();
+extern "C" void CanvasRenderer_SetColor_m3198078515 ();
+extern "C" void CanvasRenderer_INTERNAL_CALL_SetColor_m2907146764 ();
+extern "C" void CanvasRenderer_GetColor_m3075393702 ();
+extern "C" void CanvasRenderer_INTERNAL_CALL_GetColor_m3176368896 ();
+extern "C" void CanvasRenderer_EnableRectClipping_m896218272 ();
+extern "C" void CanvasRenderer_INTERNAL_CALL_EnableRectClipping_m105013257 ();
+extern "C" void CanvasRenderer_DisableRectClipping_m2654388030 ();
+extern "C" void CanvasRenderer_set_hasPopInstruction_m2112255713 ();
+extern "C" void CanvasRenderer_get_materialCount_m311942031 ();
+extern "C" void CanvasRenderer_set_materialCount_m1694897644 ();
+extern "C" void CanvasRenderer_SetMaterial_m355382012 ();
+extern "C" void CanvasRenderer_SetMaterial_m1603188579 ();
+extern "C" void CanvasRenderer_set_popMaterialCount_m589784503 ();
+extern "C" void CanvasRenderer_SetPopMaterial_m1315408685 ();
+extern "C" void CanvasRenderer_SetTexture_m137327939 ();
+extern "C" void CanvasRenderer_SetMesh_m1150548475 ();
+extern "C" void CanvasRenderer_Clear_m1606508093 ();
+extern "C" void CanvasRenderer_SplitUIVertexStreams_m4126093916 ();
+extern "C" void CanvasRenderer_SplitUIVertexStreamsInternal_m987675768 ();
+extern "C" void CanvasRenderer_SplitIndiciesStreamsInternal_m269466040 ();
+extern "C" void CanvasRenderer_CreateUIVertexStream_m2702356137 ();
+extern "C" void CanvasRenderer_CreateUIVertexStreamInternal_m997370835 ();
+extern "C" void CanvasRenderer_AddUIVertexStream_m1865056747 ();
+extern "C" void CanvasRenderer_get_cull_m3343855795 ();
+extern "C" void CanvasRenderer_set_cull_m3433952120 ();
+extern "C" void CanvasRenderer_get_absoluteDepth_m1613567475 ();
+extern "C" void CanvasRenderer_get_hasMoved_m1392755130 ();
 extern "C" void Collider_get_attachedRigidbody_m2821754842 ();
 extern "C" void Collider_get_bounds_m1050008332 ();
 extern "C" void Collider_INTERNAL_get_bounds_m1269265569 ();
+extern "C" void Collider2D_get_attachedRigidbody_m2908627162 ();
 extern "C" void Collision__ctor_m183727591 ();
 extern "C" void Collision_get_relativeVelocity_m1067992885 ();
 extern "C" void Collision_get_rigidbody_m1973745126 ();
@@ -7352,10 +7532,33 @@ extern "C" void Collision_get_impulse_m2182857643 ();
 extern "C" void Collision_get_impactForceSum_m3741050290 ();
 extern "C" void Collision_get_frictionForceSum_m3009900454 ();
 extern "C" void Collision_get_other_m541712697 ();
+extern "C" void Collision2D__ctor_m3298468565 ();
+extern "C" void Collision2D_get_enabled_m3761113681 ();
+extern "C" void Collision2D_get_rigidbody_m4259461250 ();
+extern "C" void Collision2D_get_collider_m4116040666 ();
+extern "C" void Collision2D_get_transform_m2182628532 ();
+extern "C" void Collision2D_get_gameObject_m718845954 ();
+extern "C" void Collision2D_get_contacts_m4248754423 ();
+extern "C" void Collision2D_get_relativeVelocity_m2960747782 ();
+extern "C" void Color__ctor_m2252924356 ();
+extern "C" void Color__ctor_m103496991 ();
 extern "C" void Color_ToString_m2277845527 ();
 extern "C" void Color_GetHashCode_m170503301 ();
 extern "C" void Color_Equals_m3016668205 ();
+extern "C" void Color_Lerp_m3494628845 ();
+extern "C" void Color_get_red_m4288945411 ();
+extern "C" void Color_get_blue_m3657252170 ();
+extern "C" void Color_get_white_m3038282331 ();
+extern "C" void Color_get_black_m1687201969 ();
+extern "C" void Color_get_yellow_m599454500 ();
+extern "C" void Color_get_clear_m2578346879 ();
+extern "C" void Color_op_Multiply_m204757678 ();
+extern "C" void Color_op_Equality_m4163276884 ();
 extern "C" void Color_op_Implicit_m2638307542 ();
+extern "C" void Color32__ctor_m576906339 ();
+extern "C" void Color32_ToString_m909782902 ();
+extern "C" void Color32_op_Implicit_m3684884838 ();
+extern "C" void Color32_op_Implicit_m358459656 ();
 extern "C" void Component__ctor_m4238603388 ();
 extern "C" void Component_get_transform_m4257140443 ();
 extern "C" void Component_get_gameObject_m1170635899 ();
@@ -7414,9 +7617,17 @@ extern "C" void Debug__cctor_m37515655 ();
 extern "C" void Debug_get_logger_m275693158 ();
 extern "C" void Debug_Log_m1731103628 ();
 extern "C" void Debug_LogError_m4127342994 ();
+extern "C" void Debug_LogError_m214246398 ();
+extern "C" void Debug_LogException_m248970745 ();
+extern "C" void Debug_LogException_m2264672311 ();
+extern "C" void Debug_LogWarning_m3123317694 ();
+extern "C" void Debug_LogWarning_m4097176146 ();
 extern "C" void DebugLogHandler__ctor_m1521597024 ();
 extern "C" void DebugLogHandler_Internal_Log_m3731237167 ();
+extern "C" void DebugLogHandler_Internal_LogException_m1007136309 ();
 extern "C" void DebugLogHandler_LogFormat_m1190453926 ();
+extern "C" void DebugLogHandler_LogException_m3623531313 ();
+extern "C" void DisallowMultipleComponent__ctor_m3170514567 ();
 extern "C" void Display__ctor_m923501527 ();
 extern "C" void Display__ctor_m3179075037 ();
 extern "C" void Display__cctor_m2376647350 ();
@@ -7426,20 +7637,87 @@ extern "C" void DisplaysUpdatedDelegate__ctor_m3468699627 ();
 extern "C" void DisplaysUpdatedDelegate_Invoke_m3958989829 ();
 extern "C" void DisplaysUpdatedDelegate_BeginInvoke_m3264685798 ();
 extern "C" void DisplaysUpdatedDelegate_EndInvoke_m3466741627 ();
+extern "C" void DrivenRectTransformTracker_Add_m3461523141 ();
+extern "C" void DrivenRectTransformTracker_Clear_m309315364 ();
+extern "C" void Event__ctor_m1609448063 ();
+extern "C" void Event__ctor_m66398544 ();
+extern "C" void Event_Finalize_m2449826179 ();
+extern "C" void Event_get_mousePosition_m3610425949 ();
+extern "C" void Event_get_current_m238587645 ();
+extern "C" void Event_Internal_MakeMasterEventCurrent_m213199903 ();
+extern "C" void Event_get_isKey_m645126607 ();
+extern "C" void Event_get_isMouse_m3551276757 ();
+extern "C" void Event_GetHashCode_m2341647470 ();
+extern "C" void Event_Equals_m2374615830 ();
+extern "C" void Event_ToString_m3661517518 ();
+extern "C" void Event_Init_m3525277126 ();
+extern "C" void Event_Cleanup_m3160122945 ();
+extern "C" void Event_get_rawType_m696564524 ();
+extern "C" void Event_get_type_m2209939250 ();
+extern "C" void Event_Internal_GetMousePosition_m2054214537 ();
+extern "C" void Event_get_modifiers_m4020990886 ();
+extern "C" void Event_get_character_m3663172667 ();
+extern "C" void Event_get_commandName_m1197792621 ();
+extern "C" void Event_get_keyCode_m1820698462 ();
+extern "C" void Event_Internal_SetNativeEvent_m930902932 ();
+extern "C" void Event_set_displayIndex_m4130090435 ();
+extern "C" void Event_PopEvent_m2790075015 ();
 extern "C" void ArgumentCache__ctor_m4004594141 ();
+extern "C" void ArgumentCache_get_unityObjectArgument_m3221396682 ();
+extern "C" void ArgumentCache_get_unityObjectArgumentAssemblyTypeName_m2706134059 ();
+extern "C" void ArgumentCache_get_intArgument_m688472510 ();
+extern "C" void ArgumentCache_get_floatArgument_m457274527 ();
+extern "C" void ArgumentCache_get_stringArgument_m621059457 ();
+extern "C" void ArgumentCache_get_boolArgument_m948935837 ();
 extern "C" void ArgumentCache_TidyAssemblyTypeName_m705559900 ();
 extern "C" void ArgumentCache_OnBeforeSerialize_m2323221949 ();
 extern "C" void ArgumentCache_OnAfterDeserialize_m3764330697 ();
+extern "C" void BaseInvokableCall__ctor_m2839815662 ();
+extern "C" void BaseInvokableCall__ctor_m1692884045 ();
+extern "C" void BaseInvokableCall_AllowInvoke_m2941661095 ();
+extern "C" void InvokableCall__ctor_m1927467228 ();
+extern "C" void InvokableCall__ctor_m3567423952 ();
+extern "C" void InvokableCall_Invoke_m1513455731 ();
+extern "C" void InvokableCall_Find_m2076119333 ();
 extern "C" void InvokableCallList__ctor_m2413334847 ();
+extern "C" void InvokableCallList_AddPersistentInvokableCall_m4220625340 ();
+extern "C" void InvokableCallList_AddListener_m1356872764 ();
+extern "C" void InvokableCallList_RemoveListener_m855004700 ();
 extern "C" void InvokableCallList_ClearPersistent_m1690187553 ();
+extern "C" void InvokableCallList_Invoke_m575840373 ();
 extern "C" void PersistentCall__ctor_m3363339247 ();
+extern "C" void PersistentCall_get_target_m3400889750 ();
+extern "C" void PersistentCall_get_methodName_m3021973351 ();
+extern "C" void PersistentCall_get_mode_m1522877562 ();
+extern "C" void PersistentCall_get_arguments_m1871980514 ();
+extern "C" void PersistentCall_IsValid_m1010437221 ();
+extern "C" void PersistentCall_GetRuntimeCall_m3912860610 ();
+extern "C" void PersistentCall_GetObjectCall_m1043326447 ();
 extern "C" void PersistentCallGroup__ctor_m3119615256 ();
+extern "C" void PersistentCallGroup_Initialize_m3484159567 ();
+extern "C" void UnityAction__ctor_m4130179243 ();
+extern "C" void UnityAction_Invoke_m1979593925 ();
+extern "C" void UnityAction_BeginInvoke_m3541271198 ();
+extern "C" void UnityAction_EndInvoke_m794691643 ();
 extern "C" void UnityEvent__ctor_m1715209183 ();
+extern "C" void UnityEvent_AddListener_m4099140869 ();
+extern "C" void UnityEvent_FindMethod_Impl_m2897220818 ();
+extern "C" void UnityEvent_GetDelegate_m2043983920 ();
+extern "C" void UnityEvent_GetDelegate_m1012258596 ();
+extern "C" void UnityEvent_Invoke_m2672830205 ();
 extern "C" void UnityEventBase__ctor_m199506446 ();
 extern "C" void UnityEventBase_UnityEngine_ISerializationCallbackReceiver_OnBeforeSerialize_m1699382396 ();
 extern "C" void UnityEventBase_UnityEngine_ISerializationCallbackReceiver_OnAfterDeserialize_m1605173738 ();
+extern "C" void UnityEventBase_FindMethod_m1166071979 ();
+extern "C" void UnityEventBase_FindMethod_m113598831 ();
 extern "C" void UnityEventBase_DirtyPersistentCalls_m1636785090 ();
+extern "C" void UnityEventBase_RebuildPersistentCallsIfNeeded_m4147202091 ();
+extern "C" void UnityEventBase_AddCall_m1246572149 ();
+extern "C" void UnityEventBase_RemoveListener_m276725997 ();
+extern "C" void UnityEventBase_Invoke_m3681078084 ();
 extern "C" void UnityEventBase_ToString_m249191135 ();
+extern "C" void UnityEventBase_GetValidMethodInfo_m2325301202 ();
+extern "C" void ExecuteInEditMode__ctor_m1394231890 ();
 extern "C" void Playable__ctor_m2241556995 ();
 extern "C" void Playable__ctor_m3752126010 ();
 extern "C" void Playable_Dispose_m2747727607 ();
@@ -7487,6 +7765,18 @@ extern "C" void Playable_OnSetPlayState_m3539986029 ();
 extern "C" void Playable_op_Equality_m3091846835 ();
 extern "C" void Playable_op_Inequality_m3181167342 ();
 extern "C" void Playable_op_Implicit_m2513159357 ();
+extern "C" void Font_add_textureRebuilt_m3323945916 ();
+extern "C" void Font_remove_textureRebuilt_m2804643593 ();
+extern "C" void Font_get_material_m2407307367 ();
+extern "C" void Font_HasCharacter_m2480770466 ();
+extern "C" void Font_InvokeTextureRebuilt_Internal_m1357223658 ();
+extern "C" void Font_get_dynamic_m3880144684 ();
+extern "C" void Font_get_fontSize_m3025810271 ();
+extern "C" void FontTextureRebuildCallback__ctor_m2909762077 ();
+extern "C" void FontTextureRebuildCallback_Invoke_m3507488951 ();
+extern "C" void FontTextureRebuildCallback_BeginInvoke_m2984345076 ();
+extern "C" void FontTextureRebuildCallback_EndInvoke_m2078440109 ();
+extern "C" void GameObject__ctor_m3920833606 ();
 extern "C" void GameObject_GetComponent_m1004814461 ();
 extern "C" void GameObject_GetComponentFastPath_m2905716663 ();
 extern "C" void GameObject_GetComponentInChildren_m1490154500 ();
@@ -7496,16 +7786,296 @@ extern "C" void GameObject_GetComponentsInChildren_m305836803 ();
 extern "C" void GameObject_GetComponentsInParent_m521317102 ();
 extern "C" void GameObject_GetComponentsInternal_m181453881 ();
 extern "C" void GameObject_get_transform_m1278640159 ();
+extern "C" void GameObject_get_layer_m1648550306 ();
+extern "C" void GameObject_set_layer_m1872241535 ();
+extern "C" void GameObject_SetActive_m3538205401 ();
+extern "C" void GameObject_get_activeSelf_m3858025161 ();
+extern "C" void GameObject_get_activeInHierarchy_m612450965 ();
 extern "C" void GameObject_get_tag_m211612200 ();
 extern "C" void GameObject_set_tag_m859036203 ();
 extern "C" void GameObject_SendMessage_m423373689 ();
+extern "C" void GameObject_Internal_AddComponentWithType_m2266369934 ();
+extern "C" void GameObject_AddComponent_m2208780168 ();
+extern "C" void GameObject_Internal_CreateGameObject_m2521325981 ();
 extern "C" void GameObject_Find_m332785498 ();
 extern "C" void Gradient__ctor_m3068495933 ();
 extern "C" void Gradient_Init_m2544372343 ();
 extern "C" void Gradient_Cleanup_m850820223 ();
 extern "C" void Gradient_Finalize_m3875885829 ();
+extern "C" void GUI__cctor_m1345698031 ();
+extern "C" void GUI_set_nextScrollStepTime_m3820512796 ();
+extern "C" void GUI_set_skin_m1213959601 ();
+extern "C" void GUI_get_skin_m4001454842 ();
+extern "C" void GUI_DoSetSkin_m800823745 ();
+extern "C" void GUI_CallWindowDelegate_m2260338804 ();
+extern "C" void GUI_set_changed_m727947722 ();
+extern "C" void ScrollViewState__ctor_m739544590 ();
+extern "C" void WindowFunction__ctor_m732638321 ();
+extern "C" void WindowFunction_Invoke_m2798584028 ();
+extern "C" void WindowFunction_BeginInvoke_m526788181 ();
+extern "C" void WindowFunction_EndInvoke_m203456257 ();
+extern "C" void GUIContent__ctor_m923375087 ();
+extern "C" void GUIContent__ctor_m174155123 ();
+extern "C" void GUIContent__cctor_m2372727710 ();
+extern "C" void GUIContent_Temp_m2857440895 ();
+extern "C" void GUIContent_Temp_m3826417963 ();
+extern "C" void GUIContent_ClearStaticCache_m2388858588 ();
 extern "C" void GUILayer_HitTest_m3356120918 ();
 extern "C" void GUILayer_INTERNAL_CALL_HitTest_m4210766818 ();
+extern "C" void GUILayout_Width_m2259621411 ();
+extern "C" void GUILayout_Height_m3774802884 ();
+extern "C" void GUILayoutEntry__ctor_m3586081151 ();
+extern "C" void GUILayoutEntry__cctor_m4107715149 ();
+extern "C" void GUILayoutEntry_get_style_m3507897988 ();
+extern "C" void GUILayoutEntry_set_style_m706118245 ();
+extern "C" void GUILayoutEntry_get_margin_m3705107036 ();
+extern "C" void GUILayoutEntry_CalcWidth_m3370167343 ();
+extern "C" void GUILayoutEntry_CalcHeight_m1899786880 ();
+extern "C" void GUILayoutEntry_SetHorizontal_m3810336940 ();
+extern "C" void GUILayoutEntry_SetVertical_m880890586 ();
+extern "C" void GUILayoutEntry_ApplyStyleSettings_m937804029 ();
+extern "C" void GUILayoutEntry_ApplyOptions_m2425801465 ();
+extern "C" void GUILayoutEntry_ToString_m4021956595 ();
+extern "C" void GUILayoutGroup__ctor_m3393996275 ();
+extern "C" void GUILayoutGroup_get_margin_m1931560361 ();
+extern "C" void GUILayoutGroup_ApplyOptions_m743820812 ();
+extern "C" void GUILayoutGroup_ApplyStyleSettings_m1024249546 ();
+extern "C" void GUILayoutGroup_ResetCursor_m982464342 ();
+extern "C" void GUILayoutGroup_CalcWidth_m1234746178 ();
+extern "C" void GUILayoutGroup_SetHorizontal_m985132857 ();
+extern "C" void GUILayoutGroup_CalcHeight_m126240205 ();
+extern "C" void GUILayoutGroup_SetVertical_m967336103 ();
+extern "C" void GUILayoutGroup_ToString_m2567598720 ();
+extern "C" void GUILayoutOption__ctor_m573459815 ();
+extern "C" void GUILayoutUtility__cctor_m1548085895 ();
+extern "C" void GUILayoutUtility_SelectIDList_m801008209 ();
+extern "C" void GUILayoutUtility_Begin_m2012081982 ();
+extern "C" void GUILayoutUtility_BeginWindow_m4017651538 ();
+extern "C" void GUILayoutUtility_Layout_m1143185416 ();
+extern "C" void GUILayoutUtility_LayoutFromEditorWindow_m3347777775 ();
+extern "C" void GUILayoutUtility_LayoutFreeGroup_m2250873692 ();
+extern "C" void GUILayoutUtility_LayoutSingleGroup_m1841651392 ();
+extern "C" void GUILayoutUtility_get_spaceStyle_m3628948340 ();
+extern "C" void GUILayoutUtility_Internal_GetWindowRect_m1168223211 ();
+extern "C" void GUILayoutUtility_INTERNAL_CALL_Internal_GetWindowRect_m1468033111 ();
+extern "C" void GUILayoutUtility_Internal_MoveWindow_m2191818611 ();
+extern "C" void GUILayoutUtility_INTERNAL_CALL_Internal_MoveWindow_m115257690 ();
+extern "C" void LayoutCache__ctor_m3196944573 ();
+extern "C" void GUIScrollGroup__ctor_m2652149846 ();
+extern "C" void GUIScrollGroup_CalcWidth_m2187011109 ();
+extern "C" void GUIScrollGroup_SetHorizontal_m3329305078 ();
+extern "C" void GUIScrollGroup_CalcHeight_m3876649290 ();
+extern "C" void GUIScrollGroup_SetVertical_m3472565924 ();
+extern "C" void GUISettings__ctor_m1563013787 ();
+extern "C" void GUISettings_get_cursorColor_m3617656164 ();
+extern "C" void GUISettings_get_cursorFlashSpeed_m3510903059 ();
+extern "C" void GUISettings_get_selectionColor_m3945610946 ();
+extern "C" void GUISettings_Internal_GetCursorFlashSpeed_m2094683006 ();
+extern "C" void GUISkin__ctor_m3819836417 ();
+extern "C" void GUISkin_OnEnable_m3659769829 ();
+extern "C" void GUISkin_get_font_m4064925714 ();
+extern "C" void GUISkin_set_font_m2298219977 ();
+extern "C" void GUISkin_get_box_m3284280323 ();
+extern "C" void GUISkin_set_box_m35439328 ();
+extern "C" void GUISkin_get_label_m3553254700 ();
+extern "C" void GUISkin_set_label_m4062710537 ();
+extern "C" void GUISkin_get_textField_m3831281733 ();
+extern "C" void GUISkin_set_textField_m2041526946 ();
+extern "C" void GUISkin_get_textArea_m4283710532 ();
+extern "C" void GUISkin_set_textArea_m1255688077 ();
+extern "C" void GUISkin_get_button_m3628017756 ();
+extern "C" void GUISkin_set_button_m2794546469 ();
+extern "C" void GUISkin_get_toggle_m3519495166 ();
+extern "C" void GUISkin_set_toggle_m3743241159 ();
+extern "C" void GUISkin_get_window_m3620644250 ();
+extern "C" void GUISkin_set_window_m93050723 ();
+extern "C" void GUISkin_get_horizontalSlider_m1556961103 ();
+extern "C" void GUISkin_set_horizontalSlider_m2400811288 ();
+extern "C" void GUISkin_get_horizontalSliderThumb_m561455017 ();
+extern "C" void GUISkin_set_horizontalSliderThumb_m3534756102 ();
+extern "C" void GUISkin_get_verticalSlider_m3077048033 ();
+extern "C" void GUISkin_set_verticalSlider_m2007128362 ();
+extern "C" void GUISkin_get_verticalSliderThumb_m4032125783 ();
+extern "C" void GUISkin_set_verticalSliderThumb_m1533703220 ();
+extern "C" void GUISkin_get_horizontalScrollbar_m4254994650 ();
+extern "C" void GUISkin_set_horizontalScrollbar_m2358004279 ();
+extern "C" void GUISkin_get_horizontalScrollbarThumb_m543401214 ();
+extern "C" void GUISkin_set_horizontalScrollbarThumb_m1178477383 ();
+extern "C" void GUISkin_get_horizontalScrollbarLeftButton_m1723095443 ();
+extern "C" void GUISkin_set_horizontalScrollbarLeftButton_m1050046448 ();
+extern "C" void GUISkin_get_horizontalScrollbarRightButton_m3218269270 ();
+extern "C" void GUISkin_set_horizontalScrollbarRightButton_m75365919 ();
+extern "C" void GUISkin_get_verticalScrollbar_m3029557256 ();
+extern "C" void GUISkin_set_verticalScrollbar_m3705641189 ();
+extern "C" void GUISkin_get_verticalScrollbarThumb_m2548474512 ();
+extern "C" void GUISkin_set_verticalScrollbarThumb_m1958138201 ();
+extern "C" void GUISkin_get_verticalScrollbarUpButton_m2399801237 ();
+extern "C" void GUISkin_set_verticalScrollbarUpButton_m3911333362 ();
+extern "C" void GUISkin_get_verticalScrollbarDownButton_m1448263900 ();
+extern "C" void GUISkin_set_verticalScrollbarDownButton_m138386233 ();
+extern "C" void GUISkin_get_scrollView_m3339613116 ();
+extern "C" void GUISkin_set_scrollView_m4285810053 ();
+extern "C" void GUISkin_get_customStyles_m816658303 ();
+extern "C" void GUISkin_set_customStyles_m1092778308 ();
+extern "C" void GUISkin_get_settings_m3861471971 ();
+extern "C" void GUISkin_get_error_m2137471808 ();
+extern "C" void GUISkin_Apply_m3870939405 ();
+extern "C" void GUISkin_BuildStyleCache_m504236350 ();
+extern "C" void GUISkin_GetStyle_m2474694726 ();
+extern "C" void GUISkin_FindStyle_m2067600169 ();
+extern "C" void GUISkin_MakeCurrent_m174297994 ();
+extern "C" void GUISkin_GetEnumerator_m1290986451 ();
+extern "C" void SkinChangedDelegate__ctor_m1472037998 ();
+extern "C" void SkinChangedDelegate_Invoke_m3141787208 ();
+extern "C" void SkinChangedDelegate_BeginInvoke_m1122457923 ();
+extern "C" void SkinChangedDelegate_EndInvoke_m3094371710 ();
+extern "C" void GUIStyle__ctor_m478034167 ();
+extern "C" void GUIStyle__ctor_m584655914 ();
+extern "C" void GUIStyle__cctor_m1452061078 ();
+extern "C" void GUIStyle_Finalize_m3401789451 ();
+extern "C" void GUIStyle_InternalOnAfterDeserialize_m1012732492 ();
+extern "C" void GUIStyle_get_normal_m42729964 ();
+extern "C" void GUIStyle_set_normal_m3590268413 ();
+extern "C" void GUIStyle_get_hover_m3685402873 ();
+extern "C" void GUIStyle_set_hover_m660294266 ();
+extern "C" void GUIStyle_get_active_m1150072907 ();
+extern "C" void GUIStyle_set_active_m79497342 ();
+extern "C" void GUIStyle_get_onNormal_m3672490987 ();
+extern "C" void GUIStyle_set_onNormal_m3860399646 ();
+extern "C" void GUIStyle_get_onHover_m3525397274 ();
+extern "C" void GUIStyle_set_onHover_m946102841 ();
+extern "C" void GUIStyle_get_onActive_m484866634 ();
+extern "C" void GUIStyle_set_onActive_m349628575 ();
+extern "C" void GUIStyle_get_focused_m2717215092 ();
+extern "C" void GUIStyle_set_focused_m1026899231 ();
+extern "C" void GUIStyle_get_onFocused_m3570657109 ();
+extern "C" void GUIStyle_set_onFocused_m811032862 ();
+extern "C" void GUIStyle_get_border_m1826068707 ();
+extern "C" void GUIStyle_set_border_m3254356648 ();
+extern "C" void GUIStyle_get_margin_m4279849445 ();
+extern "C" void GUIStyle_set_margin_m698201642 ();
+extern "C" void GUIStyle_get_padding_m3072941276 ();
+extern "C" void GUIStyle_set_padding_m458170651 ();
+extern "C" void GUIStyle_get_overflow_m2862114233 ();
+extern "C" void GUIStyle_set_overflow_m3029326398 ();
+extern "C" void GUIStyle_get_clipOffset_m3134687732 ();
+extern "C" void GUIStyle_set_clipOffset_m2780638285 ();
+extern "C" void GUIStyle_get_font_m1061814606 ();
+extern "C" void GUIStyle_set_font_m3587533075 ();
+extern "C" void GUIStyle_get_lineHeight_m3977255453 ();
+extern "C" void GUIStyle_Internal_Draw_m3671619263 ();
+extern "C" void GUIStyle_Draw_m2853558582 ();
+extern "C" void GUIStyle_Draw_m645175538 ();
+extern "C" void GUIStyle_Draw_m1301423966 ();
+extern "C" void GUIStyle_Draw_m860139579 ();
+extern "C" void GUIStyle_Draw_m2994577084 ();
+extern "C" void GUIStyle_Draw_m489809217 ();
+extern "C" void GUIStyle_DrawCursor_m4169664613 ();
+extern "C" void GUIStyle_DrawWithTextSelection_m469195656 ();
+extern "C" void GUIStyle_DrawWithTextSelection_m984171349 ();
+extern "C" void GUIStyle_get_none_m2767659632 ();
+extern "C" void GUIStyle_GetCursorPixelPosition_m296157110 ();
+extern "C" void GUIStyle_GetCursorStringIndex_m3223359742 ();
+extern "C" void GUIStyle_GetNumCharactersThatFitWithinWidth_m3286030319 ();
+extern "C" void GUIStyle_CalcSize_m2299809257 ();
+extern "C" void GUIStyle_CalcSizeWithConstraints_m3659418291 ();
+extern "C" void GUIStyle_CalcScreenSize_m1487928496 ();
+extern "C" void GUIStyle_CalcHeight_m3565424293 ();
+extern "C" void GUIStyle_get_isHeightDependantOnWidth_m1959928889 ();
+extern "C" void GUIStyle_CalcMinMaxWidth_m421008639 ();
+extern "C" void GUIStyle_ToString_m2491778876 ();
+extern "C" void GUIStyle_Init_m3292093053 ();
+extern "C" void GUIStyle_InitCopy_m3063430789 ();
+extern "C" void GUIStyle_Cleanup_m2498094777 ();
+extern "C" void GUIStyle_get_name_m4046186628 ();
+extern "C" void GUIStyle_set_name_m4125925261 ();
+extern "C" void GUIStyle_GetStyleStatePtr_m2550872619 ();
+extern "C" void GUIStyle_AssignStyleState_m4030196091 ();
+extern "C" void GUIStyle_GetRectOffsetPtr_m1931607252 ();
+extern "C" void GUIStyle_AssignRectOffset_m519705394 ();
+extern "C" void GUIStyle_get_imagePosition_m3876152522 ();
+extern "C" void GUIStyle_set_imagePosition_m1689669769 ();
+extern "C" void GUIStyle_get_alignment_m1533628953 ();
+extern "C" void GUIStyle_set_alignment_m4252900834 ();
+extern "C" void GUIStyle_get_wordWrap_m3830782768 ();
+extern "C" void GUIStyle_set_wordWrap_m3800572853 ();
+extern "C" void GUIStyle_get_clipping_m2044798529 ();
+extern "C" void GUIStyle_set_clipping_m771351942 ();
+extern "C" void GUIStyle_get_contentOffset_m2092220605 ();
+extern "C" void GUIStyle_set_contentOffset_m3385864054 ();
+extern "C" void GUIStyle_INTERNAL_get_contentOffset_m2078390432 ();
+extern "C" void GUIStyle_INTERNAL_set_contentOffset_m3891089324 ();
+extern "C" void GUIStyle_get_Internal_clipOffset_m4123163318 ();
+extern "C" void GUIStyle_set_Internal_clipOffset_m411599389 ();
+extern "C" void GUIStyle_INTERNAL_get_Internal_clipOffset_m3417369433 ();
+extern "C" void GUIStyle_INTERNAL_set_Internal_clipOffset_m188352869 ();
+extern "C" void GUIStyle_get_fixedWidth_m3249098964 ();
+extern "C" void GUIStyle_set_fixedWidth_m2486234607 ();
+extern "C" void GUIStyle_get_fixedHeight_m2441634427 ();
+extern "C" void GUIStyle_set_fixedHeight_m2209877368 ();
+extern "C" void GUIStyle_get_stretchWidth_m38609341 ();
+extern "C" void GUIStyle_set_stretchWidth_m829487234 ();
+extern "C" void GUIStyle_get_stretchHeight_m1700703922 ();
+extern "C" void GUIStyle_set_stretchHeight_m703419995 ();
+extern "C" void GUIStyle_Internal_GetLineHeight_m4224806028 ();
+extern "C" void GUIStyle_SetFontInternal_m2859258365 ();
+extern "C" void GUIStyle_GetFontInternalDuringLoadingThread_m1458608761 ();
+extern "C" void GUIStyle_GetFontInternal_m2928804526 ();
+extern "C" void GUIStyle_get_fontSize_m2938276678 ();
+extern "C" void GUIStyle_set_fontSize_m3621764235 ();
+extern "C" void GUIStyle_get_fontStyle_m3314019014 ();
+extern "C" void GUIStyle_set_fontStyle_m3298083597 ();
+extern "C" void GUIStyle_get_richText_m1558667173 ();
+extern "C" void GUIStyle_set_richText_m1293612906 ();
+extern "C" void GUIStyle_Internal_Draw_m3365779187 ();
+extern "C" void GUIStyle_Internal_Draw2_m2706374407 ();
+extern "C" void GUIStyle_INTERNAL_CALL_Internal_Draw2_m1512749466 ();
+extern "C" void GUIStyle_Internal_DrawPrefixLabel_m1343381847 ();
+extern "C" void GUIStyle_INTERNAL_CALL_Internal_DrawPrefixLabel_m3654921866 ();
+extern "C" void GUIStyle_Internal_GetCursorFlashOffset_m3106442082 ();
+extern "C" void GUIStyle_Internal_DrawCursor_m496261262 ();
+extern "C" void GUIStyle_INTERNAL_CALL_Internal_DrawCursor_m330118499 ();
+extern "C" void GUIStyle_Internal_DrawWithTextSelection_m538670273 ();
+extern "C" void GUIStyle_SetDefaultFont_m1041826325 ();
+extern "C" void GUIStyle_Internal_GetCursorPixelPosition_m336331745 ();
+extern "C" void GUIStyle_INTERNAL_CALL_Internal_GetCursorPixelPosition_m2602567800 ();
+extern "C" void GUIStyle_Internal_GetCursorStringIndex_m1275963970 ();
+extern "C" void GUIStyle_INTERNAL_CALL_Internal_GetCursorStringIndex_m3457179887 ();
+extern "C" void GUIStyle_Internal_GetNumCharactersThatFitWithinWidth_m470425907 ();
+extern "C" void GUIStyle_Internal_CalcSize_m1389308622 ();
+extern "C" void GUIStyle_Internal_CalcSizeWithConstraints_m484790978 ();
+extern "C" void GUIStyle_INTERNAL_CALL_Internal_CalcSizeWithConstraints_m2048982689 ();
+extern "C" void GUIStyle_Internal_CalcHeight_m3448302985 ();
+extern "C" void GUIStyle_Internal_CalcMinMaxWidth_m1670371175 ();
+extern "C" void GUIStyle_op_Implicit_m169215436 ();
+extern "C" void GUIStyleState__ctor_m2789776190 ();
+extern "C" void GUIStyleState__ctor_m1478971583 ();
+extern "C" void GUIStyleState_ProduceGUIStyleStateFromDeserialization_m243465942 ();
+extern "C" void GUIStyleState_GetGUIStyleState_m511242685 ();
+extern "C" void GUIStyleState_Finalize_m2707805284 ();
+extern "C" void GUIStyleState_Init_m872813398 ();
+extern "C" void GUIStyleState_Cleanup_m3584086848 ();
+extern "C" void GUIStyleState_GetBackgroundInternalFromDeserialization_m2608056493 ();
+extern "C" void GUIStyleState_GetBackgroundInternal_m2898492250 ();
+extern "C" void GUIStyleState_set_textColor_m3058467057 ();
+extern "C" void GUIStyleState_INTERNAL_set_textColor_m2711899875 ();
+extern "C" void GUITargetAttribute_GetGUITargetAttrValue_m1884776752 ();
+extern "C" void GUIUtility__cctor_m2712534225 ();
+extern "C" void GUIUtility_get_pixelsPerPoint_m2351352349 ();
+extern "C" void GUIUtility_get_hotControl_m4135893409 ();
+extern "C" void GUIUtility_GetDefaultSkin_m3151786562 ();
+extern "C" void GUIUtility_BeginGUI_m1799121707 ();
+extern "C" void GUIUtility_EndGUI_m1069008217 ();
+extern "C" void GUIUtility_EndGUIFromException_m1739426121 ();
+extern "C" void GUIUtility_CheckOnGUI_m640002012 ();
+extern "C" void GUIUtility_Internal_GetPixelsPerPoint_m4247925832 ();
+extern "C" void GUIUtility_Internal_GetHotControl_m1758149964 ();
+extern "C" void GUIUtility_get_keyboardControl_m1277835431 ();
+extern "C" void GUIUtility_get_systemCopyBuffer_m1467578008 ();
+extern "C" void GUIUtility_set_systemCopyBuffer_m2088074937 ();
+extern "C" void GUIUtility_Internal_GetDefaultSkin_m1795114979 ();
+extern "C" void GUIUtility_Internal_ExitGUI_m725832131 ();
+extern "C" void GUIUtility_Internal_GetGUIDepth_m2619692036 ();
 extern "C" void HostData__ctor_m2522227771 ();
 extern "C" void HostData_get_useNat_m4254429010 ();
 extern "C" void HostData_set_useNat_m2634285015 ();
@@ -7527,14 +8097,30 @@ extern "C" void HostData_get_comment_m2806883628 ();
 extern "C" void HostData_set_comment_m3861418087 ();
 extern "C" void HostData_get_guid_m4094499646 ();
 extern "C" void HostData_set_guid_m3576769299 ();
+extern "C" void HumanBone_get_boneName_m4281149553 ();
+extern "C" void HumanBone_set_boneName_m2758161818 ();
+extern "C" void HumanBone_get_humanName_m1702517944 ();
+extern "C" void HumanBone_set_humanName_m1186126593 ();
+extern "C" void IL2CPPStructAlignmentAttribute__ctor_m55581643 ();
 extern "C" void Input__cctor_m1327041086 ();
+extern "C" void Input_GetAxisRaw_m1900207208 ();
+extern "C" void Input_GetButtonDown_m1879002085 ();
 extern "C" void Input_GetMouseButton_m4080958081 ();
 extern "C" void Input_GetMouseButtonDown_m2031691843 ();
+extern "C" void Input_GetMouseButtonUp_m2588144188 ();
 extern "C" void Input_get_mousePosition_m4020233228 ();
 extern "C" void Input_INTERNAL_get_mousePosition_m4008828427 ();
+extern "C" void Input_get_mouseScrollDelta_m3050122505 ();
+extern "C" void Input_INTERNAL_get_mouseScrollDelta_m2726147504 ();
+extern "C" void Input_get_mousePresent_m3235491246 ();
 extern "C" void Input_get_touches_m300368858 ();
 extern "C" void Input_GetTouch_m2282421092 ();
 extern "C" void Input_get_touchCount_m1430909390 ();
+extern "C" void Input_get_touchSupported_m634162567 ();
+extern "C" void Input_set_imeCompositionMode_m1719849947 ();
+extern "C" void Input_get_compositionString_m1541052002 ();
+extern "C" void Input_set_compositionCursorPos_m3225375732 ();
+extern "C" void Input_INTERNAL_set_compositionCursorPos_m1084763314 ();
 extern "C" void DefaultValueAttribute__ctor_m1665393712 ();
 extern "C" void DefaultValueAttribute_get_Value_m1575119971 ();
 extern "C" void DefaultValueAttribute_Equals_m1990537309 ();
@@ -7622,6 +8208,7 @@ extern "C" void Keyframe_set_outTangent_m4071134898 ();
 extern "C" void Keyframe_get_tangentMode_m1245220572 ();
 extern "C" void Keyframe_set_tangentMode_m2444824761 ();
 extern "C" void LayerMask_op_Implicit_m1595580047 ();
+extern "C" void LayerMask_op_Implicit_m2608572187 ();
 extern "C" void Logger__ctor_m654679389 ();
 extern "C" void Logger_get_logHandler_m2576399569 ();
 extern "C" void Logger_set_logHandler_m2661029584 ();
@@ -7632,15 +8219,83 @@ extern "C" void Logger_set_filterLogType_m3244716167 ();
 extern "C" void Logger_IsLogTypeAllowed_m3362907658 ();
 extern "C" void Logger_GetString_m3033796341 ();
 extern "C" void Logger_Log_m3875808634 ();
+extern "C" void Logger_Log_m3185878806 ();
 extern "C" void Logger_LogFormat_m4050017187 ();
+extern "C" void Logger_LogException_m426775790 ();
+extern "C" void Material__ctor_m2546967560 ();
 extern "C" void Material_set_color_m3296857020 ();
+extern "C" void Material_get_mainTexture_m1012267054 ();
 extern "C" void Material_SetColor_m1918430019 ();
 extern "C" void Material_SetColor_m54957808 ();
 extern "C" void Material_INTERNAL_CALL_SetColor_m3209011477 ();
+extern "C" void Material_GetTexture_m1284113328 ();
+extern "C" void Material_GetTexture_m3767468771 ();
+extern "C" void Material_SetFloat_m981710063 ();
+extern "C" void Material_SetFloat_m170145518 ();
+extern "C" void Material_SetInt_m2649395040 ();
+extern "C" void Material_HasProperty_m2077312757 ();
+extern "C" void Material_HasProperty_m190825214 ();
+extern "C" void Material_Internal_CreateWithMaterial_m2349411671 ();
+extern "C" void Material_EnableKeyword_m3802712984 ();
+extern "C" void Material_DisableKeyword_m572736419 ();
 extern "C" void Mathf__cctor_m1875403730 ();
+extern "C" void Mathf_Sin_m2014639246 ();
+extern "C" void Mathf_Cos_m2060147711 ();
+extern "C" void Mathf_Sqrt_m3592270478 ();
 extern "C" void Mathf_Abs_m3641135540 ();
+extern "C" void Mathf_Min_m2322067385 ();
+extern "C" void Mathf_Min_m2413438171 ();
 extern "C" void Mathf_Max_m3923796455 ();
+extern "C" void Mathf_Max_m2911193737 ();
+extern "C" void Mathf_Pow_m2793367923 ();
+extern "C" void Mathf_Log_m2062790663 ();
+extern "C" void Mathf_Ceil_m3793305609 ();
+extern "C" void Mathf_Floor_m1715447770 ();
+extern "C" void Mathf_Round_m2677810712 ();
+extern "C" void Mathf_CeilToInt_m3621832739 ();
+extern "C" void Mathf_FloorToInt_m268511322 ();
+extern "C" void Mathf_RoundToInt_m3163545820 ();
+extern "C" void Mathf_Sign_m4040614993 ();
+extern "C" void Mathf_Clamp_m3872743893 ();
+extern "C" void Mathf_Clamp_m510460741 ();
+extern "C" void Mathf_Clamp01_m2272733930 ();
+extern "C" void Mathf_Lerp_m3257777633 ();
 extern "C" void Mathf_Approximately_m1395529776 ();
+extern "C" void Mathf_SmoothDamp_m779170481 ();
+extern "C" void Mathf_Repeat_m3424250200 ();
+extern "C" void Mathf_InverseLerp_m152689993 ();
+extern "C" void Matrix4x4_get_Item_m2279862332 ();
+extern "C" void Matrix4x4_get_Item_m1280478331 ();
+extern "C" void Matrix4x4_GetHashCode_m4083477721 ();
+extern "C" void Matrix4x4_Equals_m3534208385 ();
+extern "C" void Matrix4x4_GetColumn_m786071102 ();
+extern "C" void Matrix4x4_MultiplyPoint3x4_m2198174902 ();
+extern "C" void Matrix4x4_ToString_m294134723 ();
+extern "C" void Mesh__ctor_m2684203808 ();
+extern "C" void Mesh_Internal_Create_m3749730360 ();
+extern "C" void Mesh_Clear_m1789068674 ();
+extern "C" void Mesh_Clear_m90337099 ();
+extern "C" void Mesh_get_vertices_m3685486174 ();
+extern "C" void Mesh_SetVertices_m701834806 ();
+extern "C" void Mesh_SetVerticesInternal_m1274639230 ();
+extern "C" void Mesh_get_normals_m3396909641 ();
+extern "C" void Mesh_SetNormals_m2039144779 ();
+extern "C" void Mesh_SetNormalsInternal_m1710845385 ();
+extern "C" void Mesh_get_tangents_m3235865682 ();
+extern "C" void Mesh_SetTangents_m2005345740 ();
+extern "C" void Mesh_SetTangentsInternal_m763303177 ();
+extern "C" void Mesh_get_uv_m558008935 ();
+extern "C" void Mesh_get_uv2_m118417421 ();
+extern "C" void Mesh_ExtractListData_m2453560898 ();
+extern "C" void Mesh_SetUVsInternal_m4014622176 ();
+extern "C" void Mesh_SetUVs_m116216925 ();
+extern "C" void Mesh_get_colors32_m192356802 ();
+extern "C" void Mesh_SetColors_m3313707935 ();
+extern "C" void Mesh_SetColors32Internal_m1830241000 ();
+extern "C" void Mesh_RecalculateBounds_m3754336742 ();
+extern "C" void Mesh_SetTriangles_m456382467 ();
+extern "C" void Mesh_SetTrianglesInternal_m2955775213 ();
+extern "C" void Mesh_GetIndices_m637494532 ();
 extern "C" void MonoBehaviour__ctor_m2022291967 ();
 extern "C" void MonoBehaviour_Internal_CancelInvokeAll_m972795186 ();
 extern "C" void MonoBehaviour_Internal_IsInvokingAll_m3154030143 ();
@@ -7741,49 +8396,172 @@ extern "C" void Object_op_Implicit_m2106766291 ();
 extern "C" void Object_op_Equality_m3964590952 ();
 extern "C" void Object_op_Inequality_m1296218211 ();
 extern "C" void Physics_Raycast_m1758069759 ();
+extern "C" void Physics_Raycast_m1600345803 ();
 extern "C" void Physics_Raycast_m1235528076 ();
 extern "C" void Physics_Raycast_m165875788 ();
+extern "C" void Physics_RaycastAll_m1771931441 ();
+extern "C" void Physics_RaycastAll_m1269007794 ();
+extern "C" void Physics_RaycastAll_m892728677 ();
+extern "C" void Physics_INTERNAL_CALL_RaycastAll_m2642095530 ();
 extern "C" void Physics_Internal_Raycast_m3365413907 ();
 extern "C" void Physics_INTERNAL_CALL_Internal_Raycast_m1291554392 ();
+extern "C" void Physics2D__cctor_m2087591309 ();
+extern "C" void Physics2D_Internal_Raycast_m4294843026 ();
+extern "C" void Physics2D_INTERNAL_CALL_Internal_Raycast_m1210233913 ();
+extern "C" void Physics2D_Raycast_m1435321255 ();
+extern "C" void Physics2D_Raycast_m301626417 ();
+extern "C" void Physics2D_GetRayIntersectionAll_m2520210479 ();
+extern "C" void Physics2D_INTERNAL_CALL_GetRayIntersectionAll_m2968135304 ();
+extern "C" void Plane__ctor_m2201046863 ();
+extern "C" void Plane_get_normal_m3534129213 ();
+extern "C" void Plane_get_distance_m2612484153 ();
+extern "C" void Plane_Raycast_m2829769106 ();
+extern "C" void PropertyAttribute__ctor_m1741701746 ();
 extern "C" void Quaternion__ctor_m1100844011 ();
 extern "C" void Quaternion_get_identity_m1743882806 ();
+extern "C" void Quaternion_Dot_m580284 ();
+extern "C" void Quaternion_Inverse_m3542515566 ();
+extern "C" void Quaternion_INTERNAL_CALL_Inverse_m4175627710 ();
 extern "C" void Quaternion_ToString_m1793285860 ();
 extern "C" void Quaternion_GetHashCode_m3823258238 ();
 extern "C" void Quaternion_Equals_m3843409946 ();
 extern "C" void Quaternion_op_Multiply_m3771288979 ();
+extern "C" void Quaternion_op_Inequality_m4197259746 ();
 extern "C" void Random_set_seed_m58891993 ();
 extern "C" void Random_get_value_m2402066692 ();
+extern "C" void RangeAttribute__ctor_m1279576482 ();
+extern "C" void Ray__ctor_m2662468509 ();
 extern "C" void Ray_get_origin_m3064983562 ();
 extern "C" void Ray_get_direction_m3201866877 ();
+extern "C" void Ray_GetPoint_m1171104822 ();
 extern "C" void Ray_ToString_m1391619614 ();
 extern "C" void RaycastHit_get_point_m4165497838 ();
+extern "C" void RaycastHit_get_normal_m1346998891 ();
+extern "C" void RaycastHit_get_distance_m800944203 ();
 extern "C" void RaycastHit_get_collider_m3116882274 ();
 extern "C" void RaycastHit_get_rigidbody_m4137883432 ();
 extern "C" void RaycastHit_get_transform_m905149094 ();
+extern "C" void RaycastHit2D_get_point_m2072691227 ();
+extern "C" void RaycastHit2D_get_normal_m894503390 ();
+extern "C" void RaycastHit2D_get_fraction_m2313516650 ();
+extern "C" void RaycastHit2D_get_collider_m789902306 ();
+extern "C" void RaycastHit2D_get_rigidbody_m1059160360 ();
+extern "C" void RaycastHit2D_get_transform_m1318597140 ();
+extern "C" void Rect__ctor_m3291325233 ();
 extern "C" void Rect_get_x_m982385354 ();
+extern "C" void Rect_set_x_m577970569 ();
 extern "C" void Rect_get_y_m982386315 ();
+extern "C" void Rect_set_y_m67436392 ();
+extern "C" void Rect_get_position_m2933356232 ();
+extern "C" void Rect_get_center_m610643572 ();
+extern "C" void Rect_get_min_m275942709 ();
+extern "C" void Rect_get_max_m275713991 ();
 extern "C" void Rect_get_width_m2824209432 ();
+extern "C" void Rect_set_width_m3771513595 ();
 extern "C" void Rect_get_height_m2154960823 ();
+extern "C" void Rect_set_height_m3398820332 ();
+extern "C" void Rect_get_size_m136480416 ();
 extern "C" void Rect_get_xMin_m371109962 ();
+extern "C" void Rect_set_xMin_m265803321 ();
 extern "C" void Rect_get_yMin_m399739113 ();
+extern "C" void Rect_set_yMin_m3716298746 ();
 extern "C" void Rect_get_xMax_m370881244 ();
+extern "C" void Rect_set_xMax_m1513853159 ();
 extern "C" void Rect_get_yMax_m399510395 ();
+extern "C" void Rect_set_yMax_m669381288 ();
 extern "C" void Rect_ToString_m2093687658 ();
+extern "C" void Rect_Contains_m3556594010 ();
 extern "C" void Rect_Contains_m3556594041 ();
+extern "C" void Rect_OrderMinMax_m3424313368 ();
+extern "C" void Rect_Overlaps_m669681106 ();
+extern "C" void Rect_Overlaps_m2751672171 ();
 extern "C" void Rect_GetHashCode_m89026168 ();
 extern "C" void Rect_Equals_m1091722644 ();
+extern "C" void Rect_op_Inequality_m2236552616 ();
+extern "C" void Rect_op_Equality_m1552341101 ();
+extern "C" void RectOffset__ctor_m2395783478 ();
+extern "C" void RectOffset__ctor_m358348983 ();
+extern "C" void RectOffset_Init_m3353955934 ();
+extern "C" void RectOffset_Cleanup_m2914212664 ();
+extern "C" void RectOffset_get_left_m4104523390 ();
+extern "C" void RectOffset_set_left_m901965251 ();
+extern "C" void RectOffset_get_right_m3831383975 ();
+extern "C" void RectOffset_set_right_m2119805444 ();
+extern "C" void RectOffset_get_top_m140097312 ();
+extern "C" void RectOffset_set_top_m3043172093 ();
+extern "C" void RectOffset_get_bottom_m2106858018 ();
+extern "C" void RectOffset_set_bottom_m3840454247 ();
+extern "C" void RectOffset_get_horizontal_m1186440923 ();
+extern "C" void RectOffset_get_vertical_m3650431789 ();
+extern "C" void RectOffset_Finalize_m3416542060 ();
+extern "C" void RectOffset_ToString_m2231965149 ();
+extern "C" void RectTransform_add_reapplyDrivenProperties_m1968705467 ();
+extern "C" void RectTransform_remove_reapplyDrivenProperties_m2607613076 ();
+extern "C" void RectTransform_get_rect_m1566017036 ();
+extern "C" void RectTransform_INTERNAL_get_rect_m1980775561 ();
+extern "C" void RectTransform_get_anchorMin_m688674174 ();
+extern "C" void RectTransform_set_anchorMin_m989253483 ();
+extern "C" void RectTransform_INTERNAL_get_anchorMin_m1139643287 ();
+extern "C" void RectTransform_INTERNAL_set_anchorMin_m370577571 ();
+extern "C" void RectTransform_get_anchorMax_m688445456 ();
+extern "C" void RectTransform_set_anchorMax_m715345817 ();
+extern "C" void RectTransform_INTERNAL_get_anchorMax_m1238440233 ();
+extern "C" void RectTransform_INTERNAL_set_anchorMax_m469374517 ();
+extern "C" void RectTransform_get_anchoredPosition_m2318455998 ();
+extern "C" void RectTransform_set_anchoredPosition_m1498949997 ();
+extern "C" void RectTransform_INTERNAL_get_anchoredPosition_m840986985 ();
+extern "C" void RectTransform_INTERNAL_set_anchoredPosition_m2329865949 ();
+extern "C" void RectTransform_get_sizeDelta_m4279424984 ();
+extern "C" void RectTransform_set_sizeDelta_m1223846609 ();
+extern "C" void RectTransform_INTERNAL_get_sizeDelta_m4117062897 ();
+extern "C" void RectTransform_INTERNAL_set_sizeDelta_m3347997181 ();
+extern "C" void RectTransform_get_pivot_m3785570595 ();
+extern "C" void RectTransform_set_pivot_m457344806 ();
+extern "C" void RectTransform_INTERNAL_get_pivot_m322514492 ();
+extern "C" void RectTransform_INTERNAL_set_pivot_m237146440 ();
 extern "C" void RectTransform_SendReapplyDrivenProperties_m2261331528 ();
+extern "C" void RectTransform_GetLocalCorners_m1867617311 ();
+extern "C" void RectTransform_GetWorldCorners_m1829917190 ();
+extern "C" void RectTransform_set_offsetMin_m951793481 ();
+extern "C" void RectTransform_set_offsetMax_m677885815 ();
+extern "C" void RectTransform_SetInsetAndSizeFromParentEdge_m1924354604 ();
+extern "C" void RectTransform_SetSizeWithCurrentAnchors_m4019722691 ();
+extern "C" void RectTransform_GetParentSize_m3092718635 ();
 extern "C" void ReapplyDrivenProperties__ctor_m3710908308 ();
 extern "C" void ReapplyDrivenProperties_Invoke_m3880635155 ();
 extern "C" void ReapplyDrivenProperties_BeginInvoke_m1851329218 ();
 extern "C" void ReapplyDrivenProperties_EndInvoke_m3686159268 ();
+extern "C" void RectTransformUtility__cctor_m4293768260 ();
+extern "C" void RectTransformUtility_RectangleContainsScreenPoint_m1460676684 ();
+extern "C" void RectTransformUtility_INTERNAL_CALL_RectangleContainsScreenPoint_m1592514141 ();
+extern "C" void RectTransformUtility_PixelAdjustPoint_m2518308759 ();
+extern "C" void RectTransformUtility_PixelAdjustPoint_m1313063708 ();
+extern "C" void RectTransformUtility_INTERNAL_CALL_PixelAdjustPoint_m1509640863 ();
+extern "C" void RectTransformUtility_PixelAdjustRect_m3727716130 ();
+extern "C" void RectTransformUtility_INTERNAL_CALL_PixelAdjustRect_m1038323288 ();
+extern "C" void RectTransformUtility_ScreenPointToWorldPointInRectangle_m3856201718 ();
+extern "C" void RectTransformUtility_ScreenPointToLocalPointInRectangle_m666650172 ();
+extern "C" void RectTransformUtility_ScreenPointToRay_m1216104542 ();
+extern "C" void RectTransformUtility_FlipLayoutOnAxis_m3487429352 ();
+extern "C" void RectTransformUtility_FlipLayoutAxes_m2163490602 ();
+extern "C" void RectTransformUtility_GetTransposed_m2060823533 ();
 extern "C" void Renderer_get_material_m2720864603 ();
 extern "C" void Renderer_get_bounds_m1533373851 ();
 extern "C" void Renderer_INTERNAL_get_bounds_m3488131760 ();
+extern "C" void Renderer_get_sortingLayerID_m1954594923 ();
+extern "C" void Renderer_get_sortingOrder_m3623465101 ();
+extern "C" void RenderTexture_Internal_GetWidth_m1030655936 ();
+extern "C" void RenderTexture_Internal_GetHeight_m1940011033 ();
+extern "C" void RenderTexture_get_width_m1498578543 ();
+extern "C" void RenderTexture_get_height_m4010076224 ();
+extern "C" void RequireComponent__ctor_m2023271172 ();
 extern "C" void ResourceRequest__ctor_m2863879896 ();
 extern "C" void ResourceRequest_get_asset_m670320982 ();
 extern "C" void Resources_Load_m3601699608 ();
 extern "C" void RPC__ctor_m281827604 ();
+extern "C" void Screen_get_width_m3080333084 ();
+extern "C" void Screen_get_height_m1504859443 ();
+extern "C" void Screen_get_dpi_m3780069159 ();
 extern "C" void ScriptableObject__ctor_m1827087273 ();
 extern "C" void ScriptableObject_Internal_CreateScriptableObject_m2334361070 ();
 extern "C" void ScriptableObject_CreateInstance_m750914562 ();
@@ -7791,6 +8569,7 @@ extern "C" void ScriptableObject_CreateInstance_m3255479417 ();
 extern "C" void ScriptableObject_CreateInstanceFromType_m3795352533 ();
 extern "C" void RequiredByNativeCodeAttribute__ctor_m940065582 ();
 extern "C" void UsedByNativeCodeAttribute__ctor_m3320039756 ();
+extern "C" void SelectionBaseAttribute__ctor_m3830336046 ();
 extern "C" void SendMouseEvents__cctor_m2731695210 ();
 extern "C" void SendMouseEvents_SetMouseMoved_m2590456785 ();
 extern "C" void SendMouseEvents_DoSendMouseEvents_m4104134333 ();
@@ -7806,6 +8585,7 @@ extern "C" void SetupCoroutine_InvokeMoveNext_m3556339879 ();
 extern "C" void SetupCoroutine_InvokeMember_m3691215301 ();
 extern "C" void Shader_PropertyToID_m3019342011 ();
 extern "C" void SharedBetweenAnimatorsAttribute__ctor_m2764338918 ();
+extern "C" void SliderState__ctor_m3732503849 ();
 extern "C" void GameCenterPlatform__ctor_m573039859 ();
 extern "C" void GameCenterPlatform__cctor_m102270234 ();
 extern "C" void GameCenterPlatform_UnityEngine_SocialPlatforms_ISocialPlatform_LoadFriends_m2468032119 ();
@@ -7942,6 +8722,25 @@ extern "C" void UserProfile_get_id_m2095754825 ();
 extern "C" void UserProfile_get_isFriend_m1712941209 ();
 extern "C" void UserProfile_get_state_m1340538601 ();
 extern "C" void Range__ctor_m872630735 ();
+extern "C" void SortingLayer_GetLayerValueFromID_m2560954442 ();
+extern "C" void SpaceAttribute__ctor_m3636842103 ();
+extern "C" void SpaceAttribute__ctor_m2299833492 ();
+extern "C" void Sprite_get_rect_m132626493 ();
+extern "C" void Sprite_INTERNAL_get_rect_m853825042 ();
+extern "C" void Sprite_get_pixelsPerUnit_m2438708453 ();
+extern "C" void Sprite_get_texture_m1481489947 ();
+extern "C" void Sprite_get_textureRect_m3946160520 ();
+extern "C" void Sprite_INTERNAL_get_textureRect_m1939414807 ();
+extern "C" void Sprite_get_border_m1562752938 ();
+extern "C" void Sprite_INTERNAL_get_border_m855941073 ();
+extern "C" void DataUtility_GetInnerUV_m860985145 ();
+extern "C" void DataUtility_INTERNAL_CALL_GetInnerUV_m4066645897 ();
+extern "C" void DataUtility_GetOuterUV_m2974486430 ();
+extern "C" void DataUtility_INTERNAL_CALL_GetOuterUV_m3695722564 ();
+extern "C" void DataUtility_GetPadding_m3826542291 ();
+extern "C" void DataUtility_INTERNAL_CALL_GetPadding_m3174755375 ();
+extern "C" void DataUtility_GetMinSize_m1313355571 ();
+extern "C" void DataUtility_Internal_GetMinSize_m885438560 ();
 extern "C" void StackTraceUtility__cctor_m1486031939 ();
 extern "C" void StackTraceUtility_SetProjectFolder_m3541316899 ();
 extern "C" void StackTraceUtility_ExtractStackTrace_m235366505 ();
@@ -7964,27 +8763,119 @@ extern "C" void StateMachineBehaviour_OnStateMove_m2938949899 ();
 extern "C" void StateMachineBehaviour_OnStateIK_m3126912700 ();
 extern "C" void StateMachineBehaviour_OnStateMachineEnter_m2392556512 ();
 extern "C" void StateMachineBehaviour_OnStateMachineExit_m2976228338 ();
+extern "C" void TextAreaAttribute__ctor_m2577573455 ();
+extern "C" void TextEditor__ctor_m1029296947 ();
+extern "C" void TextGenerationSettings_CompareColors_m2801108564 ();
+extern "C" void TextGenerationSettings_CompareVector2_m332687775 ();
+extern "C" void TextGenerationSettings_Equals_m3950599493 ();
+extern "C" void TextGenerator__ctor_m3994909811 ();
+extern "C" void TextGenerator__ctor_m1563237700 ();
+extern "C" void TextGenerator_System_IDisposable_Dispose_m3586435340 ();
+extern "C" void TextGenerator_Finalize_m3211881231 ();
+extern "C" void TextGenerator_ValidatedSettings_m1098807955 ();
+extern "C" void TextGenerator_Invalidate_m620450028 ();
+extern "C" void TextGenerator_GetCharacters_m2483060112 ();
+extern "C" void TextGenerator_GetLines_m2441503301 ();
+extern "C" void TextGenerator_GetVertices_m1097518625 ();
+extern "C" void TextGenerator_GetPreferredWidth_m1618543389 ();
+extern "C" void TextGenerator_GetPreferredHeight_m1770778044 ();
+extern "C" void TextGenerator_Populate_m953583418 ();
+extern "C" void TextGenerator_PopulateAlways_m4138837161 ();
+extern "C" void TextGenerator_get_verts_m1179011229 ();
+extern "C" void TextGenerator_get_characters_m3420670449 ();
+extern "C" void TextGenerator_get_lines_m3197542168 ();
+extern "C" void TextGenerator_Init_m1881520001 ();
+extern "C" void TextGenerator_Dispose_cpp_m959647828 ();
+extern "C" void TextGenerator_Populate_Internal_m1773862789 ();
+extern "C" void TextGenerator_Populate_Internal_cpp_m3249805403 ();
+extern "C" void TextGenerator_INTERNAL_CALL_Populate_Internal_cpp_m2939372809 ();
+extern "C" void TextGenerator_get_rectExtents_m2200526529 ();
+extern "C" void TextGenerator_INTERNAL_get_rectExtents_m4152002332 ();
+extern "C" void TextGenerator_get_vertexCount_m818659347 ();
+extern "C" void TextGenerator_GetVerticesInternal_m2005679319 ();
+extern "C" void TextGenerator_get_characterCount_m1694678400 ();
+extern "C" void TextGenerator_get_characterCountVisible_m2621262708 ();
+extern "C" void TextGenerator_GetCharactersInternal_m3189630150 ();
+extern "C" void TextGenerator_get_lineCount_m3121044867 ();
+extern "C" void TextGenerator_GetLinesInternal_m702225117 ();
 extern "C" void Texture__ctor_m516856734 ();
+extern "C" void Texture_Internal_GetWidth_m1143336192 ();
+extern "C" void Texture_Internal_GetHeight_m1065663213 ();
+extern "C" void Texture_get_width_m1557399609 ();
+extern "C" void Texture_get_height_m1538561974 ();
 extern "C" void Texture2D__ctor_m1883511258 ();
 extern "C" void Texture2D_Internal_Create_m457592211 ();
+extern "C" void Texture2D_get_whiteTexture_m1214146742 ();
+extern "C" void Texture2D_GetPixelBilinear_m2169326019 ();
+extern "C" void Texture2D_INTERNAL_CALL_GetPixelBilinear_m2056702809 ();
+extern "C" void Time_get_deltaTime_m2741110510 ();
+extern "C" void Time_get_unscaledTime_m319114521 ();
+extern "C" void Time_get_unscaledDeltaTime_m285638843 ();
+extern "C" void Time_get_realtimeSinceStartup_m2972554983 ();
+extern "C" void TooltipAttribute__ctor_m3341446606 ();
+extern "C" void Touch_get_fingerId_m1427167959 ();
 extern "C" void Touch_get_position_m1943849441 ();
 extern "C" void Touch_get_phase_m3314549414 ();
+extern "C" void Touch_get_type_m1428398012 ();
+extern "C" void TouchScreenKeyboard__ctor_m3607055310 ();
+extern "C" void TouchScreenKeyboard_Destroy_m3865079199 ();
+extern "C" void TouchScreenKeyboard_Finalize_m541415163 ();
+extern "C" void TouchScreenKeyboard_TouchScreenKeyboard_InternalConstructorHelper_m3839791280 ();
+extern "C" void TouchScreenKeyboard_get_isSupported_m2472329766 ();
+extern "C" void TouchScreenKeyboard_Open_m3070776627 ();
+extern "C" void TouchScreenKeyboard_Open_m751274250 ();
+extern "C" void TouchScreenKeyboard_Open_m3970504870 ();
+extern "C" void TouchScreenKeyboard_get_text_m2874389744 ();
+extern "C" void TouchScreenKeyboard_set_text_m1654889403 ();
+extern "C" void TouchScreenKeyboard_set_hideInput_m2518551559 ();
+extern "C" void TouchScreenKeyboard_get_active_m4287082086 ();
+extern "C" void TouchScreenKeyboard_set_active_m3667959159 ();
+extern "C" void TouchScreenKeyboard_get_done_m25268130 ();
+extern "C" void TouchScreenKeyboard_get_wasCanceled_m3910688420 ();
+extern "C" void TrackedReference_Equals_m732758423 ();
+extern "C" void TrackedReference_GetHashCode_m894516347 ();
+extern "C" void TrackedReference_op_Equality_m4125598506 ();
 extern "C" void Transform_get_position_m2211398607 ();
 extern "C" void Transform_set_position_m3111394108 ();
 extern "C" void Transform_INTERNAL_get_position_m1705230066 ();
 extern "C" void Transform_INTERNAL_set_position_m1126232166 ();
+extern "C" void Transform_get_localPosition_m668140784 ();
+extern "C" void Transform_set_localPosition_m3504330903 ();
+extern "C" void Transform_INTERNAL_get_localPosition_m2703574131 ();
+extern "C" void Transform_INTERNAL_set_localPosition_m221305727 ();
 extern "C" void Transform_get_forward_m877665793 ();
 extern "C" void Transform_get_rotation_m11483428 ();
 extern "C" void Transform_INTERNAL_get_rotation_m2389720173 ();
+extern "C" void Transform_get_localRotation_m3343229381 ();
+extern "C" void Transform_set_localRotation_m3719981474 ();
+extern "C" void Transform_INTERNAL_get_localRotation_m1409235788 ();
+extern "C" void Transform_INTERNAL_set_localRotation_m2898114752 ();
+extern "C" void Transform_get_localScale_m3886572677 ();
+extern "C" void Transform_set_localScale_m310756934 ();
+extern "C" void Transform_INTERNAL_get_localScale_m1534477480 ();
+extern "C" void Transform_INTERNAL_set_localScale_m3463244060 ();
+extern "C" void Transform_get_parent_m2236876972 ();
+extern "C" void Transform_set_parent_m3231272063 ();
+extern "C" void Transform_get_parentInternal_m3763475785 ();
+extern "C" void Transform_set_parentInternal_m1254352386 ();
+extern "C" void Transform_SetParent_m3449663462 ();
+extern "C" void Transform_SetParent_m263985879 ();
+extern "C" void Transform_get_worldToLocalMatrix_m3792395652 ();
+extern "C" void Transform_INTERNAL_get_worldToLocalMatrix_m3861589095 ();
+extern "C" void Transform_TransformPoint_m437395512 ();
+extern "C" void Transform_INTERNAL_CALL_TransformPoint_m1435510371 ();
 extern "C" void Transform_InverseTransformPoint_m1626812000 ();
 extern "C" void Transform_INTERNAL_CALL_InverseTransformPoint_m1782292189 ();
 extern "C" void Transform_get_childCount_m2107810675 ();
+extern "C" void Transform_SetAsFirstSibling_m1746075601 ();
+extern "C" void Transform_IsChildOf_m3321648579 ();
 extern "C" void Transform_GetEnumerator_m688365631 ();
 extern "C" void Transform_GetChild_m4040462992 ();
 extern "C" void Enumerator__ctor_m856668951 ();
 extern "C" void Enumerator_get_Current_m1838268607 ();
 extern "C" void Enumerator_MoveNext_m1095530856 ();
 extern "C" void Enumerator_Reset_m258411155 ();
+extern "C" void UIVertex__cctor_m2134470424 ();
 extern "C" void UnhandledExceptionHandler_RegisterUECatcher_m143130254 ();
 extern "C" void UnhandledExceptionHandler_HandleUnhandledException_m4033241923 ();
 extern "C" void UnhandledExceptionHandler_PrintException_m3142367935 ();
@@ -7994,43 +8885,1521 @@ extern "C" void UnityException__ctor_m743662351 ();
 extern "C" void UnityException__ctor_m2780758535 ();
 extern "C" void UnityException__ctor_m2001840532 ();
 extern "C" void UnityString_Format_m427603113 ();
+extern "C" void Vector2__ctor_m1517109030 ();
+extern "C" void Vector2_get_Item_m2185542843 ();
+extern "C" void Vector2_set_Item_m2767519328 ();
+extern "C" void Vector2_Scale_m1743563745 ();
 extern "C" void Vector2_ToString_m3859776067 ();
 extern "C" void Vector2_GetHashCode_m128434585 ();
 extern "C" void Vector2_Equals_m3404198849 ();
+extern "C" void Vector2_Dot_m2437602225 ();
+extern "C" void Vector2_get_sqrMagnitude_m996072851 ();
+extern "C" void Vector2_SqrMagnitude_m4007443280 ();
+extern "C" void Vector2_get_zero_m199872368 ();
+extern "C" void Vector2_get_one_m2767488832 ();
+extern "C" void Vector2_get_up_m1197831267 ();
+extern "C" void Vector2_get_right_m3495203638 ();
+extern "C" void Vector2_op_Addition_m1173049553 ();
+extern "C" void Vector2_op_Subtraction_m2097149401 ();
+extern "C" void Vector2_op_Multiply_m1738245082 ();
+extern "C" void Vector2_op_Division_m747627697 ();
+extern "C" void Vector2_op_Equality_m1927481448 ();
+extern "C" void Vector2_op_Inequality_m1638984867 ();
+extern "C" void Vector2_op_Implicit_m4083860659 ();
 extern "C" void Vector2_op_Implicit_m482286037 ();
 extern "C" void Vector3__ctor_m2926210380 ();
+extern "C" void Vector3__ctor_m1846874791 ();
+extern "C" void Vector3_Lerp_m650470329 ();
 extern "C" void Vector3_get_Item_m108333500 ();
+extern "C" void Vector3_set_Item_m1844835745 ();
 extern "C" void Vector3_GetHashCode_m3912867704 ();
 extern "C" void Vector3_Equals_m3337192096 ();
+extern "C" void Vector3_Normalize_m3047997355 ();
+extern "C" void Vector3_get_normalized_m2650940353 ();
 extern "C" void Vector3_ToString_m3566373060 ();
+extern "C" void Vector3_Dot_m2370485424 ();
+extern "C" void Vector3_Distance_m3366690344 ();
+extern "C" void Vector3_Magnitude_m995314358 ();
+extern "C" void Vector3_SqrMagnitude_m1662776270 ();
+extern "C" void Vector3_get_sqrMagnitude_m1207423764 ();
+extern "C" void Vector3_Min_m10392601 ();
+extern "C" void Vector3_Max_m545730887 ();
 extern "C" void Vector3_get_zero_m2017759730 ();
+extern "C" void Vector3_get_one_m886467710 ();
 extern "C" void Vector3_get_forward_m1039372701 ();
+extern "C" void Vector3_get_back_m1326515313 ();
+extern "C" void Vector3_get_up_m4046647141 ();
+extern "C" void Vector3_get_down_m1397301612 ();
+extern "C" void Vector3_get_left_m1616598929 ();
+extern "C" void Vector3_get_right_m4015137012 ();
 extern "C" void Vector3_op_Addition_m695438225 ();
 extern "C" void Vector3_op_Subtraction_m2842958165 ();
 extern "C" void Vector3_op_Multiply_m973638459 ();
 extern "C" void Vector3_op_Division_m4277988370 ();
+extern "C" void Vector3_op_Equality_m582817895 ();
+extern "C" void Vector3_op_Inequality_m231387234 ();
 extern "C" void Vector4__ctor_m2441427762 ();
+extern "C" void Vector4_get_Item_m2326091453 ();
+extern "C" void Vector4_set_Item_m922152162 ();
 extern "C" void Vector4_GetHashCode_m3402333527 ();
 extern "C" void Vector4_Equals_m3270185343 ();
 extern "C" void Vector4_ToString_m3272970053 ();
+extern "C" void Vector4_Dot_m2303368623 ();
+extern "C" void Vector4_SqrMagnitude_m3613076556 ();
+extern "C" void Vector4_get_sqrMagnitude_m1418774677 ();
+extern "C" void Vector4_get_zero_m3835647092 ();
+extern "C" void Vector4_op_Subtraction_m3588766929 ();
+extern "C" void Vector4_op_Division_m3513381747 ();
+extern "C" void Vector4_op_Equality_m3533121638 ();
 extern "C" void WaitForEndOfFrame__ctor_m4124201226 ();
 extern "C" void WaitForFixedUpdate__ctor_m2916734308 ();
 extern "C" void WaitForSeconds__ctor_m3184996201 ();
 extern "C" void WrapperlessIcall__ctor_m1888400594 ();
 extern "C" void WritableAttribute__ctor_m2205809533 ();
 extern "C" void YieldInstruction__ctor_m539393484 ();
+extern "C" void GenericStack__ctor_m2328546233 ();
 extern "C" void MathfInternal__cctor_m2600550988 ();
+extern "C" void NetFxCoreExtensions_CreateDelegate_m3408605866 ();
+extern "C" void NetFxCoreExtensions_GetMethodInfo_m1628849205 ();
 extern "C" void TypeInferenceRuleAttribute__ctor_m1168575159 ();
 extern "C" void TypeInferenceRuleAttribute__ctor_m2173394041 ();
 extern "C" void TypeInferenceRuleAttribute_ToString_m318752778 ();
+extern "C" void U3CPrivateImplementationDetailsU3E__ctor_m2615655811 ();
+extern "C" void AbstractEventData__ctor_m3016870691 ();
+extern "C" void AbstractEventData_Reset_m663303632 ();
+extern "C" void AbstractEventData_Use_m245202952 ();
+extern "C" void AbstractEventData_get_used_m4054984437 ();
+extern "C" void AxisEventData__ctor_m3411840806 ();
+extern "C" void AxisEventData_get_moveVector_m2997093594 ();
+extern "C" void AxisEventData_set_moveVector_m286185191 ();
+extern "C" void AxisEventData_get_moveDir_m2739466109 ();
+extern "C" void AxisEventData_set_moveDir_m2213568926 ();
+extern "C" void BaseEventData__ctor_m3246352982 ();
+extern "C" void BaseEventData_get_currentInputModule_m502779959 ();
+extern "C" void BaseEventData_get_selectedObject_m2003968484 ();
+extern "C" void BaseEventData_set_selectedObject_m3912430657 ();
+extern "C" void BaseInputModule__ctor_m2920801056 ();
+extern "C" void BaseInputModule_get_eventSystem_m3949125731 ();
+extern "C" void BaseInputModule_OnEnable_m3913388134 ();
+extern "C" void BaseInputModule_OnDisable_m1496885127 ();
+extern "C" void BaseInputModule_FindFirstRaycast_m3775114583 ();
+extern "C" void BaseInputModule_DetermineMoveDirection_m1298463611 ();
+extern "C" void BaseInputModule_DetermineMoveDirection_m1501057824 ();
+extern "C" void BaseInputModule_FindCommonRoot_m1904275501 ();
+extern "C" void BaseInputModule_HandlePointerExitAndEnter_m779127058 ();
+extern "C" void BaseInputModule_GetAxisEventData_m3789039491 ();
+extern "C" void BaseInputModule_GetBaseEventData_m1707430642 ();
+extern "C" void BaseInputModule_IsPointerOverGameObject_m674758553 ();
+extern "C" void BaseInputModule_ShouldActivateModule_m222600132 ();
+extern "C" void BaseInputModule_DeactivateModule_m2572518820 ();
+extern "C" void BaseInputModule_ActivateModule_m1091790819 ();
+extern "C" void BaseInputModule_UpdateModule_m2691994233 ();
+extern "C" void BaseInputModule_IsModuleSupported_m4245324872 ();
+extern "C" void BaseRaycaster__ctor_m2197027296 ();
+extern "C" void BaseRaycaster_get_priority_m2850487385 ();
+extern "C" void BaseRaycaster_get_sortOrderPriority_m1812907489 ();
+extern "C" void BaseRaycaster_get_renderOrderPriority_m486229993 ();
+extern "C" void BaseRaycaster_ToString_m540855283 ();
+extern "C" void BaseRaycaster_OnEnable_m2705129894 ();
+extern "C" void BaseRaycaster_OnDisable_m2695585351 ();
+extern "C" void EventSystem__ctor_m1614698108 ();
+extern "C" void EventSystem__cctor_m2328904881 ();
+extern "C" void EventSystem_get_current_m3483537871 ();
+extern "C" void EventSystem_set_current_m3070848986 ();
+extern "C" void EventSystem_get_sendNavigationEvents_m2758658484 ();
+extern "C" void EventSystem_set_sendNavigationEvents_m332228817 ();
+extern "C" void EventSystem_get_pixelDragThreshold_m3269248010 ();
+extern "C" void EventSystem_set_pixelDragThreshold_m3094844391 ();
+extern "C" void EventSystem_get_currentInputModule_m1694913485 ();
+extern "C" void EventSystem_get_firstSelectedGameObject_m540473918 ();
+extern "C" void EventSystem_set_firstSelectedGameObject_m1040716465 ();
+extern "C" void EventSystem_get_currentSelectedGameObject_m4236083783 ();
+extern "C" void EventSystem_get_lastSelectedGameObject_m2351525314 ();
+extern "C" void EventSystem_UpdateModules_m2696555928 ();
+extern "C" void EventSystem_get_alreadySelecting_m3074958957 ();
+extern "C" void EventSystem_SetSelectedGameObject_m2116591616 ();
+extern "C" void EventSystem_get_baseEventDataCache_m1763003665 ();
+extern "C" void EventSystem_SetSelectedGameObject_m1869236832 ();
+extern "C" void EventSystem_RaycastComparer_m3178660990 ();
+extern "C" void EventSystem_RaycastAll_m538533603 ();
+extern "C" void EventSystem_IsPointerOverGameObject_m4276458404 ();
+extern "C" void EventSystem_IsPointerOverGameObject_m4003394293 ();
+extern "C" void EventSystem_OnEnable_m1909198730 ();
+extern "C" void EventSystem_OnDisable_m3791523043 ();
+extern "C" void EventSystem_TickModules_m4074329476 ();
+extern "C" void EventSystem_Update_m242895889 ();
+extern "C" void EventSystem_ChangeEventModule_m1717769816 ();
+extern "C" void EventSystem_ToString_m3844548247 ();
+extern "C" void EventTrigger__ctor_m3410186115 ();
+extern "C" void EventTrigger_get_triggers_m900961340 ();
+extern "C" void EventTrigger_set_triggers_m2956640203 ();
+extern "C" void EventTrigger_Execute_m1768335209 ();
+extern "C" void EventTrigger_OnPointerEnter_m3698974435 ();
+extern "C" void EventTrigger_OnPointerExit_m4069405409 ();
+extern "C" void EventTrigger_OnDrag_m621966250 ();
+extern "C" void EventTrigger_OnDrop_m1949092623 ();
+extern "C" void EventTrigger_OnPointerDown_m3676323037 ();
+extern "C" void EventTrigger_OnPointerUp_m902762948 ();
+extern "C" void EventTrigger_OnPointerClick_m4229222963 ();
+extern "C" void EventTrigger_OnSelect_m3604185014 ();
+extern "C" void EventTrigger_OnDeselect_m1138247351 ();
+extern "C" void EventTrigger_OnScroll_m2448369713 ();
+extern "C" void EventTrigger_OnMove_m4043957787 ();
+extern "C" void EventTrigger_OnUpdateSelected_m1400064574 ();
+extern "C" void EventTrigger_OnInitializePotentialDrag_m802339386 ();
+extern "C" void EventTrigger_OnBeginDrag_m356440287 ();
+extern "C" void EventTrigger_OnEndDrag_m168497709 ();
+extern "C" void EventTrigger_OnSubmit_m974012114 ();
+extern "C" void EventTrigger_OnCancel_m972464948 ();
+extern "C" void Entry__ctor_m515618144 ();
+extern "C" void TriggerEvent__ctor_m1729711890 ();
+extern "C" void ExecuteEvents__cctor_m2728541814 ();
+extern "C" void ExecuteEvents_Execute_m3788527851 ();
+extern "C" void ExecuteEvents_Execute_m2062412449 ();
+extern "C" void ExecuteEvents_Execute_m1462933149 ();
+extern "C" void ExecuteEvents_Execute_m225834756 ();
+extern "C" void ExecuteEvents_Execute_m153166907 ();
+extern "C" void ExecuteEvents_Execute_m3770536826 ();
+extern "C" void ExecuteEvents_Execute_m2468788383 ();
+extern "C" void ExecuteEvents_Execute_m1192678962 ();
+extern "C" void ExecuteEvents_Execute_m1674228205 ();
+extern "C" void ExecuteEvents_Execute_m1220342551 ();
+extern "C" void ExecuteEvents_Execute_m1271506489 ();
+extern "C" void ExecuteEvents_Execute_m3050600610 ();
+extern "C" void ExecuteEvents_Execute_m1947619370 ();
+extern "C" void ExecuteEvents_Execute_m279235849 ();
+extern "C" void ExecuteEvents_Execute_m1420971509 ();
+extern "C" void ExecuteEvents_Execute_m951556494 ();
+extern "C" void ExecuteEvents_Execute_m3179930348 ();
+extern "C" void ExecuteEvents_get_pointerEnterHandler_m2954525018 ();
+extern "C" void ExecuteEvents_get_pointerExitHandler_m509229616 ();
+extern "C" void ExecuteEvents_get_pointerDownHandler_m916646952 ();
+extern "C" void ExecuteEvents_get_pointerUpHandler_m1834169334 ();
+extern "C" void ExecuteEvents_get_pointerClickHandler_m2881872730 ();
+extern "C" void ExecuteEvents_get_initializePotentialDrag_m3514083626 ();
+extern "C" void ExecuteEvents_get_beginDragHandler_m1163039340 ();
+extern "C" void ExecuteEvents_get_dragHandler_m1884359226 ();
+extern "C" void ExecuteEvents_get_endDragHandler_m811393096 ();
+extern "C" void ExecuteEvents_get_dropHandler_m1933111770 ();
+extern "C" void ExecuteEvents_get_scrollHandler_m62853082 ();
+extern "C" void ExecuteEvents_get_updateSelectedHandler_m2735401530 ();
+extern "C" void ExecuteEvents_get_selectHandler_m1963257146 ();
+extern "C" void ExecuteEvents_get_deselectHandler_m2539146650 ();
+extern "C" void ExecuteEvents_get_moveHandler_m1400410010 ();
+extern "C" void ExecuteEvents_get_submitHandler_m3307200186 ();
+extern "C" void ExecuteEvents_get_cancelHandler_m120249338 ();
+extern "C" void ExecuteEvents_GetEventChain_m1321751930 ();
+extern "C" void ExecuteEvents_U3Cs_HandlerListPoolU3Em__0_m1727672693 ();
+extern "C" void Physics2DRaycaster__ctor_m3212916644 ();
+extern "C" void Physics2DRaycaster_Raycast_m4133606104 ();
+extern "C" void PhysicsRaycaster__ctor_m4288212754 ();
+extern "C" void PhysicsRaycaster_get_eventCamera_m810838145 ();
+extern "C" void PhysicsRaycaster_get_depth_m589853138 ();
+extern "C" void PhysicsRaycaster_get_finalEventMask_m2246936003 ();
+extern "C" void PhysicsRaycaster_get_eventMask_m610257178 ();
+extern "C" void PhysicsRaycaster_set_eventMask_m3869486707 ();
+extern "C" void PhysicsRaycaster_Raycast_m743134250 ();
+extern "C" void PhysicsRaycaster_U3CRaycastU3Em__1_m3832860601 ();
+extern "C" void PointerEventData__ctor_m82194942 ();
+extern "C" void PointerEventData_get_pointerEnter_m1754340511 ();
+extern "C" void PointerEventData_set_pointerEnter_m3909544698 ();
+extern "C" void PointerEventData_get_lastPress_m3682396203 ();
+extern "C" void PointerEventData_set_lastPress_m1523028000 ();
+extern "C" void PointerEventData_get_rawPointerPress_m4005541676 ();
+extern "C" void PointerEventData_set_rawPointerPress_m505214625 ();
+extern "C" void PointerEventData_get_pointerDrag_m2109300143 ();
+extern "C" void PointerEventData_set_pointerDrag_m1194168164 ();
+extern "C" void PointerEventData_get_pointerCurrentRaycast_m874132826 ();
+extern "C" void PointerEventData_set_pointerCurrentRaycast_m2884097807 ();
+extern "C" void PointerEventData_get_pointerPressRaycast_m990488592 ();
+extern "C" void PointerEventData_set_pointerPressRaycast_m126348485 ();
+extern "C" void PointerEventData_get_eligibleForClick_m804806107 ();
+extern "C" void PointerEventData_set_eligibleForClick_m4124670100 ();
+extern "C" void PointerEventData_get_pointerId_m315063471 ();
+extern "C" void PointerEventData_set_pointerId_m204336548 ();
+extern "C" void PointerEventData_get_position_m2263123361 ();
+extern "C" void PointerEventData_set_position_m1287828138 ();
+extern "C" void PointerEventData_get_delta_m4112242786 ();
+extern "C" void PointerEventData_set_delta_m3480102791 ();
+extern "C" void PointerEventData_get_pressPosition_m2718149942 ();
+extern "C" void PointerEventData_set_pressPosition_m3056630579 ();
+extern "C" void PointerEventData_get_worldPosition_m489722276 ();
+extern "C" void PointerEventData_set_worldPosition_m914315875 ();
+extern "C" void PointerEventData_get_worldNormal_m3470386274 ();
+extern "C" void PointerEventData_set_worldNormal_m2060170853 ();
+extern "C" void PointerEventData_get_clickTime_m2529670096 ();
+extern "C" void PointerEventData_set_clickTime_m3487651291 ();
+extern "C" void PointerEventData_get_clickCount_m341347570 ();
+extern "C" void PointerEventData_set_clickCount_m2279104927 ();
+extern "C" void PointerEventData_get_scrollDelta_m3602781717 ();
+extern "C" void PointerEventData_set_scrollDelta_m3507625908 ();
+extern "C" void PointerEventData_get_useDragThreshold_m2749684085 ();
+extern "C" void PointerEventData_set_useDragThreshold_m2530254510 ();
+extern "C" void PointerEventData_get_dragging_m3319220148 ();
+extern "C" void PointerEventData_set_dragging_m1730892973 ();
+extern "C" void PointerEventData_get_button_m796143251 ();
+extern "C" void PointerEventData_set_button_m2720287992 ();
+extern "C" void PointerEventData_IsPointerMoving_m1462208007 ();
+extern "C" void PointerEventData_IsScrolling_m2052637201 ();
+extern "C" void PointerEventData_get_enterEventCamera_m1535306943 ();
+extern "C" void PointerEventData_get_pressEventCamera_m2764092724 ();
+extern "C" void PointerEventData_get_pointerPress_m3028028234 ();
+extern "C" void PointerEventData_set_pointerPress_m3037509477 ();
+extern "C" void PointerEventData_ToString_m746384051 ();
+extern "C" void PointerInputModule__ctor_m2748126408 ();
+extern "C" void PointerInputModule_GetPointerData_m1554981113 ();
+extern "C" void PointerInputModule_RemovePointerData_m3101459861 ();
+extern "C" void PointerInputModule_GetTouchPointerEventData_m2194758459 ();
+extern "C" void PointerInputModule_CopyFromTo_m431867808 ();
+extern "C" void PointerInputModule_StateForMouseButton_m1241430345 ();
+extern "C" void PointerInputModule_GetMousePointerEventData_m1489718224 ();
+extern "C" void PointerInputModule_GetMousePointerEventData_m3291859233 ();
+extern "C" void PointerInputModule_GetLastPointerEventData_m238778665 ();
+extern "C" void PointerInputModule_ShouldStartDrag_m1910083073 ();
+extern "C" void PointerInputModule_ProcessMove_m2382689080 ();
+extern "C" void PointerInputModule_ProcessDrag_m1875452405 ();
+extern "C" void PointerInputModule_IsPointerOverGameObject_m1132541469 ();
+extern "C" void PointerInputModule_ClearSelection_m1490775995 ();
+extern "C" void PointerInputModule_ToString_m1837754533 ();
+extern "C" void PointerInputModule_DeselectIfSelectionChanged_m522880394 ();
+extern "C" void ButtonState__ctor_m858021496 ();
+extern "C" void ButtonState_get_eventData_m3874795698 ();
+extern "C" void ButtonState_set_eventData_m471696551 ();
+extern "C" void ButtonState_get_button_m3169210133 ();
+extern "C" void ButtonState_set_button_m2005500214 ();
+extern "C" void MouseButtonEventData__ctor_m4233842466 ();
+extern "C" void MouseButtonEventData_PressedThisFrame_m3377699805 ();
+extern "C" void MouseButtonEventData_ReleasedThisFrame_m949274724 ();
+extern "C" void MouseState__ctor_m2621211907 ();
+extern "C" void MouseState_AnyPressesThisFrame_m3921583709 ();
+extern "C" void MouseState_AnyReleasesThisFrame_m2672125158 ();
+extern "C" void MouseState_GetButtonState_m96912714 ();
+extern "C" void MouseState_SetButtonState_m3470421591 ();
+extern "C" void RaycasterManager__cctor_m1509381251 ();
+extern "C" void RaycasterManager_AddRaycaster_m4159868023 ();
+extern "C" void RaycasterManager_GetRaycasters_m4152256966 ();
+extern "C" void RaycasterManager_RemoveRaycasters_m4290330819 ();
+extern "C" void RaycastResult_get_gameObject_m1138099278 ();
+extern "C" void RaycastResult_set_gameObject_m726369707 ();
+extern "C" void RaycastResult_get_isValid_m3098154392 ();
+extern "C" void RaycastResult_Clear_m2117708874 ();
+extern "C" void RaycastResult_ToString_m2924263764 ();
+extern "C" void StandaloneInputModule__ctor_m3585261844 ();
+extern "C" void StandaloneInputModule_get_inputMode_m3683217473 ();
+extern "C" void StandaloneInputModule_get_allowActivationOnMobileDevice_m898677649 ();
+extern "C" void StandaloneInputModule_set_allowActivationOnMobileDevice_m2716306402 ();
+extern "C" void StandaloneInputModule_get_forceModuleActive_m4263603128 ();
+extern "C" void StandaloneInputModule_set_forceModuleActive_m2821456585 ();
+extern "C" void StandaloneInputModule_get_inputActionsPerSecond_m386579003 ();
+extern "C" void StandaloneInputModule_set_inputActionsPerSecond_m3962672568 ();
+extern "C" void StandaloneInputModule_get_repeatDelay_m756347909 ();
+extern "C" void StandaloneInputModule_set_repeatDelay_m3283777070 ();
+extern "C" void StandaloneInputModule_get_horizontalAxis_m4124505505 ();
+extern "C" void StandaloneInputModule_set_horizontalAxis_m1994117648 ();
+extern "C" void StandaloneInputModule_get_verticalAxis_m828001843 ();
+extern "C" void StandaloneInputModule_set_verticalAxis_m3009801854 ();
+extern "C" void StandaloneInputModule_get_submitButton_m1573295782 ();
+extern "C" void StandaloneInputModule_set_submitButton_m3989846251 ();
+extern "C" void StandaloneInputModule_get_cancelButton_m3049849608 ();
+extern "C" void StandaloneInputModule_set_cancelButton_m822377417 ();
+extern "C" void StandaloneInputModule_UpdateModule_m4260747781 ();
+extern "C" void StandaloneInputModule_IsModuleSupported_m1519744700 ();
+extern "C" void StandaloneInputModule_ShouldActivateModule_m3115394256 ();
+extern "C" void StandaloneInputModule_ActivateModule_m1130429551 ();
+extern "C" void StandaloneInputModule_DeactivateModule_m1049634608 ();
+extern "C" void StandaloneInputModule_Process_m3720469665 ();
+extern "C" void StandaloneInputModule_ProcessTouchEvents_m3567487943 ();
+extern "C" void StandaloneInputModule_ProcessTouchPress_m2953705401 ();
+extern "C" void StandaloneInputModule_SendSubmitEventToSelectedObject_m2183743635 ();
+extern "C" void StandaloneInputModule_GetRawMoveVector_m3480660049 ();
+extern "C" void StandaloneInputModule_SendMoveEventToSelectedObject_m439066490 ();
+extern "C" void StandaloneInputModule_ProcessMouseEvent_m2927305846 ();
+extern "C" void StandaloneInputModule_ProcessMouseEvent_m1104664775 ();
+extern "C" void StandaloneInputModule_SendUpdateEventToSelectedObject_m1730287810 ();
+extern "C" void StandaloneInputModule_ProcessMousePress_m794465737 ();
+extern "C" void TouchInputModule__ctor_m339421258 ();
+extern "C" void TouchInputModule_get_allowActivationOnStandalone_m2975554192 ();
+extern "C" void TouchInputModule_set_allowActivationOnStandalone_m2844331589 ();
+extern "C" void TouchInputModule_get_forceModuleActive_m3711716298 ();
+extern "C" void TouchInputModule_set_forceModuleActive_m3663751039 ();
+extern "C" void TouchInputModule_UpdateModule_m1492847119 ();
+extern "C" void TouchInputModule_IsModuleSupported_m3258396622 ();
+extern "C" void TouchInputModule_ShouldActivateModule_m1989212798 ();
+extern "C" void TouchInputModule_UseFakeInput_m1788394586 ();
+extern "C" void TouchInputModule_Process_m2613923415 ();
+extern "C" void TouchInputModule_FakeTouches_m1483201856 ();
+extern "C" void TouchInputModule_ProcessTouchEvents_m2652204291 ();
+extern "C" void TouchInputModule_ProcessTouchPress_m3277592771 ();
+extern "C" void TouchInputModule_DeactivateModule_m873087546 ();
+extern "C" void TouchInputModule_ToString_m2343614755 ();
+extern "C" void UIBehaviour__ctor_m1261553468 ();
+extern "C" void UIBehaviour_Awake_m1499158687 ();
+extern "C" void UIBehaviour_OnEnable_m4047103690 ();
+extern "C" void UIBehaviour_Start_m208691260 ();
+extern "C" void UIBehaviour_OnDisable_m1347100067 ();
+extern "C" void UIBehaviour_OnDestroy_m3524632117 ();
+extern "C" void UIBehaviour_IsActive_m3417391654 ();
+extern "C" void UIBehaviour_OnRectTransformDimensionsChange_m406568928 ();
+extern "C" void UIBehaviour_OnBeforeTransformParentChanged_m216909636 ();
+extern "C" void UIBehaviour_OnTransformParentChanged_m1017023781 ();
+extern "C" void UIBehaviour_OnDidApplyAnimationProperties_m1721800419 ();
+extern "C" void UIBehaviour_OnCanvasGroupChanged_m2106086004 ();
+extern "C" void UIBehaviour_OnCanvasHierarchyChanged_m1210291326 ();
+extern "C" void UIBehaviour_IsDestroyed_m3027499227 ();
+extern "C" void AnimationTriggers__ctor_m4034548412 ();
+extern "C" void AnimationTriggers_get_normalTrigger_m326085791 ();
+extern "C" void AnimationTriggers_set_normalTrigger_m2497706644 ();
+extern "C" void AnimationTriggers_get_highlightedTrigger_m1862702265 ();
+extern "C" void AnimationTriggers_set_highlightedTrigger_m3911773112 ();
+extern "C" void AnimationTriggers_get_pressedTrigger_m3081240394 ();
+extern "C" void AnimationTriggers_set_pressedTrigger_m763343943 ();
+extern "C" void AnimationTriggers_get_disabledTrigger_m2031458154 ();
+extern "C" void AnimationTriggers_set_disabledTrigger_m472449385 ();
+extern "C" void AspectRatioFitter__ctor_m832848312 ();
+extern "C" void AspectRatioFitter_get_aspectMode_m1442516665 ();
+extern "C" void AspectRatioFitter_set_aspectMode_m3373690308 ();
+extern "C" void AspectRatioFitter_get_aspectRatio_m1760059860 ();
+extern "C" void AspectRatioFitter_set_aspectRatio_m934620095 ();
+extern "C" void AspectRatioFitter_get_rectTransform_m3884626579 ();
+extern "C" void AspectRatioFitter_OnEnable_m1429572302 ();
+extern "C" void AspectRatioFitter_OnDisable_m1808005663 ();
+extern "C" void AspectRatioFitter_OnRectTransformDimensionsChange_m1500370780 ();
+extern "C" void AspectRatioFitter_UpdateRect_m1803770713 ();
+extern "C" void AspectRatioFitter_GetSizeDeltaToProduceSize_m1662613595 ();
+extern "C" void AspectRatioFitter_GetParentSize_m642682972 ();
+extern "C" void AspectRatioFitter_SetLayoutHorizontal_m4171834758 ();
+extern "C" void AspectRatioFitter_SetLayoutVertical_m815552664 ();
+extern "C" void AspectRatioFitter_SetDirty_m1662064540 ();
+extern "C" void BaseMeshEffect__ctor_m2332499996 ();
+extern "C" void BaseMeshEffect_get_graphic_m2567098443 ();
+extern "C" void BaseMeshEffect_OnEnable_m1303077354 ();
+extern "C" void BaseMeshEffect_OnDisable_m2181629571 ();
+extern "C" void BaseMeshEffect_OnDidApplyAnimationProperties_m4231090115 ();
+extern "C" void BaseMeshEffect_ModifyMesh_m4260756811 ();
+extern "C" void BaseVertexEffect__ctor_m1287105989 ();
+extern "C" void Button__ctor_m3363033049 ();
+extern "C" void Button_get_onClick_m1145127631 ();
+extern "C" void Button_set_onClick_m2495243460 ();
+extern "C" void Button_Press_m3889091706 ();
+extern "C" void Button_OnPointerClick_m2363576585 ();
+extern "C" void Button_OnSubmit_m3916273468 ();
+extern "C" void Button_OnFinishSubmit_m46760755 ();
+extern "C" void U3COnFinishSubmitU3Ec__Iterator1__ctor_m299272262 ();
+extern "C" void U3COnFinishSubmitU3Ec__Iterator1_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m784619862 ();
+extern "C" void U3COnFinishSubmitU3Ec__Iterator1_System_Collections_IEnumerator_get_Current_m353356010 ();
+extern "C" void U3COnFinishSubmitU3Ec__Iterator1_MoveNext_m2222960880 ();
+extern "C" void U3COnFinishSubmitU3Ec__Iterator1_Dispose_m4031085315 ();
+extern "C" void U3COnFinishSubmitU3Ec__Iterator1_Reset_m2240672499 ();
+extern "C" void ButtonClickedEvent__ctor_m1416137305 ();
+extern "C" void CanvasScaler__ctor_m2274485483 ();
+extern "C" void CanvasScaler_get_uiScaleMode_m1718779723 ();
+extern "C" void CanvasScaler_set_uiScaleMode_m2713670988 ();
+extern "C" void CanvasScaler_get_referencePixelsPerUnit_m1471911967 ();
+extern "C" void CanvasScaler_set_referencePixelsPerUnit_m2513762540 ();
+extern "C" void CanvasScaler_get_scaleFactor_m2444679941 ();
+extern "C" void CanvasScaler_set_scaleFactor_m1527181766 ();
+extern "C" void CanvasScaler_get_referenceResolution_m484379826 ();
+extern "C" void CanvasScaler_set_referenceResolution_m4024849975 ();
+extern "C" void CanvasScaler_get_screenMatchMode_m2287362655 ();
+extern "C" void CanvasScaler_set_screenMatchMode_m1314095482 ();
+extern "C" void CanvasScaler_get_matchWidthOrHeight_m3211176417 ();
+extern "C" void CanvasScaler_set_matchWidthOrHeight_m500879978 ();
+extern "C" void CanvasScaler_get_physicalUnit_m3572932406 ();
+extern "C" void CanvasScaler_set_physicalUnit_m1052630401 ();
+extern "C" void CanvasScaler_get_fallbackScreenDPI_m2341917339 ();
+extern "C" void CanvasScaler_set_fallbackScreenDPI_m979123696 ();
+extern "C" void CanvasScaler_get_defaultSpriteDPI_m2728800301 ();
+extern "C" void CanvasScaler_set_defaultSpriteDPI_m1099048862 ();
+extern "C" void CanvasScaler_get_dynamicPixelsPerUnit_m3811209707 ();
+extern "C" void CanvasScaler_set_dynamicPixelsPerUnit_m1481681568 ();
+extern "C" void CanvasScaler_OnEnable_m3864540859 ();
+extern "C" void CanvasScaler_OnDisable_m4277586898 ();
+extern "C" void CanvasScaler_Update_m3516435330 ();
+extern "C" void CanvasScaler_Handle_m2195907873 ();
+extern "C" void CanvasScaler_HandleWorldCanvas_m1282362827 ();
+extern "C" void CanvasScaler_HandleConstantPixelSize_m22621284 ();
+extern "C" void CanvasScaler_HandleScaleWithScreenSize_m3412612446 ();
+extern "C" void CanvasScaler_HandleConstantPhysicalSize_m1320301949 ();
+extern "C" void CanvasScaler_SetScaleFactor_m376581883 ();
+extern "C" void CanvasScaler_SetReferencePixelsPerUnit_m96000151 ();
+extern "C" void CanvasUpdateRegistry__ctor_m4143486701 ();
+extern "C" void CanvasUpdateRegistry__cctor_m3411939936 ();
+extern "C" void CanvasUpdateRegistry_get_instance_m1077376867 ();
+extern "C" void CanvasUpdateRegistry_ObjectValidForUpdate_m3662506294 ();
+extern "C" void CanvasUpdateRegistry_CleanInvalidItems_m3668170109 ();
+extern "C" void CanvasUpdateRegistry_PerformUpdate_m4284602133 ();
+extern "C" void CanvasUpdateRegistry_ParentCount_m1557937541 ();
+extern "C" void CanvasUpdateRegistry_SortLayoutList_m217615053 ();
+extern "C" void CanvasUpdateRegistry_RegisterCanvasElementForLayoutRebuild_m1282865408 ();
+extern "C" void CanvasUpdateRegistry_TryRegisterCanvasElementForLayoutRebuild_m3477281917 ();
+extern "C" void CanvasUpdateRegistry_InternalRegisterCanvasElementForLayoutRebuild_m584808143 ();
+extern "C" void CanvasUpdateRegistry_RegisterCanvasElementForGraphicRebuild_m1487849090 ();
+extern "C" void CanvasUpdateRegistry_TryRegisterCanvasElementForGraphicRebuild_m795284133 ();
+extern "C" void CanvasUpdateRegistry_InternalRegisterCanvasElementForGraphicRebuild_m1322910355 ();
+extern "C" void CanvasUpdateRegistry_UnRegisterCanvasElementForRebuild_m2188113711 ();
+extern "C" void CanvasUpdateRegistry_InternalUnRegisterCanvasElementForLayoutRebuild_m1911897302 ();
+extern "C" void CanvasUpdateRegistry_InternalUnRegisterCanvasElementForGraphicRebuild_m3807968620 ();
+extern "C" void CanvasUpdateRegistry_IsRebuildingLayout_m1167551012 ();
+extern "C" void CanvasUpdateRegistry_IsRebuildingGraphics_m2979891973 ();
+extern "C" void ClipperRegistry__ctor_m3311832913 ();
+extern "C" void ClipperRegistry_get_instance_m1642325505 ();
+extern "C" void ClipperRegistry_Cull_m2386993349 ();
+extern "C" void ClipperRegistry_Register_m2777461237 ();
+extern "C" void ClipperRegistry_Unregister_m926013180 ();
+extern "C" void Clipping_FindCullAndClipWorldRect_m3007966961 ();
+extern "C" void Clipping_RectIntersect_m2589422792 ();
+extern "C" void ColorBlock_get_normalColor_m1021113593 ();
+extern "C" void ColorBlock_set_normalColor_m2914277480 ();
+extern "C" void ColorBlock_get_highlightedColor_m2834784533 ();
+extern "C" void ColorBlock_set_highlightedColor_m4179336310 ();
+extern "C" void ColorBlock_get_pressedColor_m2014354534 ();
+extern "C" void ColorBlock_set_pressedColor_m830240709 ();
+extern "C" void ColorBlock_get_disabledColor_m2484721348 ();
+extern "C" void ColorBlock_set_disabledColor_m215468861 ();
+extern "C" void ColorBlock_get_colorMultiplier_m2799886278 ();
+extern "C" void ColorBlock_set_colorMultiplier_m1029562789 ();
+extern "C" void ColorBlock_get_fadeDuration_m2386809488 ();
+extern "C" void ColorBlock_set_fadeDuration_m1171991323 ();
+extern "C" void ColorBlock_get_defaultColorBlock_m533915527 ();
+extern "C" void ColorBlock_Equals_m4183618976 ();
+extern "C" void ColorBlock_Equals_m3761062129 ();
+extern "C" void ColorBlock_GetHashCode_m2259731448 ();
+extern "C" void ColorBlock_op_Equality_m1998893503 ();
+extern "C" void ColorBlock_op_Inequality_m2751981882 ();
+extern "C" void ContentSizeFitter__ctor_m3832398161 ();
+extern "C" void ContentSizeFitter_get_horizontalFit_m2851743464 ();
+extern "C" void ContentSizeFitter_set_horizontalFit_m798679123 ();
+extern "C" void ContentSizeFitter_get_verticalFit_m2576006486 ();
+extern "C" void ContentSizeFitter_set_verticalFit_m4130929281 ();
+extern "C" void ContentSizeFitter_get_rectTransform_m1096586412 ();
+extern "C" void ContentSizeFitter_OnEnable_m4224530581 ();
+extern "C" void ContentSizeFitter_OnDisable_m2552366392 ();
+extern "C" void ContentSizeFitter_OnRectTransformDimensionsChange_m733583797 ();
+extern "C" void ContentSizeFitter_HandleSelfFittingAlongAxis_m2083972471 ();
+extern "C" void ContentSizeFitter_SetLayoutHorizontal_m629859679 ();
+extern "C" void ContentSizeFitter_SetLayoutVertical_m2322479793 ();
+extern "C" void ContentSizeFitter_SetDirty_m162055523 ();
+extern "C" void ColorTween_get_startColor_m2341745789 ();
+extern "C" void ColorTween_set_startColor_m1548058556 ();
+extern "C" void ColorTween_get_targetColor_m3334930584 ();
+extern "C" void ColorTween_set_targetColor_m1091345019 ();
+extern "C" void ColorTween_get_tweenMode_m4011161954 ();
+extern "C" void ColorTween_set_tweenMode_m1316837809 ();
+extern "C" void ColorTween_get_duration_m2603018997 ();
+extern "C" void ColorTween_set_duration_m347866734 ();
+extern "C" void ColorTween_get_ignoreTimeScale_m27222826 ();
+extern "C" void ColorTween_set_ignoreTimeScale_m4222585787 ();
+extern "C" void ColorTween_TweenValue_m3209849337 ();
+extern "C" void ColorTween_AddOnChangedCallback_m1109647485 ();
+extern "C" void ColorTween_GetIgnoreTimescale_m2054009071 ();
+extern "C" void ColorTween_GetDuration_m1400665524 ();
+extern "C" void ColorTween_ValidTarget_m2504867349 ();
+extern "C" void ColorTweenCallback__ctor_m1815857490 ();
+extern "C" void FloatTween_get_startValue_m3485407671 ();
+extern "C" void FloatTween_set_startValue_m367615212 ();
+extern "C" void FloatTween_get_targetValue_m197139962 ();
+extern "C" void FloatTween_set_targetValue_m27109721 ();
+extern "C" void FloatTween_get_duration_m108772764 ();
+extern "C" void FloatTween_set_duration_m4177197863 ();
+extern "C" void FloatTween_get_ignoreTimeScale_m1786680995 ();
+extern "C" void FloatTween_set_ignoreTimeScale_m556709748 ();
+extern "C" void FloatTween_TweenValue_m1980315890 ();
+extern "C" void FloatTween_AddOnChangedCallback_m2815182481 ();
+extern "C" void FloatTween_GetIgnoreTimescale_m1972218454 ();
+extern "C" void FloatTween_GetDuration_m2290037293 ();
+extern "C" void FloatTween_ValidTarget_m3394239118 ();
+extern "C" void FloatTweenCallback__ctor_m2342804402 ();
+extern "C" void DefaultControls__cctor_m1303793449 ();
+extern "C" void DefaultControls_CreateUIElementRoot_m335662421 ();
+extern "C" void DefaultControls_CreateUIObject_m1826457530 ();
+extern "C" void DefaultControls_SetDefaultTextValues_m2676194036 ();
+extern "C" void DefaultControls_SetDefaultColorTransitionValues_m2995057500 ();
+extern "C" void DefaultControls_SetParentAndAlign_m867848490 ();
+extern "C" void DefaultControls_SetLayerRecursively_m2948337421 ();
+extern "C" void DefaultControls_CreatePanel_m131101809 ();
+extern "C" void DefaultControls_CreateButton_m2909407539 ();
+extern "C" void DefaultControls_CreateText_m414838766 ();
+extern "C" void DefaultControls_CreateImage_m3925407496 ();
+extern "C" void DefaultControls_CreateRawImage_m383828052 ();
+extern "C" void DefaultControls_CreateSlider_m3090010146 ();
+extern "C" void DefaultControls_CreateScrollbar_m2399849235 ();
+extern "C" void DefaultControls_CreateToggle_m1602114261 ();
+extern "C" void DefaultControls_CreateInputField_m3813899985 ();
+extern "C" void DefaultControls_CreateDropdown_m481152210 ();
+extern "C" void DefaultControls_CreateScrollView_m2763877395 ();
+extern "C" void Dropdown__ctor_m3574287322 ();
+extern "C" void Dropdown__cctor_m2946628371 ();
+extern "C" void Dropdown_get_template_m3674548779 ();
+extern "C" void Dropdown_set_template_m498709600 ();
+extern "C" void Dropdown_get_captionText_m1044804357 ();
+extern "C" void Dropdown_set_captionText_m4143100948 ();
+extern "C" void Dropdown_get_captionImage_m3689507433 ();
+extern "C" void Dropdown_set_captionImage_m3401548772 ();
+extern "C" void Dropdown_get_itemText_m2015261424 ();
+extern "C" void Dropdown_set_itemText_m3975071291 ();
+extern "C" void Dropdown_get_itemImage_m2263268950 ();
+extern "C" void Dropdown_set_itemImage_m838838347 ();
+extern "C" void Dropdown_get_options_m399918042 ();
+extern "C" void Dropdown_set_options_m4132251955 ();
+extern "C" void Dropdown_get_onValueChanged_m2646663760 ();
+extern "C" void Dropdown_set_onValueChanged_m2821991323 ();
+extern "C" void Dropdown_get_value_m3628689352 ();
+extern "C" void Dropdown_set_value_m2635023165 ();
+extern "C" void Dropdown_Awake_m3811892541 ();
+extern "C" void Dropdown_RefreshShownValue_m9458643 ();
+extern "C" void Dropdown_AddOptions_m1960749669 ();
+extern "C" void Dropdown_AddOptions_m4199474459 ();
+extern "C" void Dropdown_AddOptions_m1674488487 ();
+extern "C" void Dropdown_ClearOptions_m1343016059 ();
+extern "C" void Dropdown_SetupTemplate_m2277850703 ();
+extern "C" void Dropdown_OnPointerClick_m3417107146 ();
+extern "C" void Dropdown_OnSubmit_m3218526299 ();
+extern "C" void Dropdown_OnCancel_m3216979133 ();
+extern "C" void Dropdown_Show_m2564525543 ();
+extern "C" void Dropdown_CreateBlocker_m4177511350 ();
+extern "C" void Dropdown_DestroyBlocker_m442421122 ();
+extern "C" void Dropdown_CreateDropdownList_m1827964190 ();
+extern "C" void Dropdown_DestroyDropdownList_m2466702489 ();
+extern "C" void Dropdown_CreateItem_m3067956674 ();
+extern "C" void Dropdown_DestroyItem_m927755334 ();
+extern "C" void Dropdown_AddItem_m2798122239 ();
+extern "C" void Dropdown_AlphaFadeList_m2508072608 ();
+extern "C" void Dropdown_AlphaFadeList_m3646986629 ();
+extern "C" void Dropdown_SetAlpha_m3190511269 ();
+extern "C" void Dropdown_Hide_m2250183404 ();
+extern "C" void Dropdown_DelayedDestroyDropdownList_m3972931676 ();
+extern "C" void Dropdown_OnSelectItem_m2377815715 ();
+extern "C" void U3CDelayedDestroyDropdownListU3Ec__Iterator2__ctor_m1282717409 ();
+extern "C" void U3CDelayedDestroyDropdownListU3Ec__Iterator2_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m2519696603 ();
+extern "C" void U3CDelayedDestroyDropdownListU3Ec__Iterator2_System_Collections_IEnumerator_get_Current_m2793709167 ();
+extern "C" void U3CDelayedDestroyDropdownListU3Ec__Iterator2_MoveNext_m1977022453 ();
+extern "C" void U3CDelayedDestroyDropdownListU3Ec__Iterator2_Dispose_m4229066462 ();
+extern "C" void U3CDelayedDestroyDropdownListU3Ec__Iterator2_Reset_m3224117646 ();
+extern "C" void U3CShowU3Ec__AnonStorey6__ctor_m2795061609 ();
+extern "C" void U3CShowU3Ec__AnonStorey6_U3CU3Em__2_m811212697 ();
+extern "C" void DropdownEvent__ctor_m3364351936 ();
+extern "C" void DropdownItem__ctor_m653383513 ();
+extern "C" void DropdownItem_get_text_m2361276100 ();
+extern "C" void DropdownItem_set_text_m2302793037 ();
+extern "C" void DropdownItem_get_image_m1361578890 ();
+extern "C" void DropdownItem_set_image_m97204957 ();
+extern "C" void DropdownItem_get_rectTransform_m1644273588 ();
+extern "C" void DropdownItem_set_rectTransform_m2348579039 ();
+extern "C" void DropdownItem_get_toggle_m2842574180 ();
+extern "C" void DropdownItem_set_toggle_m4246626175 ();
+extern "C" void DropdownItem_OnPointerEnter_m2208531769 ();
+extern "C" void DropdownItem_OnCancel_m3886441502 ();
+extern "C" void OptionData__ctor_m2550995262 ();
+extern "C" void OptionData__ctor_m3621517956 ();
+extern "C" void OptionData__ctor_m715763394 ();
+extern "C" void OptionData__ctor_m2001511174 ();
+extern "C" void OptionData_get_text_m2592726207 ();
+extern "C" void OptionData_set_text_m704016114 ();
+extern "C" void OptionData_get_image_m1245765107 ();
+extern "C" void OptionData_set_image_m4214652734 ();
+extern "C" void OptionDataList__ctor_m4183200960 ();
+extern "C" void OptionDataList_get_options_m397502342 ();
+extern "C" void OptionDataList_set_options_m2193073293 ();
+extern "C" void FontData__ctor_m2630121554 ();
+extern "C" void FontData_UnityEngine_ISerializationCallbackReceiver_OnBeforeSerialize_m3538586040 ();
+extern "C" void FontData_UnityEngine_ISerializationCallbackReceiver_OnAfterDeserialize_m2785911854 ();
+extern "C" void FontData_get_defaultFontData_m3606420120 ();
+extern "C" void FontData_get_font_m3285096249 ();
+extern "C" void FontData_set_font_m504888792 ();
+extern "C" void FontData_get_fontSize_m146058531 ();
+extern "C" void FontData_set_fontSize_m539119952 ();
+extern "C" void FontData_get_fontStyle_m2936188273 ();
+extern "C" void FontData_set_fontStyle_m3987465618 ();
+extern "C" void FontData_get_bestFit_m4181968066 ();
+extern "C" void FontData_set_bestFit_m408210551 ();
+extern "C" void FontData_get_minSize_m3681174594 ();
+extern "C" void FontData_set_minSize_m3139125175 ();
+extern "C" void FontData_get_maxSize_m2908696020 ();
+extern "C" void FontData_set_maxSize_m2259967561 ();
+extern "C" void FontData_get_alignment_m3864278344 ();
+extern "C" void FontData_set_alignment_m4148907005 ();
+extern "C" void FontData_get_alignByGeometry_m1074013123 ();
+extern "C" void FontData_set_alignByGeometry_m1124841400 ();
+extern "C" void FontData_get_richText_m3819861494 ();
+extern "C" void FontData_set_richText_m2399891183 ();
+extern "C" void FontData_get_horizontalOverflow_m1371187570 ();
+extern "C" void FontData_set_horizontalOverflow_m1187704845 ();
+extern "C" void FontData_get_verticalOverflow_m1971090326 ();
+extern "C" void FontData_set_verticalOverflow_m1743547277 ();
+extern "C" void FontData_get_lineSpacing_m3558513826 ();
+extern "C" void FontData_set_lineSpacing_m3483835721 ();
+extern "C" void FontUpdateTracker__cctor_m1924252658 ();
+extern "C" void FontUpdateTracker_TrackText_m1576315537 ();
+extern "C" void FontUpdateTracker_RebuildForFont_m4050910816 ();
+extern "C" void FontUpdateTracker_UntrackText_m1952028010 ();
+extern "C" void Graphic__ctor_m4066569555 ();
+extern "C" void Graphic__cctor_m1027508410 ();
+extern "C" void Graphic_get_defaultGraphicMaterial_m456140641 ();
+extern "C" void Graphic_get_color_m2048831972 ();
+extern "C" void Graphic_set_color_m1311501487 ();
+extern "C" void Graphic_get_raycastTarget_m3436649332 ();
+extern "C" void Graphic_set_raycastTarget_m639541381 ();
+extern "C" void Graphic_get_useLegacyMeshGeneration_m1330224975 ();
+extern "C" void Graphic_set_useLegacyMeshGeneration_m693817504 ();
+extern "C" void Graphic_SetAllDirty_m2074784484 ();
+extern "C" void Graphic_SetLayoutDirty_m2165278999 ();
+extern "C" void Graphic_SetVerticesDirty_m2313177576 ();
+extern "C" void Graphic_SetMaterialDirty_m282639610 ();
+extern "C" void Graphic_OnRectTransformDimensionsChange_m1660020535 ();
+extern "C" void Graphic_OnBeforeTransformParentChanged_m2612648205 ();
+extern "C" void Graphic_OnTransformParentChanged_m321513902 ();
+extern "C" void Graphic_get_depth_m1908843203 ();
+extern "C" void Graphic_get_rectTransform_m4017371950 ();
+extern "C" void Graphic_get_canvas_m4291384250 ();
+extern "C" void Graphic_CacheCanvas_m512847723 ();
+extern "C" void Graphic_get_canvasRenderer_m184553434 ();
+extern "C" void Graphic_get_defaultMaterial_m3094002583 ();
+extern "C" void Graphic_get_material_m3381093914 ();
+extern "C" void Graphic_set_material_m2202379063 ();
+extern "C" void Graphic_get_materialForRendering_m1154169789 ();
+extern "C" void Graphic_get_mainTexture_m2936700123 ();
+extern "C" void Graphic_OnEnable_m1102673235 ();
+extern "C" void Graphic_OnDisable_m264069178 ();
+extern "C" void Graphic_OnCanvasHierarchyChanged_m514781447 ();
+extern "C" void Graphic_Rebuild_m444579746 ();
+extern "C" void Graphic_LayoutComplete_m1944323924 ();
+extern "C" void Graphic_GraphicUpdateComplete_m4174302747 ();
+extern "C" void Graphic_UpdateMaterial_m1564277409 ();
+extern "C" void Graphic_UpdateGeometry_m2127951660 ();
+extern "C" void Graphic_DoMeshGeneration_m2507046369 ();
+extern "C" void Graphic_DoLegacyMeshGeneration_m3761597322 ();
+extern "C" void Graphic_get_workerMesh_m1691010424 ();
+extern "C" void Graphic_OnFillVBO_m316398351 ();
+extern "C" void Graphic_OnPopulateMesh_m192648803 ();
+extern "C" void Graphic_OnPopulateMesh_m3177058550 ();
+extern "C" void Graphic_OnDidApplyAnimationProperties_m3600197626 ();
+extern "C" void Graphic_SetNativeSize_m2816336555 ();
+extern "C" void Graphic_Raycast_m822891196 ();
+extern "C" void Graphic_PixelAdjustPoint_m440199187 ();
+extern "C" void Graphic_GetPixelAdjustedRect_m517144655 ();
+extern "C" void Graphic_CrossFadeColor_m3194947827 ();
+extern "C" void Graphic_CrossFadeColor_m1834346026 ();
+extern "C" void Graphic_CreateColorFromAlpha_m3334630 ();
+extern "C" void Graphic_CrossFadeAlpha_m157692256 ();
+extern "C" void Graphic_RegisterDirtyLayoutCallback_m4189019746 ();
+extern "C" void Graphic_UnregisterDirtyLayoutCallback_m856391721 ();
+extern "C" void Graphic_RegisterDirtyVerticesCallback_m1901460593 ();
+extern "C" void Graphic_UnregisterDirtyVerticesCallback_m3291531384 ();
+extern "C" void Graphic_RegisterDirtyMaterialCallback_m984855455 ();
+extern "C" void Graphic_UnregisterDirtyMaterialCallback_m2374926246 ();
+extern "C" void Graphic_UnityEngine_UI_ICanvasElement_IsDestroyed_m2164415202 ();
+extern "C" void Graphic_UnityEngine_UI_ICanvasElement_get_transform_m1663879910 ();
+extern "C" void GraphicRaycaster__ctor_m361051581 ();
+extern "C" void GraphicRaycaster__cctor_m2120568208 ();
+extern "C" void GraphicRaycaster_get_sortOrderPriority_m2826757774 ();
+extern "C" void GraphicRaycaster_get_renderOrderPriority_m4133744982 ();
+extern "C" void GraphicRaycaster_get_ignoreReversedGraphics_m4072803617 ();
+extern "C" void GraphicRaycaster_set_ignoreReversedGraphics_m1428686170 ();
+extern "C" void GraphicRaycaster_get_blockingObjects_m3655591395 ();
+extern "C" void GraphicRaycaster_set_blockingObjects_m421631540 ();
+extern "C" void GraphicRaycaster_get_canvas_m1333156416 ();
+extern "C" void GraphicRaycaster_Raycast_m1880111711 ();
+extern "C" void GraphicRaycaster_get_eventCamera_m2522555180 ();
+extern "C" void GraphicRaycaster_Raycast_m3191301018 ();
+extern "C" void GraphicRaycaster_U3CRaycastU3Em__3_m3990589484 ();
+extern "C" void GraphicRegistry__ctor_m3010929046 ();
+extern "C" void GraphicRegistry__cctor_m2662390999 ();
+extern "C" void GraphicRegistry_get_instance_m2305942177 ();
+extern "C" void GraphicRegistry_RegisterGraphicForCanvas_m977086278 ();
+extern "C" void GraphicRegistry_UnregisterGraphicForCanvas_m707013965 ();
+extern "C" void GraphicRegistry_GetGraphicsForCanvas_m2740028912 ();
+extern "C" void GridLayoutGroup__ctor_m1378214348 ();
+extern "C" void GridLayoutGroup_get_startCorner_m2778672189 ();
+extern "C" void GridLayoutGroup_set_startCorner_m2937777206 ();
+extern "C" void GridLayoutGroup_get_startAxis_m1539688149 ();
+extern "C" void GridLayoutGroup_set_startAxis_m628518814 ();
+extern "C" void GridLayoutGroup_get_cellSize_m1318291007 ();
+extern "C" void GridLayoutGroup_set_cellSize_m1641372194 ();
+extern "C" void GridLayoutGroup_get_spacing_m660869033 ();
+extern "C" void GridLayoutGroup_set_spacing_m2353797514 ();
+extern "C" void GridLayoutGroup_get_constraint_m3287218001 ();
+extern "C" void GridLayoutGroup_set_constraint_m1995004480 ();
+extern "C" void GridLayoutGroup_get_constraintCount_m2592905067 ();
+extern "C" void GridLayoutGroup_set_constraintCount_m2898625584 ();
+extern "C" void GridLayoutGroup_CalculateLayoutInputHorizontal_m3283749622 ();
+extern "C" void GridLayoutGroup_CalculateLayoutInputVertical_m1216862728 ();
+extern "C" void GridLayoutGroup_SetLayoutHorizontal_m3405189786 ();
+extern "C" void GridLayoutGroup_SetLayoutVertical_m501906092 ();
+extern "C" void GridLayoutGroup_SetCellsAlongAxis_m3322008010 ();
+extern "C" void HorizontalLayoutGroup__ctor_m9362858 ();
+extern "C" void HorizontalLayoutGroup_CalculateLayoutInputHorizontal_m1229423832 ();
+extern "C" void HorizontalLayoutGroup_CalculateLayoutInputVertical_m4119749738 ();
+extern "C" void HorizontalLayoutGroup_SetLayoutHorizontal_m819130872 ();
+extern "C" void HorizontalLayoutGroup_SetLayoutVertical_m3176307082 ();
+extern "C" void HorizontalOrVerticalLayoutGroup__ctor_m258856643 ();
+extern "C" void HorizontalOrVerticalLayoutGroup_get_spacing_m494525775 ();
+extern "C" void HorizontalOrVerticalLayoutGroup_set_spacing_m3226528036 ();
+extern "C" void HorizontalOrVerticalLayoutGroup_get_childForceExpandWidth_m1705552999 ();
+extern "C" void HorizontalOrVerticalLayoutGroup_set_childForceExpandWidth_m1348569144 ();
+extern "C" void HorizontalOrVerticalLayoutGroup_get_childForceExpandHeight_m1836349768 ();
+extern "C" void HorizontalOrVerticalLayoutGroup_set_childForceExpandHeight_m3910057317 ();
+extern "C" void HorizontalOrVerticalLayoutGroup_CalcAlongAxis_m423831906 ();
+extern "C" void HorizontalOrVerticalLayoutGroup_SetChildrenAlongAxis_m3440700494 ();
+extern "C" void Image__ctor_m3858093632 ();
+extern "C" void Image__cctor_m3154689389 ();
+extern "C" void Image_get_sprite_m3572636301 ();
+extern "C" void Image_set_sprite_m572551402 ();
+extern "C" void Image_get_overrideSprite_m3218085753 ();
+extern "C" void Image_set_overrideSprite_m129622486 ();
+extern "C" void Image_get_type_m1778977993 ();
+extern "C" void Image_set_type_m3406009990 ();
+extern "C" void Image_get_preserveAspect_m1146932479 ();
+extern "C" void Image_set_preserveAspect_m3374507356 ();
+extern "C" void Image_get_fillCenter_m3817752307 ();
+extern "C" void Image_set_fillCenter_m811493200 ();
+extern "C" void Image_get_fillMethod_m2526834505 ();
+extern "C" void Image_set_fillMethod_m505110962 ();
+extern "C" void Image_get_fillAmount_m3193252212 ();
+extern "C" void Image_set_fillAmount_m1583793743 ();
+extern "C" void Image_get_fillClockwise_m2414458422 ();
+extern "C" void Image_set_fillClockwise_m3747842887 ();
+extern "C" void Image_get_fillOrigin_m2333809822 ();
+extern "C" void Image_set_fillOrigin_m3202820731 ();
+extern "C" void Image_get_eventAlphaThreshold_m2236338352 ();
+extern "C" void Image_set_eventAlphaThreshold_m229582947 ();
+extern "C" void Image_get_mainTexture_m3619971528 ();
+extern "C" void Image_get_hasBorder_m2233588589 ();
+extern "C" void Image_get_pixelsPerUnit_m2679127645 ();
+extern "C" void Image_OnBeforeSerialize_m3089868192 ();
+extern "C" void Image_OnAfterDeserialize_m1760560454 ();
+extern "C" void Image_GetDrawingDimensions_m755640489 ();
+extern "C" void Image_SetNativeSize_m828608152 ();
+extern "C" void Image_OnPopulateMesh_m435930979 ();
+extern "C" void Image_GenerateSimpleSprite_m106729008 ();
+extern "C" void Image_GenerateSlicedSprite_m4239922765 ();
+extern "C" void Image_GenerateTiledSprite_m4269137945 ();
+extern "C" void Image_AddQuad_m3277178 ();
+extern "C" void Image_AddQuad_m2061170408 ();
+extern "C" void Image_GetAdjustedBorders_m3337288947 ();
+extern "C" void Image_GenerateFilledSprite_m589086176 ();
+extern "C" void Image_RadialCut_m2286713844 ();
+extern "C" void Image_RadialCut_m531564570 ();
+extern "C" void Image_CalculateLayoutInputHorizontal_m3229499650 ();
+extern "C" void Image_CalculateLayoutInputVertical_m2293900052 ();
+extern "C" void Image_get_minWidth_m214977549 ();
+extern "C" void Image_get_preferredWidth_m63596798 ();
+extern "C" void Image_get_flexibleWidth_m1852529796 ();
+extern "C" void Image_get_minHeight_m2873151074 ();
+extern "C" void Image_get_preferredHeight_m2475315089 ();
+extern "C" void Image_get_flexibleHeight_m2097663179 ();
+extern "C" void Image_get_layoutPriority_m1611774403 ();
+extern "C" void Image_IsRaycastLocationValid_m1303041002 ();
+extern "C" void Image_MapCoordinate_m1478133288 ();
+extern "C" void InputField__ctor_m2020289915 ();
+extern "C" void InputField__cctor_m2017349010 ();
+extern "C" void InputField_get_mesh_m2359671532 ();
+extern "C" void InputField_get_cachedInputTextGenerator_m1093502060 ();
+extern "C" void InputField_set_shouldHideMobileInput_m4025452486 ();
+extern "C" void InputField_get_shouldHideMobileInput_m3268284241 ();
+extern "C" void InputField_get_shouldActivateOnSelect_m3772452453 ();
+extern "C" void InputField_get_text_m3972300732 ();
+extern "C" void InputField_set_text_m203843887 ();
+extern "C" void InputField_get_isFocused_m1249071051 ();
+extern "C" void InputField_get_caretBlinkRate_m3180928607 ();
+extern "C" void InputField_set_caretBlinkRate_m3976284076 ();
+extern "C" void InputField_get_caretWidth_m168198637 ();
+extern "C" void InputField_set_caretWidth_m566265370 ();
+extern "C" void InputField_get_textComponent_m2329519363 ();
+extern "C" void InputField_set_textComponent_m4116377302 ();
+extern "C" void InputField_get_placeholder_m1494472373 ();
+extern "C" void InputField_set_placeholder_m1981544106 ();
+extern "C" void InputField_get_caretColor_m3643265483 ();
+extern "C" void InputField_set_caretColor_m1187620416 ();
+extern "C" void InputField_get_customCaretColor_m15835893 ();
+extern "C" void InputField_set_customCaretColor_m2443486254 ();
+extern "C" void InputField_get_selectionColor_m240252578 ();
+extern "C" void InputField_set_selectionColor_m1343496137 ();
+extern "C" void InputField_get_onEndEdit_m3802925699 ();
+extern "C" void InputField_set_onEndEdit_m2414983338 ();
+extern "C" void InputField_get_onValueChange_m2707279446 ();
+extern "C" void InputField_set_onValueChange_m1682014085 ();
+extern "C" void InputField_get_onValueChanged_m2321341872 ();
+extern "C" void InputField_set_onValueChanged_m3205399099 ();
+extern "C" void InputField_get_onValidateInput_m2116536287 ();
+extern "C" void InputField_set_onValidateInput_m1603970312 ();
+extern "C" void InputField_get_characterLimit_m2780159932 ();
+extern "C" void InputField_set_characterLimit_m1004148585 ();
+extern "C" void InputField_get_contentType_m1921772191 ();
+extern "C" void InputField_set_contentType_m831644236 ();
+extern "C" void InputField_get_lineType_m3024149779 ();
+extern "C" void InputField_set_lineType_m2862985194 ();
+extern "C" void InputField_get_inputType_m2348834559 ();
+extern "C" void InputField_set_inputType_m3518963754 ();
+extern "C" void InputField_get_keyboardType_m682150197 ();
+extern "C" void InputField_set_keyboardType_m2584868886 ();
+extern "C" void InputField_get_characterValidation_m4244038975 ();
+extern "C" void InputField_set_characterValidation_m3783277294 ();
+extern "C" void InputField_get_readOnly_m991875110 ();
+extern "C" void InputField_set_readOnly_m1486621087 ();
+extern "C" void InputField_get_multiLine_m2265790891 ();
+extern "C" void InputField_get_asteriskChar_m3297406588 ();
+extern "C" void InputField_set_asteriskChar_m353877103 ();
+extern "C" void InputField_get_wasCanceled_m3717712640 ();
+extern "C" void InputField_ClampPos_m1654447641 ();
+extern "C" void InputField_get_caretPositionInternal_m1805548065 ();
+extern "C" void InputField_set_caretPositionInternal_m3521473046 ();
+extern "C" void InputField_get_caretSelectPositionInternal_m2541357245 ();
+extern "C" void InputField_set_caretSelectPositionInternal_m4114170802 ();
+extern "C" void InputField_get_hasSelection_m69592150 ();
+extern "C" void InputField_get_caretPosition_m1600046468 ();
+extern "C" void InputField_set_caretPosition_m417406201 ();
+extern "C" void InputField_get_selectionAnchorPosition_m3946868514 ();
+extern "C" void InputField_set_selectionAnchorPosition_m4265241751 ();
+extern "C" void InputField_get_selectionFocusPosition_m3487835103 ();
+extern "C" void InputField_set_selectionFocusPosition_m3645383436 ();
+extern "C" void InputField_OnEnable_m3151717419 ();
+extern "C" void InputField_OnDisable_m3654896738 ();
+extern "C" void InputField_CaretBlink_m3410390944 ();
+extern "C" void InputField_SetCaretVisible_m1704739146 ();
+extern "C" void InputField_SetCaretActive_m1463120 ();
+extern "C" void InputField_OnFocus_m466029714 ();
+extern "C" void InputField_SelectAll_m4063966302 ();
+extern "C" void InputField_MoveTextEnd_m2126814125 ();
+extern "C" void InputField_MoveTextStart_m2867546804 ();
+extern "C" void InputField_get_clipboard_m1517672713 ();
+extern "C" void InputField_set_clipboard_m1137802704 ();
+extern "C" void InputField_InPlaceEditing_m3152517681 ();
+extern "C" void InputField_LateUpdate_m658657720 ();
+extern "C" void InputField_ScreenToLocal_m1499722466 ();
+extern "C" void InputField_GetUnclampedCharacterLineFromPosition_m3510038353 ();
+extern "C" void InputField_GetCharacterIndexFromPosition_m4275941159 ();
+extern "C" void InputField_MayDrag_m3557501854 ();
+extern "C" void InputField_OnBeginDrag_m1531063271 ();
+extern "C" void InputField_OnDrag_m91839394 ();
+extern "C" void InputField_MouseDragOutsideRect_m854880935 ();
+extern "C" void InputField_OnEndDrag_m4049045301 ();
+extern "C" void InputField_OnPointerDown_m2912611813 ();
+extern "C" void InputField_KeyPressed_m56514315 ();
+extern "C" void InputField_IsValidChar_m3270378798 ();
+extern "C" void InputField_ProcessEvent_m946297147 ();
+extern "C" void InputField_OnUpdateSelected_m636353350 ();
+extern "C" void InputField_GetSelectedString_m1040556478 ();
+extern "C" void InputField_FindtNextWordBegin_m2221118514 ();
+extern "C" void InputField_MoveRight_m815186690 ();
+extern "C" void InputField_FindtPrevWordBegin_m201815282 ();
+extern "C" void InputField_MoveLeft_m2120951525 ();
+extern "C" void InputField_DetermineCharacterLine_m3657739513 ();
+extern "C" void InputField_LineUpCharacterPosition_m1478103368 ();
+extern "C" void InputField_LineDownCharacterPosition_m263003663 ();
+extern "C" void InputField_MoveDown_m1297332275 ();
+extern "C" void InputField_MoveDown_m3574910698 ();
+extern "C" void InputField_MoveUp_m3783029356 ();
+extern "C" void InputField_MoveUp_m2694527889 ();
+extern "C" void InputField_Delete_m3723424084 ();
+extern "C" void InputField_ForwardSpace_m957387114 ();
+extern "C" void InputField_Backspace_m3222521688 ();
+extern "C" void InputField_Insert_m2452101819 ();
+extern "C" void InputField_SendOnValueChangedAndUpdateLabel_m3331240455 ();
+extern "C" void InputField_SendOnValueChanged_m2613517587 ();
+extern "C" void InputField_SendOnSubmit_m3215072040 ();
+extern "C" void InputField_Append_m2987278559 ();
+extern "C" void InputField_Append_m917566458 ();
+extern "C" void InputField_UpdateLabel_m4272237956 ();
+extern "C" void InputField_IsSelectionVisible_m1151128811 ();
+extern "C" void InputField_GetLineStartPosition_m1032176150 ();
+extern "C" void InputField_GetLineEndPosition_m293479951 ();
+extern "C" void InputField_SetDrawRangeToContainCaretPosition_m2772169252 ();
+extern "C" void InputField_ForceLabelUpdate_m3497155803 ();
+extern "C" void InputField_MarkGeometryAsDirty_m178860986 ();
+extern "C" void InputField_Rebuild_m4149891194 ();
+extern "C" void InputField_LayoutComplete_m3197989932 ();
+extern "C" void InputField_GraphicUpdateComplete_m2162277955 ();
+extern "C" void InputField_UpdateGeometry_m3381617668 ();
+extern "C" void InputField_AssignPositioningIfNeeded_m20735637 ();
+extern "C" void InputField_OnFillVBO_m2411846934 ();
+extern "C" void InputField_GenerateCaret_m2836783818 ();
+extern "C" void InputField_CreateCursorVerts_m1990252457 ();
+extern "C" void InputField_GenerateHightlight_m3464703695 ();
+extern "C" void InputField_Validate_m4235185069 ();
+extern "C" void InputField_ActivateInputField_m2072753740 ();
+extern "C" void InputField_ActivateInputFieldInternal_m2572296937 ();
+extern "C" void InputField_OnSelect_m1785968830 ();
+extern "C" void InputField_OnPointerClick_m2029011499 ();
+extern "C" void InputField_DeactivateInputField_m2310323789 ();
+extern "C" void InputField_OnDeselect_m1884183999 ();
+extern "C" void InputField_OnSubmit_m3450763226 ();
+extern "C" void InputField_EnforceContentType_m4178225210 ();
+extern "C" void InputField_SetToCustomIfContentTypeIsNot_m1700869631 ();
+extern "C" void InputField_SetToCustom_m2598912359 ();
+extern "C" void InputField_DoStateTransition_m1731594340 ();
+extern "C" void InputField_UnityEngine_UI_ICanvasElement_IsDestroyed_m2781637606 ();
+extern "C" void InputField_UnityEngine_UI_ICanvasElement_get_transform_m2979159434 ();
+extern "C" void U3CCaretBlinkU3Ec__Iterator3__ctor_m1860697329 ();
+extern "C" void U3CCaretBlinkU3Ec__Iterator3_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m1074854283 ();
+extern "C" void U3CCaretBlinkU3Ec__Iterator3_System_Collections_IEnumerator_get_Current_m2948952863 ();
+extern "C" void U3CCaretBlinkU3Ec__Iterator3_MoveNext_m4141316197 ();
+extern "C" void U3CCaretBlinkU3Ec__Iterator3_Dispose_m1322021102 ();
+extern "C" void U3CCaretBlinkU3Ec__Iterator3_Reset_m3802097566 ();
+extern "C" void U3CMouseDragOutsideRectU3Ec__Iterator4__ctor_m1030435559 ();
+extern "C" void U3CMouseDragOutsideRectU3Ec__Iterator4_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m265708309 ();
+extern "C" void U3CMouseDragOutsideRectU3Ec__Iterator4_System_Collections_IEnumerator_get_Current_m3574804649 ();
+extern "C" void U3CMouseDragOutsideRectU3Ec__Iterator4_MoveNext_m656051503 ();
+extern "C" void U3CMouseDragOutsideRectU3Ec__Iterator4_Dispose_m2304377188 ();
+extern "C" void U3CMouseDragOutsideRectU3Ec__Iterator4_Reset_m2971835796 ();
+extern "C" void OnChangeEvent__ctor_m1829440895 ();
+extern "C" void OnValidateInput__ctor_m318825293 ();
+extern "C" void OnValidateInput_Invoke_m1377115157 ();
+extern "C" void OnValidateInput_BeginInvoke_m2130883566 ();
+extern "C" void OnValidateInput_EndInvoke_m1254779679 ();
+extern "C" void SubmitEvent__ctor_m3123354920 ();
+extern "C" void LayoutElement__ctor_m1101568265 ();
+extern "C" void LayoutElement_get_ignoreLayout_m3020545774 ();
+extern "C" void LayoutElement_set_ignoreLayout_m31533195 ();
+extern "C" void LayoutElement_CalculateLayoutInputHorizontal_m3047948889 ();
+extern "C" void LayoutElement_CalculateLayoutInputVertical_m809913899 ();
+extern "C" void LayoutElement_get_minWidth_m3361650980 ();
+extern "C" void LayoutElement_set_minWidth_m2427874975 ();
+extern "C" void LayoutElement_get_minHeight_m1635779627 ();
+extern "C" void LayoutElement_set_minHeight_m400728776 ();
+extern "C" void LayoutElement_get_preferredWidth_m616720597 ();
+extern "C" void LayoutElement_set_preferredWidth_m1262908558 ();
+extern "C" void LayoutElement_get_preferredHeight_m2442283674 ();
+extern "C" void LayoutElement_set_preferredHeight_m2941475513 ();
+extern "C" void LayoutElement_get_flexibleWidth_m3810035149 ();
+extern "C" void LayoutElement_set_flexibleWidth_m2155570278 ();
+extern "C" void LayoutElement_get_flexibleHeight_m2650786978 ();
+extern "C" void LayoutElement_set_flexibleHeight_m549217761 ();
+extern "C" void LayoutElement_get_layoutPriority_m2626166170 ();
+extern "C" void LayoutElement_OnEnable_m1046652381 ();
+extern "C" void LayoutElement_OnTransformParentChanged_m4077176376 ();
+extern "C" void LayoutElement_OnDisable_m2822390000 ();
+extern "C" void LayoutElement_OnDidApplyAnimationProperties_m614601136 ();
+extern "C" void LayoutElement_OnBeforeTransformParentChanged_m253470231 ();
+extern "C" void LayoutElement_SetDirty_m1279144619 ();
+extern "C" void LayoutGroup__ctor_m1400544614 ();
+extern "C" void LayoutGroup_get_padding_m3073855587 ();
+extern "C" void LayoutGroup_set_padding_m1597085962 ();
+extern "C" void LayoutGroup_get_childAlignment_m357689196 ();
+extern "C" void LayoutGroup_set_childAlignment_m2559376521 ();
+extern "C" void LayoutGroup_get_rectTransform_m331638721 ();
+extern "C" void LayoutGroup_get_rectChildren_m2856991542 ();
+extern "C" void LayoutGroup_CalculateLayoutInputHorizontal_m89763996 ();
+extern "C" void LayoutGroup_get_minWidth_m1427346727 ();
+extern "C" void LayoutGroup_get_preferredWidth_m3558143640 ();
+extern "C" void LayoutGroup_get_flexibleWidth_m2519446442 ();
+extern "C" void LayoutGroup_get_minHeight_m1801889928 ();
+extern "C" void LayoutGroup_get_preferredHeight_m3432084791 ();
+extern "C" void LayoutGroup_get_flexibleHeight_m1297242725 ();
+extern "C" void LayoutGroup_get_layoutPriority_m3819074141 ();
+extern "C" void LayoutGroup_OnEnable_m88893536 ();
+extern "C" void LayoutGroup_OnDisable_m3196636877 ();
+extern "C" void LayoutGroup_OnDidApplyAnimationProperties_m657723149 ();
+extern "C" void LayoutGroup_GetTotalMinSize_m3187537614 ();
+extern "C" void LayoutGroup_GetTotalPreferredSize_m2664141949 ();
+extern "C" void LayoutGroup_GetTotalFlexibleSize_m2703956501 ();
+extern "C" void LayoutGroup_GetStartOffset_m3060950207 ();
+extern "C" void LayoutGroup_SetLayoutInputForAxis_m396008818 ();
+extern "C" void LayoutGroup_SetChildAlongAxis_m4214960168 ();
+extern "C" void LayoutGroup_get_isRootLayoutGroup_m3172189078 ();
+extern "C" void LayoutGroup_OnRectTransformDimensionsChange_m30528906 ();
+extern "C" void LayoutGroup_OnTransformChildrenChanged_m420993286 ();
+extern "C" void LayoutGroup_SetDirty_m321385774 ();
+extern "C" void LayoutRebuilder__ctor_m3516226301 ();
+extern "C" void LayoutRebuilder__cctor_m1146736720 ();
+extern "C" void LayoutRebuilder_Initialize_m1265316458 ();
+extern "C" void LayoutRebuilder_Clear_m922359592 ();
+extern "C" void LayoutRebuilder_ReapplyDrivenProperties_m965971988 ();
+extern "C" void LayoutRebuilder_get_transform_m3231462112 ();
+extern "C" void LayoutRebuilder_IsDestroyed_m4004091228 ();
+extern "C" void LayoutRebuilder_StripDisabledBehavioursFromList_m51650679 ();
+extern "C" void LayoutRebuilder_ForceRebuildLayoutImmediate_m3701079759 ();
+extern "C" void LayoutRebuilder_Rebuild_m407530040 ();
+extern "C" void LayoutRebuilder_PerformLayoutControl_m724256510 ();
+extern "C" void LayoutRebuilder_PerformLayoutCalculation_m941802386 ();
+extern "C" void LayoutRebuilder_MarkLayoutForRebuild_m901621521 ();
+extern "C" void LayoutRebuilder_ValidLayoutGroup_m1488924317 ();
+extern "C" void LayoutRebuilder_ValidController_m2724682388 ();
+extern "C" void LayoutRebuilder_MarkLayoutRootForRebuild_m1708966351 ();
+extern "C" void LayoutRebuilder_LayoutComplete_m182540522 ();
+extern "C" void LayoutRebuilder_GraphicUpdateComplete_m408201157 ();
+extern "C" void LayoutRebuilder_GetHashCode_m1333271044 ();
+extern "C" void LayoutRebuilder_Equals_m3575022752 ();
+extern "C" void LayoutRebuilder_ToString_m2403814582 ();
+extern "C" void LayoutRebuilder_U3Cs_RebuildersU3Em__6_m831129568 ();
+extern "C" void LayoutRebuilder_U3CStripDisabledBehavioursFromListU3Em__7_m1620076941 ();
+extern "C" void LayoutRebuilder_U3CRebuildU3Em__8_m1336267783 ();
+extern "C" void LayoutRebuilder_U3CRebuildU3Em__9_m1269261030 ();
+extern "C" void LayoutRebuilder_U3CRebuildU3Em__A_m733207006 ();
+extern "C" void LayoutRebuilder_U3CRebuildU3Em__B_m666200253 ();
+extern "C" void LayoutUtility_GetMinSize_m220738634 ();
+extern "C" void LayoutUtility_GetPreferredSize_m889669625 ();
+extern "C" void LayoutUtility_GetFlexibleSize_m3922234755 ();
+extern "C" void LayoutUtility_GetMinWidth_m3030453932 ();
+extern "C" void LayoutUtility_GetPreferredWidth_m2872373467 ();
+extern "C" void LayoutUtility_GetFlexibleWidth_m1272624485 ();
+extern "C" void LayoutUtility_GetMinHeight_m1456033095 ();
+extern "C" void LayoutUtility_GetPreferredHeight_m850505976 ();
+extern "C" void LayoutUtility_GetFlexibleHeight_m2797895086 ();
+extern "C" void LayoutUtility_GetLayoutProperty_m846328268 ();
+extern "C" void LayoutUtility_GetLayoutProperty_m3561974560 ();
+extern "C" void LayoutUtility_U3CGetMinWidthU3Em__C_m2477279317 ();
+extern "C" void LayoutUtility_U3CGetPreferredWidthU3Em__D_m626210533 ();
+extern "C" void LayoutUtility_U3CGetPreferredWidthU3Em__E_m2911073988 ();
+extern "C" void LayoutUtility_U3CGetFlexibleWidthU3Em__F_m2196499833 ();
+extern "C" void LayoutUtility_U3CGetMinHeightU3Em__10_m3245482414 ();
+extern "C" void LayoutUtility_U3CGetPreferredHeightU3Em__11_m3744212990 ();
+extern "C" void LayoutUtility_U3CGetPreferredHeightU3Em__12_m1734109149 ();
+extern "C" void LayoutUtility_U3CGetFlexibleHeightU3Em__13_m3482485010 ();
+extern "C" void Mask__ctor_m3917673311 ();
+extern "C" void Mask_get_rectTransform_m950047934 ();
+extern "C" void Mask_get_showMaskGraphic_m2608629537 ();
+extern "C" void Mask_set_showMaskGraphic_m218433430 ();
+extern "C" void Mask_get_graphic_m2101144526 ();
+extern "C" void Mask_MaskEnabled_m1398570944 ();
+extern "C" void Mask_OnSiblingGraphicEnabledDisabled_m1780324373 ();
+extern "C" void Mask_OnEnable_m2035884999 ();
+extern "C" void Mask_OnDisable_m3423830086 ();
+extern "C" void Mask_IsRaycastLocationValid_m4053137295 ();
+extern "C" void Mask_GetModifiedMaterial_m3826173342 ();
+extern "C" void MaskableGraphic__ctor_m3514233785 ();
+extern "C" void MaskableGraphic_get_onCullStateChanged_m2293098922 ();
+extern "C" void MaskableGraphic_set_onCullStateChanged_m1901835143 ();
+extern "C" void MaskableGraphic_get_maskable_m2226181992 ();
+extern "C" void MaskableGraphic_set_maskable_m3088187909 ();
+extern "C" void MaskableGraphic_GetModifiedMaterial_m2422156902 ();
+extern "C" void MaskableGraphic_Cull_m1710243867 ();
+extern "C" void MaskableGraphic_UpdateCull_m3192993021 ();
+extern "C" void MaskableGraphic_SetClipRect_m3970693835 ();
+extern "C" void MaskableGraphic_OnEnable_m487460141 ();
+extern "C" void MaskableGraphic_OnDisable_m2667299744 ();
+extern "C" void MaskableGraphic_OnTransformParentChanged_m2836893064 ();
+extern "C" void MaskableGraphic_ParentMaskStateChanged_m3501359204 ();
+extern "C" void MaskableGraphic_OnCanvasHierarchyChanged_m3030160609 ();
+extern "C" void MaskableGraphic_get_canvasRect_m2184399948 ();
+extern "C" void MaskableGraphic_UpdateClipParent_m2337272942 ();
+extern "C" void MaskableGraphic_RecalculateClipping_m400162188 ();
+extern "C" void MaskableGraphic_RecalculateMasking_m2250524558 ();
+extern "C" void MaskableGraphic_UnityEngine_UI_IClippable_get_rectTransform_m3856601786 ();
+extern "C" void CullStateChangedEvent__ctor_m2540235971 ();
+extern "C" void MaskUtilities__ctor_m1166009725 ();
+extern "C" void MaskUtilities_Notify2DMaskStateChanged_m2199550555 ();
+extern "C" void MaskUtilities_NotifyStencilStateChanged_m2159873435 ();
+extern "C" void MaskUtilities_FindRootSortOverrideCanvas_m4219954651 ();
+extern "C" void MaskUtilities_GetStencilDepth_m2786493988 ();
+extern "C" void MaskUtilities_GetRectMaskForClippable_m396614586 ();
+extern "C" void MaskUtilities_GetRectMasksForClip_m447525417 ();
+extern "C" void Misc_Destroy_m612433153 ();
+extern "C" void Misc_DestroyImmediate_m40421862 ();
+extern "C" void Navigation_get_mode_m721480509 ();
+extern "C" void Navigation_set_mode_m1506614802 ();
+extern "C" void Navigation_get_selectOnUp_m2566832818 ();
+extern "C" void Navigation_set_selectOnUp_m2875366329 ();
+extern "C" void Navigation_get_selectOnDown_m929912185 ();
+extern "C" void Navigation_set_selectOnDown_m2647056978 ();
+extern "C" void Navigation_get_selectOnLeft_m1149209502 ();
+extern "C" void Navigation_set_selectOnLeft_m619081677 ();
+extern "C" void Navigation_get_selectOnRight_m2410966663 ();
+extern "C" void Navigation_set_selectOnRight_m1544013280 ();
+extern "C" void Navigation_get_defaultNavigation_m492829917 ();
+extern "C" void Navigation_Equals_m3278735261 ();
+extern "C" void Outline__ctor_m4004117817 ();
+extern "C" void Outline_ModifyMesh_m4125422123 ();
+extern "C" void PositionAsUV1__ctor_m3124267078 ();
+extern "C" void PositionAsUV1_ModifyMesh_m2424047928 ();
+extern "C" void RawImage__ctor_m3149617176 ();
+extern "C" void RawImage_get_mainTexture_m3607327198 ();
+extern "C" void RawImage_get_texture_m2545896727 ();
+extern "C" void RawImage_set_texture_m153141914 ();
+extern "C" void RawImage_get_uvRect_m605244702 ();
+extern "C" void RawImage_set_uvRect_m1381047731 ();
+extern "C" void RawImage_SetNativeSize_m131446896 ();
+extern "C" void RawImage_OnPopulateMesh_m1483685179 ();
+extern "C" void RectangularVertexClipper__ctor_m1771616896 ();
+extern "C" void RectangularVertexClipper_GetCanvasRect_m4121299266 ();
+extern "C" void RectMask2D__ctor_m743839689 ();
+extern "C" void RectMask2D_get_canvasRect_m3883544836 ();
+extern "C" void RectMask2D_get_rectTransform_m3879504040 ();
+extern "C" void RectMask2D_OnEnable_m4063473437 ();
+extern "C" void RectMask2D_OnDisable_m1854562224 ();
+extern "C" void RectMask2D_IsRaycastLocationValid_m3081840229 ();
+extern "C" void RectMask2D_PerformClipping_m2105337834 ();
+extern "C" void RectMask2D_AddClippable_m3020362282 ();
+extern "C" void RectMask2D_RemoveClippable_m2506427137 ();
+extern "C" void RectMask2D_OnTransformParentChanged_m136007544 ();
+extern "C" void RectMask2D_OnCanvasHierarchyChanged_m329275089 ();
+extern "C" void Scrollbar__ctor_m842961365 ();
+extern "C" void Scrollbar_get_handleRect_m2010533702 ();
+extern "C" void Scrollbar_set_handleRect_m2375555625 ();
+extern "C" void Scrollbar_get_direction_m2158550533 ();
+extern "C" void Scrollbar_set_direction_m1167543746 ();
+extern "C" void Scrollbar_get_value_m3398262479 ();
+extern "C" void Scrollbar_set_value_m1765490852 ();
+extern "C" void Scrollbar_get_size_m1139900549 ();
+extern "C" void Scrollbar_set_size_m298852062 ();
+extern "C" void Scrollbar_get_numberOfSteps_m1873821577 ();
+extern "C" void Scrollbar_set_numberOfSteps_m2505501262 ();
+extern "C" void Scrollbar_get_onValueChanged_m312588368 ();
+extern "C" void Scrollbar_set_onValueChanged_m2941912493 ();
+extern "C" void Scrollbar_get_stepSize_m1660915953 ();
+extern "C" void Scrollbar_Rebuild_m36029024 ();
+extern "C" void Scrollbar_LayoutComplete_m4096546066 ();
+extern "C" void Scrollbar_GraphicUpdateComplete_m3945082525 ();
+extern "C" void Scrollbar_OnEnable_m2059823505 ();
+extern "C" void Scrollbar_OnDisable_m4165923772 ();
+extern "C" void Scrollbar_UpdateCachedReferences_m1478280386 ();
+extern "C" void Scrollbar_Set_m2588040310 ();
+extern "C" void Scrollbar_Set_m3384196167 ();
+extern "C" void Scrollbar_OnRectTransformDimensionsChange_m1089670457 ();
+extern "C" void Scrollbar_get_axis_m3425831999 ();
+extern "C" void Scrollbar_get_reverseValue_m581327093 ();
+extern "C" void Scrollbar_UpdateVisuals_m2753592989 ();
+extern "C" void Scrollbar_UpdateDrag_m494154322 ();
+extern "C" void Scrollbar_MayDrag_m2868972512 ();
+extern "C" void Scrollbar_OnBeginDrag_m1703358541 ();
+extern "C" void Scrollbar_OnDrag_m4023431036 ();
+extern "C" void Scrollbar_OnPointerDown_m984641739 ();
+extern "C" void Scrollbar_ClickRepeat_m1553202218 ();
+extern "C" void Scrollbar_OnPointerUp_m2249681202 ();
+extern "C" void Scrollbar_OnMove_m2506066825 ();
+extern "C" void Scrollbar_FindSelectableOnLeft_m976215998 ();
+extern "C" void Scrollbar_FindSelectableOnRight_m1343135335 ();
+extern "C" void Scrollbar_FindSelectableOnUp_m2968886994 ();
+extern "C" void Scrollbar_FindSelectableOnDown_m756918681 ();
+extern "C" void Scrollbar_OnInitializePotentialDrag_m2407430440 ();
+extern "C" void Scrollbar_SetDirection_m826288644 ();
+extern "C" void Scrollbar_UnityEngine_UI_ICanvasElement_IsDestroyed_m3229708772 ();
+extern "C" void Scrollbar_UnityEngine_UI_ICanvasElement_get_transform_m1065549160 ();
+extern "C" void U3CClickRepeatU3Ec__Iterator5__ctor_m46482857 ();
+extern "C" void U3CClickRepeatU3Ec__Iterator5_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m1538503635 ();
+extern "C" void U3CClickRepeatU3Ec__Iterator5_System_Collections_IEnumerator_get_Current_m1635106151 ();
+extern "C" void U3CClickRepeatU3Ec__Iterator5_MoveNext_m451466413 ();
+extern "C" void U3CClickRepeatU3Ec__Iterator5_Dispose_m1618635686 ();
+extern "C" void U3CClickRepeatU3Ec__Iterator5_Reset_m1987883094 ();
+extern "C" void ScrollEvent__ctor_m2724827255 ();
+extern "C" void ScrollRect__ctor_m3113131930 ();
+extern "C" void ScrollRect_get_content_m3701632330 ();
+extern "C" void ScrollRect_set_content_m234982541 ();
+extern "C" void ScrollRect_get_horizontal_m3680042345 ();
+extern "C" void ScrollRect_set_horizontal_m943369506 ();
+extern "C" void ScrollRect_get_vertical_m135712059 ();
+extern "C" void ScrollRect_set_vertical_m3763666420 ();
+extern "C" void ScrollRect_get_movementType_m4014199657 ();
+extern "C" void ScrollRect_set_movementType_m4233390924 ();
+extern "C" void ScrollRect_get_elasticity_m1540742464 ();
+extern "C" void ScrollRect_set_elasticity_m957382251 ();
+extern "C" void ScrollRect_get_inertia_m723925623 ();
+extern "C" void ScrollRect_set_inertia_m4277812460 ();
+extern "C" void ScrollRect_get_decelerationRate_m2763364646 ();
+extern "C" void ScrollRect_set_decelerationRate_m1911965765 ();
+extern "C" void ScrollRect_get_scrollSensitivity_m1352024717 ();
+extern "C" void ScrollRect_set_scrollSensitivity_m310245950 ();
+extern "C" void ScrollRect_get_viewport_m1780465687 ();
+extern "C" void ScrollRect_set_viewport_m1031184500 ();
+extern "C" void ScrollRect_get_horizontalScrollbar_m2383265157 ();
+extern "C" void ScrollRect_set_horizontalScrollbar_m2130920826 ();
+extern "C" void ScrollRect_get_verticalScrollbar_m801913715 ();
+extern "C" void ScrollRect_set_verticalScrollbar_m845729640 ();
+extern "C" void ScrollRect_get_horizontalScrollbarVisibility_m2805283129 ();
+extern "C" void ScrollRect_set_horizontalScrollbarVisibility_m1831067046 ();
+extern "C" void ScrollRect_get_verticalScrollbarVisibility_m1678458407 ();
+extern "C" void ScrollRect_set_verticalScrollbarVisibility_m4230518264 ();
+extern "C" void ScrollRect_get_horizontalScrollbarSpacing_m2867145992 ();
+extern "C" void ScrollRect_set_horizontalScrollbarSpacing_m1996166051 ();
+extern "C" void ScrollRect_get_verticalScrollbarSpacing_m1095438682 ();
+extern "C" void ScrollRect_set_verticalScrollbarSpacing_m4137600145 ();
+extern "C" void ScrollRect_get_onValueChanged_m4119396560 ();
+extern "C" void ScrollRect_set_onValueChanged_m499269979 ();
+extern "C" void ScrollRect_get_viewRect_m911909082 ();
+extern "C" void ScrollRect_get_velocity_m4218059637 ();
+extern "C" void ScrollRect_set_velocity_m4003401302 ();
+extern "C" void ScrollRect_get_rectTransform_m836427513 ();
+extern "C" void ScrollRect_Rebuild_m3329025723 ();
+extern "C" void ScrollRect_LayoutComplete_m1579087085 ();
+extern "C" void ScrollRect_GraphicUpdateComplete_m2238911074 ();
+extern "C" void ScrollRect_UpdateCachedData_m4281892159 ();
+extern "C" void ScrollRect_OnEnable_m4156082604 ();
+extern "C" void ScrollRect_OnDisable_m430479105 ();
+extern "C" void ScrollRect_IsActive_m1128064300 ();
+extern "C" void ScrollRect_EnsureLayoutHasRebuilt_m1972800323 ();
+extern "C" void ScrollRect_StopMovement_m4209251323 ();
+extern "C" void ScrollRect_OnScroll_m2633232840 ();
+extern "C" void ScrollRect_OnInitializePotentialDrag_m2313515395 ();
+extern "C" void ScrollRect_OnBeginDrag_m1465783272 ();
+extern "C" void ScrollRect_OnEndDrag_m1604287350 ();
+extern "C" void ScrollRect_OnDrag_m286963457 ();
+extern "C" void ScrollRect_SetContentAnchoredPosition_m716182300 ();
+extern "C" void ScrollRect_LateUpdate_m3780926201 ();
+extern "C" void ScrollRect_UpdatePrevData_m454081040 ();
+extern "C" void ScrollRect_UpdateScrollbars_m2912536474 ();
+extern "C" void ScrollRect_get_normalizedPosition_m1721330264 ();
+extern "C" void ScrollRect_set_normalizedPosition_m2973019475 ();
+extern "C" void ScrollRect_get_horizontalNormalizedPosition_m1672288203 ();
+extern "C" void ScrollRect_set_horizontalNormalizedPosition_m2007203264 ();
+extern "C" void ScrollRect_get_verticalNormalizedPosition_m4163579805 ();
+extern "C" void ScrollRect_set_verticalNormalizedPosition_m2636032814 ();
+extern "C" void ScrollRect_SetHorizontalNormalizedPosition_m653475821 ();
+extern "C" void ScrollRect_SetVerticalNormalizedPosition_m3957527707 ();
+extern "C" void ScrollRect_SetNormalizedPosition_m4196700166 ();
+extern "C" void ScrollRect_RubberDelta_m403235940 ();
+extern "C" void ScrollRect_OnRectTransformDimensionsChange_m2105458366 ();
+extern "C" void ScrollRect_get_hScrollingNeeded_m1668641607 ();
+extern "C" void ScrollRect_get_vScrollingNeeded_m594530553 ();
+extern "C" void ScrollRect_CalculateLayoutInputHorizontal_m4036022504 ();
+extern "C" void ScrollRect_CalculateLayoutInputVertical_m4225463418 ();
+extern "C" void ScrollRect_get_minWidth_m525847771 ();
+extern "C" void ScrollRect_get_preferredWidth_m2213910348 ();
+extern "C" void ScrollRect_get_flexibleWidth_m2753178742 ();
+extern "C" void ScrollRect_get_minHeight_m3920193364 ();
+extern "C" void ScrollRect_get_preferredHeight_m415558403 ();
+extern "C" void ScrollRect_get_flexibleHeight_m4247976729 ();
+extern "C" void ScrollRect_get_layoutPriority_m3681037785 ();
+extern "C" void ScrollRect_SetLayoutHorizontal_m1751158760 ();
+extern "C" void ScrollRect_SetLayoutVertical_m1385100154 ();
+extern "C" void ScrollRect_UpdateScrollbarVisibility_m2808994247 ();
+extern "C" void ScrollRect_UpdateScrollbarLayout_m2579760607 ();
+extern "C" void ScrollRect_UpdateBounds_m1752242888 ();
+extern "C" void ScrollRect_GetBounds_m1535126094 ();
+extern "C" void ScrollRect_CalculateOffset_m224839950 ();
+extern "C" void ScrollRect_SetDirty_m93607546 ();
+extern "C" void ScrollRect_SetDirtyCaching_m4215531847 ();
+extern "C" void ScrollRect_UnityEngine_UI_ICanvasElement_IsDestroyed_m1861319301 ();
+extern "C" void ScrollRect_UnityEngine_UI_ICanvasElement_get_transform_m3316531305 ();
+extern "C" void ScrollRectEvent__ctor_m985343040 ();
+extern "C" void Selectable__ctor_m1133588277 ();
+extern "C" void Selectable__cctor_m299402008 ();
+extern "C" void Selectable_get_allSelectables_m476416992 ();
+extern "C" void Selectable_get_navigation_m3138151376 ();
+extern "C" void Selectable_set_navigation_m3946690907 ();
+extern "C" void Selectable_get_transition_m4100650273 ();
+extern "C" void Selectable_set_transition_m1538436886 ();
+extern "C" void Selectable_get_colors_m2926475394 ();
+extern "C" void Selectable_set_colors_m2365118697 ();
+extern "C" void Selectable_get_spriteState_m102480676 ();
+extern "C" void Selectable_set_spriteState_m3715637593 ();
+extern "C" void Selectable_get_animationTriggers_m4030265988 ();
+extern "C" void Selectable_set_animationTriggers_m1859718713 ();
+extern "C" void Selectable_get_targetGraphic_m1206082259 ();
+extern "C" void Selectable_set_targetGraphic_m54088136 ();
+extern "C" void Selectable_get_interactable_m1204033370 ();
+extern "C" void Selectable_set_interactable_m2686686419 ();
+extern "C" void Selectable_get_isPointerInside_m3778852455 ();
+extern "C" void Selectable_set_isPointerInside_m1584068316 ();
+extern "C" void Selectable_get_isPointerDown_m451775501 ();
+extern "C" void Selectable_set_isPointerDown_m2193598850 ();
+extern "C" void Selectable_get_hasSelection_m771189340 ();
+extern "C" void Selectable_set_hasSelection_m138443861 ();
+extern "C" void Selectable_get_image_m978701700 ();
+extern "C" void Selectable_set_image_m4179082937 ();
+extern "C" void Selectable_get_animator_m1533578598 ();
+extern "C" void Selectable_Awake_m1371193496 ();
+extern "C" void Selectable_OnCanvasGroupChanged_m4067350875 ();
+extern "C" void Selectable_IsInteractable_m1810942779 ();
+extern "C" void Selectable_OnDidApplyAnimationProperties_m4092978140 ();
+extern "C" void Selectable_OnEnable_m1472090161 ();
+extern "C" void Selectable_OnSetProperty_m571656523 ();
+extern "C" void Selectable_OnDisable_m3126059292 ();
+extern "C" void Selectable_get_currentSelectionState_m730905540 ();
+extern "C" void Selectable_InstantClearState_m1586585368 ();
+extern "C" void Selectable_DoStateTransition_m1211483242 ();
+extern "C" void Selectable_FindSelectable_m1109039701 ();
+extern "C" void Selectable_GetPointOnRectEdge_m371681446 ();
+extern "C" void Selectable_Navigate_m2039225725 ();
+extern "C" void Selectable_FindSelectableOnLeft_m3101734378 ();
+extern "C" void Selectable_FindSelectableOnRight_m2809695675 ();
+extern "C" void Selectable_FindSelectableOnUp_m3489533950 ();
+extern "C" void Selectable_FindSelectableOnDown_m2882437061 ();
+extern "C" void Selectable_OnMove_m2478875177 ();
+extern "C" void Selectable_StartColorTween_m2559093428 ();
+extern "C" void Selectable_DoSpriteSwap_m1929545238 ();
+extern "C" void Selectable_TriggerAnimation_m2433448647 ();
+extern "C" void Selectable_IsHighlighted_m4047826052 ();
+extern "C" void Selectable_IsPressed_m3407797331 ();
+extern "C" void Selectable_IsPressed_m2192098489 ();
+extern "C" void Selectable_UpdateSelectionState_m2602683415 ();
+extern "C" void Selectable_EvaluateAndTransitionToSelectionState_m2419808192 ();
+extern "C" void Selectable_InternalEvaluateAndTransitionToSelectionState_m543442976 ();
+extern "C" void Selectable_OnPointerDown_m706592619 ();
+extern "C" void Selectable_OnPointerUp_m533192658 ();
+extern "C" void Selectable_OnPointerEnter_m1831644693 ();
+extern "C" void Selectable_OnPointerExit_m1099674991 ();
+extern "C" void Selectable_OnSelect_m2798350404 ();
+extern "C" void Selectable_OnDeselect_m4120267717 ();
+extern "C" void Selectable_Select_m2377336299 ();
+extern "C" void SetPropertyUtility_SetColor_m4210708935 ();
+extern "C" void Shadow__ctor_m2944649643 ();
+extern "C" void Shadow_get_effectColor_m2953989785 ();
+extern "C" void Shadow_set_effectColor_m1407835720 ();
+extern "C" void Shadow_get_effectDistance_m1102454733 ();
+extern "C" void Shadow_set_effectDistance_m192801982 ();
+extern "C" void Shadow_get_useGraphicAlpha_m3687634123 ();
+extern "C" void Shadow_set_useGraphicAlpha_m3814129472 ();
+extern "C" void Shadow_ApplyShadowZeroAlloc_m338158484 ();
+extern "C" void Shadow_ApplyShadow_m3534003541 ();
+extern "C" void Shadow_ModifyMesh_m111179421 ();
+extern "C" void Slider__ctor_m347403018 ();
+extern "C" void Slider_get_fillRect_m2450877128 ();
+extern "C" void Slider_set_fillRect_m3297119715 ();
+extern "C" void Slider_get_handleRect_m2151134125 ();
+extern "C" void Slider_set_handleRect_m3189108254 ();
+extern "C" void Slider_get_direction_m2329138173 ();
+extern "C" void Slider_set_direction_m1506600084 ();
+extern "C" void Slider_get_minValue_m84589142 ();
+extern "C" void Slider_set_minValue_m3023646485 ();
+extern "C" void Slider_get_maxValue_m1907557124 ();
+extern "C" void Slider_set_maxValue_m4261736743 ();
+extern "C" void Slider_get_wholeNumbers_m3990960296 ();
+extern "C" void Slider_set_wholeNumbers_m3974827169 ();
+extern "C" void Slider_get_value_m2021634844 ();
+extern "C" void Slider_set_value_m4201041935 ();
+extern "C" void Slider_get_normalizedValue_m2918004645 ();
+extern "C" void Slider_set_normalizedValue_m3382161958 ();
+extern "C" void Slider_get_onValueChanged_m3585429728 ();
+extern "C" void Slider_set_onValueChanged_m544103115 ();
+extern "C" void Slider_get_stepSize_m3189751172 ();
+extern "C" void Slider_Rebuild_m204900683 ();
+extern "C" void Slider_LayoutComplete_m3716644733 ();
+extern "C" void Slider_GraphicUpdateComplete_m837060050 ();
+extern "C" void Slider_OnEnable_m683704380 ();
+extern "C" void Slider_OnDisable_m160936561 ();
+extern "C" void Slider_OnDidApplyAnimationProperties_m317765809 ();
+extern "C" void Slider_UpdateCachedReferences_m3913831469 ();
+extern "C" void Slider_ClampValue_m4124802439 ();
+extern "C" void Slider_Set_m2575079457 ();
+extern "C" void Slider_Set_m2043565372 ();
+extern "C" void Slider_OnRectTransformDimensionsChange_m4044006958 ();
+extern "C" void Slider_get_axis_m591825817 ();
+extern "C" void Slider_get_reverseValue_m1915319492 ();
+extern "C" void Slider_UpdateVisuals_m1355864786 ();
+extern "C" void Slider_UpdateDrag_m913163651 ();
+extern "C" void Slider_MayDrag_m2965973935 ();
+extern "C" void Slider_OnPointerDown_m2064356406 ();
+extern "C" void Slider_OnDrag_m2689187441 ();
+extern "C" void Slider_OnMove_m3684755636 ();
+extern "C" void Slider_FindSelectableOnLeft_m601280629 ();
+extern "C" void Slider_FindSelectableOnRight_m2605040784 ();
+extern "C" void Slider_FindSelectableOnUp_m3326038345 ();
+extern "C" void Slider_FindSelectableOnDown_m381983312 ();
+extern "C" void Slider_OnInitializePotentialDrag_m3120616467 ();
+extern "C" void Slider_SetDirection_m1955116790 ();
+extern "C" void Slider_UnityEngine_UI_ICanvasElement_IsDestroyed_m1155329269 ();
+extern "C" void Slider_UnityEngine_UI_ICanvasElement_get_transform_m2086174425 ();
+extern "C" void SliderEvent__ctor_m1429088576 ();
+extern "C" void SpriteState_get_highlightedSprite_m2511270273 ();
+extern "C" void SpriteState_set_highlightedSprite_m2778751948 ();
+extern "C" void SpriteState_get_pressedSprite_m591013456 ();
+extern "C" void SpriteState_set_pressedSprite_m2255650395 ();
+extern "C" void SpriteState_get_disabledSprite_m1512804506 ();
+extern "C" void SpriteState_set_disabledSprite_m1447937271 ();
+extern "C" void SpriteState_Equals_m895455353 ();
+extern "C" void StencilMaterial__cctor_m2688860949 ();
+extern "C" void StencilMaterial_Add_m1399519863 ();
+extern "C" void StencilMaterial_Add_m310944030 ();
+extern "C" void StencilMaterial_Add_m264449278 ();
+extern "C" void StencilMaterial_Remove_m1013236306 ();
+extern "C" void StencilMaterial_ClearAll_m3351668800 ();
+extern "C" void MatEntry__ctor_m3447775725 ();
+extern "C" void Text__ctor_m216739390 ();
+extern "C" void Text__cctor_m1941857583 ();
+extern "C" void Text_get_cachedTextGenerator_m337653083 ();
+extern "C" void Text_get_cachedTextGeneratorForLayout_m1260141146 ();
+extern "C" void Text_get_mainTexture_m718426116 ();
+extern "C" void Text_FontTextureChanged_m740758478 ();
+extern "C" void Text_get_font_m2437753165 ();
+extern "C" void Text_set_font_m1978976364 ();
+extern "C" void Text_get_text_m3833038297 ();
+extern "C" void Text_set_text_m302679026 ();
+extern "C" void Text_get_supportRichText_m226316153 ();
+extern "C" void Text_set_supportRichText_m1299469806 ();
+extern "C" void Text_get_resizeTextForBestFit_m3751631302 ();
+extern "C" void Text_set_resizeTextForBestFit_m241625791 ();
+extern "C" void Text_get_resizeTextMinSize_m557265325 ();
+extern "C" void Text_set_resizeTextMinSize_m3506017186 ();
+extern "C" void Text_get_resizeTextMaxSize_m4079754047 ();
+extern "C" void Text_set_resizeTextMaxSize_m2626859572 ();
+extern "C" void Text_get_alignment_m2624482868 ();
+extern "C" void Text_set_alignment_m4246723817 ();
+extern "C" void Text_get_alignByGeometry_m3404407727 ();
+extern "C" void Text_set_alignByGeometry_m812094372 ();
+extern "C" void Text_get_fontSize_m2862645687 ();
+extern "C" void Text_set_fontSize_m2013207524 ();
+extern "C" void Text_get_horizontalOverflow_m428751238 ();
+extern "C" void Text_set_horizontalOverflow_m1764021409 ();
+extern "C" void Text_get_verticalOverflow_m4214690218 ();
+extern "C" void Text_set_verticalOverflow_m1954003489 ();
+extern "C" void Text_get_lineSpacing_m2968404366 ();
+extern "C" void Text_set_lineSpacing_m3440093 ();
+extern "C" void Text_get_fontStyle_m1258883933 ();
+extern "C" void Text_set_fontStyle_m2882242342 ();
+extern "C" void Text_get_pixelsPerUnit_m4148756467 ();
+extern "C" void Text_OnEnable_m3618900104 ();
+extern "C" void Text_OnDisable_m957690789 ();
+extern "C" void Text_UpdateGeometry_m1493208737 ();
+extern "C" void Text_GetGenerationSettings_m554596117 ();
+extern "C" void Text_GetTextAnchorPivot_m7192668 ();
+extern "C" void Text_OnPopulateMesh_m869628001 ();
+extern "C" void Text_CalculateLayoutInputHorizontal_m2550743748 ();
+extern "C" void Text_CalculateLayoutInputVertical_m4013862230 ();
+extern "C" void Text_get_minWidth_m1415472311 ();
+extern "C" void Text_get_preferredWidth_m2672417320 ();
+extern "C" void Text_get_flexibleWidth_m3322158618 ();
+extern "C" void Text_get_minHeight_m1433783032 ();
+extern "C" void Text_get_preferredHeight_m1744372647 ();
+extern "C" void Text_get_flexibleHeight_m411516405 ();
+extern "C" void Text_get_layoutPriority_m4042521525 ();
+extern "C" void Toggle__ctor_m4173251063 ();
+extern "C" void Toggle_get_group_m514230010 ();
+extern "C" void Toggle_set_group_m4294827183 ();
+extern "C" void Toggle_Rebuild_m1120034174 ();
+extern "C" void Toggle_LayoutComplete_m3030592304 ();
+extern "C" void Toggle_GraphicUpdateComplete_m1104468671 ();
+extern "C" void Toggle_OnEnable_m975679023 ();
+extern "C" void Toggle_OnDisable_m622215902 ();
+extern "C" void Toggle_OnDidApplyAnimationProperties_m3936866462 ();
+extern "C" void Toggle_SetToggleGroup_m4196871663 ();
+extern "C" void Toggle_get_isOn_m2105608497 ();
+extern "C" void Toggle_set_isOn_m3467664234 ();
+extern "C" void Toggle_Set_m1284620590 ();
+extern "C" void Toggle_Set_m1795838095 ();
+extern "C" void Toggle_PlayEffect_m2897367561 ();
+extern "C" void Toggle_Start_m3120388855 ();
+extern "C" void Toggle_InternalToggle_m3534245278 ();
+extern "C" void Toggle_OnPointerClick_m3273211815 ();
+extern "C" void Toggle_OnSubmit_m2658606814 ();
+extern "C" void Toggle_UnityEngine_UI_ICanvasElement_IsDestroyed_m3606481250 ();
+extern "C" void Toggle_UnityEngine_UI_ICanvasElement_get_transform_m4001149958 ();
+extern "C" void ToggleEvent__ctor_m110328288 ();
+extern "C" void ToggleGroup__ctor_m1179503632 ();
+extern "C" void ToggleGroup_get_allowSwitchOff_m1895769533 ();
+extern "C" void ToggleGroup_set_allowSwitchOff_m2429094938 ();
+extern "C" void ToggleGroup_ValidateToggleIsInGroup_m1953593831 ();
+extern "C" void ToggleGroup_NotifyToggleOn_m2022309259 ();
+extern "C" void ToggleGroup_UnregisterToggle_m451307479 ();
+extern "C" void ToggleGroup_RegisterToggle_m2622505488 ();
+extern "C" void ToggleGroup_AnyTogglesOn_m401060308 ();
+extern "C" void ToggleGroup_ActiveToggles_m1762871396 ();
+extern "C" void ToggleGroup_SetAllTogglesOff_m4240216963 ();
+extern "C" void ToggleGroup_U3CAnyTogglesOnU3Em__4_m3428369122 ();
+extern "C" void ToggleGroup_U3CActiveTogglesU3Em__5_m3656404306 ();
+extern "C" void VertexHelper__ctor_m3006260889 ();
+extern "C" void VertexHelper__ctor_m4240166773 ();
+extern "C" void VertexHelper__cctor_m2517678132 ();
+extern "C" void VertexHelper_Clear_m412394180 ();
+extern "C" void VertexHelper_get_currentVertCount_m3425330353 ();
+extern "C" void VertexHelper_get_currentIndexCount_m3847254668 ();
+extern "C" void VertexHelper_PopulateUIVertex_m910319817 ();
+extern "C" void VertexHelper_SetUIVertex_m3429482805 ();
+extern "C" void VertexHelper_FillMesh_m2371101047 ();
+extern "C" void VertexHelper_Dispose_m2696974486 ();
+extern "C" void VertexHelper_AddVert_m1784639198 ();
+extern "C" void VertexHelper_AddVert_m1490065189 ();
+extern "C" void VertexHelper_AddVert_m1127238042 ();
+extern "C" void VertexHelper_AddTriangle_m514578993 ();
+extern "C" void VertexHelper_AddUIVertexQuad_m765809318 ();
+extern "C" void VertexHelper_AddUIVertexStream_m1704624332 ();
+extern "C" void VertexHelper_AddUIVertexTriangleStream_m1263262953 ();
+extern "C" void VertexHelper_GetUIVertexStream_m1078623420 ();
+extern "C" void VerticalLayoutGroup__ctor_m2648549884 ();
+extern "C" void VerticalLayoutGroup_CalculateLayoutInputHorizontal_m1704122566 ();
+extern "C" void VerticalLayoutGroup_CalculateLayoutInputVertical_m920247256 ();
+extern "C" void VerticalLayoutGroup_SetLayoutHorizontal_m244631242 ();
+extern "C" void VerticalLayoutGroup_SetLayoutVertical_m2764536540 ();
 extern "C" void U3CPrivateImplementationDetailsU3E__ctor_m795736486 ();
 extern "C" void BlockWrapper__ctor_m2983659568 ();
-extern "C" void Button__ctor_m3352030601 ();
-extern "C" void Button_Start_m2299168393 ();
-extern "C" void Button_onTouchDown_m1805974313 ();
-extern "C" void Button_onTouchUp_m3376682082 ();
-extern "C" void Button_onTouchStay_m2239384352 ();
-extern "C" void Button_onTouchExit_m1842503845 ();
 extern "C" void PlaneController__ctor_m3938815859 ();
 extern "C" void PlaneController__cctor_m1362111130 ();
 extern "C" void PlaneController_Awake_m4176421078 ();
@@ -8046,10 +10415,27 @@ extern "C" void U3CrandomGenerateBlocksU3Ec__Iterator0_System_Collections_IEnume
 extern "C" void U3CrandomGenerateBlocksU3Ec__Iterator0_MoveNext_m971493211 ();
 extern "C" void U3CrandomGenerateBlocksU3Ec__Iterator0_Dispose_m835187166 ();
 extern "C" void U3CrandomGenerateBlocksU3Ec__Iterator0_Reset_m3680920718 ();
+extern "C" void PlaneMaterialController__ctor_m1508617932 ();
+extern "C" void PlaneMaterialController_Start_m455755724 ();
+extern "C" void PlaneMaterialController_onTouchDown_m359759404 ();
+extern "C" void PlaneMaterialController_onTouchUp_m3612048421 ();
+extern "C" void PlaneMaterialController_onTouchStay_m793169443 ();
+extern "C" void PlaneMaterialController_onTouchExit_m396288936 ();
+extern "C" void ScoreController__ctor_m3502236541 ();
+extern "C" void ScoreController_Start_m2449374333 ();
+extern "C" void ScoreController_Update_m2922012464 ();
+extern "C" void ScoreController_scorePlus_m3949021191 ();
+extern "C" void ScoreController_wordTextDisplay_m2584236855 ();
 extern "C" void TouchController__ctor_m1747329456 ();
 extern "C" void TouchController_Start_m694467248 ();
 extern "C" void TouchController_Update_m59500381 ();
-extern const Il2CppMethodPointer g_MethodPointers[8038] = 
+extern "C" void TouchZoneMaterialController__ctor_m3508224061 ();
+extern "C" void TouchZoneMaterialController_Start_m2455361853 ();
+extern "C" void TouchZoneMaterialController_onTouchDown_m4002445021 ();
+extern "C" void TouchZoneMaterialController_onTouchUp_m545451286 ();
+extern "C" void TouchZoneMaterialController_onTouchStay_m140887764 ();
+extern "C" void TouchZoneMaterialController_onTouchExit_m4038974553 ();
+extern const Il2CppMethodPointer g_MethodPointers[10424] = 
 {
 	Locale_GetText_m2389348044,
 	Locale_GetText_m2218462520,
@@ -8788,6 +11174,7 @@ extern const Il2CppMethodPointer g_MethodPointers[8038] =
 	Boolean_GetHashCode_m841540860,
 	Boolean_Parse_m3007515274,
 	Boolean_ToString_m2512358154,
+	Boolean_GetTypeCode_m1624087223,
 	Boolean_ToString_m2019601528,
 	Buffer_ByteLength_m3699202119,
 	Buffer_BlockCopy_m1580643184,
@@ -8850,6 +11237,7 @@ extern const Il2CppMethodPointer g_MethodPointers[8038] =
 	Char_IsLetterOrDigit_m2290383044,
 	Char_IsLower_m1584081639,
 	Char_IsSurrogate_m3822546544,
+	Char_IsUpper_m1832446694,
 	Char_IsWhiteSpace_m2745315955,
 	Char_IsWhiteSpace_m2601279167,
 	Char_CheckParameter_m3313481947,
@@ -8861,6 +11249,7 @@ extern const Il2CppMethodPointer g_MethodPointers[8038] =
 	Char_ToUpperInvariant_m4158859197,
 	Char_ToString_m2089191214,
 	Char_ToString_m2826712476,
+	Char_GetTypeCode_m4226232807,
 	CharEnumerator__ctor_m2119134439,
 	CharEnumerator_System_Collections_IEnumerator_get_Current_m1493871051,
 	CharEnumerator_System_IDisposable_Dispose_m2219960452,
@@ -8879,6 +11268,7 @@ extern const Il2CppMethodPointer g_MethodPointers[8038] =
 	ArrayList_get_Count_m2097776283,
 	ArrayList_get_Capacity_m3412570896,
 	ArrayList_set_Capacity_m1308073401,
+	ArrayList_get_IsFixedSize_m251458097,
 	ArrayList_get_IsReadOnly_m3925803688,
 	ArrayList_get_IsSynchronized_m3702851162,
 	ArrayList_get_SyncRoot_m3144760460,
@@ -8913,6 +11303,7 @@ extern const Il2CppMethodPointer g_MethodPointers[8038] =
 	ArrayListWrapper_get_Count_m452148104,
 	ArrayListWrapper_get_Capacity_m1260206851,
 	ArrayListWrapper_set_Capacity_m2188723684,
+	ArrayListWrapper_get_IsFixedSize_m3370166250,
 	ArrayListWrapper_get_IsReadOnly_m2086744527,
 	ArrayListWrapper_get_IsSynchronized_m109922817,
 	ArrayListWrapper_get_SyncRoot_m427241453,
@@ -8940,6 +11331,7 @@ extern const Il2CppMethodPointer g_MethodPointers[8038] =
 	FixedSizeArrayListWrapper_get_ErrorMessage_m2762836670,
 	FixedSizeArrayListWrapper_get_Capacity_m3089739858,
 	FixedSizeArrayListWrapper_set_Capacity_m383644411,
+	FixedSizeArrayListWrapper_get_IsFixedSize_m1343011119,
 	FixedSizeArrayListWrapper_Add_m1946065152,
 	FixedSizeArrayListWrapper_AddRange_m1220667072,
 	FixedSizeArrayListWrapper_Clear_m2440861404,
@@ -8966,6 +11358,7 @@ extern const Il2CppMethodPointer g_MethodPointers[8038] =
 	SynchronizedArrayListWrapper_get_Count_m3690732372,
 	SynchronizedArrayListWrapper_get_Capacity_m4073764791,
 	SynchronizedArrayListWrapper_set_Capacity_m3235728024,
+	SynchronizedArrayListWrapper_get_IsFixedSize_m954881462,
 	SynchronizedArrayListWrapper_get_IsReadOnly_m2563021443,
 	SynchronizedArrayListWrapper_get_IsSynchronized_m4242880693,
 	SynchronizedArrayListWrapper_get_SyncRoot_m2182052385,
@@ -8993,6 +11386,7 @@ extern const Il2CppMethodPointer g_MethodPointers[8038] =
 	BitArray__ctor_m4198813761,
 	BitArray_getByte_m3145028169,
 	BitArray_get_Count_m3361743632,
+	BitArray_get_IsSynchronized_m1429626361,
 	BitArray_get_Item_m2410594623,
 	BitArray_set_Item_m3947323368,
 	BitArray_get_Length_m3443319207,
@@ -9023,11 +11417,14 @@ extern const Il2CppMethodPointer g_MethodPointers[8038] =
 	CollectionBase__ctor_m3181013581,
 	CollectionBase_System_Collections_ICollection_CopyTo_m634775447,
 	CollectionBase_System_Collections_ICollection_get_SyncRoot_m3961010597,
+	CollectionBase_System_Collections_ICollection_get_IsSynchronized_m1284188723,
 	CollectionBase_System_Collections_IList_Add_m161097623,
 	CollectionBase_System_Collections_IList_Contains_m2561799305,
 	CollectionBase_System_Collections_IList_IndexOf_m2310978159,
 	CollectionBase_System_Collections_IList_Insert_m917928546,
 	CollectionBase_System_Collections_IList_Remove_m872150918,
+	CollectionBase_System_Collections_IList_get_IsFixedSize_m2924084920,
+	CollectionBase_System_Collections_IList_get_IsReadOnly_m271239489,
 	CollectionBase_System_Collections_IList_get_Item_m2255771116,
 	CollectionBase_System_Collections_IList_set_Item_m2274989497,
 	CollectionBase_get_Count_m313265901,
@@ -9072,6 +11469,7 @@ extern const Il2CppMethodPointer g_MethodPointers[8038] =
 	Hashtable_set_comparer_m3192953638,
 	Hashtable_set_hcp_m3304781571,
 	Hashtable_get_Count_m3337476178,
+	Hashtable_get_IsSynchronized_m1352381059,
 	Hashtable_get_SyncRoot_m2620554101,
 	Hashtable_get_Keys_m17177747,
 	Hashtable_get_Values_m1695500481,
@@ -9110,11 +11508,13 @@ extern const Il2CppMethodPointer g_MethodPointers[8038] =
 	Enumerator_get_Current_m3445727148,
 	HashKeys__ctor_m1470241507,
 	HashKeys_get_Count_m3782068299,
+	HashKeys_get_IsSynchronized_m3549913758,
 	HashKeys_get_SyncRoot_m3744595786,
 	HashKeys_CopyTo_m1861978568,
 	HashKeys_GetEnumerator_m1874815769,
 	HashValues__ctor_m3879614837,
 	HashValues_get_Count_m2417436125,
+	HashValues_get_IsSynchronized_m1643199180,
 	HashValues_get_SyncRoot_m734931640,
 	HashValues_CopyTo_m1506944218,
 	HashValues_GetEnumerator_m3140901163,
@@ -9125,6 +11525,7 @@ extern const Il2CppMethodPointer g_MethodPointers[8038] =
 	SyncHashtable_System_Collections_IEnumerable_GetEnumerator_m4026891787,
 	SyncHashtable_GetObjectData_m765378770,
 	SyncHashtable_get_Count_m3563238812,
+	SyncHashtable_get_IsSynchronized_m3501702649,
 	SyncHashtable_get_SyncRoot_m513487403,
 	SyncHashtable_get_Keys_m4083312137,
 	SyncHashtable_get_Values_m830409911,
@@ -9145,6 +11546,7 @@ extern const Il2CppMethodPointer g_MethodPointers[8038] =
 	SortedList__cctor_m2648532460,
 	SortedList_System_Collections_IEnumerable_GetEnumerator_m76581074,
 	SortedList_get_Count_m418925185,
+	SortedList_get_IsSynchronized_m2706175784,
 	SortedList_get_SyncRoot_m808976468,
 	SortedList_get_IsFixedSize_m296838179,
 	SortedList_get_IsReadOnly_m47942262,
@@ -9181,6 +11583,7 @@ extern const Il2CppMethodPointer g_MethodPointers[8038] =
 	Stack__ctor_m2880977331,
 	Stack_Resize_m1932726631,
 	Stack_get_Count_m3511538634,
+	Stack_get_IsSynchronized_m1915076875,
 	Stack_get_SyncRoot_m320831869,
 	Stack_Clear_m3522773901,
 	Stack_Clone_m2500471496,
@@ -9389,6 +11792,7 @@ extern const Il2CppMethodPointer g_MethodPointers[8038] =
 	Convert_ToUInt32_m3903361607,
 	Convert_ToUInt32_m3310332294,
 	Convert_ToUInt32_m3310327551,
+	Convert_ToUInt32_m2991910559,
 	Convert_ToUInt32_m883469173,
 	Convert_ToUInt64_m3087942316,
 	Convert_ToUInt64_m67300950,
@@ -10115,6 +12519,7 @@ extern const Il2CppMethodPointer g_MethodPointers[8038] =
 	Int32_ToString_m881186462,
 	Int32_ToString_m3853485906,
 	Int32_ToString_m4261017954,
+	Int32_GetTypeCode_m1231080401,
 	Int64_System_IConvertible_ToBoolean_m3781149192,
 	Int64_System_IConvertible_ToByte_m1202689840,
 	Int64_System_IConvertible_ToChar_m2692925168,
@@ -10524,11 +12929,16 @@ extern const Il2CppMethodPointer g_MethodPointers[8038] =
 	Math_Abs_m4017239106,
 	Math_Abs_m2633004394,
 	Math_Abs_m651703468,
+	Math_Ceiling_m3914511415,
 	Math_Floor_m1625025992,
+	Math_Log_m2309558476,
 	Math_Max_m1309380475,
 	Math_Min_m811624909,
 	Math_Round_m2659396224,
 	Math_Round_m2587388934,
+	Math_Sin_m1832281148,
+	Math_Cos_m1877789613,
+	Math_Log_m3325515856,
 	Math_Pow_m3040135736,
 	Math_Sqrt_m1131084014,
 	MemberAccessException__ctor_m1986335264,
@@ -10827,6 +13237,7 @@ extern const Il2CppMethodPointer g_MethodPointers[8038] =
 	Assembly_GetExecutingAssembly_m1876278943,
 	ResolveEventHolder__ctor_m1761692565,
 	AssemblyCompanyAttribute__ctor_m2502605305,
+	AssemblyConfigurationAttribute__ctor_m4121139744,
 	AssemblyCopyrightAttribute__ctor_m3725440687,
 	AssemblyDefaultAliasAttribute__ctor_m3432347153,
 	AssemblyDelaySignAttribute__ctor_m4221242755,
@@ -10852,6 +13263,7 @@ extern const Il2CppMethodPointer g_MethodPointers[8038] =
 	AssemblyName_OnDeserialization_m866678633,
 	AssemblyProductAttribute__ctor_m2364447559,
 	AssemblyTitleAttribute__ctor_m432794494,
+	AssemblyTrademarkAttribute__ctor_m396080901,
 	Binder__ctor_m1880433924,
 	Binder__cctor_m1976780585,
 	Binder_get_DefaultBinder_m695054407,
@@ -11753,6 +14165,7 @@ extern const Il2CppMethodPointer g_MethodPointers[8038] =
 	MethodDictionary_Add_m3929391976,
 	MethodDictionary_Remove_m2229484935,
 	MethodDictionary_get_Count_m2528789795,
+	MethodDictionary_get_IsSynchronized_m687173714,
 	MethodDictionary_get_SyncRoot_m1527806020,
 	MethodDictionary_CopyTo_m3173648216,
 	MethodDictionary_GetEnumerator_m3961911347,
@@ -12556,6 +14969,7 @@ extern const Il2CppMethodPointer g_MethodPointers[8038] =
 	ApplicationTrust__ctor_m3384937791,
 	Evidence__ctor_m2923485872,
 	Evidence_get_Count_m2256383184,
+	Evidence_get_IsSynchronized_m1680953145,
 	Evidence_get_SyncRoot_m397267429,
 	Evidence_get_HostEvidenceList_m4094307694,
 	Evidence_get_AssemblyEvidenceList_m2146797868,
@@ -12665,6 +15079,7 @@ extern const Il2CppMethodPointer g_MethodPointers[8038] =
 	Single_ToString_m5736032,
 	Single_ToString_m1436803918,
 	Single_ToString_m3798733330,
+	Single_GetTypeCode_m4165632757,
 	String__ctor_m2618237231,
 	String__ctor_m683273815,
 	String__ctor_m2956844983,
@@ -12736,6 +15151,7 @@ extern const Il2CppMethodPointer g_MethodPointers[8038] =
 	String_IndexOf_m1991631068,
 	String_IndexOf_m4052910459,
 	String_LastIndexOfAny_m1405458718,
+	String_LastIndexOfAny_m2835072121,
 	String_LastIndexOfAnyUnchecked_m3532047592,
 	String_LastIndexOf_m3245805612,
 	String_LastIndexOf_m902083627,
@@ -12743,6 +15159,7 @@ extern const Il2CppMethodPointer g_MethodPointers[8038] =
 	String_LastIndexOfUnchecked_m4042746910,
 	String_LastIndexOf_m2747144337,
 	String_LastIndexOf_m1189898929,
+	String_Contains_m3032019141,
 	String_IsNullOrEmpty_m1256468773,
 	String_PadRight_m1932151982,
 	String_StartsWith_m1500793453,
@@ -12805,6 +15222,7 @@ extern const Il2CppMethodPointer g_MethodPointers[8038] =
 	StringComparer__ctor_m50784983,
 	StringComparer__cctor_m1092238262,
 	StringComparer_get_InvariantCultureIgnoreCase_m3518508912,
+	StringComparer_get_OrdinalIgnoreCase_m2513153269,
 	StringComparer_Compare_m3931640044,
 	StringComparer_Equals_m1694946776,
 	StringComparer_GetHashCode_m1067393138,
@@ -12973,6 +15391,8 @@ extern const Il2CppMethodPointer g_MethodPointers[8038] =
 	StringBuilder_Append_m1038583841,
 	StringBuilder_Append_m2623154804,
 	StringBuilder_Append_m2996071419,
+	StringBuilder_AppendLine_m568622107,
+	StringBuilder_AppendLine_m655025863,
 	StringBuilder_AppendFormat_m279545936,
 	StringBuilder_AppendFormat_m259793396,
 	StringBuilder_AppendFormat_m3723191730,
@@ -13488,6 +15908,7 @@ extern const Il2CppMethodPointer g_MethodPointers[8038] =
 	HybridDictionary_System_Collections_IEnumerable_GetEnumerator_m633511108,
 	HybridDictionary_get_inner_m1544058846,
 	HybridDictionary_get_Count_m2544735439,
+	HybridDictionary_get_IsSynchronized_m4103840922,
 	HybridDictionary_get_Item_m1101975172,
 	HybridDictionary_set_Item_m2233477417,
 	HybridDictionary_get_SyncRoot_m1280025498,
@@ -13503,6 +15924,7 @@ extern const Il2CppMethodPointer g_MethodPointers[8038] =
 	ListDictionary_FindEntry_m831100599,
 	ListDictionary_AddImpl_m2933606886,
 	ListDictionary_get_Count_m3433674349,
+	ListDictionary_get_IsSynchronized_m34636604,
 	ListDictionary_get_SyncRoot_m1493803004,
 	ListDictionary_CopyTo_m1026734678,
 	ListDictionary_get_Item_m151625826,
@@ -13523,6 +15945,7 @@ extern const Il2CppMethodPointer g_MethodPointers[8038] =
 	DictionaryNodeEnumerator_get_Value_m1866106451,
 	NameObjectCollectionBase__ctor_m1741929684,
 	NameObjectCollectionBase__ctor_m355604501,
+	NameObjectCollectionBase_System_Collections_ICollection_get_IsSynchronized_m4292869198,
 	NameObjectCollectionBase_System_Collections_ICollection_get_SyncRoot_m625351596,
 	NameObjectCollectionBase_System_Collections_ICollection_CopyTo_m606865136,
 	NameObjectCollectionBase_Init_m3194316544,
@@ -13544,6 +15967,7 @@ extern const Il2CppMethodPointer g_MethodPointers[8038] =
 	_KeysEnumerator_Reset_m2513360761,
 	KeysCollection__ctor_m571748459,
 	KeysCollection_System_Collections_ICollection_CopyTo_m3481790195,
+	KeysCollection_System_Collections_ICollection_get_IsSynchronized_m261821823,
 	KeysCollection_System_Collections_ICollection_get_SyncRoot_m2421942655,
 	KeysCollection_get_Count_m1716505797,
 	KeysCollection_GetEnumerator_m2467788383,
@@ -13554,6 +15978,10 @@ extern const Il2CppMethodPointer g_MethodPointers[8038] =
 	NameValueCollection_AsSingleString_m3181933374,
 	NameValueCollection_GetKey_m4077148652,
 	NameValueCollection_InvalidateCachedArrays_m3569021030,
+	EditorBrowsableAttribute__ctor_m2031704921,
+	EditorBrowsableAttribute_get_State_m2194662776,
+	EditorBrowsableAttribute_Equals_m2138671840,
+	EditorBrowsableAttribute_GetHashCode_m2651695940,
 	TypeConverterAttribute__ctor_m1679891427,
 	TypeConverterAttribute__ctor_m1621665718,
 	TypeConverterAttribute__cctor_m54930474,
@@ -13718,6 +16146,7 @@ extern const Il2CppMethodPointer g_MethodPointers[8038] =
 	OidCollection_System_Collections_ICollection_CopyTo_m3200351709,
 	OidCollection_System_Collections_IEnumerable_GetEnumerator_m494890284,
 	OidCollection_get_Count_m924395419,
+	OidCollection_get_IsSynchronized_m2984568922,
 	OidCollection_get_Item_m1851824850,
 	OidCollection_get_SyncRoot_m887599928,
 	OidCollection_Add_m1834548415,
@@ -13843,6 +16272,7 @@ extern const Il2CppMethodPointer g_MethodPointers[8038] =
 	X509ChainElementCollection_System_Collections_ICollection_CopyTo_m3190543456,
 	X509ChainElementCollection_System_Collections_IEnumerable_GetEnumerator_m31369455,
 	X509ChainElementCollection_get_Count_m3531017528,
+	X509ChainElementCollection_get_IsSynchronized_m2629487837,
 	X509ChainElementCollection_get_Item_m553083826,
 	X509ChainElementCollection_get_SyncRoot_m527504827,
 	X509ChainElementCollection_GetEnumerator_m1375522587,
@@ -13880,6 +16310,7 @@ extern const Il2CppMethodPointer g_MethodPointers[8038] =
 	X509ExtensionCollection_System_Collections_ICollection_CopyTo_m2862251608,
 	X509ExtensionCollection_System_Collections_IEnumerable_GetEnumerator_m1951031507,
 	X509ExtensionCollection_get_Count_m2621259424,
+	X509ExtensionCollection_get_IsSynchronized_m3201439337,
 	X509ExtensionCollection_get_SyncRoot_m736404969,
 	X509ExtensionCollection_get_Item_m2341415937,
 	X509ExtensionCollection_GetEnumerator_m4079469459,
@@ -13928,6 +16359,7 @@ extern const Il2CppMethodPointer g_MethodPointers[8038] =
 	Capture_get_Text_m1823829274,
 	CaptureCollection__ctor_m3212451638,
 	CaptureCollection_get_Count_m1248230585,
+	CaptureCollection_get_IsSynchronized_m4208332924,
 	CaptureCollection_SetValue_m1003011714,
 	CaptureCollection_get_SyncRoot_m277260698,
 	CaptureCollection_CopyTo_m3440549378,
@@ -13951,6 +16383,7 @@ extern const Il2CppMethodPointer g_MethodPointers[8038] =
 	Group_get_Success_m3627958764,
 	GroupCollection__ctor_m1062211994,
 	GroupCollection_get_Count_m1046622944,
+	GroupCollection_get_IsSynchronized_m3587250101,
 	GroupCollection_get_Item_m3306908978,
 	GroupCollection_SetValue_m3728413090,
 	GroupCollection_get_SyncRoot_m63200083,
@@ -14020,6 +16453,7 @@ extern const Il2CppMethodPointer g_MethodPointers[8038] =
 	IntervalCollection_GetMetaCollection_m1423119555,
 	IntervalCollection_Optimize_m2537418330,
 	IntervalCollection_get_Count_m3146453934,
+	IntervalCollection_get_IsSynchronized_m46596635,
 	IntervalCollection_get_SyncRoot_m165185947,
 	IntervalCollection_CopyTo_m1005574359,
 	IntervalCollection_GetEnumerator_m4242145148,
@@ -14048,6 +16482,7 @@ extern const Il2CppMethodPointer g_MethodPointers[8038] =
 	Match_get_Regex_m1260760027,
 	MatchCollection__ctor_m1982569902,
 	MatchCollection_get_Count_m4071817434,
+	MatchCollection_get_IsSynchronized_m1523540731,
 	MatchCollection_get_Item_m2495033586,
 	MatchCollection_get_SyncRoot_m2333479705,
 	MatchCollection_CopyTo_m2665262947,
@@ -14605,6 +17040,7 @@ extern const Il2CppMethodPointer g_MethodPointers[8038] =
 	CipherSuiteCollection__ctor_m273269703,
 	CipherSuiteCollection_System_Collections_IList_get_Item_m3319535496,
 	CipherSuiteCollection_System_Collections_IList_set_Item_m4255989087,
+	CipherSuiteCollection_System_Collections_ICollection_get_IsSynchronized_m3698127433,
 	CipherSuiteCollection_System_Collections_ICollection_get_SyncRoot_m914076225,
 	CipherSuiteCollection_System_Collections_IEnumerable_GetEnumerator_m1907853496,
 	CipherSuiteCollection_System_Collections_IList_Contains_m3495236659,
@@ -14618,6 +17054,8 @@ extern const Il2CppMethodPointer g_MethodPointers[8038] =
 	CipherSuiteCollection_set_Item_m141821933,
 	CipherSuiteCollection_get_Item_m3036374952,
 	CipherSuiteCollection_get_Count_m2086503695,
+	CipherSuiteCollection_get_IsFixedSize_m2874798629,
+	CipherSuiteCollection_get_IsReadOnly_m3871880244,
 	CipherSuiteCollection_CopyTo_m2731497872,
 	CipherSuiteCollection_Clear_m2278434462,
 	CipherSuiteCollection_IndexOf_m3646145168,
@@ -15251,6 +17689,7 @@ extern const Il2CppMethodPointer g_MethodPointers[8038] =
 	SymmetricTransform_FinalEncrypt_m975601255,
 	SymmetricTransform_FinalDecrypt_m3742401599,
 	SymmetricTransform_TransformFinalBlock_m2524388439,
+	Check_SourceAndPredicate_m2252398949,
 	ExtensionAttribute__ctor_m1242622322,
 	Aes__ctor_m380511311,
 	AesManaged__ctor_m1572578968,
@@ -15273,11 +17712,65 @@ extern const Il2CppMethodPointer g_MethodPointers[8038] =
 	AesTransform_SubByte_m1214814958,
 	AesTransform_Encrypt128_m3651261907,
 	AesTransform_Decrypt128_m3310750971,
+	AddComponentMenu__ctor_m1521317712,
+	AddComponentMenu__ctor_m3281913735,
 	AnimationCurve__ctor_m2436282331,
 	AnimationCurve__ctor_m4037844610,
 	AnimationCurve_Cleanup_m386995588,
 	AnimationCurve_Finalize_m2382224032,
 	AnimationCurve_Init_m4012213483,
+	AnimationEvent__ctor_m3893222711,
+	AnimationEvent_get_data_m2818928483,
+	AnimationEvent_set_data_m1709280462,
+	AnimationEvent_get_stringParameter_m774178145,
+	AnimationEvent_set_stringParameter_m4027163538,
+	AnimationEvent_get_floatParameter_m585550415,
+	AnimationEvent_set_floatParameter_m3972419412,
+	AnimationEvent_get_intParameter_m1837369744,
+	AnimationEvent_set_intParameter_m1983832533,
+	AnimationEvent_get_objectReferenceParameter_m1449907980,
+	AnimationEvent_set_objectReferenceParameter_m2952903185,
+	AnimationEvent_get_functionName_m508701692,
+	AnimationEvent_set_functionName_m3347976661,
+	AnimationEvent_get_time_m4165710255,
+	AnimationEvent_set_time_m2746909172,
+	AnimationEvent_get_messageOptions_m501221094,
+	AnimationEvent_set_messageOptions_m927737387,
+	AnimationEvent_get_isFiredByLegacy_m1265747114,
+	AnimationEvent_get_isFiredByAnimator_m877765704,
+	AnimationEvent_get_animationState_m2712753230,
+	AnimationEvent_get_animatorStateInfo_m194903218,
+	AnimationEvent_get_animatorClipInfo_m493861262,
+	AnimationEvent_GetHash_m2586883417,
+	Animator_SetTrigger_m514363822,
+	Animator_ResetTrigger_m4152421915,
+	Animator_get_runtimeAnimatorController_m1822082727,
+	Animator_StringToHash_m4020897098,
+	Animator_SetTriggerString_m1378271133,
+	Animator_ResetTriggerString_m1817269834,
+	AnimatorStateInfo_IsName_m1653922768,
+	AnimatorStateInfo_get_fullPathHash_m3257074542,
+	AnimatorStateInfo_get_nameHash_m453823205,
+	AnimatorStateInfo_get_shortNameHash_m994885515,
+	AnimatorStateInfo_get_normalizedTime_m2531821060,
+	AnimatorStateInfo_get_length_m3147284742,
+	AnimatorStateInfo_get_speed_m247405833,
+	AnimatorStateInfo_get_speedMultiplier_m489756842,
+	AnimatorStateInfo_get_tagHash_m3543262078,
+	AnimatorStateInfo_IsTag_m119936877,
+	AnimatorStateInfo_get_loop_m1495892586,
+	AnimatorTransitionInfo_IsName_m1283663078,
+	AnimatorTransitionInfo_IsUserName_m2732197659,
+	AnimatorTransitionInfo_get_fullPathHash_m3335466636,
+	AnimatorTransitionInfo_get_nameHash_m2102867203,
+	AnimatorTransitionInfo_get_userNameHash_m249220782,
+	AnimatorTransitionInfo_get_normalizedTime_m3258684986,
+	AnimatorTransitionInfo_get_anyState_m3421556405,
+	AnimatorTransitionInfo_get_entry_m2038132324,
+	AnimatorTransitionInfo_get_exit_m2568505102,
+	Application_get_isPlaying_m987993960,
+	Application_get_isEditor_m1279348309,
+	Application_get_platform_m2918632856,
 	Application_CallLogCallback_m419361836,
 	LogCallback__ctor_m286543475,
 	LogCallback_Invoke_m1886455446,
@@ -15319,6 +17812,9 @@ extern const Il2CppMethodPointer g_MethodPointers[8038] =
 	AudioConfigurationChangeHandler_BeginInvoke_m194625699,
 	AudioConfigurationChangeHandler_EndInvoke_m218260925,
 	Behaviour__ctor_m1624944828,
+	Behaviour_get_enabled_m1239363704,
+	Behaviour_set_enabled_m2046806933,
+	Behaviour_get_isActiveAndEnabled_m210167461,
 	BitStream__ctor_m922403980,
 	BitStream_Serializeb_m1472011233,
 	BitStream_Serializec_m1377214154,
@@ -15346,24 +17842,36 @@ extern const Il2CppMethodPointer g_MethodPointers[8038] =
 	BitStream_get_isReading_m3929869641,
 	BitStream_get_isWriting_m3632391065,
 	BitStream_Serialize_m2763015060,
+	Bounds__ctor_m4160293652,
 	Bounds_GetHashCode_m3067388679,
 	Bounds_Equals_m2517451939,
 	Bounds_get_center_m4084610404,
+	Bounds_set_center_m2605643707,
 	Bounds_get_size_m3666348432,
+	Bounds_set_size_m4109809039,
 	Bounds_get_extents_m2111648188,
+	Bounds_set_extents_m2603836823,
 	Bounds_get_min_m2329472069,
 	Bounds_get_max_m2329243351,
+	Bounds_SetMinMax_m2186020994,
+	Bounds_Encapsulate_m3624685234,
 	Bounds_ToString_m1795228795,
+	Bounds_op_Equality_m2855966622,
+	Bounds_op_Inequality_m4292292377,
 	Camera_get_nearClipPlane_m4074655061,
 	Camera_get_farClipPlane_m388706726,
+	Camera_get_depth_m3642810036,
 	Camera_get_cullingMask_m1045975289,
 	Camera_get_eventMask_m3669132771,
 	Camera_get_pixelRect_m936851539,
 	Camera_INTERNAL_get_pixelRect_m1853722860,
 	Camera_get_targetTexture_m1468336738,
 	Camera_get_clearFlags_m192466552,
+	Camera_ScreenToViewportPoint_m3727203754,
+	Camera_INTERNAL_CALL_ScreenToViewportPoint_m3712526702,
 	Camera_ScreenPointToRay_m1733083890,
 	Camera_INTERNAL_CALL_ScreenPointToRay_m371614468,
+	Camera_get_main_m671815697,
 	Camera_get_allCamerasCount_m3993434431,
 	Camera_GetAllCameras_m3771867787,
 	Camera_FireOnPreCull_m4184591338,
@@ -15377,9 +17885,67 @@ extern const Il2CppMethodPointer g_MethodPointers[8038] =
 	CameraCallback_Invoke_m3757410555,
 	CameraCallback_BeginInvoke_m3719545510,
 	CameraCallback_EndInvoke_m534836749,
+	Canvas_add_willRenderCanvases_m716439881,
+	Canvas_remove_willRenderCanvases_m158291336,
+	Canvas_get_renderMode_m3669121200,
+	Canvas_get_isRootCanvas_m4030632706,
+	Canvas_get_worldCamera_m2621449230,
+	Canvas_get_scaleFactor_m1187077271,
+	Canvas_set_scaleFactor_m2206436828,
+	Canvas_get_referencePixelsPerUnit_m3759589197,
+	Canvas_set_referencePixelsPerUnit_m1910706966,
+	Canvas_get_pixelPerfect_m2847994693,
+	Canvas_get_renderOrder_m2295969794,
+	Canvas_get_overrideSorting_m3812884636,
+	Canvas_set_overrideSorting_m1850487749,
+	Canvas_get_sortingOrder_m1274160674,
+	Canvas_set_sortingOrder_m1522807655,
+	Canvas_get_sortingLayerID_m3425838272,
+	Canvas_set_sortingLayerID_m2317502469,
+	Canvas_GetDefaultCanvasMaterial_m1655363178,
+	Canvas_SendWillRenderCanvases_m1768133093,
+	Canvas_ForceUpdateCanvases_m1970133101,
+	WillRenderCanvases__ctor_m1509285774,
+	WillRenderCanvases_Invoke_m4113031528,
+	WillRenderCanvases_BeginInvoke_m205611811,
+	WillRenderCanvases_EndInvoke_m2320713886,
+	CanvasGroup_get_alpha_m2646612977,
+	CanvasGroup_set_alpha_m2140801370,
+	CanvasGroup_get_interactable_m2411844645,
+	CanvasGroup_get_blocksRaycasts_m1777916261,
+	CanvasGroup_get_ignoreParentGroups_m1831887525,
+	CanvasGroup_IsRaycastLocationValid_m3946913220,
+	CanvasRenderer_SetColor_m3198078515,
+	CanvasRenderer_INTERNAL_CALL_SetColor_m2907146764,
+	CanvasRenderer_GetColor_m3075393702,
+	CanvasRenderer_INTERNAL_CALL_GetColor_m3176368896,
+	CanvasRenderer_EnableRectClipping_m896218272,
+	CanvasRenderer_INTERNAL_CALL_EnableRectClipping_m105013257,
+	CanvasRenderer_DisableRectClipping_m2654388030,
+	CanvasRenderer_set_hasPopInstruction_m2112255713,
+	CanvasRenderer_get_materialCount_m311942031,
+	CanvasRenderer_set_materialCount_m1694897644,
+	CanvasRenderer_SetMaterial_m355382012,
+	CanvasRenderer_SetMaterial_m1603188579,
+	CanvasRenderer_set_popMaterialCount_m589784503,
+	CanvasRenderer_SetPopMaterial_m1315408685,
+	CanvasRenderer_SetTexture_m137327939,
+	CanvasRenderer_SetMesh_m1150548475,
+	CanvasRenderer_Clear_m1606508093,
+	CanvasRenderer_SplitUIVertexStreams_m4126093916,
+	CanvasRenderer_SplitUIVertexStreamsInternal_m987675768,
+	CanvasRenderer_SplitIndiciesStreamsInternal_m269466040,
+	CanvasRenderer_CreateUIVertexStream_m2702356137,
+	CanvasRenderer_CreateUIVertexStreamInternal_m997370835,
+	CanvasRenderer_AddUIVertexStream_m1865056747,
+	CanvasRenderer_get_cull_m3343855795,
+	CanvasRenderer_set_cull_m3433952120,
+	CanvasRenderer_get_absoluteDepth_m1613567475,
+	CanvasRenderer_get_hasMoved_m1392755130,
 	Collider_get_attachedRigidbody_m2821754842,
 	Collider_get_bounds_m1050008332,
 	Collider_INTERNAL_get_bounds_m1269265569,
+	Collider2D_get_attachedRigidbody_m2908627162,
 	Collision__ctor_m183727591,
 	Collision_get_relativeVelocity_m1067992885,
 	Collision_get_rigidbody_m1973745126,
@@ -15392,10 +17958,33 @@ extern const Il2CppMethodPointer g_MethodPointers[8038] =
 	Collision_get_impactForceSum_m3741050290,
 	Collision_get_frictionForceSum_m3009900454,
 	Collision_get_other_m541712697,
+	Collision2D__ctor_m3298468565,
+	Collision2D_get_enabled_m3761113681,
+	Collision2D_get_rigidbody_m4259461250,
+	Collision2D_get_collider_m4116040666,
+	Collision2D_get_transform_m2182628532,
+	Collision2D_get_gameObject_m718845954,
+	Collision2D_get_contacts_m4248754423,
+	Collision2D_get_relativeVelocity_m2960747782,
+	Color__ctor_m2252924356,
+	Color__ctor_m103496991,
 	Color_ToString_m2277845527,
 	Color_GetHashCode_m170503301,
 	Color_Equals_m3016668205,
+	Color_Lerp_m3494628845,
+	Color_get_red_m4288945411,
+	Color_get_blue_m3657252170,
+	Color_get_white_m3038282331,
+	Color_get_black_m1687201969,
+	Color_get_yellow_m599454500,
+	Color_get_clear_m2578346879,
+	Color_op_Multiply_m204757678,
+	Color_op_Equality_m4163276884,
 	Color_op_Implicit_m2638307542,
+	Color32__ctor_m576906339,
+	Color32_ToString_m909782902,
+	Color32_op_Implicit_m3684884838,
+	Color32_op_Implicit_m358459656,
 	Component__ctor_m4238603388,
 	Component_get_transform_m4257140443,
 	Component_get_gameObject_m1170635899,
@@ -15454,9 +18043,17 @@ extern const Il2CppMethodPointer g_MethodPointers[8038] =
 	Debug_get_logger_m275693158,
 	Debug_Log_m1731103628,
 	Debug_LogError_m4127342994,
+	Debug_LogError_m214246398,
+	Debug_LogException_m248970745,
+	Debug_LogException_m2264672311,
+	Debug_LogWarning_m3123317694,
+	Debug_LogWarning_m4097176146,
 	DebugLogHandler__ctor_m1521597024,
 	DebugLogHandler_Internal_Log_m3731237167,
+	DebugLogHandler_Internal_LogException_m1007136309,
 	DebugLogHandler_LogFormat_m1190453926,
+	DebugLogHandler_LogException_m3623531313,
+	DisallowMultipleComponent__ctor_m3170514567,
 	Display__ctor_m923501527,
 	Display__ctor_m3179075037,
 	Display__cctor_m2376647350,
@@ -15466,20 +18063,87 @@ extern const Il2CppMethodPointer g_MethodPointers[8038] =
 	DisplaysUpdatedDelegate_Invoke_m3958989829,
 	DisplaysUpdatedDelegate_BeginInvoke_m3264685798,
 	DisplaysUpdatedDelegate_EndInvoke_m3466741627,
+	DrivenRectTransformTracker_Add_m3461523141,
+	DrivenRectTransformTracker_Clear_m309315364,
+	Event__ctor_m1609448063,
+	Event__ctor_m66398544,
+	Event_Finalize_m2449826179,
+	Event_get_mousePosition_m3610425949,
+	Event_get_current_m238587645,
+	Event_Internal_MakeMasterEventCurrent_m213199903,
+	Event_get_isKey_m645126607,
+	Event_get_isMouse_m3551276757,
+	Event_GetHashCode_m2341647470,
+	Event_Equals_m2374615830,
+	Event_ToString_m3661517518,
+	Event_Init_m3525277126,
+	Event_Cleanup_m3160122945,
+	Event_get_rawType_m696564524,
+	Event_get_type_m2209939250,
+	Event_Internal_GetMousePosition_m2054214537,
+	Event_get_modifiers_m4020990886,
+	Event_get_character_m3663172667,
+	Event_get_commandName_m1197792621,
+	Event_get_keyCode_m1820698462,
+	Event_Internal_SetNativeEvent_m930902932,
+	Event_set_displayIndex_m4130090435,
+	Event_PopEvent_m2790075015,
 	ArgumentCache__ctor_m4004594141,
+	ArgumentCache_get_unityObjectArgument_m3221396682,
+	ArgumentCache_get_unityObjectArgumentAssemblyTypeName_m2706134059,
+	ArgumentCache_get_intArgument_m688472510,
+	ArgumentCache_get_floatArgument_m457274527,
+	ArgumentCache_get_stringArgument_m621059457,
+	ArgumentCache_get_boolArgument_m948935837,
 	ArgumentCache_TidyAssemblyTypeName_m705559900,
 	ArgumentCache_OnBeforeSerialize_m2323221949,
 	ArgumentCache_OnAfterDeserialize_m3764330697,
+	BaseInvokableCall__ctor_m2839815662,
+	BaseInvokableCall__ctor_m1692884045,
+	BaseInvokableCall_AllowInvoke_m2941661095,
+	InvokableCall__ctor_m1927467228,
+	InvokableCall__ctor_m3567423952,
+	InvokableCall_Invoke_m1513455731,
+	InvokableCall_Find_m2076119333,
 	InvokableCallList__ctor_m2413334847,
+	InvokableCallList_AddPersistentInvokableCall_m4220625340,
+	InvokableCallList_AddListener_m1356872764,
+	InvokableCallList_RemoveListener_m855004700,
 	InvokableCallList_ClearPersistent_m1690187553,
+	InvokableCallList_Invoke_m575840373,
 	PersistentCall__ctor_m3363339247,
+	PersistentCall_get_target_m3400889750,
+	PersistentCall_get_methodName_m3021973351,
+	PersistentCall_get_mode_m1522877562,
+	PersistentCall_get_arguments_m1871980514,
+	PersistentCall_IsValid_m1010437221,
+	PersistentCall_GetRuntimeCall_m3912860610,
+	PersistentCall_GetObjectCall_m1043326447,
 	PersistentCallGroup__ctor_m3119615256,
+	PersistentCallGroup_Initialize_m3484159567,
+	UnityAction__ctor_m4130179243,
+	UnityAction_Invoke_m1979593925,
+	UnityAction_BeginInvoke_m3541271198,
+	UnityAction_EndInvoke_m794691643,
 	UnityEvent__ctor_m1715209183,
+	UnityEvent_AddListener_m4099140869,
+	UnityEvent_FindMethod_Impl_m2897220818,
+	UnityEvent_GetDelegate_m2043983920,
+	UnityEvent_GetDelegate_m1012258596,
+	UnityEvent_Invoke_m2672830205,
 	UnityEventBase__ctor_m199506446,
 	UnityEventBase_UnityEngine_ISerializationCallbackReceiver_OnBeforeSerialize_m1699382396,
 	UnityEventBase_UnityEngine_ISerializationCallbackReceiver_OnAfterDeserialize_m1605173738,
+	UnityEventBase_FindMethod_m1166071979,
+	UnityEventBase_FindMethod_m113598831,
 	UnityEventBase_DirtyPersistentCalls_m1636785090,
+	UnityEventBase_RebuildPersistentCallsIfNeeded_m4147202091,
+	UnityEventBase_AddCall_m1246572149,
+	UnityEventBase_RemoveListener_m276725997,
+	UnityEventBase_Invoke_m3681078084,
 	UnityEventBase_ToString_m249191135,
+	UnityEventBase_GetValidMethodInfo_m2325301202,
+	ExecuteInEditMode__ctor_m1394231890,
 	Playable__ctor_m2241556995,
 	Playable__ctor_m3752126010,
 	Playable_Dispose_m2747727607,
@@ -15527,6 +18191,18 @@ extern const Il2CppMethodPointer g_MethodPointers[8038] =
 	Playable_op_Equality_m3091846835,
 	Playable_op_Inequality_m3181167342,
 	Playable_op_Implicit_m2513159357,
+	Font_add_textureRebuilt_m3323945916,
+	Font_remove_textureRebuilt_m2804643593,
+	Font_get_material_m2407307367,
+	Font_HasCharacter_m2480770466,
+	Font_InvokeTextureRebuilt_Internal_m1357223658,
+	Font_get_dynamic_m3880144684,
+	Font_get_fontSize_m3025810271,
+	FontTextureRebuildCallback__ctor_m2909762077,
+	FontTextureRebuildCallback_Invoke_m3507488951,
+	FontTextureRebuildCallback_BeginInvoke_m2984345076,
+	FontTextureRebuildCallback_EndInvoke_m2078440109,
+	GameObject__ctor_m3920833606,
 	GameObject_GetComponent_m1004814461,
 	GameObject_GetComponentFastPath_m2905716663,
 	GameObject_GetComponentInChildren_m1490154500,
@@ -15536,16 +18212,296 @@ extern const Il2CppMethodPointer g_MethodPointers[8038] =
 	GameObject_GetComponentsInParent_m521317102,
 	GameObject_GetComponentsInternal_m181453881,
 	GameObject_get_transform_m1278640159,
+	GameObject_get_layer_m1648550306,
+	GameObject_set_layer_m1872241535,
+	GameObject_SetActive_m3538205401,
+	GameObject_get_activeSelf_m3858025161,
+	GameObject_get_activeInHierarchy_m612450965,
 	GameObject_get_tag_m211612200,
 	GameObject_set_tag_m859036203,
 	GameObject_SendMessage_m423373689,
+	GameObject_Internal_AddComponentWithType_m2266369934,
+	GameObject_AddComponent_m2208780168,
+	GameObject_Internal_CreateGameObject_m2521325981,
 	GameObject_Find_m332785498,
 	Gradient__ctor_m3068495933,
 	Gradient_Init_m2544372343,
 	Gradient_Cleanup_m850820223,
 	Gradient_Finalize_m3875885829,
+	GUI__cctor_m1345698031,
+	GUI_set_nextScrollStepTime_m3820512796,
+	GUI_set_skin_m1213959601,
+	GUI_get_skin_m4001454842,
+	GUI_DoSetSkin_m800823745,
+	GUI_CallWindowDelegate_m2260338804,
+	GUI_set_changed_m727947722,
+	ScrollViewState__ctor_m739544590,
+	WindowFunction__ctor_m732638321,
+	WindowFunction_Invoke_m2798584028,
+	WindowFunction_BeginInvoke_m526788181,
+	WindowFunction_EndInvoke_m203456257,
+	GUIContent__ctor_m923375087,
+	GUIContent__ctor_m174155123,
+	GUIContent__cctor_m2372727710,
+	GUIContent_Temp_m2857440895,
+	GUIContent_Temp_m3826417963,
+	GUIContent_ClearStaticCache_m2388858588,
 	GUILayer_HitTest_m3356120918,
 	GUILayer_INTERNAL_CALL_HitTest_m4210766818,
+	GUILayout_Width_m2259621411,
+	GUILayout_Height_m3774802884,
+	GUILayoutEntry__ctor_m3586081151,
+	GUILayoutEntry__cctor_m4107715149,
+	GUILayoutEntry_get_style_m3507897988,
+	GUILayoutEntry_set_style_m706118245,
+	GUILayoutEntry_get_margin_m3705107036,
+	GUILayoutEntry_CalcWidth_m3370167343,
+	GUILayoutEntry_CalcHeight_m1899786880,
+	GUILayoutEntry_SetHorizontal_m3810336940,
+	GUILayoutEntry_SetVertical_m880890586,
+	GUILayoutEntry_ApplyStyleSettings_m937804029,
+	GUILayoutEntry_ApplyOptions_m2425801465,
+	GUILayoutEntry_ToString_m4021956595,
+	GUILayoutGroup__ctor_m3393996275,
+	GUILayoutGroup_get_margin_m1931560361,
+	GUILayoutGroup_ApplyOptions_m743820812,
+	GUILayoutGroup_ApplyStyleSettings_m1024249546,
+	GUILayoutGroup_ResetCursor_m982464342,
+	GUILayoutGroup_CalcWidth_m1234746178,
+	GUILayoutGroup_SetHorizontal_m985132857,
+	GUILayoutGroup_CalcHeight_m126240205,
+	GUILayoutGroup_SetVertical_m967336103,
+	GUILayoutGroup_ToString_m2567598720,
+	GUILayoutOption__ctor_m573459815,
+	GUILayoutUtility__cctor_m1548085895,
+	GUILayoutUtility_SelectIDList_m801008209,
+	GUILayoutUtility_Begin_m2012081982,
+	GUILayoutUtility_BeginWindow_m4017651538,
+	GUILayoutUtility_Layout_m1143185416,
+	GUILayoutUtility_LayoutFromEditorWindow_m3347777775,
+	GUILayoutUtility_LayoutFreeGroup_m2250873692,
+	GUILayoutUtility_LayoutSingleGroup_m1841651392,
+	GUILayoutUtility_get_spaceStyle_m3628948340,
+	GUILayoutUtility_Internal_GetWindowRect_m1168223211,
+	GUILayoutUtility_INTERNAL_CALL_Internal_GetWindowRect_m1468033111,
+	GUILayoutUtility_Internal_MoveWindow_m2191818611,
+	GUILayoutUtility_INTERNAL_CALL_Internal_MoveWindow_m115257690,
+	LayoutCache__ctor_m3196944573,
+	GUIScrollGroup__ctor_m2652149846,
+	GUIScrollGroup_CalcWidth_m2187011109,
+	GUIScrollGroup_SetHorizontal_m3329305078,
+	GUIScrollGroup_CalcHeight_m3876649290,
+	GUIScrollGroup_SetVertical_m3472565924,
+	GUISettings__ctor_m1563013787,
+	GUISettings_get_cursorColor_m3617656164,
+	GUISettings_get_cursorFlashSpeed_m3510903059,
+	GUISettings_get_selectionColor_m3945610946,
+	GUISettings_Internal_GetCursorFlashSpeed_m2094683006,
+	GUISkin__ctor_m3819836417,
+	GUISkin_OnEnable_m3659769829,
+	GUISkin_get_font_m4064925714,
+	GUISkin_set_font_m2298219977,
+	GUISkin_get_box_m3284280323,
+	GUISkin_set_box_m35439328,
+	GUISkin_get_label_m3553254700,
+	GUISkin_set_label_m4062710537,
+	GUISkin_get_textField_m3831281733,
+	GUISkin_set_textField_m2041526946,
+	GUISkin_get_textArea_m4283710532,
+	GUISkin_set_textArea_m1255688077,
+	GUISkin_get_button_m3628017756,
+	GUISkin_set_button_m2794546469,
+	GUISkin_get_toggle_m3519495166,
+	GUISkin_set_toggle_m3743241159,
+	GUISkin_get_window_m3620644250,
+	GUISkin_set_window_m93050723,
+	GUISkin_get_horizontalSlider_m1556961103,
+	GUISkin_set_horizontalSlider_m2400811288,
+	GUISkin_get_horizontalSliderThumb_m561455017,
+	GUISkin_set_horizontalSliderThumb_m3534756102,
+	GUISkin_get_verticalSlider_m3077048033,
+	GUISkin_set_verticalSlider_m2007128362,
+	GUISkin_get_verticalSliderThumb_m4032125783,
+	GUISkin_set_verticalSliderThumb_m1533703220,
+	GUISkin_get_horizontalScrollbar_m4254994650,
+	GUISkin_set_horizontalScrollbar_m2358004279,
+	GUISkin_get_horizontalScrollbarThumb_m543401214,
+	GUISkin_set_horizontalScrollbarThumb_m1178477383,
+	GUISkin_get_horizontalScrollbarLeftButton_m1723095443,
+	GUISkin_set_horizontalScrollbarLeftButton_m1050046448,
+	GUISkin_get_horizontalScrollbarRightButton_m3218269270,
+	GUISkin_set_horizontalScrollbarRightButton_m75365919,
+	GUISkin_get_verticalScrollbar_m3029557256,
+	GUISkin_set_verticalScrollbar_m3705641189,
+	GUISkin_get_verticalScrollbarThumb_m2548474512,
+	GUISkin_set_verticalScrollbarThumb_m1958138201,
+	GUISkin_get_verticalScrollbarUpButton_m2399801237,
+	GUISkin_set_verticalScrollbarUpButton_m3911333362,
+	GUISkin_get_verticalScrollbarDownButton_m1448263900,
+	GUISkin_set_verticalScrollbarDownButton_m138386233,
+	GUISkin_get_scrollView_m3339613116,
+	GUISkin_set_scrollView_m4285810053,
+	GUISkin_get_customStyles_m816658303,
+	GUISkin_set_customStyles_m1092778308,
+	GUISkin_get_settings_m3861471971,
+	GUISkin_get_error_m2137471808,
+	GUISkin_Apply_m3870939405,
+	GUISkin_BuildStyleCache_m504236350,
+	GUISkin_GetStyle_m2474694726,
+	GUISkin_FindStyle_m2067600169,
+	GUISkin_MakeCurrent_m174297994,
+	GUISkin_GetEnumerator_m1290986451,
+	SkinChangedDelegate__ctor_m1472037998,
+	SkinChangedDelegate_Invoke_m3141787208,
+	SkinChangedDelegate_BeginInvoke_m1122457923,
+	SkinChangedDelegate_EndInvoke_m3094371710,
+	GUIStyle__ctor_m478034167,
+	GUIStyle__ctor_m584655914,
+	GUIStyle__cctor_m1452061078,
+	GUIStyle_Finalize_m3401789451,
+	GUIStyle_InternalOnAfterDeserialize_m1012732492,
+	GUIStyle_get_normal_m42729964,
+	GUIStyle_set_normal_m3590268413,
+	GUIStyle_get_hover_m3685402873,
+	GUIStyle_set_hover_m660294266,
+	GUIStyle_get_active_m1150072907,
+	GUIStyle_set_active_m79497342,
+	GUIStyle_get_onNormal_m3672490987,
+	GUIStyle_set_onNormal_m3860399646,
+	GUIStyle_get_onHover_m3525397274,
+	GUIStyle_set_onHover_m946102841,
+	GUIStyle_get_onActive_m484866634,
+	GUIStyle_set_onActive_m349628575,
+	GUIStyle_get_focused_m2717215092,
+	GUIStyle_set_focused_m1026899231,
+	GUIStyle_get_onFocused_m3570657109,
+	GUIStyle_set_onFocused_m811032862,
+	GUIStyle_get_border_m1826068707,
+	GUIStyle_set_border_m3254356648,
+	GUIStyle_get_margin_m4279849445,
+	GUIStyle_set_margin_m698201642,
+	GUIStyle_get_padding_m3072941276,
+	GUIStyle_set_padding_m458170651,
+	GUIStyle_get_overflow_m2862114233,
+	GUIStyle_set_overflow_m3029326398,
+	GUIStyle_get_clipOffset_m3134687732,
+	GUIStyle_set_clipOffset_m2780638285,
+	GUIStyle_get_font_m1061814606,
+	GUIStyle_set_font_m3587533075,
+	GUIStyle_get_lineHeight_m3977255453,
+	GUIStyle_Internal_Draw_m3671619263,
+	GUIStyle_Draw_m2853558582,
+	GUIStyle_Draw_m645175538,
+	GUIStyle_Draw_m1301423966,
+	GUIStyle_Draw_m860139579,
+	GUIStyle_Draw_m2994577084,
+	GUIStyle_Draw_m489809217,
+	GUIStyle_DrawCursor_m4169664613,
+	GUIStyle_DrawWithTextSelection_m469195656,
+	GUIStyle_DrawWithTextSelection_m984171349,
+	GUIStyle_get_none_m2767659632,
+	GUIStyle_GetCursorPixelPosition_m296157110,
+	GUIStyle_GetCursorStringIndex_m3223359742,
+	GUIStyle_GetNumCharactersThatFitWithinWidth_m3286030319,
+	GUIStyle_CalcSize_m2299809257,
+	GUIStyle_CalcSizeWithConstraints_m3659418291,
+	GUIStyle_CalcScreenSize_m1487928496,
+	GUIStyle_CalcHeight_m3565424293,
+	GUIStyle_get_isHeightDependantOnWidth_m1959928889,
+	GUIStyle_CalcMinMaxWidth_m421008639,
+	GUIStyle_ToString_m2491778876,
+	GUIStyle_Init_m3292093053,
+	GUIStyle_InitCopy_m3063430789,
+	GUIStyle_Cleanup_m2498094777,
+	GUIStyle_get_name_m4046186628,
+	GUIStyle_set_name_m4125925261,
+	GUIStyle_GetStyleStatePtr_m2550872619,
+	GUIStyle_AssignStyleState_m4030196091,
+	GUIStyle_GetRectOffsetPtr_m1931607252,
+	GUIStyle_AssignRectOffset_m519705394,
+	GUIStyle_get_imagePosition_m3876152522,
+	GUIStyle_set_imagePosition_m1689669769,
+	GUIStyle_get_alignment_m1533628953,
+	GUIStyle_set_alignment_m4252900834,
+	GUIStyle_get_wordWrap_m3830782768,
+	GUIStyle_set_wordWrap_m3800572853,
+	GUIStyle_get_clipping_m2044798529,
+	GUIStyle_set_clipping_m771351942,
+	GUIStyle_get_contentOffset_m2092220605,
+	GUIStyle_set_contentOffset_m3385864054,
+	GUIStyle_INTERNAL_get_contentOffset_m2078390432,
+	GUIStyle_INTERNAL_set_contentOffset_m3891089324,
+	GUIStyle_get_Internal_clipOffset_m4123163318,
+	GUIStyle_set_Internal_clipOffset_m411599389,
+	GUIStyle_INTERNAL_get_Internal_clipOffset_m3417369433,
+	GUIStyle_INTERNAL_set_Internal_clipOffset_m188352869,
+	GUIStyle_get_fixedWidth_m3249098964,
+	GUIStyle_set_fixedWidth_m2486234607,
+	GUIStyle_get_fixedHeight_m2441634427,
+	GUIStyle_set_fixedHeight_m2209877368,
+	GUIStyle_get_stretchWidth_m38609341,
+	GUIStyle_set_stretchWidth_m829487234,
+	GUIStyle_get_stretchHeight_m1700703922,
+	GUIStyle_set_stretchHeight_m703419995,
+	GUIStyle_Internal_GetLineHeight_m4224806028,
+	GUIStyle_SetFontInternal_m2859258365,
+	GUIStyle_GetFontInternalDuringLoadingThread_m1458608761,
+	GUIStyle_GetFontInternal_m2928804526,
+	GUIStyle_get_fontSize_m2938276678,
+	GUIStyle_set_fontSize_m3621764235,
+	GUIStyle_get_fontStyle_m3314019014,
+	GUIStyle_set_fontStyle_m3298083597,
+	GUIStyle_get_richText_m1558667173,
+	GUIStyle_set_richText_m1293612906,
+	GUIStyle_Internal_Draw_m3365779187,
+	GUIStyle_Internal_Draw2_m2706374407,
+	GUIStyle_INTERNAL_CALL_Internal_Draw2_m1512749466,
+	GUIStyle_Internal_DrawPrefixLabel_m1343381847,
+	GUIStyle_INTERNAL_CALL_Internal_DrawPrefixLabel_m3654921866,
+	GUIStyle_Internal_GetCursorFlashOffset_m3106442082,
+	GUIStyle_Internal_DrawCursor_m496261262,
+	GUIStyle_INTERNAL_CALL_Internal_DrawCursor_m330118499,
+	GUIStyle_Internal_DrawWithTextSelection_m538670273,
+	GUIStyle_SetDefaultFont_m1041826325,
+	GUIStyle_Internal_GetCursorPixelPosition_m336331745,
+	GUIStyle_INTERNAL_CALL_Internal_GetCursorPixelPosition_m2602567800,
+	GUIStyle_Internal_GetCursorStringIndex_m1275963970,
+	GUIStyle_INTERNAL_CALL_Internal_GetCursorStringIndex_m3457179887,
+	GUIStyle_Internal_GetNumCharactersThatFitWithinWidth_m470425907,
+	GUIStyle_Internal_CalcSize_m1389308622,
+	GUIStyle_Internal_CalcSizeWithConstraints_m484790978,
+	GUIStyle_INTERNAL_CALL_Internal_CalcSizeWithConstraints_m2048982689,
+	GUIStyle_Internal_CalcHeight_m3448302985,
+	GUIStyle_Internal_CalcMinMaxWidth_m1670371175,
+	GUIStyle_op_Implicit_m169215436,
+	GUIStyleState__ctor_m2789776190,
+	GUIStyleState__ctor_m1478971583,
+	GUIStyleState_ProduceGUIStyleStateFromDeserialization_m243465942,
+	GUIStyleState_GetGUIStyleState_m511242685,
+	GUIStyleState_Finalize_m2707805284,
+	GUIStyleState_Init_m872813398,
+	GUIStyleState_Cleanup_m3584086848,
+	GUIStyleState_GetBackgroundInternalFromDeserialization_m2608056493,
+	GUIStyleState_GetBackgroundInternal_m2898492250,
+	GUIStyleState_set_textColor_m3058467057,
+	GUIStyleState_INTERNAL_set_textColor_m2711899875,
+	GUITargetAttribute_GetGUITargetAttrValue_m1884776752,
+	GUIUtility__cctor_m2712534225,
+	GUIUtility_get_pixelsPerPoint_m2351352349,
+	GUIUtility_get_hotControl_m4135893409,
+	GUIUtility_GetDefaultSkin_m3151786562,
+	GUIUtility_BeginGUI_m1799121707,
+	GUIUtility_EndGUI_m1069008217,
+	GUIUtility_EndGUIFromException_m1739426121,
+	GUIUtility_CheckOnGUI_m640002012,
+	GUIUtility_Internal_GetPixelsPerPoint_m4247925832,
+	GUIUtility_Internal_GetHotControl_m1758149964,
+	GUIUtility_get_keyboardControl_m1277835431,
+	GUIUtility_get_systemCopyBuffer_m1467578008,
+	GUIUtility_set_systemCopyBuffer_m2088074937,
+	GUIUtility_Internal_GetDefaultSkin_m1795114979,
+	GUIUtility_Internal_ExitGUI_m725832131,
+	GUIUtility_Internal_GetGUIDepth_m2619692036,
 	HostData__ctor_m2522227771,
 	HostData_get_useNat_m4254429010,
 	HostData_set_useNat_m2634285015,
@@ -15567,14 +18523,30 @@ extern const Il2CppMethodPointer g_MethodPointers[8038] =
 	HostData_set_comment_m3861418087,
 	HostData_get_guid_m4094499646,
 	HostData_set_guid_m3576769299,
+	HumanBone_get_boneName_m4281149553,
+	HumanBone_set_boneName_m2758161818,
+	HumanBone_get_humanName_m1702517944,
+	HumanBone_set_humanName_m1186126593,
+	IL2CPPStructAlignmentAttribute__ctor_m55581643,
 	Input__cctor_m1327041086,
+	Input_GetAxisRaw_m1900207208,
+	Input_GetButtonDown_m1879002085,
 	Input_GetMouseButton_m4080958081,
 	Input_GetMouseButtonDown_m2031691843,
+	Input_GetMouseButtonUp_m2588144188,
 	Input_get_mousePosition_m4020233228,
 	Input_INTERNAL_get_mousePosition_m4008828427,
+	Input_get_mouseScrollDelta_m3050122505,
+	Input_INTERNAL_get_mouseScrollDelta_m2726147504,
+	Input_get_mousePresent_m3235491246,
 	Input_get_touches_m300368858,
 	Input_GetTouch_m2282421092,
 	Input_get_touchCount_m1430909390,
+	Input_get_touchSupported_m634162567,
+	Input_set_imeCompositionMode_m1719849947,
+	Input_get_compositionString_m1541052002,
+	Input_set_compositionCursorPos_m3225375732,
+	Input_INTERNAL_set_compositionCursorPos_m1084763314,
 	DefaultValueAttribute__ctor_m1665393712,
 	DefaultValueAttribute_get_Value_m1575119971,
 	DefaultValueAttribute_Equals_m1990537309,
@@ -15662,6 +18634,7 @@ extern const Il2CppMethodPointer g_MethodPointers[8038] =
 	Keyframe_get_tangentMode_m1245220572,
 	Keyframe_set_tangentMode_m2444824761,
 	LayerMask_op_Implicit_m1595580047,
+	LayerMask_op_Implicit_m2608572187,
 	Logger__ctor_m654679389,
 	Logger_get_logHandler_m2576399569,
 	Logger_set_logHandler_m2661029584,
@@ -15672,15 +18645,83 @@ extern const Il2CppMethodPointer g_MethodPointers[8038] =
 	Logger_IsLogTypeAllowed_m3362907658,
 	Logger_GetString_m3033796341,
 	Logger_Log_m3875808634,
+	Logger_Log_m3185878806,
 	Logger_LogFormat_m4050017187,
+	Logger_LogException_m426775790,
+	Material__ctor_m2546967560,
 	Material_set_color_m3296857020,
+	Material_get_mainTexture_m1012267054,
 	Material_SetColor_m1918430019,
 	Material_SetColor_m54957808,
 	Material_INTERNAL_CALL_SetColor_m3209011477,
+	Material_GetTexture_m1284113328,
+	Material_GetTexture_m3767468771,
+	Material_SetFloat_m981710063,
+	Material_SetFloat_m170145518,
+	Material_SetInt_m2649395040,
+	Material_HasProperty_m2077312757,
+	Material_HasProperty_m190825214,
+	Material_Internal_CreateWithMaterial_m2349411671,
+	Material_EnableKeyword_m3802712984,
+	Material_DisableKeyword_m572736419,
 	Mathf__cctor_m1875403730,
+	Mathf_Sin_m2014639246,
+	Mathf_Cos_m2060147711,
+	Mathf_Sqrt_m3592270478,
 	Mathf_Abs_m3641135540,
+	Mathf_Min_m2322067385,
+	Mathf_Min_m2413438171,
 	Mathf_Max_m3923796455,
+	Mathf_Max_m2911193737,
+	Mathf_Pow_m2793367923,
+	Mathf_Log_m2062790663,
+	Mathf_Ceil_m3793305609,
+	Mathf_Floor_m1715447770,
+	Mathf_Round_m2677810712,
+	Mathf_CeilToInt_m3621832739,
+	Mathf_FloorToInt_m268511322,
+	Mathf_RoundToInt_m3163545820,
+	Mathf_Sign_m4040614993,
+	Mathf_Clamp_m3872743893,
+	Mathf_Clamp_m510460741,
+	Mathf_Clamp01_m2272733930,
+	Mathf_Lerp_m3257777633,
 	Mathf_Approximately_m1395529776,
+	Mathf_SmoothDamp_m779170481,
+	Mathf_Repeat_m3424250200,
+	Mathf_InverseLerp_m152689993,
+	Matrix4x4_get_Item_m2279862332,
+	Matrix4x4_get_Item_m1280478331,
+	Matrix4x4_GetHashCode_m4083477721,
+	Matrix4x4_Equals_m3534208385,
+	Matrix4x4_GetColumn_m786071102,
+	Matrix4x4_MultiplyPoint3x4_m2198174902,
+	Matrix4x4_ToString_m294134723,
+	Mesh__ctor_m2684203808,
+	Mesh_Internal_Create_m3749730360,
+	Mesh_Clear_m1789068674,
+	Mesh_Clear_m90337099,
+	Mesh_get_vertices_m3685486174,
+	Mesh_SetVertices_m701834806,
+	Mesh_SetVerticesInternal_m1274639230,
+	Mesh_get_normals_m3396909641,
+	Mesh_SetNormals_m2039144779,
+	Mesh_SetNormalsInternal_m1710845385,
+	Mesh_get_tangents_m3235865682,
+	Mesh_SetTangents_m2005345740,
+	Mesh_SetTangentsInternal_m763303177,
+	Mesh_get_uv_m558008935,
+	Mesh_get_uv2_m118417421,
+	Mesh_ExtractListData_m2453560898,
+	Mesh_SetUVsInternal_m4014622176,
+	Mesh_SetUVs_m116216925,
+	Mesh_get_colors32_m192356802,
+	Mesh_SetColors_m3313707935,
+	Mesh_SetColors32Internal_m1830241000,
+	Mesh_RecalculateBounds_m3754336742,
+	Mesh_SetTriangles_m456382467,
+	Mesh_SetTrianglesInternal_m2955775213,
+	Mesh_GetIndices_m637494532,
 	MonoBehaviour__ctor_m2022291967,
 	MonoBehaviour_Internal_CancelInvokeAll_m972795186,
 	MonoBehaviour_Internal_IsInvokingAll_m3154030143,
@@ -15781,49 +18822,172 @@ extern const Il2CppMethodPointer g_MethodPointers[8038] =
 	Object_op_Equality_m3964590952,
 	Object_op_Inequality_m1296218211,
 	Physics_Raycast_m1758069759,
+	Physics_Raycast_m1600345803,
 	Physics_Raycast_m1235528076,
 	Physics_Raycast_m165875788,
+	Physics_RaycastAll_m1771931441,
+	Physics_RaycastAll_m1269007794,
+	Physics_RaycastAll_m892728677,
+	Physics_INTERNAL_CALL_RaycastAll_m2642095530,
 	Physics_Internal_Raycast_m3365413907,
 	Physics_INTERNAL_CALL_Internal_Raycast_m1291554392,
+	Physics2D__cctor_m2087591309,
+	Physics2D_Internal_Raycast_m4294843026,
+	Physics2D_INTERNAL_CALL_Internal_Raycast_m1210233913,
+	Physics2D_Raycast_m1435321255,
+	Physics2D_Raycast_m301626417,
+	Physics2D_GetRayIntersectionAll_m2520210479,
+	Physics2D_INTERNAL_CALL_GetRayIntersectionAll_m2968135304,
+	Plane__ctor_m2201046863,
+	Plane_get_normal_m3534129213,
+	Plane_get_distance_m2612484153,
+	Plane_Raycast_m2829769106,
+	PropertyAttribute__ctor_m1741701746,
 	Quaternion__ctor_m1100844011,
 	Quaternion_get_identity_m1743882806,
+	Quaternion_Dot_m580284,
+	Quaternion_Inverse_m3542515566,
+	Quaternion_INTERNAL_CALL_Inverse_m4175627710,
 	Quaternion_ToString_m1793285860,
 	Quaternion_GetHashCode_m3823258238,
 	Quaternion_Equals_m3843409946,
 	Quaternion_op_Multiply_m3771288979,
+	Quaternion_op_Inequality_m4197259746,
 	Random_set_seed_m58891993,
 	Random_get_value_m2402066692,
+	RangeAttribute__ctor_m1279576482,
+	Ray__ctor_m2662468509,
 	Ray_get_origin_m3064983562,
 	Ray_get_direction_m3201866877,
+	Ray_GetPoint_m1171104822,
 	Ray_ToString_m1391619614,
 	RaycastHit_get_point_m4165497838,
+	RaycastHit_get_normal_m1346998891,
+	RaycastHit_get_distance_m800944203,
 	RaycastHit_get_collider_m3116882274,
 	RaycastHit_get_rigidbody_m4137883432,
 	RaycastHit_get_transform_m905149094,
+	RaycastHit2D_get_point_m2072691227,
+	RaycastHit2D_get_normal_m894503390,
+	RaycastHit2D_get_fraction_m2313516650,
+	RaycastHit2D_get_collider_m789902306,
+	RaycastHit2D_get_rigidbody_m1059160360,
+	RaycastHit2D_get_transform_m1318597140,
+	Rect__ctor_m3291325233,
 	Rect_get_x_m982385354,
+	Rect_set_x_m577970569,
 	Rect_get_y_m982386315,
+	Rect_set_y_m67436392,
+	Rect_get_position_m2933356232,
+	Rect_get_center_m610643572,
+	Rect_get_min_m275942709,
+	Rect_get_max_m275713991,
 	Rect_get_width_m2824209432,
+	Rect_set_width_m3771513595,
 	Rect_get_height_m2154960823,
+	Rect_set_height_m3398820332,
+	Rect_get_size_m136480416,
 	Rect_get_xMin_m371109962,
+	Rect_set_xMin_m265803321,
 	Rect_get_yMin_m399739113,
+	Rect_set_yMin_m3716298746,
 	Rect_get_xMax_m370881244,
+	Rect_set_xMax_m1513853159,
 	Rect_get_yMax_m399510395,
+	Rect_set_yMax_m669381288,
 	Rect_ToString_m2093687658,
+	Rect_Contains_m3556594010,
 	Rect_Contains_m3556594041,
+	Rect_OrderMinMax_m3424313368,
+	Rect_Overlaps_m669681106,
+	Rect_Overlaps_m2751672171,
 	Rect_GetHashCode_m89026168,
 	Rect_Equals_m1091722644,
+	Rect_op_Inequality_m2236552616,
+	Rect_op_Equality_m1552341101,
+	RectOffset__ctor_m2395783478,
+	RectOffset__ctor_m358348983,
+	RectOffset_Init_m3353955934,
+	RectOffset_Cleanup_m2914212664,
+	RectOffset_get_left_m4104523390,
+	RectOffset_set_left_m901965251,
+	RectOffset_get_right_m3831383975,
+	RectOffset_set_right_m2119805444,
+	RectOffset_get_top_m140097312,
+	RectOffset_set_top_m3043172093,
+	RectOffset_get_bottom_m2106858018,
+	RectOffset_set_bottom_m3840454247,
+	RectOffset_get_horizontal_m1186440923,
+	RectOffset_get_vertical_m3650431789,
+	RectOffset_Finalize_m3416542060,
+	RectOffset_ToString_m2231965149,
+	RectTransform_add_reapplyDrivenProperties_m1968705467,
+	RectTransform_remove_reapplyDrivenProperties_m2607613076,
+	RectTransform_get_rect_m1566017036,
+	RectTransform_INTERNAL_get_rect_m1980775561,
+	RectTransform_get_anchorMin_m688674174,
+	RectTransform_set_anchorMin_m989253483,
+	RectTransform_INTERNAL_get_anchorMin_m1139643287,
+	RectTransform_INTERNAL_set_anchorMin_m370577571,
+	RectTransform_get_anchorMax_m688445456,
+	RectTransform_set_anchorMax_m715345817,
+	RectTransform_INTERNAL_get_anchorMax_m1238440233,
+	RectTransform_INTERNAL_set_anchorMax_m469374517,
+	RectTransform_get_anchoredPosition_m2318455998,
+	RectTransform_set_anchoredPosition_m1498949997,
+	RectTransform_INTERNAL_get_anchoredPosition_m840986985,
+	RectTransform_INTERNAL_set_anchoredPosition_m2329865949,
+	RectTransform_get_sizeDelta_m4279424984,
+	RectTransform_set_sizeDelta_m1223846609,
+	RectTransform_INTERNAL_get_sizeDelta_m4117062897,
+	RectTransform_INTERNAL_set_sizeDelta_m3347997181,
+	RectTransform_get_pivot_m3785570595,
+	RectTransform_set_pivot_m457344806,
+	RectTransform_INTERNAL_get_pivot_m322514492,
+	RectTransform_INTERNAL_set_pivot_m237146440,
 	RectTransform_SendReapplyDrivenProperties_m2261331528,
+	RectTransform_GetLocalCorners_m1867617311,
+	RectTransform_GetWorldCorners_m1829917190,
+	RectTransform_set_offsetMin_m951793481,
+	RectTransform_set_offsetMax_m677885815,
+	RectTransform_SetInsetAndSizeFromParentEdge_m1924354604,
+	RectTransform_SetSizeWithCurrentAnchors_m4019722691,
+	RectTransform_GetParentSize_m3092718635,
 	ReapplyDrivenProperties__ctor_m3710908308,
 	ReapplyDrivenProperties_Invoke_m3880635155,
 	ReapplyDrivenProperties_BeginInvoke_m1851329218,
 	ReapplyDrivenProperties_EndInvoke_m3686159268,
+	RectTransformUtility__cctor_m4293768260,
+	RectTransformUtility_RectangleContainsScreenPoint_m1460676684,
+	RectTransformUtility_INTERNAL_CALL_RectangleContainsScreenPoint_m1592514141,
+	RectTransformUtility_PixelAdjustPoint_m2518308759,
+	RectTransformUtility_PixelAdjustPoint_m1313063708,
+	RectTransformUtility_INTERNAL_CALL_PixelAdjustPoint_m1509640863,
+	RectTransformUtility_PixelAdjustRect_m3727716130,
+	RectTransformUtility_INTERNAL_CALL_PixelAdjustRect_m1038323288,
+	RectTransformUtility_ScreenPointToWorldPointInRectangle_m3856201718,
+	RectTransformUtility_ScreenPointToLocalPointInRectangle_m666650172,
+	RectTransformUtility_ScreenPointToRay_m1216104542,
+	RectTransformUtility_FlipLayoutOnAxis_m3487429352,
+	RectTransformUtility_FlipLayoutAxes_m2163490602,
+	RectTransformUtility_GetTransposed_m2060823533,
 	Renderer_get_material_m2720864603,
 	Renderer_get_bounds_m1533373851,
 	Renderer_INTERNAL_get_bounds_m3488131760,
+	Renderer_get_sortingLayerID_m1954594923,
+	Renderer_get_sortingOrder_m3623465101,
+	RenderTexture_Internal_GetWidth_m1030655936,
+	RenderTexture_Internal_GetHeight_m1940011033,
+	RenderTexture_get_width_m1498578543,
+	RenderTexture_get_height_m4010076224,
+	RequireComponent__ctor_m2023271172,
 	ResourceRequest__ctor_m2863879896,
 	ResourceRequest_get_asset_m670320982,
 	Resources_Load_m3601699608,
 	RPC__ctor_m281827604,
+	Screen_get_width_m3080333084,
+	Screen_get_height_m1504859443,
+	Screen_get_dpi_m3780069159,
 	ScriptableObject__ctor_m1827087273,
 	ScriptableObject_Internal_CreateScriptableObject_m2334361070,
 	ScriptableObject_CreateInstance_m750914562,
@@ -15831,6 +18995,7 @@ extern const Il2CppMethodPointer g_MethodPointers[8038] =
 	ScriptableObject_CreateInstanceFromType_m3795352533,
 	RequiredByNativeCodeAttribute__ctor_m940065582,
 	UsedByNativeCodeAttribute__ctor_m3320039756,
+	SelectionBaseAttribute__ctor_m3830336046,
 	SendMouseEvents__cctor_m2731695210,
 	SendMouseEvents_SetMouseMoved_m2590456785,
 	SendMouseEvents_DoSendMouseEvents_m4104134333,
@@ -15846,6 +19011,7 @@ extern const Il2CppMethodPointer g_MethodPointers[8038] =
 	SetupCoroutine_InvokeMember_m3691215301,
 	Shader_PropertyToID_m3019342011,
 	SharedBetweenAnimatorsAttribute__ctor_m2764338918,
+	SliderState__ctor_m3732503849,
 	GameCenterPlatform__ctor_m573039859,
 	GameCenterPlatform__cctor_m102270234,
 	GameCenterPlatform_UnityEngine_SocialPlatforms_ISocialPlatform_LoadFriends_m2468032119,
@@ -15982,6 +19148,25 @@ extern const Il2CppMethodPointer g_MethodPointers[8038] =
 	UserProfile_get_isFriend_m1712941209,
 	UserProfile_get_state_m1340538601,
 	Range__ctor_m872630735,
+	SortingLayer_GetLayerValueFromID_m2560954442,
+	SpaceAttribute__ctor_m3636842103,
+	SpaceAttribute__ctor_m2299833492,
+	Sprite_get_rect_m132626493,
+	Sprite_INTERNAL_get_rect_m853825042,
+	Sprite_get_pixelsPerUnit_m2438708453,
+	Sprite_get_texture_m1481489947,
+	Sprite_get_textureRect_m3946160520,
+	Sprite_INTERNAL_get_textureRect_m1939414807,
+	Sprite_get_border_m1562752938,
+	Sprite_INTERNAL_get_border_m855941073,
+	DataUtility_GetInnerUV_m860985145,
+	DataUtility_INTERNAL_CALL_GetInnerUV_m4066645897,
+	DataUtility_GetOuterUV_m2974486430,
+	DataUtility_INTERNAL_CALL_GetOuterUV_m3695722564,
+	DataUtility_GetPadding_m3826542291,
+	DataUtility_INTERNAL_CALL_GetPadding_m3174755375,
+	DataUtility_GetMinSize_m1313355571,
+	DataUtility_Internal_GetMinSize_m885438560,
 	StackTraceUtility__cctor_m1486031939,
 	StackTraceUtility_SetProjectFolder_m3541316899,
 	StackTraceUtility_ExtractStackTrace_m235366505,
@@ -16004,27 +19189,119 @@ extern const Il2CppMethodPointer g_MethodPointers[8038] =
 	StateMachineBehaviour_OnStateIK_m3126912700,
 	StateMachineBehaviour_OnStateMachineEnter_m2392556512,
 	StateMachineBehaviour_OnStateMachineExit_m2976228338,
+	TextAreaAttribute__ctor_m2577573455,
+	TextEditor__ctor_m1029296947,
+	TextGenerationSettings_CompareColors_m2801108564,
+	TextGenerationSettings_CompareVector2_m332687775,
+	TextGenerationSettings_Equals_m3950599493,
+	TextGenerator__ctor_m3994909811,
+	TextGenerator__ctor_m1563237700,
+	TextGenerator_System_IDisposable_Dispose_m3586435340,
+	TextGenerator_Finalize_m3211881231,
+	TextGenerator_ValidatedSettings_m1098807955,
+	TextGenerator_Invalidate_m620450028,
+	TextGenerator_GetCharacters_m2483060112,
+	TextGenerator_GetLines_m2441503301,
+	TextGenerator_GetVertices_m1097518625,
+	TextGenerator_GetPreferredWidth_m1618543389,
+	TextGenerator_GetPreferredHeight_m1770778044,
+	TextGenerator_Populate_m953583418,
+	TextGenerator_PopulateAlways_m4138837161,
+	TextGenerator_get_verts_m1179011229,
+	TextGenerator_get_characters_m3420670449,
+	TextGenerator_get_lines_m3197542168,
+	TextGenerator_Init_m1881520001,
+	TextGenerator_Dispose_cpp_m959647828,
+	TextGenerator_Populate_Internal_m1773862789,
+	TextGenerator_Populate_Internal_cpp_m3249805403,
+	TextGenerator_INTERNAL_CALL_Populate_Internal_cpp_m2939372809,
+	TextGenerator_get_rectExtents_m2200526529,
+	TextGenerator_INTERNAL_get_rectExtents_m4152002332,
+	TextGenerator_get_vertexCount_m818659347,
+	TextGenerator_GetVerticesInternal_m2005679319,
+	TextGenerator_get_characterCount_m1694678400,
+	TextGenerator_get_characterCountVisible_m2621262708,
+	TextGenerator_GetCharactersInternal_m3189630150,
+	TextGenerator_get_lineCount_m3121044867,
+	TextGenerator_GetLinesInternal_m702225117,
 	Texture__ctor_m516856734,
+	Texture_Internal_GetWidth_m1143336192,
+	Texture_Internal_GetHeight_m1065663213,
+	Texture_get_width_m1557399609,
+	Texture_get_height_m1538561974,
 	Texture2D__ctor_m1883511258,
 	Texture2D_Internal_Create_m457592211,
+	Texture2D_get_whiteTexture_m1214146742,
+	Texture2D_GetPixelBilinear_m2169326019,
+	Texture2D_INTERNAL_CALL_GetPixelBilinear_m2056702809,
+	Time_get_deltaTime_m2741110510,
+	Time_get_unscaledTime_m319114521,
+	Time_get_unscaledDeltaTime_m285638843,
+	Time_get_realtimeSinceStartup_m2972554983,
+	TooltipAttribute__ctor_m3341446606,
+	Touch_get_fingerId_m1427167959,
 	Touch_get_position_m1943849441,
 	Touch_get_phase_m3314549414,
+	Touch_get_type_m1428398012,
+	TouchScreenKeyboard__ctor_m3607055310,
+	TouchScreenKeyboard_Destroy_m3865079199,
+	TouchScreenKeyboard_Finalize_m541415163,
+	TouchScreenKeyboard_TouchScreenKeyboard_InternalConstructorHelper_m3839791280,
+	TouchScreenKeyboard_get_isSupported_m2472329766,
+	TouchScreenKeyboard_Open_m3070776627,
+	TouchScreenKeyboard_Open_m751274250,
+	TouchScreenKeyboard_Open_m3970504870,
+	TouchScreenKeyboard_get_text_m2874389744,
+	TouchScreenKeyboard_set_text_m1654889403,
+	TouchScreenKeyboard_set_hideInput_m2518551559,
+	TouchScreenKeyboard_get_active_m4287082086,
+	TouchScreenKeyboard_set_active_m3667959159,
+	TouchScreenKeyboard_get_done_m25268130,
+	TouchScreenKeyboard_get_wasCanceled_m3910688420,
+	TrackedReference_Equals_m732758423,
+	TrackedReference_GetHashCode_m894516347,
+	TrackedReference_op_Equality_m4125598506,
 	Transform_get_position_m2211398607,
 	Transform_set_position_m3111394108,
 	Transform_INTERNAL_get_position_m1705230066,
 	Transform_INTERNAL_set_position_m1126232166,
+	Transform_get_localPosition_m668140784,
+	Transform_set_localPosition_m3504330903,
+	Transform_INTERNAL_get_localPosition_m2703574131,
+	Transform_INTERNAL_set_localPosition_m221305727,
 	Transform_get_forward_m877665793,
 	Transform_get_rotation_m11483428,
 	Transform_INTERNAL_get_rotation_m2389720173,
+	Transform_get_localRotation_m3343229381,
+	Transform_set_localRotation_m3719981474,
+	Transform_INTERNAL_get_localRotation_m1409235788,
+	Transform_INTERNAL_set_localRotation_m2898114752,
+	Transform_get_localScale_m3886572677,
+	Transform_set_localScale_m310756934,
+	Transform_INTERNAL_get_localScale_m1534477480,
+	Transform_INTERNAL_set_localScale_m3463244060,
+	Transform_get_parent_m2236876972,
+	Transform_set_parent_m3231272063,
+	Transform_get_parentInternal_m3763475785,
+	Transform_set_parentInternal_m1254352386,
+	Transform_SetParent_m3449663462,
+	Transform_SetParent_m263985879,
+	Transform_get_worldToLocalMatrix_m3792395652,
+	Transform_INTERNAL_get_worldToLocalMatrix_m3861589095,
+	Transform_TransformPoint_m437395512,
+	Transform_INTERNAL_CALL_TransformPoint_m1435510371,
 	Transform_InverseTransformPoint_m1626812000,
 	Transform_INTERNAL_CALL_InverseTransformPoint_m1782292189,
 	Transform_get_childCount_m2107810675,
+	Transform_SetAsFirstSibling_m1746075601,
+	Transform_IsChildOf_m3321648579,
 	Transform_GetEnumerator_m688365631,
 	Transform_GetChild_m4040462992,
 	Enumerator__ctor_m856668951,
 	Enumerator_get_Current_m1838268607,
 	Enumerator_MoveNext_m1095530856,
 	Enumerator_Reset_m258411155,
+	UIVertex__cctor_m2134470424,
 	UnhandledExceptionHandler_RegisterUECatcher_m143130254,
 	UnhandledExceptionHandler_HandleUnhandledException_m4033241923,
 	UnhandledExceptionHandler_PrintException_m3142367935,
@@ -16034,43 +19311,1521 @@ extern const Il2CppMethodPointer g_MethodPointers[8038] =
 	UnityException__ctor_m2780758535,
 	UnityException__ctor_m2001840532,
 	UnityString_Format_m427603113,
+	Vector2__ctor_m1517109030,
+	Vector2_get_Item_m2185542843,
+	Vector2_set_Item_m2767519328,
+	Vector2_Scale_m1743563745,
 	Vector2_ToString_m3859776067,
 	Vector2_GetHashCode_m128434585,
 	Vector2_Equals_m3404198849,
+	Vector2_Dot_m2437602225,
+	Vector2_get_sqrMagnitude_m996072851,
+	Vector2_SqrMagnitude_m4007443280,
+	Vector2_get_zero_m199872368,
+	Vector2_get_one_m2767488832,
+	Vector2_get_up_m1197831267,
+	Vector2_get_right_m3495203638,
+	Vector2_op_Addition_m1173049553,
+	Vector2_op_Subtraction_m2097149401,
+	Vector2_op_Multiply_m1738245082,
+	Vector2_op_Division_m747627697,
+	Vector2_op_Equality_m1927481448,
+	Vector2_op_Inequality_m1638984867,
+	Vector2_op_Implicit_m4083860659,
 	Vector2_op_Implicit_m482286037,
 	Vector3__ctor_m2926210380,
+	Vector3__ctor_m1846874791,
+	Vector3_Lerp_m650470329,
 	Vector3_get_Item_m108333500,
+	Vector3_set_Item_m1844835745,
 	Vector3_GetHashCode_m3912867704,
 	Vector3_Equals_m3337192096,
+	Vector3_Normalize_m3047997355,
+	Vector3_get_normalized_m2650940353,
 	Vector3_ToString_m3566373060,
+	Vector3_Dot_m2370485424,
+	Vector3_Distance_m3366690344,
+	Vector3_Magnitude_m995314358,
+	Vector3_SqrMagnitude_m1662776270,
+	Vector3_get_sqrMagnitude_m1207423764,
+	Vector3_Min_m10392601,
+	Vector3_Max_m545730887,
 	Vector3_get_zero_m2017759730,
+	Vector3_get_one_m886467710,
 	Vector3_get_forward_m1039372701,
+	Vector3_get_back_m1326515313,
+	Vector3_get_up_m4046647141,
+	Vector3_get_down_m1397301612,
+	Vector3_get_left_m1616598929,
+	Vector3_get_right_m4015137012,
 	Vector3_op_Addition_m695438225,
 	Vector3_op_Subtraction_m2842958165,
 	Vector3_op_Multiply_m973638459,
 	Vector3_op_Division_m4277988370,
+	Vector3_op_Equality_m582817895,
+	Vector3_op_Inequality_m231387234,
 	Vector4__ctor_m2441427762,
+	Vector4_get_Item_m2326091453,
+	Vector4_set_Item_m922152162,
 	Vector4_GetHashCode_m3402333527,
 	Vector4_Equals_m3270185343,
 	Vector4_ToString_m3272970053,
+	Vector4_Dot_m2303368623,
+	Vector4_SqrMagnitude_m3613076556,
+	Vector4_get_sqrMagnitude_m1418774677,
+	Vector4_get_zero_m3835647092,
+	Vector4_op_Subtraction_m3588766929,
+	Vector4_op_Division_m3513381747,
+	Vector4_op_Equality_m3533121638,
 	WaitForEndOfFrame__ctor_m4124201226,
 	WaitForFixedUpdate__ctor_m2916734308,
 	WaitForSeconds__ctor_m3184996201,
 	WrapperlessIcall__ctor_m1888400594,
 	WritableAttribute__ctor_m2205809533,
 	YieldInstruction__ctor_m539393484,
+	GenericStack__ctor_m2328546233,
 	MathfInternal__cctor_m2600550988,
+	NetFxCoreExtensions_CreateDelegate_m3408605866,
+	NetFxCoreExtensions_GetMethodInfo_m1628849205,
 	TypeInferenceRuleAttribute__ctor_m1168575159,
 	TypeInferenceRuleAttribute__ctor_m2173394041,
 	TypeInferenceRuleAttribute_ToString_m318752778,
+	U3CPrivateImplementationDetailsU3E__ctor_m2615655811,
+	AbstractEventData__ctor_m3016870691,
+	AbstractEventData_Reset_m663303632,
+	AbstractEventData_Use_m245202952,
+	AbstractEventData_get_used_m4054984437,
+	AxisEventData__ctor_m3411840806,
+	AxisEventData_get_moveVector_m2997093594,
+	AxisEventData_set_moveVector_m286185191,
+	AxisEventData_get_moveDir_m2739466109,
+	AxisEventData_set_moveDir_m2213568926,
+	BaseEventData__ctor_m3246352982,
+	BaseEventData_get_currentInputModule_m502779959,
+	BaseEventData_get_selectedObject_m2003968484,
+	BaseEventData_set_selectedObject_m3912430657,
+	BaseInputModule__ctor_m2920801056,
+	BaseInputModule_get_eventSystem_m3949125731,
+	BaseInputModule_OnEnable_m3913388134,
+	BaseInputModule_OnDisable_m1496885127,
+	BaseInputModule_FindFirstRaycast_m3775114583,
+	BaseInputModule_DetermineMoveDirection_m1298463611,
+	BaseInputModule_DetermineMoveDirection_m1501057824,
+	BaseInputModule_FindCommonRoot_m1904275501,
+	BaseInputModule_HandlePointerExitAndEnter_m779127058,
+	BaseInputModule_GetAxisEventData_m3789039491,
+	BaseInputModule_GetBaseEventData_m1707430642,
+	BaseInputModule_IsPointerOverGameObject_m674758553,
+	BaseInputModule_ShouldActivateModule_m222600132,
+	BaseInputModule_DeactivateModule_m2572518820,
+	BaseInputModule_ActivateModule_m1091790819,
+	BaseInputModule_UpdateModule_m2691994233,
+	BaseInputModule_IsModuleSupported_m4245324872,
+	BaseRaycaster__ctor_m2197027296,
+	BaseRaycaster_get_priority_m2850487385,
+	BaseRaycaster_get_sortOrderPriority_m1812907489,
+	BaseRaycaster_get_renderOrderPriority_m486229993,
+	BaseRaycaster_ToString_m540855283,
+	BaseRaycaster_OnEnable_m2705129894,
+	BaseRaycaster_OnDisable_m2695585351,
+	EventSystem__ctor_m1614698108,
+	EventSystem__cctor_m2328904881,
+	EventSystem_get_current_m3483537871,
+	EventSystem_set_current_m3070848986,
+	EventSystem_get_sendNavigationEvents_m2758658484,
+	EventSystem_set_sendNavigationEvents_m332228817,
+	EventSystem_get_pixelDragThreshold_m3269248010,
+	EventSystem_set_pixelDragThreshold_m3094844391,
+	EventSystem_get_currentInputModule_m1694913485,
+	EventSystem_get_firstSelectedGameObject_m540473918,
+	EventSystem_set_firstSelectedGameObject_m1040716465,
+	EventSystem_get_currentSelectedGameObject_m4236083783,
+	EventSystem_get_lastSelectedGameObject_m2351525314,
+	EventSystem_UpdateModules_m2696555928,
+	EventSystem_get_alreadySelecting_m3074958957,
+	EventSystem_SetSelectedGameObject_m2116591616,
+	EventSystem_get_baseEventDataCache_m1763003665,
+	EventSystem_SetSelectedGameObject_m1869236832,
+	EventSystem_RaycastComparer_m3178660990,
+	EventSystem_RaycastAll_m538533603,
+	EventSystem_IsPointerOverGameObject_m4276458404,
+	EventSystem_IsPointerOverGameObject_m4003394293,
+	EventSystem_OnEnable_m1909198730,
+	EventSystem_OnDisable_m3791523043,
+	EventSystem_TickModules_m4074329476,
+	EventSystem_Update_m242895889,
+	EventSystem_ChangeEventModule_m1717769816,
+	EventSystem_ToString_m3844548247,
+	EventTrigger__ctor_m3410186115,
+	EventTrigger_get_triggers_m900961340,
+	EventTrigger_set_triggers_m2956640203,
+	EventTrigger_Execute_m1768335209,
+	EventTrigger_OnPointerEnter_m3698974435,
+	EventTrigger_OnPointerExit_m4069405409,
+	EventTrigger_OnDrag_m621966250,
+	EventTrigger_OnDrop_m1949092623,
+	EventTrigger_OnPointerDown_m3676323037,
+	EventTrigger_OnPointerUp_m902762948,
+	EventTrigger_OnPointerClick_m4229222963,
+	EventTrigger_OnSelect_m3604185014,
+	EventTrigger_OnDeselect_m1138247351,
+	EventTrigger_OnScroll_m2448369713,
+	EventTrigger_OnMove_m4043957787,
+	EventTrigger_OnUpdateSelected_m1400064574,
+	EventTrigger_OnInitializePotentialDrag_m802339386,
+	EventTrigger_OnBeginDrag_m356440287,
+	EventTrigger_OnEndDrag_m168497709,
+	EventTrigger_OnSubmit_m974012114,
+	EventTrigger_OnCancel_m972464948,
+	Entry__ctor_m515618144,
+	TriggerEvent__ctor_m1729711890,
+	ExecuteEvents__cctor_m2728541814,
+	ExecuteEvents_Execute_m3788527851,
+	ExecuteEvents_Execute_m2062412449,
+	ExecuteEvents_Execute_m1462933149,
+	ExecuteEvents_Execute_m225834756,
+	ExecuteEvents_Execute_m153166907,
+	ExecuteEvents_Execute_m3770536826,
+	ExecuteEvents_Execute_m2468788383,
+	ExecuteEvents_Execute_m1192678962,
+	ExecuteEvents_Execute_m1674228205,
+	ExecuteEvents_Execute_m1220342551,
+	ExecuteEvents_Execute_m1271506489,
+	ExecuteEvents_Execute_m3050600610,
+	ExecuteEvents_Execute_m1947619370,
+	ExecuteEvents_Execute_m279235849,
+	ExecuteEvents_Execute_m1420971509,
+	ExecuteEvents_Execute_m951556494,
+	ExecuteEvents_Execute_m3179930348,
+	ExecuteEvents_get_pointerEnterHandler_m2954525018,
+	ExecuteEvents_get_pointerExitHandler_m509229616,
+	ExecuteEvents_get_pointerDownHandler_m916646952,
+	ExecuteEvents_get_pointerUpHandler_m1834169334,
+	ExecuteEvents_get_pointerClickHandler_m2881872730,
+	ExecuteEvents_get_initializePotentialDrag_m3514083626,
+	ExecuteEvents_get_beginDragHandler_m1163039340,
+	ExecuteEvents_get_dragHandler_m1884359226,
+	ExecuteEvents_get_endDragHandler_m811393096,
+	ExecuteEvents_get_dropHandler_m1933111770,
+	ExecuteEvents_get_scrollHandler_m62853082,
+	ExecuteEvents_get_updateSelectedHandler_m2735401530,
+	ExecuteEvents_get_selectHandler_m1963257146,
+	ExecuteEvents_get_deselectHandler_m2539146650,
+	ExecuteEvents_get_moveHandler_m1400410010,
+	ExecuteEvents_get_submitHandler_m3307200186,
+	ExecuteEvents_get_cancelHandler_m120249338,
+	ExecuteEvents_GetEventChain_m1321751930,
+	ExecuteEvents_U3Cs_HandlerListPoolU3Em__0_m1727672693,
+	Physics2DRaycaster__ctor_m3212916644,
+	Physics2DRaycaster_Raycast_m4133606104,
+	PhysicsRaycaster__ctor_m4288212754,
+	PhysicsRaycaster_get_eventCamera_m810838145,
+	PhysicsRaycaster_get_depth_m589853138,
+	PhysicsRaycaster_get_finalEventMask_m2246936003,
+	PhysicsRaycaster_get_eventMask_m610257178,
+	PhysicsRaycaster_set_eventMask_m3869486707,
+	PhysicsRaycaster_Raycast_m743134250,
+	PhysicsRaycaster_U3CRaycastU3Em__1_m3832860601,
+	PointerEventData__ctor_m82194942,
+	PointerEventData_get_pointerEnter_m1754340511,
+	PointerEventData_set_pointerEnter_m3909544698,
+	PointerEventData_get_lastPress_m3682396203,
+	PointerEventData_set_lastPress_m1523028000,
+	PointerEventData_get_rawPointerPress_m4005541676,
+	PointerEventData_set_rawPointerPress_m505214625,
+	PointerEventData_get_pointerDrag_m2109300143,
+	PointerEventData_set_pointerDrag_m1194168164,
+	PointerEventData_get_pointerCurrentRaycast_m874132826,
+	PointerEventData_set_pointerCurrentRaycast_m2884097807,
+	PointerEventData_get_pointerPressRaycast_m990488592,
+	PointerEventData_set_pointerPressRaycast_m126348485,
+	PointerEventData_get_eligibleForClick_m804806107,
+	PointerEventData_set_eligibleForClick_m4124670100,
+	PointerEventData_get_pointerId_m315063471,
+	PointerEventData_set_pointerId_m204336548,
+	PointerEventData_get_position_m2263123361,
+	PointerEventData_set_position_m1287828138,
+	PointerEventData_get_delta_m4112242786,
+	PointerEventData_set_delta_m3480102791,
+	PointerEventData_get_pressPosition_m2718149942,
+	PointerEventData_set_pressPosition_m3056630579,
+	PointerEventData_get_worldPosition_m489722276,
+	PointerEventData_set_worldPosition_m914315875,
+	PointerEventData_get_worldNormal_m3470386274,
+	PointerEventData_set_worldNormal_m2060170853,
+	PointerEventData_get_clickTime_m2529670096,
+	PointerEventData_set_clickTime_m3487651291,
+	PointerEventData_get_clickCount_m341347570,
+	PointerEventData_set_clickCount_m2279104927,
+	PointerEventData_get_scrollDelta_m3602781717,
+	PointerEventData_set_scrollDelta_m3507625908,
+	PointerEventData_get_useDragThreshold_m2749684085,
+	PointerEventData_set_useDragThreshold_m2530254510,
+	PointerEventData_get_dragging_m3319220148,
+	PointerEventData_set_dragging_m1730892973,
+	PointerEventData_get_button_m796143251,
+	PointerEventData_set_button_m2720287992,
+	PointerEventData_IsPointerMoving_m1462208007,
+	PointerEventData_IsScrolling_m2052637201,
+	PointerEventData_get_enterEventCamera_m1535306943,
+	PointerEventData_get_pressEventCamera_m2764092724,
+	PointerEventData_get_pointerPress_m3028028234,
+	PointerEventData_set_pointerPress_m3037509477,
+	PointerEventData_ToString_m746384051,
+	PointerInputModule__ctor_m2748126408,
+	PointerInputModule_GetPointerData_m1554981113,
+	PointerInputModule_RemovePointerData_m3101459861,
+	PointerInputModule_GetTouchPointerEventData_m2194758459,
+	PointerInputModule_CopyFromTo_m431867808,
+	PointerInputModule_StateForMouseButton_m1241430345,
+	PointerInputModule_GetMousePointerEventData_m1489718224,
+	PointerInputModule_GetMousePointerEventData_m3291859233,
+	PointerInputModule_GetLastPointerEventData_m238778665,
+	PointerInputModule_ShouldStartDrag_m1910083073,
+	PointerInputModule_ProcessMove_m2382689080,
+	PointerInputModule_ProcessDrag_m1875452405,
+	PointerInputModule_IsPointerOverGameObject_m1132541469,
+	PointerInputModule_ClearSelection_m1490775995,
+	PointerInputModule_ToString_m1837754533,
+	PointerInputModule_DeselectIfSelectionChanged_m522880394,
+	ButtonState__ctor_m858021496,
+	ButtonState_get_eventData_m3874795698,
+	ButtonState_set_eventData_m471696551,
+	ButtonState_get_button_m3169210133,
+	ButtonState_set_button_m2005500214,
+	MouseButtonEventData__ctor_m4233842466,
+	MouseButtonEventData_PressedThisFrame_m3377699805,
+	MouseButtonEventData_ReleasedThisFrame_m949274724,
+	MouseState__ctor_m2621211907,
+	MouseState_AnyPressesThisFrame_m3921583709,
+	MouseState_AnyReleasesThisFrame_m2672125158,
+	MouseState_GetButtonState_m96912714,
+	MouseState_SetButtonState_m3470421591,
+	RaycasterManager__cctor_m1509381251,
+	RaycasterManager_AddRaycaster_m4159868023,
+	RaycasterManager_GetRaycasters_m4152256966,
+	RaycasterManager_RemoveRaycasters_m4290330819,
+	RaycastResult_get_gameObject_m1138099278,
+	RaycastResult_set_gameObject_m726369707,
+	RaycastResult_get_isValid_m3098154392,
+	RaycastResult_Clear_m2117708874,
+	RaycastResult_ToString_m2924263764,
+	StandaloneInputModule__ctor_m3585261844,
+	StandaloneInputModule_get_inputMode_m3683217473,
+	StandaloneInputModule_get_allowActivationOnMobileDevice_m898677649,
+	StandaloneInputModule_set_allowActivationOnMobileDevice_m2716306402,
+	StandaloneInputModule_get_forceModuleActive_m4263603128,
+	StandaloneInputModule_set_forceModuleActive_m2821456585,
+	StandaloneInputModule_get_inputActionsPerSecond_m386579003,
+	StandaloneInputModule_set_inputActionsPerSecond_m3962672568,
+	StandaloneInputModule_get_repeatDelay_m756347909,
+	StandaloneInputModule_set_repeatDelay_m3283777070,
+	StandaloneInputModule_get_horizontalAxis_m4124505505,
+	StandaloneInputModule_set_horizontalAxis_m1994117648,
+	StandaloneInputModule_get_verticalAxis_m828001843,
+	StandaloneInputModule_set_verticalAxis_m3009801854,
+	StandaloneInputModule_get_submitButton_m1573295782,
+	StandaloneInputModule_set_submitButton_m3989846251,
+	StandaloneInputModule_get_cancelButton_m3049849608,
+	StandaloneInputModule_set_cancelButton_m822377417,
+	StandaloneInputModule_UpdateModule_m4260747781,
+	StandaloneInputModule_IsModuleSupported_m1519744700,
+	StandaloneInputModule_ShouldActivateModule_m3115394256,
+	StandaloneInputModule_ActivateModule_m1130429551,
+	StandaloneInputModule_DeactivateModule_m1049634608,
+	StandaloneInputModule_Process_m3720469665,
+	StandaloneInputModule_ProcessTouchEvents_m3567487943,
+	StandaloneInputModule_ProcessTouchPress_m2953705401,
+	StandaloneInputModule_SendSubmitEventToSelectedObject_m2183743635,
+	StandaloneInputModule_GetRawMoveVector_m3480660049,
+	StandaloneInputModule_SendMoveEventToSelectedObject_m439066490,
+	StandaloneInputModule_ProcessMouseEvent_m2927305846,
+	StandaloneInputModule_ProcessMouseEvent_m1104664775,
+	StandaloneInputModule_SendUpdateEventToSelectedObject_m1730287810,
+	StandaloneInputModule_ProcessMousePress_m794465737,
+	TouchInputModule__ctor_m339421258,
+	TouchInputModule_get_allowActivationOnStandalone_m2975554192,
+	TouchInputModule_set_allowActivationOnStandalone_m2844331589,
+	TouchInputModule_get_forceModuleActive_m3711716298,
+	TouchInputModule_set_forceModuleActive_m3663751039,
+	TouchInputModule_UpdateModule_m1492847119,
+	TouchInputModule_IsModuleSupported_m3258396622,
+	TouchInputModule_ShouldActivateModule_m1989212798,
+	TouchInputModule_UseFakeInput_m1788394586,
+	TouchInputModule_Process_m2613923415,
+	TouchInputModule_FakeTouches_m1483201856,
+	TouchInputModule_ProcessTouchEvents_m2652204291,
+	TouchInputModule_ProcessTouchPress_m3277592771,
+	TouchInputModule_DeactivateModule_m873087546,
+	TouchInputModule_ToString_m2343614755,
+	UIBehaviour__ctor_m1261553468,
+	UIBehaviour_Awake_m1499158687,
+	UIBehaviour_OnEnable_m4047103690,
+	UIBehaviour_Start_m208691260,
+	UIBehaviour_OnDisable_m1347100067,
+	UIBehaviour_OnDestroy_m3524632117,
+	UIBehaviour_IsActive_m3417391654,
+	UIBehaviour_OnRectTransformDimensionsChange_m406568928,
+	UIBehaviour_OnBeforeTransformParentChanged_m216909636,
+	UIBehaviour_OnTransformParentChanged_m1017023781,
+	UIBehaviour_OnDidApplyAnimationProperties_m1721800419,
+	UIBehaviour_OnCanvasGroupChanged_m2106086004,
+	UIBehaviour_OnCanvasHierarchyChanged_m1210291326,
+	UIBehaviour_IsDestroyed_m3027499227,
+	AnimationTriggers__ctor_m4034548412,
+	AnimationTriggers_get_normalTrigger_m326085791,
+	AnimationTriggers_set_normalTrigger_m2497706644,
+	AnimationTriggers_get_highlightedTrigger_m1862702265,
+	AnimationTriggers_set_highlightedTrigger_m3911773112,
+	AnimationTriggers_get_pressedTrigger_m3081240394,
+	AnimationTriggers_set_pressedTrigger_m763343943,
+	AnimationTriggers_get_disabledTrigger_m2031458154,
+	AnimationTriggers_set_disabledTrigger_m472449385,
+	AspectRatioFitter__ctor_m832848312,
+	AspectRatioFitter_get_aspectMode_m1442516665,
+	AspectRatioFitter_set_aspectMode_m3373690308,
+	AspectRatioFitter_get_aspectRatio_m1760059860,
+	AspectRatioFitter_set_aspectRatio_m934620095,
+	AspectRatioFitter_get_rectTransform_m3884626579,
+	AspectRatioFitter_OnEnable_m1429572302,
+	AspectRatioFitter_OnDisable_m1808005663,
+	AspectRatioFitter_OnRectTransformDimensionsChange_m1500370780,
+	AspectRatioFitter_UpdateRect_m1803770713,
+	AspectRatioFitter_GetSizeDeltaToProduceSize_m1662613595,
+	AspectRatioFitter_GetParentSize_m642682972,
+	AspectRatioFitter_SetLayoutHorizontal_m4171834758,
+	AspectRatioFitter_SetLayoutVertical_m815552664,
+	AspectRatioFitter_SetDirty_m1662064540,
+	BaseMeshEffect__ctor_m2332499996,
+	BaseMeshEffect_get_graphic_m2567098443,
+	BaseMeshEffect_OnEnable_m1303077354,
+	BaseMeshEffect_OnDisable_m2181629571,
+	BaseMeshEffect_OnDidApplyAnimationProperties_m4231090115,
+	BaseMeshEffect_ModifyMesh_m4260756811,
+	BaseVertexEffect__ctor_m1287105989,
+	Button__ctor_m3363033049,
+	Button_get_onClick_m1145127631,
+	Button_set_onClick_m2495243460,
+	Button_Press_m3889091706,
+	Button_OnPointerClick_m2363576585,
+	Button_OnSubmit_m3916273468,
+	Button_OnFinishSubmit_m46760755,
+	U3COnFinishSubmitU3Ec__Iterator1__ctor_m299272262,
+	U3COnFinishSubmitU3Ec__Iterator1_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m784619862,
+	U3COnFinishSubmitU3Ec__Iterator1_System_Collections_IEnumerator_get_Current_m353356010,
+	U3COnFinishSubmitU3Ec__Iterator1_MoveNext_m2222960880,
+	U3COnFinishSubmitU3Ec__Iterator1_Dispose_m4031085315,
+	U3COnFinishSubmitU3Ec__Iterator1_Reset_m2240672499,
+	ButtonClickedEvent__ctor_m1416137305,
+	CanvasScaler__ctor_m2274485483,
+	CanvasScaler_get_uiScaleMode_m1718779723,
+	CanvasScaler_set_uiScaleMode_m2713670988,
+	CanvasScaler_get_referencePixelsPerUnit_m1471911967,
+	CanvasScaler_set_referencePixelsPerUnit_m2513762540,
+	CanvasScaler_get_scaleFactor_m2444679941,
+	CanvasScaler_set_scaleFactor_m1527181766,
+	CanvasScaler_get_referenceResolution_m484379826,
+	CanvasScaler_set_referenceResolution_m4024849975,
+	CanvasScaler_get_screenMatchMode_m2287362655,
+	CanvasScaler_set_screenMatchMode_m1314095482,
+	CanvasScaler_get_matchWidthOrHeight_m3211176417,
+	CanvasScaler_set_matchWidthOrHeight_m500879978,
+	CanvasScaler_get_physicalUnit_m3572932406,
+	CanvasScaler_set_physicalUnit_m1052630401,
+	CanvasScaler_get_fallbackScreenDPI_m2341917339,
+	CanvasScaler_set_fallbackScreenDPI_m979123696,
+	CanvasScaler_get_defaultSpriteDPI_m2728800301,
+	CanvasScaler_set_defaultSpriteDPI_m1099048862,
+	CanvasScaler_get_dynamicPixelsPerUnit_m3811209707,
+	CanvasScaler_set_dynamicPixelsPerUnit_m1481681568,
+	CanvasScaler_OnEnable_m3864540859,
+	CanvasScaler_OnDisable_m4277586898,
+	CanvasScaler_Update_m3516435330,
+	CanvasScaler_Handle_m2195907873,
+	CanvasScaler_HandleWorldCanvas_m1282362827,
+	CanvasScaler_HandleConstantPixelSize_m22621284,
+	CanvasScaler_HandleScaleWithScreenSize_m3412612446,
+	CanvasScaler_HandleConstantPhysicalSize_m1320301949,
+	CanvasScaler_SetScaleFactor_m376581883,
+	CanvasScaler_SetReferencePixelsPerUnit_m96000151,
+	CanvasUpdateRegistry__ctor_m4143486701,
+	CanvasUpdateRegistry__cctor_m3411939936,
+	CanvasUpdateRegistry_get_instance_m1077376867,
+	CanvasUpdateRegistry_ObjectValidForUpdate_m3662506294,
+	CanvasUpdateRegistry_CleanInvalidItems_m3668170109,
+	CanvasUpdateRegistry_PerformUpdate_m4284602133,
+	CanvasUpdateRegistry_ParentCount_m1557937541,
+	CanvasUpdateRegistry_SortLayoutList_m217615053,
+	CanvasUpdateRegistry_RegisterCanvasElementForLayoutRebuild_m1282865408,
+	CanvasUpdateRegistry_TryRegisterCanvasElementForLayoutRebuild_m3477281917,
+	CanvasUpdateRegistry_InternalRegisterCanvasElementForLayoutRebuild_m584808143,
+	CanvasUpdateRegistry_RegisterCanvasElementForGraphicRebuild_m1487849090,
+	CanvasUpdateRegistry_TryRegisterCanvasElementForGraphicRebuild_m795284133,
+	CanvasUpdateRegistry_InternalRegisterCanvasElementForGraphicRebuild_m1322910355,
+	CanvasUpdateRegistry_UnRegisterCanvasElementForRebuild_m2188113711,
+	CanvasUpdateRegistry_InternalUnRegisterCanvasElementForLayoutRebuild_m1911897302,
+	CanvasUpdateRegistry_InternalUnRegisterCanvasElementForGraphicRebuild_m3807968620,
+	CanvasUpdateRegistry_IsRebuildingLayout_m1167551012,
+	CanvasUpdateRegistry_IsRebuildingGraphics_m2979891973,
+	ClipperRegistry__ctor_m3311832913,
+	ClipperRegistry_get_instance_m1642325505,
+	ClipperRegistry_Cull_m2386993349,
+	ClipperRegistry_Register_m2777461237,
+	ClipperRegistry_Unregister_m926013180,
+	Clipping_FindCullAndClipWorldRect_m3007966961,
+	Clipping_RectIntersect_m2589422792,
+	ColorBlock_get_normalColor_m1021113593,
+	ColorBlock_set_normalColor_m2914277480,
+	ColorBlock_get_highlightedColor_m2834784533,
+	ColorBlock_set_highlightedColor_m4179336310,
+	ColorBlock_get_pressedColor_m2014354534,
+	ColorBlock_set_pressedColor_m830240709,
+	ColorBlock_get_disabledColor_m2484721348,
+	ColorBlock_set_disabledColor_m215468861,
+	ColorBlock_get_colorMultiplier_m2799886278,
+	ColorBlock_set_colorMultiplier_m1029562789,
+	ColorBlock_get_fadeDuration_m2386809488,
+	ColorBlock_set_fadeDuration_m1171991323,
+	ColorBlock_get_defaultColorBlock_m533915527,
+	ColorBlock_Equals_m4183618976,
+	ColorBlock_Equals_m3761062129,
+	ColorBlock_GetHashCode_m2259731448,
+	ColorBlock_op_Equality_m1998893503,
+	ColorBlock_op_Inequality_m2751981882,
+	ContentSizeFitter__ctor_m3832398161,
+	ContentSizeFitter_get_horizontalFit_m2851743464,
+	ContentSizeFitter_set_horizontalFit_m798679123,
+	ContentSizeFitter_get_verticalFit_m2576006486,
+	ContentSizeFitter_set_verticalFit_m4130929281,
+	ContentSizeFitter_get_rectTransform_m1096586412,
+	ContentSizeFitter_OnEnable_m4224530581,
+	ContentSizeFitter_OnDisable_m2552366392,
+	ContentSizeFitter_OnRectTransformDimensionsChange_m733583797,
+	ContentSizeFitter_HandleSelfFittingAlongAxis_m2083972471,
+	ContentSizeFitter_SetLayoutHorizontal_m629859679,
+	ContentSizeFitter_SetLayoutVertical_m2322479793,
+	ContentSizeFitter_SetDirty_m162055523,
+	ColorTween_get_startColor_m2341745789,
+	ColorTween_set_startColor_m1548058556,
+	ColorTween_get_targetColor_m3334930584,
+	ColorTween_set_targetColor_m1091345019,
+	ColorTween_get_tweenMode_m4011161954,
+	ColorTween_set_tweenMode_m1316837809,
+	ColorTween_get_duration_m2603018997,
+	ColorTween_set_duration_m347866734,
+	ColorTween_get_ignoreTimeScale_m27222826,
+	ColorTween_set_ignoreTimeScale_m4222585787,
+	ColorTween_TweenValue_m3209849337,
+	ColorTween_AddOnChangedCallback_m1109647485,
+	ColorTween_GetIgnoreTimescale_m2054009071,
+	ColorTween_GetDuration_m1400665524,
+	ColorTween_ValidTarget_m2504867349,
+	ColorTweenCallback__ctor_m1815857490,
+	FloatTween_get_startValue_m3485407671,
+	FloatTween_set_startValue_m367615212,
+	FloatTween_get_targetValue_m197139962,
+	FloatTween_set_targetValue_m27109721,
+	FloatTween_get_duration_m108772764,
+	FloatTween_set_duration_m4177197863,
+	FloatTween_get_ignoreTimeScale_m1786680995,
+	FloatTween_set_ignoreTimeScale_m556709748,
+	FloatTween_TweenValue_m1980315890,
+	FloatTween_AddOnChangedCallback_m2815182481,
+	FloatTween_GetIgnoreTimescale_m1972218454,
+	FloatTween_GetDuration_m2290037293,
+	FloatTween_ValidTarget_m3394239118,
+	FloatTweenCallback__ctor_m2342804402,
+	DefaultControls__cctor_m1303793449,
+	DefaultControls_CreateUIElementRoot_m335662421,
+	DefaultControls_CreateUIObject_m1826457530,
+	DefaultControls_SetDefaultTextValues_m2676194036,
+	DefaultControls_SetDefaultColorTransitionValues_m2995057500,
+	DefaultControls_SetParentAndAlign_m867848490,
+	DefaultControls_SetLayerRecursively_m2948337421,
+	DefaultControls_CreatePanel_m131101809,
+	DefaultControls_CreateButton_m2909407539,
+	DefaultControls_CreateText_m414838766,
+	DefaultControls_CreateImage_m3925407496,
+	DefaultControls_CreateRawImage_m383828052,
+	DefaultControls_CreateSlider_m3090010146,
+	DefaultControls_CreateScrollbar_m2399849235,
+	DefaultControls_CreateToggle_m1602114261,
+	DefaultControls_CreateInputField_m3813899985,
+	DefaultControls_CreateDropdown_m481152210,
+	DefaultControls_CreateScrollView_m2763877395,
+	Dropdown__ctor_m3574287322,
+	Dropdown__cctor_m2946628371,
+	Dropdown_get_template_m3674548779,
+	Dropdown_set_template_m498709600,
+	Dropdown_get_captionText_m1044804357,
+	Dropdown_set_captionText_m4143100948,
+	Dropdown_get_captionImage_m3689507433,
+	Dropdown_set_captionImage_m3401548772,
+	Dropdown_get_itemText_m2015261424,
+	Dropdown_set_itemText_m3975071291,
+	Dropdown_get_itemImage_m2263268950,
+	Dropdown_set_itemImage_m838838347,
+	Dropdown_get_options_m399918042,
+	Dropdown_set_options_m4132251955,
+	Dropdown_get_onValueChanged_m2646663760,
+	Dropdown_set_onValueChanged_m2821991323,
+	Dropdown_get_value_m3628689352,
+	Dropdown_set_value_m2635023165,
+	Dropdown_Awake_m3811892541,
+	Dropdown_RefreshShownValue_m9458643,
+	Dropdown_AddOptions_m1960749669,
+	Dropdown_AddOptions_m4199474459,
+	Dropdown_AddOptions_m1674488487,
+	Dropdown_ClearOptions_m1343016059,
+	Dropdown_SetupTemplate_m2277850703,
+	Dropdown_OnPointerClick_m3417107146,
+	Dropdown_OnSubmit_m3218526299,
+	Dropdown_OnCancel_m3216979133,
+	Dropdown_Show_m2564525543,
+	Dropdown_CreateBlocker_m4177511350,
+	Dropdown_DestroyBlocker_m442421122,
+	Dropdown_CreateDropdownList_m1827964190,
+	Dropdown_DestroyDropdownList_m2466702489,
+	Dropdown_CreateItem_m3067956674,
+	Dropdown_DestroyItem_m927755334,
+	Dropdown_AddItem_m2798122239,
+	Dropdown_AlphaFadeList_m2508072608,
+	Dropdown_AlphaFadeList_m3646986629,
+	Dropdown_SetAlpha_m3190511269,
+	Dropdown_Hide_m2250183404,
+	Dropdown_DelayedDestroyDropdownList_m3972931676,
+	Dropdown_OnSelectItem_m2377815715,
+	U3CDelayedDestroyDropdownListU3Ec__Iterator2__ctor_m1282717409,
+	U3CDelayedDestroyDropdownListU3Ec__Iterator2_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m2519696603,
+	U3CDelayedDestroyDropdownListU3Ec__Iterator2_System_Collections_IEnumerator_get_Current_m2793709167,
+	U3CDelayedDestroyDropdownListU3Ec__Iterator2_MoveNext_m1977022453,
+	U3CDelayedDestroyDropdownListU3Ec__Iterator2_Dispose_m4229066462,
+	U3CDelayedDestroyDropdownListU3Ec__Iterator2_Reset_m3224117646,
+	U3CShowU3Ec__AnonStorey6__ctor_m2795061609,
+	U3CShowU3Ec__AnonStorey6_U3CU3Em__2_m811212697,
+	DropdownEvent__ctor_m3364351936,
+	DropdownItem__ctor_m653383513,
+	DropdownItem_get_text_m2361276100,
+	DropdownItem_set_text_m2302793037,
+	DropdownItem_get_image_m1361578890,
+	DropdownItem_set_image_m97204957,
+	DropdownItem_get_rectTransform_m1644273588,
+	DropdownItem_set_rectTransform_m2348579039,
+	DropdownItem_get_toggle_m2842574180,
+	DropdownItem_set_toggle_m4246626175,
+	DropdownItem_OnPointerEnter_m2208531769,
+	DropdownItem_OnCancel_m3886441502,
+	OptionData__ctor_m2550995262,
+	OptionData__ctor_m3621517956,
+	OptionData__ctor_m715763394,
+	OptionData__ctor_m2001511174,
+	OptionData_get_text_m2592726207,
+	OptionData_set_text_m704016114,
+	OptionData_get_image_m1245765107,
+	OptionData_set_image_m4214652734,
+	OptionDataList__ctor_m4183200960,
+	OptionDataList_get_options_m397502342,
+	OptionDataList_set_options_m2193073293,
+	FontData__ctor_m2630121554,
+	FontData_UnityEngine_ISerializationCallbackReceiver_OnBeforeSerialize_m3538586040,
+	FontData_UnityEngine_ISerializationCallbackReceiver_OnAfterDeserialize_m2785911854,
+	FontData_get_defaultFontData_m3606420120,
+	FontData_get_font_m3285096249,
+	FontData_set_font_m504888792,
+	FontData_get_fontSize_m146058531,
+	FontData_set_fontSize_m539119952,
+	FontData_get_fontStyle_m2936188273,
+	FontData_set_fontStyle_m3987465618,
+	FontData_get_bestFit_m4181968066,
+	FontData_set_bestFit_m408210551,
+	FontData_get_minSize_m3681174594,
+	FontData_set_minSize_m3139125175,
+	FontData_get_maxSize_m2908696020,
+	FontData_set_maxSize_m2259967561,
+	FontData_get_alignment_m3864278344,
+	FontData_set_alignment_m4148907005,
+	FontData_get_alignByGeometry_m1074013123,
+	FontData_set_alignByGeometry_m1124841400,
+	FontData_get_richText_m3819861494,
+	FontData_set_richText_m2399891183,
+	FontData_get_horizontalOverflow_m1371187570,
+	FontData_set_horizontalOverflow_m1187704845,
+	FontData_get_verticalOverflow_m1971090326,
+	FontData_set_verticalOverflow_m1743547277,
+	FontData_get_lineSpacing_m3558513826,
+	FontData_set_lineSpacing_m3483835721,
+	FontUpdateTracker__cctor_m1924252658,
+	FontUpdateTracker_TrackText_m1576315537,
+	FontUpdateTracker_RebuildForFont_m4050910816,
+	FontUpdateTracker_UntrackText_m1952028010,
+	Graphic__ctor_m4066569555,
+	Graphic__cctor_m1027508410,
+	Graphic_get_defaultGraphicMaterial_m456140641,
+	Graphic_get_color_m2048831972,
+	Graphic_set_color_m1311501487,
+	Graphic_get_raycastTarget_m3436649332,
+	Graphic_set_raycastTarget_m639541381,
+	Graphic_get_useLegacyMeshGeneration_m1330224975,
+	Graphic_set_useLegacyMeshGeneration_m693817504,
+	Graphic_SetAllDirty_m2074784484,
+	Graphic_SetLayoutDirty_m2165278999,
+	Graphic_SetVerticesDirty_m2313177576,
+	Graphic_SetMaterialDirty_m282639610,
+	Graphic_OnRectTransformDimensionsChange_m1660020535,
+	Graphic_OnBeforeTransformParentChanged_m2612648205,
+	Graphic_OnTransformParentChanged_m321513902,
+	Graphic_get_depth_m1908843203,
+	Graphic_get_rectTransform_m4017371950,
+	Graphic_get_canvas_m4291384250,
+	Graphic_CacheCanvas_m512847723,
+	Graphic_get_canvasRenderer_m184553434,
+	Graphic_get_defaultMaterial_m3094002583,
+	Graphic_get_material_m3381093914,
+	Graphic_set_material_m2202379063,
+	Graphic_get_materialForRendering_m1154169789,
+	Graphic_get_mainTexture_m2936700123,
+	Graphic_OnEnable_m1102673235,
+	Graphic_OnDisable_m264069178,
+	Graphic_OnCanvasHierarchyChanged_m514781447,
+	Graphic_Rebuild_m444579746,
+	Graphic_LayoutComplete_m1944323924,
+	Graphic_GraphicUpdateComplete_m4174302747,
+	Graphic_UpdateMaterial_m1564277409,
+	Graphic_UpdateGeometry_m2127951660,
+	Graphic_DoMeshGeneration_m2507046369,
+	Graphic_DoLegacyMeshGeneration_m3761597322,
+	Graphic_get_workerMesh_m1691010424,
+	Graphic_OnFillVBO_m316398351,
+	Graphic_OnPopulateMesh_m192648803,
+	Graphic_OnPopulateMesh_m3177058550,
+	Graphic_OnDidApplyAnimationProperties_m3600197626,
+	Graphic_SetNativeSize_m2816336555,
+	Graphic_Raycast_m822891196,
+	Graphic_PixelAdjustPoint_m440199187,
+	Graphic_GetPixelAdjustedRect_m517144655,
+	Graphic_CrossFadeColor_m3194947827,
+	Graphic_CrossFadeColor_m1834346026,
+	Graphic_CreateColorFromAlpha_m3334630,
+	Graphic_CrossFadeAlpha_m157692256,
+	Graphic_RegisterDirtyLayoutCallback_m4189019746,
+	Graphic_UnregisterDirtyLayoutCallback_m856391721,
+	Graphic_RegisterDirtyVerticesCallback_m1901460593,
+	Graphic_UnregisterDirtyVerticesCallback_m3291531384,
+	Graphic_RegisterDirtyMaterialCallback_m984855455,
+	Graphic_UnregisterDirtyMaterialCallback_m2374926246,
+	Graphic_UnityEngine_UI_ICanvasElement_IsDestroyed_m2164415202,
+	Graphic_UnityEngine_UI_ICanvasElement_get_transform_m1663879910,
+	GraphicRaycaster__ctor_m361051581,
+	GraphicRaycaster__cctor_m2120568208,
+	GraphicRaycaster_get_sortOrderPriority_m2826757774,
+	GraphicRaycaster_get_renderOrderPriority_m4133744982,
+	GraphicRaycaster_get_ignoreReversedGraphics_m4072803617,
+	GraphicRaycaster_set_ignoreReversedGraphics_m1428686170,
+	GraphicRaycaster_get_blockingObjects_m3655591395,
+	GraphicRaycaster_set_blockingObjects_m421631540,
+	GraphicRaycaster_get_canvas_m1333156416,
+	GraphicRaycaster_Raycast_m1880111711,
+	GraphicRaycaster_get_eventCamera_m2522555180,
+	GraphicRaycaster_Raycast_m3191301018,
+	GraphicRaycaster_U3CRaycastU3Em__3_m3990589484,
+	GraphicRegistry__ctor_m3010929046,
+	GraphicRegistry__cctor_m2662390999,
+	GraphicRegistry_get_instance_m2305942177,
+	GraphicRegistry_RegisterGraphicForCanvas_m977086278,
+	GraphicRegistry_UnregisterGraphicForCanvas_m707013965,
+	GraphicRegistry_GetGraphicsForCanvas_m2740028912,
+	GridLayoutGroup__ctor_m1378214348,
+	GridLayoutGroup_get_startCorner_m2778672189,
+	GridLayoutGroup_set_startCorner_m2937777206,
+	GridLayoutGroup_get_startAxis_m1539688149,
+	GridLayoutGroup_set_startAxis_m628518814,
+	GridLayoutGroup_get_cellSize_m1318291007,
+	GridLayoutGroup_set_cellSize_m1641372194,
+	GridLayoutGroup_get_spacing_m660869033,
+	GridLayoutGroup_set_spacing_m2353797514,
+	GridLayoutGroup_get_constraint_m3287218001,
+	GridLayoutGroup_set_constraint_m1995004480,
+	GridLayoutGroup_get_constraintCount_m2592905067,
+	GridLayoutGroup_set_constraintCount_m2898625584,
+	GridLayoutGroup_CalculateLayoutInputHorizontal_m3283749622,
+	GridLayoutGroup_CalculateLayoutInputVertical_m1216862728,
+	GridLayoutGroup_SetLayoutHorizontal_m3405189786,
+	GridLayoutGroup_SetLayoutVertical_m501906092,
+	GridLayoutGroup_SetCellsAlongAxis_m3322008010,
+	HorizontalLayoutGroup__ctor_m9362858,
+	HorizontalLayoutGroup_CalculateLayoutInputHorizontal_m1229423832,
+	HorizontalLayoutGroup_CalculateLayoutInputVertical_m4119749738,
+	HorizontalLayoutGroup_SetLayoutHorizontal_m819130872,
+	HorizontalLayoutGroup_SetLayoutVertical_m3176307082,
+	HorizontalOrVerticalLayoutGroup__ctor_m258856643,
+	HorizontalOrVerticalLayoutGroup_get_spacing_m494525775,
+	HorizontalOrVerticalLayoutGroup_set_spacing_m3226528036,
+	HorizontalOrVerticalLayoutGroup_get_childForceExpandWidth_m1705552999,
+	HorizontalOrVerticalLayoutGroup_set_childForceExpandWidth_m1348569144,
+	HorizontalOrVerticalLayoutGroup_get_childForceExpandHeight_m1836349768,
+	HorizontalOrVerticalLayoutGroup_set_childForceExpandHeight_m3910057317,
+	HorizontalOrVerticalLayoutGroup_CalcAlongAxis_m423831906,
+	HorizontalOrVerticalLayoutGroup_SetChildrenAlongAxis_m3440700494,
+	Image__ctor_m3858093632,
+	Image__cctor_m3154689389,
+	Image_get_sprite_m3572636301,
+	Image_set_sprite_m572551402,
+	Image_get_overrideSprite_m3218085753,
+	Image_set_overrideSprite_m129622486,
+	Image_get_type_m1778977993,
+	Image_set_type_m3406009990,
+	Image_get_preserveAspect_m1146932479,
+	Image_set_preserveAspect_m3374507356,
+	Image_get_fillCenter_m3817752307,
+	Image_set_fillCenter_m811493200,
+	Image_get_fillMethod_m2526834505,
+	Image_set_fillMethod_m505110962,
+	Image_get_fillAmount_m3193252212,
+	Image_set_fillAmount_m1583793743,
+	Image_get_fillClockwise_m2414458422,
+	Image_set_fillClockwise_m3747842887,
+	Image_get_fillOrigin_m2333809822,
+	Image_set_fillOrigin_m3202820731,
+	Image_get_eventAlphaThreshold_m2236338352,
+	Image_set_eventAlphaThreshold_m229582947,
+	Image_get_mainTexture_m3619971528,
+	Image_get_hasBorder_m2233588589,
+	Image_get_pixelsPerUnit_m2679127645,
+	Image_OnBeforeSerialize_m3089868192,
+	Image_OnAfterDeserialize_m1760560454,
+	Image_GetDrawingDimensions_m755640489,
+	Image_SetNativeSize_m828608152,
+	Image_OnPopulateMesh_m435930979,
+	Image_GenerateSimpleSprite_m106729008,
+	Image_GenerateSlicedSprite_m4239922765,
+	Image_GenerateTiledSprite_m4269137945,
+	Image_AddQuad_m3277178,
+	Image_AddQuad_m2061170408,
+	Image_GetAdjustedBorders_m3337288947,
+	Image_GenerateFilledSprite_m589086176,
+	Image_RadialCut_m2286713844,
+	Image_RadialCut_m531564570,
+	Image_CalculateLayoutInputHorizontal_m3229499650,
+	Image_CalculateLayoutInputVertical_m2293900052,
+	Image_get_minWidth_m214977549,
+	Image_get_preferredWidth_m63596798,
+	Image_get_flexibleWidth_m1852529796,
+	Image_get_minHeight_m2873151074,
+	Image_get_preferredHeight_m2475315089,
+	Image_get_flexibleHeight_m2097663179,
+	Image_get_layoutPriority_m1611774403,
+	Image_IsRaycastLocationValid_m1303041002,
+	Image_MapCoordinate_m1478133288,
+	InputField__ctor_m2020289915,
+	InputField__cctor_m2017349010,
+	InputField_get_mesh_m2359671532,
+	InputField_get_cachedInputTextGenerator_m1093502060,
+	InputField_set_shouldHideMobileInput_m4025452486,
+	InputField_get_shouldHideMobileInput_m3268284241,
+	InputField_get_shouldActivateOnSelect_m3772452453,
+	InputField_get_text_m3972300732,
+	InputField_set_text_m203843887,
+	InputField_get_isFocused_m1249071051,
+	InputField_get_caretBlinkRate_m3180928607,
+	InputField_set_caretBlinkRate_m3976284076,
+	InputField_get_caretWidth_m168198637,
+	InputField_set_caretWidth_m566265370,
+	InputField_get_textComponent_m2329519363,
+	InputField_set_textComponent_m4116377302,
+	InputField_get_placeholder_m1494472373,
+	InputField_set_placeholder_m1981544106,
+	InputField_get_caretColor_m3643265483,
+	InputField_set_caretColor_m1187620416,
+	InputField_get_customCaretColor_m15835893,
+	InputField_set_customCaretColor_m2443486254,
+	InputField_get_selectionColor_m240252578,
+	InputField_set_selectionColor_m1343496137,
+	InputField_get_onEndEdit_m3802925699,
+	InputField_set_onEndEdit_m2414983338,
+	InputField_get_onValueChange_m2707279446,
+	InputField_set_onValueChange_m1682014085,
+	InputField_get_onValueChanged_m2321341872,
+	InputField_set_onValueChanged_m3205399099,
+	InputField_get_onValidateInput_m2116536287,
+	InputField_set_onValidateInput_m1603970312,
+	InputField_get_characterLimit_m2780159932,
+	InputField_set_characterLimit_m1004148585,
+	InputField_get_contentType_m1921772191,
+	InputField_set_contentType_m831644236,
+	InputField_get_lineType_m3024149779,
+	InputField_set_lineType_m2862985194,
+	InputField_get_inputType_m2348834559,
+	InputField_set_inputType_m3518963754,
+	InputField_get_keyboardType_m682150197,
+	InputField_set_keyboardType_m2584868886,
+	InputField_get_characterValidation_m4244038975,
+	InputField_set_characterValidation_m3783277294,
+	InputField_get_readOnly_m991875110,
+	InputField_set_readOnly_m1486621087,
+	InputField_get_multiLine_m2265790891,
+	InputField_get_asteriskChar_m3297406588,
+	InputField_set_asteriskChar_m353877103,
+	InputField_get_wasCanceled_m3717712640,
+	InputField_ClampPos_m1654447641,
+	InputField_get_caretPositionInternal_m1805548065,
+	InputField_set_caretPositionInternal_m3521473046,
+	InputField_get_caretSelectPositionInternal_m2541357245,
+	InputField_set_caretSelectPositionInternal_m4114170802,
+	InputField_get_hasSelection_m69592150,
+	InputField_get_caretPosition_m1600046468,
+	InputField_set_caretPosition_m417406201,
+	InputField_get_selectionAnchorPosition_m3946868514,
+	InputField_set_selectionAnchorPosition_m4265241751,
+	InputField_get_selectionFocusPosition_m3487835103,
+	InputField_set_selectionFocusPosition_m3645383436,
+	InputField_OnEnable_m3151717419,
+	InputField_OnDisable_m3654896738,
+	InputField_CaretBlink_m3410390944,
+	InputField_SetCaretVisible_m1704739146,
+	InputField_SetCaretActive_m1463120,
+	InputField_OnFocus_m466029714,
+	InputField_SelectAll_m4063966302,
+	InputField_MoveTextEnd_m2126814125,
+	InputField_MoveTextStart_m2867546804,
+	InputField_get_clipboard_m1517672713,
+	InputField_set_clipboard_m1137802704,
+	InputField_InPlaceEditing_m3152517681,
+	InputField_LateUpdate_m658657720,
+	InputField_ScreenToLocal_m1499722466,
+	InputField_GetUnclampedCharacterLineFromPosition_m3510038353,
+	InputField_GetCharacterIndexFromPosition_m4275941159,
+	InputField_MayDrag_m3557501854,
+	InputField_OnBeginDrag_m1531063271,
+	InputField_OnDrag_m91839394,
+	InputField_MouseDragOutsideRect_m854880935,
+	InputField_OnEndDrag_m4049045301,
+	InputField_OnPointerDown_m2912611813,
+	InputField_KeyPressed_m56514315,
+	InputField_IsValidChar_m3270378798,
+	InputField_ProcessEvent_m946297147,
+	InputField_OnUpdateSelected_m636353350,
+	InputField_GetSelectedString_m1040556478,
+	InputField_FindtNextWordBegin_m2221118514,
+	InputField_MoveRight_m815186690,
+	InputField_FindtPrevWordBegin_m201815282,
+	InputField_MoveLeft_m2120951525,
+	InputField_DetermineCharacterLine_m3657739513,
+	InputField_LineUpCharacterPosition_m1478103368,
+	InputField_LineDownCharacterPosition_m263003663,
+	InputField_MoveDown_m1297332275,
+	InputField_MoveDown_m3574910698,
+	InputField_MoveUp_m3783029356,
+	InputField_MoveUp_m2694527889,
+	InputField_Delete_m3723424084,
+	InputField_ForwardSpace_m957387114,
+	InputField_Backspace_m3222521688,
+	InputField_Insert_m2452101819,
+	InputField_SendOnValueChangedAndUpdateLabel_m3331240455,
+	InputField_SendOnValueChanged_m2613517587,
+	InputField_SendOnSubmit_m3215072040,
+	InputField_Append_m2987278559,
+	InputField_Append_m917566458,
+	InputField_UpdateLabel_m4272237956,
+	InputField_IsSelectionVisible_m1151128811,
+	InputField_GetLineStartPosition_m1032176150,
+	InputField_GetLineEndPosition_m293479951,
+	InputField_SetDrawRangeToContainCaretPosition_m2772169252,
+	InputField_ForceLabelUpdate_m3497155803,
+	InputField_MarkGeometryAsDirty_m178860986,
+	InputField_Rebuild_m4149891194,
+	InputField_LayoutComplete_m3197989932,
+	InputField_GraphicUpdateComplete_m2162277955,
+	InputField_UpdateGeometry_m3381617668,
+	InputField_AssignPositioningIfNeeded_m20735637,
+	InputField_OnFillVBO_m2411846934,
+	InputField_GenerateCaret_m2836783818,
+	InputField_CreateCursorVerts_m1990252457,
+	InputField_GenerateHightlight_m3464703695,
+	InputField_Validate_m4235185069,
+	InputField_ActivateInputField_m2072753740,
+	InputField_ActivateInputFieldInternal_m2572296937,
+	InputField_OnSelect_m1785968830,
+	InputField_OnPointerClick_m2029011499,
+	InputField_DeactivateInputField_m2310323789,
+	InputField_OnDeselect_m1884183999,
+	InputField_OnSubmit_m3450763226,
+	InputField_EnforceContentType_m4178225210,
+	InputField_SetToCustomIfContentTypeIsNot_m1700869631,
+	InputField_SetToCustom_m2598912359,
+	InputField_DoStateTransition_m1731594340,
+	InputField_UnityEngine_UI_ICanvasElement_IsDestroyed_m2781637606,
+	InputField_UnityEngine_UI_ICanvasElement_get_transform_m2979159434,
+	U3CCaretBlinkU3Ec__Iterator3__ctor_m1860697329,
+	U3CCaretBlinkU3Ec__Iterator3_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m1074854283,
+	U3CCaretBlinkU3Ec__Iterator3_System_Collections_IEnumerator_get_Current_m2948952863,
+	U3CCaretBlinkU3Ec__Iterator3_MoveNext_m4141316197,
+	U3CCaretBlinkU3Ec__Iterator3_Dispose_m1322021102,
+	U3CCaretBlinkU3Ec__Iterator3_Reset_m3802097566,
+	U3CMouseDragOutsideRectU3Ec__Iterator4__ctor_m1030435559,
+	U3CMouseDragOutsideRectU3Ec__Iterator4_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m265708309,
+	U3CMouseDragOutsideRectU3Ec__Iterator4_System_Collections_IEnumerator_get_Current_m3574804649,
+	U3CMouseDragOutsideRectU3Ec__Iterator4_MoveNext_m656051503,
+	U3CMouseDragOutsideRectU3Ec__Iterator4_Dispose_m2304377188,
+	U3CMouseDragOutsideRectU3Ec__Iterator4_Reset_m2971835796,
+	OnChangeEvent__ctor_m1829440895,
+	OnValidateInput__ctor_m318825293,
+	OnValidateInput_Invoke_m1377115157,
+	OnValidateInput_BeginInvoke_m2130883566,
+	OnValidateInput_EndInvoke_m1254779679,
+	SubmitEvent__ctor_m3123354920,
+	LayoutElement__ctor_m1101568265,
+	LayoutElement_get_ignoreLayout_m3020545774,
+	LayoutElement_set_ignoreLayout_m31533195,
+	LayoutElement_CalculateLayoutInputHorizontal_m3047948889,
+	LayoutElement_CalculateLayoutInputVertical_m809913899,
+	LayoutElement_get_minWidth_m3361650980,
+	LayoutElement_set_minWidth_m2427874975,
+	LayoutElement_get_minHeight_m1635779627,
+	LayoutElement_set_minHeight_m400728776,
+	LayoutElement_get_preferredWidth_m616720597,
+	LayoutElement_set_preferredWidth_m1262908558,
+	LayoutElement_get_preferredHeight_m2442283674,
+	LayoutElement_set_preferredHeight_m2941475513,
+	LayoutElement_get_flexibleWidth_m3810035149,
+	LayoutElement_set_flexibleWidth_m2155570278,
+	LayoutElement_get_flexibleHeight_m2650786978,
+	LayoutElement_set_flexibleHeight_m549217761,
+	LayoutElement_get_layoutPriority_m2626166170,
+	LayoutElement_OnEnable_m1046652381,
+	LayoutElement_OnTransformParentChanged_m4077176376,
+	LayoutElement_OnDisable_m2822390000,
+	LayoutElement_OnDidApplyAnimationProperties_m614601136,
+	LayoutElement_OnBeforeTransformParentChanged_m253470231,
+	LayoutElement_SetDirty_m1279144619,
+	LayoutGroup__ctor_m1400544614,
+	LayoutGroup_get_padding_m3073855587,
+	LayoutGroup_set_padding_m1597085962,
+	LayoutGroup_get_childAlignment_m357689196,
+	LayoutGroup_set_childAlignment_m2559376521,
+	LayoutGroup_get_rectTransform_m331638721,
+	LayoutGroup_get_rectChildren_m2856991542,
+	LayoutGroup_CalculateLayoutInputHorizontal_m89763996,
+	LayoutGroup_get_minWidth_m1427346727,
+	LayoutGroup_get_preferredWidth_m3558143640,
+	LayoutGroup_get_flexibleWidth_m2519446442,
+	LayoutGroup_get_minHeight_m1801889928,
+	LayoutGroup_get_preferredHeight_m3432084791,
+	LayoutGroup_get_flexibleHeight_m1297242725,
+	LayoutGroup_get_layoutPriority_m3819074141,
+	LayoutGroup_OnEnable_m88893536,
+	LayoutGroup_OnDisable_m3196636877,
+	LayoutGroup_OnDidApplyAnimationProperties_m657723149,
+	LayoutGroup_GetTotalMinSize_m3187537614,
+	LayoutGroup_GetTotalPreferredSize_m2664141949,
+	LayoutGroup_GetTotalFlexibleSize_m2703956501,
+	LayoutGroup_GetStartOffset_m3060950207,
+	LayoutGroup_SetLayoutInputForAxis_m396008818,
+	LayoutGroup_SetChildAlongAxis_m4214960168,
+	LayoutGroup_get_isRootLayoutGroup_m3172189078,
+	LayoutGroup_OnRectTransformDimensionsChange_m30528906,
+	LayoutGroup_OnTransformChildrenChanged_m420993286,
+	LayoutGroup_SetDirty_m321385774,
+	LayoutRebuilder__ctor_m3516226301,
+	LayoutRebuilder__cctor_m1146736720,
+	LayoutRebuilder_Initialize_m1265316458,
+	LayoutRebuilder_Clear_m922359592,
+	LayoutRebuilder_ReapplyDrivenProperties_m965971988,
+	LayoutRebuilder_get_transform_m3231462112,
+	LayoutRebuilder_IsDestroyed_m4004091228,
+	LayoutRebuilder_StripDisabledBehavioursFromList_m51650679,
+	LayoutRebuilder_ForceRebuildLayoutImmediate_m3701079759,
+	LayoutRebuilder_Rebuild_m407530040,
+	LayoutRebuilder_PerformLayoutControl_m724256510,
+	LayoutRebuilder_PerformLayoutCalculation_m941802386,
+	LayoutRebuilder_MarkLayoutForRebuild_m901621521,
+	LayoutRebuilder_ValidLayoutGroup_m1488924317,
+	LayoutRebuilder_ValidController_m2724682388,
+	LayoutRebuilder_MarkLayoutRootForRebuild_m1708966351,
+	LayoutRebuilder_LayoutComplete_m182540522,
+	LayoutRebuilder_GraphicUpdateComplete_m408201157,
+	LayoutRebuilder_GetHashCode_m1333271044,
+	LayoutRebuilder_Equals_m3575022752,
+	LayoutRebuilder_ToString_m2403814582,
+	LayoutRebuilder_U3Cs_RebuildersU3Em__6_m831129568,
+	LayoutRebuilder_U3CStripDisabledBehavioursFromListU3Em__7_m1620076941,
+	LayoutRebuilder_U3CRebuildU3Em__8_m1336267783,
+	LayoutRebuilder_U3CRebuildU3Em__9_m1269261030,
+	LayoutRebuilder_U3CRebuildU3Em__A_m733207006,
+	LayoutRebuilder_U3CRebuildU3Em__B_m666200253,
+	LayoutUtility_GetMinSize_m220738634,
+	LayoutUtility_GetPreferredSize_m889669625,
+	LayoutUtility_GetFlexibleSize_m3922234755,
+	LayoutUtility_GetMinWidth_m3030453932,
+	LayoutUtility_GetPreferredWidth_m2872373467,
+	LayoutUtility_GetFlexibleWidth_m1272624485,
+	LayoutUtility_GetMinHeight_m1456033095,
+	LayoutUtility_GetPreferredHeight_m850505976,
+	LayoutUtility_GetFlexibleHeight_m2797895086,
+	LayoutUtility_GetLayoutProperty_m846328268,
+	LayoutUtility_GetLayoutProperty_m3561974560,
+	LayoutUtility_U3CGetMinWidthU3Em__C_m2477279317,
+	LayoutUtility_U3CGetPreferredWidthU3Em__D_m626210533,
+	LayoutUtility_U3CGetPreferredWidthU3Em__E_m2911073988,
+	LayoutUtility_U3CGetFlexibleWidthU3Em__F_m2196499833,
+	LayoutUtility_U3CGetMinHeightU3Em__10_m3245482414,
+	LayoutUtility_U3CGetPreferredHeightU3Em__11_m3744212990,
+	LayoutUtility_U3CGetPreferredHeightU3Em__12_m1734109149,
+	LayoutUtility_U3CGetFlexibleHeightU3Em__13_m3482485010,
+	Mask__ctor_m3917673311,
+	Mask_get_rectTransform_m950047934,
+	Mask_get_showMaskGraphic_m2608629537,
+	Mask_set_showMaskGraphic_m218433430,
+	Mask_get_graphic_m2101144526,
+	Mask_MaskEnabled_m1398570944,
+	Mask_OnSiblingGraphicEnabledDisabled_m1780324373,
+	Mask_OnEnable_m2035884999,
+	Mask_OnDisable_m3423830086,
+	Mask_IsRaycastLocationValid_m4053137295,
+	Mask_GetModifiedMaterial_m3826173342,
+	MaskableGraphic__ctor_m3514233785,
+	MaskableGraphic_get_onCullStateChanged_m2293098922,
+	MaskableGraphic_set_onCullStateChanged_m1901835143,
+	MaskableGraphic_get_maskable_m2226181992,
+	MaskableGraphic_set_maskable_m3088187909,
+	MaskableGraphic_GetModifiedMaterial_m2422156902,
+	MaskableGraphic_Cull_m1710243867,
+	MaskableGraphic_UpdateCull_m3192993021,
+	MaskableGraphic_SetClipRect_m3970693835,
+	MaskableGraphic_OnEnable_m487460141,
+	MaskableGraphic_OnDisable_m2667299744,
+	MaskableGraphic_OnTransformParentChanged_m2836893064,
+	MaskableGraphic_ParentMaskStateChanged_m3501359204,
+	MaskableGraphic_OnCanvasHierarchyChanged_m3030160609,
+	MaskableGraphic_get_canvasRect_m2184399948,
+	MaskableGraphic_UpdateClipParent_m2337272942,
+	MaskableGraphic_RecalculateClipping_m400162188,
+	MaskableGraphic_RecalculateMasking_m2250524558,
+	MaskableGraphic_UnityEngine_UI_IClippable_get_rectTransform_m3856601786,
+	CullStateChangedEvent__ctor_m2540235971,
+	MaskUtilities__ctor_m1166009725,
+	MaskUtilities_Notify2DMaskStateChanged_m2199550555,
+	MaskUtilities_NotifyStencilStateChanged_m2159873435,
+	MaskUtilities_FindRootSortOverrideCanvas_m4219954651,
+	MaskUtilities_GetStencilDepth_m2786493988,
+	MaskUtilities_GetRectMaskForClippable_m396614586,
+	MaskUtilities_GetRectMasksForClip_m447525417,
+	Misc_Destroy_m612433153,
+	Misc_DestroyImmediate_m40421862,
+	Navigation_get_mode_m721480509,
+	Navigation_set_mode_m1506614802,
+	Navigation_get_selectOnUp_m2566832818,
+	Navigation_set_selectOnUp_m2875366329,
+	Navigation_get_selectOnDown_m929912185,
+	Navigation_set_selectOnDown_m2647056978,
+	Navigation_get_selectOnLeft_m1149209502,
+	Navigation_set_selectOnLeft_m619081677,
+	Navigation_get_selectOnRight_m2410966663,
+	Navigation_set_selectOnRight_m1544013280,
+	Navigation_get_defaultNavigation_m492829917,
+	Navigation_Equals_m3278735261,
+	Outline__ctor_m4004117817,
+	Outline_ModifyMesh_m4125422123,
+	PositionAsUV1__ctor_m3124267078,
+	PositionAsUV1_ModifyMesh_m2424047928,
+	RawImage__ctor_m3149617176,
+	RawImage_get_mainTexture_m3607327198,
+	RawImage_get_texture_m2545896727,
+	RawImage_set_texture_m153141914,
+	RawImage_get_uvRect_m605244702,
+	RawImage_set_uvRect_m1381047731,
+	RawImage_SetNativeSize_m131446896,
+	RawImage_OnPopulateMesh_m1483685179,
+	RectangularVertexClipper__ctor_m1771616896,
+	RectangularVertexClipper_GetCanvasRect_m4121299266,
+	RectMask2D__ctor_m743839689,
+	RectMask2D_get_canvasRect_m3883544836,
+	RectMask2D_get_rectTransform_m3879504040,
+	RectMask2D_OnEnable_m4063473437,
+	RectMask2D_OnDisable_m1854562224,
+	RectMask2D_IsRaycastLocationValid_m3081840229,
+	RectMask2D_PerformClipping_m2105337834,
+	RectMask2D_AddClippable_m3020362282,
+	RectMask2D_RemoveClippable_m2506427137,
+	RectMask2D_OnTransformParentChanged_m136007544,
+	RectMask2D_OnCanvasHierarchyChanged_m329275089,
+	Scrollbar__ctor_m842961365,
+	Scrollbar_get_handleRect_m2010533702,
+	Scrollbar_set_handleRect_m2375555625,
+	Scrollbar_get_direction_m2158550533,
+	Scrollbar_set_direction_m1167543746,
+	Scrollbar_get_value_m3398262479,
+	Scrollbar_set_value_m1765490852,
+	Scrollbar_get_size_m1139900549,
+	Scrollbar_set_size_m298852062,
+	Scrollbar_get_numberOfSteps_m1873821577,
+	Scrollbar_set_numberOfSteps_m2505501262,
+	Scrollbar_get_onValueChanged_m312588368,
+	Scrollbar_set_onValueChanged_m2941912493,
+	Scrollbar_get_stepSize_m1660915953,
+	Scrollbar_Rebuild_m36029024,
+	Scrollbar_LayoutComplete_m4096546066,
+	Scrollbar_GraphicUpdateComplete_m3945082525,
+	Scrollbar_OnEnable_m2059823505,
+	Scrollbar_OnDisable_m4165923772,
+	Scrollbar_UpdateCachedReferences_m1478280386,
+	Scrollbar_Set_m2588040310,
+	Scrollbar_Set_m3384196167,
+	Scrollbar_OnRectTransformDimensionsChange_m1089670457,
+	Scrollbar_get_axis_m3425831999,
+	Scrollbar_get_reverseValue_m581327093,
+	Scrollbar_UpdateVisuals_m2753592989,
+	Scrollbar_UpdateDrag_m494154322,
+	Scrollbar_MayDrag_m2868972512,
+	Scrollbar_OnBeginDrag_m1703358541,
+	Scrollbar_OnDrag_m4023431036,
+	Scrollbar_OnPointerDown_m984641739,
+	Scrollbar_ClickRepeat_m1553202218,
+	Scrollbar_OnPointerUp_m2249681202,
+	Scrollbar_OnMove_m2506066825,
+	Scrollbar_FindSelectableOnLeft_m976215998,
+	Scrollbar_FindSelectableOnRight_m1343135335,
+	Scrollbar_FindSelectableOnUp_m2968886994,
+	Scrollbar_FindSelectableOnDown_m756918681,
+	Scrollbar_OnInitializePotentialDrag_m2407430440,
+	Scrollbar_SetDirection_m826288644,
+	Scrollbar_UnityEngine_UI_ICanvasElement_IsDestroyed_m3229708772,
+	Scrollbar_UnityEngine_UI_ICanvasElement_get_transform_m1065549160,
+	U3CClickRepeatU3Ec__Iterator5__ctor_m46482857,
+	U3CClickRepeatU3Ec__Iterator5_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m1538503635,
+	U3CClickRepeatU3Ec__Iterator5_System_Collections_IEnumerator_get_Current_m1635106151,
+	U3CClickRepeatU3Ec__Iterator5_MoveNext_m451466413,
+	U3CClickRepeatU3Ec__Iterator5_Dispose_m1618635686,
+	U3CClickRepeatU3Ec__Iterator5_Reset_m1987883094,
+	ScrollEvent__ctor_m2724827255,
+	ScrollRect__ctor_m3113131930,
+	ScrollRect_get_content_m3701632330,
+	ScrollRect_set_content_m234982541,
+	ScrollRect_get_horizontal_m3680042345,
+	ScrollRect_set_horizontal_m943369506,
+	ScrollRect_get_vertical_m135712059,
+	ScrollRect_set_vertical_m3763666420,
+	ScrollRect_get_movementType_m4014199657,
+	ScrollRect_set_movementType_m4233390924,
+	ScrollRect_get_elasticity_m1540742464,
+	ScrollRect_set_elasticity_m957382251,
+	ScrollRect_get_inertia_m723925623,
+	ScrollRect_set_inertia_m4277812460,
+	ScrollRect_get_decelerationRate_m2763364646,
+	ScrollRect_set_decelerationRate_m1911965765,
+	ScrollRect_get_scrollSensitivity_m1352024717,
+	ScrollRect_set_scrollSensitivity_m310245950,
+	ScrollRect_get_viewport_m1780465687,
+	ScrollRect_set_viewport_m1031184500,
+	ScrollRect_get_horizontalScrollbar_m2383265157,
+	ScrollRect_set_horizontalScrollbar_m2130920826,
+	ScrollRect_get_verticalScrollbar_m801913715,
+	ScrollRect_set_verticalScrollbar_m845729640,
+	ScrollRect_get_horizontalScrollbarVisibility_m2805283129,
+	ScrollRect_set_horizontalScrollbarVisibility_m1831067046,
+	ScrollRect_get_verticalScrollbarVisibility_m1678458407,
+	ScrollRect_set_verticalScrollbarVisibility_m4230518264,
+	ScrollRect_get_horizontalScrollbarSpacing_m2867145992,
+	ScrollRect_set_horizontalScrollbarSpacing_m1996166051,
+	ScrollRect_get_verticalScrollbarSpacing_m1095438682,
+	ScrollRect_set_verticalScrollbarSpacing_m4137600145,
+	ScrollRect_get_onValueChanged_m4119396560,
+	ScrollRect_set_onValueChanged_m499269979,
+	ScrollRect_get_viewRect_m911909082,
+	ScrollRect_get_velocity_m4218059637,
+	ScrollRect_set_velocity_m4003401302,
+	ScrollRect_get_rectTransform_m836427513,
+	ScrollRect_Rebuild_m3329025723,
+	ScrollRect_LayoutComplete_m1579087085,
+	ScrollRect_GraphicUpdateComplete_m2238911074,
+	ScrollRect_UpdateCachedData_m4281892159,
+	ScrollRect_OnEnable_m4156082604,
+	ScrollRect_OnDisable_m430479105,
+	ScrollRect_IsActive_m1128064300,
+	ScrollRect_EnsureLayoutHasRebuilt_m1972800323,
+	ScrollRect_StopMovement_m4209251323,
+	ScrollRect_OnScroll_m2633232840,
+	ScrollRect_OnInitializePotentialDrag_m2313515395,
+	ScrollRect_OnBeginDrag_m1465783272,
+	ScrollRect_OnEndDrag_m1604287350,
+	ScrollRect_OnDrag_m286963457,
+	ScrollRect_SetContentAnchoredPosition_m716182300,
+	ScrollRect_LateUpdate_m3780926201,
+	ScrollRect_UpdatePrevData_m454081040,
+	ScrollRect_UpdateScrollbars_m2912536474,
+	ScrollRect_get_normalizedPosition_m1721330264,
+	ScrollRect_set_normalizedPosition_m2973019475,
+	ScrollRect_get_horizontalNormalizedPosition_m1672288203,
+	ScrollRect_set_horizontalNormalizedPosition_m2007203264,
+	ScrollRect_get_verticalNormalizedPosition_m4163579805,
+	ScrollRect_set_verticalNormalizedPosition_m2636032814,
+	ScrollRect_SetHorizontalNormalizedPosition_m653475821,
+	ScrollRect_SetVerticalNormalizedPosition_m3957527707,
+	ScrollRect_SetNormalizedPosition_m4196700166,
+	ScrollRect_RubberDelta_m403235940,
+	ScrollRect_OnRectTransformDimensionsChange_m2105458366,
+	ScrollRect_get_hScrollingNeeded_m1668641607,
+	ScrollRect_get_vScrollingNeeded_m594530553,
+	ScrollRect_CalculateLayoutInputHorizontal_m4036022504,
+	ScrollRect_CalculateLayoutInputVertical_m4225463418,
+	ScrollRect_get_minWidth_m525847771,
+	ScrollRect_get_preferredWidth_m2213910348,
+	ScrollRect_get_flexibleWidth_m2753178742,
+	ScrollRect_get_minHeight_m3920193364,
+	ScrollRect_get_preferredHeight_m415558403,
+	ScrollRect_get_flexibleHeight_m4247976729,
+	ScrollRect_get_layoutPriority_m3681037785,
+	ScrollRect_SetLayoutHorizontal_m1751158760,
+	ScrollRect_SetLayoutVertical_m1385100154,
+	ScrollRect_UpdateScrollbarVisibility_m2808994247,
+	ScrollRect_UpdateScrollbarLayout_m2579760607,
+	ScrollRect_UpdateBounds_m1752242888,
+	ScrollRect_GetBounds_m1535126094,
+	ScrollRect_CalculateOffset_m224839950,
+	ScrollRect_SetDirty_m93607546,
+	ScrollRect_SetDirtyCaching_m4215531847,
+	ScrollRect_UnityEngine_UI_ICanvasElement_IsDestroyed_m1861319301,
+	ScrollRect_UnityEngine_UI_ICanvasElement_get_transform_m3316531305,
+	ScrollRectEvent__ctor_m985343040,
+	Selectable__ctor_m1133588277,
+	Selectable__cctor_m299402008,
+	Selectable_get_allSelectables_m476416992,
+	Selectable_get_navigation_m3138151376,
+	Selectable_set_navigation_m3946690907,
+	Selectable_get_transition_m4100650273,
+	Selectable_set_transition_m1538436886,
+	Selectable_get_colors_m2926475394,
+	Selectable_set_colors_m2365118697,
+	Selectable_get_spriteState_m102480676,
+	Selectable_set_spriteState_m3715637593,
+	Selectable_get_animationTriggers_m4030265988,
+	Selectable_set_animationTriggers_m1859718713,
+	Selectable_get_targetGraphic_m1206082259,
+	Selectable_set_targetGraphic_m54088136,
+	Selectable_get_interactable_m1204033370,
+	Selectable_set_interactable_m2686686419,
+	Selectable_get_isPointerInside_m3778852455,
+	Selectable_set_isPointerInside_m1584068316,
+	Selectable_get_isPointerDown_m451775501,
+	Selectable_set_isPointerDown_m2193598850,
+	Selectable_get_hasSelection_m771189340,
+	Selectable_set_hasSelection_m138443861,
+	Selectable_get_image_m978701700,
+	Selectable_set_image_m4179082937,
+	Selectable_get_animator_m1533578598,
+	Selectable_Awake_m1371193496,
+	Selectable_OnCanvasGroupChanged_m4067350875,
+	Selectable_IsInteractable_m1810942779,
+	Selectable_OnDidApplyAnimationProperties_m4092978140,
+	Selectable_OnEnable_m1472090161,
+	Selectable_OnSetProperty_m571656523,
+	Selectable_OnDisable_m3126059292,
+	Selectable_get_currentSelectionState_m730905540,
+	Selectable_InstantClearState_m1586585368,
+	Selectable_DoStateTransition_m1211483242,
+	Selectable_FindSelectable_m1109039701,
+	Selectable_GetPointOnRectEdge_m371681446,
+	Selectable_Navigate_m2039225725,
+	Selectable_FindSelectableOnLeft_m3101734378,
+	Selectable_FindSelectableOnRight_m2809695675,
+	Selectable_FindSelectableOnUp_m3489533950,
+	Selectable_FindSelectableOnDown_m2882437061,
+	Selectable_OnMove_m2478875177,
+	Selectable_StartColorTween_m2559093428,
+	Selectable_DoSpriteSwap_m1929545238,
+	Selectable_TriggerAnimation_m2433448647,
+	Selectable_IsHighlighted_m4047826052,
+	Selectable_IsPressed_m3407797331,
+	Selectable_IsPressed_m2192098489,
+	Selectable_UpdateSelectionState_m2602683415,
+	Selectable_EvaluateAndTransitionToSelectionState_m2419808192,
+	Selectable_InternalEvaluateAndTransitionToSelectionState_m543442976,
+	Selectable_OnPointerDown_m706592619,
+	Selectable_OnPointerUp_m533192658,
+	Selectable_OnPointerEnter_m1831644693,
+	Selectable_OnPointerExit_m1099674991,
+	Selectable_OnSelect_m2798350404,
+	Selectable_OnDeselect_m4120267717,
+	Selectable_Select_m2377336299,
+	SetPropertyUtility_SetColor_m4210708935,
+	Shadow__ctor_m2944649643,
+	Shadow_get_effectColor_m2953989785,
+	Shadow_set_effectColor_m1407835720,
+	Shadow_get_effectDistance_m1102454733,
+	Shadow_set_effectDistance_m192801982,
+	Shadow_get_useGraphicAlpha_m3687634123,
+	Shadow_set_useGraphicAlpha_m3814129472,
+	Shadow_ApplyShadowZeroAlloc_m338158484,
+	Shadow_ApplyShadow_m3534003541,
+	Shadow_ModifyMesh_m111179421,
+	Slider__ctor_m347403018,
+	Slider_get_fillRect_m2450877128,
+	Slider_set_fillRect_m3297119715,
+	Slider_get_handleRect_m2151134125,
+	Slider_set_handleRect_m3189108254,
+	Slider_get_direction_m2329138173,
+	Slider_set_direction_m1506600084,
+	Slider_get_minValue_m84589142,
+	Slider_set_minValue_m3023646485,
+	Slider_get_maxValue_m1907557124,
+	Slider_set_maxValue_m4261736743,
+	Slider_get_wholeNumbers_m3990960296,
+	Slider_set_wholeNumbers_m3974827169,
+	Slider_get_value_m2021634844,
+	Slider_set_value_m4201041935,
+	Slider_get_normalizedValue_m2918004645,
+	Slider_set_normalizedValue_m3382161958,
+	Slider_get_onValueChanged_m3585429728,
+	Slider_set_onValueChanged_m544103115,
+	Slider_get_stepSize_m3189751172,
+	Slider_Rebuild_m204900683,
+	Slider_LayoutComplete_m3716644733,
+	Slider_GraphicUpdateComplete_m837060050,
+	Slider_OnEnable_m683704380,
+	Slider_OnDisable_m160936561,
+	Slider_OnDidApplyAnimationProperties_m317765809,
+	Slider_UpdateCachedReferences_m3913831469,
+	Slider_ClampValue_m4124802439,
+	Slider_Set_m2575079457,
+	Slider_Set_m2043565372,
+	Slider_OnRectTransformDimensionsChange_m4044006958,
+	Slider_get_axis_m591825817,
+	Slider_get_reverseValue_m1915319492,
+	Slider_UpdateVisuals_m1355864786,
+	Slider_UpdateDrag_m913163651,
+	Slider_MayDrag_m2965973935,
+	Slider_OnPointerDown_m2064356406,
+	Slider_OnDrag_m2689187441,
+	Slider_OnMove_m3684755636,
+	Slider_FindSelectableOnLeft_m601280629,
+	Slider_FindSelectableOnRight_m2605040784,
+	Slider_FindSelectableOnUp_m3326038345,
+	Slider_FindSelectableOnDown_m381983312,
+	Slider_OnInitializePotentialDrag_m3120616467,
+	Slider_SetDirection_m1955116790,
+	Slider_UnityEngine_UI_ICanvasElement_IsDestroyed_m1155329269,
+	Slider_UnityEngine_UI_ICanvasElement_get_transform_m2086174425,
+	SliderEvent__ctor_m1429088576,
+	SpriteState_get_highlightedSprite_m2511270273,
+	SpriteState_set_highlightedSprite_m2778751948,
+	SpriteState_get_pressedSprite_m591013456,
+	SpriteState_set_pressedSprite_m2255650395,
+	SpriteState_get_disabledSprite_m1512804506,
+	SpriteState_set_disabledSprite_m1447937271,
+	SpriteState_Equals_m895455353,
+	StencilMaterial__cctor_m2688860949,
+	StencilMaterial_Add_m1399519863,
+	StencilMaterial_Add_m310944030,
+	StencilMaterial_Add_m264449278,
+	StencilMaterial_Remove_m1013236306,
+	StencilMaterial_ClearAll_m3351668800,
+	MatEntry__ctor_m3447775725,
+	Text__ctor_m216739390,
+	Text__cctor_m1941857583,
+	Text_get_cachedTextGenerator_m337653083,
+	Text_get_cachedTextGeneratorForLayout_m1260141146,
+	Text_get_mainTexture_m718426116,
+	Text_FontTextureChanged_m740758478,
+	Text_get_font_m2437753165,
+	Text_set_font_m1978976364,
+	Text_get_text_m3833038297,
+	Text_set_text_m302679026,
+	Text_get_supportRichText_m226316153,
+	Text_set_supportRichText_m1299469806,
+	Text_get_resizeTextForBestFit_m3751631302,
+	Text_set_resizeTextForBestFit_m241625791,
+	Text_get_resizeTextMinSize_m557265325,
+	Text_set_resizeTextMinSize_m3506017186,
+	Text_get_resizeTextMaxSize_m4079754047,
+	Text_set_resizeTextMaxSize_m2626859572,
+	Text_get_alignment_m2624482868,
+	Text_set_alignment_m4246723817,
+	Text_get_alignByGeometry_m3404407727,
+	Text_set_alignByGeometry_m812094372,
+	Text_get_fontSize_m2862645687,
+	Text_set_fontSize_m2013207524,
+	Text_get_horizontalOverflow_m428751238,
+	Text_set_horizontalOverflow_m1764021409,
+	Text_get_verticalOverflow_m4214690218,
+	Text_set_verticalOverflow_m1954003489,
+	Text_get_lineSpacing_m2968404366,
+	Text_set_lineSpacing_m3440093,
+	Text_get_fontStyle_m1258883933,
+	Text_set_fontStyle_m2882242342,
+	Text_get_pixelsPerUnit_m4148756467,
+	Text_OnEnable_m3618900104,
+	Text_OnDisable_m957690789,
+	Text_UpdateGeometry_m1493208737,
+	Text_GetGenerationSettings_m554596117,
+	Text_GetTextAnchorPivot_m7192668,
+	Text_OnPopulateMesh_m869628001,
+	Text_CalculateLayoutInputHorizontal_m2550743748,
+	Text_CalculateLayoutInputVertical_m4013862230,
+	Text_get_minWidth_m1415472311,
+	Text_get_preferredWidth_m2672417320,
+	Text_get_flexibleWidth_m3322158618,
+	Text_get_minHeight_m1433783032,
+	Text_get_preferredHeight_m1744372647,
+	Text_get_flexibleHeight_m411516405,
+	Text_get_layoutPriority_m4042521525,
+	Toggle__ctor_m4173251063,
+	Toggle_get_group_m514230010,
+	Toggle_set_group_m4294827183,
+	Toggle_Rebuild_m1120034174,
+	Toggle_LayoutComplete_m3030592304,
+	Toggle_GraphicUpdateComplete_m1104468671,
+	Toggle_OnEnable_m975679023,
+	Toggle_OnDisable_m622215902,
+	Toggle_OnDidApplyAnimationProperties_m3936866462,
+	Toggle_SetToggleGroup_m4196871663,
+	Toggle_get_isOn_m2105608497,
+	Toggle_set_isOn_m3467664234,
+	Toggle_Set_m1284620590,
+	Toggle_Set_m1795838095,
+	Toggle_PlayEffect_m2897367561,
+	Toggle_Start_m3120388855,
+	Toggle_InternalToggle_m3534245278,
+	Toggle_OnPointerClick_m3273211815,
+	Toggle_OnSubmit_m2658606814,
+	Toggle_UnityEngine_UI_ICanvasElement_IsDestroyed_m3606481250,
+	Toggle_UnityEngine_UI_ICanvasElement_get_transform_m4001149958,
+	ToggleEvent__ctor_m110328288,
+	ToggleGroup__ctor_m1179503632,
+	ToggleGroup_get_allowSwitchOff_m1895769533,
+	ToggleGroup_set_allowSwitchOff_m2429094938,
+	ToggleGroup_ValidateToggleIsInGroup_m1953593831,
+	ToggleGroup_NotifyToggleOn_m2022309259,
+	ToggleGroup_UnregisterToggle_m451307479,
+	ToggleGroup_RegisterToggle_m2622505488,
+	ToggleGroup_AnyTogglesOn_m401060308,
+	ToggleGroup_ActiveToggles_m1762871396,
+	ToggleGroup_SetAllTogglesOff_m4240216963,
+	ToggleGroup_U3CAnyTogglesOnU3Em__4_m3428369122,
+	ToggleGroup_U3CActiveTogglesU3Em__5_m3656404306,
+	VertexHelper__ctor_m3006260889,
+	VertexHelper__ctor_m4240166773,
+	VertexHelper__cctor_m2517678132,
+	VertexHelper_Clear_m412394180,
+	VertexHelper_get_currentVertCount_m3425330353,
+	VertexHelper_get_currentIndexCount_m3847254668,
+	VertexHelper_PopulateUIVertex_m910319817,
+	VertexHelper_SetUIVertex_m3429482805,
+	VertexHelper_FillMesh_m2371101047,
+	VertexHelper_Dispose_m2696974486,
+	VertexHelper_AddVert_m1784639198,
+	VertexHelper_AddVert_m1490065189,
+	VertexHelper_AddVert_m1127238042,
+	VertexHelper_AddTriangle_m514578993,
+	VertexHelper_AddUIVertexQuad_m765809318,
+	VertexHelper_AddUIVertexStream_m1704624332,
+	VertexHelper_AddUIVertexTriangleStream_m1263262953,
+	VertexHelper_GetUIVertexStream_m1078623420,
+	VerticalLayoutGroup__ctor_m2648549884,
+	VerticalLayoutGroup_CalculateLayoutInputHorizontal_m1704122566,
+	VerticalLayoutGroup_CalculateLayoutInputVertical_m920247256,
+	VerticalLayoutGroup_SetLayoutHorizontal_m244631242,
+	VerticalLayoutGroup_SetLayoutVertical_m2764536540,
 	U3CPrivateImplementationDetailsU3E__ctor_m795736486,
 	BlockWrapper__ctor_m2983659568,
-	Button__ctor_m3352030601,
-	Button_Start_m2299168393,
-	Button_onTouchDown_m1805974313,
-	Button_onTouchUp_m3376682082,
-	Button_onTouchStay_m2239384352,
-	Button_onTouchExit_m1842503845,
 	PlaneController__ctor_m3938815859,
 	PlaneController__cctor_m1362111130,
 	PlaneController_Awake_m4176421078,
@@ -16086,7 +20841,24 @@ extern const Il2CppMethodPointer g_MethodPointers[8038] =
 	U3CrandomGenerateBlocksU3Ec__Iterator0_MoveNext_m971493211,
 	U3CrandomGenerateBlocksU3Ec__Iterator0_Dispose_m835187166,
 	U3CrandomGenerateBlocksU3Ec__Iterator0_Reset_m3680920718,
+	PlaneMaterialController__ctor_m1508617932,
+	PlaneMaterialController_Start_m455755724,
+	PlaneMaterialController_onTouchDown_m359759404,
+	PlaneMaterialController_onTouchUp_m3612048421,
+	PlaneMaterialController_onTouchStay_m793169443,
+	PlaneMaterialController_onTouchExit_m396288936,
+	ScoreController__ctor_m3502236541,
+	ScoreController_Start_m2449374333,
+	ScoreController_Update_m2922012464,
+	ScoreController_scorePlus_m3949021191,
+	ScoreController_wordTextDisplay_m2584236855,
 	TouchController__ctor_m1747329456,
 	TouchController_Start_m694467248,
 	TouchController_Update_m59500381,
+	TouchZoneMaterialController__ctor_m3508224061,
+	TouchZoneMaterialController_Start_m2455361853,
+	TouchZoneMaterialController_onTouchDown_m4002445021,
+	TouchZoneMaterialController_onTouchUp_m545451286,
+	TouchZoneMaterialController_onTouchStay_m140887764,
+	TouchZoneMaterialController_onTouchExit_m4038974553,
 };

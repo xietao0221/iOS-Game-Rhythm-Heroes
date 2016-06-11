@@ -36,6 +36,9 @@ extern "C"  void Queue_1__ctor_m3042804833_gshared (Queue_1_t2545193960 * __this
 // System.Void System.Collections.Generic.Queue`1<System.Object>::System.Collections.ICollection.CopyTo(System.Array,System.Int32)
 extern "C"  void Queue_1_System_Collections_ICollection_CopyTo_m3260144643_gshared (Queue_1_t2545193960 * __this, Il2CppArray * ___array0, int32_t ___idx1, const MethodInfo* method);
 #define Queue_1_System_Collections_ICollection_CopyTo_m3260144643(__this, ___array0, ___idx1, method) ((  void (*) (Queue_1_t2545193960 *, Il2CppArray *, int32_t, const MethodInfo*))Queue_1_System_Collections_ICollection_CopyTo_m3260144643_gshared)(__this, ___array0, ___idx1, method)
+// System.Boolean System.Collections.Generic.Queue`1<System.Object>::System.Collections.ICollection.get_IsSynchronized()
+extern "C"  bool Queue_1_System_Collections_ICollection_get_IsSynchronized_m63917275_gshared (Queue_1_t2545193960 * __this, const MethodInfo* method);
+#define Queue_1_System_Collections_ICollection_get_IsSynchronized_m63917275(__this, method) ((  bool (*) (Queue_1_t2545193960 *, const MethodInfo*))Queue_1_System_Collections_ICollection_get_IsSynchronized_m63917275_gshared)(__this, method)
 // System.Object System.Collections.Generic.Queue`1<System.Object>::System.Collections.ICollection.get_SyncRoot()
 extern "C"  Il2CppObject * Queue_1_System_Collections_ICollection_get_SyncRoot_m2093948217_gshared (Queue_1_t2545193960 * __this, const MethodInfo* method);
 #define Queue_1_System_Collections_ICollection_get_SyncRoot_m2093948217(__this, method) ((  Il2CppObject * (*) (Queue_1_t2545193960 *, const MethodInfo*))Queue_1_System_Collections_ICollection_get_SyncRoot_m2093948217_gshared)(__this, method)
