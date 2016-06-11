@@ -9,9 +9,14 @@ public class TouchController : MonoBehaviour {
 	private GameObject[] touchesOld;
 	private RaycastHit hit;
 
+	private GameObject[] planeObj = new GameObject[4];
+
 	// Use this for initialization
 	void Start () {
 		myCamera = GetComponent<Camera>();
+		for(int i=0; i<4; i++) {
+			planeObj [i] = GameObject.Find ("Plane" + i);
+		}
 	}
 
 	// Update is called once per frame
@@ -25,17 +30,31 @@ public class TouchController : MonoBehaviour {
 			Ray ray = myCamera.ScreenPointToRay (Input.mousePosition);
 
 			if(Physics.Raycast(ray, out hit, touchInputMask)) {
+				int choose = 0;
 				GameObject recepient = hit.transform.gameObject;
 				touchList.Add (recepient);
 
+				if(recepient.name == "TouchZone0") {
+					choose = 0;
+				} else if(recepient.name == "TouchZone1") {
+					choose = 1;
+				} else if(recepient.name == "TouchZone2") {
+					choose = 2;
+				} else {
+					choose = 3;
+				}
+
 				if(Input.GetMouseButtonDown(0)) {
 					recepient.SendMessage ("onTouchDown", hit.point, SendMessageOptions.DontRequireReceiver);
+					planeObj[choose].SendMessage ("onTouchDown", hit.point, SendMessageOptions.DontRequireReceiver);
 				}
 				if(Input.GetMouseButtonUp(0)) {
 					recepient.SendMessage ("onTouchUp", hit.point, SendMessageOptions.DontRequireReceiver);
+					planeObj[choose].SendMessage ("onTouchUp", hit.point, SendMessageOptions.DontRequireReceiver);
 				}
 				if(Input.GetMouseButton(0)) {
 					recepient.SendMessage ("onTouchStay", hit.point, SendMessageOptions.DontRequireReceiver);
+					planeObj[choose].SendMessage ("onTouchStay", hit.point, SendMessageOptions.DontRequireReceiver);
 				}
 			}
 
@@ -48,8 +67,6 @@ public class TouchController : MonoBehaviour {
 		}
 #endif
 
-
-
 		if(Input.touchCount > 0) {
 			touchesOld = new GameObject[touchList.Count];
 			touchList.CopyTo (touchesOld);
@@ -59,20 +76,35 @@ public class TouchController : MonoBehaviour {
 				Ray ray = myCamera.ScreenPointToRay (touch.position);
 
 				if(Physics.Raycast(ray, out hit, touchInputMask)) {
+					int choose = 0;
 					GameObject recepient = hit.transform.gameObject;
 					touchList.Add (recepient);
 
+					if(recepient.name == "TouchZone0") {
+						choose = 0;
+					} else if(recepient.name == "TouchZone1") {
+						choose = 1;
+					} else if(recepient.name == "TouchZone2") {
+						choose = 2;
+					} else {
+						choose = 3;
+					}
+
 					if(touch.phase == TouchPhase.Began) {
 						recepient.SendMessage ("onTouchDown", hit.point, SendMessageOptions.DontRequireReceiver);
+						planeObj[choose].SendMessage ("onTouchDown", hit.point, SendMessageOptions.DontRequireReceiver);
 					}
 					if(touch.phase == TouchPhase.Ended) {
 						recepient.SendMessage ("onTouchUp", hit.point, SendMessageOptions.DontRequireReceiver);
+						planeObj[choose].SendMessage ("onTouchUp", hit.point, SendMessageOptions.DontRequireReceiver);
 					}
 					if(touch.phase == TouchPhase.Stationary || touch.phase == TouchPhase.Moved) {
 						recepient.SendMessage ("onTouchStay", hit.point, SendMessageOptions.DontRequireReceiver);
+						planeObj[choose].SendMessage ("onTouchStay", hit.point, SendMessageOptions.DontRequireReceiver);
 					}
 					if(touch.phase == TouchPhase.Canceled) {
 						recepient.SendMessage ("onTouchExit", hit.point, SendMessageOptions.DontRequireReceiver);
+						planeObj[choose].SendMessage ("onTouchExit", hit.point, SendMessageOptions.DontRequireReceiver);
 					}
 				}
 			}

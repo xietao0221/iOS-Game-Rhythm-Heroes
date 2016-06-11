@@ -1,9 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Button : MonoBehaviour {
+public class TouchZoneMaterialController : MonoBehaviour {
 
-	public Color defaultColor, selectedColor;
 	private Material mat;
 
 	void Start() {
@@ -11,18 +10,18 @@ public class Button : MonoBehaviour {
 	}
 
 	void onTouchDown() {
-		mat.color = selectedColor;
+		mat.color = Color.yellow;
 	}
 
 	void onTouchUp() {
-		mat.color = defaultColor;
+		mat.color = Color.white;
 	}
 
 	void onTouchStay() {
-		mat.color = selectedColor;
+		mat.color = Color.yellow;
 	}
 
 	void onTouchExit() {
-		mat.color = defaultColor;
+		mat.color = Color.white;
 	}
 }
