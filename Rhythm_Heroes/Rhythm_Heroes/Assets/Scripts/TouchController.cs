@@ -59,8 +59,8 @@ public class TouchController : MonoBehaviour {
 								tmpPos >= PlaneController.endingPointLocalMin) {
 								tmpBlockWrapper.blockObj.transform.position = new Vector3 (100, 0, 0);
 								tmpBlockWrapper.isScored = true;
-								((ScoreController)(scoreTextObj.GetComponent (typeof(ScoreController)))).scorePlus();
-								((ScoreController)(wordTextObj.GetComponent (typeof(ScoreController)))).wordTextDisplay(1);
+								scoreTextObj.SendMessage("scorePlus");
+								wordTextObj.SendMessage("wordTextDisplay", 1);
 							}	
 						}
 					}
@@ -75,19 +75,19 @@ public class TouchController : MonoBehaviour {
 					recepient.SendMessage ("onTouchStay", hit.point, SendMessageOptions.DontRequireReceiver);
 					planeObj[choose].SendMessage ("onTouchStay", hit.point, SendMessageOptions.DontRequireReceiver);
 
-//					if(PlaneController.blocksInChannel[choose].Count > 0) {
-//						foreach(BlockWrapper tmpBlockWrapper in PlaneController.blocksInChannel[choose]) {
-//							float tmpPos = planeObj[choose].transform.InverseTransformPoint (
-//								tmpBlockWrapper.blockObj.transform.position).z;
-//							if(!tmpBlockWrapper.isScored && tmpPos <= PlaneController.touchZoneLocalMin && 
-//								tmpPos >= PlaneController.endingPointLocalMin) {
-//								tmpBlockWrapper.blockObj.transform.position = new Vector3 (100, 0, 0);
-//								tmpBlockWrapper.isScored = true;
-//								((ScoreController)(scoreTextObj.GetComponent (typeof(ScoreController)))).scorePlus();
-//								((ScoreController)(wordTextObj.GetComponent (typeof(ScoreController)))).wordTextDisplay(1);
-//							}	
-//						}
-//					}
+					if(PlaneController.blocksInChannel[choose].Count > 0) {
+						foreach(BlockWrapper tmpBlockWrapper in PlaneController.blocksInChannel[choose]) {
+							float tmpPos = planeObj[choose].transform.InverseTransformPoint (
+								tmpBlockWrapper.blockObj.transform.position).z;
+							if(!tmpBlockWrapper.isScored && tmpPos <= PlaneController.touchZoneLocalMin && 
+								tmpPos >= PlaneController.endingPointLocalMin) {
+								tmpBlockWrapper.blockObj.transform.position = new Vector3 (100, 0, 0);
+								tmpBlockWrapper.isScored = true;
+								scoreTextObj.SendMessage("scorePlus");
+								wordTextObj.SendMessage("wordTextDisplay", 1);
+							}	
+						}
+					}
 				}
 			}
 
@@ -128,19 +128,19 @@ public class TouchController : MonoBehaviour {
 						recepient.SendMessage ("onTouchDown", hit.point, SendMessageOptions.DontRequireReceiver);
 						planeObj[choose].SendMessage ("onTouchDown", hit.point, SendMessageOptions.DontRequireReceiver);
 
-//						if(PlaneController.blocksInChannel[choose].Count > 0) {
-//							foreach(BlockWrapper tmpBlockWrapper in PlaneController.blocksInChannel[choose]) {
-//								float tmpPos = planeObj[choose].transform.InverseTransformPoint (
-//									tmpBlockWrapper.blockObj.transform.position).z;
-//								if(!tmpBlockWrapper.isScored && tmpPos <= PlaneController.touchZoneLocalMin && 
-//									tmpPos >= PlaneController.endingPointLocalMin) {
-//									tmpBlockWrapper.blockObj.transform.position = new Vector3 (100, 0, 0);
-//									tmpBlockWrapper.isScored = true;
-//									((ScoreController)(scoreTextObj.GetComponent (typeof(ScoreController)))).scorePlus();
-//									((ScoreController)(wordTextObj.GetComponent (typeof(ScoreController)))).wordTextDisplay(1);
-//								}	
-//							}
-//						}
+						if(PlaneController.blocksInChannel[choose].Count > 0) {
+							foreach(BlockWrapper tmpBlockWrapper in PlaneController.blocksInChannel[choose]) {
+								float tmpPos = planeObj[choose].transform.InverseTransformPoint (
+									tmpBlockWrapper.blockObj.transform.position).z;
+								if(!tmpBlockWrapper.isScored && tmpPos <= PlaneController.touchZoneLocalMin && 
+									tmpPos >= PlaneController.endingPointLocalMin) {
+									tmpBlockWrapper.blockObj.transform.position = new Vector3 (100, 0, 0);
+									tmpBlockWrapper.isScored = true;
+									scoreTextObj.SendMessage("scorePlus");
+									wordTextObj.SendMessage("wordTextDisplay", 1);
+								}	
+							}
+						}
 					}
 					if(touch.phase == TouchPhase.Ended) {
 						recepient.SendMessage ("onTouchUp", hit.point, SendMessageOptions.DontRequireReceiver);
@@ -150,19 +150,19 @@ public class TouchController : MonoBehaviour {
 						recepient.SendMessage ("onTouchStay", hit.point, SendMessageOptions.DontRequireReceiver);
 						planeObj[choose].SendMessage ("onTouchStay", hit.point, SendMessageOptions.DontRequireReceiver);
 
-//						if(PlaneController.blocksInChannel[choose].Count > 0) {
-//							foreach(BlockWrapper tmpBlockWrapper in PlaneController.blocksInChannel[choose]) {
-//								float tmpPos = planeObj[choose].transform.InverseTransformPoint (
-//									tmpBlockWrapper.blockObj.transform.position).z;
-//								if(!tmpBlockWrapper.isScored && tmpPos <= PlaneController.touchZoneLocalMin && 
-//									tmpPos >= PlaneController.endingPointLocalMin) {
-//									tmpBlockWrapper.blockObj.transform.position = new Vector3 (100, 0, 0);
-//									tmpBlockWrapper.isScored = true;
-//									((ScoreController)(scoreTextObj.GetComponent (typeof(ScoreController)))).scorePlus();
-//									((ScoreController)(wordTextObj.GetComponent (typeof(ScoreController)))).wordTextDisplay(1);
-//								}	
-//							}
-//						}
+						if(PlaneController.blocksInChannel[choose].Count > 0) {
+							foreach(BlockWrapper tmpBlockWrapper in PlaneController.blocksInChannel[choose]) {
+								float tmpPos = planeObj[choose].transform.InverseTransformPoint (
+									tmpBlockWrapper.blockObj.transform.position).z;
+								if(!tmpBlockWrapper.isScored && tmpPos <= PlaneController.touchZoneLocalMin && 
+									tmpPos >= PlaneController.endingPointLocalMin) {
+									tmpBlockWrapper.blockObj.transform.position = new Vector3 (100, 0, 0);
+									tmpBlockWrapper.isScored = true;
+									scoreTextObj.SendMessage("scorePlus");
+									wordTextObj.SendMessage("wordTextDisplay", 1);
+								}	
+							}
+						}
 					}
 					if(touch.phase == TouchPhase.Canceled) {
 						recepient.SendMessage ("onTouchExit", hit.point, SendMessageOptions.DontRequireReceiver);

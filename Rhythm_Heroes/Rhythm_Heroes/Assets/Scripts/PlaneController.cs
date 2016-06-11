@@ -5,8 +5,8 @@ using System.Collections.Generic;
 public class PlaneController : MonoBehaviour {
 	public static bool keepPlaying = true;
 	public static int blockNumPerChannel = 5;
-	public static int[] blockSpeed = new int[]{10, 10, 10, 10};			// the smaller the val, the faster the speed
-	public static float blockTimeInterval = 1f;							// the bigger the val, the smaller the time interval
+	public static int[] blockSpeed = new int[]{15, 15, 15, 15};			// the smaller the val, the faster the speed
+	public static float blockTimeInterval = 0.2f;							// the bigger the val, the smaller the time interval
 
 	public static Queue<BlockWrapper>[] blocksInPool = new Queue<BlockWrapper>[4];
 	public static Queue<BlockWrapper>[] blocksInChannel = new Queue<BlockWrapper>[4];
@@ -48,7 +48,7 @@ public class PlaneController : MonoBehaviour {
 					count [i]++;
 					tmpBlockWrapper.blockObj.transform.position = new Vector3(100, 0, 0);
 					if(!tmpBlockWrapper.isScored) {
-						((ScoreController)(wordObj.GetComponent (typeof(ScoreController)))).wordTextDisplay(2);
+						wordObj.SendMessage ("wordTextDisplay", 2);
 					} else {
 						tmpBlockWrapper.isScored = false;
 					}
