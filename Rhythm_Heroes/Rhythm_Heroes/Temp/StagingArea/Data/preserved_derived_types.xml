@@ -1,0 +1,7 @@
+<linker>
+<assembly fullname="Assembly-CSharp">
+<type fullname="Button" preserve="all"/>
+<type fullname="PlaneController" preserve="all"/>
+<type fullname="TouchController" preserve="all"/>
+</assembly>
+</linker>

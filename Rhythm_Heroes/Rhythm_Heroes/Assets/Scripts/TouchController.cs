@@ -16,6 +16,40 @@ public class TouchController : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
+#if UNITY_EDITOR
+		if(Input.GetMouseButton(0) || Input.GetMouseButtonDown(0) || Input.GetMouseButtonUp(0)) {
+			touchesOld = new GameObject[touchList.Count];
+			touchList.CopyTo (touchesOld);
+			touchList.Clear ();
+
+			Ray ray = myCamera.ScreenPointToRay (Input.mousePosition);
+
+			if(Physics.Raycast(ray, out hit, touchInputMask)) {
+				GameObject recepient = hit.transform.gameObject;
+				touchList.Add (recepient);
+
+				if(Input.GetMouseButtonDown(0)) {
+					recepient.SendMessage ("onTouchDown", hit.point, SendMessageOptions.DontRequireReceiver);
+				}
+				if(Input.GetMouseButtonUp(0)) {
+					recepient.SendMessage ("onTouchUp", hit.point, SendMessageOptions.DontRequireReceiver);
+				}
+				if(Input.GetMouseButton(0)) {
+					recepient.SendMessage ("onTouchStay", hit.point, SendMessageOptions.DontRequireReceiver);
+				}
+			}
+
+
+			foreach(GameObject g in touchesOld) {
+				if(!touchList.Contains(g)) {
+					g.SendMessage ("onTouchExit", hit.point, SendMessageOptions.DontRequireReceiver);
+				}
+			}
+		}
+#endif
+
+
+
 		if(Input.touchCount > 0) {
 			touchesOld = new GameObject[touchList.Count];
 			touchList.CopyTo (touchesOld);
@@ -23,22 +57,22 @@ public class TouchController : MonoBehaviour {
 
 			foreach(Touch touch in Input.touches) {
 				Ray ray = myCamera.ScreenPointToRay (touch.position);
-				RaycastHit hit;
 
 				if(Physics.Raycast(ray, out hit, touchInputMask)) {
 					GameObject recepient = hit.transform.gameObject;
 					touchList.Add (recepient);
+
 					if(touch.phase == TouchPhase.Began) {
-						recepient.SendMessage ("OnTouchDown", hit.point, SendMessageOptions.DontRequireReceiver);
+						recepient.SendMessage ("onTouchDown", hit.point, SendMessageOptions.DontRequireReceiver);
 					}
 					if(touch.phase == TouchPhase.Ended) {
-						recepient.SendMessage ("OnTouchUp", hit.point, SendMessageOptions.DontRequireReceiver);
+						recepient.SendMessage ("onTouchUp", hit.point, SendMessageOptions.DontRequireReceiver);
 					}
 					if(touch.phase == TouchPhase.Stationary || touch.phase == TouchPhase.Moved) {
-						recepient.SendMessage ("OnTouchStay", hit.point, SendMessageOptions.DontRequireReceiver);
+						recepient.SendMessage ("onTouchStay", hit.point, SendMessageOptions.DontRequireReceiver);
 					}
 					if(touch.phase == TouchPhase.Canceled) {
-						recepient.SendMessage ("OnTouchExit", hit.point, SendMessageOptions.DontRequireReceiver);
+						recepient.SendMessage ("onTouchExit", hit.point, SendMessageOptions.DontRequireReceiver);
 					}
 				}
 			}
