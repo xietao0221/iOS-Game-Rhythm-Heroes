@@ -110,9 +110,9 @@ public class PlaneController : MonoBehaviour, AudioProcessor.AudioCallbacks {
 			startingPoint[i] = new Vector3 (leftBottomPoint[i].x + planeWidth[i] / 2, rightTopPoint[i].y, rightTopPoint[i].z);
 		}
 		endingPointLocalMin = -(float)(planeObj[0].GetComponent<Renderer> ().bounds.size [2] + 
-			touchZoneObj[0].GetComponent<Renderer>().bounds.size[2]*2.7) / 2;
+			touchZoneObj[0].GetComponent<Renderer>().bounds.size[2]*3) / 2;
 //		touchZoneLocalMin = -(float)(planeObj[0].GetComponent<Renderer> ().bounds.size [2]) / 2;
-		touchZoneLocalMin = endingPointLocalMin * 0.8f;
+		touchZoneLocalMin = endingPointLocalMin * 0.85f;
 	}
 
 	void initiateBlocks(int num) {

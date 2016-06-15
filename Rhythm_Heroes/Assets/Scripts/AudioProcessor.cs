@@ -28,7 +28,7 @@ public class AudioProcessor : MonoBehaviour
     private List<AudioCallbacks> callbacks;
 
 	public int bufferSize = 1024; // fft size
-	private int samplingRate = 44100; // fft sampling frequency
+	private int samplingRate = 20; // fft sampling frequency
 
     /* log-frequency averaging controls */
     private int nBand = 12; // number of bands

@@ -118,7 +118,6 @@ public class TouchController : MonoBehaviour {
 							foreach(BlockWrapper tmpBlockWrapper in PlaneController.blocksInChannel[choose]) {
 								float tmpPos = planeObj[choose].transform.InverseTransformPoint (
 									tmpBlockWrapper.blockObj.transform.position).z;
-//								print (tmpPos);
 								if(!tmpBlockWrapper.isScored && tmpPos <= PlaneController.touchZoneLocalMin && 
 									tmpPos >= PlaneController.endingPointLocalMin) {
 									tmpBlockWrapper.blockObj.transform.position = new Vector3 (100, 0, 0);
