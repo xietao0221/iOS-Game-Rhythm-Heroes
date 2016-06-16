@@ -12,18 +12,19 @@ public class WordController : MonoBehaviour {
 	}
 		
 	public void wordTextDisplay(int val) {
-		if(val == 1) {
+		if(val == 0) {		// miss
+			StartCoroutine (showWord("Miss", (float)0.4));
+		} else if(val == 1) {
 			StartCoroutine (showWord("Perfect", (float)0.4));
 		} else {
-			StartCoroutine (showWord("Miss", (float)0.4));
+			StartCoroutine (showWord("Perfect\n+ " + ScoreController.combo, (float)0.4));
 		}
 	}
-
+		
 	IEnumerator showWord(string s, float delay) {
 		wordText.text = s;
 		wordText.enabled = true;
 		yield return new WaitForSeconds(delay);
 		wordText.enabled = false;
-
 	}
 }

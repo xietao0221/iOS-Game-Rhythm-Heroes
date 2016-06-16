@@ -9,20 +9,34 @@ public class TouchController : MonoBehaviour {
 	private GameObject[] touchesOld;
 	private RaycastHit hit;
 
-	private GameObject[] planeObj = new GameObject[4];
+	private GameObject[] planeObj = new GameObject[5];
 	private GameObject scoreTextObj, wordTextObj;
+	private int channelNum = 5;
+	public static bool isCombo = false;
 
-	// Use this for initialization
 	void Start () {
 		myCamera = GetComponent<Camera>();
-		for(int i=0; i<4; i++) {
-			planeObj [i] = GameObject.Find ("Plane" + i);
+		GameObject[] tmpPlaneObj = new GameObject[5];
+		for(int i=0; i<5; i++) {
+			tmpPlaneObj [i] = GameObject.Find ("Plane" + i);
+			if(tmpPlaneObj[i] == null) {
+				channelNum = i;
+				planeObj = new GameObject[channelNum];
+				for(int j=0; j<channelNum; j++) {
+					planeObj [j] = tmpPlaneObj [j];
+				}
+				break;
+			}
+			if(i == 4 && tmpPlaneObj[4] != null) {
+				for(int j=0; j<channelNum; j++) {
+					planeObj [j] = tmpPlaneObj [j];
+				}
+			}
 		}
 		scoreTextObj = GameObject.Find ("Score");
 		wordTextObj = GameObject.Find ("Word");
 	}
-
-	// Update is called once per frame
+		
 	void Update () {
 #if UNITY_EDITOR
 		if(Input.GetMouseButton(0) || Input.GetMouseButtonDown(0) || Input.GetMouseButtonUp(0)) {
@@ -43,10 +57,12 @@ public class TouchController : MonoBehaviour {
 					choose = 1;
 				} else if(recepient.name == "TouchZone2") {
 					choose = 2;
-				} else {
+				} else if(recepient.name == "TouchZone3"){
 					choose = 3;
+				} else {
+					choose = 4;
 				}
-					
+
 				if(Input.GetMouseButtonDown(0)) {
 					recepient.SendMessage ("onTouchDown", hit.point, SendMessageOptions.DontRequireReceiver);
 					planeObj[choose].SendMessage ("onTouchDown", hit.point, SendMessageOptions.DontRequireReceiver);
@@ -60,7 +76,14 @@ public class TouchController : MonoBehaviour {
 								tmpBlockWrapper.blockObj.transform.position = new Vector3 (100, 0, 0);
 								tmpBlockWrapper.isScored = true;
 								scoreTextObj.SendMessage("scorePlus");
-								wordTextObj.SendMessage("wordTextDisplay", 1);
+								scoreTextObj.SendMessage ("statChange", 2, SendMessageOptions.RequireReceiver);
+								if(isCombo) {
+									scoreTextObj.SendMessage("comboChange", 0, SendMessageOptions.RequireReceiver);
+									wordTextObj.SendMessage("wordTextDisplay", 2, SendMessageOptions.RequireReceiver);
+								} else {
+									isCombo = true;
+									wordTextObj.SendMessage("wordTextDisplay", 1, SendMessageOptions.RequireReceiver);
+								}
 							}	
 						}
 					}
@@ -100,14 +123,16 @@ public class TouchController : MonoBehaviour {
 					GameObject recepient = hit.transform.gameObject;
 					touchList.Add (recepient);
 
-					if(recepient.name == "TouchZone0") {
+					if(recepient.name == "TouchZone" + "0") {
 						choose = 0;
 					} else if(recepient.name == "TouchZone1") {
 						choose = 1;
 					} else if(recepient.name == "TouchZone2") {
 						choose = 2;
-					} else {
+					} else if(recepient.name == "TouchZone3") {
 						choose = 3;
+					} else {
+						choose = 4;
 					}
 
 					if(touch.phase == TouchPhase.Began) {
@@ -123,7 +148,14 @@ public class TouchController : MonoBehaviour {
 									tmpBlockWrapper.blockObj.transform.position = new Vector3 (100, 0, 0);
 									tmpBlockWrapper.isScored = true;
 									scoreTextObj.SendMessage("scorePlus");
-									wordTextObj.SendMessage("wordTextDisplay", 1);
+									scoreTextObj.SendMessage ("statChange", 2, SendMessageOptions.RequireReceiver);
+									if(isCombo) {
+										scoreTextObj.SendMessage("comboChange", 0, SendMessageOptions.RequireReceiver);
+										wordTextObj.SendMessage("wordTextDisplay", 2, SendMessageOptions.RequireReceiver);
+									} else {
+										isCombo = true;
+										wordTextObj.SendMessage("wordTextDisplay", 1, SendMessageOptions.RequireReceiver);
+									}
 								}	
 							}
 						}

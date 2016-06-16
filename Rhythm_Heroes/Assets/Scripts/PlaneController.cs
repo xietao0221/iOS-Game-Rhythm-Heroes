@@ -4,75 +4,93 @@ using System.Collections.Generic;
 
 public class PlaneController : MonoBehaviour, AudioProcessor.AudioCallbacks {
 	public static bool keepPlaying = true;
-	public static int blockNumPerChannel = 5;
-	public static int[] blockSpeed = new int[]{15, 15, 15, 15};			// the smaller the val, the faster the speed
-	public static float blockTimeInterval = 0.2f;						// the bigger the val, the smaller the time interval
+	public static int channelNum = 5;
+	public static int blockNumPerChannel = 10;
+	public static int[] blockSpeed = new int[]{10, 10, 10, 10, 10};			// the smaller the val, the faster the speed
+//	public static float blockTimeInterval = 0.2f;						// the bigger the val, the smaller the time interval
 
-	public static Queue<BlockWrapper>[] blocksInPool = new Queue<BlockWrapper>[4];
-	public static Queue<BlockWrapper>[] blocksInChannel = new Queue<BlockWrapper>[4];
+	public static Queue<BlockWrapper>[] blocksInPool = new Queue<BlockWrapper>[5];
+	public static Queue<BlockWrapper>[] blocksInChannel = new Queue<BlockWrapper>[5];
 	public GameObject prefabBlock;
-	public GameObject[] planeObj = new GameObject[4], touchZoneObj = new GameObject[4];
+	public GameObject[] planeObj = new GameObject[5], touchZoneObj = new GameObject[5];
 	public static BlockWrapper[] blockClone;
-	private GameObject wordObj;
+	private GameObject wordObj, scoreObj;
 
-	public static Vector3[] startingPoint = new Vector3[4];
+	public static Vector3[] startingPoint = new Vector3[5];
 	public static float endingPointLocalMin = 0, touchZoneLocalMin = 0; 
-	int delay = 0;
+	private int delay = 0;
 	AudioSource backgroundAudio;
 
 	void Awake() {
-		for(int i=0; i<4; i++) {
-			planeObj [i] = GameObject.Find ("Plane" + i);
-			touchZoneObj [i] = GameObject.Find ("TouchZone" + i);
+		GameObject[] tmpPlaneObj = new GameObject[5], tmpTouchZoneObj = new GameObject[5];
+		for(int i=0; i<5; i++) {
+			tmpPlaneObj [i] = GameObject.Find ("Plane" + i);
+			tmpTouchZoneObj [i] = GameObject.Find ("TouchZone" + i);
+			if(tmpPlaneObj[i] == null) {
+				channelNum = i;
+				blocksInPool = new Queue<BlockWrapper>[channelNum];
+				blocksInChannel = new Queue<BlockWrapper>[channelNum];
+				planeObj = new GameObject[channelNum];
+				touchZoneObj = new GameObject[channelNum];
+				for(int j=0; j<channelNum; j++) {
+					planeObj [j] = tmpPlaneObj [j];
+					touchZoneObj [j] = tmpTouchZoneObj [j];
+				}
+				break;
+			}
+			if(i == 4 && tmpPlaneObj[4] != null) {
+				planeObj = new GameObject[channelNum];
+				touchZoneObj = new GameObject[channelNum];
+				for(int j=0; j<channelNum; j++) {
+					planeObj [j] = tmpPlaneObj [j];
+					touchZoneObj [j] = tmpTouchZoneObj [j];
+				}
+			}
 		}
+
 		wordObj = GameObject.Find ("Word");
-		blockClone = new BlockWrapper[4 * blockNumPerChannel];
+		scoreObj = GameObject.Find ("Score");
+		blockClone = new BlockWrapper[channelNum * blockNumPerChannel];
 		Random.seed = 42;
 		calculatePosition ();
 		initiateBlocks (blockNumPerChannel);
 	}
 
-	// Use this for initialization
-	void Start () {
-		//StartCoroutine(randomGenerateBlocks());
-		delay = 0;
 
-	}
-
-	// Update is called once per frame
 	void activeBeat(){
 		backgroundAudio = GetComponent<AudioSource>();
 		AudioProcessor processor = FindObjectOfType<AudioProcessor>();
 		processor.addAudioCallback(this);
 	}
-	public void onOnbeatDetected()
-	{
-//		Debug.Log("Beat!!!");
-		float tmp = Random.value * 4;
+
+	public void onOnbeatDetected() {
+		float tmp = Random.value * channelNum;
 		if(tmp <= 1) {
 			generateBlocks (0);
 		} else if(tmp <= 2) {
 			generateBlocks (1);
 		} else if(tmp <= 3) {
 			generateBlocks (2);
-		} else {
+		} else if(channelNum >= 4 && tmp <= 4){
 			generateBlocks (3);
+		} else {
+			generateBlocks (4);
 		}
 	}
 
 	//This event will be called every frame while music is playing
-	public void onSpectrum(float[] spectrum)// spectrum.length = 12
-	{
+	// spectrum.length = 12
+	public void onSpectrum(float[] spectrum) {
 
 	}
 
 	void FixedUpdate () {
 		if (delay++ == 10) {
-			print (delay);
 			activeBeat ();
 		}
-		int[] count = new int[4];
-		for(int i=0; i<4; i++) {
+
+		int[] count = new int[channelNum];
+		for(int i=0; i<channelNum; i++) {
 			foreach(BlockWrapper tmpBlockWrapper in blocksInChannel[i]) {
 				tmpBlockWrapper.blockObj.transform.position -= planeObj[i].transform.forward / blockSpeed[i];
 				if(planeObj[i].transform.InverseTransformPoint(tmpBlockWrapper.blockObj.transform.position).z 
@@ -81,7 +99,10 @@ public class PlaneController : MonoBehaviour, AudioProcessor.AudioCallbacks {
 					count [i]++;
 					tmpBlockWrapper.blockObj.transform.position = new Vector3(100, 0, 0);
 					if(!tmpBlockWrapper.isScored) {
-						wordObj.SendMessage ("wordTextDisplay", 2);
+						wordObj.SendMessage ("wordTextDisplay", 0, SendMessageOptions.RequireReceiver);
+						scoreObj.SendMessage("comboChange", 1, SendMessageOptions.RequireReceiver);
+						scoreObj.SendMessage ("statChange", 1, SendMessageOptions.RequireReceiver);
+						TouchController.isCombo = false;
 					} else {
 						tmpBlockWrapper.isScored = false;
 					}
@@ -89,7 +110,7 @@ public class PlaneController : MonoBehaviour, AudioProcessor.AudioCallbacks {
 			}	
 		}
 			
-		for(int i=0; i<4; i++) {
+		for(int i=0; i<channelNum; i++) {
 			while(count[i]-- > 0) {
 				blocksInChannel[i].Dequeue();
 			}	
@@ -98,10 +119,10 @@ public class PlaneController : MonoBehaviour, AudioProcessor.AudioCallbacks {
 
 	void calculatePosition() {
 		// calculate the x-coordinate of this channel
-		Collider[] planeCollider = new Collider[4], touchZoneCollider = new Collider[4];
-		Vector3[] leftBottomPoint = new Vector3[4], rightTopPoint = new Vector3[4];
-		float[] planeWidth = new float[4];
-		for(int i=0; i<4; i++) {
+		Collider[] planeCollider = new Collider[channelNum], touchZoneCollider = new Collider[channelNum];
+		Vector3[] leftBottomPoint = new Vector3[channelNum], rightTopPoint = new Vector3[channelNum];
+		float[] planeWidth = new float[channelNum];
+		for(int i=0; i<channelNum; i++) {
 			planeCollider [i] = planeObj [i].GetComponent<Collider> ();
 			touchZoneCollider [i] = touchZoneObj [i].GetComponent<Collider> ();
 			leftBottomPoint [i] = planeCollider [i].bounds.min;
@@ -116,7 +137,7 @@ public class PlaneController : MonoBehaviour, AudioProcessor.AudioCallbacks {
 	}
 
 	void initiateBlocks(int num) {
-		for(int i=0; i<4; i++) {
+		for(int i=0; i<channelNum; i++) {
 			blocksInChannel [i] = new Queue<BlockWrapper> ();
 			blocksInPool [i] = new Queue<BlockWrapper> ();
 			for(int j=0; j<blockNumPerChannel; j++) {
@@ -132,22 +153,7 @@ public class PlaneController : MonoBehaviour, AudioProcessor.AudioCallbacks {
 			BlockWrapper tmpBlockWrapper = blocksInPool[channel].Dequeue ();
 			blocksInChannel[channel].Enqueue (tmpBlockWrapper);
 			tmpBlockWrapper.blockObj.transform.position = startingPoint[channel];
-		}
-	}
-
-	IEnumerator randomGenerateBlocks() {
-		while(keepPlaying) {
-			float tmp = Random.value * 4;
-			if(tmp <= 1) {
-				generateBlocks (0);
-			} else if(tmp <= 2) {
-				generateBlocks (1);
-			} else if(tmp <= 3) {
-				generateBlocks (2);
-			} else {
-				generateBlocks (3);
-			}
-			yield return new WaitForSeconds(Random.value / blockTimeInterval);	
+			scoreObj.SendMessage ("statChange", 0, SendMessageOptions.RequireReceiver);
 		}
 	}
 }
