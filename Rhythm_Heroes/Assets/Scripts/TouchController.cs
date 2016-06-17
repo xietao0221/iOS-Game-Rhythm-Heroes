@@ -66,7 +66,7 @@ public class TouchController : MonoBehaviour {
 				if(Input.GetMouseButtonDown(0)) {
 					recepient.SendMessage ("onTouchDown", hit.point, SendMessageOptions.DontRequireReceiver);
 					planeObj[choose].SendMessage ("onTouchDown", hit.point, SendMessageOptions.DontRequireReceiver);
-
+					print (hit.point);
 					if(PlaneController.blocksInChannel[choose].Count > 0) {
 						foreach(BlockWrapper tmpBlockWrapper in PlaneController.blocksInChannel[choose]) {
 							float tmpPos = planeObj[choose].transform.InverseTransformPoint (

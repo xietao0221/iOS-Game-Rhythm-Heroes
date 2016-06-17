@@ -3,33 +3,23 @@ using System.Collections;
 
 public class MenuManager : MonoBehaviour 
 {
-    public void GoTo(int scene)
-    {
-        Application.LoadLevel(scene);
+    public void GoToThree() {
+		Application.LoadLevel("GameScene_ThreeTrack");
     }
 
-    public void Quit()
-    {
+	public void GoTo_Four() {
+		Application.LoadLevel("GameScene_FourTrack");
+	}
+
+	public void GoTo_Five() {
+		Application.LoadLevel("GameScene_FiveTrack");
+	}
+
+	public void GoTo_MainScene() {
+		Application.LoadLevel ("MainScene");
+	}
+
+    public void Quit() {
         Application.Quit();
     }
-    public void ToggleVisible(Animator anim)
-    {
-        if (anim.GetBool("isDisplayed"))
-        {
-            anim.SetBool("isDisplayed", false);
-        }
-        else
-        {
-            anim.SetBool("isDisplayed", true);
-        }
-    }
-	// Use this for initialization
-	void Start () {
-	
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}
 }
