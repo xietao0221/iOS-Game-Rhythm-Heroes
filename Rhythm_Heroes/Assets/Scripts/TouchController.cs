@@ -12,7 +12,6 @@ public class TouchController : MonoBehaviour {
 	private GameObject[] planeObj = new GameObject[5];
 	private GameObject scoreTextObj, wordTextObj;
 	private int channelNum = 5;
-	public static bool isCombo = false;
 
 	void Start () {
 		myCamera = GetComponent<Camera>();
@@ -66,7 +65,6 @@ public class TouchController : MonoBehaviour {
 				if(Input.GetMouseButtonDown(0)) {
 					recepient.SendMessage ("onTouchDown", hit.point, SendMessageOptions.DontRequireReceiver);
 					planeObj[choose].SendMessage ("onTouchDown", hit.point, SendMessageOptions.DontRequireReceiver);
-					print (hit.point);
 					if(PlaneController.blocksInChannel[choose].Count > 0) {
 						foreach(BlockWrapper tmpBlockWrapper in PlaneController.blocksInChannel[choose]) {
 							float tmpPos = planeObj[choose].transform.InverseTransformPoint (
@@ -75,15 +73,10 @@ public class TouchController : MonoBehaviour {
 								tmpPos >= PlaneController.endingPointLocalMin) {
 								tmpBlockWrapper.blockObj.transform.position = new Vector3 (100, 0, 0);
 								tmpBlockWrapper.isScored = true;
-								scoreTextObj.SendMessage("scorePlus");
+								scoreTextObj.SendMessage("scorePlus", SendMessageOptions.RequireReceiver);
+								scoreTextObj.SendMessage("comboChange", 1, SendMessageOptions.RequireReceiver);
+								wordTextObj.SendMessage("wordTextDisplay", 1, SendMessageOptions.RequireReceiver);
 								scoreTextObj.SendMessage ("statChange", 2, SendMessageOptions.RequireReceiver);
-								if(isCombo) {
-									scoreTextObj.SendMessage("comboChange", 0, SendMessageOptions.RequireReceiver);
-									wordTextObj.SendMessage("wordTextDisplay", 2, SendMessageOptions.RequireReceiver);
-								} else {
-									isCombo = true;
-									wordTextObj.SendMessage("wordTextDisplay", 1, SendMessageOptions.RequireReceiver);
-								}
 							}	
 						}
 					}
@@ -147,15 +140,10 @@ public class TouchController : MonoBehaviour {
 									tmpPos >= PlaneController.endingPointLocalMin) {
 									tmpBlockWrapper.blockObj.transform.position = new Vector3 (100, 0, 0);
 									tmpBlockWrapper.isScored = true;
-									scoreTextObj.SendMessage("scorePlus");
+									scoreTextObj.SendMessage("scorePlus", SendMessageOptions.RequireReceiver);
+									scoreTextObj.SendMessage("comboChange", 1, SendMessageOptions.RequireReceiver);
+									wordTextObj.SendMessage("wordTextDisplay", 1, SendMessageOptions.RequireReceiver);
 									scoreTextObj.SendMessage ("statChange", 2, SendMessageOptions.RequireReceiver);
-									if(isCombo) {
-										scoreTextObj.SendMessage("comboChange", 0, SendMessageOptions.RequireReceiver);
-										wordTextObj.SendMessage("wordTextDisplay", 2, SendMessageOptions.RequireReceiver);
-									} else {
-										isCombo = true;
-										wordTextObj.SendMessage("wordTextDisplay", 1, SendMessageOptions.RequireReceiver);
-									}
 								}	
 							}
 						}

@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/GameScene_ThreeTrack.unity
+- path: Assets/Scenes/GameScene_FourTrack.unity
   isLoaded: 1
   isActive: 1

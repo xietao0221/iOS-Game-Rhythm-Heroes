@@ -12,12 +12,10 @@ public class WordController : MonoBehaviour {
 	}
 		
 	public void wordTextDisplay(int val) {
-		if(val == 0) {		// miss
+		if(val == 0) {				// miss
 			StartCoroutine (showWord("Miss", (float)0.4));
-		} else if(val == 1) {
-			StartCoroutine (showWord("Perfect", (float)0.4));
-		} else {
-			StartCoroutine (showWord("Perfect\n+ " + ScoreController.combo, (float)0.4));
+		} else {					// perfect + combo
+			StartCoroutine (showWord("Perfect\n" + ScoreController.combo, (float)0.4));
 		}
 	}
 		

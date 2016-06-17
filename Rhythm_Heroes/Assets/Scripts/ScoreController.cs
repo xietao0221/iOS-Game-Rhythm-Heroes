@@ -21,14 +21,11 @@ public class ScoreController : MonoBehaviour {
 	}
 
 	public void comboChange(int val) {
-		switch(val) {
-		case 0:			// combo plus
+		if(val == 1) {			// combo plus
 			combo++;
-			break;
-		case 1:			// combo return to 0
+		} else {				// combo returns to 0
 			comboMax = Mathf.Max (comboMax, combo);
 			combo = 0;
-			break;
 		}
 	}
 
