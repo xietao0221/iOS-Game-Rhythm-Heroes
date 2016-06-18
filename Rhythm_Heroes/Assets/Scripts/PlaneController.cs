@@ -93,6 +93,7 @@ public class PlaneController : MonoBehaviour, AudioProcessor.AudioCallbacks {
 		for(int i=0; i<channelNum; i++) {
 			foreach(BlockWrapper tmpBlockWrapper in blocksInChannel[i]) {
 				tmpBlockWrapper.blockObj.transform.position -= planeObj[i].transform.forward / blockSpeed[i];
+				print (planeObj[i].transform.forward / blockSpeed[i]);
 				if(planeObj[i].transform.InverseTransformPoint(tmpBlockWrapper.blockObj.transform.position).z 
 					<= endingPointLocalMin) {
 					blocksInPool[i].Enqueue(tmpBlockWrapper);

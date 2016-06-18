@@ -41,6 +41,6 @@ public class ScoreController : MonoBehaviour {
 			perfectNum++;
 			break;
 		}
-		print ("Block: " + blockNum + ", Perfect: " + perfectNum + ", Miss: " + missNum);
+//		print ("Block: " + blockNum + ", Perfect: " + perfectNum + ", Miss: " + missNum);
 	}
 }

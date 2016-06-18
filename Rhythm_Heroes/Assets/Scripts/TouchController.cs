@@ -36,7 +36,7 @@ public class TouchController : MonoBehaviour {
 		wordTextObj = GameObject.Find ("Word");
 	}
 		
-	void Update () {
+	void FixedUpdate () {
 #if UNITY_EDITOR
 		if(Input.GetMouseButton(0) || Input.GetMouseButtonDown(0) || Input.GetMouseButtonUp(0)) {
 			touchesOld = new GameObject[touchList.Count];
