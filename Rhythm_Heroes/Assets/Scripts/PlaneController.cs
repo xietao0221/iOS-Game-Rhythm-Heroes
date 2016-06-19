@@ -7,7 +7,7 @@ public class PlaneController : MonoBehaviour, AudioProcessor.AudioCallbacks {
 	public static int channelNum = 5;
 	public static int blockNumPerChannel = 6;
 	public static int[] blockSpeed = new int[]{10, 10, 10, 10, 10};			// the smaller the val, the faster the speed
-//	public static float blockTimeInterval = 0.2f;						// the bigger the val, the smaller the time interval
+	//	public static float blockTimeInterval = 0.2f;						// the bigger the val, the smaller the time interval
 
 	public static Queue<BlockWrapper>[] blocksInPool = new Queue<BlockWrapper>[5];
 	public static Queue<BlockWrapper>[] blocksInChannel = new Queue<BlockWrapper>[5];
@@ -19,7 +19,7 @@ public class PlaneController : MonoBehaviour, AudioProcessor.AudioCallbacks {
 	public static Vector3[] startingPoint = new Vector3[5];
 	public static float endingPointLocalMin = 0, touchZoneLocalMin = 0; 
 	private int delay = 0;
-//	AudioSource backgroundAudio;
+	//	AudioSource backgroundAudio;
 
 	void Awake() {
 		GameObject[] tmpPlaneObj = new GameObject[5], tmpTouchZoneObj = new GameObject[5];
@@ -58,7 +58,7 @@ public class PlaneController : MonoBehaviour, AudioProcessor.AudioCallbacks {
 
 
 	void activeBeat(){
-//		backgroundAudio = GetComponent<AudioSource>();
+		//		backgroundAudio = GetComponent<AudioSource>();
 		AudioProcessor processor = FindObjectOfType<AudioProcessor>();
 		processor.addAudioCallback(this);
 	}
@@ -93,7 +93,6 @@ public class PlaneController : MonoBehaviour, AudioProcessor.AudioCallbacks {
 		for(int i=0; i<channelNum; i++) {
 			foreach(BlockWrapper tmpBlockWrapper in blocksInChannel[i]) {
 				tmpBlockWrapper.blockObj.transform.position -= planeObj[i].transform.forward / blockSpeed[i];
-				print (planeObj[i].transform.forward / blockSpeed[i]);
 				if(planeObj[i].transform.InverseTransformPoint(tmpBlockWrapper.blockObj.transform.position).z 
 					<= endingPointLocalMin) {
 					blocksInPool[i].Enqueue(tmpBlockWrapper);
@@ -109,7 +108,7 @@ public class PlaneController : MonoBehaviour, AudioProcessor.AudioCallbacks {
 				}
 			}	
 		}
-			
+
 		for(int i=0; i<channelNum; i++) {
 			while(count[i]-- > 0) {
 				blocksInChannel[i].Dequeue();
@@ -132,7 +131,7 @@ public class PlaneController : MonoBehaviour, AudioProcessor.AudioCallbacks {
 		}
 		endingPointLocalMin = -(float)(planeObj[0].GetComponent<Renderer> ().bounds.size [2] + 
 			touchZoneObj[0].GetComponent<Renderer>().bounds.size[2]*3) / 2;
-//		touchZoneLocalMin = -(float)(planeObj[0].GetComponent<Renderer> ().bounds.size [2]) / 2;
+		//		touchZoneLocalMin = -(float)(planeObj[0].GetComponent<Renderer> ().bounds.size [2]) / 2;
 		touchZoneLocalMin = endingPointLocalMin * 0.85f;
 	}
 

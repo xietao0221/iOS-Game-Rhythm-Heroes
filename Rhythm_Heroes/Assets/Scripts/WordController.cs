@@ -10,7 +10,7 @@ public class WordController : MonoBehaviour {
 	void Start () {
 		wordText.text = "";
 	}
-		
+
 	public void wordTextDisplay(int val) {
 		if(val == 0) {				// miss
 			StartCoroutine (showWord("Miss", (float)0.4));
@@ -18,7 +18,7 @@ public class WordController : MonoBehaviour {
 			StartCoroutine (showWord("Perfect\n" + ScoreController.combo, (float)0.4));
 		}
 	}
-		
+
 	IEnumerator showWord(string s, float delay) {
 		wordText.text = s;
 		wordText.enabled = true;

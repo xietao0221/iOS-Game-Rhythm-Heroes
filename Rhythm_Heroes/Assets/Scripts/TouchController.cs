@@ -35,9 +35,9 @@ public class TouchController : MonoBehaviour {
 		scoreTextObj = GameObject.Find ("Score");
 		wordTextObj = GameObject.Find ("Word");
 	}
-		
-	void FixedUpdate () {
-#if UNITY_EDITOR
+
+	void Update () {
+		#if UNITY_EDITOR
 		if(Input.GetMouseButton(0) || Input.GetMouseButtonDown(0) || Input.GetMouseButtonUp(0)) {
 			touchesOld = new GameObject[touchList.Count];
 			touchList.CopyTo (touchesOld);
@@ -100,9 +100,9 @@ public class TouchController : MonoBehaviour {
 				}
 			}
 		}
-#endif
+		#endif
 
-#if UNITY_IPHONE
+		#if UNITY_IPHONE
 		if(Input.touchCount > 0) {
 			touchesOld = new GameObject[touchList.Count];
 			touchList.CopyTo (touchesOld);
@@ -153,7 +153,7 @@ public class TouchController : MonoBehaviour {
 						recepient.SendMessage ("onTouchUp", hit.point, SendMessageOptions.DontRequireReceiver);
 						planeObj[choose].SendMessage ("onTouchUp", hit.point, SendMessageOptions.DontRequireReceiver);
 					}
-						
+
 					if(touch.phase == TouchPhase.Stationary) {
 						recepient.SendMessage ("onTouchStay", hit.point, SendMessageOptions.DontRequireReceiver);
 						planeObj[choose].SendMessage ("onTouchStay", hit.point, SendMessageOptions.DontRequireReceiver);
@@ -177,6 +177,6 @@ public class TouchController : MonoBehaviour {
 				}
 			}
 		}
-#endif
+		#endif
 	}
 }

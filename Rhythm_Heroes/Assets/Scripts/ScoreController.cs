@@ -11,7 +11,7 @@ public class ScoreController : MonoBehaviour {
 	void Start () {
 		scoreText.text = "SCORE : 0";
 	}
-		
+
 	void Update () {
 		scoreText.text = "SCORE : " + scoreCount;
 	}
@@ -41,6 +41,6 @@ public class ScoreController : MonoBehaviour {
 			perfectNum++;
 			break;
 		}
-//		print ("Block: " + blockNum + ", Perfect: " + perfectNum + ", Miss: " + missNum);
+		print ("Block: " + blockNum + ", Perfect: " + perfectNum + ", Miss: " + missNum);
 	}
 }

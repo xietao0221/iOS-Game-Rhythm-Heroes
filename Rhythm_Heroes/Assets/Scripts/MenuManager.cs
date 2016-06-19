@@ -1,11 +1,12 @@
-﻿using UnityEngine;
+﻿
+using UnityEngine;
 using System.Collections;
 using UnityEngine.SceneManagement;
 
 public class MenuManager : MonoBehaviour {
-    public void GoToThree() {
+	public void GoToThree() {
 		SceneManager.LoadScene ("GameScene_ThreeTrack");
-    }
+	}
 
 	public void GoTo_Four() {
 		SceneManager.LoadScene ("GameScene_FourTrack");
@@ -18,8 +19,4 @@ public class MenuManager : MonoBehaviour {
 	public void GoTo_MainScene() {
 		SceneManager.LoadScene ("MainScene");
 	}
-
-    public void Quit() {
-        Application.Quit();
-    }
 }

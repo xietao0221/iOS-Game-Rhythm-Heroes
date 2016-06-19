@@ -8,6 +8,7 @@ public class BackgroundMusicController : MonoBehaviour {
 	void Start () {
 		music = GetComponent<AudioSource> ();
 		music.PlayDelayed (3.6f);
+
 	}
 
 	IEnumerator delay(){
@@ -16,7 +17,7 @@ public class BackgroundMusicController : MonoBehaviour {
 	}
 
 	void Update(){
-		if(!music.isPlaying) {
+		if (!music.isPlaying) {
 			StartCoroutine (delay ());
 		}
 	}
