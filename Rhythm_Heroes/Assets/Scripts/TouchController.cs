@@ -73,10 +73,10 @@ public class TouchController : MonoBehaviour {
 								tmpPos >= PlaneController.endingPointLocalMin) {
 								tmpBlockWrapper.blockObj.transform.position = new Vector3 (100, 0, 0);
 								tmpBlockWrapper.isScored = true;
-								scoreTextObj.SendMessage("scorePlus", SendMessageOptions.RequireReceiver);
+								scoreTextObj.SendMessage ("statChange", 2, SendMessageOptions.RequireReceiver);
 								scoreTextObj.SendMessage("comboChange", 1, SendMessageOptions.RequireReceiver);
 								wordTextObj.SendMessage("wordTextDisplay", 1, SendMessageOptions.RequireReceiver);
-								scoreTextObj.SendMessage ("statChange", 2, SendMessageOptions.RequireReceiver);
+								scoreTextObj.SendMessage("scorePlus", SendMessageOptions.RequireReceiver);
 							}	
 						}
 					}
@@ -140,10 +140,10 @@ public class TouchController : MonoBehaviour {
 									tmpPos >= PlaneController.endingPointLocalMin) {
 									tmpBlockWrapper.blockObj.transform.position = new Vector3 (100, 0, 0);
 									tmpBlockWrapper.isScored = true;
-									scoreTextObj.SendMessage("scorePlus", SendMessageOptions.RequireReceiver);
 									scoreTextObj.SendMessage("comboChange", 1, SendMessageOptions.RequireReceiver);
 									wordTextObj.SendMessage("wordTextDisplay", 1, SendMessageOptions.RequireReceiver);
 									scoreTextObj.SendMessage ("statChange", 2, SendMessageOptions.RequireReceiver);
+									scoreTextObj.SendMessage("scorePlus", SendMessageOptions.RequireReceiver);
 								}	
 							}
 						}

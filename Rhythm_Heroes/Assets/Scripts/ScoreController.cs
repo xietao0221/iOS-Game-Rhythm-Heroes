@@ -10,6 +10,11 @@ public class ScoreController : MonoBehaviour {
 
 	void Start () {
 		scoreText.text = "SCORE : 0";
+		scoreCount = 0;
+		comboMax = 0;
+		blockNum = 0;
+		missNum = 0;
+		perfectNum = 0;
 	}
 
 	void Update () {
@@ -17,16 +22,19 @@ public class ScoreController : MonoBehaviour {
 	}
 
 	public void scorePlus() {
-		scoreCount++;
+		//scoreCount++;
+		scoreCount += (1 + combo * 2);
+		print ("Score" + scoreCount);
 	}
 
 	public void comboChange(int val) {
 		if(val == 1) {			// combo plus
-			combo++;
+			++combo;
 		} else {				// combo returns to 0
 			comboMax = Mathf.Max (comboMax, combo);
 			combo = 0;
 		}
+		print ("Combo: " + combo + ", MaxCombo: " + comboMax);
 	}
 
 	public void statChange(int val) {

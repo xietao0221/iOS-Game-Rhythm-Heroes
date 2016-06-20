@@ -3,31 +3,33 @@ using System.Collections;
 using UnityEngine.UI;
 
 public class StatController : MonoBehaviour {
-	public float score = 0, combo = 0, miss = 0;
+	public float score = 0, combo = 0, miss = 0, perfect = 0, block = ScoreController.blockNum;
 	public Text grade, totalScore, maxComboVal, perfectVal, missVal;
 	string strGrade = "Ss", strTotalScore = "0", strMaxComboVal = "0", strPerfectVal = "0", strMissVal = "0";
 
 	void Awake() {
 		score = ScoreController.scoreCount;
-		combo = ScoreController.comboMax;
+		combo = Mathf.Max(ScoreController.comboMax, ScoreController.combo);
 		miss = ScoreController.missNum;
+		perfect = ScoreController.perfectNum;
 
-		strTotalScore = (score + combo * 2).ToString ();
-		strPerfectVal = score.ToString ();
+		//strTotalScore = (score + combo * 2).ToString ();
+		strTotalScore = score.ToString ();
+		strPerfectVal = perfect.ToString ();
 		strMissVal = miss.ToString ();
 		strMaxComboVal = combo.ToString ();
 
 		if(miss == 0) {
 			strGrade = "Ss";
 		} else {
-			float missPerc = (float)(miss) / (float)(score);
-			if(missPerc <= 0.05) {
+			float missPerc = (float)(miss) / (float)(block);
+			if(missPerc <= 0.01) {
 				strGrade = "S";
-			} else if(missPerc <= 0.1) {
+			} else if(missPerc <= 0.02) {
 				strGrade = "A";
-			} else if(missPerc <= 0.15) {
+			} else if(missPerc <= 0.05) {
 				strGrade = "B";
-			} else if(missPerc <= 0.2) {
+			} else if(missPerc <= 0.1) {
 				strGrade = "C";
 			} else {
 				strGrade = "F";
