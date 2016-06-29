@@ -129,12 +129,6 @@ public class AudioProcessor : MonoBehaviour {
             audioSource.GetSpectrumData(spectrum, 0, FFTWindow.BlackmanHarris);
             computeAverages(spectrum);
 
-            if (callbacks != null) {
-                foreach (AudioCallbacks callback in callbacks) {
-                    callback.onSpectrum(averages);
-                }
-            }
-
             /* calculate the value of the onset function in this frame */
             float onset = 0;
             for (int i = 0; i < nBand; i++) {
@@ -303,7 +297,6 @@ public class AudioProcessor : MonoBehaviour {
 
     public void addAudioCallback(AudioCallbacks callback) {
         this.callbacks.Add(callback);
-        //Debug.Log(callback);
     }
 
     public void removeAudioCallback(AudioCallbacks callback) {
@@ -312,7 +305,6 @@ public class AudioProcessor : MonoBehaviour {
 
     public interface AudioCallbacks {
         void onOnbeatDetected();
-        void onSpectrum(float[] spectrum);
     }
 
     // class to compute an array of online autocorrelators

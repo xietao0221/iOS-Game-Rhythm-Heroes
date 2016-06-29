@@ -62,22 +62,35 @@ public class TouchController : MonoBehaviour {
 					choose = 4;
 				}
 
+				int[] count = new int[channelNum];
 				if(Input.GetMouseButtonDown(0)) {
 					recepient.SendMessage ("onTouchDown", hit.point, SendMessageOptions.DontRequireReceiver);
 					planeObj[choose].SendMessage ("onTouchDown", hit.point, SendMessageOptions.DontRequireReceiver);
 					if(PlaneController.blocksInChannel[choose].Count > 0) {
-						foreach(BlockWrapper tmpBlockWrapper in PlaneController.blocksInChannel[choose]) {
-							float tmpPos = planeObj[choose].transform.InverseTransformPoint (
-								tmpBlockWrapper.blockObj.transform.position).z;
-							if(!tmpBlockWrapper.isScored && tmpPos <= PlaneController.touchZoneLocalMin && 
-								tmpPos >= PlaneController.endingPointLocalMin) {
-								tmpBlockWrapper.blockObj.transform.position = new Vector3 (100, 0, 0);
-								tmpBlockWrapper.isScored = true;
-								scoreTextObj.SendMessage ("statChange", 2, SendMessageOptions.RequireReceiver);
-								scoreTextObj.SendMessage("comboChange", 1, SendMessageOptions.RequireReceiver);
-								wordTextObj.SendMessage("wordTextDisplay", 1, SendMessageOptions.RequireReceiver);
-								scoreTextObj.SendMessage("scorePlus", SendMessageOptions.RequireReceiver);
-							}	
+						lock(PlaneController.mutex) {
+							foreach(BlockWrapper tmpBlockWrapper in PlaneController.blocksInChannel[choose]) {
+								// get each block's current position
+								float tmpPos = planeObj[choose].transform.InverseTransformPoint (
+									tmpBlockWrapper.blockObj.transform.position).z;
+
+								// get score
+								if(tmpPos <= PlaneController.touchZoneLocalMin && 
+									tmpPos >= PlaneController.endingPointLocalMin) {
+
+									PlaneController.blocksInPool[choose].Enqueue(tmpBlockWrapper);
+									count[choose]++;
+									tmpBlockWrapper.blockObj.transform.position = new Vector3 (100, 0, 0);
+
+									scoreTextObj.SendMessage ("statChange", 2, SendMessageOptions.RequireReceiver);
+									scoreTextObj.SendMessage("comboChange", 1, SendMessageOptions.RequireReceiver);
+									wordTextObj.SendMessage("wordTextDisplay", 1, SendMessageOptions.RequireReceiver);
+									scoreTextObj.SendMessage("scorePlus", SendMessageOptions.RequireReceiver);
+								}	
+							}
+
+							while(count[choose]-- > 0) {
+								PlaneController.blocksInChannel[choose].Dequeue();
+							}
 						}
 					}
 				}
@@ -101,6 +114,7 @@ public class TouchController : MonoBehaviour {
 			}
 		}
 		#endif
+
 
 		#if UNITY_IPHONE
 		if(Input.touchCount > 0) {
@@ -128,23 +142,36 @@ public class TouchController : MonoBehaviour {
 						choose = 4;
 					}
 
+					int[] count = new int[channelNum];
 					if(touch.phase == TouchPhase.Began) {
 						recepient.SendMessage ("onTouchDown", hit.point, SendMessageOptions.DontRequireReceiver);
 						planeObj[choose].SendMessage ("onTouchDown", hit.point, SendMessageOptions.DontRequireReceiver);
 
 						if(PlaneController.blocksInChannel[choose].Count > 0) {
-							foreach(BlockWrapper tmpBlockWrapper in PlaneController.blocksInChannel[choose]) {
-								float tmpPos = planeObj[choose].transform.InverseTransformPoint (
-									tmpBlockWrapper.blockObj.transform.position).z;
-								if(!tmpBlockWrapper.isScored && tmpPos <= PlaneController.touchZoneLocalMin && 
-									tmpPos >= PlaneController.endingPointLocalMin) {
-									tmpBlockWrapper.blockObj.transform.position = new Vector3 (100, 0, 0);
-									tmpBlockWrapper.isScored = true;
-									scoreTextObj.SendMessage("comboChange", 1, SendMessageOptions.RequireReceiver);
-									wordTextObj.SendMessage("wordTextDisplay", 1, SendMessageOptions.RequireReceiver);
-									scoreTextObj.SendMessage ("statChange", 2, SendMessageOptions.RequireReceiver);
-									scoreTextObj.SendMessage("scorePlus", SendMessageOptions.RequireReceiver);
-								}	
+							lock(PlaneController.mutex) {
+								foreach(BlockWrapper tmpBlockWrapper in PlaneController.blocksInChannel[choose]) {
+									// get each block's current position
+									float tmpPos = planeObj[choose].transform.InverseTransformPoint (
+										tmpBlockWrapper.blockObj.transform.position).z;
+
+									// get score
+									if(tmpPos <= PlaneController.touchZoneLocalMin && 
+										tmpPos >= PlaneController.endingPointLocalMin) {
+
+										PlaneController.blocksInPool[choose].Enqueue(tmpBlockWrapper);
+										count[choose]++;
+										tmpBlockWrapper.blockObj.transform.position = new Vector3 (100, 0, 0);
+
+										scoreTextObj.SendMessage ("statChange", 2, SendMessageOptions.RequireReceiver);
+										scoreTextObj.SendMessage("comboChange", 1, SendMessageOptions.RequireReceiver);
+										wordTextObj.SendMessage("wordTextDisplay", 1, SendMessageOptions.RequireReceiver);
+										scoreTextObj.SendMessage("scorePlus", SendMessageOptions.RequireReceiver);
+									}	
+								}
+
+								while(count[choose]-- > 0) {
+									PlaneController.blocksInChannel[choose].Dequeue();
+								}
 							}
 						}
 					}

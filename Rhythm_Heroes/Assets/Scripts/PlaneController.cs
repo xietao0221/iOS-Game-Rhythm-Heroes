@@ -7,7 +7,6 @@ public class PlaneController : MonoBehaviour, AudioProcessor.AudioCallbacks {
 	public static int channelNum = 5;
 	public static int blockNumPerChannel = 6;
 	public static int[] blockSpeed = new int[]{10, 10, 10, 10, 10};			// the smaller the val, the faster the speed
-	//	public static float blockTimeInterval = 0.2f;						// the bigger the val, the smaller the time interval
 
 	public static Queue<BlockWrapper>[] blocksInPool = new Queue<BlockWrapper>[5];
 	public static Queue<BlockWrapper>[] blocksInChannel = new Queue<BlockWrapper>[5];
@@ -15,13 +14,14 @@ public class PlaneController : MonoBehaviour, AudioProcessor.AudioCallbacks {
 	public GameObject[] planeObj = new GameObject[5], touchZoneObj = new GameObject[5];
 	public static BlockWrapper[] blockClone;
 	private GameObject wordObj, scoreObj;
+	public static Object mutex;
 
 	public static Vector3[] startingPoint = new Vector3[5];
 	public static float endingPointLocalMin = 0, touchZoneLocalMin = 0; 
 	private int delay = 0;
-	//	AudioSource backgroundAudio;
 
 	void Awake() {
+		mutex = new Object ();
 		GameObject[] tmpPlaneObj = new GameObject[5], tmpTouchZoneObj = new GameObject[5];
 		for(int i=0; i<5; i++) {
 			tmpPlaneObj [i] = GameObject.Find ("Plane" + i);
@@ -58,7 +58,6 @@ public class PlaneController : MonoBehaviour, AudioProcessor.AudioCallbacks {
 
 
 	void activeBeat(){
-		//		backgroundAudio = GetComponent<AudioSource>();
 		AudioProcessor processor = FindObjectOfType<AudioProcessor>();
 		processor.addAudioCallback(this);
 	}
@@ -78,41 +77,35 @@ public class PlaneController : MonoBehaviour, AudioProcessor.AudioCallbacks {
 		}
 	}
 
-	//This event will be called every frame while music is playing
-	// spectrum.length = 12
-	public void onSpectrum(float[] spectrum) {
-
-	}
-
 	void FixedUpdate () {
 		if (delay++ == 10) {
 			activeBeat ();
 		}
-
-		int[] count = new int[channelNum];
+			
 		for(int i=0; i<channelNum; i++) {
-			foreach(BlockWrapper tmpBlockWrapper in blocksInChannel[i]) {
-				tmpBlockWrapper.blockObj.transform.position -= planeObj[i].transform.forward / blockSpeed[i];
-				if(planeObj[i].transform.InverseTransformPoint(tmpBlockWrapper.blockObj.transform.position).z 
-					<= endingPointLocalMin) {
-					blocksInPool[i].Enqueue(tmpBlockWrapper);
-					count [i]++;
-					tmpBlockWrapper.blockObj.transform.position = new Vector3(100, 0, 0);
-					if(!tmpBlockWrapper.isScored) {
+			int[] count = new int[channelNum];
+			lock(mutex) {
+				foreach(BlockWrapper tmpBlockWrapper in blocksInChannel[i]) {
+					tmpBlockWrapper.blockObj.transform.position -= planeObj[i].transform.forward / blockSpeed[i];
+					if(planeObj[i].transform.InverseTransformPoint(tmpBlockWrapper.blockObj.transform.position).z 
+						<= endingPointLocalMin) {
+						// blocks are out of plane
+						blocksInPool[i].Enqueue(tmpBlockWrapper);
+						count [i]++;
+						tmpBlockWrapper.blockObj.transform.position = new Vector3(100, 0, 0);
+
+						// miss
 						wordObj.SendMessage ("wordTextDisplay", 0, SendMessageOptions.RequireReceiver);
 						scoreObj.SendMessage("comboChange", 0, SendMessageOptions.RequireReceiver);
 						scoreObj.SendMessage ("statChange", 1, SendMessageOptions.RequireReceiver);
-					} else {
-						tmpBlockWrapper.isScored = false;
+
 					}
 				}
-			}	
-		}
 
-		for(int i=0; i<channelNum; i++) {
-			while(count[i]-- > 0) {
-				blocksInChannel[i].Dequeue();
-			}	
+				while(count[i]-- > 0) {
+					blocksInChannel[i].Dequeue();
+				}
+			}
 		}
 	}
 
@@ -141,7 +134,7 @@ public class PlaneController : MonoBehaviour, AudioProcessor.AudioCallbacks {
 			blocksInPool [i] = new Queue<BlockWrapper> ();
 			for(int j=0; j<blockNumPerChannel; j++) {
 				GameObject tmpObj = Instantiate (prefabBlock, new Vector3(100, 0, 0), Quaternion.identity) as GameObject;
-				blockClone [i*blockNumPerChannel+j] = new BlockWrapper (tmpObj, false);
+				blockClone [i*blockNumPerChannel+j] = new BlockWrapper (tmpObj);
 				blocksInPool[i].Enqueue (blockClone [i*blockNumPerChannel+j]);
 			}
 		}
@@ -159,10 +152,8 @@ public class PlaneController : MonoBehaviour, AudioProcessor.AudioCallbacks {
 
 public class BlockWrapper {
 	public GameObject blockObj = null;
-	public bool isScored = false;
 
-	public BlockWrapper(GameObject obj, bool val) {
+	public BlockWrapper(GameObject obj) {
 		this.blockObj = obj;
-		this.isScored = val;
 	}
 }
