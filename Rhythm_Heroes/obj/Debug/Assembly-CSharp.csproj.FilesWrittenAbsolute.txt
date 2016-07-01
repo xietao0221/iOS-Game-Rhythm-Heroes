@@ -83,20 +83,3 @@
 /Users/apple/Downloads/CS526_RhythmHeroes-master 2/Rhythm_Heroes/Temp/bin/Debug/Mono.Cecil.Mdb.dll
 /Users/apple/Downloads/CS526_RhythmHeroes-master 2/Rhythm_Heroes/Temp/bin/Debug/Assembly-CSharp.dll.mdb
 /Users/apple/Downloads/CS526_RhythmHeroes-master 2/Rhythm_Heroes/Temp/bin/Debug/Assembly-CSharp.dll
-/Users/blesssecret/Downloads/Rhythm_Heroes/Temp/bin/Debug/Assembly-CSharp.dll.mdb
-/Users/blesssecret/Downloads/Rhythm_Heroes/Temp/bin/Debug/Assembly-CSharp.dll
-/Users/blesssecret/Downloads/Rhythm_Heroes/obj/Debug/Assembly-CSharp.dll
-/Users/blesssecret/Downloads/Rhythm_Heroes/obj/Debug/Assembly-CSharp.dll.mdb
-/Users/blesssecret/Downloads/Rhythm_Heroes/Temp/bin/Debug/UnityEngine.dll
-/Users/blesssecret/Downloads/Rhythm_Heroes/Temp/bin/Debug/UnityEditor.dll
-/Users/blesssecret/Downloads/Rhythm_Heroes/Temp/bin/Debug/UnityEngine.Networking.dll
-/Users/blesssecret/Downloads/Rhythm_Heroes/Temp/bin/Debug/UnityEngine.UI.dll
-/Users/blesssecret/Downloads/Rhythm_Heroes/Temp/bin/Debug/Mono.Cecil.dll
-/Users/blesssecret/Downloads/Rhythm_Heroes/Temp/bin/Debug/Unity.SerializationLogic.dll
-/Users/blesssecret/Downloads/Rhythm_Heroes/Temp/bin/Debug/Unity.DataContract.dll
-/Users/blesssecret/Downloads/Rhythm_Heroes/Temp/bin/Debug/ICSharpCode.NRefactory.dll
-/Users/blesssecret/Downloads/Rhythm_Heroes/Temp/bin/Debug/Unity.UNetWeaver.dll
-/Users/blesssecret/Downloads/Rhythm_Heroes/Temp/bin/Debug/Unity.UNetWeaver.dll.mdb
-/Users/blesssecret/Downloads/Rhythm_Heroes/Temp/bin/Debug/Unity.CecilTools.dll
-/Users/blesssecret/Downloads/Rhythm_Heroes/Temp/bin/Debug/Mono.Cecil.Pdb.dll
-/Users/blesssecret/Downloads/Rhythm_Heroes/Temp/bin/Debug/Mono.Cecil.Mdb.dll

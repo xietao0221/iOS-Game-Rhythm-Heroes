@@ -13,32 +13,56 @@
 #include <limits>
 #include <assert.h>
 
-// UnityEngine.SocialPlatforms.Impl.UserProfile
-struct UserProfile_t2517340964;
-// UnityEngine.SocialPlatforms.Impl.UserProfile[]
-struct UserProfileU5BU5D_t1345038285;
-// UnityEngine.SocialPlatforms.Impl.Achievement
-struct Achievement_t581285621;
+// UnityEngine.SocialPlatforms.GameCenter.GameCenterPlatform
+struct GameCenterPlatform_t899915837;
+// UnityEngine.SocialPlatforms.ILocalUser
+struct ILocalUser_t198308673;
+// System.Action`1<System.Boolean>
+struct Action_1_t359458046;
 // System.String
 struct String_t;
-// UnityEngine.SocialPlatforms.Impl.AchievementDescription
-struct AchievementDescription_t3784099155;
 // UnityEngine.Texture2D
 struct Texture2D_t2509538522;
+// System.String[]
+struct StringU5BU5D_t2956870243;
+// UnityEngine.SocialPlatforms.GameCenter.GcAchievementData[]
+struct GcAchievementDataU5BU5D_t2585207681;
+// UnityEngine.SocialPlatforms.GameCenter.GcScoreData[]
+struct GcScoreDataU5BU5D_t2158783410;
+// System.Action`1<UnityEngine.SocialPlatforms.IAchievementDescription[]>
+struct Action_1_t1681818320;
+// System.Action`1<UnityEngine.SocialPlatforms.IAchievement[]>
+struct Action_1_t999575008;
+// System.Action`1<UnityEngine.SocialPlatforms.IScore[]>
+struct Action_1_t832764753;
+// UnityEngine.SocialPlatforms.ILeaderboard
+struct ILeaderboard_t1654994728;
+// System.Action`1<UnityEngine.SocialPlatforms.IUserProfile[]>
+struct Action_1_t2465425429;
+// UnityEngine.SocialPlatforms.Impl.UserProfile[]
+struct UserProfileU5BU5D_t1345038285;
+// UnityEngine.SocialPlatforms.IAchievement
+struct IAchievement_t813719258;
+// UnityEngine.SocialPlatforms.Impl.Achievement
+struct Achievement_t581285621;
+// UnityEngine.SocialPlatforms.Impl.AchievementDescription
+struct AchievementDescription_t3784099155;
+// UnityEngine.SocialPlatforms.GameCenter.GcLeaderboard
+struct GcLeaderboard_t3894999172;
 // UnityEngine.SocialPlatforms.Impl.Leaderboard
 struct Leaderboard_t1422561091;
+// UnityEngine.SocialPlatforms.Impl.Score
+struct Score_t1540476504;
+// UnityEngine.SocialPlatforms.Impl.UserProfile
+struct UserProfile_t2517340964;
 // UnityEngine.SocialPlatforms.IScore
 struct IScore_t3029734269;
 // UnityEngine.SocialPlatforms.IScore[]
 struct IScoreU5BU5D_t684312048;
-// System.String[]
-struct StringU5BU5D_t2956870243;
 // UnityEngine.SocialPlatforms.Impl.LocalUser
 struct LocalUser_t2259562908;
 // UnityEngine.SocialPlatforms.IUserProfile[]
 struct IUserProfileU5BU5D_t2316972724;
-// UnityEngine.SocialPlatforms.Impl.Score
-struct Score_t1540476504;
 // UnityEngine.SpaceAttribute
 struct SpaceAttribute_t1190449315;
 // UnityEngine.Sprite
@@ -132,47 +156,73 @@ struct TypeInferenceRuleAttribute_t471424957;
 #include "class-internals.h"
 #include "codegen/il2cpp-codegen.h"
 #include "mscorlib_System_Array2840145358.h"
+#include "UnityEngine_UnityEngine_SocialPlatforms_GameCenter_899915837.h"
+#include "UnityEngine_UnityEngine_SocialPlatforms_GameCenter_899915837MethodDeclarations.h"
+#include "mscorlib_System_Void2779279689.h"
+#include "mscorlib_System_Object837106420MethodDeclarations.h"
+#include "mscorlib_System_Collections_Generic_List_1_gen396990845MethodDeclarations.h"
+#include "UnityEngine_ArrayTypes.h"
+#include "UnityEngine_UnityEngine_SocialPlatforms_Impl_Achie3784099155.h"
+#include "UnityEngine_UnityEngine_SocialPlatforms_Impl_UserP2517340964.h"
+#include "mscorlib_System_Collections_Generic_List_1_gen396990845.h"
+#include "mscorlib_System_Action_1_gen359458046.h"
+#include "mscorlib_System_Boolean211005341.h"
+#include "mscorlib_System_String968488902.h"
+#include "UnityEngine_UnityEngine_Texture2D2509538522.h"
+#include "mscorlib_System_Double534516614.h"
+#include "mscorlib_System_Int642847414882.h"
+#include "mscorlib_ArrayTypes.h"
+#include "UnityEngine_UnityEngine_SocialPlatforms_TimeScope2889143067.h"
+#include "mscorlib_System_Int322847414787.h"
+#include "UnityEngine_UnityEngine_SocialPlatforms_GameCenter1714018390.h"
+#include "UnityEngine_UnityEngine_SocialPlatforms_GameCenter1714018390MethodDeclarations.h"
+#include "UnityEngine_UnityEngine_Debug1588791936MethodDeclarations.h"
+#include "UnityEngine_UnityEngine_SocialPlatforms_Impl_Achie3784099155MethodDeclarations.h"
+#include "mscorlib_System_Object837106420.h"
+#include "mscorlib_System_Action_1_gen1681818320MethodDeclarations.h"
+#include "mscorlib_System_Action_1_gen1681818320.h"
+#include "mscorlib_System_Action_1_gen359458046MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_SocialPlatforms_GameCenter2788044591.h"
 #include "UnityEngine_UnityEngine_SocialPlatforms_GameCenter2788044591MethodDeclarations.h"
-#include "UnityEngine_UnityEngine_SocialPlatforms_Impl_UserP2517340964.h"
-#include "UnityEngine_UnityEngine_SocialPlatforms_Impl_UserP2517340964MethodDeclarations.h"
-#include "mscorlib_System_String968488902.h"
-#include "mscorlib_System_Int322847414787.h"
-#include "UnityEngine_UnityEngine_Texture2D2509538522.h"
-#include "mscorlib_System_Void2779279689.h"
-#include "mscorlib_System_Boolean211005341.h"
-#include "UnityEngine_UnityEngine_SocialPlatforms_UserState3192499994.h"
-#include "UnityEngine_UnityEngine_Debug1588791936MethodDeclarations.h"
-#include "mscorlib_System_Object837106420.h"
+#include "UnityEngine_UnityEngine_SocialPlatforms_Impl_Local2259562908MethodDeclarations.h"
+#include "UnityEngine_UnityEngine_SocialPlatforms_Impl_Local2259562908.h"
+#include "UnityEngine_UnityEngine_SocialPlatforms_GameCenter1317012096.h"
+#include "UnityEngine_UnityEngine_SocialPlatforms_GameCenter1317012096MethodDeclarations.h"
+#include "mscorlib_System_Action_1_gen999575008MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_SocialPlatforms_Impl_Achiev581285621.h"
-#include "UnityEngine_UnityEngine_SocialPlatforms_Impl_Achiev581285621MethodDeclarations.h"
-#include "mscorlib_System_DateTime339033936.h"
-#include "mscorlib_System_Double534516614.h"
-#include "mscorlib_System_Object837106420MethodDeclarations.h"
-#include "mscorlib_System_DateTime339033936MethodDeclarations.h"
+#include "mscorlib_System_Action_1_gen999575008.h"
+#include "UnityEngine_UnityEngine_SocialPlatforms_GameCenter2223678307.h"
+#include "UnityEngine_UnityEngine_SocialPlatforms_GameCenter2223678307MethodDeclarations.h"
+#include "mscorlib_System_Action_1_gen832764753MethodDeclarations.h"
+#include "UnityEngine_UnityEngine_SocialPlatforms_Impl_Score1540476504.h"
+#include "mscorlib_System_Action_1_gen832764753.h"
 #include "mscorlib_System_String968488902MethodDeclarations.h"
-#include "mscorlib_ArrayTypes.h"
-#include "UnityEngine_UnityEngine_SocialPlatforms_Impl_Achie3784099155.h"
-#include "UnityEngine_UnityEngine_SocialPlatforms_Impl_Achie3784099155MethodDeclarations.h"
-#include "UnityEngine_UnityEngine_SocialPlatforms_Impl_Leade1422561091.h"
+#include "UnityEngine_UnityEngine_SocialPlatforms_Impl_UserP2517340964MethodDeclarations.h"
+#include "UnityEngine_UnityEngine_SocialPlatforms_GameCenter3894999172MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_SocialPlatforms_Impl_Leade1422561091MethodDeclarations.h"
-#include "UnityEngine_UnityEngine_SocialPlatforms_Range938821841MethodDeclarations.h"
-#include "UnityEngine_UnityEngine_SocialPlatforms_Impl_Score1540476504MethodDeclarations.h"
+#include "UnityEngine_UnityEngine_SocialPlatforms_Impl_Leade1422561091.h"
+#include "UnityEngine_UnityEngine_SocialPlatforms_GameCenter3894999172.h"
 #include "UnityEngine_UnityEngine_SocialPlatforms_Range938821841.h"
 #include "UnityEngine_UnityEngine_SocialPlatforms_UserScope3192006877.h"
-#include "UnityEngine_UnityEngine_SocialPlatforms_TimeScope2889143067.h"
-#include "UnityEngine_UnityEngine_SocialPlatforms_Impl_Score1540476504.h"
-#include "mscorlib_System_Int642847414882.h"
-#include "mscorlib_System_UInt32985925326.h"
-#include "UnityEngine_ArrayTypes.h"
-#include "UnityEngine_UnityEngine_SocialPlatforms_Impl_Local2259562908.h"
-#include "UnityEngine_UnityEngine_SocialPlatforms_Impl_Local2259562908MethodDeclarations.h"
+#include "mscorlib_System_Collections_Generic_List_1_Enumera2777741133MethodDeclarations.h"
+#include "mscorlib_System_Collections_Generic_List_1_Enumera2777741133.h"
+#include "mscorlib_System_Action_1_gen2465425429MethodDeclarations.h"
+#include "mscorlib_System_Action_1_gen2465425429.h"
 #include "UnityEngine_UnityEngine_Texture2D2509538522MethodDeclarations.h"
+#include "UnityEngine_UnityEngine_SocialPlatforms_Impl_Achiev581285621MethodDeclarations.h"
+#include "mscorlib_System_DateTime339033936MethodDeclarations.h"
+#include "mscorlib_System_DateTime339033936.h"
+#include "mscorlib_System_UInt32985925326.h"
+#include "UnityEngine_UnityEngine_SocialPlatforms_Impl_Score1540476504MethodDeclarations.h"
+#include "UnityEngine_UnityEngine_SocialPlatforms_UserState3192499994.h"
+#include "UnityEngine_UnityEngine_SocialPlatforms_Range938821841MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_SocialPlatforms_TimeScope2889143067MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_SocialPlatforms_UserScope3192006877MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_SocialPlatforms_UserState3192499994MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_SortingLayer1789336218.h"
 #include "UnityEngine_UnityEngine_SortingLayer1789336218MethodDeclarations.h"
+#include "UnityEngine_UnityEngine_Space1602970931.h"
+#include "UnityEngine_UnityEngine_Space1602970931MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_SpaceAttribute1190449315.h"
 #include "UnityEngine_UnityEngine_SpaceAttribute1190449315MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_PropertyAttribute3076083828MethodDeclarations.h"
@@ -353,6 +403,2384 @@ struct TypeInferenceRuleAttribute_t471424957;
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
+// System.Void UnityEngine.SocialPlatforms.GameCenter.GameCenterPlatform::.ctor()
+extern "C"  void GameCenterPlatform__ctor_m573039859 (GameCenterPlatform_t899915837 * __this, const MethodInfo* method)
+{
+	{
+		Object__ctor_m1772956182(__this, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void UnityEngine.SocialPlatforms.GameCenter.GameCenterPlatform::.cctor()
+extern Il2CppClass* AchievementDescriptionU5BU5D_t3478737922_il2cpp_TypeInfo_var;
+extern Il2CppClass* GameCenterPlatform_t899915837_il2cpp_TypeInfo_var;
+extern Il2CppClass* UserProfileU5BU5D_t1345038285_il2cpp_TypeInfo_var;
+extern Il2CppClass* List_1_t396990845_il2cpp_TypeInfo_var;
+extern const MethodInfo* List_1__ctor_m1721872494_MethodInfo_var;
+extern const uint32_t GameCenterPlatform__cctor_m102270234_MetadataUsageId;
+extern "C"  void GameCenterPlatform__cctor_m102270234 (Il2CppObject * __this /* static, unused */, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (GameCenterPlatform__cctor_m102270234_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	{
+		((GameCenterPlatform_t899915837_StaticFields*)GameCenterPlatform_t899915837_il2cpp_TypeInfo_var->static_fields)->set_s_adCache_9(((AchievementDescriptionU5BU5D_t3478737922*)SZArrayNew(AchievementDescriptionU5BU5D_t3478737922_il2cpp_TypeInfo_var, (uint32_t)0)));
+		((GameCenterPlatform_t899915837_StaticFields*)GameCenterPlatform_t899915837_il2cpp_TypeInfo_var->static_fields)->set_s_friends_10(((UserProfileU5BU5D_t1345038285*)SZArrayNew(UserProfileU5BU5D_t1345038285_il2cpp_TypeInfo_var, (uint32_t)0)));
+		((GameCenterPlatform_t899915837_StaticFields*)GameCenterPlatform_t899915837_il2cpp_TypeInfo_var->static_fields)->set_s_users_11(((UserProfileU5BU5D_t1345038285*)SZArrayNew(UserProfileU5BU5D_t1345038285_il2cpp_TypeInfo_var, (uint32_t)0)));
+		List_1_t396990845 * L_0 = (List_1_t396990845 *)il2cpp_codegen_object_new(List_1_t396990845_il2cpp_TypeInfo_var);
+		List_1__ctor_m1721872494(L_0, /*hidden argument*/List_1__ctor_m1721872494_MethodInfo_var);
+		((GameCenterPlatform_t899915837_StaticFields*)GameCenterPlatform_t899915837_il2cpp_TypeInfo_var->static_fields)->set_m_GcBoards_14(L_0);
+		return;
+	}
+}
+// System.Void UnityEngine.SocialPlatforms.GameCenter.GameCenterPlatform::UnityEngine.SocialPlatforms.ISocialPlatform.LoadFriends(UnityEngine.SocialPlatforms.ILocalUser,System.Action`1<System.Boolean>)
+extern Il2CppClass* GameCenterPlatform_t899915837_il2cpp_TypeInfo_var;
+extern const uint32_t GameCenterPlatform_UnityEngine_SocialPlatforms_ISocialPlatform_LoadFriends_m2468032119_MetadataUsageId;
+extern "C"  void GameCenterPlatform_UnityEngine_SocialPlatforms_ISocialPlatform_LoadFriends_m2468032119 (GameCenterPlatform_t899915837 * __this, Il2CppObject * ___user0, Action_1_t359458046 * ___callback1, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (GameCenterPlatform_UnityEngine_SocialPlatforms_ISocialPlatform_LoadFriends_m2468032119_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	{
+		Action_1_t359458046 * L_0 = ___callback1;
+		IL2CPP_RUNTIME_CLASS_INIT(GameCenterPlatform_t899915837_il2cpp_TypeInfo_var);
+		((GameCenterPlatform_t899915837_StaticFields*)GameCenterPlatform_t899915837_il2cpp_TypeInfo_var->static_fields)->set_s_FriendsCallback_1(L_0);
+		GameCenterPlatform_Internal_LoadFriends_m1921936862(NULL /*static, unused*/, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void UnityEngine.SocialPlatforms.GameCenter.GameCenterPlatform::UnityEngine.SocialPlatforms.ISocialPlatform.Authenticate(UnityEngine.SocialPlatforms.ILocalUser,System.Action`1<System.Boolean>)
+extern Il2CppClass* GameCenterPlatform_t899915837_il2cpp_TypeInfo_var;
+extern const uint32_t GameCenterPlatform_UnityEngine_SocialPlatforms_ISocialPlatform_Authenticate_m305325355_MetadataUsageId;
+extern "C"  void GameCenterPlatform_UnityEngine_SocialPlatforms_ISocialPlatform_Authenticate_m305325355 (GameCenterPlatform_t899915837 * __this, Il2CppObject * ___user0, Action_1_t359458046 * ___callback1, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (GameCenterPlatform_UnityEngine_SocialPlatforms_ISocialPlatform_Authenticate_m305325355_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	{
+		Action_1_t359458046 * L_0 = ___callback1;
+		IL2CPP_RUNTIME_CLASS_INIT(GameCenterPlatform_t899915837_il2cpp_TypeInfo_var);
+		((GameCenterPlatform_t899915837_StaticFields*)GameCenterPlatform_t899915837_il2cpp_TypeInfo_var->static_fields)->set_s_AuthenticateCallback_0(L_0);
+		GameCenterPlatform_Internal_Authenticate_m582381960(NULL /*static, unused*/, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void UnityEngine.SocialPlatforms.GameCenter.GameCenterPlatform::Internal_Authenticate()
+extern "C"  void GameCenterPlatform_Internal_Authenticate_m582381960 (Il2CppObject * __this /* static, unused */, const MethodInfo* method)
+{
+	typedef void (*GameCenterPlatform_Internal_Authenticate_m582381960_ftn) ();
+	static GameCenterPlatform_Internal_Authenticate_m582381960_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (GameCenterPlatform_Internal_Authenticate_m582381960_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.SocialPlatforms.GameCenter.GameCenterPlatform::Internal_Authenticate()");
+	_il2cpp_icall_func();
+}
+// System.Boolean UnityEngine.SocialPlatforms.GameCenter.GameCenterPlatform::Internal_Authenticated()
+extern "C"  bool GameCenterPlatform_Internal_Authenticated_m2780967960 (Il2CppObject * __this /* static, unused */, const MethodInfo* method)
+{
+	typedef bool (*GameCenterPlatform_Internal_Authenticated_m2780967960_ftn) ();
+	static GameCenterPlatform_Internal_Authenticated_m2780967960_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (GameCenterPlatform_Internal_Authenticated_m2780967960_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.SocialPlatforms.GameCenter.GameCenterPlatform::Internal_Authenticated()");
+	return _il2cpp_icall_func();
+}
+// System.String UnityEngine.SocialPlatforms.GameCenter.GameCenterPlatform::Internal_UserName()
+extern "C"  String_t* GameCenterPlatform_Internal_UserName_m1252299660 (Il2CppObject * __this /* static, unused */, const MethodInfo* method)
+{
+	typedef String_t* (*GameCenterPlatform_Internal_UserName_m1252299660_ftn) ();
+	static GameCenterPlatform_Internal_UserName_m1252299660_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (GameCenterPlatform_Internal_UserName_m1252299660_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.SocialPlatforms.GameCenter.GameCenterPlatform::Internal_UserName()");
+	return _il2cpp_icall_func();
+}
+// System.String UnityEngine.SocialPlatforms.GameCenter.GameCenterPlatform::Internal_UserID()
+extern "C"  String_t* GameCenterPlatform_Internal_UserID_m385481212 (Il2CppObject * __this /* static, unused */, const MethodInfo* method)
+{
+	typedef String_t* (*GameCenterPlatform_Internal_UserID_m385481212_ftn) ();
+	static GameCenterPlatform_Internal_UserID_m385481212_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (GameCenterPlatform_Internal_UserID_m385481212_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.SocialPlatforms.GameCenter.GameCenterPlatform::Internal_UserID()");
+	return _il2cpp_icall_func();
+}
+// System.Boolean UnityEngine.SocialPlatforms.GameCenter.GameCenterPlatform::Internal_Underage()
+extern "C"  bool GameCenterPlatform_Internal_Underage_m4169738944 (Il2CppObject * __this /* static, unused */, const MethodInfo* method)
+{
+	typedef bool (*GameCenterPlatform_Internal_Underage_m4169738944_ftn) ();
+	static GameCenterPlatform_Internal_Underage_m4169738944_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (GameCenterPlatform_Internal_Underage_m4169738944_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.SocialPlatforms.GameCenter.GameCenterPlatform::Internal_Underage()");
+	return _il2cpp_icall_func();
+}
+// UnityEngine.Texture2D UnityEngine.SocialPlatforms.GameCenter.GameCenterPlatform::Internal_UserImage()
+extern "C"  Texture2D_t2509538522 * GameCenterPlatform_Internal_UserImage_m3175776130 (Il2CppObject * __this /* static, unused */, const MethodInfo* method)
+{
+	typedef Texture2D_t2509538522 * (*GameCenterPlatform_Internal_UserImage_m3175776130_ftn) ();
+	static GameCenterPlatform_Internal_UserImage_m3175776130_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (GameCenterPlatform_Internal_UserImage_m3175776130_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.SocialPlatforms.GameCenter.GameCenterPlatform::Internal_UserImage()");
+	return _il2cpp_icall_func();
+}
+// System.Void UnityEngine.SocialPlatforms.GameCenter.GameCenterPlatform::Internal_LoadFriends()
+extern "C"  void GameCenterPlatform_Internal_LoadFriends_m1921936862 (Il2CppObject * __this /* static, unused */, const MethodInfo* method)
+{
+	typedef void (*GameCenterPlatform_Internal_LoadFriends_m1921936862_ftn) ();
+	static GameCenterPlatform_Internal_LoadFriends_m1921936862_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (GameCenterPlatform_Internal_LoadFriends_m1921936862_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.SocialPlatforms.GameCenter.GameCenterPlatform::Internal_LoadFriends()");
+	_il2cpp_icall_func();
+}
+// System.Void UnityEngine.SocialPlatforms.GameCenter.GameCenterPlatform::Internal_LoadAchievementDescriptions()
+extern "C"  void GameCenterPlatform_Internal_LoadAchievementDescriptions_m1394384079 (Il2CppObject * __this /* static, unused */, const MethodInfo* method)
+{
+	typedef void (*GameCenterPlatform_Internal_LoadAchievementDescriptions_m1394384079_ftn) ();
+	static GameCenterPlatform_Internal_LoadAchievementDescriptions_m1394384079_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (GameCenterPlatform_Internal_LoadAchievementDescriptions_m1394384079_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.SocialPlatforms.GameCenter.GameCenterPlatform::Internal_LoadAchievementDescriptions()");
+	_il2cpp_icall_func();
+}
+// System.Void UnityEngine.SocialPlatforms.GameCenter.GameCenterPlatform::Internal_LoadAchievements()
+extern "C"  void GameCenterPlatform_Internal_LoadAchievements_m817891229 (Il2CppObject * __this /* static, unused */, const MethodInfo* method)
+{
+	typedef void (*GameCenterPlatform_Internal_LoadAchievements_m817891229_ftn) ();
+	static GameCenterPlatform_Internal_LoadAchievements_m817891229_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (GameCenterPlatform_Internal_LoadAchievements_m817891229_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.SocialPlatforms.GameCenter.GameCenterPlatform::Internal_LoadAchievements()");
+	_il2cpp_icall_func();
+}
+// System.Void UnityEngine.SocialPlatforms.GameCenter.GameCenterPlatform::Internal_ReportProgress(System.String,System.Double)
+extern "C"  void GameCenterPlatform_Internal_ReportProgress_m2511520970 (Il2CppObject * __this /* static, unused */, String_t* ___id0, double ___progress1, const MethodInfo* method)
+{
+	typedef void (*GameCenterPlatform_Internal_ReportProgress_m2511520970_ftn) (String_t*, double);
+	static GameCenterPlatform_Internal_ReportProgress_m2511520970_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (GameCenterPlatform_Internal_ReportProgress_m2511520970_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.SocialPlatforms.GameCenter.GameCenterPlatform::Internal_ReportProgress(System.String,System.Double)");
+	_il2cpp_icall_func(___id0, ___progress1);
+}
+// System.Void UnityEngine.SocialPlatforms.GameCenter.GameCenterPlatform::Internal_ReportScore(System.Int64,System.String)
+extern "C"  void GameCenterPlatform_Internal_ReportScore_m408601947 (Il2CppObject * __this /* static, unused */, int64_t ___score0, String_t* ___category1, const MethodInfo* method)
+{
+	typedef void (*GameCenterPlatform_Internal_ReportScore_m408601947_ftn) (int64_t, String_t*);
+	static GameCenterPlatform_Internal_ReportScore_m408601947_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (GameCenterPlatform_Internal_ReportScore_m408601947_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.SocialPlatforms.GameCenter.GameCenterPlatform::Internal_ReportScore(System.Int64,System.String)");
+	_il2cpp_icall_func(___score0, ___category1);
+}
+// System.Void UnityEngine.SocialPlatforms.GameCenter.GameCenterPlatform::Internal_LoadScores(System.String)
+extern "C"  void GameCenterPlatform_Internal_LoadScores_m523283944 (Il2CppObject * __this /* static, unused */, String_t* ___category0, const MethodInfo* method)
+{
+	typedef void (*GameCenterPlatform_Internal_LoadScores_m523283944_ftn) (String_t*);
+	static GameCenterPlatform_Internal_LoadScores_m523283944_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (GameCenterPlatform_Internal_LoadScores_m523283944_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.SocialPlatforms.GameCenter.GameCenterPlatform::Internal_LoadScores(System.String)");
+	_il2cpp_icall_func(___category0);
+}
+// System.Void UnityEngine.SocialPlatforms.GameCenter.GameCenterPlatform::Internal_ShowAchievementsUI()
+extern "C"  void GameCenterPlatform_Internal_ShowAchievementsUI_m1934331464 (Il2CppObject * __this /* static, unused */, const MethodInfo* method)
+{
+	typedef void (*GameCenterPlatform_Internal_ShowAchievementsUI_m1934331464_ftn) ();
+	static GameCenterPlatform_Internal_ShowAchievementsUI_m1934331464_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (GameCenterPlatform_Internal_ShowAchievementsUI_m1934331464_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.SocialPlatforms.GameCenter.GameCenterPlatform::Internal_ShowAchievementsUI()");
+	_il2cpp_icall_func();
+}
+// System.Void UnityEngine.SocialPlatforms.GameCenter.GameCenterPlatform::Internal_ShowLeaderboardUI()
+extern "C"  void GameCenterPlatform_Internal_ShowLeaderboardUI_m3057704739 (Il2CppObject * __this /* static, unused */, const MethodInfo* method)
+{
+	typedef void (*GameCenterPlatform_Internal_ShowLeaderboardUI_m3057704739_ftn) ();
+	static GameCenterPlatform_Internal_ShowLeaderboardUI_m3057704739_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (GameCenterPlatform_Internal_ShowLeaderboardUI_m3057704739_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.SocialPlatforms.GameCenter.GameCenterPlatform::Internal_ShowLeaderboardUI()");
+	_il2cpp_icall_func();
+}
+// System.Void UnityEngine.SocialPlatforms.GameCenter.GameCenterPlatform::Internal_LoadUsers(System.String[])
+extern "C"  void GameCenterPlatform_Internal_LoadUsers_m4218820079 (Il2CppObject * __this /* static, unused */, StringU5BU5D_t2956870243* ___userIds0, const MethodInfo* method)
+{
+	typedef void (*GameCenterPlatform_Internal_LoadUsers_m4218820079_ftn) (StringU5BU5D_t2956870243*);
+	static GameCenterPlatform_Internal_LoadUsers_m4218820079_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (GameCenterPlatform_Internal_LoadUsers_m4218820079_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.SocialPlatforms.GameCenter.GameCenterPlatform::Internal_LoadUsers(System.String[])");
+	_il2cpp_icall_func(___userIds0);
+}
+// System.Void UnityEngine.SocialPlatforms.GameCenter.GameCenterPlatform::Internal_ResetAllAchievements()
+extern "C"  void GameCenterPlatform_Internal_ResetAllAchievements_m165059209 (Il2CppObject * __this /* static, unused */, const MethodInfo* method)
+{
+	typedef void (*GameCenterPlatform_Internal_ResetAllAchievements_m165059209_ftn) ();
+	static GameCenterPlatform_Internal_ResetAllAchievements_m165059209_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (GameCenterPlatform_Internal_ResetAllAchievements_m165059209_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.SocialPlatforms.GameCenter.GameCenterPlatform::Internal_ResetAllAchievements()");
+	_il2cpp_icall_func();
+}
+// System.Void UnityEngine.SocialPlatforms.GameCenter.GameCenterPlatform::Internal_ShowDefaultAchievementBanner(System.Boolean)
+extern "C"  void GameCenterPlatform_Internal_ShowDefaultAchievementBanner_m3108376897 (Il2CppObject * __this /* static, unused */, bool ___value0, const MethodInfo* method)
+{
+	typedef void (*GameCenterPlatform_Internal_ShowDefaultAchievementBanner_m3108376897_ftn) (bool);
+	static GameCenterPlatform_Internal_ShowDefaultAchievementBanner_m3108376897_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (GameCenterPlatform_Internal_ShowDefaultAchievementBanner_m3108376897_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.SocialPlatforms.GameCenter.GameCenterPlatform::Internal_ShowDefaultAchievementBanner(System.Boolean)");
+	_il2cpp_icall_func(___value0);
+}
+// System.Void UnityEngine.SocialPlatforms.GameCenter.GameCenterPlatform::ResetAllAchievements(System.Action`1<System.Boolean>)
+extern Il2CppClass* GameCenterPlatform_t899915837_il2cpp_TypeInfo_var;
+extern const uint32_t GameCenterPlatform_ResetAllAchievements_m878609996_MetadataUsageId;
+extern "C"  void GameCenterPlatform_ResetAllAchievements_m878609996 (Il2CppObject * __this /* static, unused */, Action_1_t359458046 * ___callback0, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (GameCenterPlatform_ResetAllAchievements_m878609996_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	{
+		Action_1_t359458046 * L_0 = ___callback0;
+		IL2CPP_RUNTIME_CLASS_INIT(GameCenterPlatform_t899915837_il2cpp_TypeInfo_var);
+		((GameCenterPlatform_t899915837_StaticFields*)GameCenterPlatform_t899915837_il2cpp_TypeInfo_var->static_fields)->set_s_ResetAchievements_12(L_0);
+		GameCenterPlatform_Internal_ResetAllAchievements_m165059209(NULL /*static, unused*/, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void UnityEngine.SocialPlatforms.GameCenter.GameCenterPlatform::ShowDefaultAchievementCompletionBanner(System.Boolean)
+extern Il2CppClass* GameCenterPlatform_t899915837_il2cpp_TypeInfo_var;
+extern const uint32_t GameCenterPlatform_ShowDefaultAchievementCompletionBanner_m2516168699_MetadataUsageId;
+extern "C"  void GameCenterPlatform_ShowDefaultAchievementCompletionBanner_m2516168699 (Il2CppObject * __this /* static, unused */, bool ___value0, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (GameCenterPlatform_ShowDefaultAchievementCompletionBanner_m2516168699_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	{
+		bool L_0 = ___value0;
+		IL2CPP_RUNTIME_CLASS_INIT(GameCenterPlatform_t899915837_il2cpp_TypeInfo_var);
+		GameCenterPlatform_Internal_ShowDefaultAchievementBanner_m3108376897(NULL /*static, unused*/, L_0, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void UnityEngine.SocialPlatforms.GameCenter.GameCenterPlatform::ShowLeaderboardUI(System.String,UnityEngine.SocialPlatforms.TimeScope)
+extern Il2CppClass* GameCenterPlatform_t899915837_il2cpp_TypeInfo_var;
+extern const uint32_t GameCenterPlatform_ShowLeaderboardUI_m3791866548_MetadataUsageId;
+extern "C"  void GameCenterPlatform_ShowLeaderboardUI_m3791866548 (Il2CppObject * __this /* static, unused */, String_t* ___leaderboardID0, int32_t ___timeScope1, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (GameCenterPlatform_ShowLeaderboardUI_m3791866548_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	{
+		String_t* L_0 = ___leaderboardID0;
+		int32_t L_1 = ___timeScope1;
+		IL2CPP_RUNTIME_CLASS_INIT(GameCenterPlatform_t899915837_il2cpp_TypeInfo_var);
+		GameCenterPlatform_Internal_ShowSpecificLeaderboardUI_m1768304742(NULL /*static, unused*/, L_0, L_1, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void UnityEngine.SocialPlatforms.GameCenter.GameCenterPlatform::Internal_ShowSpecificLeaderboardUI(System.String,System.Int32)
+extern "C"  void GameCenterPlatform_Internal_ShowSpecificLeaderboardUI_m1768304742 (Il2CppObject * __this /* static, unused */, String_t* ___leaderboardID0, int32_t ___timeScope1, const MethodInfo* method)
+{
+	typedef void (*GameCenterPlatform_Internal_ShowSpecificLeaderboardUI_m1768304742_ftn) (String_t*, int32_t);
+	static GameCenterPlatform_Internal_ShowSpecificLeaderboardUI_m1768304742_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (GameCenterPlatform_Internal_ShowSpecificLeaderboardUI_m1768304742_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.SocialPlatforms.GameCenter.GameCenterPlatform::Internal_ShowSpecificLeaderboardUI(System.String,System.Int32)");
+	_il2cpp_icall_func(___leaderboardID0, ___timeScope1);
+}
+// System.Void UnityEngine.SocialPlatforms.GameCenter.GameCenterPlatform::ClearAchievementDescriptions(System.Int32)
+extern Il2CppClass* GameCenterPlatform_t899915837_il2cpp_TypeInfo_var;
+extern Il2CppClass* AchievementDescriptionU5BU5D_t3478737922_il2cpp_TypeInfo_var;
+extern const uint32_t GameCenterPlatform_ClearAchievementDescriptions_m3158758843_MetadataUsageId;
+extern "C"  void GameCenterPlatform_ClearAchievementDescriptions_m3158758843 (Il2CppObject * __this /* static, unused */, int32_t ___size0, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (GameCenterPlatform_ClearAchievementDescriptions_m3158758843_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(GameCenterPlatform_t899915837_il2cpp_TypeInfo_var);
+		AchievementDescriptionU5BU5D_t3478737922* L_0 = ((GameCenterPlatform_t899915837_StaticFields*)GameCenterPlatform_t899915837_il2cpp_TypeInfo_var->static_fields)->get_s_adCache_9();
+		if (!L_0)
+		{
+			goto IL_0017;
+		}
+	}
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(GameCenterPlatform_t899915837_il2cpp_TypeInfo_var);
+		AchievementDescriptionU5BU5D_t3478737922* L_1 = ((GameCenterPlatform_t899915837_StaticFields*)GameCenterPlatform_t899915837_il2cpp_TypeInfo_var->static_fields)->get_s_adCache_9();
+		NullCheck(L_1);
+		int32_t L_2 = ___size0;
+		if ((((int32_t)(((int32_t)((int32_t)(((Il2CppArray *)L_1)->max_length))))) == ((int32_t)L_2)))
+		{
+			goto IL_0022;
+		}
+	}
+
+IL_0017:
+	{
+		int32_t L_3 = ___size0;
+		IL2CPP_RUNTIME_CLASS_INIT(GameCenterPlatform_t899915837_il2cpp_TypeInfo_var);
+		((GameCenterPlatform_t899915837_StaticFields*)GameCenterPlatform_t899915837_il2cpp_TypeInfo_var->static_fields)->set_s_adCache_9(((AchievementDescriptionU5BU5D_t3478737922*)SZArrayNew(AchievementDescriptionU5BU5D_t3478737922_il2cpp_TypeInfo_var, (uint32_t)L_3)));
+	}
+
+IL_0022:
+	{
+		return;
+	}
+}
+// System.Void UnityEngine.SocialPlatforms.GameCenter.GameCenterPlatform::SetAchievementDescription(UnityEngine.SocialPlatforms.GameCenter.GcAchievementDescriptionData,System.Int32)
+extern Il2CppClass* GameCenterPlatform_t899915837_il2cpp_TypeInfo_var;
+extern const uint32_t GameCenterPlatform_SetAchievementDescription_m3174496109_MetadataUsageId;
+extern "C"  void GameCenterPlatform_SetAchievementDescription_m3174496109 (Il2CppObject * __this /* static, unused */, GcAchievementDescriptionData_t1714018390  ___data0, int32_t ___number1, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (GameCenterPlatform_SetAchievementDescription_m3174496109_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(GameCenterPlatform_t899915837_il2cpp_TypeInfo_var);
+		AchievementDescriptionU5BU5D_t3478737922* L_0 = ((GameCenterPlatform_t899915837_StaticFields*)GameCenterPlatform_t899915837_il2cpp_TypeInfo_var->static_fields)->get_s_adCache_9();
+		int32_t L_1 = ___number1;
+		AchievementDescription_t3784099155 * L_2 = GcAchievementDescriptionData_ToAchievementDescription_m3125480712((&___data0), /*hidden argument*/NULL);
+		NullCheck(L_0);
+		IL2CPP_ARRAY_BOUNDS_CHECK(L_0, L_1);
+		ArrayElementTypeCheck (L_0, L_2);
+		(L_0)->SetAt(static_cast<il2cpp_array_size_t>(L_1), (AchievementDescription_t3784099155 *)L_2);
+		return;
+	}
+}
+// System.Void UnityEngine.SocialPlatforms.GameCenter.GameCenterPlatform::SetAchievementDescriptionImage(UnityEngine.Texture2D,System.Int32)
+extern Il2CppClass* GameCenterPlatform_t899915837_il2cpp_TypeInfo_var;
+extern Il2CppClass* Debug_t1588791936_il2cpp_TypeInfo_var;
+extern Il2CppCodeGenString* _stringLiteral2873143867;
+extern const uint32_t GameCenterPlatform_SetAchievementDescriptionImage_m3728674360_MetadataUsageId;
+extern "C"  void GameCenterPlatform_SetAchievementDescriptionImage_m3728674360 (Il2CppObject * __this /* static, unused */, Texture2D_t2509538522 * ___texture0, int32_t ___number1, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (GameCenterPlatform_SetAchievementDescriptionImage_m3728674360_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(GameCenterPlatform_t899915837_il2cpp_TypeInfo_var);
+		AchievementDescriptionU5BU5D_t3478737922* L_0 = ((GameCenterPlatform_t899915837_StaticFields*)GameCenterPlatform_t899915837_il2cpp_TypeInfo_var->static_fields)->get_s_adCache_9();
+		NullCheck(L_0);
+		int32_t L_1 = ___number1;
+		if ((((int32_t)(((int32_t)((int32_t)(((Il2CppArray *)L_0)->max_length))))) <= ((int32_t)L_1)))
+		{
+			goto IL_0014;
+		}
+	}
+	{
+		int32_t L_2 = ___number1;
+		if ((((int32_t)L_2) >= ((int32_t)0)))
+		{
+			goto IL_001f;
+		}
+	}
+
+IL_0014:
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(Debug_t1588791936_il2cpp_TypeInfo_var);
+		Debug_Log_m1731103628(NULL /*static, unused*/, _stringLiteral2873143867, /*hidden argument*/NULL);
+		return;
+	}
+
+IL_001f:
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(GameCenterPlatform_t899915837_il2cpp_TypeInfo_var);
+		AchievementDescriptionU5BU5D_t3478737922* L_3 = ((GameCenterPlatform_t899915837_StaticFields*)GameCenterPlatform_t899915837_il2cpp_TypeInfo_var->static_fields)->get_s_adCache_9();
+		int32_t L_4 = ___number1;
+		NullCheck(L_3);
+		IL2CPP_ARRAY_BOUNDS_CHECK(L_3, L_4);
+		int32_t L_5 = L_4;
+		Texture2D_t2509538522 * L_6 = ___texture0;
+		NullCheck(((L_3)->GetAt(static_cast<il2cpp_array_size_t>(L_5))));
+		AchievementDescription_SetImage_m1092175896(((L_3)->GetAt(static_cast<il2cpp_array_size_t>(L_5))), L_6, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void UnityEngine.SocialPlatforms.GameCenter.GameCenterPlatform::TriggerAchievementDescriptionCallback()
+extern Il2CppClass* GameCenterPlatform_t899915837_il2cpp_TypeInfo_var;
+extern Il2CppClass* Debug_t1588791936_il2cpp_TypeInfo_var;
+extern const MethodInfo* Action_1_Invoke_m2766540343_MethodInfo_var;
+extern Il2CppCodeGenString* _stringLiteral48254646;
+extern const uint32_t GameCenterPlatform_TriggerAchievementDescriptionCallback_m1497473051_MetadataUsageId;
+extern "C"  void GameCenterPlatform_TriggerAchievementDescriptionCallback_m1497473051 (Il2CppObject * __this /* static, unused */, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (GameCenterPlatform_TriggerAchievementDescriptionCallback_m1497473051_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(GameCenterPlatform_t899915837_il2cpp_TypeInfo_var);
+		Action_1_t1681818320 * L_0 = ((GameCenterPlatform_t899915837_StaticFields*)GameCenterPlatform_t899915837_il2cpp_TypeInfo_var->static_fields)->get_s_AchievementDescriptionLoaderCallback_2();
+		if (!L_0)
+		{
+			goto IL_0039;
+		}
+	}
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(GameCenterPlatform_t899915837_il2cpp_TypeInfo_var);
+		AchievementDescriptionU5BU5D_t3478737922* L_1 = ((GameCenterPlatform_t899915837_StaticFields*)GameCenterPlatform_t899915837_il2cpp_TypeInfo_var->static_fields)->get_s_adCache_9();
+		if (!L_1)
+		{
+			goto IL_0039;
+		}
+	}
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(GameCenterPlatform_t899915837_il2cpp_TypeInfo_var);
+		AchievementDescriptionU5BU5D_t3478737922* L_2 = ((GameCenterPlatform_t899915837_StaticFields*)GameCenterPlatform_t899915837_il2cpp_TypeInfo_var->static_fields)->get_s_adCache_9();
+		NullCheck(L_2);
+		if ((((int32_t)((int32_t)(((Il2CppArray *)L_2)->max_length)))))
+		{
+			goto IL_002a;
+		}
+	}
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(Debug_t1588791936_il2cpp_TypeInfo_var);
+		Debug_Log_m1731103628(NULL /*static, unused*/, _stringLiteral48254646, /*hidden argument*/NULL);
+	}
+
+IL_002a:
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(GameCenterPlatform_t899915837_il2cpp_TypeInfo_var);
+		Action_1_t1681818320 * L_3 = ((GameCenterPlatform_t899915837_StaticFields*)GameCenterPlatform_t899915837_il2cpp_TypeInfo_var->static_fields)->get_s_AchievementDescriptionLoaderCallback_2();
+		AchievementDescriptionU5BU5D_t3478737922* L_4 = ((GameCenterPlatform_t899915837_StaticFields*)GameCenterPlatform_t899915837_il2cpp_TypeInfo_var->static_fields)->get_s_adCache_9();
+		NullCheck(L_3);
+		Action_1_Invoke_m2766540343(L_3, (IAchievementDescriptionU5BU5D_t1533365615*)(IAchievementDescriptionU5BU5D_t1533365615*)L_4, /*hidden argument*/Action_1_Invoke_m2766540343_MethodInfo_var);
+	}
+
+IL_0039:
+	{
+		return;
+	}
+}
+// System.Void UnityEngine.SocialPlatforms.GameCenter.GameCenterPlatform::AuthenticateCallbackWrapper(System.Int32)
+extern Il2CppClass* GameCenterPlatform_t899915837_il2cpp_TypeInfo_var;
+extern const MethodInfo* Action_1_Invoke_m3594021162_MethodInfo_var;
+extern const uint32_t GameCenterPlatform_AuthenticateCallbackWrapper_m2896042779_MetadataUsageId;
+extern "C"  void GameCenterPlatform_AuthenticateCallbackWrapper_m2896042779 (Il2CppObject * __this /* static, unused */, int32_t ___result0, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (GameCenterPlatform_AuthenticateCallbackWrapper_m2896042779_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	Action_1_t359458046 * G_B3_0 = NULL;
+	Action_1_t359458046 * G_B2_0 = NULL;
+	int32_t G_B4_0 = 0;
+	Action_1_t359458046 * G_B4_1 = NULL;
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(GameCenterPlatform_t899915837_il2cpp_TypeInfo_var);
+		GameCenterPlatform_PopulateLocalUser_m2583301917(NULL /*static, unused*/, /*hidden argument*/NULL);
+		Action_1_t359458046 * L_0 = ((GameCenterPlatform_t899915837_StaticFields*)GameCenterPlatform_t899915837_il2cpp_TypeInfo_var->static_fields)->get_s_AuthenticateCallback_0();
+		if (!L_0)
+		{
+			goto IL_002d;
+		}
+	}
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(GameCenterPlatform_t899915837_il2cpp_TypeInfo_var);
+		Action_1_t359458046 * L_1 = ((GameCenterPlatform_t899915837_StaticFields*)GameCenterPlatform_t899915837_il2cpp_TypeInfo_var->static_fields)->get_s_AuthenticateCallback_0();
+		int32_t L_2 = ___result0;
+		G_B2_0 = L_1;
+		if ((!(((uint32_t)L_2) == ((uint32_t)1))))
+		{
+			G_B3_0 = L_1;
+			goto IL_0021;
+		}
+	}
+	{
+		G_B4_0 = 1;
+		G_B4_1 = G_B2_0;
+		goto IL_0022;
+	}
+
+IL_0021:
+	{
+		G_B4_0 = 0;
+		G_B4_1 = G_B3_0;
+	}
+
+IL_0022:
+	{
+		NullCheck(G_B4_1);
+		Action_1_Invoke_m3594021162(G_B4_1, (bool)G_B4_0, /*hidden argument*/Action_1_Invoke_m3594021162_MethodInfo_var);
+		IL2CPP_RUNTIME_CLASS_INIT(GameCenterPlatform_t899915837_il2cpp_TypeInfo_var);
+		((GameCenterPlatform_t899915837_StaticFields*)GameCenterPlatform_t899915837_il2cpp_TypeInfo_var->static_fields)->set_s_AuthenticateCallback_0((Action_1_t359458046 *)NULL);
+	}
+
+IL_002d:
+	{
+		return;
+	}
+}
+// System.Void UnityEngine.SocialPlatforms.GameCenter.GameCenterPlatform::ClearFriends(System.Int32)
+extern Il2CppClass* GameCenterPlatform_t899915837_il2cpp_TypeInfo_var;
+extern const uint32_t GameCenterPlatform_ClearFriends_m1761222218_MetadataUsageId;
+extern "C"  void GameCenterPlatform_ClearFriends_m1761222218 (Il2CppObject * __this /* static, unused */, int32_t ___size0, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (GameCenterPlatform_ClearFriends_m1761222218_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(GameCenterPlatform_t899915837_il2cpp_TypeInfo_var);
+		int32_t L_0 = ___size0;
+		GameCenterPlatform_SafeClearArray_m2546851889(NULL /*static, unused*/, (((GameCenterPlatform_t899915837_StaticFields*)GameCenterPlatform_t899915837_il2cpp_TypeInfo_var->static_fields)->get_address_of_s_friends_10()), L_0, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void UnityEngine.SocialPlatforms.GameCenter.GameCenterPlatform::SetFriends(UnityEngine.SocialPlatforms.GameCenter.GcUserProfileData,System.Int32)
+extern Il2CppClass* GameCenterPlatform_t899915837_il2cpp_TypeInfo_var;
+extern const uint32_t GameCenterPlatform_SetFriends_m3378244042_MetadataUsageId;
+extern "C"  void GameCenterPlatform_SetFriends_m3378244042 (Il2CppObject * __this /* static, unused */, GcUserProfileData_t2788044591  ___data0, int32_t ___number1, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (GameCenterPlatform_SetFriends_m3378244042_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(GameCenterPlatform_t899915837_il2cpp_TypeInfo_var);
+		int32_t L_0 = ___number1;
+		GcUserProfileData_AddToArray_m3757655355((&___data0), (((GameCenterPlatform_t899915837_StaticFields*)GameCenterPlatform_t899915837_il2cpp_TypeInfo_var->static_fields)->get_address_of_s_friends_10()), L_0, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void UnityEngine.SocialPlatforms.GameCenter.GameCenterPlatform::SetFriendImage(UnityEngine.Texture2D,System.Int32)
+extern Il2CppClass* GameCenterPlatform_t899915837_il2cpp_TypeInfo_var;
+extern const uint32_t GameCenterPlatform_SetFriendImage_m4228294663_MetadataUsageId;
+extern "C"  void GameCenterPlatform_SetFriendImage_m4228294663 (Il2CppObject * __this /* static, unused */, Texture2D_t2509538522 * ___texture0, int32_t ___number1, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (GameCenterPlatform_SetFriendImage_m4228294663_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(GameCenterPlatform_t899915837_il2cpp_TypeInfo_var);
+		Texture2D_t2509538522 * L_0 = ___texture0;
+		int32_t L_1 = ___number1;
+		GameCenterPlatform_SafeSetUserImage_m3650098397(NULL /*static, unused*/, (((GameCenterPlatform_t899915837_StaticFields*)GameCenterPlatform_t899915837_il2cpp_TypeInfo_var->static_fields)->get_address_of_s_friends_10()), L_0, L_1, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void UnityEngine.SocialPlatforms.GameCenter.GameCenterPlatform::TriggerFriendsCallbackWrapper(System.Int32)
+extern Il2CppClass* GameCenterPlatform_t899915837_il2cpp_TypeInfo_var;
+extern const MethodInfo* Action_1_Invoke_m3594021162_MethodInfo_var;
+extern const uint32_t GameCenterPlatform_TriggerFriendsCallbackWrapper_m3845044787_MetadataUsageId;
+extern "C"  void GameCenterPlatform_TriggerFriendsCallbackWrapper_m3845044787 (Il2CppObject * __this /* static, unused */, int32_t ___result0, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (GameCenterPlatform_TriggerFriendsCallbackWrapper_m3845044787_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	Action_1_t359458046 * G_B5_0 = NULL;
+	Action_1_t359458046 * G_B4_0 = NULL;
+	int32_t G_B6_0 = 0;
+	Action_1_t359458046 * G_B6_1 = NULL;
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(GameCenterPlatform_t899915837_il2cpp_TypeInfo_var);
+		UserProfileU5BU5D_t1345038285* L_0 = ((GameCenterPlatform_t899915837_StaticFields*)GameCenterPlatform_t899915837_il2cpp_TypeInfo_var->static_fields)->get_s_friends_10();
+		if (!L_0)
+		{
+			goto IL_0019;
+		}
+	}
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(GameCenterPlatform_t899915837_il2cpp_TypeInfo_var);
+		LocalUser_t2259562908 * L_1 = ((GameCenterPlatform_t899915837_StaticFields*)GameCenterPlatform_t899915837_il2cpp_TypeInfo_var->static_fields)->get_m_LocalUser_13();
+		UserProfileU5BU5D_t1345038285* L_2 = ((GameCenterPlatform_t899915837_StaticFields*)GameCenterPlatform_t899915837_il2cpp_TypeInfo_var->static_fields)->get_s_friends_10();
+		NullCheck(L_1);
+		LocalUser_SetFriends_m3475409220(L_1, (IUserProfileU5BU5D_t2316972724*)(IUserProfileU5BU5D_t2316972724*)L_2, /*hidden argument*/NULL);
+	}
+
+IL_0019:
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(GameCenterPlatform_t899915837_il2cpp_TypeInfo_var);
+		Action_1_t359458046 * L_3 = ((GameCenterPlatform_t899915837_StaticFields*)GameCenterPlatform_t899915837_il2cpp_TypeInfo_var->static_fields)->get_s_FriendsCallback_1();
+		if (!L_3)
+		{
+			goto IL_003b;
+		}
+	}
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(GameCenterPlatform_t899915837_il2cpp_TypeInfo_var);
+		Action_1_t359458046 * L_4 = ((GameCenterPlatform_t899915837_StaticFields*)GameCenterPlatform_t899915837_il2cpp_TypeInfo_var->static_fields)->get_s_FriendsCallback_1();
+		int32_t L_5 = ___result0;
+		G_B4_0 = L_4;
+		if ((!(((uint32_t)L_5) == ((uint32_t)1))))
+		{
+			G_B5_0 = L_4;
+			goto IL_0035;
+		}
+	}
+	{
+		G_B6_0 = 1;
+		G_B6_1 = G_B4_0;
+		goto IL_0036;
+	}
+
+IL_0035:
+	{
+		G_B6_0 = 0;
+		G_B6_1 = G_B5_0;
+	}
+
+IL_0036:
+	{
+		NullCheck(G_B6_1);
+		Action_1_Invoke_m3594021162(G_B6_1, (bool)G_B6_0, /*hidden argument*/Action_1_Invoke_m3594021162_MethodInfo_var);
+	}
+
+IL_003b:
+	{
+		return;
+	}
+}
+// System.Void UnityEngine.SocialPlatforms.GameCenter.GameCenterPlatform::AchievementCallbackWrapper(UnityEngine.SocialPlatforms.GameCenter.GcAchievementData[])
+extern Il2CppClass* GameCenterPlatform_t899915837_il2cpp_TypeInfo_var;
+extern Il2CppClass* Debug_t1588791936_il2cpp_TypeInfo_var;
+extern Il2CppClass* AchievementU5BU5D_t4174155160_il2cpp_TypeInfo_var;
+extern const MethodInfo* Action_1_Invoke_m222677977_MethodInfo_var;
+extern Il2CppCodeGenString* _stringLiteral3379715660;
+extern const uint32_t GameCenterPlatform_AchievementCallbackWrapper_m2031411110_MetadataUsageId;
+extern "C"  void GameCenterPlatform_AchievementCallbackWrapper_m2031411110 (Il2CppObject * __this /* static, unused */, GcAchievementDataU5BU5D_t2585207681* ___result0, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (GameCenterPlatform_AchievementCallbackWrapper_m2031411110_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	AchievementU5BU5D_t4174155160* V_0 = NULL;
+	int32_t V_1 = 0;
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(GameCenterPlatform_t899915837_il2cpp_TypeInfo_var);
+		Action_1_t999575008 * L_0 = ((GameCenterPlatform_t899915837_StaticFields*)GameCenterPlatform_t899915837_il2cpp_TypeInfo_var->static_fields)->get_s_AchievementLoaderCallback_3();
+		if (!L_0)
+		{
+			goto IL_0053;
+		}
+	}
+	{
+		GcAchievementDataU5BU5D_t2585207681* L_1 = ___result0;
+		NullCheck(L_1);
+		if ((((int32_t)((int32_t)(((Il2CppArray *)L_1)->max_length)))))
+		{
+			goto IL_001c;
+		}
+	}
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(Debug_t1588791936_il2cpp_TypeInfo_var);
+		Debug_Log_m1731103628(NULL /*static, unused*/, _stringLiteral3379715660, /*hidden argument*/NULL);
+	}
+
+IL_001c:
+	{
+		GcAchievementDataU5BU5D_t2585207681* L_2 = ___result0;
+		NullCheck(L_2);
+		V_0 = ((AchievementU5BU5D_t4174155160*)SZArrayNew(AchievementU5BU5D_t4174155160_il2cpp_TypeInfo_var, (uint32_t)(((int32_t)((int32_t)(((Il2CppArray *)L_2)->max_length))))));
+		V_1 = 0;
+		goto IL_003f;
+	}
+
+IL_002c:
+	{
+		AchievementU5BU5D_t4174155160* L_3 = V_0;
+		int32_t L_4 = V_1;
+		GcAchievementDataU5BU5D_t2585207681* L_5 = ___result0;
+		int32_t L_6 = V_1;
+		NullCheck(L_5);
+		IL2CPP_ARRAY_BOUNDS_CHECK(L_5, L_6);
+		Achievement_t581285621 * L_7 = GcAchievementData_ToAchievement_m3239514930(((L_5)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_6))), /*hidden argument*/NULL);
+		NullCheck(L_3);
+		IL2CPP_ARRAY_BOUNDS_CHECK(L_3, L_4);
+		ArrayElementTypeCheck (L_3, L_7);
+		(L_3)->SetAt(static_cast<il2cpp_array_size_t>(L_4), (Achievement_t581285621 *)L_7);
+		int32_t L_8 = V_1;
+		V_1 = ((int32_t)((int32_t)L_8+(int32_t)1));
+	}
+
+IL_003f:
+	{
+		int32_t L_9 = V_1;
+		GcAchievementDataU5BU5D_t2585207681* L_10 = ___result0;
+		NullCheck(L_10);
+		if ((((int32_t)L_9) < ((int32_t)(((int32_t)((int32_t)(((Il2CppArray *)L_10)->max_length)))))))
+		{
+			goto IL_002c;
+		}
+	}
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(GameCenterPlatform_t899915837_il2cpp_TypeInfo_var);
+		Action_1_t999575008 * L_11 = ((GameCenterPlatform_t899915837_StaticFields*)GameCenterPlatform_t899915837_il2cpp_TypeInfo_var->static_fields)->get_s_AchievementLoaderCallback_3();
+		AchievementU5BU5D_t4174155160* L_12 = V_0;
+		NullCheck(L_11);
+		Action_1_Invoke_m222677977(L_11, (IAchievementU5BU5D_t851122303*)(IAchievementU5BU5D_t851122303*)L_12, /*hidden argument*/Action_1_Invoke_m222677977_MethodInfo_var);
+	}
+
+IL_0053:
+	{
+		return;
+	}
+}
+// System.Void UnityEngine.SocialPlatforms.GameCenter.GameCenterPlatform::ProgressCallbackWrapper(System.Boolean)
+extern Il2CppClass* GameCenterPlatform_t899915837_il2cpp_TypeInfo_var;
+extern const MethodInfo* Action_1_Invoke_m3594021162_MethodInfo_var;
+extern const uint32_t GameCenterPlatform_ProgressCallbackWrapper_m165794409_MetadataUsageId;
+extern "C"  void GameCenterPlatform_ProgressCallbackWrapper_m165794409 (Il2CppObject * __this /* static, unused */, bool ___success0, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (GameCenterPlatform_ProgressCallbackWrapper_m165794409_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(GameCenterPlatform_t899915837_il2cpp_TypeInfo_var);
+		Action_1_t359458046 * L_0 = ((GameCenterPlatform_t899915837_StaticFields*)GameCenterPlatform_t899915837_il2cpp_TypeInfo_var->static_fields)->get_s_ProgressCallback_4();
+		if (!L_0)
+		{
+			goto IL_0015;
+		}
+	}
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(GameCenterPlatform_t899915837_il2cpp_TypeInfo_var);
+		Action_1_t359458046 * L_1 = ((GameCenterPlatform_t899915837_StaticFields*)GameCenterPlatform_t899915837_il2cpp_TypeInfo_var->static_fields)->get_s_ProgressCallback_4();
+		bool L_2 = ___success0;
+		NullCheck(L_1);
+		Action_1_Invoke_m3594021162(L_1, L_2, /*hidden argument*/Action_1_Invoke_m3594021162_MethodInfo_var);
+	}
+
+IL_0015:
+	{
+		return;
+	}
+}
+// System.Void UnityEngine.SocialPlatforms.GameCenter.GameCenterPlatform::ScoreCallbackWrapper(System.Boolean)
+extern Il2CppClass* GameCenterPlatform_t899915837_il2cpp_TypeInfo_var;
+extern const MethodInfo* Action_1_Invoke_m3594021162_MethodInfo_var;
+extern const uint32_t GameCenterPlatform_ScoreCallbackWrapper_m2797312324_MetadataUsageId;
+extern "C"  void GameCenterPlatform_ScoreCallbackWrapper_m2797312324 (Il2CppObject * __this /* static, unused */, bool ___success0, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (GameCenterPlatform_ScoreCallbackWrapper_m2797312324_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(GameCenterPlatform_t899915837_il2cpp_TypeInfo_var);
+		Action_1_t359458046 * L_0 = ((GameCenterPlatform_t899915837_StaticFields*)GameCenterPlatform_t899915837_il2cpp_TypeInfo_var->static_fields)->get_s_ScoreCallback_5();
+		if (!L_0)
+		{
+			goto IL_0015;
+		}
+	}
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(GameCenterPlatform_t899915837_il2cpp_TypeInfo_var);
+		Action_1_t359458046 * L_1 = ((GameCenterPlatform_t899915837_StaticFields*)GameCenterPlatform_t899915837_il2cpp_TypeInfo_var->static_fields)->get_s_ScoreCallback_5();
+		bool L_2 = ___success0;
+		NullCheck(L_1);
+		Action_1_Invoke_m3594021162(L_1, L_2, /*hidden argument*/Action_1_Invoke_m3594021162_MethodInfo_var);
+	}
+
+IL_0015:
+	{
+		return;
+	}
+}
+// System.Void UnityEngine.SocialPlatforms.GameCenter.GameCenterPlatform::ScoreLoaderCallbackWrapper(UnityEngine.SocialPlatforms.GameCenter.GcScoreData[])
+extern Il2CppClass* GameCenterPlatform_t899915837_il2cpp_TypeInfo_var;
+extern Il2CppClass* ScoreU5BU5D_t1929327945_il2cpp_TypeInfo_var;
+extern const MethodInfo* Action_1_Invoke_m50340758_MethodInfo_var;
+extern const uint32_t GameCenterPlatform_ScoreLoaderCallbackWrapper_m2588839053_MetadataUsageId;
+extern "C"  void GameCenterPlatform_ScoreLoaderCallbackWrapper_m2588839053 (Il2CppObject * __this /* static, unused */, GcScoreDataU5BU5D_t2158783410* ___result0, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (GameCenterPlatform_ScoreLoaderCallbackWrapper_m2588839053_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	ScoreU5BU5D_t1929327945* V_0 = NULL;
+	int32_t V_1 = 0;
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(GameCenterPlatform_t899915837_il2cpp_TypeInfo_var);
+		Action_1_t832764753 * L_0 = ((GameCenterPlatform_t899915837_StaticFields*)GameCenterPlatform_t899915837_il2cpp_TypeInfo_var->static_fields)->get_s_ScoreLoaderCallback_6();
+		if (!L_0)
+		{
+			goto IL_0041;
+		}
+	}
+	{
+		GcScoreDataU5BU5D_t2158783410* L_1 = ___result0;
+		NullCheck(L_1);
+		V_0 = ((ScoreU5BU5D_t1929327945*)SZArrayNew(ScoreU5BU5D_t1929327945_il2cpp_TypeInfo_var, (uint32_t)(((int32_t)((int32_t)(((Il2CppArray *)L_1)->max_length))))));
+		V_1 = 0;
+		goto IL_002d;
+	}
+
+IL_001a:
+	{
+		ScoreU5BU5D_t1929327945* L_2 = V_0;
+		int32_t L_3 = V_1;
+		GcScoreDataU5BU5D_t2158783410* L_4 = ___result0;
+		int32_t L_5 = V_1;
+		NullCheck(L_4);
+		IL2CPP_ARRAY_BOUNDS_CHECK(L_4, L_5);
+		Score_t1540476504 * L_6 = GcScoreData_ToScore_m2728389301(((L_4)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_5))), /*hidden argument*/NULL);
+		NullCheck(L_2);
+		IL2CPP_ARRAY_BOUNDS_CHECK(L_2, L_3);
+		ArrayElementTypeCheck (L_2, L_6);
+		(L_2)->SetAt(static_cast<il2cpp_array_size_t>(L_3), (Score_t1540476504 *)L_6);
+		int32_t L_7 = V_1;
+		V_1 = ((int32_t)((int32_t)L_7+(int32_t)1));
+	}
+
+IL_002d:
+	{
+		int32_t L_8 = V_1;
+		GcScoreDataU5BU5D_t2158783410* L_9 = ___result0;
+		NullCheck(L_9);
+		if ((((int32_t)L_8) < ((int32_t)(((int32_t)((int32_t)(((Il2CppArray *)L_9)->max_length)))))))
+		{
+			goto IL_001a;
+		}
+	}
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(GameCenterPlatform_t899915837_il2cpp_TypeInfo_var);
+		Action_1_t832764753 * L_10 = ((GameCenterPlatform_t899915837_StaticFields*)GameCenterPlatform_t899915837_il2cpp_TypeInfo_var->static_fields)->get_s_ScoreLoaderCallback_6();
+		ScoreU5BU5D_t1929327945* L_11 = V_0;
+		NullCheck(L_10);
+		Action_1_Invoke_m50340758(L_10, (IScoreU5BU5D_t684312048*)(IScoreU5BU5D_t684312048*)L_11, /*hidden argument*/Action_1_Invoke_m50340758_MethodInfo_var);
+	}
+
+IL_0041:
+	{
+		return;
+	}
+}
+// UnityEngine.SocialPlatforms.ILocalUser UnityEngine.SocialPlatforms.GameCenter.GameCenterPlatform::get_localUser()
+extern Il2CppClass* GameCenterPlatform_t899915837_il2cpp_TypeInfo_var;
+extern Il2CppClass* LocalUser_t2259562908_il2cpp_TypeInfo_var;
+extern Il2CppClass* String_t_il2cpp_TypeInfo_var;
+extern Il2CppCodeGenString* _stringLiteral48;
+extern const uint32_t GameCenterPlatform_get_localUser_m1634439374_MetadataUsageId;
+extern "C"  Il2CppObject * GameCenterPlatform_get_localUser_m1634439374 (GameCenterPlatform_t899915837 * __this, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (GameCenterPlatform_get_localUser_m1634439374_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(GameCenterPlatform_t899915837_il2cpp_TypeInfo_var);
+		LocalUser_t2259562908 * L_0 = ((GameCenterPlatform_t899915837_StaticFields*)GameCenterPlatform_t899915837_il2cpp_TypeInfo_var->static_fields)->get_m_LocalUser_13();
+		if (L_0)
+		{
+			goto IL_0014;
+		}
+	}
+	{
+		LocalUser_t2259562908 * L_1 = (LocalUser_t2259562908 *)il2cpp_codegen_object_new(LocalUser_t2259562908_il2cpp_TypeInfo_var);
+		LocalUser__ctor_m1052633066(L_1, /*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(GameCenterPlatform_t899915837_il2cpp_TypeInfo_var);
+		((GameCenterPlatform_t899915837_StaticFields*)GameCenterPlatform_t899915837_il2cpp_TypeInfo_var->static_fields)->set_m_LocalUser_13(L_1);
+	}
+
+IL_0014:
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(GameCenterPlatform_t899915837_il2cpp_TypeInfo_var);
+		bool L_2 = GameCenterPlatform_Internal_Authenticated_m2780967960(NULL /*static, unused*/, /*hidden argument*/NULL);
+		if (!L_2)
+		{
+			goto IL_003c;
+		}
+	}
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(GameCenterPlatform_t899915837_il2cpp_TypeInfo_var);
+		LocalUser_t2259562908 * L_3 = ((GameCenterPlatform_t899915837_StaticFields*)GameCenterPlatform_t899915837_il2cpp_TypeInfo_var->static_fields)->get_m_LocalUser_13();
+		NullCheck(L_3);
+		String_t* L_4 = VirtFuncInvoker0< String_t* >::Invoke(5 /* System.String UnityEngine.SocialPlatforms.Impl.UserProfile::get_id() */, L_3);
+		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
+		bool L_5 = String_op_Equality_m1260523650(NULL /*static, unused*/, L_4, _stringLiteral48, /*hidden argument*/NULL);
+		if (!L_5)
+		{
+			goto IL_003c;
+		}
+	}
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(GameCenterPlatform_t899915837_il2cpp_TypeInfo_var);
+		GameCenterPlatform_PopulateLocalUser_m2583301917(NULL /*static, unused*/, /*hidden argument*/NULL);
+	}
+
+IL_003c:
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(GameCenterPlatform_t899915837_il2cpp_TypeInfo_var);
+		LocalUser_t2259562908 * L_6 = ((GameCenterPlatform_t899915837_StaticFields*)GameCenterPlatform_t899915837_il2cpp_TypeInfo_var->static_fields)->get_m_LocalUser_13();
+		return L_6;
+	}
+}
+// System.Void UnityEngine.SocialPlatforms.GameCenter.GameCenterPlatform::PopulateLocalUser()
+extern Il2CppClass* GameCenterPlatform_t899915837_il2cpp_TypeInfo_var;
+extern const uint32_t GameCenterPlatform_PopulateLocalUser_m2583301917_MetadataUsageId;
+extern "C"  void GameCenterPlatform_PopulateLocalUser_m2583301917 (Il2CppObject * __this /* static, unused */, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (GameCenterPlatform_PopulateLocalUser_m2583301917_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(GameCenterPlatform_t899915837_il2cpp_TypeInfo_var);
+		LocalUser_t2259562908 * L_0 = ((GameCenterPlatform_t899915837_StaticFields*)GameCenterPlatform_t899915837_il2cpp_TypeInfo_var->static_fields)->get_m_LocalUser_13();
+		bool L_1 = GameCenterPlatform_Internal_Authenticated_m2780967960(NULL /*static, unused*/, /*hidden argument*/NULL);
+		NullCheck(L_0);
+		LocalUser_SetAuthenticated_m653377406(L_0, L_1, /*hidden argument*/NULL);
+		LocalUser_t2259562908 * L_2 = ((GameCenterPlatform_t899915837_StaticFields*)GameCenterPlatform_t899915837_il2cpp_TypeInfo_var->static_fields)->get_m_LocalUser_13();
+		String_t* L_3 = GameCenterPlatform_Internal_UserName_m1252299660(NULL /*static, unused*/, /*hidden argument*/NULL);
+		NullCheck(L_2);
+		UserProfile_SetUserName_m914181770(L_2, L_3, /*hidden argument*/NULL);
+		LocalUser_t2259562908 * L_4 = ((GameCenterPlatform_t899915837_StaticFields*)GameCenterPlatform_t899915837_il2cpp_TypeInfo_var->static_fields)->get_m_LocalUser_13();
+		String_t* L_5 = GameCenterPlatform_Internal_UserID_m385481212(NULL /*static, unused*/, /*hidden argument*/NULL);
+		NullCheck(L_4);
+		UserProfile_SetUserID_m1515238170(L_4, L_5, /*hidden argument*/NULL);
+		LocalUser_t2259562908 * L_6 = ((GameCenterPlatform_t899915837_StaticFields*)GameCenterPlatform_t899915837_il2cpp_TypeInfo_var->static_fields)->get_m_LocalUser_13();
+		bool L_7 = GameCenterPlatform_Internal_Underage_m4169738944(NULL /*static, unused*/, /*hidden argument*/NULL);
+		NullCheck(L_6);
+		LocalUser_SetUnderage_m2968368872(L_6, L_7, /*hidden argument*/NULL);
+		LocalUser_t2259562908 * L_8 = ((GameCenterPlatform_t899915837_StaticFields*)GameCenterPlatform_t899915837_il2cpp_TypeInfo_var->static_fields)->get_m_LocalUser_13();
+		Texture2D_t2509538522 * L_9 = GameCenterPlatform_Internal_UserImage_m3175776130(NULL /*static, unused*/, /*hidden argument*/NULL);
+		NullCheck(L_8);
+		UserProfile_SetImage_m1928130753(L_8, L_9, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void UnityEngine.SocialPlatforms.GameCenter.GameCenterPlatform::LoadAchievementDescriptions(System.Action`1<UnityEngine.SocialPlatforms.IAchievementDescription[]>)
+extern Il2CppClass* AchievementDescriptionU5BU5D_t3478737922_il2cpp_TypeInfo_var;
+extern Il2CppClass* GameCenterPlatform_t899915837_il2cpp_TypeInfo_var;
+extern const MethodInfo* Action_1_Invoke_m2766540343_MethodInfo_var;
+extern const uint32_t GameCenterPlatform_LoadAchievementDescriptions_m232801667_MetadataUsageId;
+extern "C"  void GameCenterPlatform_LoadAchievementDescriptions_m232801667 (GameCenterPlatform_t899915837 * __this, Action_1_t1681818320 * ___callback0, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (GameCenterPlatform_LoadAchievementDescriptions_m232801667_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	{
+		bool L_0 = GameCenterPlatform_VerifyAuthentication_m4096949980(__this, /*hidden argument*/NULL);
+		if (L_0)
+		{
+			goto IL_0018;
+		}
+	}
+	{
+		Action_1_t1681818320 * L_1 = ___callback0;
+		NullCheck(L_1);
+		Action_1_Invoke_m2766540343(L_1, (IAchievementDescriptionU5BU5D_t1533365615*)(IAchievementDescriptionU5BU5D_t1533365615*)((AchievementDescriptionU5BU5D_t3478737922*)SZArrayNew(AchievementDescriptionU5BU5D_t3478737922_il2cpp_TypeInfo_var, (uint32_t)0)), /*hidden argument*/Action_1_Invoke_m2766540343_MethodInfo_var);
+		return;
+	}
+
+IL_0018:
+	{
+		Action_1_t1681818320 * L_2 = ___callback0;
+		IL2CPP_RUNTIME_CLASS_INIT(GameCenterPlatform_t899915837_il2cpp_TypeInfo_var);
+		((GameCenterPlatform_t899915837_StaticFields*)GameCenterPlatform_t899915837_il2cpp_TypeInfo_var->static_fields)->set_s_AchievementDescriptionLoaderCallback_2(L_2);
+		GameCenterPlatform_Internal_LoadAchievementDescriptions_m1394384079(NULL /*static, unused*/, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void UnityEngine.SocialPlatforms.GameCenter.GameCenterPlatform::ReportProgress(System.String,System.Double,System.Action`1<System.Boolean>)
+extern Il2CppClass* GameCenterPlatform_t899915837_il2cpp_TypeInfo_var;
+extern const MethodInfo* Action_1_Invoke_m3594021162_MethodInfo_var;
+extern const uint32_t GameCenterPlatform_ReportProgress_m4110499833_MetadataUsageId;
+extern "C"  void GameCenterPlatform_ReportProgress_m4110499833 (GameCenterPlatform_t899915837 * __this, String_t* ___id0, double ___progress1, Action_1_t359458046 * ___callback2, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (GameCenterPlatform_ReportProgress_m4110499833_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	{
+		bool L_0 = GameCenterPlatform_VerifyAuthentication_m4096949980(__this, /*hidden argument*/NULL);
+		if (L_0)
+		{
+			goto IL_0013;
+		}
+	}
+	{
+		Action_1_t359458046 * L_1 = ___callback2;
+		NullCheck(L_1);
+		Action_1_Invoke_m3594021162(L_1, (bool)0, /*hidden argument*/Action_1_Invoke_m3594021162_MethodInfo_var);
+		return;
+	}
+
+IL_0013:
+	{
+		Action_1_t359458046 * L_2 = ___callback2;
+		IL2CPP_RUNTIME_CLASS_INIT(GameCenterPlatform_t899915837_il2cpp_TypeInfo_var);
+		((GameCenterPlatform_t899915837_StaticFields*)GameCenterPlatform_t899915837_il2cpp_TypeInfo_var->static_fields)->set_s_ProgressCallback_4(L_2);
+		String_t* L_3 = ___id0;
+		double L_4 = ___progress1;
+		GameCenterPlatform_Internal_ReportProgress_m2511520970(NULL /*static, unused*/, L_3, L_4, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void UnityEngine.SocialPlatforms.GameCenter.GameCenterPlatform::LoadAchievements(System.Action`1<UnityEngine.SocialPlatforms.IAchievement[]>)
+extern Il2CppClass* AchievementU5BU5D_t4174155160_il2cpp_TypeInfo_var;
+extern Il2CppClass* GameCenterPlatform_t899915837_il2cpp_TypeInfo_var;
+extern const MethodInfo* Action_1_Invoke_m222677977_MethodInfo_var;
+extern const uint32_t GameCenterPlatform_LoadAchievements_m2745782249_MetadataUsageId;
+extern "C"  void GameCenterPlatform_LoadAchievements_m2745782249 (GameCenterPlatform_t899915837 * __this, Action_1_t999575008 * ___callback0, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (GameCenterPlatform_LoadAchievements_m2745782249_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	{
+		bool L_0 = GameCenterPlatform_VerifyAuthentication_m4096949980(__this, /*hidden argument*/NULL);
+		if (L_0)
+		{
+			goto IL_0018;
+		}
+	}
+	{
+		Action_1_t999575008 * L_1 = ___callback0;
+		NullCheck(L_1);
+		Action_1_Invoke_m222677977(L_1, (IAchievementU5BU5D_t851122303*)(IAchievementU5BU5D_t851122303*)((AchievementU5BU5D_t4174155160*)SZArrayNew(AchievementU5BU5D_t4174155160_il2cpp_TypeInfo_var, (uint32_t)0)), /*hidden argument*/Action_1_Invoke_m222677977_MethodInfo_var);
+		return;
+	}
+
+IL_0018:
+	{
+		Action_1_t999575008 * L_2 = ___callback0;
+		IL2CPP_RUNTIME_CLASS_INIT(GameCenterPlatform_t899915837_il2cpp_TypeInfo_var);
+		((GameCenterPlatform_t899915837_StaticFields*)GameCenterPlatform_t899915837_il2cpp_TypeInfo_var->static_fields)->set_s_AchievementLoaderCallback_3(L_2);
+		GameCenterPlatform_Internal_LoadAchievements_m817891229(NULL /*static, unused*/, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void UnityEngine.SocialPlatforms.GameCenter.GameCenterPlatform::ReportScore(System.Int64,System.String,System.Action`1<System.Boolean>)
+extern Il2CppClass* GameCenterPlatform_t899915837_il2cpp_TypeInfo_var;
+extern const MethodInfo* Action_1_Invoke_m3594021162_MethodInfo_var;
+extern const uint32_t GameCenterPlatform_ReportScore_m1009544586_MetadataUsageId;
+extern "C"  void GameCenterPlatform_ReportScore_m1009544586 (GameCenterPlatform_t899915837 * __this, int64_t ___score0, String_t* ___board1, Action_1_t359458046 * ___callback2, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (GameCenterPlatform_ReportScore_m1009544586_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	{
+		bool L_0 = GameCenterPlatform_VerifyAuthentication_m4096949980(__this, /*hidden argument*/NULL);
+		if (L_0)
+		{
+			goto IL_0013;
+		}
+	}
+	{
+		Action_1_t359458046 * L_1 = ___callback2;
+		NullCheck(L_1);
+		Action_1_Invoke_m3594021162(L_1, (bool)0, /*hidden argument*/Action_1_Invoke_m3594021162_MethodInfo_var);
+		return;
+	}
+
+IL_0013:
+	{
+		Action_1_t359458046 * L_2 = ___callback2;
+		IL2CPP_RUNTIME_CLASS_INIT(GameCenterPlatform_t899915837_il2cpp_TypeInfo_var);
+		((GameCenterPlatform_t899915837_StaticFields*)GameCenterPlatform_t899915837_il2cpp_TypeInfo_var->static_fields)->set_s_ScoreCallback_5(L_2);
+		int64_t L_3 = ___score0;
+		String_t* L_4 = ___board1;
+		GameCenterPlatform_Internal_ReportScore_m408601947(NULL /*static, unused*/, L_3, L_4, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void UnityEngine.SocialPlatforms.GameCenter.GameCenterPlatform::LoadScores(System.String,System.Action`1<UnityEngine.SocialPlatforms.IScore[]>)
+extern Il2CppClass* ScoreU5BU5D_t1929327945_il2cpp_TypeInfo_var;
+extern Il2CppClass* GameCenterPlatform_t899915837_il2cpp_TypeInfo_var;
+extern const MethodInfo* Action_1_Invoke_m50340758_MethodInfo_var;
+extern const uint32_t GameCenterPlatform_LoadScores_m3562614827_MetadataUsageId;
+extern "C"  void GameCenterPlatform_LoadScores_m3562614827 (GameCenterPlatform_t899915837 * __this, String_t* ___category0, Action_1_t832764753 * ___callback1, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (GameCenterPlatform_LoadScores_m3562614827_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	{
+		bool L_0 = GameCenterPlatform_VerifyAuthentication_m4096949980(__this, /*hidden argument*/NULL);
+		if (L_0)
+		{
+			goto IL_0018;
+		}
+	}
+	{
+		Action_1_t832764753 * L_1 = ___callback1;
+		NullCheck(L_1);
+		Action_1_Invoke_m50340758(L_1, (IScoreU5BU5D_t684312048*)(IScoreU5BU5D_t684312048*)((ScoreU5BU5D_t1929327945*)SZArrayNew(ScoreU5BU5D_t1929327945_il2cpp_TypeInfo_var, (uint32_t)0)), /*hidden argument*/Action_1_Invoke_m50340758_MethodInfo_var);
+		return;
+	}
+
+IL_0018:
+	{
+		Action_1_t832764753 * L_2 = ___callback1;
+		IL2CPP_RUNTIME_CLASS_INIT(GameCenterPlatform_t899915837_il2cpp_TypeInfo_var);
+		((GameCenterPlatform_t899915837_StaticFields*)GameCenterPlatform_t899915837_il2cpp_TypeInfo_var->static_fields)->set_s_ScoreLoaderCallback_6(L_2);
+		String_t* L_3 = ___category0;
+		GameCenterPlatform_Internal_LoadScores_m523283944(NULL /*static, unused*/, L_3, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void UnityEngine.SocialPlatforms.GameCenter.GameCenterPlatform::LoadScores(UnityEngine.SocialPlatforms.ILeaderboard,System.Action`1<System.Boolean>)
+extern Il2CppClass* GameCenterPlatform_t899915837_il2cpp_TypeInfo_var;
+extern Il2CppClass* Leaderboard_t1422561091_il2cpp_TypeInfo_var;
+extern Il2CppClass* GcLeaderboard_t3894999172_il2cpp_TypeInfo_var;
+extern Il2CppClass* ILeaderboard_t1654994728_il2cpp_TypeInfo_var;
+extern const MethodInfo* Action_1_Invoke_m3594021162_MethodInfo_var;
+extern const uint32_t GameCenterPlatform_LoadScores_m2883394111_MetadataUsageId;
+extern "C"  void GameCenterPlatform_LoadScores_m2883394111 (GameCenterPlatform_t899915837 * __this, Il2CppObject * ___board0, Action_1_t359458046 * ___callback1, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (GameCenterPlatform_LoadScores_m2883394111_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	Leaderboard_t1422561091 * V_0 = NULL;
+	GcLeaderboard_t3894999172 * V_1 = NULL;
+	Range_t938821841  V_2;
+	memset(&V_2, 0, sizeof(V_2));
+	Range_t938821841  V_3;
+	memset(&V_3, 0, sizeof(V_3));
+	{
+		bool L_0 = GameCenterPlatform_VerifyAuthentication_m4096949980(__this, /*hidden argument*/NULL);
+		if (L_0)
+		{
+			goto IL_0013;
+		}
+	}
+	{
+		Action_1_t359458046 * L_1 = ___callback1;
+		NullCheck(L_1);
+		Action_1_Invoke_m3594021162(L_1, (bool)0, /*hidden argument*/Action_1_Invoke_m3594021162_MethodInfo_var);
+		return;
+	}
+
+IL_0013:
+	{
+		Action_1_t359458046 * L_2 = ___callback1;
+		IL2CPP_RUNTIME_CLASS_INIT(GameCenterPlatform_t899915837_il2cpp_TypeInfo_var);
+		((GameCenterPlatform_t899915837_StaticFields*)GameCenterPlatform_t899915837_il2cpp_TypeInfo_var->static_fields)->set_s_LeaderboardCallback_7(L_2);
+		Il2CppObject * L_3 = ___board0;
+		V_0 = ((Leaderboard_t1422561091 *)CastclassClass(L_3, Leaderboard_t1422561091_il2cpp_TypeInfo_var));
+		Leaderboard_t1422561091 * L_4 = V_0;
+		GcLeaderboard_t3894999172 * L_5 = (GcLeaderboard_t3894999172 *)il2cpp_codegen_object_new(GcLeaderboard_t3894999172_il2cpp_TypeInfo_var);
+		GcLeaderboard__ctor_m4042810199(L_5, L_4, /*hidden argument*/NULL);
+		V_1 = L_5;
+		List_1_t396990845 * L_6 = ((GameCenterPlatform_t899915837_StaticFields*)GameCenterPlatform_t899915837_il2cpp_TypeInfo_var->static_fields)->get_m_GcBoards_14();
+		GcLeaderboard_t3894999172 * L_7 = V_1;
+		NullCheck(L_6);
+		VirtActionInvoker1< GcLeaderboard_t3894999172 * >::Invoke(22 /* System.Void System.Collections.Generic.List`1<UnityEngine.SocialPlatforms.GameCenter.GcLeaderboard>::Add(!0) */, L_6, L_7);
+		Leaderboard_t1422561091 * L_8 = V_0;
+		NullCheck(L_8);
+		StringU5BU5D_t2956870243* L_9 = Leaderboard_GetUserFilter_m3119905721(L_8, /*hidden argument*/NULL);
+		NullCheck(L_9);
+		if ((((int32_t)(((int32_t)((int32_t)(((Il2CppArray *)L_9)->max_length))))) <= ((int32_t)0)))
+		{
+			goto IL_005d;
+		}
+	}
+	{
+		GcLeaderboard_t3894999172 * L_10 = V_1;
+		Il2CppObject * L_11 = ___board0;
+		NullCheck(L_11);
+		String_t* L_12 = InterfaceFuncInvoker0< String_t* >::Invoke(0 /* System.String UnityEngine.SocialPlatforms.ILeaderboard::get_id() */, ILeaderboard_t1654994728_il2cpp_TypeInfo_var, L_11);
+		Il2CppObject * L_13 = ___board0;
+		NullCheck(L_13);
+		int32_t L_14 = InterfaceFuncInvoker0< int32_t >::Invoke(3 /* UnityEngine.SocialPlatforms.TimeScope UnityEngine.SocialPlatforms.ILeaderboard::get_timeScope() */, ILeaderboard_t1654994728_il2cpp_TypeInfo_var, L_13);
+		Leaderboard_t1422561091 * L_15 = V_0;
+		NullCheck(L_15);
+		StringU5BU5D_t2956870243* L_16 = Leaderboard_GetUserFilter_m3119905721(L_15, /*hidden argument*/NULL);
+		NullCheck(L_10);
+		GcLeaderboard_Internal_LoadScoresWithUsers_m1315210452(L_10, L_12, L_14, L_16, /*hidden argument*/NULL);
+		goto IL_0091;
+	}
+
+IL_005d:
+	{
+		GcLeaderboard_t3894999172 * L_17 = V_1;
+		Il2CppObject * L_18 = ___board0;
+		NullCheck(L_18);
+		String_t* L_19 = InterfaceFuncInvoker0< String_t* >::Invoke(0 /* System.String UnityEngine.SocialPlatforms.ILeaderboard::get_id() */, ILeaderboard_t1654994728_il2cpp_TypeInfo_var, L_18);
+		Il2CppObject * L_20 = ___board0;
+		NullCheck(L_20);
+		Range_t938821841  L_21 = InterfaceFuncInvoker0< Range_t938821841  >::Invoke(2 /* UnityEngine.SocialPlatforms.Range UnityEngine.SocialPlatforms.ILeaderboard::get_range() */, ILeaderboard_t1654994728_il2cpp_TypeInfo_var, L_20);
+		V_2 = L_21;
+		int32_t L_22 = (&V_2)->get_from_0();
+		Il2CppObject * L_23 = ___board0;
+		NullCheck(L_23);
+		Range_t938821841  L_24 = InterfaceFuncInvoker0< Range_t938821841  >::Invoke(2 /* UnityEngine.SocialPlatforms.Range UnityEngine.SocialPlatforms.ILeaderboard::get_range() */, ILeaderboard_t1654994728_il2cpp_TypeInfo_var, L_23);
+		V_3 = L_24;
+		int32_t L_25 = (&V_3)->get_count_1();
+		Il2CppObject * L_26 = ___board0;
+		NullCheck(L_26);
+		int32_t L_27 = InterfaceFuncInvoker0< int32_t >::Invoke(1 /* UnityEngine.SocialPlatforms.UserScope UnityEngine.SocialPlatforms.ILeaderboard::get_userScope() */, ILeaderboard_t1654994728_il2cpp_TypeInfo_var, L_26);
+		Il2CppObject * L_28 = ___board0;
+		NullCheck(L_28);
+		int32_t L_29 = InterfaceFuncInvoker0< int32_t >::Invoke(3 /* UnityEngine.SocialPlatforms.TimeScope UnityEngine.SocialPlatforms.ILeaderboard::get_timeScope() */, ILeaderboard_t1654994728_il2cpp_TypeInfo_var, L_28);
+		NullCheck(L_17);
+		GcLeaderboard_Internal_LoadScores_m1783152707(L_17, L_19, L_22, L_25, L_27, L_29, /*hidden argument*/NULL);
+	}
+
+IL_0091:
+	{
+		return;
+	}
+}
+// System.Void UnityEngine.SocialPlatforms.GameCenter.GameCenterPlatform::LeaderboardCallbackWrapper(System.Boolean)
+extern Il2CppClass* GameCenterPlatform_t899915837_il2cpp_TypeInfo_var;
+extern const MethodInfo* Action_1_Invoke_m3594021162_MethodInfo_var;
+extern const uint32_t GameCenterPlatform_LeaderboardCallbackWrapper_m2165153529_MetadataUsageId;
+extern "C"  void GameCenterPlatform_LeaderboardCallbackWrapper_m2165153529 (Il2CppObject * __this /* static, unused */, bool ___success0, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (GameCenterPlatform_LeaderboardCallbackWrapper_m2165153529_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(GameCenterPlatform_t899915837_il2cpp_TypeInfo_var);
+		Action_1_t359458046 * L_0 = ((GameCenterPlatform_t899915837_StaticFields*)GameCenterPlatform_t899915837_il2cpp_TypeInfo_var->static_fields)->get_s_LeaderboardCallback_7();
+		if (!L_0)
+		{
+			goto IL_0015;
+		}
+	}
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(GameCenterPlatform_t899915837_il2cpp_TypeInfo_var);
+		Action_1_t359458046 * L_1 = ((GameCenterPlatform_t899915837_StaticFields*)GameCenterPlatform_t899915837_il2cpp_TypeInfo_var->static_fields)->get_s_LeaderboardCallback_7();
+		bool L_2 = ___success0;
+		NullCheck(L_1);
+		Action_1_Invoke_m3594021162(L_1, L_2, /*hidden argument*/Action_1_Invoke_m3594021162_MethodInfo_var);
+	}
+
+IL_0015:
+	{
+		return;
+	}
+}
+// System.Boolean UnityEngine.SocialPlatforms.GameCenter.GameCenterPlatform::GetLoading(UnityEngine.SocialPlatforms.ILeaderboard)
+extern Il2CppClass* GameCenterPlatform_t899915837_il2cpp_TypeInfo_var;
+extern Il2CppClass* Leaderboard_t1422561091_il2cpp_TypeInfo_var;
+extern Il2CppClass* Enumerator_t2777741133_il2cpp_TypeInfo_var;
+extern Il2CppClass* IDisposable_t1628921374_il2cpp_TypeInfo_var;
+extern const MethodInfo* List_1_GetEnumerator_m173797613_MethodInfo_var;
+extern const MethodInfo* Enumerator_get_Current_m3622080807_MethodInfo_var;
+extern const MethodInfo* Enumerator_MoveNext_m4196185109_MethodInfo_var;
+extern const uint32_t GameCenterPlatform_GetLoading_m2084830155_MetadataUsageId;
+extern "C"  bool GameCenterPlatform_GetLoading_m2084830155 (GameCenterPlatform_t899915837 * __this, Il2CppObject * ___board0, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (GameCenterPlatform_GetLoading_m2084830155_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	GcLeaderboard_t3894999172 * V_0 = NULL;
+	Enumerator_t2777741133  V_1;
+	memset(&V_1, 0, sizeof(V_1));
+	bool V_2 = false;
+	Exception_t1967233988 * __last_unhandled_exception = 0;
+	NO_UNUSED_WARNING (__last_unhandled_exception);
+	Exception_t1967233988 * __exception_local = 0;
+	NO_UNUSED_WARNING (__exception_local);
+	int32_t __leave_target = 0;
+	NO_UNUSED_WARNING (__leave_target);
+	{
+		bool L_0 = GameCenterPlatform_VerifyAuthentication_m4096949980(__this, /*hidden argument*/NULL);
+		if (L_0)
+		{
+			goto IL_000d;
+		}
+	}
+	{
+		return (bool)0;
+	}
+
+IL_000d:
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(GameCenterPlatform_t899915837_il2cpp_TypeInfo_var);
+		List_1_t396990845 * L_1 = ((GameCenterPlatform_t899915837_StaticFields*)GameCenterPlatform_t899915837_il2cpp_TypeInfo_var->static_fields)->get_m_GcBoards_14();
+		NullCheck(L_1);
+		Enumerator_t2777741133  L_2 = List_1_GetEnumerator_m173797613(L_1, /*hidden argument*/List_1_GetEnumerator_m173797613_MethodInfo_var);
+		V_1 = L_2;
+	}
+
+IL_0018:
+	try
+	{ // begin try (depth: 1)
+		{
+			goto IL_0042;
+		}
+
+IL_001d:
+		{
+			GcLeaderboard_t3894999172 * L_3 = Enumerator_get_Current_m3622080807((&V_1), /*hidden argument*/Enumerator_get_Current_m3622080807_MethodInfo_var);
+			V_0 = L_3;
+			GcLeaderboard_t3894999172 * L_4 = V_0;
+			Il2CppObject * L_5 = ___board0;
+			NullCheck(L_4);
+			bool L_6 = GcLeaderboard_Contains_m100384368(L_4, ((Leaderboard_t1422561091 *)CastclassClass(L_5, Leaderboard_t1422561091_il2cpp_TypeInfo_var)), /*hidden argument*/NULL);
+			if (!L_6)
+			{
+				goto IL_0042;
+			}
+		}
+
+IL_0036:
+		{
+			GcLeaderboard_t3894999172 * L_7 = V_0;
+			NullCheck(L_7);
+			bool L_8 = GcLeaderboard_Loading_m294711596(L_7, /*hidden argument*/NULL);
+			V_2 = L_8;
+			IL2CPP_LEAVE(0x61, FINALLY_0053);
+		}
+
+IL_0042:
+		{
+			bool L_9 = Enumerator_MoveNext_m4196185109((&V_1), /*hidden argument*/Enumerator_MoveNext_m4196185109_MethodInfo_var);
+			if (L_9)
+			{
+				goto IL_001d;
+			}
+		}
+
+IL_004e:
+		{
+			IL2CPP_LEAVE(0x5F, FINALLY_0053);
+		}
+	} // end try (depth: 1)
+	catch(Il2CppExceptionWrapper& e)
+	{
+		__last_unhandled_exception = (Exception_t1967233988 *)e.ex;
+		goto FINALLY_0053;
+	}
+
+FINALLY_0053:
+	{ // begin finally (depth: 1)
+		Enumerator_t2777741133  L_10 = V_1;
+		Enumerator_t2777741133  L_11 = L_10;
+		Il2CppObject * L_12 = Box(Enumerator_t2777741133_il2cpp_TypeInfo_var, &L_11);
+		NullCheck((Il2CppObject *)L_12);
+		InterfaceActionInvoker0::Invoke(0 /* System.Void System.IDisposable::Dispose() */, IDisposable_t1628921374_il2cpp_TypeInfo_var, (Il2CppObject *)L_12);
+		IL2CPP_END_FINALLY(83)
+	} // end finally (depth: 1)
+	IL2CPP_CLEANUP(83)
+	{
+		IL2CPP_JUMP_TBL(0x61, IL_0061)
+		IL2CPP_JUMP_TBL(0x5F, IL_005f)
+		IL2CPP_RETHROW_IF_UNHANDLED(Exception_t1967233988 *)
+	}
+
+IL_005f:
+	{
+		return (bool)0;
+	}
+
+IL_0061:
+	{
+		bool L_13 = V_2;
+		return L_13;
+	}
+}
+// System.Boolean UnityEngine.SocialPlatforms.GameCenter.GameCenterPlatform::VerifyAuthentication()
+extern Il2CppClass* ILocalUser_t198308673_il2cpp_TypeInfo_var;
+extern Il2CppClass* Debug_t1588791936_il2cpp_TypeInfo_var;
+extern Il2CppCodeGenString* _stringLiteral708567292;
+extern const uint32_t GameCenterPlatform_VerifyAuthentication_m4096949980_MetadataUsageId;
+extern "C"  bool GameCenterPlatform_VerifyAuthentication_m4096949980 (GameCenterPlatform_t899915837 * __this, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (GameCenterPlatform_VerifyAuthentication_m4096949980_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	{
+		Il2CppObject * L_0 = GameCenterPlatform_get_localUser_m1634439374(__this, /*hidden argument*/NULL);
+		NullCheck(L_0);
+		bool L_1 = InterfaceFuncInvoker0< bool >::Invoke(0 /* System.Boolean UnityEngine.SocialPlatforms.ILocalUser::get_authenticated() */, ILocalUser_t198308673_il2cpp_TypeInfo_var, L_0);
+		if (L_1)
+		{
+			goto IL_001c;
+		}
+	}
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(Debug_t1588791936_il2cpp_TypeInfo_var);
+		Debug_Log_m1731103628(NULL /*static, unused*/, _stringLiteral708567292, /*hidden argument*/NULL);
+		return (bool)0;
+	}
+
+IL_001c:
+	{
+		return (bool)1;
+	}
+}
+// System.Void UnityEngine.SocialPlatforms.GameCenter.GameCenterPlatform::ShowAchievementsUI()
+extern Il2CppClass* GameCenterPlatform_t899915837_il2cpp_TypeInfo_var;
+extern const uint32_t GameCenterPlatform_ShowAchievementsUI_m2437339590_MetadataUsageId;
+extern "C"  void GameCenterPlatform_ShowAchievementsUI_m2437339590 (GameCenterPlatform_t899915837 * __this, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (GameCenterPlatform_ShowAchievementsUI_m2437339590_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(GameCenterPlatform_t899915837_il2cpp_TypeInfo_var);
+		GameCenterPlatform_Internal_ShowAchievementsUI_m1934331464(NULL /*static, unused*/, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void UnityEngine.SocialPlatforms.GameCenter.GameCenterPlatform::ShowLeaderboardUI()
+extern Il2CppClass* GameCenterPlatform_t899915837_il2cpp_TypeInfo_var;
+extern const uint32_t GameCenterPlatform_ShowLeaderboardUI_m302984165_MetadataUsageId;
+extern "C"  void GameCenterPlatform_ShowLeaderboardUI_m302984165 (GameCenterPlatform_t899915837 * __this, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (GameCenterPlatform_ShowLeaderboardUI_m302984165_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(GameCenterPlatform_t899915837_il2cpp_TypeInfo_var);
+		GameCenterPlatform_Internal_ShowLeaderboardUI_m3057704739(NULL /*static, unused*/, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void UnityEngine.SocialPlatforms.GameCenter.GameCenterPlatform::ClearUsers(System.Int32)
+extern Il2CppClass* GameCenterPlatform_t899915837_il2cpp_TypeInfo_var;
+extern const uint32_t GameCenterPlatform_ClearUsers_m4212910653_MetadataUsageId;
+extern "C"  void GameCenterPlatform_ClearUsers_m4212910653 (Il2CppObject * __this /* static, unused */, int32_t ___size0, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (GameCenterPlatform_ClearUsers_m4212910653_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(GameCenterPlatform_t899915837_il2cpp_TypeInfo_var);
+		int32_t L_0 = ___size0;
+		GameCenterPlatform_SafeClearArray_m2546851889(NULL /*static, unused*/, (((GameCenterPlatform_t899915837_StaticFields*)GameCenterPlatform_t899915837_il2cpp_TypeInfo_var->static_fields)->get_address_of_s_users_11()), L_0, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void UnityEngine.SocialPlatforms.GameCenter.GameCenterPlatform::SetUser(UnityEngine.SocialPlatforms.GameCenter.GcUserProfileData,System.Int32)
+extern Il2CppClass* GameCenterPlatform_t899915837_il2cpp_TypeInfo_var;
+extern const uint32_t GameCenterPlatform_SetUser_m847940592_MetadataUsageId;
+extern "C"  void GameCenterPlatform_SetUser_m847940592 (Il2CppObject * __this /* static, unused */, GcUserProfileData_t2788044591  ___data0, int32_t ___number1, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (GameCenterPlatform_SetUser_m847940592_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(GameCenterPlatform_t899915837_il2cpp_TypeInfo_var);
+		int32_t L_0 = ___number1;
+		GcUserProfileData_AddToArray_m3757655355((&___data0), (((GameCenterPlatform_t899915837_StaticFields*)GameCenterPlatform_t899915837_il2cpp_TypeInfo_var->static_fields)->get_address_of_s_users_11()), L_0, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void UnityEngine.SocialPlatforms.GameCenter.GameCenterPlatform::SetUserImage(UnityEngine.Texture2D,System.Int32)
+extern Il2CppClass* GameCenterPlatform_t899915837_il2cpp_TypeInfo_var;
+extern const uint32_t GameCenterPlatform_SetUserImage_m3066589434_MetadataUsageId;
+extern "C"  void GameCenterPlatform_SetUserImage_m3066589434 (Il2CppObject * __this /* static, unused */, Texture2D_t2509538522 * ___texture0, int32_t ___number1, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (GameCenterPlatform_SetUserImage_m3066589434_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(GameCenterPlatform_t899915837_il2cpp_TypeInfo_var);
+		Texture2D_t2509538522 * L_0 = ___texture0;
+		int32_t L_1 = ___number1;
+		GameCenterPlatform_SafeSetUserImage_m3650098397(NULL /*static, unused*/, (((GameCenterPlatform_t899915837_StaticFields*)GameCenterPlatform_t899915837_il2cpp_TypeInfo_var->static_fields)->get_address_of_s_users_11()), L_0, L_1, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void UnityEngine.SocialPlatforms.GameCenter.GameCenterPlatform::TriggerUsersCallbackWrapper()
+extern Il2CppClass* GameCenterPlatform_t899915837_il2cpp_TypeInfo_var;
+extern const MethodInfo* Action_1_Invoke_m2276731850_MethodInfo_var;
+extern const uint32_t GameCenterPlatform_TriggerUsersCallbackWrapper_m2446471631_MetadataUsageId;
+extern "C"  void GameCenterPlatform_TriggerUsersCallbackWrapper_m2446471631 (Il2CppObject * __this /* static, unused */, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (GameCenterPlatform_TriggerUsersCallbackWrapper_m2446471631_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(GameCenterPlatform_t899915837_il2cpp_TypeInfo_var);
+		Action_1_t2465425429 * L_0 = ((GameCenterPlatform_t899915837_StaticFields*)GameCenterPlatform_t899915837_il2cpp_TypeInfo_var->static_fields)->get_s_UsersCallback_8();
+		if (!L_0)
+		{
+			goto IL_0019;
+		}
+	}
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(GameCenterPlatform_t899915837_il2cpp_TypeInfo_var);
+		Action_1_t2465425429 * L_1 = ((GameCenterPlatform_t899915837_StaticFields*)GameCenterPlatform_t899915837_il2cpp_TypeInfo_var->static_fields)->get_s_UsersCallback_8();
+		UserProfileU5BU5D_t1345038285* L_2 = ((GameCenterPlatform_t899915837_StaticFields*)GameCenterPlatform_t899915837_il2cpp_TypeInfo_var->static_fields)->get_s_users_11();
+		NullCheck(L_1);
+		Action_1_Invoke_m2276731850(L_1, (IUserProfileU5BU5D_t2316972724*)(IUserProfileU5BU5D_t2316972724*)L_2, /*hidden argument*/Action_1_Invoke_m2276731850_MethodInfo_var);
+	}
+
+IL_0019:
+	{
+		return;
+	}
+}
+// System.Void UnityEngine.SocialPlatforms.GameCenter.GameCenterPlatform::LoadUsers(System.String[],System.Action`1<UnityEngine.SocialPlatforms.IUserProfile[]>)
+extern Il2CppClass* UserProfileU5BU5D_t1345038285_il2cpp_TypeInfo_var;
+extern Il2CppClass* GameCenterPlatform_t899915837_il2cpp_TypeInfo_var;
+extern const MethodInfo* Action_1_Invoke_m2276731850_MethodInfo_var;
+extern const uint32_t GameCenterPlatform_LoadUsers_m981272890_MetadataUsageId;
+extern "C"  void GameCenterPlatform_LoadUsers_m981272890 (GameCenterPlatform_t899915837 * __this, StringU5BU5D_t2956870243* ___userIds0, Action_1_t2465425429 * ___callback1, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (GameCenterPlatform_LoadUsers_m981272890_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	{
+		bool L_0 = GameCenterPlatform_VerifyAuthentication_m4096949980(__this, /*hidden argument*/NULL);
+		if (L_0)
+		{
+			goto IL_0018;
+		}
+	}
+	{
+		Action_1_t2465425429 * L_1 = ___callback1;
+		NullCheck(L_1);
+		Action_1_Invoke_m2276731850(L_1, (IUserProfileU5BU5D_t2316972724*)(IUserProfileU5BU5D_t2316972724*)((UserProfileU5BU5D_t1345038285*)SZArrayNew(UserProfileU5BU5D_t1345038285_il2cpp_TypeInfo_var, (uint32_t)0)), /*hidden argument*/Action_1_Invoke_m2276731850_MethodInfo_var);
+		return;
+	}
+
+IL_0018:
+	{
+		Action_1_t2465425429 * L_2 = ___callback1;
+		IL2CPP_RUNTIME_CLASS_INIT(GameCenterPlatform_t899915837_il2cpp_TypeInfo_var);
+		((GameCenterPlatform_t899915837_StaticFields*)GameCenterPlatform_t899915837_il2cpp_TypeInfo_var->static_fields)->set_s_UsersCallback_8(L_2);
+		StringU5BU5D_t2956870243* L_3 = ___userIds0;
+		GameCenterPlatform_Internal_LoadUsers_m4218820079(NULL /*static, unused*/, L_3, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void UnityEngine.SocialPlatforms.GameCenter.GameCenterPlatform::SafeSetUserImage(UnityEngine.SocialPlatforms.Impl.UserProfile[]&,UnityEngine.Texture2D,System.Int32)
+extern Il2CppClass* Debug_t1588791936_il2cpp_TypeInfo_var;
+extern Il2CppClass* Texture2D_t2509538522_il2cpp_TypeInfo_var;
+extern Il2CppCodeGenString* _stringLiteral183309550;
+extern Il2CppCodeGenString* _stringLiteral2135574971;
+extern const uint32_t GameCenterPlatform_SafeSetUserImage_m3650098397_MetadataUsageId;
+extern "C"  void GameCenterPlatform_SafeSetUserImage_m3650098397 (Il2CppObject * __this /* static, unused */, UserProfileU5BU5D_t1345038285** ___array0, Texture2D_t2509538522 * ___texture1, int32_t ___number2, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (GameCenterPlatform_SafeSetUserImage_m3650098397_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	{
+		UserProfileU5BU5D_t1345038285** L_0 = ___array0;
+		NullCheck((*((UserProfileU5BU5D_t1345038285**)L_0)));
+		int32_t L_1 = ___number2;
+		if ((((int32_t)(((int32_t)((int32_t)(((Il2CppArray *)(*((UserProfileU5BU5D_t1345038285**)L_0)))->max_length))))) <= ((int32_t)L_1)))
+		{
+			goto IL_0011;
+		}
+	}
+	{
+		int32_t L_2 = ___number2;
+		if ((((int32_t)L_2) >= ((int32_t)0)))
+		{
+			goto IL_0026;
+		}
+	}
+
+IL_0011:
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(Debug_t1588791936_il2cpp_TypeInfo_var);
+		Debug_Log_m1731103628(NULL /*static, unused*/, _stringLiteral183309550, /*hidden argument*/NULL);
+		Texture2D_t2509538522 * L_3 = (Texture2D_t2509538522 *)il2cpp_codegen_object_new(Texture2D_t2509538522_il2cpp_TypeInfo_var);
+		Texture2D__ctor_m1883511258(L_3, ((int32_t)76), ((int32_t)76), /*hidden argument*/NULL);
+		___texture1 = L_3;
+	}
+
+IL_0026:
+	{
+		UserProfileU5BU5D_t1345038285** L_4 = ___array0;
+		NullCheck((*((UserProfileU5BU5D_t1345038285**)L_4)));
+		int32_t L_5 = ___number2;
+		if ((((int32_t)(((int32_t)((int32_t)(((Il2CppArray *)(*((UserProfileU5BU5D_t1345038285**)L_4)))->max_length))))) <= ((int32_t)L_5)))
+		{
+			goto IL_0046;
+		}
+	}
+	{
+		int32_t L_6 = ___number2;
+		if ((((int32_t)L_6) < ((int32_t)0)))
+		{
+			goto IL_0046;
+		}
+	}
+	{
+		UserProfileU5BU5D_t1345038285** L_7 = ___array0;
+		int32_t L_8 = ___number2;
+		NullCheck((*((UserProfileU5BU5D_t1345038285**)L_7)));
+		IL2CPP_ARRAY_BOUNDS_CHECK((*((UserProfileU5BU5D_t1345038285**)L_7)), L_8);
+		int32_t L_9 = L_8;
+		Texture2D_t2509538522 * L_10 = ___texture1;
+		NullCheck((((*((UserProfileU5BU5D_t1345038285**)L_7)))->GetAt(static_cast<il2cpp_array_size_t>(L_9))));
+		UserProfile_SetImage_m1928130753((((*((UserProfileU5BU5D_t1345038285**)L_7)))->GetAt(static_cast<il2cpp_array_size_t>(L_9))), L_10, /*hidden argument*/NULL);
+		goto IL_0050;
+	}
+
+IL_0046:
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(Debug_t1588791936_il2cpp_TypeInfo_var);
+		Debug_Log_m1731103628(NULL /*static, unused*/, _stringLiteral2135574971, /*hidden argument*/NULL);
+	}
+
+IL_0050:
+	{
+		return;
+	}
+}
+// System.Void UnityEngine.SocialPlatforms.GameCenter.GameCenterPlatform::SafeClearArray(UnityEngine.SocialPlatforms.Impl.UserProfile[]&,System.Int32)
+extern Il2CppClass* UserProfileU5BU5D_t1345038285_il2cpp_TypeInfo_var;
+extern const uint32_t GameCenterPlatform_SafeClearArray_m2546851889_MetadataUsageId;
+extern "C"  void GameCenterPlatform_SafeClearArray_m2546851889 (Il2CppObject * __this /* static, unused */, UserProfileU5BU5D_t1345038285** ___array0, int32_t ___size1, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (GameCenterPlatform_SafeClearArray_m2546851889_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	{
+		UserProfileU5BU5D_t1345038285** L_0 = ___array0;
+		if (!(*((UserProfileU5BU5D_t1345038285**)L_0)))
+		{
+			goto IL_0011;
+		}
+	}
+	{
+		UserProfileU5BU5D_t1345038285** L_1 = ___array0;
+		NullCheck((*((UserProfileU5BU5D_t1345038285**)L_1)));
+		int32_t L_2 = ___size1;
+		if ((((int32_t)(((int32_t)((int32_t)(((Il2CppArray *)(*((UserProfileU5BU5D_t1345038285**)L_1)))->max_length))))) == ((int32_t)L_2)))
+		{
+			goto IL_0019;
+		}
+	}
+
+IL_0011:
+	{
+		UserProfileU5BU5D_t1345038285** L_3 = ___array0;
+		int32_t L_4 = ___size1;
+		*((Il2CppObject **)(L_3)) = (Il2CppObject *)((UserProfileU5BU5D_t1345038285*)SZArrayNew(UserProfileU5BU5D_t1345038285_il2cpp_TypeInfo_var, (uint32_t)L_4));
+		Il2CppCodeGenWriteBarrier((Il2CppObject **)(L_3), (Il2CppObject *)((UserProfileU5BU5D_t1345038285*)SZArrayNew(UserProfileU5BU5D_t1345038285_il2cpp_TypeInfo_var, (uint32_t)L_4)));
+	}
+
+IL_0019:
+	{
+		return;
+	}
+}
+// UnityEngine.SocialPlatforms.ILeaderboard UnityEngine.SocialPlatforms.GameCenter.GameCenterPlatform::CreateLeaderboard()
+extern Il2CppClass* Leaderboard_t1422561091_il2cpp_TypeInfo_var;
+extern const uint32_t GameCenterPlatform_CreateLeaderboard_m2295049883_MetadataUsageId;
+extern "C"  Il2CppObject * GameCenterPlatform_CreateLeaderboard_m2295049883 (GameCenterPlatform_t899915837 * __this, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (GameCenterPlatform_CreateLeaderboard_m2295049883_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	Leaderboard_t1422561091 * V_0 = NULL;
+	{
+		Leaderboard_t1422561091 * L_0 = (Leaderboard_t1422561091 *)il2cpp_codegen_object_new(Leaderboard_t1422561091_il2cpp_TypeInfo_var);
+		Leaderboard__ctor_m596857571(L_0, /*hidden argument*/NULL);
+		V_0 = L_0;
+		Leaderboard_t1422561091 * L_1 = V_0;
+		return L_1;
+	}
+}
+// UnityEngine.SocialPlatforms.IAchievement UnityEngine.SocialPlatforms.GameCenter.GameCenterPlatform::CreateAchievement()
+extern Il2CppClass* Achievement_t581285621_il2cpp_TypeInfo_var;
+extern const uint32_t GameCenterPlatform_CreateAchievement_m1828880347_MetadataUsageId;
+extern "C"  Il2CppObject * GameCenterPlatform_CreateAchievement_m1828880347 (GameCenterPlatform_t899915837 * __this, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (GameCenterPlatform_CreateAchievement_m1828880347_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	Achievement_t581285621 * V_0 = NULL;
+	{
+		Achievement_t581285621 * L_0 = (Achievement_t581285621 *)il2cpp_codegen_object_new(Achievement_t581285621_il2cpp_TypeInfo_var);
+		Achievement__ctor_m3345265521(L_0, /*hidden argument*/NULL);
+		V_0 = L_0;
+		Achievement_t581285621 * L_1 = V_0;
+		return L_1;
+	}
+}
+// System.Void UnityEngine.SocialPlatforms.GameCenter.GameCenterPlatform::TriggerResetAchievementCallback(System.Boolean)
+extern Il2CppClass* GameCenterPlatform_t899915837_il2cpp_TypeInfo_var;
+extern const MethodInfo* Action_1_Invoke_m3594021162_MethodInfo_var;
+extern const uint32_t GameCenterPlatform_TriggerResetAchievementCallback_m1285257317_MetadataUsageId;
+extern "C"  void GameCenterPlatform_TriggerResetAchievementCallback_m1285257317 (Il2CppObject * __this /* static, unused */, bool ___result0, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (GameCenterPlatform_TriggerResetAchievementCallback_m1285257317_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(GameCenterPlatform_t899915837_il2cpp_TypeInfo_var);
+		Action_1_t359458046 * L_0 = ((GameCenterPlatform_t899915837_StaticFields*)GameCenterPlatform_t899915837_il2cpp_TypeInfo_var->static_fields)->get_s_ResetAchievements_12();
+		if (!L_0)
+		{
+			goto IL_0015;
+		}
+	}
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(GameCenterPlatform_t899915837_il2cpp_TypeInfo_var);
+		Action_1_t359458046 * L_1 = ((GameCenterPlatform_t899915837_StaticFields*)GameCenterPlatform_t899915837_il2cpp_TypeInfo_var->static_fields)->get_s_ResetAchievements_12();
+		bool L_2 = ___result0;
+		NullCheck(L_1);
+		Action_1_Invoke_m3594021162(L_1, L_2, /*hidden argument*/Action_1_Invoke_m3594021162_MethodInfo_var);
+	}
+
+IL_0015:
+	{
+		return;
+	}
+}
+// UnityEngine.SocialPlatforms.Impl.Achievement UnityEngine.SocialPlatforms.GameCenter.GcAchievementData::ToAchievement()
+extern Il2CppClass* Achievement_t581285621_il2cpp_TypeInfo_var;
+extern const uint32_t GcAchievementData_ToAchievement_m3239514930_MetadataUsageId;
+extern "C"  Achievement_t581285621 * GcAchievementData_ToAchievement_m3239514930 (GcAchievementData_t1317012096 * __this, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (GcAchievementData_ToAchievement_m3239514930_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	DateTime_t339033936  V_0;
+	memset(&V_0, 0, sizeof(V_0));
+	double G_B2_0 = 0.0;
+	String_t* G_B2_1 = NULL;
+	double G_B1_0 = 0.0;
+	String_t* G_B1_1 = NULL;
+	int32_t G_B3_0 = 0;
+	double G_B3_1 = 0.0;
+	String_t* G_B3_2 = NULL;
+	int32_t G_B5_0 = 0;
+	double G_B5_1 = 0.0;
+	String_t* G_B5_2 = NULL;
+	int32_t G_B4_0 = 0;
+	double G_B4_1 = 0.0;
+	String_t* G_B4_2 = NULL;
+	int32_t G_B6_0 = 0;
+	int32_t G_B6_1 = 0;
+	double G_B6_2 = 0.0;
+	String_t* G_B6_3 = NULL;
+	{
+		String_t* L_0 = __this->get_m_Identifier_0();
+		double L_1 = __this->get_m_PercentCompleted_1();
+		int32_t L_2 = __this->get_m_Completed_2();
+		G_B1_0 = L_1;
+		G_B1_1 = L_0;
+		if (L_2)
+		{
+			G_B2_0 = L_1;
+			G_B2_1 = L_0;
+			goto IL_001d;
+		}
+	}
+	{
+		G_B3_0 = 0;
+		G_B3_1 = G_B1_0;
+		G_B3_2 = G_B1_1;
+		goto IL_001e;
+	}
+
+IL_001d:
+	{
+		G_B3_0 = 1;
+		G_B3_1 = G_B2_0;
+		G_B3_2 = G_B2_1;
+	}
+
+IL_001e:
+	{
+		int32_t L_3 = __this->get_m_Hidden_3();
+		G_B4_0 = G_B3_0;
+		G_B4_1 = G_B3_1;
+		G_B4_2 = G_B3_2;
+		if (L_3)
+		{
+			G_B5_0 = G_B3_0;
+			G_B5_1 = G_B3_1;
+			G_B5_2 = G_B3_2;
+			goto IL_002f;
+		}
+	}
+	{
+		G_B6_0 = 0;
+		G_B6_1 = G_B4_0;
+		G_B6_2 = G_B4_1;
+		G_B6_3 = G_B4_2;
+		goto IL_0030;
+	}
+
+IL_002f:
+	{
+		G_B6_0 = 1;
+		G_B6_1 = G_B5_0;
+		G_B6_2 = G_B5_1;
+		G_B6_3 = G_B5_2;
+	}
+
+IL_0030:
+	{
+		DateTime__ctor_m1594789867((&V_0), ((int32_t)1970), 1, 1, 0, 0, 0, 0, /*hidden argument*/NULL);
+		int32_t L_4 = __this->get_m_LastReportedDate_4();
+		DateTime_t339033936  L_5 = DateTime_AddSeconds_m2515640243((&V_0), (((double)((double)L_4))), /*hidden argument*/NULL);
+		Achievement_t581285621 * L_6 = (Achievement_t581285621 *)il2cpp_codegen_object_new(Achievement_t581285621_il2cpp_TypeInfo_var);
+		Achievement__ctor_m377036415(L_6, G_B6_3, G_B6_2, (bool)G_B6_1, (bool)G_B6_0, L_5, /*hidden argument*/NULL);
+		return L_6;
+	}
+}
+// Conversion methods for marshalling of: UnityEngine.SocialPlatforms.GameCenter.GcAchievementData
+extern "C" void GcAchievementData_t1317012096_marshal_pinvoke(const GcAchievementData_t1317012096& unmarshaled, GcAchievementData_t1317012096_marshaled_pinvoke& marshaled)
+{
+	marshaled.___m_Identifier_0 = il2cpp_codegen_marshal_string(unmarshaled.get_m_Identifier_0());
+	marshaled.___m_PercentCompleted_1 = unmarshaled.get_m_PercentCompleted_1();
+	marshaled.___m_Completed_2 = unmarshaled.get_m_Completed_2();
+	marshaled.___m_Hidden_3 = unmarshaled.get_m_Hidden_3();
+	marshaled.___m_LastReportedDate_4 = unmarshaled.get_m_LastReportedDate_4();
+}
+extern "C" void GcAchievementData_t1317012096_marshal_pinvoke_back(const GcAchievementData_t1317012096_marshaled_pinvoke& marshaled, GcAchievementData_t1317012096& unmarshaled)
+{
+	unmarshaled.set_m_Identifier_0(il2cpp_codegen_marshal_string_result(marshaled.___m_Identifier_0));
+	double unmarshaled_m_PercentCompleted_temp = 0.0;
+	unmarshaled_m_PercentCompleted_temp = marshaled.___m_PercentCompleted_1;
+	unmarshaled.set_m_PercentCompleted_1(unmarshaled_m_PercentCompleted_temp);
+	int32_t unmarshaled_m_Completed_temp = 0;
+	unmarshaled_m_Completed_temp = marshaled.___m_Completed_2;
+	unmarshaled.set_m_Completed_2(unmarshaled_m_Completed_temp);
+	int32_t unmarshaled_m_Hidden_temp = 0;
+	unmarshaled_m_Hidden_temp = marshaled.___m_Hidden_3;
+	unmarshaled.set_m_Hidden_3(unmarshaled_m_Hidden_temp);
+	int32_t unmarshaled_m_LastReportedDate_temp = 0;
+	unmarshaled_m_LastReportedDate_temp = marshaled.___m_LastReportedDate_4;
+	unmarshaled.set_m_LastReportedDate_4(unmarshaled_m_LastReportedDate_temp);
+}
+// Conversion method for clean up from marshalling of: UnityEngine.SocialPlatforms.GameCenter.GcAchievementData
+extern "C" void GcAchievementData_t1317012096_marshal_pinvoke_cleanup(GcAchievementData_t1317012096_marshaled_pinvoke& marshaled)
+{
+	il2cpp_codegen_marshal_free(marshaled.___m_Identifier_0);
+	marshaled.___m_Identifier_0 = NULL;
+}
+// Conversion methods for marshalling of: UnityEngine.SocialPlatforms.GameCenter.GcAchievementData
+extern "C" void GcAchievementData_t1317012096_marshal_com(const GcAchievementData_t1317012096& unmarshaled, GcAchievementData_t1317012096_marshaled_com& marshaled)
+{
+	marshaled.___m_Identifier_0 = il2cpp_codegen_marshal_bstring(unmarshaled.get_m_Identifier_0());
+	marshaled.___m_PercentCompleted_1 = unmarshaled.get_m_PercentCompleted_1();
+	marshaled.___m_Completed_2 = unmarshaled.get_m_Completed_2();
+	marshaled.___m_Hidden_3 = unmarshaled.get_m_Hidden_3();
+	marshaled.___m_LastReportedDate_4 = unmarshaled.get_m_LastReportedDate_4();
+}
+extern "C" void GcAchievementData_t1317012096_marshal_com_back(const GcAchievementData_t1317012096_marshaled_com& marshaled, GcAchievementData_t1317012096& unmarshaled)
+{
+	unmarshaled.set_m_Identifier_0(il2cpp_codegen_marshal_bstring_result(marshaled.___m_Identifier_0));
+	double unmarshaled_m_PercentCompleted_temp = 0.0;
+	unmarshaled_m_PercentCompleted_temp = marshaled.___m_PercentCompleted_1;
+	unmarshaled.set_m_PercentCompleted_1(unmarshaled_m_PercentCompleted_temp);
+	int32_t unmarshaled_m_Completed_temp = 0;
+	unmarshaled_m_Completed_temp = marshaled.___m_Completed_2;
+	unmarshaled.set_m_Completed_2(unmarshaled_m_Completed_temp);
+	int32_t unmarshaled_m_Hidden_temp = 0;
+	unmarshaled_m_Hidden_temp = marshaled.___m_Hidden_3;
+	unmarshaled.set_m_Hidden_3(unmarshaled_m_Hidden_temp);
+	int32_t unmarshaled_m_LastReportedDate_temp = 0;
+	unmarshaled_m_LastReportedDate_temp = marshaled.___m_LastReportedDate_4;
+	unmarshaled.set_m_LastReportedDate_4(unmarshaled_m_LastReportedDate_temp);
+}
+// Conversion method for clean up from marshalling of: UnityEngine.SocialPlatforms.GameCenter.GcAchievementData
+extern "C" void GcAchievementData_t1317012096_marshal_com_cleanup(GcAchievementData_t1317012096_marshaled_com& marshaled)
+{
+	il2cpp_codegen_marshal_free_bstring(marshaled.___m_Identifier_0);
+	marshaled.___m_Identifier_0 = NULL;
+}
+// UnityEngine.SocialPlatforms.Impl.AchievementDescription UnityEngine.SocialPlatforms.GameCenter.GcAchievementDescriptionData::ToAchievementDescription()
+extern Il2CppClass* AchievementDescription_t3784099155_il2cpp_TypeInfo_var;
+extern const uint32_t GcAchievementDescriptionData_ToAchievementDescription_m3125480712_MetadataUsageId;
+extern "C"  AchievementDescription_t3784099155 * GcAchievementDescriptionData_ToAchievementDescription_m3125480712 (GcAchievementDescriptionData_t1714018390 * __this, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (GcAchievementDescriptionData_ToAchievementDescription_m3125480712_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	String_t* G_B2_0 = NULL;
+	String_t* G_B2_1 = NULL;
+	Texture2D_t2509538522 * G_B2_2 = NULL;
+	String_t* G_B2_3 = NULL;
+	String_t* G_B2_4 = NULL;
+	String_t* G_B1_0 = NULL;
+	String_t* G_B1_1 = NULL;
+	Texture2D_t2509538522 * G_B1_2 = NULL;
+	String_t* G_B1_3 = NULL;
+	String_t* G_B1_4 = NULL;
+	int32_t G_B3_0 = 0;
+	String_t* G_B3_1 = NULL;
+	String_t* G_B3_2 = NULL;
+	Texture2D_t2509538522 * G_B3_3 = NULL;
+	String_t* G_B3_4 = NULL;
+	String_t* G_B3_5 = NULL;
+	{
+		String_t* L_0 = __this->get_m_Identifier_0();
+		String_t* L_1 = __this->get_m_Title_1();
+		Texture2D_t2509538522 * L_2 = __this->get_m_Image_2();
+		String_t* L_3 = __this->get_m_AchievedDescription_3();
+		String_t* L_4 = __this->get_m_UnachievedDescription_4();
+		int32_t L_5 = __this->get_m_Hidden_5();
+		G_B1_0 = L_4;
+		G_B1_1 = L_3;
+		G_B1_2 = L_2;
+		G_B1_3 = L_1;
+		G_B1_4 = L_0;
+		if (L_5)
+		{
+			G_B2_0 = L_4;
+			G_B2_1 = L_3;
+			G_B2_2 = L_2;
+			G_B2_3 = L_1;
+			G_B2_4 = L_0;
+			goto IL_002f;
+		}
+	}
+	{
+		G_B3_0 = 0;
+		G_B3_1 = G_B1_0;
+		G_B3_2 = G_B1_1;
+		G_B3_3 = G_B1_2;
+		G_B3_4 = G_B1_3;
+		G_B3_5 = G_B1_4;
+		goto IL_0030;
+	}
+
+IL_002f:
+	{
+		G_B3_0 = 1;
+		G_B3_1 = G_B2_0;
+		G_B3_2 = G_B2_1;
+		G_B3_3 = G_B2_2;
+		G_B3_4 = G_B2_3;
+		G_B3_5 = G_B2_4;
+	}
+
+IL_0030:
+	{
+		int32_t L_6 = __this->get_m_Points_6();
+		AchievementDescription_t3784099155 * L_7 = (AchievementDescription_t3784099155 *)il2cpp_codegen_object_new(AchievementDescription_t3784099155_il2cpp_TypeInfo_var);
+		AchievementDescription__ctor_m3032164909(L_7, G_B3_5, G_B3_4, G_B3_3, G_B3_2, G_B3_1, (bool)G_B3_0, L_6, /*hidden argument*/NULL);
+		return L_7;
+	}
+}
+// System.Void UnityEngine.SocialPlatforms.GameCenter.GcLeaderboard::.ctor(UnityEngine.SocialPlatforms.Impl.Leaderboard)
+extern "C"  void GcLeaderboard__ctor_m4042810199 (GcLeaderboard_t3894999172 * __this, Leaderboard_t1422561091 * ___board0, const MethodInfo* method)
+{
+	{
+		Object__ctor_m1772956182(__this, /*hidden argument*/NULL);
+		Leaderboard_t1422561091 * L_0 = ___board0;
+		__this->set_m_GenericLeaderboard_1(L_0);
+		return;
+	}
+}
+// System.Void UnityEngine.SocialPlatforms.GameCenter.GcLeaderboard::Finalize()
+extern "C"  void GcLeaderboard_Finalize_m4015840938 (GcLeaderboard_t3894999172 * __this, const MethodInfo* method)
+{
+	Exception_t1967233988 * __last_unhandled_exception = 0;
+	NO_UNUSED_WARNING (__last_unhandled_exception);
+	Exception_t1967233988 * __exception_local = 0;
+	NO_UNUSED_WARNING (__exception_local);
+	int32_t __leave_target = 0;
+	NO_UNUSED_WARNING (__leave_target);
+
+IL_0000:
+	try
+	{ // begin try (depth: 1)
+		GcLeaderboard_Dispose_m301614325(__this, /*hidden argument*/NULL);
+		IL2CPP_LEAVE(0x12, FINALLY_000b);
+	} // end try (depth: 1)
+	catch(Il2CppExceptionWrapper& e)
+	{
+		__last_unhandled_exception = (Exception_t1967233988 *)e.ex;
+		goto FINALLY_000b;
+	}
+
+FINALLY_000b:
+	{ // begin finally (depth: 1)
+		Object_Finalize_m3027285644(__this, /*hidden argument*/NULL);
+		IL2CPP_END_FINALLY(11)
+	} // end finally (depth: 1)
+	IL2CPP_CLEANUP(11)
+	{
+		IL2CPP_JUMP_TBL(0x12, IL_0012)
+		IL2CPP_RETHROW_IF_UNHANDLED(Exception_t1967233988 *)
+	}
+
+IL_0012:
+	{
+		return;
+	}
+}
+// System.Boolean UnityEngine.SocialPlatforms.GameCenter.GcLeaderboard::Contains(UnityEngine.SocialPlatforms.Impl.Leaderboard)
+extern "C"  bool GcLeaderboard_Contains_m100384368 (GcLeaderboard_t3894999172 * __this, Leaderboard_t1422561091 * ___board0, const MethodInfo* method)
+{
+	{
+		Leaderboard_t1422561091 * L_0 = __this->get_m_GenericLeaderboard_1();
+		Leaderboard_t1422561091 * L_1 = ___board0;
+		return (bool)((((Il2CppObject*)(Leaderboard_t1422561091 *)L_0) == ((Il2CppObject*)(Leaderboard_t1422561091 *)L_1))? 1 : 0);
+	}
+}
+// System.Void UnityEngine.SocialPlatforms.GameCenter.GcLeaderboard::SetScores(UnityEngine.SocialPlatforms.GameCenter.GcScoreData[])
+extern Il2CppClass* ScoreU5BU5D_t1929327945_il2cpp_TypeInfo_var;
+extern const uint32_t GcLeaderboard_SetScores_m1734279820_MetadataUsageId;
+extern "C"  void GcLeaderboard_SetScores_m1734279820 (GcLeaderboard_t3894999172 * __this, GcScoreDataU5BU5D_t2158783410* ___scoreDatas0, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (GcLeaderboard_SetScores_m1734279820_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	ScoreU5BU5D_t1929327945* V_0 = NULL;
+	int32_t V_1 = 0;
+	{
+		Leaderboard_t1422561091 * L_0 = __this->get_m_GenericLeaderboard_1();
+		if (!L_0)
+		{
+			goto IL_0043;
+		}
+	}
+	{
+		GcScoreDataU5BU5D_t2158783410* L_1 = ___scoreDatas0;
+		NullCheck(L_1);
+		V_0 = ((ScoreU5BU5D_t1929327945*)SZArrayNew(ScoreU5BU5D_t1929327945_il2cpp_TypeInfo_var, (uint32_t)(((int32_t)((int32_t)(((Il2CppArray *)L_1)->max_length))))));
+		V_1 = 0;
+		goto IL_002e;
+	}
+
+IL_001b:
+	{
+		ScoreU5BU5D_t1929327945* L_2 = V_0;
+		int32_t L_3 = V_1;
+		GcScoreDataU5BU5D_t2158783410* L_4 = ___scoreDatas0;
+		int32_t L_5 = V_1;
+		NullCheck(L_4);
+		IL2CPP_ARRAY_BOUNDS_CHECK(L_4, L_5);
+		Score_t1540476504 * L_6 = GcScoreData_ToScore_m2728389301(((L_4)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_5))), /*hidden argument*/NULL);
+		NullCheck(L_2);
+		IL2CPP_ARRAY_BOUNDS_CHECK(L_2, L_3);
+		ArrayElementTypeCheck (L_2, L_6);
+		(L_2)->SetAt(static_cast<il2cpp_array_size_t>(L_3), (Score_t1540476504 *)L_6);
+		int32_t L_7 = V_1;
+		V_1 = ((int32_t)((int32_t)L_7+(int32_t)1));
+	}
+
+IL_002e:
+	{
+		int32_t L_8 = V_1;
+		GcScoreDataU5BU5D_t2158783410* L_9 = ___scoreDatas0;
+		NullCheck(L_9);
+		if ((((int32_t)L_8) < ((int32_t)(((int32_t)((int32_t)(((Il2CppArray *)L_9)->max_length)))))))
+		{
+			goto IL_001b;
+		}
+	}
+	{
+		Leaderboard_t1422561091 * L_10 = __this->get_m_GenericLeaderboard_1();
+		ScoreU5BU5D_t1929327945* L_11 = V_0;
+		NullCheck(L_10);
+		Leaderboard_SetScores_m1463319879(L_10, (IScoreU5BU5D_t684312048*)(IScoreU5BU5D_t684312048*)L_11, /*hidden argument*/NULL);
+	}
+
+IL_0043:
+	{
+		return;
+	}
+}
+// System.Void UnityEngine.SocialPlatforms.GameCenter.GcLeaderboard::SetLocalScore(UnityEngine.SocialPlatforms.GameCenter.GcScoreData)
+extern "C"  void GcLeaderboard_SetLocalScore_m3970132532 (GcLeaderboard_t3894999172 * __this, GcScoreData_t2223678307  ___scoreData0, const MethodInfo* method)
+{
+	{
+		Leaderboard_t1422561091 * L_0 = __this->get_m_GenericLeaderboard_1();
+		if (!L_0)
+		{
+			goto IL_001d;
+		}
+	}
+	{
+		Leaderboard_t1422561091 * L_1 = __this->get_m_GenericLeaderboard_1();
+		Score_t1540476504 * L_2 = GcScoreData_ToScore_m2728389301((&___scoreData0), /*hidden argument*/NULL);
+		NullCheck(L_1);
+		Leaderboard_SetLocalUserScore_m700491556(L_1, L_2, /*hidden argument*/NULL);
+	}
+
+IL_001d:
+	{
+		return;
+	}
+}
+// System.Void UnityEngine.SocialPlatforms.GameCenter.GcLeaderboard::SetMaxRange(System.UInt32)
+extern "C"  void GcLeaderboard_SetMaxRange_m3160374921 (GcLeaderboard_t3894999172 * __this, uint32_t ___maxRange0, const MethodInfo* method)
+{
+	{
+		Leaderboard_t1422561091 * L_0 = __this->get_m_GenericLeaderboard_1();
+		if (!L_0)
+		{
+			goto IL_0017;
+		}
+	}
+	{
+		Leaderboard_t1422561091 * L_1 = __this->get_m_GenericLeaderboard_1();
+		uint32_t L_2 = ___maxRange0;
+		NullCheck(L_1);
+		Leaderboard_SetMaxRange_m3779908734(L_1, L_2, /*hidden argument*/NULL);
+	}
+
+IL_0017:
+	{
+		return;
+	}
+}
+// System.Void UnityEngine.SocialPlatforms.GameCenter.GcLeaderboard::SetTitle(System.String)
+extern "C"  void GcLeaderboard_SetTitle_m3781988000 (GcLeaderboard_t3894999172 * __this, String_t* ___title0, const MethodInfo* method)
+{
+	{
+		Leaderboard_t1422561091 * L_0 = __this->get_m_GenericLeaderboard_1();
+		if (!L_0)
+		{
+			goto IL_0017;
+		}
+	}
+	{
+		Leaderboard_t1422561091 * L_1 = __this->get_m_GenericLeaderboard_1();
+		String_t* L_2 = ___title0;
+		NullCheck(L_1);
+		Leaderboard_SetTitle_m771163339(L_1, L_2, /*hidden argument*/NULL);
+	}
+
+IL_0017:
+	{
+		return;
+	}
+}
+// System.Void UnityEngine.SocialPlatforms.GameCenter.GcLeaderboard::Internal_LoadScores(System.String,System.Int32,System.Int32,System.Int32,System.Int32)
+extern "C"  void GcLeaderboard_Internal_LoadScores_m1783152707 (GcLeaderboard_t3894999172 * __this, String_t* ___category0, int32_t ___from1, int32_t ___count2, int32_t ___playerScope3, int32_t ___timeScope4, const MethodInfo* method)
+{
+	typedef void (*GcLeaderboard_Internal_LoadScores_m1783152707_ftn) (GcLeaderboard_t3894999172 *, String_t*, int32_t, int32_t, int32_t, int32_t);
+	static GcLeaderboard_Internal_LoadScores_m1783152707_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (GcLeaderboard_Internal_LoadScores_m1783152707_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.SocialPlatforms.GameCenter.GcLeaderboard::Internal_LoadScores(System.String,System.Int32,System.Int32,System.Int32,System.Int32)");
+	_il2cpp_icall_func(__this, ___category0, ___from1, ___count2, ___playerScope3, ___timeScope4);
+}
+// System.Void UnityEngine.SocialPlatforms.GameCenter.GcLeaderboard::Internal_LoadScoresWithUsers(System.String,System.Int32,System.String[])
+extern "C"  void GcLeaderboard_Internal_LoadScoresWithUsers_m1315210452 (GcLeaderboard_t3894999172 * __this, String_t* ___category0, int32_t ___timeScope1, StringU5BU5D_t2956870243* ___userIDs2, const MethodInfo* method)
+{
+	typedef void (*GcLeaderboard_Internal_LoadScoresWithUsers_m1315210452_ftn) (GcLeaderboard_t3894999172 *, String_t*, int32_t, StringU5BU5D_t2956870243*);
+	static GcLeaderboard_Internal_LoadScoresWithUsers_m1315210452_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (GcLeaderboard_Internal_LoadScoresWithUsers_m1315210452_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.SocialPlatforms.GameCenter.GcLeaderboard::Internal_LoadScoresWithUsers(System.String,System.Int32,System.String[])");
+	_il2cpp_icall_func(__this, ___category0, ___timeScope1, ___userIDs2);
+}
+// System.Boolean UnityEngine.SocialPlatforms.GameCenter.GcLeaderboard::Loading()
+extern "C"  bool GcLeaderboard_Loading_m294711596 (GcLeaderboard_t3894999172 * __this, const MethodInfo* method)
+{
+	typedef bool (*GcLeaderboard_Loading_m294711596_ftn) (GcLeaderboard_t3894999172 *);
+	static GcLeaderboard_Loading_m294711596_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (GcLeaderboard_Loading_m294711596_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.SocialPlatforms.GameCenter.GcLeaderboard::Loading()");
+	return _il2cpp_icall_func(__this);
+}
+// System.Void UnityEngine.SocialPlatforms.GameCenter.GcLeaderboard::Dispose()
+extern "C"  void GcLeaderboard_Dispose_m301614325 (GcLeaderboard_t3894999172 * __this, const MethodInfo* method)
+{
+	typedef void (*GcLeaderboard_Dispose_m301614325_ftn) (GcLeaderboard_t3894999172 *);
+	static GcLeaderboard_Dispose_m301614325_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (GcLeaderboard_Dispose_m301614325_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.SocialPlatforms.GameCenter.GcLeaderboard::Dispose()");
+	_il2cpp_icall_func(__this);
+}
+// UnityEngine.SocialPlatforms.Impl.Score UnityEngine.SocialPlatforms.GameCenter.GcScoreData::ToScore()
+extern Il2CppClass* Score_t1540476504_il2cpp_TypeInfo_var;
+extern const uint32_t GcScoreData_ToScore_m2728389301_MetadataUsageId;
+extern "C"  Score_t1540476504 * GcScoreData_ToScore_m2728389301 (GcScoreData_t2223678307 * __this, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (GcScoreData_ToScore_m2728389301_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	DateTime_t339033936  V_0;
+	memset(&V_0, 0, sizeof(V_0));
+	{
+		String_t* L_0 = __this->get_m_Category_0();
+		int32_t L_1 = __this->get_m_ValueHigh_2();
+		int32_t L_2 = __this->get_m_ValueLow_1();
+		String_t* L_3 = __this->get_m_PlayerID_5();
+		DateTime__ctor_m1594789867((&V_0), ((int32_t)1970), 1, 1, 0, 0, 0, 0, /*hidden argument*/NULL);
+		int32_t L_4 = __this->get_m_Date_3();
+		DateTime_t339033936  L_5 = DateTime_AddSeconds_m2515640243((&V_0), (((double)((double)L_4))), /*hidden argument*/NULL);
+		String_t* L_6 = __this->get_m_FormattedValue_4();
+		int32_t L_7 = __this->get_m_Rank_6();
+		Score_t1540476504 * L_8 = (Score_t1540476504 *)il2cpp_codegen_object_new(Score_t1540476504_il2cpp_TypeInfo_var);
+		Score__ctor_m3768037481(L_8, L_0, ((int64_t)((int64_t)((int64_t)((int64_t)(((int64_t)((int64_t)L_1)))<<(int32_t)((int32_t)32)))+(int64_t)(((int64_t)((int64_t)L_2))))), L_3, L_5, L_6, L_7, /*hidden argument*/NULL);
+		return L_8;
+	}
+}
+// Conversion methods for marshalling of: UnityEngine.SocialPlatforms.GameCenter.GcScoreData
+extern "C" void GcScoreData_t2223678307_marshal_pinvoke(const GcScoreData_t2223678307& unmarshaled, GcScoreData_t2223678307_marshaled_pinvoke& marshaled)
+{
+	marshaled.___m_Category_0 = il2cpp_codegen_marshal_string(unmarshaled.get_m_Category_0());
+	marshaled.___m_ValueLow_1 = unmarshaled.get_m_ValueLow_1();
+	marshaled.___m_ValueHigh_2 = unmarshaled.get_m_ValueHigh_2();
+	marshaled.___m_Date_3 = unmarshaled.get_m_Date_3();
+	marshaled.___m_FormattedValue_4 = il2cpp_codegen_marshal_string(unmarshaled.get_m_FormattedValue_4());
+	marshaled.___m_PlayerID_5 = il2cpp_codegen_marshal_string(unmarshaled.get_m_PlayerID_5());
+	marshaled.___m_Rank_6 = unmarshaled.get_m_Rank_6();
+}
+extern "C" void GcScoreData_t2223678307_marshal_pinvoke_back(const GcScoreData_t2223678307_marshaled_pinvoke& marshaled, GcScoreData_t2223678307& unmarshaled)
+{
+	unmarshaled.set_m_Category_0(il2cpp_codegen_marshal_string_result(marshaled.___m_Category_0));
+	int32_t unmarshaled_m_ValueLow_temp = 0;
+	unmarshaled_m_ValueLow_temp = marshaled.___m_ValueLow_1;
+	unmarshaled.set_m_ValueLow_1(unmarshaled_m_ValueLow_temp);
+	int32_t unmarshaled_m_ValueHigh_temp = 0;
+	unmarshaled_m_ValueHigh_temp = marshaled.___m_ValueHigh_2;
+	unmarshaled.set_m_ValueHigh_2(unmarshaled_m_ValueHigh_temp);
+	int32_t unmarshaled_m_Date_temp = 0;
+	unmarshaled_m_Date_temp = marshaled.___m_Date_3;
+	unmarshaled.set_m_Date_3(unmarshaled_m_Date_temp);
+	unmarshaled.set_m_FormattedValue_4(il2cpp_codegen_marshal_string_result(marshaled.___m_FormattedValue_4));
+	unmarshaled.set_m_PlayerID_5(il2cpp_codegen_marshal_string_result(marshaled.___m_PlayerID_5));
+	int32_t unmarshaled_m_Rank_temp = 0;
+	unmarshaled_m_Rank_temp = marshaled.___m_Rank_6;
+	unmarshaled.set_m_Rank_6(unmarshaled_m_Rank_temp);
+}
+// Conversion method for clean up from marshalling of: UnityEngine.SocialPlatforms.GameCenter.GcScoreData
+extern "C" void GcScoreData_t2223678307_marshal_pinvoke_cleanup(GcScoreData_t2223678307_marshaled_pinvoke& marshaled)
+{
+	il2cpp_codegen_marshal_free(marshaled.___m_Category_0);
+	marshaled.___m_Category_0 = NULL;
+	il2cpp_codegen_marshal_free(marshaled.___m_FormattedValue_4);
+	marshaled.___m_FormattedValue_4 = NULL;
+	il2cpp_codegen_marshal_free(marshaled.___m_PlayerID_5);
+	marshaled.___m_PlayerID_5 = NULL;
+}
+// Conversion methods for marshalling of: UnityEngine.SocialPlatforms.GameCenter.GcScoreData
+extern "C" void GcScoreData_t2223678307_marshal_com(const GcScoreData_t2223678307& unmarshaled, GcScoreData_t2223678307_marshaled_com& marshaled)
+{
+	marshaled.___m_Category_0 = il2cpp_codegen_marshal_bstring(unmarshaled.get_m_Category_0());
+	marshaled.___m_ValueLow_1 = unmarshaled.get_m_ValueLow_1();
+	marshaled.___m_ValueHigh_2 = unmarshaled.get_m_ValueHigh_2();
+	marshaled.___m_Date_3 = unmarshaled.get_m_Date_3();
+	marshaled.___m_FormattedValue_4 = il2cpp_codegen_marshal_bstring(unmarshaled.get_m_FormattedValue_4());
+	marshaled.___m_PlayerID_5 = il2cpp_codegen_marshal_bstring(unmarshaled.get_m_PlayerID_5());
+	marshaled.___m_Rank_6 = unmarshaled.get_m_Rank_6();
+}
+extern "C" void GcScoreData_t2223678307_marshal_com_back(const GcScoreData_t2223678307_marshaled_com& marshaled, GcScoreData_t2223678307& unmarshaled)
+{
+	unmarshaled.set_m_Category_0(il2cpp_codegen_marshal_bstring_result(marshaled.___m_Category_0));
+	int32_t unmarshaled_m_ValueLow_temp = 0;
+	unmarshaled_m_ValueLow_temp = marshaled.___m_ValueLow_1;
+	unmarshaled.set_m_ValueLow_1(unmarshaled_m_ValueLow_temp);
+	int32_t unmarshaled_m_ValueHigh_temp = 0;
+	unmarshaled_m_ValueHigh_temp = marshaled.___m_ValueHigh_2;
+	unmarshaled.set_m_ValueHigh_2(unmarshaled_m_ValueHigh_temp);
+	int32_t unmarshaled_m_Date_temp = 0;
+	unmarshaled_m_Date_temp = marshaled.___m_Date_3;
+	unmarshaled.set_m_Date_3(unmarshaled_m_Date_temp);
+	unmarshaled.set_m_FormattedValue_4(il2cpp_codegen_marshal_bstring_result(marshaled.___m_FormattedValue_4));
+	unmarshaled.set_m_PlayerID_5(il2cpp_codegen_marshal_bstring_result(marshaled.___m_PlayerID_5));
+	int32_t unmarshaled_m_Rank_temp = 0;
+	unmarshaled_m_Rank_temp = marshaled.___m_Rank_6;
+	unmarshaled.set_m_Rank_6(unmarshaled_m_Rank_temp);
+}
+// Conversion method for clean up from marshalling of: UnityEngine.SocialPlatforms.GameCenter.GcScoreData
+extern "C" void GcScoreData_t2223678307_marshal_com_cleanup(GcScoreData_t2223678307_marshaled_com& marshaled)
+{
+	il2cpp_codegen_marshal_free_bstring(marshaled.___m_Category_0);
+	marshaled.___m_Category_0 = NULL;
+	il2cpp_codegen_marshal_free_bstring(marshaled.___m_FormattedValue_4);
+	marshaled.___m_FormattedValue_4 = NULL;
+	il2cpp_codegen_marshal_free_bstring(marshaled.___m_PlayerID_5);
+	marshaled.___m_PlayerID_5 = NULL;
+}
 // UnityEngine.SocialPlatforms.Impl.UserProfile UnityEngine.SocialPlatforms.GameCenter.GcUserProfileData::ToUserProfile()
 extern Il2CppClass* UserProfile_t2517340964_il2cpp_TypeInfo_var;
 extern const uint32_t GcUserProfileData_ToUserProfile_m1509702721_MetadataUsageId;
@@ -5113,6 +7541,14 @@ extern "C"  Quaternion_t1891715979  Transform_get_rotation_m11483428 (Transform_
 		return L_0;
 	}
 }
+// System.Void UnityEngine.Transform::set_rotation(UnityEngine.Quaternion)
+extern "C"  void Transform_set_rotation_m1525803229 (Transform_t284553113 * __this, Quaternion_t1891715979  ___value0, const MethodInfo* method)
+{
+	{
+		Transform_INTERNAL_set_rotation_m2051942009(__this, (&___value0), /*hidden argument*/NULL);
+		return;
+	}
+}
 // System.Void UnityEngine.Transform::INTERNAL_get_rotation(UnityEngine.Quaternion&)
 extern "C"  void Transform_INTERNAL_get_rotation_m2389720173 (Transform_t284553113 * __this, Quaternion_t1891715979 * ___value0, const MethodInfo* method)
 {
@@ -5120,6 +7556,15 @@ extern "C"  void Transform_INTERNAL_get_rotation_m2389720173 (Transform_t2845531
 	static Transform_INTERNAL_get_rotation_m2389720173_ftn _il2cpp_icall_func;
 	if (!_il2cpp_icall_func)
 	_il2cpp_icall_func = (Transform_INTERNAL_get_rotation_m2389720173_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Transform::INTERNAL_get_rotation(UnityEngine.Quaternion&)");
+	_il2cpp_icall_func(__this, ___value0);
+}
+// System.Void UnityEngine.Transform::INTERNAL_set_rotation(UnityEngine.Quaternion&)
+extern "C"  void Transform_INTERNAL_set_rotation_m2051942009 (Transform_t284553113 * __this, Quaternion_t1891715979 * ___value0, const MethodInfo* method)
+{
+	typedef void (*Transform_INTERNAL_set_rotation_m2051942009_ftn) (Transform_t284553113 *, Quaternion_t1891715979 *);
+	static Transform_INTERNAL_set_rotation_m2051942009_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (Transform_INTERNAL_set_rotation_m2051942009_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Transform::INTERNAL_set_rotation(UnityEngine.Quaternion&)");
 	_il2cpp_icall_func(__this, ___value0);
 }
 // UnityEngine.Quaternion UnityEngine.Transform::get_localRotation()
@@ -5290,6 +7735,128 @@ extern "C"  void Transform_INTERNAL_get_worldToLocalMatrix_m3861589095 (Transfor
 	if (!_il2cpp_icall_func)
 	_il2cpp_icall_func = (Transform_INTERNAL_get_worldToLocalMatrix_m3861589095_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Transform::INTERNAL_get_worldToLocalMatrix(UnityEngine.Matrix4x4&)");
 	_il2cpp_icall_func(__this, ___value0);
+}
+// System.Void UnityEngine.Transform::Rotate(UnityEngine.Vector3)
+extern "C"  void Transform_Rotate_m637363399 (Transform_t284553113 * __this, Vector3_t3525329789  ___eulerAngles0, const MethodInfo* method)
+{
+	int32_t V_0 = 0;
+	{
+		V_0 = 1;
+		Vector3_t3525329789  L_0 = ___eulerAngles0;
+		int32_t L_1 = V_0;
+		Transform_Rotate_m3141515812(__this, L_0, L_1, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void UnityEngine.Transform::Rotate(UnityEngine.Vector3,UnityEngine.Space)
+extern "C"  void Transform_Rotate_m3141515812 (Transform_t284553113 * __this, Vector3_t3525329789  ___eulerAngles0, int32_t ___relativeTo1, const MethodInfo* method)
+{
+	Quaternion_t1891715979  V_0;
+	memset(&V_0, 0, sizeof(V_0));
+	{
+		float L_0 = (&___eulerAngles0)->get_x_1();
+		float L_1 = (&___eulerAngles0)->get_y_2();
+		float L_2 = (&___eulerAngles0)->get_z_3();
+		Quaternion_t1891715979  L_3 = Quaternion_Euler_m1204688217(NULL /*static, unused*/, L_0, L_1, L_2, /*hidden argument*/NULL);
+		V_0 = L_3;
+		int32_t L_4 = ___relativeTo1;
+		if ((!(((uint32_t)L_4) == ((uint32_t)1))))
+		{
+			goto IL_0039;
+		}
+	}
+	{
+		Quaternion_t1891715979  L_5 = Transform_get_localRotation_m3343229381(__this, /*hidden argument*/NULL);
+		Quaternion_t1891715979  L_6 = V_0;
+		Quaternion_t1891715979  L_7 = Quaternion_op_Multiply_m3077481361(NULL /*static, unused*/, L_5, L_6, /*hidden argument*/NULL);
+		Transform_set_localRotation_m3719981474(__this, L_7, /*hidden argument*/NULL);
+		goto IL_0066;
+	}
+
+IL_0039:
+	{
+		Quaternion_t1891715979  L_8 = Transform_get_rotation_m11483428(__this, /*hidden argument*/NULL);
+		Quaternion_t1891715979  L_9 = Transform_get_rotation_m11483428(__this, /*hidden argument*/NULL);
+		Quaternion_t1891715979  L_10 = Quaternion_Inverse_m3542515566(NULL /*static, unused*/, L_9, /*hidden argument*/NULL);
+		Quaternion_t1891715979  L_11 = V_0;
+		Quaternion_t1891715979  L_12 = Quaternion_op_Multiply_m3077481361(NULL /*static, unused*/, L_10, L_11, /*hidden argument*/NULL);
+		Quaternion_t1891715979  L_13 = Transform_get_rotation_m11483428(__this, /*hidden argument*/NULL);
+		Quaternion_t1891715979  L_14 = Quaternion_op_Multiply_m3077481361(NULL /*static, unused*/, L_12, L_13, /*hidden argument*/NULL);
+		Quaternion_t1891715979  L_15 = Quaternion_op_Multiply_m3077481361(NULL /*static, unused*/, L_8, L_14, /*hidden argument*/NULL);
+		Transform_set_rotation_m1525803229(__this, L_15, /*hidden argument*/NULL);
+	}
+
+IL_0066:
+	{
+		return;
+	}
+}
+// System.Void UnityEngine.Transform::LookAt(UnityEngine.Transform)
+extern "C"  void Transform_LookAt_m2663225588 (Transform_t284553113 * __this, Transform_t284553113 * ___target0, const MethodInfo* method)
+{
+	Vector3_t3525329789  V_0;
+	memset(&V_0, 0, sizeof(V_0));
+	{
+		Vector3_t3525329789  L_0 = Vector3_get_up_m4046647141(NULL /*static, unused*/, /*hidden argument*/NULL);
+		V_0 = L_0;
+		Transform_t284553113 * L_1 = ___target0;
+		Vector3_t3525329789  L_2 = V_0;
+		Transform_LookAt_m3252223111(__this, L_1, L_2, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void UnityEngine.Transform::LookAt(UnityEngine.Transform,UnityEngine.Vector3)
+extern "C"  void Transform_LookAt_m3252223111 (Transform_t284553113 * __this, Transform_t284553113 * ___target0, Vector3_t3525329789  ___worldUp1, const MethodInfo* method)
+{
+	{
+		Transform_t284553113 * L_0 = ___target0;
+		bool L_1 = Object_op_Implicit_m2106766291(NULL /*static, unused*/, L_0, /*hidden argument*/NULL);
+		if (!L_1)
+		{
+			goto IL_0018;
+		}
+	}
+	{
+		Transform_t284553113 * L_2 = ___target0;
+		NullCheck(L_2);
+		Vector3_t3525329789  L_3 = Transform_get_position_m2211398607(L_2, /*hidden argument*/NULL);
+		Vector3_t3525329789  L_4 = ___worldUp1;
+		Transform_LookAt_m2054691043(__this, L_3, L_4, /*hidden argument*/NULL);
+	}
+
+IL_0018:
+	{
+		return;
+	}
+}
+// System.Void UnityEngine.Transform::LookAt(UnityEngine.Vector3,UnityEngine.Vector3)
+extern "C"  void Transform_LookAt_m2054691043 (Transform_t284553113 * __this, Vector3_t3525329789  ___worldPosition0, Vector3_t3525329789  ___worldUp1, const MethodInfo* method)
+{
+	{
+		Transform_INTERNAL_CALL_LookAt_m302711157(NULL /*static, unused*/, __this, (&___worldPosition0), (&___worldUp1), /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void UnityEngine.Transform::LookAt(UnityEngine.Vector3)
+extern "C"  void Transform_LookAt_m724138832 (Transform_t284553113 * __this, Vector3_t3525329789  ___worldPosition0, const MethodInfo* method)
+{
+	Vector3_t3525329789  V_0;
+	memset(&V_0, 0, sizeof(V_0));
+	{
+		Vector3_t3525329789  L_0 = Vector3_get_up_m4046647141(NULL /*static, unused*/, /*hidden argument*/NULL);
+		V_0 = L_0;
+		Transform_INTERNAL_CALL_LookAt_m302711157(NULL /*static, unused*/, __this, (&___worldPosition0), (&V_0), /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void UnityEngine.Transform::INTERNAL_CALL_LookAt(UnityEngine.Transform,UnityEngine.Vector3&,UnityEngine.Vector3&)
+extern "C"  void Transform_INTERNAL_CALL_LookAt_m302711157 (Il2CppObject * __this /* static, unused */, Transform_t284553113 * ___self0, Vector3_t3525329789 * ___worldPosition1, Vector3_t3525329789 * ___worldUp2, const MethodInfo* method)
+{
+	typedef void (*Transform_INTERNAL_CALL_LookAt_m302711157_ftn) (Transform_t284553113 *, Vector3_t3525329789 *, Vector3_t3525329789 *);
+	static Transform_INTERNAL_CALL_LookAt_m302711157_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (Transform_INTERNAL_CALL_LookAt_m302711157_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Transform::INTERNAL_CALL_LookAt(UnityEngine.Transform,UnityEngine.Vector3&,UnityEngine.Vector3&)");
+	_il2cpp_icall_func(___self0, ___worldPosition1, ___worldUp2);
 }
 // UnityEngine.Vector3 UnityEngine.Transform::TransformPoint(UnityEngine.Vector3)
 extern "C"  Vector3_t3525329789  Transform_TransformPoint_m437395512 (Transform_t284553113 * __this, Vector3_t3525329789  ___position0, const MethodInfo* method)
@@ -6879,6 +9446,19 @@ extern "C"  Vector3_t3525329789  Vector3_op_Subtraction_m2842958165 (Il2CppObjec
 		memset(&L_6, 0, sizeof(L_6));
 		Vector3__ctor_m2926210380(&L_6, ((float)((float)L_0-(float)L_1)), ((float)((float)L_2-(float)L_3)), ((float)((float)L_4-(float)L_5)), /*hidden argument*/NULL);
 		return L_6;
+	}
+}
+// UnityEngine.Vector3 UnityEngine.Vector3::op_UnaryNegation(UnityEngine.Vector3)
+extern "C"  Vector3_t3525329789  Vector3_op_UnaryNegation_m3293197314 (Il2CppObject * __this /* static, unused */, Vector3_t3525329789  ___a0, const MethodInfo* method)
+{
+	{
+		float L_0 = (&___a0)->get_x_1();
+		float L_1 = (&___a0)->get_y_2();
+		float L_2 = (&___a0)->get_z_3();
+		Vector3_t3525329789  L_3;
+		memset(&L_3, 0, sizeof(L_3));
+		Vector3__ctor_m2926210380(&L_3, ((-L_0)), ((-L_1)), ((-L_2)), /*hidden argument*/NULL);
+		return L_3;
 	}
 }
 // UnityEngine.Vector3 UnityEngine.Vector3::op_Multiply(UnityEngine.Vector3,System.Single)

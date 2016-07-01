@@ -23,6 +23,7 @@ struct String_t;
 #include "UnityEngine_UnityEngine_Material1886596500.h"
 #include "UnityEngine_UnityEngine_Texture1769722184.h"
 #include "mscorlib_System_String968488902.h"
+#include "UnityEngine_UnityEngine_Vector23525329788.h"
 
 // System.Void UnityEngine.Material::.ctor(UnityEngine.Material)
 extern "C"  void Material__ctor_m2546967560 (Material_t1886596500 * __this, Material_t1886596500 * ___source0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
@@ -38,6 +39,10 @@ extern "C"  void Material_SetTexture_m3847256752 (Material_t1886596500 * __this,
 extern "C"  Texture_t1769722184 * Material_GetTexture_m1284113328 (Material_t1886596500 * __this, String_t* ___propertyName0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // UnityEngine.Texture UnityEngine.Material::GetTexture(System.Int32)
 extern "C"  Texture_t1769722184 * Material_GetTexture_m3767468771 (Material_t1886596500 * __this, int32_t ___nameID0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void UnityEngine.Material::SetTextureOffset(System.String,UnityEngine.Vector2)
+extern "C"  void Material_SetTextureOffset_m1301408396 (Material_t1886596500 * __this, String_t* ___propertyName0, Vector2_t3525329788  ___offset1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void UnityEngine.Material::INTERNAL_CALL_SetTextureOffset(UnityEngine.Material,System.String,UnityEngine.Vector2&)
+extern "C"  void Material_INTERNAL_CALL_SetTextureOffset_m3039341169 (Il2CppObject * __this /* static, unused */, Material_t1886596500 * ___self0, String_t* ___propertyName1, Vector2_t3525329788 * ___offset2, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void UnityEngine.Material::SetFloat(System.String,System.Single)
 extern "C"  void Material_SetFloat_m981710063 (Material_t1886596500 * __this, String_t* ___propertyName0, float ___value1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void UnityEngine.Material::SetFloat(System.Int32,System.Single)

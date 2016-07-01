@@ -13,9 +13,12 @@
 struct AudioCallbacks_t2473994680;
 // BlockWrapper
 struct BlockWrapper_t1007084390;
+// RayBehavior
+struct RayBehavior_t3008801916;
 
 #include "mscorlib_System_Array2840145358.h"
 #include "AssemblyU2DCSharp_BlockWrapper1007084390.h"
+#include "AssemblyU2DCSharp_RayBehavior3008801916.h"
 
 #pragma once
 // AudioProcessor/AudioCallbacks[]
@@ -43,6 +46,21 @@ public:
 	inline BlockWrapper_t1007084390 * GetAt(il2cpp_array_size_t index) const { return m_Items[index]; }
 	inline BlockWrapper_t1007084390 ** GetAddressAt(il2cpp_array_size_t index) { return m_Items + index; }
 	inline void SetAt(il2cpp_array_size_t index, BlockWrapper_t1007084390 * value)
+	{
+		m_Items[index] = value;
+		Il2CppCodeGenWriteBarrier(m_Items + index, value);
+	}
+};
+// RayBehavior[]
+struct RayBehaviorU5BU5D_t1164183061  : public Il2CppArray
+{
+public:
+	ALIGN_TYPE (8) RayBehavior_t3008801916 * m_Items[1];
+
+public:
+	inline RayBehavior_t3008801916 * GetAt(il2cpp_array_size_t index) const { return m_Items[index]; }
+	inline RayBehavior_t3008801916 ** GetAddressAt(il2cpp_array_size_t index) { return m_Items + index; }
+	inline void SetAt(il2cpp_array_size_t index, RayBehavior_t3008801916 * value)
 	{
 		m_Items[index] = value;
 		Il2CppCodeGenWriteBarrier(m_Items + index, value);

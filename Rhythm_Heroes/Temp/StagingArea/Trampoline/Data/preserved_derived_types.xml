@@ -1,7 +1,7 @@
 <linker>
 <assembly fullname="Assembly-CSharp">
+<type fullname="ReverseNormals" preserve="all"/>
 <type fullname="AnimationController" preserve="all"/>
-<type fullname="AnimationEvents" preserve="all"/>
 <type fullname="AudioProcessor" preserve="all"/>
 <type fullname="BackgroundMusicController" preserve="all"/>
 <type fullname="MenuManager" preserve="all"/>
@@ -12,6 +12,12 @@
 <type fullname="TouchController" preserve="all"/>
 <type fullname="TouchZoneMaterialController" preserve="all"/>
 <type fullname="WordController" preserve="all"/>
+<type fullname="LightBeamsControlScript" preserve="all"/>
+<type fullname="LookAtBehaviour" preserve="all"/>
+<type fullname="LookAtCameraBehaviour" preserve="all"/>
+<type fullname="RayBehavior" preserve="all"/>
+<type fullname="RotateBehaviour" preserve="all"/>
+<type fullname="ScrollBehaviour" preserve="all"/>
 <type fullname="AppleMusicController" preserve="all"/>
 <type fullname="iOSMusic" preserve="all"/>
 <type fullname="iOSMusicGUI" preserve="all"/>

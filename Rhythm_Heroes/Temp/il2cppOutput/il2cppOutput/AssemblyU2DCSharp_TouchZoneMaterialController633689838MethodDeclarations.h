@@ -29,3 +29,5 @@ extern "C"  void TouchZoneMaterialController_onTouchUp_m545451286 (TouchZoneMate
 extern "C"  void TouchZoneMaterialController_onTouchStay_m140887764 (TouchZoneMaterialController_t633689838 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void TouchZoneMaterialController::onTouchExit()
 extern "C"  void TouchZoneMaterialController_onTouchExit_m4038974553 (TouchZoneMaterialController_t633689838 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void TouchZoneMaterialController::changeTouchZoneMaterial(System.Boolean)
+extern "C"  void TouchZoneMaterialController_changeTouchZoneMaterial_m254316852 (Il2CppObject * __this /* static, unused */, bool ___isHot0, const MethodInfo* method) IL2CPP_METHOD_ATTR;

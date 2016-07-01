@@ -8,10 +8,14 @@ public class TouchController : MonoBehaviour {
 	private List<GameObject> touchList = new List<GameObject> ();
 	private GameObject[] touchesOld;
 	private RaycastHit hit;
+	private int comboBonus;
 
 	private GameObject[] planeObj = new GameObject[5];
 	private GameObject scoreTextObj, wordTextObj;
 	private int channelNum = 5;
+
+	public static int comboCount = 0;
+	public static bool hasChanged = false;
 
 	void Start () {
 		myCamera = GetComponent<Camera>();
@@ -34,6 +38,7 @@ public class TouchController : MonoBehaviour {
 		}
 		scoreTextObj = GameObject.Find ("Score");
 		wordTextObj = GameObject.Find ("Word");
+		comboBonus = PlaneController.comboBonus;
 	}
 
 	void Update () {
@@ -85,6 +90,14 @@ public class TouchController : MonoBehaviour {
 									scoreTextObj.SendMessage("comboChange", 1, SendMessageOptions.RequireReceiver);
 									wordTextObj.SendMessage("wordTextDisplay", 1, SendMessageOptions.RequireReceiver);
 									scoreTextObj.SendMessage("scorePlus", SendMessageOptions.RequireReceiver);
+
+
+									comboCount++;
+									if(comboCount >= comboBonus && !hasChanged) {
+										hasChanged = true;
+										PlaneMaterialController.changePlaneMaterial(true);
+										TouchZoneMaterialController.changeTouchZoneMaterial(true);
+									}
 								}	
 							}
 
@@ -166,6 +179,13 @@ public class TouchController : MonoBehaviour {
 										scoreTextObj.SendMessage("comboChange", 1, SendMessageOptions.RequireReceiver);
 										wordTextObj.SendMessage("wordTextDisplay", 1, SendMessageOptions.RequireReceiver);
 										scoreTextObj.SendMessage("scorePlus", SendMessageOptions.RequireReceiver);
+
+										comboCount++;
+										if(comboCount >= comboBonus && !hasChanged) {
+											hasChanged = true;
+											PlaneMaterialController.changePlaneMaterial(true);
+											TouchZoneMaterialController.changeTouchZoneMaterial(true);
+										}
 									}	
 								}
 

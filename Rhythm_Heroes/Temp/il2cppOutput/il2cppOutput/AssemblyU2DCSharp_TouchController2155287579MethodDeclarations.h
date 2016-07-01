@@ -19,6 +19,8 @@ struct TouchController_t2155287579;
 
 // System.Void TouchController::.ctor()
 extern "C"  void TouchController__ctor_m1747329456 (TouchController_t2155287579 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void TouchController::.cctor()
+extern "C"  void TouchController__cctor_m2145509373 (Il2CppObject * __this /* static, unused */, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void TouchController::Start()
 extern "C"  void TouchController_Start_m694467248 (TouchController_t2155287579 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void TouchController::Update()

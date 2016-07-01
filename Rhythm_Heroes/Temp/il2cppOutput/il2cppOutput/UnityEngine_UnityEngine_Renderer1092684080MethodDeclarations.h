@@ -16,12 +16,18 @@
 struct Renderer_t1092684080;
 // UnityEngine.Material
 struct Material_t1886596500;
+// UnityEngine.Material[]
+struct MaterialU5BU5D_t3353847197;
 
 #include "codegen/il2cpp-codegen.h"
 #include "UnityEngine_UnityEngine_Bounds3518514978.h"
 
+// System.Boolean UnityEngine.Renderer::get_enabled()
+extern "C"  bool Renderer_get_enabled_m1971819706 (Renderer_t1092684080 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // UnityEngine.Material UnityEngine.Renderer::get_material()
 extern "C"  Material_t1886596500 * Renderer_get_material_m2720864603 (Renderer_t1092684080 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// UnityEngine.Material[] UnityEngine.Renderer::get_materials()
+extern "C"  MaterialU5BU5D_t3353847197* Renderer_get_materials_m3755041148 (Renderer_t1092684080 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // UnityEngine.Bounds UnityEngine.Renderer::get_bounds()
 extern "C"  Bounds_t3518514978  Renderer_get_bounds_m1533373851 (Renderer_t1092684080 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void UnityEngine.Renderer::INTERNAL_get_bounds(UnityEngine.Bounds&)

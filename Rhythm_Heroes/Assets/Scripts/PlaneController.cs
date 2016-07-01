@@ -4,14 +4,15 @@ using System.Collections.Generic;
 
 public class PlaneController : MonoBehaviour, AudioProcessor.AudioCallbacks {
 	public static bool keepPlaying = true;
-	public static int channelNum = 5;
+	public static int channelNum;
 	public static int blockNumPerChannel = 6;
-	public static int[] blockSpeed = new int[]{10, 10, 10, 10, 10};			// the smaller the val, the faster the speed
+	public static int[] blockSpeed = new int[]{10, 10, 10, 10, 10};	// the smaller the val, the faster the speed
+	public static int comboBonus = 5;
 
 	public static Queue<BlockWrapper>[] blocksInPool = new Queue<BlockWrapper>[5];
 	public static Queue<BlockWrapper>[] blocksInChannel = new Queue<BlockWrapper>[5];
 	public GameObject prefabBlock;
-	public GameObject[] planeObj = new GameObject[5], touchZoneObj = new GameObject[5];
+	public static GameObject[] planeObj = new GameObject[5], touchZoneObj = new GameObject[5];
 	public static BlockWrapper[] blockClone;
 	private GameObject wordObj, scoreObj;
 	public static Object mutex;
@@ -22,32 +23,15 @@ public class PlaneController : MonoBehaviour, AudioProcessor.AudioCallbacks {
 
 	void Awake() {
 		mutex = new Object ();
-		GameObject[] tmpPlaneObj = new GameObject[5], tmpTouchZoneObj = new GameObject[5];
-		for(int i=0; i<5; i++) {
-			tmpPlaneObj [i] = GameObject.Find ("Plane" + i);
-			tmpTouchZoneObj [i] = GameObject.Find ("TouchZone" + i);
-			if(tmpPlaneObj[i] == null) {
-				channelNum = i;
-				blocksInPool = new Queue<BlockWrapper>[channelNum];
-				blocksInChannel = new Queue<BlockWrapper>[channelNum];
-				planeObj = new GameObject[channelNum];
-				touchZoneObj = new GameObject[channelNum];
-				for(int j=0; j<channelNum; j++) {
-					planeObj [j] = tmpPlaneObj [j];
-					touchZoneObj [j] = tmpTouchZoneObj [j];
-				}
-				break;
-			}
-			if(i == 4 && tmpPlaneObj[4] != null) {
-				planeObj = new GameObject[channelNum];
-				touchZoneObj = new GameObject[channelNum];
-				for(int j=0; j<channelNum; j++) {
-					planeObj [j] = tmpPlaneObj [j];
-					touchZoneObj [j] = tmpTouchZoneObj [j];
-				}
-			}
+		channelNum = MenuManager.sceneNumber;
+		planeObj = new GameObject[channelNum];
+		touchZoneObj = new GameObject[channelNum];
+		blocksInPool = new Queue<BlockWrapper>[channelNum];
+		blocksInChannel = new Queue<BlockWrapper>[channelNum];
+		for(int i=0; i<channelNum; i++) {
+			planeObj [i] = GameObject.Find ("Plane" + i);
+			touchZoneObj [i] = GameObject.Find ("TouchZone" + i);
 		}
-
 		wordObj = GameObject.Find ("Word");
 		scoreObj = GameObject.Find ("Score");
 		blockClone = new BlockWrapper[channelNum * blockNumPerChannel];
@@ -99,6 +83,12 @@ public class PlaneController : MonoBehaviour, AudioProcessor.AudioCallbacks {
 						scoreObj.SendMessage("comboChange", 0, SendMessageOptions.RequireReceiver);
 						scoreObj.SendMessage ("statChange", 1, SendMessageOptions.RequireReceiver);
 
+						if(TouchController.hasChanged) {
+							PlaneMaterialController.changePlaneMaterial (false);
+							TouchZoneMaterialController.changeTouchZoneMaterial (false);
+							TouchController.comboCount = 0;
+							TouchController.hasChanged = false;
+						}
 					}
 				}
 

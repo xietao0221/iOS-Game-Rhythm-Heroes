@@ -24,7 +24,7 @@ public class ScoreController : MonoBehaviour {
 	public void scorePlus() {
 		//scoreCount++;
 		scoreCount += (1 + combo * 2);
-		print ("Score" + scoreCount);
+//		print ("Score" + scoreCount);
 	}
 
 	public void comboChange(int val) {
@@ -34,7 +34,7 @@ public class ScoreController : MonoBehaviour {
 			comboMax = Mathf.Max (comboMax, combo);
 			combo = 0;
 		}
-		print ("Combo: " + combo + ", MaxCombo: " + comboMax);
+//		print ("Combo: " + combo + ", MaxCombo: " + comboMax);
 	}
 
 	public void statChange(int val) {
@@ -49,6 +49,6 @@ public class ScoreController : MonoBehaviour {
 			perfectNum++;
 			break;
 		}
-		print ("Block: " + blockNum + ", Perfect: " + perfectNum + ", Miss: " + missNum);
+//		print ("Block: " + blockNum + ", Perfect: " + perfectNum + ", Miss: " + missNum);
 	}
 }

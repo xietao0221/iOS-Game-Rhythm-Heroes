@@ -1,6 +1,22 @@
-//Generated on : 6/30/2016 7:03:38 PM
+//Generated on : 6/30/2016 10:53:50 PM
 void RegisterAllStrippedInternalCalls()
 {
+	//Start Registrations for type : UnityEngine.Animation
+
+		//System.Int32 UnityEngine.Animation::GetStateCount()
+		void Register_UnityEngine_Animation_GetStateCount();
+		Register_UnityEngine_Animation_GetStateCount();
+
+		//UnityEngine.AnimationState UnityEngine.Animation::GetState(System.String)
+		void Register_UnityEngine_Animation_GetState();
+		Register_UnityEngine_Animation_GetState();
+
+		//UnityEngine.AnimationState UnityEngine.Animation::GetStateAtIndex(System.Int32)
+		void Register_UnityEngine_Animation_GetStateAtIndex();
+		Register_UnityEngine_Animation_GetStateAtIndex();
+
+	//End Registrations for type : UnityEngine.Animation
+
 	//Start Registrations for type : UnityEngine.AnimationCurve
 
 		//System.Void UnityEngine.AnimationCurve::Cleanup()
@@ -12,6 +28,14 @@ void RegisterAllStrippedInternalCalls()
 		Register_UnityEngine_AnimationCurve_Init();
 
 	//End Registrations for type : UnityEngine.AnimationCurve
+
+	//Start Registrations for type : UnityEngine.AnimationState
+
+		//System.Void UnityEngine.AnimationState::set_speed(System.Single)
+		void Register_UnityEngine_AnimationState_set_speed();
+		Register_UnityEngine_AnimationState_set_speed();
+
+	//End Registrations for type : UnityEngine.AnimationState
 
 	//Start Registrations for type : UnityEngine.Animator
 
@@ -258,6 +282,10 @@ void RegisterAllStrippedInternalCalls()
 		//System.Void UnityEngine.Camera::set_clearFlags(UnityEngine.CameraClearFlags)
 		void Register_UnityEngine_Camera_set_clearFlags();
 		Register_UnityEngine_Camera_set_clearFlags();
+
+		//UnityEngine.Camera UnityEngine.Camera::get_current()
+		void Register_UnityEngine_Camera_get_current();
+		Register_UnityEngine_Camera_get_current();
 
 		//UnityEngine.Camera UnityEngine.Camera::get_main()
 		void Register_UnityEngine_Camera_get_main();
@@ -1309,6 +1337,22 @@ void RegisterAllStrippedInternalCalls()
 
 	//End Registrations for type : UnityEngine.iOS.RemoteNotification
 
+	//Start Registrations for type : UnityEngine.LineRenderer
+
+		//System.Void UnityEngine.LineRenderer::INTERNAL_CALL_SetColors(UnityEngine.LineRenderer,UnityEngine.Color&,UnityEngine.Color&)
+		void Register_UnityEngine_LineRenderer_INTERNAL_CALL_SetColors();
+		Register_UnityEngine_LineRenderer_INTERNAL_CALL_SetColors();
+
+		//System.Void UnityEngine.LineRenderer::INTERNAL_CALL_SetPosition(UnityEngine.LineRenderer,System.Int32,UnityEngine.Vector3&)
+		void Register_UnityEngine_LineRenderer_INTERNAL_CALL_SetPosition();
+		Register_UnityEngine_LineRenderer_INTERNAL_CALL_SetPosition();
+
+		//System.Void UnityEngine.LineRenderer::INTERNAL_CALL_SetWidth(UnityEngine.LineRenderer,System.Single,System.Single)
+		void Register_UnityEngine_LineRenderer_INTERNAL_CALL_SetWidth();
+		Register_UnityEngine_LineRenderer_INTERNAL_CALL_SetWidth();
+
+	//End Registrations for type : UnityEngine.LineRenderer
+
 	//Start Registrations for type : UnityEngine.Material
 
 		//System.Boolean UnityEngine.Material::HasProperty(System.Int32)
@@ -1322,6 +1366,10 @@ void RegisterAllStrippedInternalCalls()
 		//System.Void UnityEngine.Material::EnableKeyword(System.String)
 		void Register_UnityEngine_Material_EnableKeyword();
 		Register_UnityEngine_Material_EnableKeyword();
+
+		//System.Void UnityEngine.Material::INTERNAL_CALL_SetTextureOffset(UnityEngine.Material,System.String,UnityEngine.Vector2&)
+		void Register_UnityEngine_Material_INTERNAL_CALL_SetTextureOffset();
+		Register_UnityEngine_Material_INTERNAL_CALL_SetTextureOffset();
 
 		//System.Void UnityEngine.Material::Internal_CreateWithMaterial(UnityEngine.Material,UnityEngine.Material)
 		void Register_UnityEngine_Material_Internal_CreateWithMaterial();
@@ -1347,9 +1395,17 @@ void RegisterAllStrippedInternalCalls()
 		void Register_UnityEngine_Mesh_ExtractListData();
 		Register_UnityEngine_Mesh_ExtractListData();
 
+		//System.Int32 UnityEngine.Mesh::get_subMeshCount()
+		void Register_UnityEngine_Mesh_get_subMeshCount();
+		Register_UnityEngine_Mesh_get_subMeshCount();
+
 		//System.Int32[] UnityEngine.Mesh::GetIndices(System.Int32)
 		void Register_UnityEngine_Mesh_GetIndices();
 		Register_UnityEngine_Mesh_GetIndices();
+
+		//System.Int32[] UnityEngine.Mesh::GetTriangles(System.Int32)
+		void Register_UnityEngine_Mesh_GetTriangles();
+		Register_UnityEngine_Mesh_GetTriangles();
 
 		//System.Void UnityEngine.Mesh::Clear(System.Boolean)
 		void Register_UnityEngine_Mesh_Clear();
@@ -1375,6 +1431,10 @@ void RegisterAllStrippedInternalCalls()
 		void Register_UnityEngine_Mesh_SetTangentsInternal();
 		Register_UnityEngine_Mesh_SetTangentsInternal();
 
+		//System.Void UnityEngine.Mesh::SetTriangles(System.Int32[],System.Int32)
+		void Register_UnityEngine_Mesh_SetTriangles();
+		Register_UnityEngine_Mesh_SetTriangles();
+
 		//System.Void UnityEngine.Mesh::SetTrianglesInternal(System.Object,System.Int32)
 		void Register_UnityEngine_Mesh_SetTrianglesInternal();
 		Register_UnityEngine_Mesh_SetTrianglesInternal();
@@ -1386,6 +1446,10 @@ void RegisterAllStrippedInternalCalls()
 		//System.Void UnityEngine.Mesh::SetVerticesInternal(System.Object)
 		void Register_UnityEngine_Mesh_SetVerticesInternal();
 		Register_UnityEngine_Mesh_SetVerticesInternal();
+
+		//System.Void UnityEngine.Mesh::set_normals(UnityEngine.Vector3[])
+		void Register_UnityEngine_Mesh_set_normals();
+		Register_UnityEngine_Mesh_set_normals();
 
 		//UnityEngine.Color32[] UnityEngine.Mesh::get_colors32()
 		void Register_UnityEngine_Mesh_get_colors32();
@@ -1412,6 +1476,22 @@ void RegisterAllStrippedInternalCalls()
 		Register_UnityEngine_Mesh_get_tangents();
 
 	//End Registrations for type : UnityEngine.Mesh
+
+	//Start Registrations for type : UnityEngine.MeshCollider
+
+		//System.Void UnityEngine.MeshCollider::set_sharedMesh(UnityEngine.Mesh)
+		void Register_UnityEngine_MeshCollider_set_sharedMesh();
+		Register_UnityEngine_MeshCollider_set_sharedMesh();
+
+	//End Registrations for type : UnityEngine.MeshCollider
+
+	//Start Registrations for type : UnityEngine.MeshFilter
+
+		//UnityEngine.Mesh UnityEngine.MeshFilter::get_mesh()
+		void Register_UnityEngine_MeshFilter_get_mesh();
+		Register_UnityEngine_MeshFilter_get_mesh();
+
+	//End Registrations for type : UnityEngine.MeshFilter
 
 	//Start Registrations for type : UnityEngine.MonoBehaviour
 
@@ -1643,6 +1723,10 @@ void RegisterAllStrippedInternalCalls()
 
 	//Start Registrations for type : UnityEngine.Quaternion
 
+		//System.Void UnityEngine.Quaternion::INTERNAL_CALL_Internal_FromEulerRad(UnityEngine.Vector3&,UnityEngine.Quaternion&)
+		void Register_UnityEngine_Quaternion_INTERNAL_CALL_Internal_FromEulerRad();
+		Register_UnityEngine_Quaternion_INTERNAL_CALL_Internal_FromEulerRad();
+
 		//System.Void UnityEngine.Quaternion::INTERNAL_CALL_Inverse(UnityEngine.Quaternion&,UnityEngine.Quaternion&)
 		void Register_UnityEngine_Quaternion_INTERNAL_CALL_Inverse();
 		Register_UnityEngine_Quaternion_INTERNAL_CALL_Inverse();
@@ -1783,6 +1867,10 @@ void RegisterAllStrippedInternalCalls()
 
 	//Start Registrations for type : UnityEngine.Renderer
 
+		//System.Boolean UnityEngine.Renderer::get_enabled()
+		void Register_UnityEngine_Renderer_get_enabled();
+		Register_UnityEngine_Renderer_get_enabled();
+
 		//System.Int32 UnityEngine.Renderer::get_sortingLayerID()
 		void Register_UnityEngine_Renderer_get_sortingLayerID();
 		Register_UnityEngine_Renderer_get_sortingLayerID();
@@ -1798,6 +1886,10 @@ void RegisterAllStrippedInternalCalls()
 		//UnityEngine.Material UnityEngine.Renderer::get_material()
 		void Register_UnityEngine_Renderer_get_material();
 		Register_UnityEngine_Renderer_get_material();
+
+		//UnityEngine.Material[] UnityEngine.Renderer::get_materials()
+		void Register_UnityEngine_Renderer_get_materials();
+		Register_UnityEngine_Renderer_get_materials();
 
 	//End Registrations for type : UnityEngine.Renderer
 
@@ -2175,6 +2267,10 @@ void RegisterAllStrippedInternalCalls()
 		void Register_UnityEngine_Transform_INTERNAL_CALL_InverseTransformPoint();
 		Register_UnityEngine_Transform_INTERNAL_CALL_InverseTransformPoint();
 
+		//System.Void UnityEngine.Transform::INTERNAL_CALL_LookAt(UnityEngine.Transform,UnityEngine.Vector3&,UnityEngine.Vector3&)
+		void Register_UnityEngine_Transform_INTERNAL_CALL_LookAt();
+		Register_UnityEngine_Transform_INTERNAL_CALL_LookAt();
+
 		//System.Void UnityEngine.Transform::INTERNAL_CALL_TransformPoint(UnityEngine.Transform,UnityEngine.Vector3&,UnityEngine.Vector3&)
 		void Register_UnityEngine_Transform_INTERNAL_CALL_TransformPoint();
 		Register_UnityEngine_Transform_INTERNAL_CALL_TransformPoint();
@@ -2218,6 +2314,10 @@ void RegisterAllStrippedInternalCalls()
 		//System.Void UnityEngine.Transform::INTERNAL_set_position(UnityEngine.Vector3&)
 		void Register_UnityEngine_Transform_INTERNAL_set_position();
 		Register_UnityEngine_Transform_INTERNAL_set_position();
+
+		//System.Void UnityEngine.Transform::INTERNAL_set_rotation(UnityEngine.Quaternion&)
+		void Register_UnityEngine_Transform_INTERNAL_set_rotation();
+		Register_UnityEngine_Transform_INTERNAL_set_rotation();
 
 		//System.Void UnityEngine.Transform::SetAsFirstSibling()
 		void Register_UnityEngine_Transform_SetAsFirstSibling();

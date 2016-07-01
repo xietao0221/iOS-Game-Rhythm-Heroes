@@ -47,6 +47,7 @@
   <ItemGroup>
      <Compile Include="Assets\iOSMusic\Editor\ConfigureBuild.cs" />
      <None Include="Assets\iOSMusic\readme.txt" />
+     <None Include="Assets\Particle Ribbon\readme_Simple_Particle_Ribbon.txt" />
  <Reference Include="UnityEditor.Advertisements">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Advertisements/Editor/UnityEditor.Advertisements.dll</HintPath>
  </Reference>

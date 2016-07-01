@@ -29,3 +29,5 @@ extern "C"  void PlaneMaterialController_onTouchUp_m3612048421 (PlaneMaterialCon
 extern "C"  void PlaneMaterialController_onTouchStay_m793169443 (PlaneMaterialController_t2074521471 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void PlaneMaterialController::onTouchExit()
 extern "C"  void PlaneMaterialController_onTouchExit_m396288936 (PlaneMaterialController_t2074521471 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void PlaneMaterialController::changePlaneMaterial(System.Boolean)
+extern "C"  void PlaneMaterialController_changePlaneMaterial_m3250880532 (Il2CppObject * __this /* static, unused */, bool ___isHot0, const MethodInfo* method) IL2CPP_METHOD_ATTR;

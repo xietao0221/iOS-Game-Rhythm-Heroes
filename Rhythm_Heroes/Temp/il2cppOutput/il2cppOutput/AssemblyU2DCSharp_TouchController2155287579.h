@@ -43,14 +43,16 @@ public:
 	GameObjectU5BU5D_t3499186955* ___touchesOld_5;
 	// UnityEngine.RaycastHit TouchController::hit
 	RaycastHit_t46221527  ___hit_6;
+	// System.Int32 TouchController::comboBonus
+	int32_t ___comboBonus_7;
 	// UnityEngine.GameObject[] TouchController::planeObj
-	GameObjectU5BU5D_t3499186955* ___planeObj_7;
+	GameObjectU5BU5D_t3499186955* ___planeObj_8;
 	// UnityEngine.GameObject TouchController::scoreTextObj
-	GameObject_t4012695102 * ___scoreTextObj_8;
+	GameObject_t4012695102 * ___scoreTextObj_9;
 	// UnityEngine.GameObject TouchController::wordTextObj
-	GameObject_t4012695102 * ___wordTextObj_9;
+	GameObject_t4012695102 * ___wordTextObj_10;
 	// System.Int32 TouchController::channelNum
-	int32_t ___channelNum_10;
+	int32_t ___channelNum_11;
 
 public:
 	inline static int32_t get_offset_of_myCamera_2() { return static_cast<int32_t>(offsetof(TouchController_t2155287579, ___myCamera_2)); }
@@ -96,39 +98,73 @@ public:
 		___hit_6 = value;
 	}
 
-	inline static int32_t get_offset_of_planeObj_7() { return static_cast<int32_t>(offsetof(TouchController_t2155287579, ___planeObj_7)); }
-	inline GameObjectU5BU5D_t3499186955* get_planeObj_7() const { return ___planeObj_7; }
-	inline GameObjectU5BU5D_t3499186955** get_address_of_planeObj_7() { return &___planeObj_7; }
-	inline void set_planeObj_7(GameObjectU5BU5D_t3499186955* value)
+	inline static int32_t get_offset_of_comboBonus_7() { return static_cast<int32_t>(offsetof(TouchController_t2155287579, ___comboBonus_7)); }
+	inline int32_t get_comboBonus_7() const { return ___comboBonus_7; }
+	inline int32_t* get_address_of_comboBonus_7() { return &___comboBonus_7; }
+	inline void set_comboBonus_7(int32_t value)
 	{
-		___planeObj_7 = value;
-		Il2CppCodeGenWriteBarrier(&___planeObj_7, value);
+		___comboBonus_7 = value;
 	}
 
-	inline static int32_t get_offset_of_scoreTextObj_8() { return static_cast<int32_t>(offsetof(TouchController_t2155287579, ___scoreTextObj_8)); }
-	inline GameObject_t4012695102 * get_scoreTextObj_8() const { return ___scoreTextObj_8; }
-	inline GameObject_t4012695102 ** get_address_of_scoreTextObj_8() { return &___scoreTextObj_8; }
-	inline void set_scoreTextObj_8(GameObject_t4012695102 * value)
+	inline static int32_t get_offset_of_planeObj_8() { return static_cast<int32_t>(offsetof(TouchController_t2155287579, ___planeObj_8)); }
+	inline GameObjectU5BU5D_t3499186955* get_planeObj_8() const { return ___planeObj_8; }
+	inline GameObjectU5BU5D_t3499186955** get_address_of_planeObj_8() { return &___planeObj_8; }
+	inline void set_planeObj_8(GameObjectU5BU5D_t3499186955* value)
 	{
-		___scoreTextObj_8 = value;
-		Il2CppCodeGenWriteBarrier(&___scoreTextObj_8, value);
+		___planeObj_8 = value;
+		Il2CppCodeGenWriteBarrier(&___planeObj_8, value);
 	}
 
-	inline static int32_t get_offset_of_wordTextObj_9() { return static_cast<int32_t>(offsetof(TouchController_t2155287579, ___wordTextObj_9)); }
-	inline GameObject_t4012695102 * get_wordTextObj_9() const { return ___wordTextObj_9; }
-	inline GameObject_t4012695102 ** get_address_of_wordTextObj_9() { return &___wordTextObj_9; }
-	inline void set_wordTextObj_9(GameObject_t4012695102 * value)
+	inline static int32_t get_offset_of_scoreTextObj_9() { return static_cast<int32_t>(offsetof(TouchController_t2155287579, ___scoreTextObj_9)); }
+	inline GameObject_t4012695102 * get_scoreTextObj_9() const { return ___scoreTextObj_9; }
+	inline GameObject_t4012695102 ** get_address_of_scoreTextObj_9() { return &___scoreTextObj_9; }
+	inline void set_scoreTextObj_9(GameObject_t4012695102 * value)
 	{
-		___wordTextObj_9 = value;
-		Il2CppCodeGenWriteBarrier(&___wordTextObj_9, value);
+		___scoreTextObj_9 = value;
+		Il2CppCodeGenWriteBarrier(&___scoreTextObj_9, value);
 	}
 
-	inline static int32_t get_offset_of_channelNum_10() { return static_cast<int32_t>(offsetof(TouchController_t2155287579, ___channelNum_10)); }
-	inline int32_t get_channelNum_10() const { return ___channelNum_10; }
-	inline int32_t* get_address_of_channelNum_10() { return &___channelNum_10; }
-	inline void set_channelNum_10(int32_t value)
+	inline static int32_t get_offset_of_wordTextObj_10() { return static_cast<int32_t>(offsetof(TouchController_t2155287579, ___wordTextObj_10)); }
+	inline GameObject_t4012695102 * get_wordTextObj_10() const { return ___wordTextObj_10; }
+	inline GameObject_t4012695102 ** get_address_of_wordTextObj_10() { return &___wordTextObj_10; }
+	inline void set_wordTextObj_10(GameObject_t4012695102 * value)
 	{
-		___channelNum_10 = value;
+		___wordTextObj_10 = value;
+		Il2CppCodeGenWriteBarrier(&___wordTextObj_10, value);
+	}
+
+	inline static int32_t get_offset_of_channelNum_11() { return static_cast<int32_t>(offsetof(TouchController_t2155287579, ___channelNum_11)); }
+	inline int32_t get_channelNum_11() const { return ___channelNum_11; }
+	inline int32_t* get_address_of_channelNum_11() { return &___channelNum_11; }
+	inline void set_channelNum_11(int32_t value)
+	{
+		___channelNum_11 = value;
+	}
+};
+
+struct TouchController_t2155287579_StaticFields
+{
+public:
+	// System.Int32 TouchController::comboCount
+	int32_t ___comboCount_12;
+	// System.Boolean TouchController::hasChanged
+	bool ___hasChanged_13;
+
+public:
+	inline static int32_t get_offset_of_comboCount_12() { return static_cast<int32_t>(offsetof(TouchController_t2155287579_StaticFields, ___comboCount_12)); }
+	inline int32_t get_comboCount_12() const { return ___comboCount_12; }
+	inline int32_t* get_address_of_comboCount_12() { return &___comboCount_12; }
+	inline void set_comboCount_12(int32_t value)
+	{
+		___comboCount_12 = value;
+	}
+
+	inline static int32_t get_offset_of_hasChanged_13() { return static_cast<int32_t>(offsetof(TouchController_t2155287579_StaticFields, ___hasChanged_13)); }
+	inline bool get_hasChanged_13() const { return ___hasChanged_13; }
+	inline bool* get_address_of_hasChanged_13() { return &___hasChanged_13; }
+	inline void set_hasChanged_13(bool value)
+	{
+		___hasChanged_13 = value;
 	}
 };
 

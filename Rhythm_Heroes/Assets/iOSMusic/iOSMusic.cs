@@ -31,6 +31,7 @@ public class iOSMusic : MonoBehaviour {
 		get { return _audioClip; }
 		set { _audioClip = value; }
 	}
+
 	static public void readLocalMusic(int musicNum){
 		if (musicNum == 0) {
 			_audioClip = Resources.Load<AudioClip> ("Canon");

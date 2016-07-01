@@ -39,70 +39,48 @@ struct  PlaneController_t1730645752  : public MonoBehaviour_t3012272455
 {
 public:
 	// UnityEngine.GameObject PlaneController::prefabBlock
-	GameObject_t4012695102 * ___prefabBlock_8;
-	// UnityEngine.GameObject[] PlaneController::planeObj
-	GameObjectU5BU5D_t3499186955* ___planeObj_9;
-	// UnityEngine.GameObject[] PlaneController::touchZoneObj
-	GameObjectU5BU5D_t3499186955* ___touchZoneObj_10;
+	GameObject_t4012695102 * ___prefabBlock_9;
 	// UnityEngine.GameObject PlaneController::wordObj
-	GameObject_t4012695102 * ___wordObj_12;
+	GameObject_t4012695102 * ___wordObj_13;
 	// UnityEngine.GameObject PlaneController::scoreObj
-	GameObject_t4012695102 * ___scoreObj_13;
+	GameObject_t4012695102 * ___scoreObj_14;
 	// System.Int32 PlaneController::delay
-	int32_t ___delay_18;
+	int32_t ___delay_19;
 
 public:
-	inline static int32_t get_offset_of_prefabBlock_8() { return static_cast<int32_t>(offsetof(PlaneController_t1730645752, ___prefabBlock_8)); }
-	inline GameObject_t4012695102 * get_prefabBlock_8() const { return ___prefabBlock_8; }
-	inline GameObject_t4012695102 ** get_address_of_prefabBlock_8() { return &___prefabBlock_8; }
-	inline void set_prefabBlock_8(GameObject_t4012695102 * value)
+	inline static int32_t get_offset_of_prefabBlock_9() { return static_cast<int32_t>(offsetof(PlaneController_t1730645752, ___prefabBlock_9)); }
+	inline GameObject_t4012695102 * get_prefabBlock_9() const { return ___prefabBlock_9; }
+	inline GameObject_t4012695102 ** get_address_of_prefabBlock_9() { return &___prefabBlock_9; }
+	inline void set_prefabBlock_9(GameObject_t4012695102 * value)
 	{
-		___prefabBlock_8 = value;
-		Il2CppCodeGenWriteBarrier(&___prefabBlock_8, value);
+		___prefabBlock_9 = value;
+		Il2CppCodeGenWriteBarrier(&___prefabBlock_9, value);
 	}
 
-	inline static int32_t get_offset_of_planeObj_9() { return static_cast<int32_t>(offsetof(PlaneController_t1730645752, ___planeObj_9)); }
-	inline GameObjectU5BU5D_t3499186955* get_planeObj_9() const { return ___planeObj_9; }
-	inline GameObjectU5BU5D_t3499186955** get_address_of_planeObj_9() { return &___planeObj_9; }
-	inline void set_planeObj_9(GameObjectU5BU5D_t3499186955* value)
+	inline static int32_t get_offset_of_wordObj_13() { return static_cast<int32_t>(offsetof(PlaneController_t1730645752, ___wordObj_13)); }
+	inline GameObject_t4012695102 * get_wordObj_13() const { return ___wordObj_13; }
+	inline GameObject_t4012695102 ** get_address_of_wordObj_13() { return &___wordObj_13; }
+	inline void set_wordObj_13(GameObject_t4012695102 * value)
 	{
-		___planeObj_9 = value;
-		Il2CppCodeGenWriteBarrier(&___planeObj_9, value);
+		___wordObj_13 = value;
+		Il2CppCodeGenWriteBarrier(&___wordObj_13, value);
 	}
 
-	inline static int32_t get_offset_of_touchZoneObj_10() { return static_cast<int32_t>(offsetof(PlaneController_t1730645752, ___touchZoneObj_10)); }
-	inline GameObjectU5BU5D_t3499186955* get_touchZoneObj_10() const { return ___touchZoneObj_10; }
-	inline GameObjectU5BU5D_t3499186955** get_address_of_touchZoneObj_10() { return &___touchZoneObj_10; }
-	inline void set_touchZoneObj_10(GameObjectU5BU5D_t3499186955* value)
+	inline static int32_t get_offset_of_scoreObj_14() { return static_cast<int32_t>(offsetof(PlaneController_t1730645752, ___scoreObj_14)); }
+	inline GameObject_t4012695102 * get_scoreObj_14() const { return ___scoreObj_14; }
+	inline GameObject_t4012695102 ** get_address_of_scoreObj_14() { return &___scoreObj_14; }
+	inline void set_scoreObj_14(GameObject_t4012695102 * value)
 	{
-		___touchZoneObj_10 = value;
-		Il2CppCodeGenWriteBarrier(&___touchZoneObj_10, value);
+		___scoreObj_14 = value;
+		Il2CppCodeGenWriteBarrier(&___scoreObj_14, value);
 	}
 
-	inline static int32_t get_offset_of_wordObj_12() { return static_cast<int32_t>(offsetof(PlaneController_t1730645752, ___wordObj_12)); }
-	inline GameObject_t4012695102 * get_wordObj_12() const { return ___wordObj_12; }
-	inline GameObject_t4012695102 ** get_address_of_wordObj_12() { return &___wordObj_12; }
-	inline void set_wordObj_12(GameObject_t4012695102 * value)
+	inline static int32_t get_offset_of_delay_19() { return static_cast<int32_t>(offsetof(PlaneController_t1730645752, ___delay_19)); }
+	inline int32_t get_delay_19() const { return ___delay_19; }
+	inline int32_t* get_address_of_delay_19() { return &___delay_19; }
+	inline void set_delay_19(int32_t value)
 	{
-		___wordObj_12 = value;
-		Il2CppCodeGenWriteBarrier(&___wordObj_12, value);
-	}
-
-	inline static int32_t get_offset_of_scoreObj_13() { return static_cast<int32_t>(offsetof(PlaneController_t1730645752, ___scoreObj_13)); }
-	inline GameObject_t4012695102 * get_scoreObj_13() const { return ___scoreObj_13; }
-	inline GameObject_t4012695102 ** get_address_of_scoreObj_13() { return &___scoreObj_13; }
-	inline void set_scoreObj_13(GameObject_t4012695102 * value)
-	{
-		___scoreObj_13 = value;
-		Il2CppCodeGenWriteBarrier(&___scoreObj_13, value);
-	}
-
-	inline static int32_t get_offset_of_delay_18() { return static_cast<int32_t>(offsetof(PlaneController_t1730645752, ___delay_18)); }
-	inline int32_t get_delay_18() const { return ___delay_18; }
-	inline int32_t* get_address_of_delay_18() { return &___delay_18; }
-	inline void set_delay_18(int32_t value)
-	{
-		___delay_18 = value;
+		___delay_19 = value;
 	}
 };
 
@@ -117,20 +95,26 @@ public:
 	int32_t ___blockNumPerChannel_4;
 	// System.Int32[] PlaneController::blockSpeed
 	Int32U5BU5D_t1809983122* ___blockSpeed_5;
+	// System.Int32 PlaneController::comboBonus
+	int32_t ___comboBonus_6;
 	// System.Collections.Generic.Queue`1<BlockWrapper>[] PlaneController::blocksInPool
-	Queue_1U5BU5D_t3428488447* ___blocksInPool_6;
+	Queue_1U5BU5D_t3428488447* ___blocksInPool_7;
 	// System.Collections.Generic.Queue`1<BlockWrapper>[] PlaneController::blocksInChannel
-	Queue_1U5BU5D_t3428488447* ___blocksInChannel_7;
+	Queue_1U5BU5D_t3428488447* ___blocksInChannel_8;
+	// UnityEngine.GameObject[] PlaneController::planeObj
+	GameObjectU5BU5D_t3499186955* ___planeObj_10;
+	// UnityEngine.GameObject[] PlaneController::touchZoneObj
+	GameObjectU5BU5D_t3499186955* ___touchZoneObj_11;
 	// BlockWrapper[] PlaneController::blockClone
-	BlockWrapperU5BU5D_t4016510019* ___blockClone_11;
+	BlockWrapperU5BU5D_t4016510019* ___blockClone_12;
 	// UnityEngine.Object PlaneController::mutex
-	Object_t3878351788 * ___mutex_14;
+	Object_t3878351788 * ___mutex_15;
 	// UnityEngine.Vector3[] PlaneController::startingPoint
-	Vector3U5BU5D_t3227571696* ___startingPoint_15;
+	Vector3U5BU5D_t3227571696* ___startingPoint_16;
 	// System.Single PlaneController::endingPointLocalMin
-	float ___endingPointLocalMin_16;
+	float ___endingPointLocalMin_17;
 	// System.Single PlaneController::touchZoneLocalMin
-	float ___touchZoneLocalMin_17;
+	float ___touchZoneLocalMin_18;
 
 public:
 	inline static int32_t get_offset_of_keepPlaying_2() { return static_cast<int32_t>(offsetof(PlaneController_t1730645752_StaticFields, ___keepPlaying_2)); }
@@ -166,65 +150,91 @@ public:
 		Il2CppCodeGenWriteBarrier(&___blockSpeed_5, value);
 	}
 
-	inline static int32_t get_offset_of_blocksInPool_6() { return static_cast<int32_t>(offsetof(PlaneController_t1730645752_StaticFields, ___blocksInPool_6)); }
-	inline Queue_1U5BU5D_t3428488447* get_blocksInPool_6() const { return ___blocksInPool_6; }
-	inline Queue_1U5BU5D_t3428488447** get_address_of_blocksInPool_6() { return &___blocksInPool_6; }
-	inline void set_blocksInPool_6(Queue_1U5BU5D_t3428488447* value)
+	inline static int32_t get_offset_of_comboBonus_6() { return static_cast<int32_t>(offsetof(PlaneController_t1730645752_StaticFields, ___comboBonus_6)); }
+	inline int32_t get_comboBonus_6() const { return ___comboBonus_6; }
+	inline int32_t* get_address_of_comboBonus_6() { return &___comboBonus_6; }
+	inline void set_comboBonus_6(int32_t value)
 	{
-		___blocksInPool_6 = value;
-		Il2CppCodeGenWriteBarrier(&___blocksInPool_6, value);
+		___comboBonus_6 = value;
 	}
 
-	inline static int32_t get_offset_of_blocksInChannel_7() { return static_cast<int32_t>(offsetof(PlaneController_t1730645752_StaticFields, ___blocksInChannel_7)); }
-	inline Queue_1U5BU5D_t3428488447* get_blocksInChannel_7() const { return ___blocksInChannel_7; }
-	inline Queue_1U5BU5D_t3428488447** get_address_of_blocksInChannel_7() { return &___blocksInChannel_7; }
-	inline void set_blocksInChannel_7(Queue_1U5BU5D_t3428488447* value)
+	inline static int32_t get_offset_of_blocksInPool_7() { return static_cast<int32_t>(offsetof(PlaneController_t1730645752_StaticFields, ___blocksInPool_7)); }
+	inline Queue_1U5BU5D_t3428488447* get_blocksInPool_7() const { return ___blocksInPool_7; }
+	inline Queue_1U5BU5D_t3428488447** get_address_of_blocksInPool_7() { return &___blocksInPool_7; }
+	inline void set_blocksInPool_7(Queue_1U5BU5D_t3428488447* value)
 	{
-		___blocksInChannel_7 = value;
-		Il2CppCodeGenWriteBarrier(&___blocksInChannel_7, value);
+		___blocksInPool_7 = value;
+		Il2CppCodeGenWriteBarrier(&___blocksInPool_7, value);
 	}
 
-	inline static int32_t get_offset_of_blockClone_11() { return static_cast<int32_t>(offsetof(PlaneController_t1730645752_StaticFields, ___blockClone_11)); }
-	inline BlockWrapperU5BU5D_t4016510019* get_blockClone_11() const { return ___blockClone_11; }
-	inline BlockWrapperU5BU5D_t4016510019** get_address_of_blockClone_11() { return &___blockClone_11; }
-	inline void set_blockClone_11(BlockWrapperU5BU5D_t4016510019* value)
+	inline static int32_t get_offset_of_blocksInChannel_8() { return static_cast<int32_t>(offsetof(PlaneController_t1730645752_StaticFields, ___blocksInChannel_8)); }
+	inline Queue_1U5BU5D_t3428488447* get_blocksInChannel_8() const { return ___blocksInChannel_8; }
+	inline Queue_1U5BU5D_t3428488447** get_address_of_blocksInChannel_8() { return &___blocksInChannel_8; }
+	inline void set_blocksInChannel_8(Queue_1U5BU5D_t3428488447* value)
 	{
-		___blockClone_11 = value;
-		Il2CppCodeGenWriteBarrier(&___blockClone_11, value);
+		___blocksInChannel_8 = value;
+		Il2CppCodeGenWriteBarrier(&___blocksInChannel_8, value);
 	}
 
-	inline static int32_t get_offset_of_mutex_14() { return static_cast<int32_t>(offsetof(PlaneController_t1730645752_StaticFields, ___mutex_14)); }
-	inline Object_t3878351788 * get_mutex_14() const { return ___mutex_14; }
-	inline Object_t3878351788 ** get_address_of_mutex_14() { return &___mutex_14; }
-	inline void set_mutex_14(Object_t3878351788 * value)
+	inline static int32_t get_offset_of_planeObj_10() { return static_cast<int32_t>(offsetof(PlaneController_t1730645752_StaticFields, ___planeObj_10)); }
+	inline GameObjectU5BU5D_t3499186955* get_planeObj_10() const { return ___planeObj_10; }
+	inline GameObjectU5BU5D_t3499186955** get_address_of_planeObj_10() { return &___planeObj_10; }
+	inline void set_planeObj_10(GameObjectU5BU5D_t3499186955* value)
 	{
-		___mutex_14 = value;
-		Il2CppCodeGenWriteBarrier(&___mutex_14, value);
+		___planeObj_10 = value;
+		Il2CppCodeGenWriteBarrier(&___planeObj_10, value);
 	}
 
-	inline static int32_t get_offset_of_startingPoint_15() { return static_cast<int32_t>(offsetof(PlaneController_t1730645752_StaticFields, ___startingPoint_15)); }
-	inline Vector3U5BU5D_t3227571696* get_startingPoint_15() const { return ___startingPoint_15; }
-	inline Vector3U5BU5D_t3227571696** get_address_of_startingPoint_15() { return &___startingPoint_15; }
-	inline void set_startingPoint_15(Vector3U5BU5D_t3227571696* value)
+	inline static int32_t get_offset_of_touchZoneObj_11() { return static_cast<int32_t>(offsetof(PlaneController_t1730645752_StaticFields, ___touchZoneObj_11)); }
+	inline GameObjectU5BU5D_t3499186955* get_touchZoneObj_11() const { return ___touchZoneObj_11; }
+	inline GameObjectU5BU5D_t3499186955** get_address_of_touchZoneObj_11() { return &___touchZoneObj_11; }
+	inline void set_touchZoneObj_11(GameObjectU5BU5D_t3499186955* value)
 	{
-		___startingPoint_15 = value;
-		Il2CppCodeGenWriteBarrier(&___startingPoint_15, value);
+		___touchZoneObj_11 = value;
+		Il2CppCodeGenWriteBarrier(&___touchZoneObj_11, value);
 	}
 
-	inline static int32_t get_offset_of_endingPointLocalMin_16() { return static_cast<int32_t>(offsetof(PlaneController_t1730645752_StaticFields, ___endingPointLocalMin_16)); }
-	inline float get_endingPointLocalMin_16() const { return ___endingPointLocalMin_16; }
-	inline float* get_address_of_endingPointLocalMin_16() { return &___endingPointLocalMin_16; }
-	inline void set_endingPointLocalMin_16(float value)
+	inline static int32_t get_offset_of_blockClone_12() { return static_cast<int32_t>(offsetof(PlaneController_t1730645752_StaticFields, ___blockClone_12)); }
+	inline BlockWrapperU5BU5D_t4016510019* get_blockClone_12() const { return ___blockClone_12; }
+	inline BlockWrapperU5BU5D_t4016510019** get_address_of_blockClone_12() { return &___blockClone_12; }
+	inline void set_blockClone_12(BlockWrapperU5BU5D_t4016510019* value)
 	{
-		___endingPointLocalMin_16 = value;
+		___blockClone_12 = value;
+		Il2CppCodeGenWriteBarrier(&___blockClone_12, value);
 	}
 
-	inline static int32_t get_offset_of_touchZoneLocalMin_17() { return static_cast<int32_t>(offsetof(PlaneController_t1730645752_StaticFields, ___touchZoneLocalMin_17)); }
-	inline float get_touchZoneLocalMin_17() const { return ___touchZoneLocalMin_17; }
-	inline float* get_address_of_touchZoneLocalMin_17() { return &___touchZoneLocalMin_17; }
-	inline void set_touchZoneLocalMin_17(float value)
+	inline static int32_t get_offset_of_mutex_15() { return static_cast<int32_t>(offsetof(PlaneController_t1730645752_StaticFields, ___mutex_15)); }
+	inline Object_t3878351788 * get_mutex_15() const { return ___mutex_15; }
+	inline Object_t3878351788 ** get_address_of_mutex_15() { return &___mutex_15; }
+	inline void set_mutex_15(Object_t3878351788 * value)
 	{
-		___touchZoneLocalMin_17 = value;
+		___mutex_15 = value;
+		Il2CppCodeGenWriteBarrier(&___mutex_15, value);
+	}
+
+	inline static int32_t get_offset_of_startingPoint_16() { return static_cast<int32_t>(offsetof(PlaneController_t1730645752_StaticFields, ___startingPoint_16)); }
+	inline Vector3U5BU5D_t3227571696* get_startingPoint_16() const { return ___startingPoint_16; }
+	inline Vector3U5BU5D_t3227571696** get_address_of_startingPoint_16() { return &___startingPoint_16; }
+	inline void set_startingPoint_16(Vector3U5BU5D_t3227571696* value)
+	{
+		___startingPoint_16 = value;
+		Il2CppCodeGenWriteBarrier(&___startingPoint_16, value);
+	}
+
+	inline static int32_t get_offset_of_endingPointLocalMin_17() { return static_cast<int32_t>(offsetof(PlaneController_t1730645752_StaticFields, ___endingPointLocalMin_17)); }
+	inline float get_endingPointLocalMin_17() const { return ___endingPointLocalMin_17; }
+	inline float* get_address_of_endingPointLocalMin_17() { return &___endingPointLocalMin_17; }
+	inline void set_endingPointLocalMin_17(float value)
+	{
+		___endingPointLocalMin_17 = value;
+	}
+
+	inline static int32_t get_offset_of_touchZoneLocalMin_18() { return static_cast<int32_t>(offsetof(PlaneController_t1730645752_StaticFields, ___touchZoneLocalMin_18)); }
+	inline float get_touchZoneLocalMin_18() const { return ___touchZoneLocalMin_18; }
+	inline float* get_address_of_touchZoneLocalMin_18() { return &___touchZoneLocalMin_18; }
+	inline void set_touchZoneLocalMin_18(float value)
+	{
+		___touchZoneLocalMin_18 = value;
 	}
 };
 

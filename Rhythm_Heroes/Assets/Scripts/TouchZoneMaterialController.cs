@@ -25,4 +25,14 @@ public class TouchZoneMaterialController : MonoBehaviour {
 	void onTouchExit() {
 		mat.mainTexture = textures [0];
 	}
+
+	public static void changeTouchZoneMaterial(bool isHot) {
+		if(isHot) {
+			print ("hot");
+			// mat.mainTexture = ***
+		} else {
+			print ("cool down");
+			// mat.mainTexture = ***
+		}
+	}
 }

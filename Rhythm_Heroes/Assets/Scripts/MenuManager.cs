@@ -5,22 +5,44 @@ using UnityEngine.SceneManagement;
 
 public class MenuManager : MonoBehaviour {
 	public static int sceneNumber;
+
 	public void GoToThree() {
+		#if UNITY_EDITOR
+		iOSMusic.readLocalMusic(1);
+		SceneManager.LoadScene ("GameScene_ThreeTrack");
+		#endif
+
+		#if UNITY_IPHONE
 		sceneNumber = 3;
 		iOSMusic.instance.HasAudioClipStartedPlaying = false;
 		musicManager.loadAudioClip(iOSMusic.instance.ShouldAppendToPlaylist);
+		#endif
 	}
 
 	public void GoTo_Four() {
+		#if UNITY_EDITOR
+		iOSMusic.readLocalMusic(1);
+		SceneManager.LoadScene ("GameScene_FourTrack");
+		#endif
+
+		#if UNITY_IPHONE
 		sceneNumber = 4;
 		iOSMusic.instance.HasAudioClipStartedPlaying = false;
 		musicManager.loadAudioClip(iOSMusic.instance.ShouldAppendToPlaylist);
+		#endif
 	}
 
 	public void GoTo_Five() {
+		#if UNITY_EDITOR
+		iOSMusic.readLocalMusic(1);
+		SceneManager.LoadScene ("GameScene_FiveTrack");
+		#endif
+
+		#if UNITY_IPHONE
 		sceneNumber = 5;
 		iOSMusic.instance.HasAudioClipStartedPlaying = false;
 		musicManager.loadAudioClip(iOSMusic.instance.ShouldAppendToPlaylist);
+		#endif
 	}
 
 	public void GoTo_MainScene() {

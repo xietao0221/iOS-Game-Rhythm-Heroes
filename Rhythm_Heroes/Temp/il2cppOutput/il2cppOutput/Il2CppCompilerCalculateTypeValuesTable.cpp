@@ -752,6 +752,7 @@
 #include "System_Core_System_Security_Cryptography_AesTransf2186883254.h"
 #include "System_Core_U3CPrivateImplementationDetailsU3E3053238933.h"
 #include "UnityEngine_UnityEngine_SendMessageOptions2623293100.h"
+#include "UnityEngine_UnityEngine_Space1602970931.h"
 #include "UnityEngine_UnityEngine_RuntimePlatform1574985880.h"
 #include "UnityEngine_UnityEngine_LogType3529269451.h"
 #include "UnityEngine_UnityEngine_WaitForSeconds1291133240.h"
@@ -829,6 +830,7 @@
 #include "UnityEngine_UnityEngine_FFTWindow1124744433.h"
 #include "UnityEngine_UnityEngine_AnimationEventSource2022798750.h"
 #include "UnityEngine_UnityEngine_AnimationEvent3344771555.h"
+#include "UnityEngine_UnityEngine_Animation_Enumerator1072804836.h"
 #include "UnityEngine_UnityEngine_AnimatorClipInfo4255364242.h"
 #include "UnityEngine_UnityEngine_AnimatorStateInfo4162640357.h"
 #include "UnityEngine_UnityEngine_AnimatorTransitionInfo2791832279.h"
@@ -1034,7 +1036,6 @@
 #include "UnityEngine_UI_UnityEngine_UI_Shadow1464142665.h"
 #include "UnityEngine_UI_U3CPrivateImplementationDetailsU3E3053238933.h"
 #include "AssemblyU2DCSharp_AnimationController4113927712.h"
-#include "AssemblyU2DCSharp_AnimationEvents643886493.h"
 #include "AssemblyU2DCSharp_AudioProcessor2423098748.h"
 #include "AssemblyU2DCSharp_AudioProcessor_Autoco1972512379.h"
 #include "AssemblyU2DCSharp_BackgroundMusicController1016431731.h"
@@ -1049,6 +1050,11 @@
 #include "AssemblyU2DCSharp_TouchZoneMaterialController633689838.h"
 #include "AssemblyU2DCSharp_WordController1618021990.h"
 #include "AssemblyU2DCSharp_WordController_U3CshowWordU3Ec__4074000763.h"
+#include "AssemblyU2DCSharp_LightBeamsControlScript2775191514.h"
+#include "AssemblyU2DCSharp_LookAtBehaviour485508491.h"
+#include "AssemblyU2DCSharp_RayBehavior3008801916.h"
+#include "AssemblyU2DCSharp_RotateBehaviour3975506306.h"
+#include "AssemblyU2DCSharp_ScrollBehaviour1173938256.h"
 #include "AssemblyU2DCSharp_AppleMusicController2416020743.h"
 #include "AssemblyU2DCSharp_iOSMusic2155735576.h"
 #include "AssemblyU2DCSharp_iOSMusic_U3CLoadMusicU3Ec__Iterat274259292.h"
@@ -1348,8 +1354,10 @@
 #include "UnityEngine_UnityEngine_WaitForEndOfFrame1917318876.h"
 #include "UnityEngine_UnityEngine_ScriptableObject184905905.h"
 #include "UnityEngine_UnityEngine_UnhandledExceptionHandler991098059.h"
+#include "UnityEngine_UnityEngine_MeshFilter4177078322.h"
 #include "UnityEngine_UnityEngine_Mesh1525280346.h"
 #include "UnityEngine_UnityEngine_Renderer1092684080.h"
+#include "UnityEngine_UnityEngine_LineRenderer305781060.h"
 #include "UnityEngine_UnityEngine_Screen3994030297.h"
 #include "UnityEngine_UnityEngine_GUIElement4113441198.h"
 #include "UnityEngine_UnityEngine_GUILayer999894339.h"
@@ -1393,6 +1401,7 @@
 #include "UnityEngine_UnityEngine_Physics2601443956.h"
 #include "UnityEngine_UnityEngine_Rigidbody1972007546.h"
 #include "UnityEngine_UnityEngine_Collider955670625.h"
+#include "UnityEngine_UnityEngine_MeshCollider1080724846.h"
 #include "UnityEngine_UnityEngine_CharacterController2029520850.h"
 #include "UnityEngine_UnityEngine_Rigidbody2D3632243084.h"
 #include "UnityEngine_UnityEngine_Collider2D1890038195.h"
@@ -1400,6 +1409,7 @@
 #include "UnityEngine_UnityEngine_AudioClip_PCMReaderCallback749510018.h"
 #include "UnityEngine_UnityEngine_AudioClip_PCMSetPositionCa2977871350.h"
 #include "UnityEngine_UnityEngine_AudioSource3628549054.h"
+#include "UnityEngine_UnityEngine_Animation350396337.h"
 #include "UnityEngine_UnityEngine_AnimationState3357637594.h"
 #include "UnityEngine_UnityEngine_Animator792326996.h"
 #include "UnityEngine_UnityEngine_RuntimeAnimatorController3860414472.h"
@@ -1459,6 +1469,8 @@
 #include "UnityEngine_UI_UnityEngine_UI_PositionAsUV1826283646.h"
 #include "UnityEngine_UI_U3CPrivateImplementationDetailsU3E_U214874486.h"
 #include "AssemblyU2DCSharp_U3CModuleU3E86524790.h"
+#include "AssemblyU2DCSharp_ReverseNormals4264251210.h"
+#include "AssemblyU2DCSharp_LookAtCameraBehaviour551815526.h"
 #include "AssemblyU2DCSharp_musicManager2706273736.h"
 #include "AssemblyU2DCSharp_iOSMusicGUI3167605763.h"
 #include "AssemblyU2DCSharp_U3CPrivateImplementationDetailsU3214874515.h"
@@ -1470,7 +1482,7 @@
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-extern const int32_t g_FieldOffsetTable[6574] = 
+extern const int32_t g_FieldOffsetTable[6619] = 
 {
 	0,
 	0,
@@ -5933,6 +5945,9 @@ extern const int32_t g_FieldOffsetTable[6574] =
 	SendMessageOptions_t2623293100::get_offset_of_value___1() + static_cast<int32_t>(sizeof(Il2CppObject)),
 	0,
 	0,
+	Space_t1602970931::get_offset_of_value___1() + static_cast<int32_t>(sizeof(Il2CppObject)),
+	0,
+	0,
 	RuntimePlatform_t1574985880::get_offset_of_value___1() + static_cast<int32_t>(sizeof(Il2CppObject)),
 	0,
 	0,
@@ -6306,6 +6321,8 @@ extern const int32_t g_FieldOffsetTable[6574] =
 	AnimationEvent_t3344771555::get_offset_of_m_StateSender_8(),
 	AnimationEvent_t3344771555::get_offset_of_m_AnimatorStateInfo_9(),
 	AnimationEvent_t3344771555::get_offset_of_m_AnimatorClipInfo_10(),
+	Enumerator_t1072804842::get_offset_of_m_Outer_0(),
+	Enumerator_t1072804842::get_offset_of_m_CurrentIndex_1(),
 	AnimatorClipInfo_t4255364242::get_offset_of_m_ClipInstanceID_0() + static_cast<int32_t>(sizeof(Il2CppObject)),
 	AnimatorClipInfo_t4255364242::get_offset_of_m_Weight_1() + static_cast<int32_t>(sizeof(Il2CppObject)),
 	AnimatorStateInfo_t4162640357::get_offset_of_m_Name_0() + static_cast<int32_t>(sizeof(Il2CppObject)),
@@ -7926,7 +7943,6 @@ extern const int32_t g_FieldOffsetTable[6574] =
 	Shadow_t1464142665::get_offset_of_m_UseGraphicAlpha_6(),
 	U3CPrivateImplementationDetailsU3E_t3053238937_StaticFields::get_offset_of_U24U24fieldU2D0_0(),
 	AnimationController_t4113927712::get_offset_of_anim_2(),
-	AnimationEvents_t643886493::get_offset_of_thisAnim_2(),
 	AudioProcessor_t2423098748::get_offset_of_audioSource_2(),
 	AudioProcessor_t2423098748::get_offset_of_lastT_3(),
 	AudioProcessor_t2423098748::get_offset_of_nowT_4(),
@@ -7973,19 +7989,20 @@ extern const int32_t g_FieldOffsetTable[6574] =
 	PlaneController_t1730645752_StaticFields::get_offset_of_channelNum_3(),
 	PlaneController_t1730645752_StaticFields::get_offset_of_blockNumPerChannel_4(),
 	PlaneController_t1730645752_StaticFields::get_offset_of_blockSpeed_5(),
-	PlaneController_t1730645752_StaticFields::get_offset_of_blocksInPool_6(),
-	PlaneController_t1730645752_StaticFields::get_offset_of_blocksInChannel_7(),
-	PlaneController_t1730645752::get_offset_of_prefabBlock_8(),
-	PlaneController_t1730645752::get_offset_of_planeObj_9(),
-	PlaneController_t1730645752::get_offset_of_touchZoneObj_10(),
-	PlaneController_t1730645752_StaticFields::get_offset_of_blockClone_11(),
-	PlaneController_t1730645752::get_offset_of_wordObj_12(),
-	PlaneController_t1730645752::get_offset_of_scoreObj_13(),
-	PlaneController_t1730645752_StaticFields::get_offset_of_mutex_14(),
-	PlaneController_t1730645752_StaticFields::get_offset_of_startingPoint_15(),
-	PlaneController_t1730645752_StaticFields::get_offset_of_endingPointLocalMin_16(),
-	PlaneController_t1730645752_StaticFields::get_offset_of_touchZoneLocalMin_17(),
-	PlaneController_t1730645752::get_offset_of_delay_18(),
+	PlaneController_t1730645752_StaticFields::get_offset_of_comboBonus_6(),
+	PlaneController_t1730645752_StaticFields::get_offset_of_blocksInPool_7(),
+	PlaneController_t1730645752_StaticFields::get_offset_of_blocksInChannel_8(),
+	PlaneController_t1730645752::get_offset_of_prefabBlock_9(),
+	PlaneController_t1730645752_StaticFields::get_offset_of_planeObj_10(),
+	PlaneController_t1730645752_StaticFields::get_offset_of_touchZoneObj_11(),
+	PlaneController_t1730645752_StaticFields::get_offset_of_blockClone_12(),
+	PlaneController_t1730645752::get_offset_of_wordObj_13(),
+	PlaneController_t1730645752::get_offset_of_scoreObj_14(),
+	PlaneController_t1730645752_StaticFields::get_offset_of_mutex_15(),
+	PlaneController_t1730645752_StaticFields::get_offset_of_startingPoint_16(),
+	PlaneController_t1730645752_StaticFields::get_offset_of_endingPointLocalMin_17(),
+	PlaneController_t1730645752_StaticFields::get_offset_of_touchZoneLocalMin_18(),
+	PlaneController_t1730645752::get_offset_of_delay_19(),
 	BlockWrapper_t1007084390::get_offset_of_blockObj_0(),
 	PlaneMaterialController_t2074521471::get_offset_of_mat_2(),
 	PlaneMaterialController_t2074521471::get_offset_of_textures_3(),
@@ -8016,10 +8033,13 @@ extern const int32_t g_FieldOffsetTable[6574] =
 	TouchController_t2155287579::get_offset_of_touchList_4(),
 	TouchController_t2155287579::get_offset_of_touchesOld_5(),
 	TouchController_t2155287579::get_offset_of_hit_6(),
-	TouchController_t2155287579::get_offset_of_planeObj_7(),
-	TouchController_t2155287579::get_offset_of_scoreTextObj_8(),
-	TouchController_t2155287579::get_offset_of_wordTextObj_9(),
-	TouchController_t2155287579::get_offset_of_channelNum_10(),
+	TouchController_t2155287579::get_offset_of_comboBonus_7(),
+	TouchController_t2155287579::get_offset_of_planeObj_8(),
+	TouchController_t2155287579::get_offset_of_scoreTextObj_9(),
+	TouchController_t2155287579::get_offset_of_wordTextObj_10(),
+	TouchController_t2155287579::get_offset_of_channelNum_11(),
+	TouchController_t2155287579_StaticFields::get_offset_of_comboCount_12(),
+	TouchController_t2155287579_StaticFields::get_offset_of_hasChanged_13(),
 	TouchZoneMaterialController_t633689838::get_offset_of_mat_2(),
 	TouchZoneMaterialController_t633689838::get_offset_of_textures_3(),
 	WordController_t1618021990::get_offset_of_wordText_2(),
@@ -8031,6 +8051,43 @@ extern const int32_t g_FieldOffsetTable[6574] =
 	U3CshowWordU3Ec__Iterator1_t4074000763::get_offset_of_U3CU24U3Es_4(),
 	U3CshowWordU3Ec__Iterator1_t4074000763::get_offset_of_U3CU24U3Edelay_5(),
 	U3CshowWordU3Ec__Iterator1_t4074000763::get_offset_of_U3CU3Ef__this_6(),
+	LightBeamsControlScript_t2775191514::get_offset_of_SourceObject_2(),
+	LightBeamsControlScript_t2775191514::get_offset_of_TargetObject_3(),
+	LightBeamsControlScript_t2775191514::get_offset_of_RayPrefab_4(),
+	LightBeamsControlScript_t2775191514::get_offset_of_RayColor_5(),
+	LightBeamsControlScript_t2775191514::get_offset_of_PositionRange_6(),
+	LightBeamsControlScript_t2775191514::get_offset_of_RadiusA_7(),
+	LightBeamsControlScript_t2775191514::get_offset_of_RadiusB_8(),
+	LightBeamsControlScript_t2775191514::get_offset_of_WidthA_9(),
+	LightBeamsControlScript_t2775191514::get_offset_of_WidthB_10(),
+	LightBeamsControlScript_t2775191514::get_offset_of_FadeSpeed_11(),
+	LightBeamsControlScript_t2775191514::get_offset_of_NumRays_12(),
+	LightBeamsControlScript_t2775191514::get_offset_of_Spawned_13(),
+	LightBeamsControlScript_t2775191514::get_offset_of_TimeToSpawnAll_14(),
+	LightBeamsControlScript_t2775191514::get_offset_of_spawnInterval_15(),
+	LightBeamsControlScript_t2775191514::get_offset_of_currentCountdown_16(),
+	LightBeamsControlScript_t2775191514::get_offset_of_rays_17(),
+	LookAtBehaviour_t485508491::get_offset_of_Target_2(),
+	RayBehavior_t3008801916::get_offset_of_BeginLocation_2(),
+	RayBehavior_t3008801916::get_offset_of_EndLocation_3(),
+	RayBehavior_t3008801916::get_offset_of_BeginColor_4(),
+	RayBehavior_t3008801916::get_offset_of_EndColor_5(),
+	RayBehavior_t3008801916::get_offset_of_PositionRange_6(),
+	RayBehavior_t3008801916::get_offset_of_WidthA_7(),
+	RayBehavior_t3008801916::get_offset_of_WidthB_8(),
+	RayBehavior_t3008801916::get_offset_of_RadiusA_9(),
+	RayBehavior_t3008801916::get_offset_of_RadiusB_10(),
+	RayBehavior_t3008801916::get_offset_of_Line_11(),
+	RayBehavior_t3008801916::get_offset_of_Anim_12(),
+	RayBehavior_t3008801916::get_offset_of_changed_13(),
+	RayBehavior_t3008801916::get_offset_of_Offset_14(),
+	RayBehavior_t3008801916::get_offset_of_AlphaCurve_15(),
+	RayBehavior_t3008801916::get_offset_of_FadeSpeed_16(),
+	RotateBehaviour_t3975506306::get_offset_of_RotationAmount_2(),
+	ScrollBehaviour_t1173938256::get_offset_of_materialIndex_2(),
+	ScrollBehaviour_t1173938256::get_offset_of_uvAnimationRate_3(),
+	ScrollBehaviour_t1173938256::get_offset_of_textureName_4(),
+	ScrollBehaviour_t1173938256::get_offset_of_uvOffset_5(),
 	AppleMusicController_t2416020743_StaticFields::get_offset_of_instance_2(),
 	iOSMusic_t2155735576_StaticFields::get_offset_of_instance_2(),
 	iOSMusic_t2155735576::get_offset_of_musicData_3(),
@@ -8050,7 +8107,7 @@ extern const int32_t g_FieldOffsetTable[6574] =
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
-extern const Il2CppTypeDefinitionSizes g_Il2CppTypeDefinitionSizesTable[1660] = 
+extern const Il2CppTypeDefinitionSizes g_Il2CppTypeDefinitionSizesTable[1672] = 
 {
 	sizeof (U3CModuleU3E_t86524790), -1, 0, 0,
 	sizeof (Il2CppObject), -1, 0, 0,
@@ -9227,6 +9284,7 @@ extern const Il2CppTypeDefinitionSizes g_Il2CppTypeDefinitionSizesTable[1660] =
 	sizeof (AssetBundleRequest_t920637194), sizeof(AssetBundleRequest_t920637194_marshaled_pinvoke), 0, 0,
 	sizeof (AssetBundle_t3959431103), -1, 0, 0,
 	sizeof (SendMessageOptions_t2623293100)+ sizeof (Il2CppObject), sizeof(int32_t), 0, 0,
+	sizeof (Space_t1602970931)+ sizeof (Il2CppObject), sizeof(int32_t), 0, 0,
 	sizeof (RuntimePlatform_t1574985880)+ sizeof (Il2CppObject), sizeof(int32_t), 0, 0,
 	sizeof (LogType_t3529269451)+ sizeof (Il2CppObject), sizeof(int32_t), 0, 0,
 	sizeof (WaitForSeconds_t1291133240), sizeof(WaitForSeconds_t1291133240_marshaled_pinvoke), 0, 0,
@@ -9237,8 +9295,10 @@ extern const Il2CppTypeDefinitionSizes g_Il2CppTypeDefinitionSizesTable[1660] =
 	sizeof (UnhandledExceptionHandler_t991098059), -1, 0, 0,
 	sizeof (GameCenterPlatform_t899915837), -1, sizeof(GameCenterPlatform_t899915837_StaticFields), 0,
 	sizeof (GcLeaderboard_t3894999172), -1, 0, 0,
+	sizeof (MeshFilter_t4177078322), -1, 0, 0,
 	sizeof (Mesh_t1525280346), -1, 0, 0,
 	sizeof (Renderer_t1092684080), -1, 0, 0,
+	sizeof (LineRenderer_t305781060), -1, 0, 0,
 	sizeof (Screen_t3994030297), -1, 0, 0,
 	sizeof (RectOffset_t3394170884), -1, 0, 0,
 	sizeof (GUIElement_t4113441198), -1, 0, 0,
@@ -9343,6 +9403,7 @@ extern const Il2CppTypeDefinitionSizes g_Il2CppTypeDefinitionSizesTable[1660] =
 	sizeof (ContactPoint_t2951122365)+ sizeof (Il2CppObject), sizeof(ContactPoint_t2951122365_marshaled_pinvoke), 0, 0,
 	sizeof (Rigidbody_t1972007546), -1, 0, 0,
 	sizeof (Collider_t955670625), -1, 0, 0,
+	sizeof (MeshCollider_t1080724846), -1, 0, 0,
 	sizeof (RaycastHit_t46221527)+ sizeof (Il2CppObject), -1, 0, 0,
 	sizeof (CharacterController_t2029520850), -1, 0, 0,
 	sizeof (Physics2D_t2930244358), -1, sizeof(Physics2D_t2930244358_StaticFields), 0,
@@ -9361,6 +9422,8 @@ extern const Il2CppTypeDefinitionSizes g_Il2CppTypeDefinitionSizesTable[1660] =
 	sizeof (AudioSource_t3628549054), -1, 0, 0,
 	sizeof (AnimationEventSource_t2022798750)+ sizeof (Il2CppObject), sizeof(int32_t), 0, 0,
 	sizeof (AnimationEvent_t3344771555), -1, 0, 0,
+	sizeof (Animation_t350396337), -1, 0, 0,
+	sizeof (Enumerator_t1072804842), -1, 0, 0,
 	sizeof (AnimationState_t3357637594), -1, 0, 0,
 	sizeof (AnimatorClipInfo_t4255364242)+ sizeof (Il2CppObject), sizeof(AnimatorClipInfo_t4255364242_marshaled_pinvoke), 0, 0,
 	sizeof (AnimatorStateInfo_t4162640357)+ sizeof (Il2CppObject), sizeof(AnimatorStateInfo_t4162640357_marshaled_pinvoke), 0, 0,
@@ -9688,8 +9751,8 @@ extern const Il2CppTypeDefinitionSizes g_Il2CppTypeDefinitionSizesTable[1660] =
 	sizeof (U3CPrivateImplementationDetailsU3E_t3053238937), -1, sizeof(U3CPrivateImplementationDetailsU3E_t3053238937_StaticFields), 0,
 	sizeof (U24ArrayTypeU2412_t214874489)+ sizeof (Il2CppObject), sizeof(U24ArrayTypeU2412_t214874489_marshaled_pinvoke), 0, 0,
 	sizeof (U3CModuleU3E_t86524796), -1, 0, 0,
+	sizeof (ReverseNormals_t4264251210), -1, 0, 0,
 	sizeof (AnimationController_t4113927712), -1, 0, 0,
-	sizeof (AnimationEvents_t643886493), -1, 0, 0,
 	sizeof (AudioProcessor_t2423098748), -1, 0, 0,
 	0, -1, 0, 0,
 	sizeof (Autoco_t1972512379), -1, 0, 0,
@@ -9701,10 +9764,16 @@ extern const Il2CppTypeDefinitionSizes g_Il2CppTypeDefinitionSizesTable[1660] =
 	sizeof (PlaneMaterialController_t2074521471), -1, 0, 0,
 	sizeof (ScoreController_t2917050286), -1, sizeof(ScoreController_t2917050286_StaticFields), 0,
 	sizeof (StatController_t1292384560), -1, 0, 0,
-	sizeof (TouchController_t2155287579), -1, 0, 0,
+	sizeof (TouchController_t2155287579), -1, sizeof(TouchController_t2155287579_StaticFields), 0,
 	sizeof (TouchZoneMaterialController_t633689838), -1, 0, 0,
 	sizeof (WordController_t1618021990), -1, 0, 0,
 	sizeof (U3CshowWordU3Ec__Iterator1_t4074000763), -1, 0, 0,
+	sizeof (LightBeamsControlScript_t2775191514), -1, 0, 0,
+	sizeof (LookAtBehaviour_t485508491), -1, 0, 0,
+	sizeof (LookAtCameraBehaviour_t551815526), -1, 0, 0,
+	sizeof (RayBehavior_t3008801916), -1, 0, 0,
+	sizeof (RotateBehaviour_t3975506306), -1, 0, 0,
+	sizeof (ScrollBehaviour_t1173938256), -1, 0, 0,
 	sizeof (AppleMusicController_t2416020743), -1, sizeof(AppleMusicController_t2416020743_StaticFields), 0,
 	sizeof (musicManager_t2706273736), -1, 0, 0,
 	sizeof (iOSMusic_t2155735576), -1, sizeof(iOSMusic_t2155735576_StaticFields), 0,

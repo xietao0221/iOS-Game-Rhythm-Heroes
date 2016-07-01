@@ -215,9 +215,6 @@ public class AudioProcessor : MonoBehaviour {
 
             /* update column index (for ring buffer) */
             if (++now == colmax) now = 0;
-
-            //Debug.Log(System.Math.Round(60 / (tempopd * framePeriod)) + " bpm");
-            //Debug.Log(System.Math.Round(auco.avgBpm()) + " bpm");
         }
     }
 
@@ -232,8 +229,6 @@ public class AudioProcessor : MonoBehaviour {
 
         GetComponent<Camera>().clearFlags = CameraClearFlags.Color;
         Camera.main.backgroundColor = color;
-
-        //camera.backgroundColor = color;
     }
 
     public float getBandWidth() {
@@ -268,13 +263,9 @@ public class AudioProcessor : MonoBehaviour {
                 avg += data[j];
             }
             // line has been changed since discussion in the comments
-            // avg /= (hiBound - lowBound);
             avg /= (hiBound - lowBound + 1);
             averages[i] = avg;
         }
-//		for (int i = 0; i <=6; i++) {
-//			averages [i] = 0;
-//		}
     }
 
     float map(float s, float a1, float a2, float b1, float b2) {

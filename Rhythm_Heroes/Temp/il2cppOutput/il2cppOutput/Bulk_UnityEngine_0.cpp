@@ -17,6 +17,16 @@
 struct AddComponentMenu_t2323189064;
 // System.String
 struct String_t;
+// UnityEngine.Animation
+struct Animation_t350396337;
+// UnityEngine.AnimationState
+struct AnimationState_t3357637594;
+// System.Collections.IEnumerator
+struct IEnumerator_t287207039;
+// UnityEngine.Animation/Enumerator
+struct Enumerator_t1072804842;
+// System.Object
+struct Il2CppObject;
 // UnityEngine.AnimationCurve
 struct AnimationCurve_t3342907448;
 struct AnimationCurve_t3342907448_marshaled_pinvoke;
@@ -27,16 +37,12 @@ struct AnimationEvent_t3344771555;
 // UnityEngine.Object
 struct Object_t3878351788;
 struct Object_t3878351788_marshaled_pinvoke;
-// UnityEngine.AnimationState
-struct AnimationState_t3357637594;
 // UnityEngine.Animator
 struct Animator_t792326996;
 // UnityEngine.RuntimeAnimatorController
 struct RuntimeAnimatorController_t3860414472;
 // UnityEngine.Application/LogCallback
 struct LogCallback_t3235662729;
-// System.Object
-struct Il2CppObject;
 // System.IAsyncResult
 struct IAsyncResult_t537683269;
 // System.AsyncCallback
@@ -125,8 +131,6 @@ struct Collision_t1119538015;
 struct Transform_t284553113;
 // UnityEngine.ContactPoint[]
 struct ContactPointU5BU5D_t1988025008;
-// System.Collections.IEnumerator
-struct IEnumerator_t287207039;
 // UnityEngine.Component
 struct Component_t2126946602;
 // UnityEngine.Collision2D
@@ -236,10 +240,6 @@ struct GUILayoutOptionU5BU5D_t1890718142;
 struct GUILayoutGroup_t1013890471;
 // UnityEngine.GUILayoutUtility/LayoutCache
 struct LayoutCache_t3653031512;
-// UnityEngine.GUIScrollGroup
-struct GUIScrollGroup_t1067753444;
-// UnityEngine.GUISettings
-struct GUISettings_t1668697771;
 
 #include "class-internals.h"
 #include "codegen/il2cpp-codegen.h"
@@ -252,21 +252,25 @@ struct GUISettings_t1668697771;
 #include "mscorlib_System_Void2779279689.h"
 #include "mscorlib_System_Attribute498693649MethodDeclarations.h"
 #include "mscorlib_System_Int322847414787.h"
+#include "UnityEngine_UnityEngine_Animation350396337.h"
+#include "UnityEngine_UnityEngine_Animation350396337MethodDeclarations.h"
+#include "UnityEngine_UnityEngine_AnimationState3357637594.h"
+#include "UnityEngine_UnityEngine_Animation_Enumerator1072804836MethodDeclarations.h"
+#include "UnityEngine_UnityEngine_Animation_Enumerator1072804836.h"
+#include "mscorlib_System_Object837106420MethodDeclarations.h"
+#include "mscorlib_System_Object837106420.h"
+#include "mscorlib_System_Boolean211005341.h"
 #include "UnityEngine_UnityEngine_AnimationCurve3342907448.h"
 #include "UnityEngine_UnityEngine_AnimationCurve3342907448MethodDeclarations.h"
 #include "UnityEngine_ArrayTypes.h"
 #include "UnityEngine_UnityEngine_Keyframe2095052507.h"
-#include "mscorlib_System_Object837106420MethodDeclarations.h"
-#include "mscorlib_System_Object837106420.h"
 #include "UnityEngine_UnityEngine_AnimationEvent3344771555.h"
 #include "UnityEngine_UnityEngine_AnimationEvent3344771555MethodDeclarations.h"
 #include "mscorlib_System_Single958209021.h"
 #include "mscorlib_System_String968488902MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_Object3878351788.h"
 #include "UnityEngine_UnityEngine_AnimationEventSource2022798750.h"
-#include "UnityEngine_UnityEngine_AnimationState3357637594.h"
 #include "UnityEngine_UnityEngine_SendMessageOptions2623293100.h"
-#include "mscorlib_System_Boolean211005341.h"
 #include "UnityEngine_UnityEngine_Debug1588791936MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_AnimatorStateInfo4162640357.h"
 #include "UnityEngine_UnityEngine_AnimatorClipInfo4255364242.h"
@@ -575,10 +579,6 @@ struct GUISettings_t1668697771;
 #include "mscorlib_System_Collections_Stack1623036922MethodDeclarations.h"
 #include "mscorlib_System_Collections_Stack1623036922.h"
 #include "UnityEngine_UnityEngine_Screen3994030297MethodDeclarations.h"
-#include "UnityEngine_UnityEngine_GUIScrollGroup1067753444.h"
-#include "UnityEngine_UnityEngine_GUIScrollGroup1067753444MethodDeclarations.h"
-#include "UnityEngine_UnityEngine_GUISettings1668697771.h"
-#include "UnityEngine_UnityEngine_GUISettings1668697771MethodDeclarations.h"
 
 #ifdef __clang__
 #pragma clang diagnostic push
@@ -605,6 +605,105 @@ extern "C"  void AddComponentMenu__ctor_m3281913735 (AddComponentMenu_t232318906
 		__this->set_m_AddComponentMenu_0(L_0);
 		int32_t L_1 = ___order1;
 		__this->set_m_Ordering_1(L_1);
+		return;
+	}
+}
+// UnityEngine.AnimationState UnityEngine.Animation::get_Item(System.String)
+extern "C"  AnimationState_t3357637594 * Animation_get_Item_m2669576386 (Animation_t350396337 * __this, String_t* ___name0, const MethodInfo* method)
+{
+	{
+		String_t* L_0 = ___name0;
+		AnimationState_t3357637594 * L_1 = Animation_GetState_m528810595(__this, L_0, /*hidden argument*/NULL);
+		return L_1;
+	}
+}
+// System.Collections.IEnumerator UnityEngine.Animation::GetEnumerator()
+extern Il2CppClass* Enumerator_t1072804842_il2cpp_TypeInfo_var;
+extern const uint32_t Animation_GetEnumerator_m3015582503_MetadataUsageId;
+extern "C"  Il2CppObject * Animation_GetEnumerator_m3015582503 (Animation_t350396337 * __this, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (Animation_GetEnumerator_m3015582503_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	{
+		Enumerator_t1072804842 * L_0 = (Enumerator_t1072804842 *)il2cpp_codegen_object_new(Enumerator_t1072804842_il2cpp_TypeInfo_var);
+		Enumerator__ctor_m1213159655(L_0, __this, /*hidden argument*/NULL);
+		return L_0;
+	}
+}
+// UnityEngine.AnimationState UnityEngine.Animation::GetState(System.String)
+extern "C"  AnimationState_t3357637594 * Animation_GetState_m528810595 (Animation_t350396337 * __this, String_t* ___name0, const MethodInfo* method)
+{
+	typedef AnimationState_t3357637594 * (*Animation_GetState_m528810595_ftn) (Animation_t350396337 *, String_t*);
+	static Animation_GetState_m528810595_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (Animation_GetState_m528810595_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Animation::GetState(System.String)");
+	return _il2cpp_icall_func(__this, ___name0);
+}
+// UnityEngine.AnimationState UnityEngine.Animation::GetStateAtIndex(System.Int32)
+extern "C"  AnimationState_t3357637594 * Animation_GetStateAtIndex_m513456147 (Animation_t350396337 * __this, int32_t ___index0, const MethodInfo* method)
+{
+	typedef AnimationState_t3357637594 * (*Animation_GetStateAtIndex_m513456147_ftn) (Animation_t350396337 *, int32_t);
+	static Animation_GetStateAtIndex_m513456147_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (Animation_GetStateAtIndex_m513456147_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Animation::GetStateAtIndex(System.Int32)");
+	return _il2cpp_icall_func(__this, ___index0);
+}
+// System.Int32 UnityEngine.Animation::GetStateCount()
+extern "C"  int32_t Animation_GetStateCount_m3537607527 (Animation_t350396337 * __this, const MethodInfo* method)
+{
+	typedef int32_t (*Animation_GetStateCount_m3537607527_ftn) (Animation_t350396337 *);
+	static Animation_GetStateCount_m3537607527_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (Animation_GetStateCount_m3537607527_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Animation::GetStateCount()");
+	return _il2cpp_icall_func(__this);
+}
+// System.Void UnityEngine.Animation/Enumerator::.ctor(UnityEngine.Animation)
+extern "C"  void Enumerator__ctor_m1213159655 (Enumerator_t1072804842 * __this, Animation_t350396337 * ___outer0, const MethodInfo* method)
+{
+	{
+		__this->set_m_CurrentIndex_1((-1));
+		Object__ctor_m1772956182(__this, /*hidden argument*/NULL);
+		Animation_t350396337 * L_0 = ___outer0;
+		__this->set_m_Outer_0(L_0);
+		return;
+	}
+}
+// System.Object UnityEngine.Animation/Enumerator::get_Current()
+extern "C"  Il2CppObject * Enumerator_get_Current_m1033634519 (Enumerator_t1072804842 * __this, const MethodInfo* method)
+{
+	{
+		Animation_t350396337 * L_0 = __this->get_m_Outer_0();
+		int32_t L_1 = __this->get_m_CurrentIndex_1();
+		NullCheck(L_0);
+		AnimationState_t3357637594 * L_2 = Animation_GetStateAtIndex_m513456147(L_0, L_1, /*hidden argument*/NULL);
+		return L_2;
+	}
+}
+// System.Boolean UnityEngine.Animation/Enumerator::MoveNext()
+extern "C"  bool Enumerator_MoveNext_m1178545744 (Enumerator_t1072804842 * __this, const MethodInfo* method)
+{
+	int32_t V_0 = 0;
+	{
+		Animation_t350396337 * L_0 = __this->get_m_Outer_0();
+		NullCheck(L_0);
+		int32_t L_1 = Animation_GetStateCount_m3537607527(L_0, /*hidden argument*/NULL);
+		V_0 = L_1;
+		int32_t L_2 = __this->get_m_CurrentIndex_1();
+		__this->set_m_CurrentIndex_1(((int32_t)((int32_t)L_2+(int32_t)1)));
+		int32_t L_3 = __this->get_m_CurrentIndex_1();
+		int32_t L_4 = V_0;
+		return (bool)((((int32_t)L_3) < ((int32_t)L_4))? 1 : 0);
+	}
+}
+// System.Void UnityEngine.Animation/Enumerator::Reset()
+extern "C"  void Enumerator_Reset_m1014152875 (Enumerator_t1072804842 * __this, const MethodInfo* method)
+{
+	{
+		__this->set_m_CurrentIndex_1((-1));
 		return;
 	}
 }
@@ -1008,6 +1107,15 @@ extern "C"  int32_t AnimationEvent_GetHash_m2586883417 (AnimationEvent_t33447715
 		int32_t L_5 = V_0;
 		return L_5;
 	}
+}
+// System.Void UnityEngine.AnimationState::set_speed(System.Single)
+extern "C"  void AnimationState_set_speed_m4187319075 (AnimationState_t3357637594 * __this, float ___value0, const MethodInfo* method)
+{
+	typedef void (*AnimationState_set_speed_m4187319075_ftn) (AnimationState_t3357637594 *, float);
+	static AnimationState_set_speed_m4187319075_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (AnimationState_set_speed_m4187319075_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.AnimationState::set_speed(System.Single)");
+	_il2cpp_icall_func(__this, ___value0);
 }
 // System.Void UnityEngine.Animator::SetTrigger(System.String)
 extern "C"  void Animator_SetTrigger_m514363822 (Animator_t792326996 * __this, String_t* ___name0, const MethodInfo* method)
@@ -3505,6 +3613,15 @@ extern "C"  Camera_t3533968274 * Camera_get_main_m671815697 (Il2CppObject * __th
 	static Camera_get_main_m671815697_ftn _il2cpp_icall_func;
 	if (!_il2cpp_icall_func)
 	_il2cpp_icall_func = (Camera_get_main_m671815697_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Camera::get_main()");
+	return _il2cpp_icall_func();
+}
+// UnityEngine.Camera UnityEngine.Camera::get_current()
+extern "C"  Camera_t3533968274 * Camera_get_current_m475592003 (Il2CppObject * __this /* static, unused */, const MethodInfo* method)
+{
+	typedef Camera_t3533968274 * (*Camera_get_current_m475592003_ftn) ();
+	static Camera_get_current_m475592003_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (Camera_get_current_m475592003_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Camera::get_current()");
 	return _il2cpp_icall_func();
 }
 // System.Int32 UnityEngine.Camera::get_allCamerasCount()
@@ -15526,514 +15643,6 @@ extern "C"  void LayoutCache__ctor_m3196944573 (LayoutCache_t3653031512 * __this
 		VirtActionInvoker1< Il2CppObject * >::Invoke(19 /* System.Void System.Collections.Stack::Push(System.Object) */, L_3, L_4);
 		return;
 	}
-}
-// System.Void UnityEngine.GUIScrollGroup::.ctor()
-extern "C"  void GUIScrollGroup__ctor_m2652149846 (GUIScrollGroup_t1067753444 * __this, const MethodInfo* method)
-{
-	{
-		__this->set_allowHorizontalScroll_33((bool)1);
-		__this->set_allowVerticalScroll_34((bool)1);
-		GUILayoutGroup__ctor_m3393996275(__this, /*hidden argument*/NULL);
-		return;
-	}
-}
-// System.Void UnityEngine.GUIScrollGroup::CalcWidth()
-extern "C"  void GUIScrollGroup_CalcWidth_m2187011109 (GUIScrollGroup_t1067753444 * __this, const MethodInfo* method)
-{
-	float V_0 = 0.0f;
-	float V_1 = 0.0f;
-	{
-		float L_0 = ((GUILayoutEntry_t1011928986 *)__this)->get_minWidth_0();
-		V_0 = L_0;
-		float L_1 = ((GUILayoutEntry_t1011928986 *)__this)->get_maxWidth_1();
-		V_1 = L_1;
-		bool L_2 = __this->get_allowHorizontalScroll_33();
-		if (!L_2)
-		{
-			goto IL_002f;
-		}
-	}
-	{
-		((GUILayoutEntry_t1011928986 *)__this)->set_minWidth_0((0.0f));
-		((GUILayoutEntry_t1011928986 *)__this)->set_maxWidth_1((0.0f));
-	}
-
-IL_002f:
-	{
-		GUILayoutGroup_CalcWidth_m1234746178(__this, /*hidden argument*/NULL);
-		float L_3 = ((GUILayoutEntry_t1011928986 *)__this)->get_minWidth_0();
-		__this->set_calcMinWidth_27(L_3);
-		float L_4 = ((GUILayoutEntry_t1011928986 *)__this)->get_maxWidth_1();
-		__this->set_calcMaxWidth_28(L_4);
-		bool L_5 = __this->get_allowHorizontalScroll_33();
-		if (!L_5)
-		{
-			goto IL_009e;
-		}
-	}
-	{
-		float L_6 = ((GUILayoutEntry_t1011928986 *)__this)->get_minWidth_0();
-		if ((!(((float)L_6) > ((float)(32.0f)))))
-		{
-			goto IL_0073;
-		}
-	}
-	{
-		((GUILayoutEntry_t1011928986 *)__this)->set_minWidth_0((32.0f));
-	}
-
-IL_0073:
-	{
-		float L_7 = V_0;
-		if ((((float)L_7) == ((float)(0.0f))))
-		{
-			goto IL_0085;
-		}
-	}
-	{
-		float L_8 = V_0;
-		((GUILayoutEntry_t1011928986 *)__this)->set_minWidth_0(L_8);
-	}
-
-IL_0085:
-	{
-		float L_9 = V_1;
-		if ((((float)L_9) == ((float)(0.0f))))
-		{
-			goto IL_009e;
-		}
-	}
-	{
-		float L_10 = V_1;
-		((GUILayoutEntry_t1011928986 *)__this)->set_maxWidth_1(L_10);
-		((GUILayoutEntry_t1011928986 *)__this)->set_stretchWidth_5(0);
-	}
-
-IL_009e:
-	{
-		return;
-	}
-}
-// System.Void UnityEngine.GUIScrollGroup::SetHorizontal(System.Single,System.Single)
-extern "C"  void GUIScrollGroup_SetHorizontal_m3329305078 (GUIScrollGroup_t1067753444 * __this, float ___x0, float ___width1, const MethodInfo* method)
-{
-	float V_0 = 0.0f;
-	float G_B3_0 = 0.0f;
-	{
-		bool L_0 = __this->get_needsVerticalScrollbar_36();
-		if (!L_0)
-		{
-			goto IL_002f;
-		}
-	}
-	{
-		float L_1 = ___width1;
-		GUIStyle_t1006925219 * L_2 = __this->get_verticalScrollbar_38();
-		NullCheck(L_2);
-		float L_3 = GUIStyle_get_fixedWidth_m3249098964(L_2, /*hidden argument*/NULL);
-		GUIStyle_t1006925219 * L_4 = __this->get_verticalScrollbar_38();
-		NullCheck(L_4);
-		RectOffset_t3394170884 * L_5 = GUIStyle_get_margin_m4279849445(L_4, /*hidden argument*/NULL);
-		NullCheck(L_5);
-		int32_t L_6 = RectOffset_get_left_m4104523390(L_5, /*hidden argument*/NULL);
-		G_B3_0 = ((float)((float)((float)((float)L_1-(float)L_3))-(float)(((float)((float)L_6)))));
-		goto IL_0030;
-	}
-
-IL_002f:
-	{
-		float L_7 = ___width1;
-		G_B3_0 = L_7;
-	}
-
-IL_0030:
-	{
-		V_0 = G_B3_0;
-		bool L_8 = __this->get_allowHorizontalScroll_33();
-		if (!L_8)
-		{
-			goto IL_0091;
-		}
-	}
-	{
-		float L_9 = V_0;
-		float L_10 = __this->get_calcMinWidth_27();
-		if ((!(((float)L_9) < ((float)L_10))))
-		{
-			goto IL_0091;
-		}
-	}
-	{
-		__this->set_needsHorizontalScrollbar_35((bool)1);
-		float L_11 = __this->get_calcMinWidth_27();
-		((GUILayoutEntry_t1011928986 *)__this)->set_minWidth_0(L_11);
-		float L_12 = __this->get_calcMaxWidth_28();
-		((GUILayoutEntry_t1011928986 *)__this)->set_maxWidth_1(L_12);
-		float L_13 = ___x0;
-		float L_14 = __this->get_calcMinWidth_27();
-		GUILayoutGroup_SetHorizontal_m985132857(__this, L_13, L_14, /*hidden argument*/NULL);
-		Rect_t1525428817 * L_15 = ((GUILayoutEntry_t1011928986 *)__this)->get_address_of_rect_4();
-		float L_16 = ___width1;
-		Rect_set_width_m3771513595(L_15, L_16, /*hidden argument*/NULL);
-		float L_17 = __this->get_calcMinWidth_27();
-		__this->set_clientWidth_31(L_17);
-		goto IL_00d6;
-	}
-
-IL_0091:
-	{
-		__this->set_needsHorizontalScrollbar_35((bool)0);
-		bool L_18 = __this->get_allowHorizontalScroll_33();
-		if (!L_18)
-		{
-			goto IL_00bb;
-		}
-	}
-	{
-		float L_19 = __this->get_calcMinWidth_27();
-		((GUILayoutEntry_t1011928986 *)__this)->set_minWidth_0(L_19);
-		float L_20 = __this->get_calcMaxWidth_28();
-		((GUILayoutEntry_t1011928986 *)__this)->set_maxWidth_1(L_20);
-	}
-
-IL_00bb:
-	{
-		float L_21 = ___x0;
-		float L_22 = V_0;
-		GUILayoutGroup_SetHorizontal_m985132857(__this, L_21, L_22, /*hidden argument*/NULL);
-		Rect_t1525428817 * L_23 = ((GUILayoutEntry_t1011928986 *)__this)->get_address_of_rect_4();
-		float L_24 = ___width1;
-		Rect_set_width_m3771513595(L_23, L_24, /*hidden argument*/NULL);
-		float L_25 = V_0;
-		__this->set_clientWidth_31(L_25);
-	}
-
-IL_00d6:
-	{
-		return;
-	}
-}
-// System.Void UnityEngine.GUIScrollGroup::CalcHeight()
-extern "C"  void GUIScrollGroup_CalcHeight_m3876649290 (GUIScrollGroup_t1067753444 * __this, const MethodInfo* method)
-{
-	float V_0 = 0.0f;
-	float V_1 = 0.0f;
-	float V_2 = 0.0f;
-	{
-		float L_0 = ((GUILayoutEntry_t1011928986 *)__this)->get_minHeight_2();
-		V_0 = L_0;
-		float L_1 = ((GUILayoutEntry_t1011928986 *)__this)->get_maxHeight_3();
-		V_1 = L_1;
-		bool L_2 = __this->get_allowVerticalScroll_34();
-		if (!L_2)
-		{
-			goto IL_002f;
-		}
-	}
-	{
-		((GUILayoutEntry_t1011928986 *)__this)->set_minHeight_2((0.0f));
-		((GUILayoutEntry_t1011928986 *)__this)->set_maxHeight_3((0.0f));
-	}
-
-IL_002f:
-	{
-		GUILayoutGroup_CalcHeight_m126240205(__this, /*hidden argument*/NULL);
-		float L_3 = ((GUILayoutEntry_t1011928986 *)__this)->get_minHeight_2();
-		__this->set_calcMinHeight_29(L_3);
-		float L_4 = ((GUILayoutEntry_t1011928986 *)__this)->get_maxHeight_3();
-		__this->set_calcMaxHeight_30(L_4);
-		bool L_5 = __this->get_needsHorizontalScrollbar_35();
-		if (!L_5)
-		{
-			goto IL_0092;
-		}
-	}
-	{
-		GUIStyle_t1006925219 * L_6 = __this->get_horizontalScrollbar_37();
-		NullCheck(L_6);
-		float L_7 = GUIStyle_get_fixedHeight_m2441634427(L_6, /*hidden argument*/NULL);
-		GUIStyle_t1006925219 * L_8 = __this->get_horizontalScrollbar_37();
-		NullCheck(L_8);
-		RectOffset_t3394170884 * L_9 = GUIStyle_get_margin_m4279849445(L_8, /*hidden argument*/NULL);
-		NullCheck(L_9);
-		int32_t L_10 = RectOffset_get_top_m140097312(L_9, /*hidden argument*/NULL);
-		V_2 = ((float)((float)L_7+(float)(((float)((float)L_10)))));
-		float L_11 = ((GUILayoutEntry_t1011928986 *)__this)->get_minHeight_2();
-		float L_12 = V_2;
-		((GUILayoutEntry_t1011928986 *)__this)->set_minHeight_2(((float)((float)L_11+(float)L_12)));
-		float L_13 = ((GUILayoutEntry_t1011928986 *)__this)->get_maxHeight_3();
-		float L_14 = V_2;
-		((GUILayoutEntry_t1011928986 *)__this)->set_maxHeight_3(((float)((float)L_13+(float)L_14)));
-	}
-
-IL_0092:
-	{
-		bool L_15 = __this->get_allowVerticalScroll_34();
-		if (!L_15)
-		{
-			goto IL_00e3;
-		}
-	}
-	{
-		float L_16 = ((GUILayoutEntry_t1011928986 *)__this)->get_minHeight_2();
-		if ((!(((float)L_16) > ((float)(32.0f)))))
-		{
-			goto IL_00b8;
-		}
-	}
-	{
-		((GUILayoutEntry_t1011928986 *)__this)->set_minHeight_2((32.0f));
-	}
-
-IL_00b8:
-	{
-		float L_17 = V_0;
-		if ((((float)L_17) == ((float)(0.0f))))
-		{
-			goto IL_00ca;
-		}
-	}
-	{
-		float L_18 = V_0;
-		((GUILayoutEntry_t1011928986 *)__this)->set_minHeight_2(L_18);
-	}
-
-IL_00ca:
-	{
-		float L_19 = V_1;
-		if ((((float)L_19) == ((float)(0.0f))))
-		{
-			goto IL_00e3;
-		}
-	}
-	{
-		float L_20 = V_1;
-		((GUILayoutEntry_t1011928986 *)__this)->set_maxHeight_3(L_20);
-		((GUILayoutEntry_t1011928986 *)__this)->set_stretchHeight_6(0);
-	}
-
-IL_00e3:
-	{
-		return;
-	}
-}
-// System.Void UnityEngine.GUIScrollGroup::SetVertical(System.Single,System.Single)
-extern "C"  void GUIScrollGroup_SetVertical_m3472565924 (GUIScrollGroup_t1067753444 * __this, float ___y0, float ___height1, const MethodInfo* method)
-{
-	float V_0 = 0.0f;
-	float V_1 = 0.0f;
-	float V_2 = 0.0f;
-	float V_3 = 0.0f;
-	{
-		float L_0 = ___height1;
-		V_0 = L_0;
-		bool L_1 = __this->get_needsHorizontalScrollbar_35();
-		if (!L_1)
-		{
-			goto IL_002d;
-		}
-	}
-	{
-		float L_2 = V_0;
-		GUIStyle_t1006925219 * L_3 = __this->get_horizontalScrollbar_37();
-		NullCheck(L_3);
-		float L_4 = GUIStyle_get_fixedHeight_m2441634427(L_3, /*hidden argument*/NULL);
-		GUIStyle_t1006925219 * L_5 = __this->get_horizontalScrollbar_37();
-		NullCheck(L_5);
-		RectOffset_t3394170884 * L_6 = GUIStyle_get_margin_m4279849445(L_5, /*hidden argument*/NULL);
-		NullCheck(L_6);
-		int32_t L_7 = RectOffset_get_top_m140097312(L_6, /*hidden argument*/NULL);
-		V_0 = ((float)((float)L_2-(float)((float)((float)L_4+(float)(((float)((float)L_7)))))));
-	}
-
-IL_002d:
-	{
-		bool L_8 = __this->get_allowVerticalScroll_34();
-		if (!L_8)
-		{
-			goto IL_0139;
-		}
-	}
-	{
-		float L_9 = V_0;
-		float L_10 = __this->get_calcMinHeight_29();
-		if ((!(((float)L_9) < ((float)L_10))))
-		{
-			goto IL_0139;
-		}
-	}
-	{
-		bool L_11 = __this->get_needsHorizontalScrollbar_35();
-		if (L_11)
-		{
-			goto IL_00db;
-		}
-	}
-	{
-		bool L_12 = __this->get_needsVerticalScrollbar_36();
-		if (L_12)
-		{
-			goto IL_00db;
-		}
-	}
-	{
-		Rect_t1525428817 * L_13 = ((GUILayoutEntry_t1011928986 *)__this)->get_address_of_rect_4();
-		float L_14 = Rect_get_width_m2824209432(L_13, /*hidden argument*/NULL);
-		GUIStyle_t1006925219 * L_15 = __this->get_verticalScrollbar_38();
-		NullCheck(L_15);
-		float L_16 = GUIStyle_get_fixedWidth_m3249098964(L_15, /*hidden argument*/NULL);
-		GUIStyle_t1006925219 * L_17 = __this->get_verticalScrollbar_38();
-		NullCheck(L_17);
-		RectOffset_t3394170884 * L_18 = GUIStyle_get_margin_m4279849445(L_17, /*hidden argument*/NULL);
-		NullCheck(L_18);
-		int32_t L_19 = RectOffset_get_left_m4104523390(L_18, /*hidden argument*/NULL);
-		__this->set_clientWidth_31(((float)((float)((float)((float)L_14-(float)L_16))-(float)(((float)((float)L_19))))));
-		float L_20 = __this->get_clientWidth_31();
-		float L_21 = __this->get_calcMinWidth_27();
-		if ((!(((float)L_20) < ((float)L_21))))
-		{
-			goto IL_00a6;
-		}
-	}
-	{
-		float L_22 = __this->get_calcMinWidth_27();
-		__this->set_clientWidth_31(L_22);
-	}
-
-IL_00a6:
-	{
-		Rect_t1525428817 * L_23 = ((GUILayoutEntry_t1011928986 *)__this)->get_address_of_rect_4();
-		float L_24 = Rect_get_width_m2824209432(L_23, /*hidden argument*/NULL);
-		V_1 = L_24;
-		Rect_t1525428817 * L_25 = ((GUILayoutEntry_t1011928986 *)__this)->get_address_of_rect_4();
-		float L_26 = Rect_get_x_m982385354(L_25, /*hidden argument*/NULL);
-		float L_27 = __this->get_clientWidth_31();
-		GUIScrollGroup_SetHorizontal_m3329305078(__this, L_26, L_27, /*hidden argument*/NULL);
-		GUIScrollGroup_CalcHeight_m3876649290(__this, /*hidden argument*/NULL);
-		Rect_t1525428817 * L_28 = ((GUILayoutEntry_t1011928986 *)__this)->get_address_of_rect_4();
-		float L_29 = V_1;
-		Rect_set_width_m3771513595(L_28, L_29, /*hidden argument*/NULL);
-	}
-
-IL_00db:
-	{
-		float L_30 = ((GUILayoutEntry_t1011928986 *)__this)->get_minHeight_2();
-		V_2 = L_30;
-		float L_31 = ((GUILayoutEntry_t1011928986 *)__this)->get_maxHeight_3();
-		V_3 = L_31;
-		float L_32 = __this->get_calcMinHeight_29();
-		((GUILayoutEntry_t1011928986 *)__this)->set_minHeight_2(L_32);
-		float L_33 = __this->get_calcMaxHeight_30();
-		((GUILayoutEntry_t1011928986 *)__this)->set_maxHeight_3(L_33);
-		float L_34 = ___y0;
-		float L_35 = __this->get_calcMinHeight_29();
-		GUILayoutGroup_SetVertical_m967336103(__this, L_34, L_35, /*hidden argument*/NULL);
-		float L_36 = V_2;
-		((GUILayoutEntry_t1011928986 *)__this)->set_minHeight_2(L_36);
-		float L_37 = V_3;
-		((GUILayoutEntry_t1011928986 *)__this)->set_maxHeight_3(L_37);
-		Rect_t1525428817 * L_38 = ((GUILayoutEntry_t1011928986 *)__this)->get_address_of_rect_4();
-		float L_39 = ___height1;
-		Rect_set_height_m3398820332(L_38, L_39, /*hidden argument*/NULL);
-		float L_40 = __this->get_calcMinHeight_29();
-		__this->set_clientHeight_32(L_40);
-		goto IL_0177;
-	}
-
-IL_0139:
-	{
-		bool L_41 = __this->get_allowVerticalScroll_34();
-		if (!L_41)
-		{
-			goto IL_015c;
-		}
-	}
-	{
-		float L_42 = __this->get_calcMinHeight_29();
-		((GUILayoutEntry_t1011928986 *)__this)->set_minHeight_2(L_42);
-		float L_43 = __this->get_calcMaxHeight_30();
-		((GUILayoutEntry_t1011928986 *)__this)->set_maxHeight_3(L_43);
-	}
-
-IL_015c:
-	{
-		float L_44 = ___y0;
-		float L_45 = V_0;
-		GUILayoutGroup_SetVertical_m967336103(__this, L_44, L_45, /*hidden argument*/NULL);
-		Rect_t1525428817 * L_46 = ((GUILayoutEntry_t1011928986 *)__this)->get_address_of_rect_4();
-		float L_47 = ___height1;
-		Rect_set_height_m3398820332(L_46, L_47, /*hidden argument*/NULL);
-		float L_48 = V_0;
-		__this->set_clientHeight_32(L_48);
-	}
-
-IL_0177:
-	{
-		return;
-	}
-}
-// System.Void UnityEngine.GUISettings::.ctor()
-extern "C"  void GUISettings__ctor_m1563013787 (GUISettings_t1668697771 * __this, const MethodInfo* method)
-{
-	{
-		__this->set_m_DoubleClickSelectsWord_0((bool)1);
-		__this->set_m_TripleClickSelectsLine_1((bool)1);
-		Color_t1588175760  L_0 = Color_get_white_m3038282331(NULL /*static, unused*/, /*hidden argument*/NULL);
-		__this->set_m_CursorColor_2(L_0);
-		__this->set_m_CursorFlashSpeed_3((-1.0f));
-		Color_t1588175760  L_1;
-		memset(&L_1, 0, sizeof(L_1));
-		Color__ctor_m103496991(&L_1, (0.5f), (0.5f), (1.0f), /*hidden argument*/NULL);
-		__this->set_m_SelectionColor_4(L_1);
-		Object__ctor_m1772956182(__this, /*hidden argument*/NULL);
-		return;
-	}
-}
-// UnityEngine.Color UnityEngine.GUISettings::get_cursorColor()
-extern "C"  Color_t1588175760  GUISettings_get_cursorColor_m3617656164 (GUISettings_t1668697771 * __this, const MethodInfo* method)
-{
-	{
-		Color_t1588175760  L_0 = __this->get_m_CursorColor_2();
-		return L_0;
-	}
-}
-// System.Single UnityEngine.GUISettings::get_cursorFlashSpeed()
-extern "C"  float GUISettings_get_cursorFlashSpeed_m3510903059 (GUISettings_t1668697771 * __this, const MethodInfo* method)
-{
-	{
-		float L_0 = __this->get_m_CursorFlashSpeed_3();
-		if ((!(((float)L_0) >= ((float)(0.0f)))))
-		{
-			goto IL_0017;
-		}
-	}
-	{
-		float L_1 = __this->get_m_CursorFlashSpeed_3();
-		return L_1;
-	}
-
-IL_0017:
-	{
-		float L_2 = GUISettings_Internal_GetCursorFlashSpeed_m2094683006(NULL /*static, unused*/, /*hidden argument*/NULL);
-		return L_2;
-	}
-}
-// UnityEngine.Color UnityEngine.GUISettings::get_selectionColor()
-extern "C"  Color_t1588175760  GUISettings_get_selectionColor_m3945610946 (GUISettings_t1668697771 * __this, const MethodInfo* method)
-{
-	{
-		Color_t1588175760  L_0 = __this->get_m_SelectionColor_4();
-		return L_0;
-	}
-}
-// System.Single UnityEngine.GUISettings::Internal_GetCursorFlashSpeed()
-extern "C"  float GUISettings_Internal_GetCursorFlashSpeed_m2094683006 (Il2CppObject * __this /* static, unused */, const MethodInfo* method)
-{
-	typedef float (*GUISettings_Internal_GetCursorFlashSpeed_m2094683006_ftn) ();
-	static GUISettings_Internal_GetCursorFlashSpeed_m2094683006_ftn _il2cpp_icall_func;
-	if (!_il2cpp_icall_func)
-	_il2cpp_icall_func = (GUISettings_Internal_GetCursorFlashSpeed_m2094683006_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.GUISettings::Internal_GetCursorFlashSpeed()");
-	return _il2cpp_icall_func();
 }
 #ifdef __clang__
 #pragma clang diagnostic pop

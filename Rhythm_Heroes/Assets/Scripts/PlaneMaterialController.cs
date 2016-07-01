@@ -25,4 +25,14 @@ public class PlaneMaterialController : MonoBehaviour {
 	void onTouchExit() {
 		mat.mainTexture = textures[0];
 	}
+
+	public static void changePlaneMaterial(bool isHot) {
+		if(isHot) {
+			print ("hot");
+			// mat.mainTexture = ***
+		} else {
+			print ("cool down");
+			// mat.mainTexture = ***
+		}
+	}
 }

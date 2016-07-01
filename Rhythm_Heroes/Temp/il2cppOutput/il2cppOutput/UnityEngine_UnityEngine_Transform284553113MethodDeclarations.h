@@ -22,6 +22,7 @@ struct IEnumerator_t287207039;
 #include "UnityEngine_UnityEngine_Quaternion1891715979.h"
 #include "UnityEngine_UnityEngine_Transform284553113.h"
 #include "UnityEngine_UnityEngine_Matrix4x4277289660.h"
+#include "UnityEngine_UnityEngine_Space1602970931.h"
 
 // UnityEngine.Vector3 UnityEngine.Transform::get_position()
 extern "C"  Vector3_t3525329789  Transform_get_position_m2211398607 (Transform_t284553113 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
@@ -43,8 +44,12 @@ extern "C"  void Transform_INTERNAL_set_localPosition_m221305727 (Transform_t284
 extern "C"  Vector3_t3525329789  Transform_get_forward_m877665793 (Transform_t284553113 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // UnityEngine.Quaternion UnityEngine.Transform::get_rotation()
 extern "C"  Quaternion_t1891715979  Transform_get_rotation_m11483428 (Transform_t284553113 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void UnityEngine.Transform::set_rotation(UnityEngine.Quaternion)
+extern "C"  void Transform_set_rotation_m1525803229 (Transform_t284553113 * __this, Quaternion_t1891715979  ___value0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void UnityEngine.Transform::INTERNAL_get_rotation(UnityEngine.Quaternion&)
 extern "C"  void Transform_INTERNAL_get_rotation_m2389720173 (Transform_t284553113 * __this, Quaternion_t1891715979 * ___value0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void UnityEngine.Transform::INTERNAL_set_rotation(UnityEngine.Quaternion&)
+extern "C"  void Transform_INTERNAL_set_rotation_m2051942009 (Transform_t284553113 * __this, Quaternion_t1891715979 * ___value0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // UnityEngine.Quaternion UnityEngine.Transform::get_localRotation()
 extern "C"  Quaternion_t1891715979  Transform_get_localRotation_m3343229381 (Transform_t284553113 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void UnityEngine.Transform::set_localRotation(UnityEngine.Quaternion)
@@ -77,6 +82,20 @@ extern "C"  void Transform_SetParent_m263985879 (Transform_t284553113 * __this, 
 extern "C"  Matrix4x4_t277289660  Transform_get_worldToLocalMatrix_m3792395652 (Transform_t284553113 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void UnityEngine.Transform::INTERNAL_get_worldToLocalMatrix(UnityEngine.Matrix4x4&)
 extern "C"  void Transform_INTERNAL_get_worldToLocalMatrix_m3861589095 (Transform_t284553113 * __this, Matrix4x4_t277289660 * ___value0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void UnityEngine.Transform::Rotate(UnityEngine.Vector3)
+extern "C"  void Transform_Rotate_m637363399 (Transform_t284553113 * __this, Vector3_t3525329789  ___eulerAngles0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void UnityEngine.Transform::Rotate(UnityEngine.Vector3,UnityEngine.Space)
+extern "C"  void Transform_Rotate_m3141515812 (Transform_t284553113 * __this, Vector3_t3525329789  ___eulerAngles0, int32_t ___relativeTo1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void UnityEngine.Transform::LookAt(UnityEngine.Transform)
+extern "C"  void Transform_LookAt_m2663225588 (Transform_t284553113 * __this, Transform_t284553113 * ___target0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void UnityEngine.Transform::LookAt(UnityEngine.Transform,UnityEngine.Vector3)
+extern "C"  void Transform_LookAt_m3252223111 (Transform_t284553113 * __this, Transform_t284553113 * ___target0, Vector3_t3525329789  ___worldUp1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void UnityEngine.Transform::LookAt(UnityEngine.Vector3,UnityEngine.Vector3)
+extern "C"  void Transform_LookAt_m2054691043 (Transform_t284553113 * __this, Vector3_t3525329789  ___worldPosition0, Vector3_t3525329789  ___worldUp1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void UnityEngine.Transform::LookAt(UnityEngine.Vector3)
+extern "C"  void Transform_LookAt_m724138832 (Transform_t284553113 * __this, Vector3_t3525329789  ___worldPosition0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void UnityEngine.Transform::INTERNAL_CALL_LookAt(UnityEngine.Transform,UnityEngine.Vector3&,UnityEngine.Vector3&)
+extern "C"  void Transform_INTERNAL_CALL_LookAt_m302711157 (Il2CppObject * __this /* static, unused */, Transform_t284553113 * ___self0, Vector3_t3525329789 * ___worldPosition1, Vector3_t3525329789 * ___worldUp2, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // UnityEngine.Vector3 UnityEngine.Transform::TransformPoint(UnityEngine.Vector3)
 extern "C"  Vector3_t3525329789  Transform_TransformPoint_m437395512 (Transform_t284553113 * __this, Vector3_t3525329789  ___position0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void UnityEngine.Transform::INTERNAL_CALL_TransformPoint(UnityEngine.Transform,UnityEngine.Vector3&,UnityEngine.Vector3&)
