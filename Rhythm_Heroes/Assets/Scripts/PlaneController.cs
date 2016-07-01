@@ -84,8 +84,8 @@ public class PlaneController : MonoBehaviour, AudioProcessor.AudioCallbacks {
 						scoreObj.SendMessage ("statChange", 1, SendMessageOptions.RequireReceiver);
 
 						if(TouchController.hasChanged) {
-							PlaneMaterialController.changePlaneMaterial (false);
-							TouchZoneMaterialController.changeTouchZoneMaterial (false);
+							PlaneMaterialController.isHot = false;
+							TouchZoneMaterialController.isHot = false;
 							TouchController.comboCount = 0;
 							TouchController.hasChanged = false;
 						}

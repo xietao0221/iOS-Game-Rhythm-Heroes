@@ -5,34 +5,41 @@ public class PlaneMaterialController : MonoBehaviour {
 
 	private Material mat;
 	public Texture[] textures;
+	public static bool isHot = false;
 
 	void Start() {
 		mat = this.GetComponent<Renderer> ().material;
 	}
 
 	void onTouchDown() {
-		mat.mainTexture = textures[1];
+		if(isHot) {
+			mat.mainTexture = textures [1];			// change	
+		} else {
+			mat.mainTexture = textures [1];
+		}
 	}
 
 	void onTouchUp() {
-		mat.mainTexture = textures[0];
+		if(isHot) {
+			mat.mainTexture = textures [0];			// change	
+		} else {
+			mat.mainTexture = textures [0];
+		}
 	}
 
 	void onTouchStay() {
-		mat.mainTexture = textures[1];
+		if(isHot) {
+			mat.mainTexture = textures [1];			// change	
+		} else {
+			mat.mainTexture = textures [1];
+		}
 	}
 
 	void onTouchExit() {
-		mat.mainTexture = textures[0];
-	}
-
-	public static void changePlaneMaterial(bool isHot) {
 		if(isHot) {
-			print ("hot");
-			// mat.mainTexture = ***
+			mat.mainTexture = textures [0];			// change	
 		} else {
-			print ("cool down");
-			// mat.mainTexture = ***
+			mat.mainTexture = textures [0];
 		}
 	}
 }

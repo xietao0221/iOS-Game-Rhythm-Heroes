@@ -91,12 +91,13 @@ public class TouchController : MonoBehaviour {
 									wordTextObj.SendMessage("wordTextDisplay", 1, SendMessageOptions.RequireReceiver);
 									scoreTextObj.SendMessage("scorePlus", SendMessageOptions.RequireReceiver);
 
+									// add animation
 
 									comboCount++;
 									if(comboCount >= comboBonus && !hasChanged) {
 										hasChanged = true;
-										PlaneMaterialController.changePlaneMaterial(true);
-										TouchZoneMaterialController.changeTouchZoneMaterial(true);
+										PlaneMaterialController.isHot = true;
+										TouchZoneMaterialController.isHot = true;
 									}
 								}	
 							}
@@ -180,11 +181,13 @@ public class TouchController : MonoBehaviour {
 										wordTextObj.SendMessage("wordTextDisplay", 1, SendMessageOptions.RequireReceiver);
 										scoreTextObj.SendMessage("scorePlus", SendMessageOptions.RequireReceiver);
 
+										// add animation
+
 										comboCount++;
 										if(comboCount >= comboBonus && !hasChanged) {
 											hasChanged = true;
-											PlaneMaterialController.changePlaneMaterial(true);
-											TouchZoneMaterialController.changeTouchZoneMaterial(true);
+											PlaneMaterialController.isHot = true;
+											TouchZoneMaterialController.isHot = true;
 										}
 									}	
 								}
