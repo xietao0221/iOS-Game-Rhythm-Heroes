@@ -2203,6 +2203,7 @@ extern "C" void File_Exists_m1326262381 ();
 extern "C" void File_Open_m1918038371 ();
 extern "C" void File_OpenRead_m3104031109 ();
 extern "C" void File_OpenText_m396847893 ();
+extern "C" void File_ReadAllBytes_m621899937 ();
 extern "C" void FileNotFoundException__ctor_m1040614905 ();
 extern "C" void FileNotFoundException__ctor_m2788024869 ();
 extern "C" void FileNotFoundException__ctor_m3117006778 ();
@@ -4581,6 +4582,7 @@ extern "C" void SecurityContext__ctor_m1345715454 ();
 extern "C" void SecurityContext_Capture_m3640798635 ();
 extern "C" void SecurityContext_get_FlowSuppressed_m2046518873 ();
 extern "C" void SecurityContext_get_CompressedStack_m649521097 ();
+extern "C" void SecurityCriticalAttribute__ctor_m2297330502 ();
 extern "C" void SecurityElement__ctor_m3616501115 ();
 extern "C" void SecurityElement__ctor_m2591154807 ();
 extern "C" void SecurityElement__cctor_m429967270 ();
@@ -7348,6 +7350,7 @@ extern "C" void AnimatorTransitionInfo_get_exit_m2568505102 ();
 extern "C" void Application_get_isPlaying_m987993960 ();
 extern "C" void Application_get_isEditor_m1279348309 ();
 extern "C" void Application_get_platform_m2918632856 ();
+extern "C" void Application_get_persistentDataPath_m2554537447 ();
 extern "C" void Application_CallLogCallback_m419361836 ();
 extern "C" void LogCallback__ctor_m286543475 ();
 extern "C" void LogCallback_Invoke_m1886455446 ();
@@ -7388,8 +7391,14 @@ extern "C" void AudioConfigurationChangeHandler__ctor_m2273531181 ();
 extern "C" void AudioConfigurationChangeHandler_Invoke_m3047533822 ();
 extern "C" void AudioConfigurationChangeHandler_BeginInvoke_m194625699 ();
 extern "C" void AudioConfigurationChangeHandler_EndInvoke_m218260925 ();
+extern "C" void AudioSource_get_clip_m2410835857 ();
+extern "C" void AudioSource_set_clip_m19502010 ();
+extern "C" void AudioSource_Play_m3374467819 ();
+extern "C" void AudioSource_Play_m1360558992 ();
 extern "C" void AudioSource_PlayDelayed_m2357889495 ();
+extern "C" void AudioSource_Stop_m1454243038 ();
 extern "C" void AudioSource_get_isPlaying_m4213444423 ();
+extern "C" void AudioSource_set_loop_m3617666708 ();
 extern "C" void AudioSource_GetSpectrumDataHelper_m2191873714 ();
 extern "C" void AudioSource_GetSpectrumData_m3618983524 ();
 extern "C" void Behaviour__ctor_m1624944828 ();
@@ -8568,6 +8577,7 @@ extern "C" void RequireComponent__ctor_m2023271172 ();
 extern "C" void ResourceRequest__ctor_m2863879896 ();
 extern "C" void ResourceRequest_get_asset_m670320982 ();
 extern "C" void Resources_Load_m3601699608 ();
+extern "C" void Resources_UnloadUnusedAssets_m3831138427 ();
 extern "C" void RPC__ctor_m281827604 ();
 extern "C" void SceneManager_LoadScene_m2167814033 ();
 extern "C" void SceneManager_LoadScene_m3907168970 ();
@@ -8738,6 +8748,8 @@ extern "C" void Range__ctor_m872630735 ();
 extern "C" void SortingLayer_GetLayerValueFromID_m2560954442 ();
 extern "C" void SpaceAttribute__ctor_m3636842103 ();
 extern "C" void SpaceAttribute__ctor_m2299833492 ();
+extern "C" void Sprite_Create_m2242007923 ();
+extern "C" void Sprite_INTERNAL_CALL_Create_m1601644917 ();
 extern "C" void Sprite_get_rect_m132626493 ();
 extern "C" void Sprite_INTERNAL_get_rect_m853825042 ();
 extern "C" void Sprite_get_pixelsPerUnit_m2438708453 ();
@@ -8821,6 +8833,8 @@ extern "C" void Texture2D_Internal_Create_m457592211 ();
 extern "C" void Texture2D_get_whiteTexture_m1214146742 ();
 extern "C" void Texture2D_GetPixelBilinear_m2169326019 ();
 extern "C" void Texture2D_INTERNAL_CALL_GetPixelBilinear_m2056702809 ();
+extern "C" void Texture2D_LoadImage_m1576144569 ();
+extern "C" void Texture2D_LoadImage_m2186196036 ();
 extern "C" void Time_get_deltaTime_m2741110510 ();
 extern "C" void Time_get_unscaledTime_m319114521 ();
 extern "C" void Time_get_unscaledDeltaTime_m285638843 ();
@@ -8969,6 +8983,14 @@ extern "C" void WaitForFixedUpdate__ctor_m2916734308 ();
 extern "C" void WaitForSeconds__ctor_m3184996201 ();
 extern "C" void WrapperlessIcall__ctor_m1888400594 ();
 extern "C" void WritableAttribute__ctor_m2205809533 ();
+extern "C" void WWW__ctor_m1985874080 ();
+extern "C" void WWW_Dispose_m2446678367 ();
+extern "C" void WWW_Finalize_m1793349504 ();
+extern "C" void WWW_DestroyWWW_m300967382 ();
+extern "C" void WWW_InitWWW_m3594284248 ();
+extern "C" void WWW_GetAudioClip_m1447938731 ();
+extern "C" void WWW_GetAudioClipInternal_m850700757 ();
+extern "C" void WWW_get_isDone_m634060017 ();
 extern "C" void YieldInstruction__ctor_m539393484 ();
 extern "C" void GenericStack__ctor_m2328546233 ();
 extern "C" void MathfInternal__cctor_m2600550988 ();
@@ -10426,7 +10448,20 @@ extern "C" void AnimationEvents_U3CSetupEventsU3Em__0_m1499792301 ();
 extern "C" void AnimationEvents_U3CSetupEventsU3Em__1_m3859099310 ();
 extern "C" void AnimationEvents_U3CSetupEventsU3Em__2_m1923439023 ();
 extern "C" void AnimationEvents_U3CSetupEventsU3Em__3_m4282746032 ();
+extern "C" void AppleMusicController__ctor_m429360500 ();
+extern "C" void AppleMusicController__cctor_m4238144697 ();
+extern "C" void AppleMusicController_Awake_m666965719 ();
+extern "C" void AppleMusicController_QueryAppleMusic_m4199287997 ();
+extern "C" void AppleMusicController_StopAppleMusic_m402436061 ();
+extern "C" void AppleMusicController_DidReceiveResponse_m633120141 ();
+extern "C" void AppleMusicController_ExtractTitle_m468098939 ();
+extern "C" void AppleMusicController_ExtractArtist_m1549744776 ();
+extern "C" void AppleMusicController_ExtractAlbumTitle_m2691449190 ();
+extern "C" void AppleMusicController_ExtractGenre_m1788157168 ();
+extern "C" void AppleMusicController_ExtractLyrics_m3034194491 ();
+extern "C" void AppleMusicController_ExtractDuration_m2901196059 ();
 extern "C" void AudioProcessor__ctor_m3341396639 ();
+extern "C" void AudioProcessor_Awake_m3579001858 ();
 extern "C" void AudioProcessor_getCurrentTimeMillis_m2494678154 ();
 extern "C" void AudioProcessor_initArrays_m3995805583 ();
 extern "C" void AudioProcessor_Start_m2288534431 ();
@@ -10456,12 +10491,74 @@ extern "C" void U3CdelayU3Ec__Iterator0_MoveNext_m2197341731 ();
 extern "C" void U3CdelayU3Ec__Iterator0_Dispose_m55446830 ();
 extern "C" void U3CdelayU3Ec__Iterator0_Reset_m3613070302 ();
 extern "C" void BlockWrapper__ctor_m2894781357 ();
+extern "C" void iOSMusic__ctor_m3438063491 ();
+extern "C" void iOSMusic__cctor_m3018656906 ();
+extern "C" void iOSMusic_get_MusicLoader_m2860235549 ();
+extern "C" void iOSMusic_set_MusicLoader_m1250373334 ();
+extern "C" void iOSMusic_get_iOSMusicAudioSource_m1695760824 ();
+extern "C" void iOSMusic_set_iOSMusicAudioSource_m240945755 ();
+extern "C" void iOSMusic_get_iOSMusicClip_m3417835926 ();
+extern "C" void iOSMusic_set_iOSMusicClip_m2048228125 ();
+extern "C" void iOSMusic_readLocalMusic_m2226170050 ();
+extern "C" void iOSMusic_get_HasAudioClipStartedPlaying_m3937052535 ();
+extern "C" void iOSMusic_set_HasAudioClipStartedPlaying_m3277054318 ();
+extern "C" void iOSMusic_get_ShouldAppendToPlaylist_m2359950168 ();
+extern "C" void iOSMusic_set_ShouldAppendToPlaylist_m1831647119 ();
+extern "C" void iOSMusic_Awake_m3675668710 ();
+extern "C" void iOSMusic_Start_m2385201283 ();
+extern "C" void iOSMusic_Update_m932647914 ();
+extern "C" void iOSMusic_CheckAudioSourcePlayback_m1785806597 ();
+extern "C" void iOSMusic_HandleAppendToggleChange_m3795314110 ();
+extern "C" void iOSMusic_ResetButtonStates_m420947620 ();
+extern "C" void iOSMusic_LoadAudioClip_m122702497 ();
+extern "C" void iOSMusic_LoadMusic_m3984490890 ();
+extern "C" void iOSMusic_ExtractTitle_m2818124810 ();
+extern "C" void iOSMusic_ExtractArtist_m1386102745 ();
+extern "C" void iOSMusic_ExtractAlbumTitle_m2853582391 ();
+extern "C" void iOSMusic_ExtractBPM_m1455911395 ();
+extern "C" void iOSMusic_ExtractGenre_m4138183039 ();
+extern "C" void iOSMusic_ExtractLyrics_m2870552460 ();
+extern "C" void iOSMusic_ExtractDuration_m260026924 ();
+extern "C" void iOSMusic_ExtractArtwork_m2984868052 ();
+extern "C" void iOSMusic_UserDidCancel_m559539567 ();
+extern "C" void U3CLoadMusicU3Ec__Iterator2__ctor_m1626840534 ();
+extern "C" void U3CLoadMusicU3Ec__Iterator2_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m3857085894 ();
+extern "C" void U3CLoadMusicU3Ec__Iterator2_System_Collections_IEnumerator_get_Current_m3680027994 ();
+extern "C" void U3CLoadMusicU3Ec__Iterator2_MoveNext_m4033278022 ();
+extern "C" void U3CLoadMusicU3Ec__Iterator2_Dispose_m4218907795 ();
+extern "C" void U3CLoadMusicU3Ec__Iterator2_Reset_m3568240771 ();
+extern "C" void iOSMusicGUI__ctor_m1535670984 ();
+extern "C" void iOSMusicGUI_Start_m482808776 ();
+extern "C" void iOSMusicGUI_Update_m2088022341 ();
+extern "C" void iOSMusicGUI_ShowMusicLibrary_m843460271 ();
+extern "C" void iOSMusicGUI_PlayPause_m3816763400 ();
+extern "C" void iOSMusicGUI_LoadAudioClip_m90374374 ();
+extern "C" void iOSMusicGUI_NextSong_m4163255460 ();
+extern "C" void iOSMusicGUI_PreviousSong_m3780994088 ();
+extern "C" void iOSMusicGUI_DisableButtons_m1382367477 ();
+extern "C" void iOSMusicGUI_GoToScene2_m1498097541 ();
+extern "C" void iOSMusicGUI_GoToMainScene_m3134741238 ();
 extern "C" void MenuManager__ctor_m1757457917 ();
 extern "C" void MenuManager_GoToThree_m1345822006 ();
 extern "C" void MenuManager_GoTo_Four_m1542755357 ();
 extern "C" void MenuManager_GoTo_Five_m1537231529 ();
 extern "C" void MenuManager_GoTo_MainScene_m707727582 ();
 extern "C" void MenuManager_GoTo_PlayAgain_m2331455703 ();
+extern "C" void musicManager__ctor_m3897392595 ();
+extern "C" void musicManager__openNativeMusicPicker_m2281960699 ();
+extern "C" void musicManager_openNativeMusicPicker_m553592858 ();
+extern "C" void musicManager__playPause_m3247616468 ();
+extern "C" void musicManager_playPause_m1295781299 ();
+extern "C" void musicManager__loadAudioClip_m2013680297 ();
+extern "C" void musicManager_loadAudioClip_m2207913160 ();
+extern "C" void musicManager__previousSong_m560660188 ();
+extern "C" void musicManager_previousSong_m3001361053 ();
+extern "C" void musicManager__nextSong_m2482327896 ();
+extern "C" void musicManager_nextSong_m64060825 ();
+extern "C" void musicManager__queryAppleMusic_m631507869 ();
+extern "C" void musicManager_queryAppleMusic_m2357759326 ();
+extern "C" void musicManager__stopAppleMusic_m3900323517 ();
+extern "C" void musicManager_stopAppleMusic_m66743870 ();
 extern "C" void PlaneController__ctor_m3938815859 ();
 extern "C" void PlaneController__cctor_m1362111130 ();
 extern "C" void PlaneController_Awake_m4176421078 ();
@@ -10506,7 +10603,7 @@ extern "C" void U3CshowWordU3Ec__Iterator1_System_Collections_IEnumerator_get_Cu
 extern "C" void U3CshowWordU3Ec__Iterator1_MoveNext_m2538339565 ();
 extern "C" void U3CshowWordU3Ec__Iterator1_Dispose_m758898980 ();
 extern "C" void U3CshowWordU3Ec__Iterator1_Reset_m2407099732 ();
-extern const Il2CppMethodPointer g_MethodPointers[10495] = 
+extern const Il2CppMethodPointer g_MethodPointers[10592] = 
 {
 	Locale_GetText_m2389348044,
 	Locale_GetText_m2218462520,
@@ -12700,6 +12797,7 @@ extern const Il2CppMethodPointer g_MethodPointers[10495] =
 	File_Open_m1918038371,
 	File_OpenRead_m3104031109,
 	File_OpenText_m396847893,
+	File_ReadAllBytes_m621899937,
 	FileNotFoundException__ctor_m1040614905,
 	FileNotFoundException__ctor_m2788024869,
 	FileNotFoundException__ctor_m3117006778,
@@ -15078,6 +15176,7 @@ extern const Il2CppMethodPointer g_MethodPointers[10495] =
 	SecurityContext_Capture_m3640798635,
 	SecurityContext_get_FlowSuppressed_m2046518873,
 	SecurityContext_get_CompressedStack_m649521097,
+	SecurityCriticalAttribute__ctor_m2297330502,
 	SecurityElement__ctor_m3616501115,
 	SecurityElement__ctor_m2591154807,
 	SecurityElement__cctor_m429967270,
@@ -17845,6 +17944,7 @@ extern const Il2CppMethodPointer g_MethodPointers[10495] =
 	Application_get_isPlaying_m987993960,
 	Application_get_isEditor_m1279348309,
 	Application_get_platform_m2918632856,
+	Application_get_persistentDataPath_m2554537447,
 	Application_CallLogCallback_m419361836,
 	LogCallback__ctor_m286543475,
 	LogCallback_Invoke_m1886455446,
@@ -17885,8 +17985,14 @@ extern const Il2CppMethodPointer g_MethodPointers[10495] =
 	AudioConfigurationChangeHandler_Invoke_m3047533822,
 	AudioConfigurationChangeHandler_BeginInvoke_m194625699,
 	AudioConfigurationChangeHandler_EndInvoke_m218260925,
+	AudioSource_get_clip_m2410835857,
+	AudioSource_set_clip_m19502010,
+	AudioSource_Play_m3374467819,
+	AudioSource_Play_m1360558992,
 	AudioSource_PlayDelayed_m2357889495,
+	AudioSource_Stop_m1454243038,
 	AudioSource_get_isPlaying_m4213444423,
+	AudioSource_set_loop_m3617666708,
 	AudioSource_GetSpectrumDataHelper_m2191873714,
 	AudioSource_GetSpectrumData_m3618983524,
 	Behaviour__ctor_m1624944828,
@@ -19065,6 +19171,7 @@ extern const Il2CppMethodPointer g_MethodPointers[10495] =
 	ResourceRequest__ctor_m2863879896,
 	ResourceRequest_get_asset_m670320982,
 	Resources_Load_m3601699608,
+	Resources_UnloadUnusedAssets_m3831138427,
 	RPC__ctor_m281827604,
 	SceneManager_LoadScene_m2167814033,
 	SceneManager_LoadScene_m3907168970,
@@ -19235,6 +19342,8 @@ extern const Il2CppMethodPointer g_MethodPointers[10495] =
 	SortingLayer_GetLayerValueFromID_m2560954442,
 	SpaceAttribute__ctor_m3636842103,
 	SpaceAttribute__ctor_m2299833492,
+	Sprite_Create_m2242007923,
+	Sprite_INTERNAL_CALL_Create_m1601644917,
 	Sprite_get_rect_m132626493,
 	Sprite_INTERNAL_get_rect_m853825042,
 	Sprite_get_pixelsPerUnit_m2438708453,
@@ -19318,6 +19427,8 @@ extern const Il2CppMethodPointer g_MethodPointers[10495] =
 	Texture2D_get_whiteTexture_m1214146742,
 	Texture2D_GetPixelBilinear_m2169326019,
 	Texture2D_INTERNAL_CALL_GetPixelBilinear_m2056702809,
+	Texture2D_LoadImage_m1576144569,
+	Texture2D_LoadImage_m2186196036,
 	Time_get_deltaTime_m2741110510,
 	Time_get_unscaledTime_m319114521,
 	Time_get_unscaledDeltaTime_m285638843,
@@ -19466,6 +19577,14 @@ extern const Il2CppMethodPointer g_MethodPointers[10495] =
 	WaitForSeconds__ctor_m3184996201,
 	WrapperlessIcall__ctor_m1888400594,
 	WritableAttribute__ctor_m2205809533,
+	WWW__ctor_m1985874080,
+	WWW_Dispose_m2446678367,
+	WWW_Finalize_m1793349504,
+	WWW_DestroyWWW_m300967382,
+	WWW_InitWWW_m3594284248,
+	WWW_GetAudioClip_m1447938731,
+	WWW_GetAudioClipInternal_m850700757,
+	WWW_get_isDone_m634060017,
 	YieldInstruction__ctor_m539393484,
 	GenericStack__ctor_m2328546233,
 	MathfInternal__cctor_m2600550988,
@@ -20923,7 +21042,20 @@ extern const Il2CppMethodPointer g_MethodPointers[10495] =
 	AnimationEvents_U3CSetupEventsU3Em__1_m3859099310,
 	AnimationEvents_U3CSetupEventsU3Em__2_m1923439023,
 	AnimationEvents_U3CSetupEventsU3Em__3_m4282746032,
+	AppleMusicController__ctor_m429360500,
+	AppleMusicController__cctor_m4238144697,
+	AppleMusicController_Awake_m666965719,
+	AppleMusicController_QueryAppleMusic_m4199287997,
+	AppleMusicController_StopAppleMusic_m402436061,
+	AppleMusicController_DidReceiveResponse_m633120141,
+	AppleMusicController_ExtractTitle_m468098939,
+	AppleMusicController_ExtractArtist_m1549744776,
+	AppleMusicController_ExtractAlbumTitle_m2691449190,
+	AppleMusicController_ExtractGenre_m1788157168,
+	AppleMusicController_ExtractLyrics_m3034194491,
+	AppleMusicController_ExtractDuration_m2901196059,
 	AudioProcessor__ctor_m3341396639,
+	AudioProcessor_Awake_m3579001858,
 	AudioProcessor_getCurrentTimeMillis_m2494678154,
 	AudioProcessor_initArrays_m3995805583,
 	AudioProcessor_Start_m2288534431,
@@ -20953,12 +21085,74 @@ extern const Il2CppMethodPointer g_MethodPointers[10495] =
 	U3CdelayU3Ec__Iterator0_Dispose_m55446830,
 	U3CdelayU3Ec__Iterator0_Reset_m3613070302,
 	BlockWrapper__ctor_m2894781357,
+	iOSMusic__ctor_m3438063491,
+	iOSMusic__cctor_m3018656906,
+	iOSMusic_get_MusicLoader_m2860235549,
+	iOSMusic_set_MusicLoader_m1250373334,
+	iOSMusic_get_iOSMusicAudioSource_m1695760824,
+	iOSMusic_set_iOSMusicAudioSource_m240945755,
+	iOSMusic_get_iOSMusicClip_m3417835926,
+	iOSMusic_set_iOSMusicClip_m2048228125,
+	iOSMusic_readLocalMusic_m2226170050,
+	iOSMusic_get_HasAudioClipStartedPlaying_m3937052535,
+	iOSMusic_set_HasAudioClipStartedPlaying_m3277054318,
+	iOSMusic_get_ShouldAppendToPlaylist_m2359950168,
+	iOSMusic_set_ShouldAppendToPlaylist_m1831647119,
+	iOSMusic_Awake_m3675668710,
+	iOSMusic_Start_m2385201283,
+	iOSMusic_Update_m932647914,
+	iOSMusic_CheckAudioSourcePlayback_m1785806597,
+	iOSMusic_HandleAppendToggleChange_m3795314110,
+	iOSMusic_ResetButtonStates_m420947620,
+	iOSMusic_LoadAudioClip_m122702497,
+	iOSMusic_LoadMusic_m3984490890,
+	iOSMusic_ExtractTitle_m2818124810,
+	iOSMusic_ExtractArtist_m1386102745,
+	iOSMusic_ExtractAlbumTitle_m2853582391,
+	iOSMusic_ExtractBPM_m1455911395,
+	iOSMusic_ExtractGenre_m4138183039,
+	iOSMusic_ExtractLyrics_m2870552460,
+	iOSMusic_ExtractDuration_m260026924,
+	iOSMusic_ExtractArtwork_m2984868052,
+	iOSMusic_UserDidCancel_m559539567,
+	U3CLoadMusicU3Ec__Iterator2__ctor_m1626840534,
+	U3CLoadMusicU3Ec__Iterator2_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m3857085894,
+	U3CLoadMusicU3Ec__Iterator2_System_Collections_IEnumerator_get_Current_m3680027994,
+	U3CLoadMusicU3Ec__Iterator2_MoveNext_m4033278022,
+	U3CLoadMusicU3Ec__Iterator2_Dispose_m4218907795,
+	U3CLoadMusicU3Ec__Iterator2_Reset_m3568240771,
+	iOSMusicGUI__ctor_m1535670984,
+	iOSMusicGUI_Start_m482808776,
+	iOSMusicGUI_Update_m2088022341,
+	iOSMusicGUI_ShowMusicLibrary_m843460271,
+	iOSMusicGUI_PlayPause_m3816763400,
+	iOSMusicGUI_LoadAudioClip_m90374374,
+	iOSMusicGUI_NextSong_m4163255460,
+	iOSMusicGUI_PreviousSong_m3780994088,
+	iOSMusicGUI_DisableButtons_m1382367477,
+	iOSMusicGUI_GoToScene2_m1498097541,
+	iOSMusicGUI_GoToMainScene_m3134741238,
 	MenuManager__ctor_m1757457917,
 	MenuManager_GoToThree_m1345822006,
 	MenuManager_GoTo_Four_m1542755357,
 	MenuManager_GoTo_Five_m1537231529,
 	MenuManager_GoTo_MainScene_m707727582,
 	MenuManager_GoTo_PlayAgain_m2331455703,
+	musicManager__ctor_m3897392595,
+	musicManager__openNativeMusicPicker_m2281960699,
+	musicManager_openNativeMusicPicker_m553592858,
+	musicManager__playPause_m3247616468,
+	musicManager_playPause_m1295781299,
+	musicManager__loadAudioClip_m2013680297,
+	musicManager_loadAudioClip_m2207913160,
+	musicManager__previousSong_m560660188,
+	musicManager_previousSong_m3001361053,
+	musicManager__nextSong_m2482327896,
+	musicManager_nextSong_m64060825,
+	musicManager__queryAppleMusic_m631507869,
+	musicManager_queryAppleMusic_m2357759326,
+	musicManager__stopAppleMusic_m3900323517,
+	musicManager_stopAppleMusic_m66743870,
 	PlaneController__ctor_m3938815859,
 	PlaneController__cctor_m1362111130,
 	PlaneController_Awake_m4176421078,

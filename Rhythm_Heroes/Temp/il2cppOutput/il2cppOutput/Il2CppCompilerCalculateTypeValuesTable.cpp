@@ -791,6 +791,8 @@
 #include "UnityEngine_UnityEngine_RectTransform_Axis2055105.h"
 #include "UnityEngine_UnityEngine_ResourceRequest2256525006.h"
 #include "UnityEngine_UnityEngine_SortingLayer1789336218.h"
+#include "UnityEngine_UnityEngine_SpriteMeshType2246008089.h"
+#include "UnityEngine_UnityEngine_WWW1522972100.h"
 #include "UnityEngine_UnityEngine_AsyncOperation3374395064.h"
 #include "UnityEngine_UnityEngine_Application450040189.h"
 #include "UnityEngine_UnityEngine_Camera3533968274.h"
@@ -822,6 +824,7 @@
 #include "UnityEngine_UnityEngine_ContactPoint2D3963746319.h"
 #include "UnityEngine_UnityEngine_Collision2D452810033.h"
 #include "UnityEngine_UnityEngine_AudioSettings1824070214.h"
+#include "UnityEngine_UnityEngine_AudioType3715057757.h"
 #include "UnityEngine_UnityEngine_AudioClip3714538611.h"
 #include "UnityEngine_UnityEngine_FFTWindow1124744433.h"
 #include "UnityEngine_UnityEngine_AnimationEventSource2022798750.h"
@@ -1036,6 +1039,7 @@
 #include "AssemblyU2DCSharp_AudioProcessor_Autoco1972512379.h"
 #include "AssemblyU2DCSharp_BackgroundMusicController1016431731.h"
 #include "AssemblyU2DCSharp_BackgroundMusicController_U3Cdel1836448022.h"
+#include "AssemblyU2DCSharp_MenuManager3994435886.h"
 #include "AssemblyU2DCSharp_PlaneController1730645752.h"
 #include "AssemblyU2DCSharp_BlockWrapper1007084390.h"
 #include "AssemblyU2DCSharp_PlaneMaterialController2074521471.h"
@@ -1045,6 +1049,9 @@
 #include "AssemblyU2DCSharp_TouchZoneMaterialController633689838.h"
 #include "AssemblyU2DCSharp_WordController1618021990.h"
 #include "AssemblyU2DCSharp_WordController_U3CshowWordU3Ec__4074000763.h"
+#include "AssemblyU2DCSharp_AppleMusicController2416020743.h"
+#include "AssemblyU2DCSharp_iOSMusic2155735576.h"
+#include "AssemblyU2DCSharp_iOSMusic_U3CLoadMusicU3Ec__Iterat274259292.h"
 #include "AssemblyU2DCSharp_U3CPrivateImplementationDetailsU3053238933.h"
 #include "mscorlib_U3CModuleU3E86524790.h"
 #include "mscorlib_System_Object837106420.h"
@@ -1176,6 +1183,7 @@
 #include "mscorlib_System_Security_Cryptography_TripleDES3174934509.h"
 #include "mscorlib_System_Security_Cryptography_TripleDESCryp635698090.h"
 #include "mscorlib_System_Security_CodeAccessPermission1537136389.h"
+#include "mscorlib_System_Security_SecurityCriticalAttribute2046183106.h"
 #include "mscorlib_System_Security_SecuritySafeCriticalAttri2130178741.h"
 #include "mscorlib_System_Security_SuppressUnmanagedCodeSecu1986929219.h"
 #include "mscorlib_System_Security_UnverifiableCodeAttribute556957784.h"
@@ -1451,7 +1459,8 @@
 #include "UnityEngine_UI_UnityEngine_UI_PositionAsUV1826283646.h"
 #include "UnityEngine_UI_U3CPrivateImplementationDetailsU3E_U214874486.h"
 #include "AssemblyU2DCSharp_U3CModuleU3E86524790.h"
-#include "AssemblyU2DCSharp_MenuManager3994435886.h"
+#include "AssemblyU2DCSharp_musicManager2706273736.h"
+#include "AssemblyU2DCSharp_iOSMusicGUI3167605763.h"
 #include "AssemblyU2DCSharp_U3CPrivateImplementationDetailsU3214874515.h"
 
 
@@ -1461,7 +1470,7 @@
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-extern const int32_t g_FieldOffsetTable[6540] = 
+extern const int32_t g_FieldOffsetTable[6574] = 
 {
 	0,
 	0,
@@ -6117,6 +6126,10 @@ extern const int32_t g_FieldOffsetTable[6540] =
 	ResourceRequest_t2256525006::get_offset_of_m_Path_1(),
 	ResourceRequest_t2256525006::get_offset_of_m_Type_2(),
 	SortingLayer_t1789336218::get_offset_of_m_Id_0() + static_cast<int32_t>(sizeof(Il2CppObject)),
+	SpriteMeshType_t2246008089::get_offset_of_value___1() + static_cast<int32_t>(sizeof(Il2CppObject)),
+	0,
+	0,
+	WWW_t1522972100::get_offset_of_m_Ptr_0(),
 	AsyncOperation_t3374395064::get_offset_of_m_Ptr_0(),
 	Application_t450040189_StaticFields::get_offset_of_s_LogCallbackHandler_0(),
 	Application_t450040189_StaticFields::get_offset_of_s_LogCallbackHandlerThreaded_1(),
@@ -6255,6 +6268,20 @@ extern const int32_t g_FieldOffsetTable[6540] =
 	Collision2D_t452810033::get_offset_of_m_RelativeVelocity_3(),
 	Collision2D_t452810033::get_offset_of_m_Enabled_4(),
 	AudioSettings_t1824070214_StaticFields::get_offset_of_OnAudioConfigurationChanged_0(),
+	AudioType_t3715057757::get_offset_of_value___1() + static_cast<int32_t>(sizeof(Il2CppObject)),
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
 	AudioClip_t3714538611::get_offset_of_m_PCMReaderCallback_2(),
 	AudioClip_t3714538611::get_offset_of_m_PCMSetPositionCallback_3(),
 	FFTWindow_t1124744433::get_offset_of_value___1() + static_cast<int32_t>(sizeof(Il2CppObject)),
@@ -7938,8 +7965,10 @@ extern const int32_t g_FieldOffsetTable[6540] =
 	Autoco_t1972512379::get_offset_of_wmidbpm_7(),
 	Autoco_t1972512379::get_offset_of_woctavewidth_8(),
 	BackgroundMusicController_t1016431731::get_offset_of_music_2(),
+	BackgroundMusicController_t1016431731::get_offset_of_clip_3(),
 	U3CdelayU3Ec__Iterator0_t1836448022::get_offset_of_U24PC_0(),
 	U3CdelayU3Ec__Iterator0_t1836448022::get_offset_of_U24current_1(),
+	MenuManager_t3994435886_StaticFields::get_offset_of_sceneNumber_2(),
 	PlaneController_t1730645752_StaticFields::get_offset_of_keepPlaying_2(),
 	PlaneController_t1730645752_StaticFields::get_offset_of_channelNum_3(),
 	PlaneController_t1730645752_StaticFields::get_offset_of_blockNumPerChannel_4(),
@@ -8002,12 +8031,26 @@ extern const int32_t g_FieldOffsetTable[6540] =
 	U3CshowWordU3Ec__Iterator1_t4074000763::get_offset_of_U3CU24U3Es_4(),
 	U3CshowWordU3Ec__Iterator1_t4074000763::get_offset_of_U3CU24U3Edelay_5(),
 	U3CshowWordU3Ec__Iterator1_t4074000763::get_offset_of_U3CU3Ef__this_6(),
+	AppleMusicController_t2416020743_StaticFields::get_offset_of_instance_2(),
+	iOSMusic_t2155735576_StaticFields::get_offset_of_instance_2(),
+	iOSMusic_t2155735576::get_offset_of_musicData_3(),
+	iOSMusic_t2155735576::get_offset_of__musicLoader_4(),
+	iOSMusic_t2155735576::get_offset_of__audioSource_5(),
+	iOSMusic_t2155735576_StaticFields::get_offset_of__audioClip_6(),
+	iOSMusic_t2155735576_StaticFields::get_offset_of__audioClip2_7(),
+	iOSMusic_t2155735576::get_offset_of__hasAudioClipStartedPlaying_8(),
+	iOSMusic_t2155735576::get_offset_of__shouldAppendToPlaylist_9(),
+	U3CLoadMusicU3Ec__Iterator2_t274259292::get_offset_of_songPath_0(),
+	U3CLoadMusicU3Ec__Iterator2_t274259292::get_offset_of_U24PC_1(),
+	U3CLoadMusicU3Ec__Iterator2_t274259292::get_offset_of_U24current_2(),
+	U3CLoadMusicU3Ec__Iterator2_t274259292::get_offset_of_U3CU24U3EsongPath_3(),
+	U3CLoadMusicU3Ec__Iterator2_t274259292::get_offset_of_U3CU3Ef__this_4(),
 	U3CPrivateImplementationDetailsU3E_t3053238938_StaticFields::get_offset_of_U24U24fieldU2D0_0(),
 };
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
-extern const Il2CppTypeDefinitionSizes g_Il2CppTypeDefinitionSizesTable[1651] = 
+extern const Il2CppTypeDefinitionSizes g_Il2CppTypeDefinitionSizesTable[1660] = 
 {
 	sizeof (U3CModuleU3E_t86524790), -1, 0, 0,
 	sizeof (Il2CppObject), -1, 0, 0,
@@ -8687,6 +8730,7 @@ extern const Il2CppTypeDefinitionSizes g_Il2CppTypeDefinitionSizesTable[1651] =
 	0, -1, 0, 0,
 	sizeof (PermissionSet_t2781735032), -1, 0, 0,
 	sizeof (SecurityContext_t794732212), -1, 0, 0,
+	sizeof (SecurityCriticalAttribute_t2046183106), -1, 0, 0,
 	sizeof (SecurityElement_t2475331585), -1, sizeof(SecurityElement_t2475331585_StaticFields), 0,
 	sizeof (SecurityAttribute_t3835542300), -1, 0, 0,
 	sizeof (SecurityException_t128786772), -1, 0, 0,
@@ -9245,9 +9289,11 @@ extern const Il2CppTypeDefinitionSizes g_Il2CppTypeDefinitionSizesTable[1651] =
 	sizeof (Shader_t3998140498), -1, 0, 0,
 	sizeof (Material_t1886596500), -1, 0, 0,
 	sizeof (SortingLayer_t1789336218)+ sizeof (Il2CppObject), sizeof(SortingLayer_t1789336218_marshaled_pinvoke), 0, 0,
+	sizeof (SpriteMeshType_t2246008089)+ sizeof (Il2CppObject), sizeof(int32_t), 0, 0,
 	sizeof (Sprite_t4006040370), -1, 0, 0,
 	sizeof (SpriteRenderer_t2223784725), -1, 0, 0,
 	sizeof (DataUtility_t4121269839), -1, 0, 0,
+	sizeof (WWW_t1522972100), -1, 0, 0,
 	sizeof (UnityString_t963216403), -1, 0, 0,
 	sizeof (AsyncOperation_t3374395064), sizeof(AsyncOperation_t3374395064_marshaled_pinvoke), 0, 0,
 	sizeof (Application_t450040189), -1, sizeof(Application_t450040189_StaticFields), 0,
@@ -9307,6 +9353,7 @@ extern const Il2CppTypeDefinitionSizes g_Il2CppTypeDefinitionSizesTable[1651] =
 	sizeof (Collision2D_t452810033), -1, 0, 0,
 	sizeof (AudioSettings_t1824070214), -1, sizeof(AudioSettings_t1824070214_StaticFields), 0,
 	sizeof (AudioConfigurationChangeHandler_t1722466426), sizeof(Il2CppMethodPointer), 0, 0,
+	sizeof (AudioType_t3715057757)+ sizeof (Il2CppObject), sizeof(int32_t), 0, 0,
 	sizeof (AudioClip_t3714538611), -1, 0, 0,
 	sizeof (PCMReaderCallback_t749510018), sizeof(Il2CppMethodPointer), 0, 0,
 	sizeof (PCMSetPositionCallback_t2977871350), sizeof(Il2CppMethodPointer), 0, 0,
@@ -9648,7 +9695,7 @@ extern const Il2CppTypeDefinitionSizes g_Il2CppTypeDefinitionSizesTable[1651] =
 	sizeof (Autoco_t1972512379), -1, 0, 0,
 	sizeof (BackgroundMusicController_t1016431731), -1, 0, 0,
 	sizeof (U3CdelayU3Ec__Iterator0_t1836448022), -1, 0, 0,
-	sizeof (MenuManager_t3994435886), -1, 0, 0,
+	sizeof (MenuManager_t3994435886), -1, sizeof(MenuManager_t3994435886_StaticFields), 0,
 	sizeof (PlaneController_t1730645752), -1, sizeof(PlaneController_t1730645752_StaticFields), 0,
 	sizeof (BlockWrapper_t1007084390), -1, 0, 0,
 	sizeof (PlaneMaterialController_t2074521471), -1, 0, 0,
@@ -9658,6 +9705,11 @@ extern const Il2CppTypeDefinitionSizes g_Il2CppTypeDefinitionSizesTable[1651] =
 	sizeof (TouchZoneMaterialController_t633689838), -1, 0, 0,
 	sizeof (WordController_t1618021990), -1, 0, 0,
 	sizeof (U3CshowWordU3Ec__Iterator1_t4074000763), -1, 0, 0,
+	sizeof (AppleMusicController_t2416020743), -1, sizeof(AppleMusicController_t2416020743_StaticFields), 0,
+	sizeof (musicManager_t2706273736), -1, 0, 0,
+	sizeof (iOSMusic_t2155735576), -1, sizeof(iOSMusic_t2155735576_StaticFields), 0,
+	sizeof (U3CLoadMusicU3Ec__Iterator2_t274259292), -1, 0, 0,
+	sizeof (iOSMusicGUI_t3167605763), -1, 0, 0,
 	sizeof (U3CPrivateImplementationDetailsU3E_t3053238938), -1, sizeof(U3CPrivateImplementationDetailsU3E_t3053238938_StaticFields), 0,
 	sizeof (U24ArrayTypeU2420_t214874517)+ sizeof (Il2CppObject), sizeof(U24ArrayTypeU2420_t214874517_marshaled_pinvoke), 0, 0,
 };

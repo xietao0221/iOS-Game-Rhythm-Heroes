@@ -14,6 +14,8 @@
 
 // UnityEngine.Texture2D
 struct Texture2D_t2509538522;
+// System.Byte[]
+struct ByteU5BU5D_t58506160;
 
 #include "codegen/il2cpp-codegen.h"
 #include "UnityEngine_UnityEngine_Texture2D2509538522.h"
@@ -31,3 +33,7 @@ extern "C"  Texture2D_t2509538522 * Texture2D_get_whiteTexture_m1214146742 (Il2C
 extern "C"  Color_t1588175760  Texture2D_GetPixelBilinear_m2169326019 (Texture2D_t2509538522 * __this, float ___u0, float ___v1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void UnityEngine.Texture2D::INTERNAL_CALL_GetPixelBilinear(UnityEngine.Texture2D,System.Single,System.Single,UnityEngine.Color&)
 extern "C"  void Texture2D_INTERNAL_CALL_GetPixelBilinear_m2056702809 (Il2CppObject * __this /* static, unused */, Texture2D_t2509538522 * ___self0, float ___u1, float ___v2, Color_t1588175760 * ___value3, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Boolean UnityEngine.Texture2D::LoadImage(System.Byte[],System.Boolean)
+extern "C"  bool Texture2D_LoadImage_m1576144569 (Texture2D_t2509538522 * __this, ByteU5BU5D_t58506160* ___data0, bool ___markNonReadable1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Boolean UnityEngine.Texture2D::LoadImage(System.Byte[])
+extern "C"  bool Texture2D_LoadImage_m2186196036 (Texture2D_t2509538522 * __this, ByteU5BU5D_t58506160* ___data0, const MethodInfo* method) IL2CPP_METHOD_ATTR;

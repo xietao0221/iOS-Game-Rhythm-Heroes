@@ -1435,6 +1435,9 @@ extern const Il2CppGenericInst GenInst_EventTrigger_t2937500249_0_0_0 = { 1, Gen
 extern const Il2CppType AudioSource_t3628549054_0_0_0;
 static const Il2CppType* GenInst_AudioSource_t3628549054_0_0_0_Types[] = { &AudioSource_t3628549054_0_0_0 };
 extern const Il2CppGenericInst GenInst_AudioSource_t3628549054_0_0_0 = { 1, GenInst_AudioSource_t3628549054_0_0_0_Types };
+extern const Il2CppType AudioClip_t3714538611_0_0_0;
+static const Il2CppType* GenInst_AudioClip_t3714538611_0_0_0_Types[] = { &AudioClip_t3714538611_0_0_0 };
+extern const Il2CppGenericInst GenInst_AudioClip_t3714538611_0_0_0 = { 1, GenInst_AudioClip_t3714538611_0_0_0_Types };
 extern const Il2CppType AudioProcessor_t2423098748_0_0_0;
 static const Il2CppType* GenInst_AudioProcessor_t2423098748_0_0_0_Types[] = { &AudioProcessor_t2423098748_0_0_0 };
 extern const Il2CppGenericInst GenInst_AudioProcessor_t2423098748_0_0_0 = { 1, GenInst_AudioProcessor_t2423098748_0_0_0_Types };
@@ -1486,7 +1489,7 @@ static const Il2CppType* GenInst_KeyValuePair_2_t3312956448_0_0_0_KeyValuePair_2
 extern const Il2CppGenericInst GenInst_KeyValuePair_2_t3312956448_0_0_0_KeyValuePair_2_t3312956448_0_0_0 = { 2, GenInst_KeyValuePair_2_t3312956448_0_0_0_KeyValuePair_2_t3312956448_0_0_0_Types };
 static const Il2CppType* GenInst_KeyValuePair_2_t3312956448_0_0_0_Il2CppObject_0_0_0_Types[] = { &KeyValuePair_2_t3312956448_0_0_0, &Il2CppObject_0_0_0 };
 extern const Il2CppGenericInst GenInst_KeyValuePair_2_t3312956448_0_0_0_Il2CppObject_0_0_0 = { 2, GenInst_KeyValuePair_2_t3312956448_0_0_0_Il2CppObject_0_0_0_Types };
-extern const Il2CppGenericInst* const g_Il2CppGenericInstTable[512] = 
+extern const Il2CppGenericInst* const g_Il2CppGenericInstTable[513] = 
 {
 	&GenInst_Il2CppObject_0_0_0,
 	&GenInst_Int32_t2847414787_0_0_0,
@@ -1976,6 +1979,7 @@ extern const Il2CppGenericInst* const g_Il2CppGenericInstTable[512] =
 	&GenInst_Direction_t1041377120_0_0_0,
 	&GenInst_EventTrigger_t2937500249_0_0_0,
 	&GenInst_AudioSource_t3628549054_0_0_0,
+	&GenInst_AudioClip_t3714538611_0_0_0,
 	&GenInst_AudioProcessor_t2423098748_0_0_0,
 	&GenInst_Renderer_t1092684080_0_0_0,
 	&GenInst_Outline_t3842262571_0_0_0,

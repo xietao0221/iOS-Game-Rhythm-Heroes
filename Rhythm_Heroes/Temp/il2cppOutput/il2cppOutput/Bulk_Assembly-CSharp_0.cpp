@@ -27,6 +27,10 @@ struct AnimationEvents_t643886493;
 struct EventTrigger_t2937500249;
 // UnityEngine.EventSystems.BaseEventData
 struct BaseEventData_t3547103726;
+// AppleMusicController
+struct AppleMusicController_t2416020743;
+// System.String
+struct String_t;
 // AudioProcessor
 struct AudioProcessor_t2423098748;
 // UnityEngine.AudioSource
@@ -51,8 +55,24 @@ struct U3CdelayU3Ec__Iterator0_t1836448022;
 struct BlockWrapper_t1007084390;
 // UnityEngine.GameObject
 struct GameObject_t4012695102;
+// iOSMusic
+struct iOSMusic_t2155735576;
+// UnityEngine.WWW
+struct WWW_t1522972100;
+// UnityEngine.AudioClip
+struct AudioClip_t3714538611;
+// UnityEngine.UI.Button
+struct Button_t990034267;
+// UnityEngine.UI.Image
+struct Image_t3354615620;
+// iOSMusic/<LoadMusic>c__Iterator2
+struct U3CLoadMusicU3Ec__Iterator2_t274259292;
+// iOSMusicGUI
+struct iOSMusicGUI_t3167605763;
 // MenuManager
 struct MenuManager_t3994435886;
+// musicManager
+struct musicManager_t2706273736;
 // PlaneController
 struct PlaneController_t1730645752;
 // UnityEngine.Collider
@@ -73,8 +93,6 @@ struct TouchZoneMaterialController_t633689838;
 struct WordController_t1618021990;
 // UnityEngine.UI.Outline
 struct Outline_t3842262571;
-// System.String
-struct String_t;
 // WordController/<showWord>c__Iterator1
 struct U3CshowWordU3Ec__Iterator1_t4074000763;
 
@@ -129,8 +147,20 @@ struct U3CshowWordU3Ec__Iterator1_t4074000763;
 #include "mscorlib_System_IntPtr676692020.h"
 #include "mscorlib_System_Collections_Generic_List_1_gen864074059.h"
 #include "mscorlib_System_Collections_Generic_List_1_gen864074059MethodDeclarations.h"
+#include "AssemblyU2DCSharp_AppleMusicController2416020743.h"
+#include "AssemblyU2DCSharp_AppleMusicController2416020743MethodDeclarations.h"
+#include "UnityEngine_UnityEngine_Object3878351788MethodDeclarations.h"
+#include "UnityEngine_UnityEngine_Object3878351788.h"
+#include "AssemblyU2DCSharp_musicManager2706273736MethodDeclarations.h"
+#include "UnityEngine_UnityEngine_Debug1588791936MethodDeclarations.h"
+#include "mscorlib_System_String968488902MethodDeclarations.h"
 #include "AssemblyU2DCSharp_AudioProcessor2423098748.h"
 #include "AssemblyU2DCSharp_AudioProcessor2423098748MethodDeclarations.h"
+#include "UnityEngine_UnityEngine_AudioSource3628549054MethodDeclarations.h"
+#include "UnityEngine_UnityEngine_AudioSource3628549054.h"
+#include "AssemblyU2DCSharp_iOSMusic2155735576.h"
+#include "AssemblyU2DCSharp_iOSMusic2155735576MethodDeclarations.h"
+#include "UnityEngine_UnityEngine_AudioClip3714538611.h"
 #include "mscorlib_System_Int642847414882.h"
 #include "mscorlib_System_DateTime339033936MethodDeclarations.h"
 #include "mscorlib_System_DateTime339033936.h"
@@ -138,12 +168,8 @@ struct U3CshowWordU3Ec__Iterator1_t4074000763;
 #include "mscorlib_System_Collections_Generic_List_1_gen3270953649MethodDeclarations.h"
 #include "AssemblyU2DCSharp_AudioProcessor_Autoco1972512379MethodDeclarations.h"
 #include "mscorlib_System_Collections_Generic_List_1_gen3270953649.h"
-#include "UnityEngine_UnityEngine_AudioSource3628549054.h"
 #include "AssemblyU2DCSharp_AudioProcessor_Autoco1972512379.h"
-#include "mscorlib_System_String968488902MethodDeclarations.h"
-#include "UnityEngine_UnityEngine_Debug1588791936MethodDeclarations.h"
 #include "mscorlib_System_Double534516614.h"
-#include "UnityEngine_UnityEngine_AudioSource3628549054MethodDeclarations.h"
 #include "mscorlib_System_Math2778998461MethodDeclarations.h"
 #include "mscorlib_System_Collections_Generic_List_1_Enumera1356736641MethodDeclarations.h"
 #include "mscorlib_System_Collections_Generic_List_1_Enumera1356736641.h"
@@ -165,17 +191,45 @@ struct U3CshowWordU3Ec__Iterator1_t4074000763;
 #include "mscorlib_System_NotSupportedException1374155497.h"
 #include "AssemblyU2DCSharp_BlockWrapper1007084390.h"
 #include "AssemblyU2DCSharp_BlockWrapper1007084390MethodDeclarations.h"
+#include "UnityEngine_UnityEngine_WWW1522972100.h"
+#include "UnityEngine_UnityEngine_Resources1543782994MethodDeclarations.h"
+#include "UnityEngine_UnityEngine_Resources1543782994.h"
+#include "UnityEngine_UI_UnityEngine_UI_Selectable3621744255MethodDeclarations.h"
+#include "UnityEngine_UI_UnityEngine_UI_Button990034267.h"
+#include "UnityEngine_UnityEngine_Application450040189MethodDeclarations.h"
+#include "UnityEngine_UnityEngine_AsyncOperation3374395064.h"
+#include "mscorlib_System_Char2778706699.h"
+#include "AssemblyU2DCSharp_iOSMusic_U3CLoadMusicU3Ec__Iterat274259292MethodDeclarations.h"
+#include "AssemblyU2DCSharp_iOSMusic_U3CLoadMusicU3Ec__Iterat274259292.h"
+#include "mscorlib_System_IO_File2029342275MethodDeclarations.h"
+#include "UnityEngine_UnityEngine_Texture2D2509538522MethodDeclarations.h"
+#include "UnityEngine_UnityEngine_Rect1525428817MethodDeclarations.h"
+#include "UnityEngine_UnityEngine_Vector23525329788MethodDeclarations.h"
+#include "UnityEngine_UnityEngine_Sprite4006040370MethodDeclarations.h"
+#include "UnityEngine_UI_UnityEngine_UI_Image3354615620MethodDeclarations.h"
+#include "UnityEngine_UnityEngine_Texture2D2509538522.h"
+#include "mscorlib_System_Byte2778693821.h"
+#include "UnityEngine_UnityEngine_Sprite4006040370.h"
+#include "UnityEngine_UnityEngine_Texture1769722184MethodDeclarations.h"
+#include "UnityEngine_UnityEngine_Texture1769722184.h"
+#include "UnityEngine_UnityEngine_Rect1525428817.h"
+#include "UnityEngine_UnityEngine_Vector23525329788.h"
+#include "UnityEngine_UI_UnityEngine_UI_Image3354615620.h"
+#include "UnityEngine_UnityEngine_WWW1522972100MethodDeclarations.h"
+#include "UnityEngine_UnityEngine_AudioType3715057757.h"
 #include "AssemblyU2DCSharp_MenuManager3994435886.h"
 #include "AssemblyU2DCSharp_MenuManager3994435886MethodDeclarations.h"
+#include "AssemblyU2DCSharp_iOSMusicGUI3167605763.h"
+#include "AssemblyU2DCSharp_iOSMusicGUI3167605763MethodDeclarations.h"
 #include "AssemblyU2DCSharp_PlaneController1730645752.h"
 #include "AssemblyU2DCSharp_PlaneController1730645752MethodDeclarations.h"
+#include "AssemblyU2DCSharp_musicManager2706273736.h"
+#include "UnityEngine_UnityEngine_RuntimePlatform1574985880.h"
 #include "UnityEngine_ArrayTypes.h"
 #include "mscorlib_System_Runtime_CompilerServices_RuntimeHe1695827251MethodDeclarations.h"
 #include "mscorlib_System_RuntimeFieldHandle3184214143.h"
 #include "System_ArrayTypes.h"
 #include "System_System_Collections_Generic_Queue_1_gen2715171930.h"
-#include "UnityEngine_UnityEngine_Object3878351788MethodDeclarations.h"
-#include "UnityEngine_UnityEngine_Object3878351788.h"
 #include "Assembly-CSharp_ArrayTypes.h"
 #include "mscorlib_System_Threading_Monitor2071304733MethodDeclarations.h"
 #include "System_System_Collections_Generic_Queue_1_gen2715171930MethodDeclarations.h"
@@ -195,7 +249,6 @@ struct U3CshowWordU3Ec__Iterator1_t4074000763;
 #include "AssemblyU2DCSharp_PlaneMaterialController2074521471MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_Material1886596500.h"
 #include "UnityEngine_UnityEngine_Material1886596500MethodDeclarations.h"
-#include "UnityEngine_UnityEngine_Texture1769722184.h"
 #include "AssemblyU2DCSharp_ScoreController2917050286.h"
 #include "AssemblyU2DCSharp_ScoreController2917050286MethodDeclarations.h"
 #include "UnityEngine_UI_UnityEngine_UI_Text3286458198.h"
@@ -209,10 +262,8 @@ struct U3CshowWordU3Ec__Iterator1_t4074000763;
 #include "mscorlib_System_Collections_Generic_List_1_gen514686775MethodDeclarations.h"
 #include "mscorlib_System_Collections_Generic_List_1_gen514686775.h"
 #include "UnityEngine_UnityEngine_Touch1603883884MethodDeclarations.h"
-#include "UnityEngine_UnityEngine_Vector23525329788MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_LayerMask1862190090MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_Touch1603883884.h"
-#include "UnityEngine_UnityEngine_Vector23525329788.h"
 #include "UnityEngine_UnityEngine_LayerMask1862190090.h"
 #include "UnityEngine_UnityEngine_TouchPhase1905076713.h"
 #include "AssemblyU2DCSharp_TouchZoneMaterialController633689838.h"
@@ -240,14 +291,23 @@ extern "C"  Il2CppObject * GameObject_AddComponent_TisIl2CppObject_m337943659_gs
 #define Component_GetComponent_TisAudioSource_t3628549054_m3821406207(__this, method) ((  AudioSource_t3628549054 * (*) (Component_t2126946602 *, const MethodInfo*))Component_GetComponent_TisIl2CppObject_m267839954_gshared)(__this, method)
 // !!0 UnityEngine.Component::GetComponent<UnityEngine.Camera>()
 #define Component_GetComponent_TisCamera_t3533968274_m3804104198(__this, method) ((  Camera_t3533968274 * (*) (Component_t2126946602 *, const MethodInfo*))Component_GetComponent_TisIl2CppObject_m267839954_gshared)(__this, method)
+// !!0 UnityEngine.Resources::Load<System.Object>(System.String)
+extern "C"  Il2CppObject * Resources_Load_TisIl2CppObject_m2208345422_gshared (Il2CppObject * __this /* static, unused */, String_t* p0, const MethodInfo* method);
+#define Resources_Load_TisIl2CppObject_m2208345422(__this /* static, unused */, p0, method) ((  Il2CppObject * (*) (Il2CppObject * /* static, unused */, String_t*, const MethodInfo*))Resources_Load_TisIl2CppObject_m2208345422_gshared)(__this /* static, unused */, p0, method)
+// !!0 UnityEngine.Resources::Load<UnityEngine.AudioClip>(System.String)
+#define Resources_Load_TisAudioClip_t3714538611_m2229836639(__this /* static, unused */, p0, method) ((  AudioClip_t3714538611 * (*) (Il2CppObject * /* static, unused */, String_t*, const MethodInfo*))Resources_Load_TisIl2CppObject_m2208345422_gshared)(__this /* static, unused */, p0, method)
+// !!0 UnityEngine.GameObject::GetComponent<System.Object>()
+extern "C"  Il2CppObject * GameObject_GetComponent_TisIl2CppObject_m2447772384_gshared (GameObject_t4012695102 * __this, const MethodInfo* method);
+#define GameObject_GetComponent_TisIl2CppObject_m2447772384(__this, method) ((  Il2CppObject * (*) (GameObject_t4012695102 *, const MethodInfo*))GameObject_GetComponent_TisIl2CppObject_m2447772384_gshared)(__this, method)
+// !!0 UnityEngine.GameObject::GetComponent<UnityEngine.UI.Button>()
+#define GameObject_GetComponent_TisButton_t990034267_m2812094092(__this, method) ((  Button_t990034267 * (*) (GameObject_t4012695102 *, const MethodInfo*))GameObject_GetComponent_TisIl2CppObject_m2447772384_gshared)(__this, method)
+// !!0 UnityEngine.GameObject::GetComponent<UnityEngine.UI.Image>()
+#define GameObject_GetComponent_TisImage_t3354615620_m2140199269(__this, method) ((  Image_t3354615620 * (*) (GameObject_t4012695102 *, const MethodInfo*))GameObject_GetComponent_TisIl2CppObject_m2447772384_gshared)(__this, method)
 // !!0 UnityEngine.Object::FindObjectOfType<System.Object>()
 extern "C"  Il2CppObject * Object_FindObjectOfType_TisIl2CppObject_m2892359027_gshared (Il2CppObject * __this /* static, unused */, const MethodInfo* method);
 #define Object_FindObjectOfType_TisIl2CppObject_m2892359027(__this /* static, unused */, method) ((  Il2CppObject * (*) (Il2CppObject * /* static, unused */, const MethodInfo*))Object_FindObjectOfType_TisIl2CppObject_m2892359027_gshared)(__this /* static, unused */, method)
 // !!0 UnityEngine.Object::FindObjectOfType<AudioProcessor>()
 #define Object_FindObjectOfType_TisAudioProcessor_t2423098748_m3392916657(__this /* static, unused */, method) ((  AudioProcessor_t2423098748 * (*) (Il2CppObject * /* static, unused */, const MethodInfo*))Object_FindObjectOfType_TisIl2CppObject_m2892359027_gshared)(__this /* static, unused */, method)
-// !!0 UnityEngine.GameObject::GetComponent<System.Object>()
-extern "C"  Il2CppObject * GameObject_GetComponent_TisIl2CppObject_m2447772384_gshared (GameObject_t4012695102 * __this, const MethodInfo* method);
-#define GameObject_GetComponent_TisIl2CppObject_m2447772384(__this, method) ((  Il2CppObject * (*) (GameObject_t4012695102 *, const MethodInfo*))GameObject_GetComponent_TisIl2CppObject_m2447772384_gshared)(__this, method)
 // !!0 UnityEngine.GameObject::GetComponent<UnityEngine.Collider>()
 #define GameObject_GetComponent_TisCollider_t955670625_m2553179602(__this, method) ((  Collider_t955670625 * (*) (GameObject_t4012695102 *, const MethodInfo*))GameObject_GetComponent_TisIl2CppObject_m2447772384_gshared)(__this, method)
 // !!0 UnityEngine.GameObject::GetComponent<UnityEngine.Renderer>()
@@ -632,6 +692,234 @@ extern "C"  void AnimationEvents_U3CSetupEventsU3Em__3_m4282746032 (AnimationEve
 		return;
 	}
 }
+// System.Void AppleMusicController::.ctor()
+extern "C"  void AppleMusicController__ctor_m429360500 (AppleMusicController_t2416020743 * __this, const MethodInfo* method)
+{
+	{
+		MonoBehaviour__ctor_m2022291967(__this, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void AppleMusicController::.cctor()
+extern "C"  void AppleMusicController__cctor_m4238144697 (Il2CppObject * __this /* static, unused */, const MethodInfo* method)
+{
+	{
+		return;
+	}
+}
+// System.Void AppleMusicController::Awake()
+extern Il2CppClass* AppleMusicController_t2416020743_il2cpp_TypeInfo_var;
+extern const uint32_t AppleMusicController_Awake_m666965719_MetadataUsageId;
+extern "C"  void AppleMusicController_Awake_m666965719 (AppleMusicController_t2416020743 * __this, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (AppleMusicController_Awake_m666965719_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(AppleMusicController_t2416020743_il2cpp_TypeInfo_var);
+		AppleMusicController_t2416020743 * L_0 = ((AppleMusicController_t2416020743_StaticFields*)AppleMusicController_t2416020743_il2cpp_TypeInfo_var->static_fields)->get_instance_2();
+		bool L_1 = Object_op_Equality_m3964590952(NULL /*static, unused*/, L_0, (Object_t3878351788 *)NULL, /*hidden argument*/NULL);
+		if (!L_1)
+		{
+			goto IL_001b;
+		}
+	}
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(AppleMusicController_t2416020743_il2cpp_TypeInfo_var);
+		((AppleMusicController_t2416020743_StaticFields*)AppleMusicController_t2416020743_il2cpp_TypeInfo_var->static_fields)->set_instance_2(__this);
+		goto IL_0036;
+	}
+
+IL_001b:
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(AppleMusicController_t2416020743_il2cpp_TypeInfo_var);
+		AppleMusicController_t2416020743 * L_2 = ((AppleMusicController_t2416020743_StaticFields*)AppleMusicController_t2416020743_il2cpp_TypeInfo_var->static_fields)->get_instance_2();
+		bool L_3 = Object_op_Inequality_m1296218211(NULL /*static, unused*/, L_2, __this, /*hidden argument*/NULL);
+		if (!L_3)
+		{
+			goto IL_0036;
+		}
+	}
+	{
+		GameObject_t4012695102 * L_4 = Component_get_gameObject_m1170635899(__this, /*hidden argument*/NULL);
+		Object_Destroy_m176400816(NULL /*static, unused*/, L_4, /*hidden argument*/NULL);
+	}
+
+IL_0036:
+	{
+		return;
+	}
+}
+// System.Void AppleMusicController::QueryAppleMusic(System.String)
+extern "C"  void AppleMusicController_QueryAppleMusic_m4199287997 (AppleMusicController_t2416020743 * __this, String_t* ___productID0, const MethodInfo* method)
+{
+	{
+		String_t* L_0 = ___productID0;
+		musicManager_queryAppleMusic_m2357759326(NULL /*static, unused*/, L_0, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void AppleMusicController::StopAppleMusic()
+extern "C"  void AppleMusicController_StopAppleMusic_m402436061 (AppleMusicController_t2416020743 * __this, const MethodInfo* method)
+{
+	{
+		musicManager_stopAppleMusic_m66743870(NULL /*static, unused*/, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void AppleMusicController::DidReceiveResponse(System.String)
+extern Il2CppClass* Debug_t1588791936_il2cpp_TypeInfo_var;
+extern const uint32_t AppleMusicController_DidReceiveResponse_m633120141_MetadataUsageId;
+extern "C"  void AppleMusicController_DidReceiveResponse_m633120141 (AppleMusicController_t2416020743 * __this, String_t* ___response0, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (AppleMusicController_DidReceiveResponse_m633120141_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	{
+		String_t* L_0 = ___response0;
+		IL2CPP_RUNTIME_CLASS_INIT(Debug_t1588791936_il2cpp_TypeInfo_var);
+		Debug_Log_m1731103628(NULL /*static, unused*/, L_0, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void AppleMusicController::ExtractTitle(System.String)
+extern Il2CppClass* String_t_il2cpp_TypeInfo_var;
+extern Il2CppClass* Debug_t1588791936_il2cpp_TypeInfo_var;
+extern Il2CppCodeGenString* _stringLiteral357403486;
+extern const uint32_t AppleMusicController_ExtractTitle_m468098939_MetadataUsageId;
+extern "C"  void AppleMusicController_ExtractTitle_m468098939 (AppleMusicController_t2416020743 * __this, String_t* ___title0, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (AppleMusicController_ExtractTitle_m468098939_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	{
+		String_t* L_0 = ___title0;
+		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
+		String_t* L_1 = String_Concat_m138640077(NULL /*static, unused*/, _stringLiteral357403486, L_0, /*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(Debug_t1588791936_il2cpp_TypeInfo_var);
+		Debug_Log_m1731103628(NULL /*static, unused*/, L_1, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void AppleMusicController::ExtractArtist(System.String)
+extern Il2CppClass* String_t_il2cpp_TypeInfo_var;
+extern Il2CppClass* Debug_t1588791936_il2cpp_TypeInfo_var;
+extern Il2CppCodeGenString* _stringLiteral3131217101;
+extern const uint32_t AppleMusicController_ExtractArtist_m1549744776_MetadataUsageId;
+extern "C"  void AppleMusicController_ExtractArtist_m1549744776 (AppleMusicController_t2416020743 * __this, String_t* ___artist0, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (AppleMusicController_ExtractArtist_m1549744776_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	{
+		String_t* L_0 = ___artist0;
+		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
+		String_t* L_1 = String_Concat_m138640077(NULL /*static, unused*/, _stringLiteral3131217101, L_0, /*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(Debug_t1588791936_il2cpp_TypeInfo_var);
+		Debug_Log_m1731103628(NULL /*static, unused*/, L_1, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void AppleMusicController::ExtractAlbumTitle(System.String)
+extern Il2CppClass* String_t_il2cpp_TypeInfo_var;
+extern Il2CppClass* Debug_t1588791936_il2cpp_TypeInfo_var;
+extern Il2CppCodeGenString* _stringLiteral1118920365;
+extern const uint32_t AppleMusicController_ExtractAlbumTitle_m2691449190_MetadataUsageId;
+extern "C"  void AppleMusicController_ExtractAlbumTitle_m2691449190 (AppleMusicController_t2416020743 * __this, String_t* ___albumTitle0, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (AppleMusicController_ExtractAlbumTitle_m2691449190_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	{
+		String_t* L_0 = ___albumTitle0;
+		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
+		String_t* L_1 = String_Concat_m138640077(NULL /*static, unused*/, _stringLiteral1118920365, L_0, /*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(Debug_t1588791936_il2cpp_TypeInfo_var);
+		Debug_Log_m1731103628(NULL /*static, unused*/, L_1, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void AppleMusicController::ExtractGenre(System.String)
+extern Il2CppClass* String_t_il2cpp_TypeInfo_var;
+extern Il2CppClass* Debug_t1588791936_il2cpp_TypeInfo_var;
+extern Il2CppCodeGenString* _stringLiteral1584878537;
+extern const uint32_t AppleMusicController_ExtractGenre_m1788157168_MetadataUsageId;
+extern "C"  void AppleMusicController_ExtractGenre_m1788157168 (AppleMusicController_t2416020743 * __this, String_t* ___genre0, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (AppleMusicController_ExtractGenre_m1788157168_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	{
+		String_t* L_0 = ___genre0;
+		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
+		String_t* L_1 = String_Concat_m138640077(NULL /*static, unused*/, _stringLiteral1584878537, L_0, /*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(Debug_t1588791936_il2cpp_TypeInfo_var);
+		Debug_Log_m1731103628(NULL /*static, unused*/, L_1, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void AppleMusicController::ExtractLyrics(System.String)
+extern Il2CppClass* String_t_il2cpp_TypeInfo_var;
+extern Il2CppClass* Debug_t1588791936_il2cpp_TypeInfo_var;
+extern Il2CppCodeGenString* _stringLiteral2687116858;
+extern const uint32_t AppleMusicController_ExtractLyrics_m3034194491_MetadataUsageId;
+extern "C"  void AppleMusicController_ExtractLyrics_m3034194491 (AppleMusicController_t2416020743 * __this, String_t* ___lyrics0, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (AppleMusicController_ExtractLyrics_m3034194491_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	{
+		String_t* L_0 = ___lyrics0;
+		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
+		String_t* L_1 = String_Concat_m138640077(NULL /*static, unused*/, _stringLiteral2687116858, L_0, /*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(Debug_t1588791936_il2cpp_TypeInfo_var);
+		Debug_Log_m1731103628(NULL /*static, unused*/, L_1, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void AppleMusicController::ExtractDuration(System.String)
+extern Il2CppClass* String_t_il2cpp_TypeInfo_var;
+extern Il2CppClass* Debug_t1588791936_il2cpp_TypeInfo_var;
+extern Il2CppCodeGenString* _stringLiteral3224968154;
+extern const uint32_t AppleMusicController_ExtractDuration_m2901196059_MetadataUsageId;
+extern "C"  void AppleMusicController_ExtractDuration_m2901196059 (AppleMusicController_t2416020743 * __this, String_t* ___duration0, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (AppleMusicController_ExtractDuration_m2901196059_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	{
+		String_t* L_0 = ___duration0;
+		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
+		String_t* L_1 = String_Concat_m138640077(NULL /*static, unused*/, _stringLiteral3224968154, L_0, /*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(Debug_t1588791936_il2cpp_TypeInfo_var);
+		Debug_Log_m1731103628(NULL /*static, unused*/, L_1, /*hidden argument*/NULL);
+		return;
+	}
+}
 // System.Void AudioProcessor::.ctor()
 extern "C"  void AudioProcessor__ctor_m3341396639 (AudioProcessor_t2423098748 * __this, const MethodInfo* method)
 {
@@ -645,6 +933,35 @@ extern "C"  void AudioProcessor__ctor_m3341396639 (AudioProcessor_t2423098748 * 
 		__this->set_maxlag_26(((int32_t)100));
 		__this->set_decay_27((0.997f));
 		MonoBehaviour__ctor_m2022291967(__this, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void AudioProcessor::Awake()
+extern Il2CppClass* iOSMusic_t2155735576_il2cpp_TypeInfo_var;
+extern const MethodInfo* Component_GetComponent_TisAudioSource_t3628549054_m3821406207_MethodInfo_var;
+extern const uint32_t AudioProcessor_Awake_m3579001858_MetadataUsageId;
+extern "C"  void AudioProcessor_Awake_m3579001858 (AudioProcessor_t2423098748 * __this, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (AudioProcessor_Awake_m3579001858_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	{
+		AudioSource_t3628549054 * L_0 = Component_GetComponent_TisAudioSource_t3628549054_m3821406207(__this, /*hidden argument*/Component_GetComponent_TisAudioSource_t3628549054_m3821406207_MethodInfo_var);
+		__this->set_audioSource_2(L_0);
+		AudioSource_t3628549054 * L_1 = __this->get_audioSource_2();
+		IL2CPP_RUNTIME_CLASS_INIT(iOSMusic_t2155735576_il2cpp_TypeInfo_var);
+		AudioClip_t3714538611 * L_2 = ((iOSMusic_t2155735576_StaticFields*)iOSMusic_t2155735576_il2cpp_TypeInfo_var->static_fields)->get__audioClip_6();
+		NullCheck(L_1);
+		AudioSource_set_clip_m19502010(L_1, L_2, /*hidden argument*/NULL);
+		AudioSource_t3628549054 * L_3 = __this->get_audioSource_2();
+		NullCheck(L_3);
+		AudioSource_set_loop_m3617666708(L_3, (bool)0, /*hidden argument*/NULL);
+		AudioSource_t3628549054 * L_4 = __this->get_audioSource_2();
+		NullCheck(L_4);
+		AudioSource_Play_m1360558992(L_4, /*hidden argument*/NULL);
 		return;
 	}
 }
@@ -708,7 +1025,6 @@ extern Il2CppClass* List_1_t3270953649_il2cpp_TypeInfo_var;
 extern Il2CppClass* SingleU5BU5D_t1219431280_il2cpp_TypeInfo_var;
 extern Il2CppClass* Autoco_t1972512379_il2cpp_TypeInfo_var;
 extern const MethodInfo* List_1__ctor_m3030672650_MethodInfo_var;
-extern const MethodInfo* Component_GetComponent_TisAudioSource_t3628549054_m3821406207_MethodInfo_var;
 extern const uint32_t AudioProcessor_Start_m2288534431_MetadataUsageId;
 extern "C"  void AudioProcessor_Start_m2288534431 (AudioProcessor_t2423098748 * __this, const MethodInfo* method)
 {
@@ -724,48 +1040,46 @@ extern "C"  void AudioProcessor_Start_m2288534431 (AudioProcessor_t2423098748 * 
 		List_1__ctor_m3030672650(L_0, /*hidden argument*/List_1__ctor_m3030672650_MethodInfo_var);
 		__this->set_callbacks_8(L_0);
 		AudioProcessor_initArrays_m3995805583(__this, /*hidden argument*/NULL);
-		AudioSource_t3628549054 * L_1 = Component_GetComponent_TisAudioSource_t3628549054_m3821406207(__this, /*hidden argument*/Component_GetComponent_TisAudioSource_t3628549054_m3821406207_MethodInfo_var);
-		__this->set_audioSource_2(L_1);
 		__this->set_samplingRate_10(((int32_t)4410));
-		int32_t L_2 = __this->get_bufferSize_9();
-		int32_t L_3 = __this->get_samplingRate_10();
-		__this->set_framePeriod_16(((float)((float)(((float)((float)L_2)))/(float)(((float)((float)L_3))))));
-		int32_t L_4 = __this->get_nBand_11();
-		__this->set_spec_25(((SingleU5BU5D_t1219431280*)SZArrayNew(SingleU5BU5D_t1219431280_il2cpp_TypeInfo_var, (uint32_t)L_4)));
+		int32_t L_1 = __this->get_bufferSize_9();
+		int32_t L_2 = __this->get_samplingRate_10();
+		__this->set_framePeriod_16(((float)((float)(((float)((float)L_1)))/(float)(((float)((float)L_2))))));
+		int32_t L_3 = __this->get_nBand_11();
+		__this->set_spec_25(((SingleU5BU5D_t1219431280*)SZArrayNew(SingleU5BU5D_t1219431280_il2cpp_TypeInfo_var, (uint32_t)L_3)));
 		V_0 = 0;
-		goto IL_0066;
+		goto IL_005a;
 	}
 
-IL_0055:
+IL_0049:
 	{
-		SingleU5BU5D_t1219431280* L_5 = __this->get_spec_25();
+		SingleU5BU5D_t1219431280* L_4 = __this->get_spec_25();
+		int32_t L_5 = V_0;
+		NullCheck(L_4);
+		IL2CPP_ARRAY_BOUNDS_CHECK(L_4, L_5);
+		(L_4)->SetAt(static_cast<il2cpp_array_size_t>(L_5), (float)(100.0f));
 		int32_t L_6 = V_0;
-		NullCheck(L_5);
-		IL2CPP_ARRAY_BOUNDS_CHECK(L_5, L_6);
-		(L_5)->SetAt(static_cast<il2cpp_array_size_t>(L_6), (float)(100.0f));
-		int32_t L_7 = V_0;
-		V_0 = ((int32_t)((int32_t)L_7+(int32_t)1));
+		V_0 = ((int32_t)((int32_t)L_6+(int32_t)1));
 	}
 
-IL_0066:
+IL_005a:
 	{
-		int32_t L_8 = V_0;
-		int32_t L_9 = __this->get_nBand_11();
-		if ((((int32_t)L_8) < ((int32_t)L_9)))
+		int32_t L_7 = V_0;
+		int32_t L_8 = __this->get_nBand_11();
+		if ((((int32_t)L_7) < ((int32_t)L_8)))
 		{
-			goto IL_0055;
+			goto IL_0049;
 		}
 	}
 	{
-		int32_t L_10 = __this->get_maxlag_26();
-		float L_11 = __this->get_decay_27();
-		float L_12 = __this->get_framePeriod_16();
-		float L_13 = AudioProcessor_getBandWidth_m1919797644(__this, /*hidden argument*/NULL);
-		Autoco_t1972512379 * L_14 = (Autoco_t1972512379 *)il2cpp_codegen_object_new(Autoco_t1972512379_il2cpp_TypeInfo_var);
-		Autoco__ctor_m1201947005(L_14, L_10, L_11, L_12, L_13, /*hidden argument*/NULL);
-		__this->set_auco_28(L_14);
-		int64_t L_15 = AudioProcessor_getCurrentTimeMillis_m2494678154(__this, /*hidden argument*/NULL);
-		__this->set_lastT_3(L_15);
+		int32_t L_9 = __this->get_maxlag_26();
+		float L_10 = __this->get_decay_27();
+		float L_11 = __this->get_framePeriod_16();
+		float L_12 = AudioProcessor_getBandWidth_m1919797644(__this, /*hidden argument*/NULL);
+		Autoco_t1972512379 * L_13 = (Autoco_t1972512379 *)il2cpp_codegen_object_new(Autoco_t1972512379_il2cpp_TypeInfo_var);
+		Autoco__ctor_m1201947005(L_13, L_9, L_10, L_11, L_12, /*hidden argument*/NULL);
+		__this->set_auco_28(L_13);
+		int64_t L_14 = AudioProcessor_getCurrentTimeMillis_m2494678154(__this, /*hidden argument*/NULL);
+		__this->set_lastT_3(L_14);
 		return;
 	}
 }
@@ -1844,6 +2158,7 @@ extern "C"  void BackgroundMusicController__ctor_m3536917080 (BackgroundMusicCon
 	}
 }
 // System.Void BackgroundMusicController::Start()
+extern Il2CppClass* iOSMusic_t2155735576_il2cpp_TypeInfo_var;
 extern const MethodInfo* Component_GetComponent_TisAudioSource_t3628549054_m3821406207_MethodInfo_var;
 extern const uint32_t BackgroundMusicController_Start_m2484054872_MetadataUsageId;
 extern "C"  void BackgroundMusicController_Start_m2484054872 (BackgroundMusicController_t1016431731 * __this, const MethodInfo* method)
@@ -1858,8 +2173,19 @@ extern "C"  void BackgroundMusicController_Start_m2484054872 (BackgroundMusicCon
 		AudioSource_t3628549054 * L_0 = Component_GetComponent_TisAudioSource_t3628549054_m3821406207(__this, /*hidden argument*/Component_GetComponent_TisAudioSource_t3628549054_m3821406207_MethodInfo_var);
 		__this->set_music_2(L_0);
 		AudioSource_t3628549054 * L_1 = __this->get_music_2();
+		IL2CPP_RUNTIME_CLASS_INIT(iOSMusic_t2155735576_il2cpp_TypeInfo_var);
+		AudioClip_t3714538611 * L_2 = ((iOSMusic_t2155735576_StaticFields*)iOSMusic_t2155735576_il2cpp_TypeInfo_var->static_fields)->get__audioClip2_7();
 		NullCheck(L_1);
-		AudioSource_PlayDelayed_m2357889495(L_1, (3.6f), /*hidden argument*/NULL);
+		AudioSource_set_clip_m19502010(L_1, L_2, /*hidden argument*/NULL);
+		AudioSource_t3628549054 * L_3 = __this->get_music_2();
+		NullCheck(L_3);
+		AudioSource_set_loop_m3617666708(L_3, (bool)0, /*hidden argument*/NULL);
+		AudioSource_t3628549054 * L_4 = __this->get_music_2();
+		NullCheck(L_4);
+		AudioSource_Play_m1360558992(L_4, /*hidden argument*/NULL);
+		AudioSource_t3628549054 * L_5 = __this->get_music_2();
+		NullCheck(L_5);
+		AudioSource_PlayDelayed_m2357889495(L_5, (3.6f), /*hidden argument*/NULL);
 		return;
 	}
 }
@@ -2022,6 +2348,1102 @@ extern "C"  void BlockWrapper__ctor_m2894781357 (BlockWrapper_t1007084390 * __th
 		return;
 	}
 }
+// System.Void iOSMusic::.ctor()
+extern "C"  void iOSMusic__ctor_m3438063491 (iOSMusic_t2155735576 * __this, const MethodInfo* method)
+{
+	{
+		MonoBehaviour__ctor_m2022291967(__this, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void iOSMusic::.cctor()
+extern "C"  void iOSMusic__cctor_m3018656906 (Il2CppObject * __this /* static, unused */, const MethodInfo* method)
+{
+	{
+		return;
+	}
+}
+// UnityEngine.WWW iOSMusic::get_MusicLoader()
+extern "C"  WWW_t1522972100 * iOSMusic_get_MusicLoader_m2860235549 (iOSMusic_t2155735576 * __this, const MethodInfo* method)
+{
+	{
+		WWW_t1522972100 * L_0 = __this->get__musicLoader_4();
+		return L_0;
+	}
+}
+// System.Void iOSMusic::set_MusicLoader(UnityEngine.WWW)
+extern "C"  void iOSMusic_set_MusicLoader_m1250373334 (iOSMusic_t2155735576 * __this, WWW_t1522972100 * ___value0, const MethodInfo* method)
+{
+	{
+		WWW_t1522972100 * L_0 = ___value0;
+		__this->set__musicLoader_4(L_0);
+		return;
+	}
+}
+// UnityEngine.AudioSource iOSMusic::get_iOSMusicAudioSource()
+extern "C"  AudioSource_t3628549054 * iOSMusic_get_iOSMusicAudioSource_m1695760824 (iOSMusic_t2155735576 * __this, const MethodInfo* method)
+{
+	{
+		AudioSource_t3628549054 * L_0 = __this->get__audioSource_5();
+		return L_0;
+	}
+}
+// System.Void iOSMusic::set_iOSMusicAudioSource(UnityEngine.AudioSource)
+extern "C"  void iOSMusic_set_iOSMusicAudioSource_m240945755 (iOSMusic_t2155735576 * __this, AudioSource_t3628549054 * ___value0, const MethodInfo* method)
+{
+	{
+		AudioSource_t3628549054 * L_0 = ___value0;
+		__this->set__audioSource_5(L_0);
+		return;
+	}
+}
+// UnityEngine.AudioClip iOSMusic::get_iOSMusicClip()
+extern Il2CppClass* iOSMusic_t2155735576_il2cpp_TypeInfo_var;
+extern const uint32_t iOSMusic_get_iOSMusicClip_m3417835926_MetadataUsageId;
+extern "C"  AudioClip_t3714538611 * iOSMusic_get_iOSMusicClip_m3417835926 (Il2CppObject * __this /* static, unused */, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (iOSMusic_get_iOSMusicClip_m3417835926_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(iOSMusic_t2155735576_il2cpp_TypeInfo_var);
+		AudioClip_t3714538611 * L_0 = ((iOSMusic_t2155735576_StaticFields*)iOSMusic_t2155735576_il2cpp_TypeInfo_var->static_fields)->get__audioClip_6();
+		return L_0;
+	}
+}
+// System.Void iOSMusic::set_iOSMusicClip(UnityEngine.AudioClip)
+extern Il2CppClass* iOSMusic_t2155735576_il2cpp_TypeInfo_var;
+extern const uint32_t iOSMusic_set_iOSMusicClip_m2048228125_MetadataUsageId;
+extern "C"  void iOSMusic_set_iOSMusicClip_m2048228125 (Il2CppObject * __this /* static, unused */, AudioClip_t3714538611 * ___value0, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (iOSMusic_set_iOSMusicClip_m2048228125_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	{
+		AudioClip_t3714538611 * L_0 = ___value0;
+		IL2CPP_RUNTIME_CLASS_INIT(iOSMusic_t2155735576_il2cpp_TypeInfo_var);
+		((iOSMusic_t2155735576_StaticFields*)iOSMusic_t2155735576_il2cpp_TypeInfo_var->static_fields)->set__audioClip_6(L_0);
+		return;
+	}
+}
+// System.Void iOSMusic::readLocalMusic(System.Int32)
+extern Il2CppClass* iOSMusic_t2155735576_il2cpp_TypeInfo_var;
+extern const MethodInfo* Resources_Load_TisAudioClip_t3714538611_m2229836639_MethodInfo_var;
+extern Il2CppCodeGenString* _stringLiteral64874895;
+extern Il2CppCodeGenString* _stringLiteral2666785454;
+extern const uint32_t iOSMusic_readLocalMusic_m2226170050_MetadataUsageId;
+extern "C"  void iOSMusic_readLocalMusic_m2226170050 (Il2CppObject * __this /* static, unused */, int32_t ___musicNum0, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (iOSMusic_readLocalMusic_m2226170050_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	{
+		int32_t L_0 = ___musicNum0;
+		if (L_0)
+		{
+			goto IL_0029;
+		}
+	}
+	{
+		AudioClip_t3714538611 * L_1 = Resources_Load_TisAudioClip_t3714538611_m2229836639(NULL /*static, unused*/, _stringLiteral64874895, /*hidden argument*/Resources_Load_TisAudioClip_t3714538611_m2229836639_MethodInfo_var);
+		IL2CPP_RUNTIME_CLASS_INIT(iOSMusic_t2155735576_il2cpp_TypeInfo_var);
+		((iOSMusic_t2155735576_StaticFields*)iOSMusic_t2155735576_il2cpp_TypeInfo_var->static_fields)->set__audioClip_6(L_1);
+		AudioClip_t3714538611 * L_2 = Resources_Load_TisAudioClip_t3714538611_m2229836639(NULL /*static, unused*/, _stringLiteral64874895, /*hidden argument*/Resources_Load_TisAudioClip_t3714538611_m2229836639_MethodInfo_var);
+		((iOSMusic_t2155735576_StaticFields*)iOSMusic_t2155735576_il2cpp_TypeInfo_var->static_fields)->set__audioClip2_7(L_2);
+		goto IL_004e;
+	}
+
+IL_0029:
+	{
+		int32_t L_3 = ___musicNum0;
+		if ((!(((uint32_t)L_3) == ((uint32_t)1))))
+		{
+			goto IL_004e;
+		}
+	}
+	{
+		AudioClip_t3714538611 * L_4 = Resources_Load_TisAudioClip_t3714538611_m2229836639(NULL /*static, unused*/, _stringLiteral2666785454, /*hidden argument*/Resources_Load_TisAudioClip_t3714538611_m2229836639_MethodInfo_var);
+		IL2CPP_RUNTIME_CLASS_INIT(iOSMusic_t2155735576_il2cpp_TypeInfo_var);
+		((iOSMusic_t2155735576_StaticFields*)iOSMusic_t2155735576_il2cpp_TypeInfo_var->static_fields)->set__audioClip_6(L_4);
+		AudioClip_t3714538611 * L_5 = Resources_Load_TisAudioClip_t3714538611_m2229836639(NULL /*static, unused*/, _stringLiteral2666785454, /*hidden argument*/Resources_Load_TisAudioClip_t3714538611_m2229836639_MethodInfo_var);
+		((iOSMusic_t2155735576_StaticFields*)iOSMusic_t2155735576_il2cpp_TypeInfo_var->static_fields)->set__audioClip2_7(L_5);
+	}
+
+IL_004e:
+	{
+		return;
+	}
+}
+// System.Boolean iOSMusic::get_HasAudioClipStartedPlaying()
+extern "C"  bool iOSMusic_get_HasAudioClipStartedPlaying_m3937052535 (iOSMusic_t2155735576 * __this, const MethodInfo* method)
+{
+	{
+		bool L_0 = __this->get__hasAudioClipStartedPlaying_8();
+		return L_0;
+	}
+}
+// System.Void iOSMusic::set_HasAudioClipStartedPlaying(System.Boolean)
+extern "C"  void iOSMusic_set_HasAudioClipStartedPlaying_m3277054318 (iOSMusic_t2155735576 * __this, bool ___value0, const MethodInfo* method)
+{
+	{
+		bool L_0 = ___value0;
+		__this->set__hasAudioClipStartedPlaying_8(L_0);
+		return;
+	}
+}
+// System.Boolean iOSMusic::get_ShouldAppendToPlaylist()
+extern "C"  bool iOSMusic_get_ShouldAppendToPlaylist_m2359950168 (iOSMusic_t2155735576 * __this, const MethodInfo* method)
+{
+	{
+		bool L_0 = __this->get__shouldAppendToPlaylist_9();
+		return L_0;
+	}
+}
+// System.Void iOSMusic::set_ShouldAppendToPlaylist(System.Boolean)
+extern "C"  void iOSMusic_set_ShouldAppendToPlaylist_m1831647119 (iOSMusic_t2155735576 * __this, bool ___value0, const MethodInfo* method)
+{
+	{
+		bool L_0 = ___value0;
+		__this->set__shouldAppendToPlaylist_9(L_0);
+		return;
+	}
+}
+// System.Void iOSMusic::Awake()
+extern Il2CppClass* iOSMusic_t2155735576_il2cpp_TypeInfo_var;
+extern const uint32_t iOSMusic_Awake_m3675668710_MetadataUsageId;
+extern "C"  void iOSMusic_Awake_m3675668710 (iOSMusic_t2155735576 * __this, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (iOSMusic_Awake_m3675668710_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(iOSMusic_t2155735576_il2cpp_TypeInfo_var);
+		iOSMusic_t2155735576 * L_0 = ((iOSMusic_t2155735576_StaticFields*)iOSMusic_t2155735576_il2cpp_TypeInfo_var->static_fields)->get_instance_2();
+		bool L_1 = Object_op_Equality_m3964590952(NULL /*static, unused*/, L_0, (Object_t3878351788 *)NULL, /*hidden argument*/NULL);
+		if (!L_1)
+		{
+			goto IL_001b;
+		}
+	}
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(iOSMusic_t2155735576_il2cpp_TypeInfo_var);
+		((iOSMusic_t2155735576_StaticFields*)iOSMusic_t2155735576_il2cpp_TypeInfo_var->static_fields)->set_instance_2(__this);
+		goto IL_0036;
+	}
+
+IL_001b:
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(iOSMusic_t2155735576_il2cpp_TypeInfo_var);
+		iOSMusic_t2155735576 * L_2 = ((iOSMusic_t2155735576_StaticFields*)iOSMusic_t2155735576_il2cpp_TypeInfo_var->static_fields)->get_instance_2();
+		bool L_3 = Object_op_Inequality_m1296218211(NULL /*static, unused*/, L_2, __this, /*hidden argument*/NULL);
+		if (!L_3)
+		{
+			goto IL_0036;
+		}
+	}
+	{
+		GameObject_t4012695102 * L_4 = Component_get_gameObject_m1170635899(__this, /*hidden argument*/NULL);
+		Object_Destroy_m176400816(NULL /*static, unused*/, L_4, /*hidden argument*/NULL);
+	}
+
+IL_0036:
+	{
+		GameObject_t4012695102 * L_5 = Component_get_gameObject_m1170635899(__this, /*hidden argument*/NULL);
+		Object_DontDestroyOnLoad_m4064482788(NULL /*static, unused*/, L_5, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void iOSMusic::Start()
+extern const MethodInfo* Component_GetComponent_TisAudioSource_t3628549054_m3821406207_MethodInfo_var;
+extern const uint32_t iOSMusic_Start_m2385201283_MetadataUsageId;
+extern "C"  void iOSMusic_Start_m2385201283 (iOSMusic_t2155735576 * __this, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (iOSMusic_Start_m2385201283_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	bool V_0 = false;
+	{
+		AudioSource_t3628549054 * L_0 = Component_GetComponent_TisAudioSource_t3628549054_m3821406207(__this, /*hidden argument*/Component_GetComponent_TisAudioSource_t3628549054_m3821406207_MethodInfo_var);
+		__this->set__audioSource_5(L_0);
+		V_0 = (bool)0;
+		bool L_1 = V_0;
+		iOSMusic_set_HasAudioClipStartedPlaying_m3277054318(__this, L_1, /*hidden argument*/NULL);
+		bool L_2 = V_0;
+		iOSMusic_set_ShouldAppendToPlaylist_m1831647119(__this, L_2, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void iOSMusic::Update()
+extern "C"  void iOSMusic_Update_m932647914 (iOSMusic_t2155735576 * __this, const MethodInfo* method)
+{
+	{
+		iOSMusic_CheckAudioSourcePlayback_m1785806597(__this, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void iOSMusic::CheckAudioSourcePlayback()
+extern "C"  void iOSMusic_CheckAudioSourcePlayback_m1785806597 (iOSMusic_t2155735576 * __this, const MethodInfo* method)
+{
+	{
+		bool L_0 = iOSMusic_get_HasAudioClipStartedPlaying_m3937052535(__this, /*hidden argument*/NULL);
+		if (!L_0)
+		{
+			goto IL_0027;
+		}
+	}
+	{
+		AudioSource_t3628549054 * L_1 = iOSMusic_get_iOSMusicAudioSource_m1695760824(__this, /*hidden argument*/NULL);
+		NullCheck(L_1);
+		bool L_2 = AudioSource_get_isPlaying_m4213444423(L_1, /*hidden argument*/NULL);
+		if (L_2)
+		{
+			goto IL_0027;
+		}
+	}
+	{
+		iOSMusic_set_HasAudioClipStartedPlaying_m3277054318(__this, (bool)0, /*hidden argument*/NULL);
+		musicManager_nextSong_m64060825(NULL /*static, unused*/, /*hidden argument*/NULL);
+	}
+
+IL_0027:
+	{
+		return;
+	}
+}
+// System.Void iOSMusic::HandleAppendToggleChange(System.Boolean)
+extern "C"  void iOSMusic_HandleAppendToggleChange_m3795314110 (iOSMusic_t2155735576 * __this, bool ___toggle0, const MethodInfo* method)
+{
+	{
+		bool L_0 = ___toggle0;
+		iOSMusic_set_ShouldAppendToPlaylist_m1831647119(__this, L_0, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void iOSMusic::ResetButtonStates()
+extern const MethodInfo* GameObject_GetComponent_TisButton_t990034267_m2812094092_MethodInfo_var;
+extern Il2CppCodeGenString* _stringLiteral243742757;
+extern Il2CppCodeGenString* _stringLiteral2794538281;
+extern const uint32_t iOSMusic_ResetButtonStates_m420947620_MetadataUsageId;
+extern "C"  void iOSMusic_ResetButtonStates_m420947620 (iOSMusic_t2155735576 * __this, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (iOSMusic_ResetButtonStates_m420947620_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	{
+		GameObject_t4012695102 * L_0 = GameObject_Find_m332785498(NULL /*static, unused*/, _stringLiteral243742757, /*hidden argument*/NULL);
+		bool L_1 = Object_op_Implicit_m2106766291(NULL /*static, unused*/, L_0, /*hidden argument*/NULL);
+		if (!L_1)
+		{
+			goto IL_0052;
+		}
+	}
+	{
+		GameObject_t4012695102 * L_2 = GameObject_Find_m332785498(NULL /*static, unused*/, _stringLiteral2794538281, /*hidden argument*/NULL);
+		bool L_3 = Object_op_Implicit_m2106766291(NULL /*static, unused*/, L_2, /*hidden argument*/NULL);
+		if (!L_3)
+		{
+			goto IL_0052;
+		}
+	}
+	{
+		GameObject_t4012695102 * L_4 = GameObject_Find_m332785498(NULL /*static, unused*/, _stringLiteral243742757, /*hidden argument*/NULL);
+		NullCheck(L_4);
+		Button_t990034267 * L_5 = GameObject_GetComponent_TisButton_t990034267_m2812094092(L_4, /*hidden argument*/GameObject_GetComponent_TisButton_t990034267_m2812094092_MethodInfo_var);
+		NullCheck(L_5);
+		Selectable_set_interactable_m2686686419(L_5, (bool)1, /*hidden argument*/NULL);
+		GameObject_t4012695102 * L_6 = GameObject_Find_m332785498(NULL /*static, unused*/, _stringLiteral2794538281, /*hidden argument*/NULL);
+		NullCheck(L_6);
+		Button_t990034267 * L_7 = GameObject_GetComponent_TisButton_t990034267_m2812094092(L_6, /*hidden argument*/GameObject_GetComponent_TisButton_t990034267_m2812094092_MethodInfo_var);
+		NullCheck(L_7);
+		Selectable_set_interactable_m2686686419(L_7, (bool)1, /*hidden argument*/NULL);
+	}
+
+IL_0052:
+	{
+		return;
+	}
+}
+// System.Void iOSMusic::LoadAudioClip()
+extern Il2CppClass* String_t_il2cpp_TypeInfo_var;
+extern Il2CppCodeGenString* _stringLiteral2608215943;
+extern const uint32_t iOSMusic_LoadAudioClip_m122702497_MetadataUsageId;
+extern "C"  void iOSMusic_LoadAudioClip_m122702497 (iOSMusic_t2155735576 * __this, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (iOSMusic_LoadAudioClip_m122702497_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	String_t* V_0 = NULL;
+	String_t* V_1 = NULL;
+	{
+		AudioSource_t3628549054 * L_0 = iOSMusic_get_iOSMusicAudioSource_m1695760824(__this, /*hidden argument*/NULL);
+		NullCheck(L_0);
+		bool L_1 = AudioSource_get_isPlaying_m4213444423(L_0, /*hidden argument*/NULL);
+		if (!L_1)
+		{
+			goto IL_0043;
+		}
+	}
+	{
+		AudioSource_t3628549054 * L_2 = iOSMusic_get_iOSMusicAudioSource_m1695760824(__this, /*hidden argument*/NULL);
+		NullCheck(L_2);
+		AudioSource_Stop_m1454243038(L_2, /*hidden argument*/NULL);
+		Resources_UnloadUnusedAssets_m3831138427(NULL /*static, unused*/, /*hidden argument*/NULL);
+		AudioSource_t3628549054 * L_3 = iOSMusic_get_iOSMusicAudioSource_m1695760824(__this, /*hidden argument*/NULL);
+		NullCheck(L_3);
+		AudioClip_t3714538611 * L_4 = AudioSource_get_clip_m2410835857(L_3, /*hidden argument*/NULL);
+		bool L_5 = Object_op_Inequality_m1296218211(NULL /*static, unused*/, L_4, (Object_t3878351788 *)NULL, /*hidden argument*/NULL);
+		if (!L_5)
+		{
+			goto IL_0043;
+		}
+	}
+	{
+		AudioSource_t3628549054 * L_6 = iOSMusic_get_iOSMusicAudioSource_m1695760824(__this, /*hidden argument*/NULL);
+		NullCheck(L_6);
+		AudioSource_set_clip_m19502010(L_6, (AudioClip_t3714538611 *)NULL, /*hidden argument*/NULL);
+	}
+
+IL_0043:
+	{
+		String_t* L_7 = Application_get_persistentDataPath_m2554537447(NULL /*static, unused*/, /*hidden argument*/NULL);
+		String_t* L_8 = Application_get_persistentDataPath_m2554537447(NULL /*static, unused*/, /*hidden argument*/NULL);
+		NullCheck(L_8);
+		int32_t L_9 = String_get_Length_m2979997331(L_8, /*hidden argument*/NULL);
+		NullCheck(L_7);
+		String_t* L_10 = String_Substring_m675079568(L_7, 0, ((int32_t)((int32_t)L_9-(int32_t)5)), /*hidden argument*/NULL);
+		V_0 = L_10;
+		String_t* L_11 = V_0;
+		String_t* L_12 = V_0;
+		NullCheck(L_12);
+		int32_t L_13 = String_LastIndexOf_m3245805612(L_12, ((int32_t)47), /*hidden argument*/NULL);
+		NullCheck(L_11);
+		String_t* L_14 = String_Substring_m675079568(L_11, 0, L_13, /*hidden argument*/NULL);
+		V_0 = L_14;
+		String_t* L_15 = V_0;
+		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
+		String_t* L_16 = String_Concat_m138640077(NULL /*static, unused*/, L_15, _stringLiteral2608215943, /*hidden argument*/NULL);
+		V_1 = L_16;
+		String_t* L_17 = V_1;
+		Il2CppObject * L_18 = iOSMusic_LoadMusic_m3984490890(__this, L_17, /*hidden argument*/NULL);
+		MonoBehaviour_StartCoroutine_m2135303124(__this, L_18, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Collections.IEnumerator iOSMusic::LoadMusic(System.String)
+extern Il2CppClass* U3CLoadMusicU3Ec__Iterator2_t274259292_il2cpp_TypeInfo_var;
+extern const uint32_t iOSMusic_LoadMusic_m3984490890_MetadataUsageId;
+extern "C"  Il2CppObject * iOSMusic_LoadMusic_m3984490890 (iOSMusic_t2155735576 * __this, String_t* ___songPath0, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (iOSMusic_LoadMusic_m3984490890_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	U3CLoadMusicU3Ec__Iterator2_t274259292 * V_0 = NULL;
+	{
+		U3CLoadMusicU3Ec__Iterator2_t274259292 * L_0 = (U3CLoadMusicU3Ec__Iterator2_t274259292 *)il2cpp_codegen_object_new(U3CLoadMusicU3Ec__Iterator2_t274259292_il2cpp_TypeInfo_var);
+		U3CLoadMusicU3Ec__Iterator2__ctor_m1626840534(L_0, /*hidden argument*/NULL);
+		V_0 = L_0;
+		U3CLoadMusicU3Ec__Iterator2_t274259292 * L_1 = V_0;
+		String_t* L_2 = ___songPath0;
+		NullCheck(L_1);
+		L_1->set_songPath_0(L_2);
+		U3CLoadMusicU3Ec__Iterator2_t274259292 * L_3 = V_0;
+		String_t* L_4 = ___songPath0;
+		NullCheck(L_3);
+		L_3->set_U3CU24U3EsongPath_3(L_4);
+		U3CLoadMusicU3Ec__Iterator2_t274259292 * L_5 = V_0;
+		NullCheck(L_5);
+		L_5->set_U3CU3Ef__this_4(__this);
+		U3CLoadMusicU3Ec__Iterator2_t274259292 * L_6 = V_0;
+		return L_6;
+	}
+}
+// System.Void iOSMusic::ExtractTitle(System.String)
+extern Il2CppClass* String_t_il2cpp_TypeInfo_var;
+extern Il2CppClass* Debug_t1588791936_il2cpp_TypeInfo_var;
+extern Il2CppCodeGenString* _stringLiteral357403486;
+extern const uint32_t iOSMusic_ExtractTitle_m2818124810_MetadataUsageId;
+extern "C"  void iOSMusic_ExtractTitle_m2818124810 (iOSMusic_t2155735576 * __this, String_t* ___title0, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (iOSMusic_ExtractTitle_m2818124810_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	{
+		String_t* L_0 = ___title0;
+		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
+		String_t* L_1 = String_Concat_m138640077(NULL /*static, unused*/, _stringLiteral357403486, L_0, /*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(Debug_t1588791936_il2cpp_TypeInfo_var);
+		Debug_Log_m1731103628(NULL /*static, unused*/, L_1, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void iOSMusic::ExtractArtist(System.String)
+extern Il2CppClass* String_t_il2cpp_TypeInfo_var;
+extern Il2CppClass* Debug_t1588791936_il2cpp_TypeInfo_var;
+extern Il2CppCodeGenString* _stringLiteral3131217101;
+extern const uint32_t iOSMusic_ExtractArtist_m1386102745_MetadataUsageId;
+extern "C"  void iOSMusic_ExtractArtist_m1386102745 (iOSMusic_t2155735576 * __this, String_t* ___artist0, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (iOSMusic_ExtractArtist_m1386102745_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	{
+		String_t* L_0 = ___artist0;
+		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
+		String_t* L_1 = String_Concat_m138640077(NULL /*static, unused*/, _stringLiteral3131217101, L_0, /*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(Debug_t1588791936_il2cpp_TypeInfo_var);
+		Debug_Log_m1731103628(NULL /*static, unused*/, L_1, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void iOSMusic::ExtractAlbumTitle(System.String)
+extern Il2CppClass* String_t_il2cpp_TypeInfo_var;
+extern Il2CppClass* Debug_t1588791936_il2cpp_TypeInfo_var;
+extern Il2CppCodeGenString* _stringLiteral1118920365;
+extern const uint32_t iOSMusic_ExtractAlbumTitle_m2853582391_MetadataUsageId;
+extern "C"  void iOSMusic_ExtractAlbumTitle_m2853582391 (iOSMusic_t2155735576 * __this, String_t* ___albumTitle0, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (iOSMusic_ExtractAlbumTitle_m2853582391_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	{
+		String_t* L_0 = ___albumTitle0;
+		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
+		String_t* L_1 = String_Concat_m138640077(NULL /*static, unused*/, _stringLiteral1118920365, L_0, /*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(Debug_t1588791936_il2cpp_TypeInfo_var);
+		Debug_Log_m1731103628(NULL /*static, unused*/, L_1, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void iOSMusic::ExtractBPM(System.String)
+extern Il2CppClass* String_t_il2cpp_TypeInfo_var;
+extern Il2CppClass* Debug_t1588791936_il2cpp_TypeInfo_var;
+extern Il2CppCodeGenString* _stringLiteral63411493;
+extern const uint32_t iOSMusic_ExtractBPM_m1455911395_MetadataUsageId;
+extern "C"  void iOSMusic_ExtractBPM_m1455911395 (iOSMusic_t2155735576 * __this, String_t* ___bpm0, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (iOSMusic_ExtractBPM_m1455911395_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	{
+		String_t* L_0 = ___bpm0;
+		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
+		String_t* L_1 = String_Concat_m138640077(NULL /*static, unused*/, _stringLiteral63411493, L_0, /*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(Debug_t1588791936_il2cpp_TypeInfo_var);
+		Debug_Log_m1731103628(NULL /*static, unused*/, L_1, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void iOSMusic::ExtractGenre(System.String)
+extern Il2CppClass* String_t_il2cpp_TypeInfo_var;
+extern Il2CppClass* Debug_t1588791936_il2cpp_TypeInfo_var;
+extern Il2CppCodeGenString* _stringLiteral1584878537;
+extern const uint32_t iOSMusic_ExtractGenre_m4138183039_MetadataUsageId;
+extern "C"  void iOSMusic_ExtractGenre_m4138183039 (iOSMusic_t2155735576 * __this, String_t* ___genre0, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (iOSMusic_ExtractGenre_m4138183039_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	{
+		String_t* L_0 = ___genre0;
+		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
+		String_t* L_1 = String_Concat_m138640077(NULL /*static, unused*/, _stringLiteral1584878537, L_0, /*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(Debug_t1588791936_il2cpp_TypeInfo_var);
+		Debug_Log_m1731103628(NULL /*static, unused*/, L_1, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void iOSMusic::ExtractLyrics(System.String)
+extern Il2CppClass* String_t_il2cpp_TypeInfo_var;
+extern Il2CppClass* Debug_t1588791936_il2cpp_TypeInfo_var;
+extern Il2CppCodeGenString* _stringLiteral2687116858;
+extern const uint32_t iOSMusic_ExtractLyrics_m2870552460_MetadataUsageId;
+extern "C"  void iOSMusic_ExtractLyrics_m2870552460 (iOSMusic_t2155735576 * __this, String_t* ___lyrics0, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (iOSMusic_ExtractLyrics_m2870552460_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	{
+		String_t* L_0 = ___lyrics0;
+		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
+		String_t* L_1 = String_Concat_m138640077(NULL /*static, unused*/, _stringLiteral2687116858, L_0, /*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(Debug_t1588791936_il2cpp_TypeInfo_var);
+		Debug_Log_m1731103628(NULL /*static, unused*/, L_1, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void iOSMusic::ExtractDuration(System.String)
+extern Il2CppClass* String_t_il2cpp_TypeInfo_var;
+extern Il2CppClass* Debug_t1588791936_il2cpp_TypeInfo_var;
+extern Il2CppCodeGenString* _stringLiteral3224968154;
+extern const uint32_t iOSMusic_ExtractDuration_m260026924_MetadataUsageId;
+extern "C"  void iOSMusic_ExtractDuration_m260026924 (iOSMusic_t2155735576 * __this, String_t* ___duration0, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (iOSMusic_ExtractDuration_m260026924_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	{
+		String_t* L_0 = ___duration0;
+		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
+		String_t* L_1 = String_Concat_m138640077(NULL /*static, unused*/, _stringLiteral3224968154, L_0, /*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(Debug_t1588791936_il2cpp_TypeInfo_var);
+		Debug_Log_m1731103628(NULL /*static, unused*/, L_1, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void iOSMusic::ExtractArtwork()
+extern Il2CppClass* String_t_il2cpp_TypeInfo_var;
+extern Il2CppClass* Texture2D_t2509538522_il2cpp_TypeInfo_var;
+extern const MethodInfo* GameObject_GetComponent_TisImage_t3354615620_m2140199269_MethodInfo_var;
+extern Il2CppCodeGenString* _stringLiteral320059595;
+extern Il2CppCodeGenString* _stringLiteral2121431717;
+extern const uint32_t iOSMusic_ExtractArtwork_m2984868052_MetadataUsageId;
+extern "C"  void iOSMusic_ExtractArtwork_m2984868052 (iOSMusic_t2155735576 * __this, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (iOSMusic_ExtractArtwork_m2984868052_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	Texture2D_t2509538522 * V_0 = NULL;
+	ByteU5BU5D_t58506160* V_1 = NULL;
+	String_t* V_2 = NULL;
+	Sprite_t4006040370 * V_3 = NULL;
+	{
+		V_0 = (Texture2D_t2509538522 *)NULL;
+		String_t* L_0 = Application_get_persistentDataPath_m2554537447(NULL /*static, unused*/, /*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
+		String_t* L_1 = String_Concat_m138640077(NULL /*static, unused*/, L_0, _stringLiteral320059595, /*hidden argument*/NULL);
+		V_2 = L_1;
+		String_t* L_2 = V_2;
+		bool L_3 = File_Exists_m1326262381(NULL /*static, unused*/, L_2, /*hidden argument*/NULL);
+		if (!L_3)
+		{
+			goto IL_0081;
+		}
+	}
+	{
+		String_t* L_4 = V_2;
+		ByteU5BU5D_t58506160* L_5 = File_ReadAllBytes_m621899937(NULL /*static, unused*/, L_4, /*hidden argument*/NULL);
+		V_1 = L_5;
+		Texture2D_t2509538522 * L_6 = (Texture2D_t2509538522 *)il2cpp_codegen_object_new(Texture2D_t2509538522_il2cpp_TypeInfo_var);
+		Texture2D__ctor_m1883511258(L_6, 2, 2, /*hidden argument*/NULL);
+		V_0 = L_6;
+		Texture2D_t2509538522 * L_7 = V_0;
+		ByteU5BU5D_t58506160* L_8 = V_1;
+		NullCheck(L_7);
+		Texture2D_LoadImage_m2186196036(L_7, L_8, /*hidden argument*/NULL);
+		Texture2D_t2509538522 * L_9 = V_0;
+		Texture2D_t2509538522 * L_10 = V_0;
+		NullCheck(L_10);
+		int32_t L_11 = VirtFuncInvoker0< int32_t >::Invoke(4 /* System.Int32 UnityEngine.Texture::get_width() */, L_10);
+		Texture2D_t2509538522 * L_12 = V_0;
+		NullCheck(L_12);
+		int32_t L_13 = VirtFuncInvoker0< int32_t >::Invoke(5 /* System.Int32 UnityEngine.Texture::get_height() */, L_12);
+		Rect_t1525428817  L_14;
+		memset(&L_14, 0, sizeof(L_14));
+		Rect__ctor_m3291325233(&L_14, (0.0f), (0.0f), (((float)((float)L_11))), (((float)((float)L_13))), /*hidden argument*/NULL);
+		Vector2_t3525329788  L_15;
+		memset(&L_15, 0, sizeof(L_15));
+		Vector2__ctor_m1517109030(&L_15, (0.5f), (0.5f), /*hidden argument*/NULL);
+		Sprite_t4006040370 * L_16 = Sprite_Create_m2242007923(NULL /*static, unused*/, L_9, L_14, L_15, (40.0f), /*hidden argument*/NULL);
+		V_3 = L_16;
+		GameObject_t4012695102 * L_17 = GameObject_Find_m332785498(NULL /*static, unused*/, _stringLiteral2121431717, /*hidden argument*/NULL);
+		NullCheck(L_17);
+		Image_t3354615620 * L_18 = GameObject_GetComponent_TisImage_t3354615620_m2140199269(L_17, /*hidden argument*/GameObject_GetComponent_TisImage_t3354615620_m2140199269_MethodInfo_var);
+		Sprite_t4006040370 * L_19 = V_3;
+		NullCheck(L_18);
+		Image_set_sprite_m572551402(L_18, L_19, /*hidden argument*/NULL);
+	}
+
+IL_0081:
+	{
+		return;
+	}
+}
+// System.Void iOSMusic::UserDidCancel()
+extern Il2CppClass* Debug_t1588791936_il2cpp_TypeInfo_var;
+extern Il2CppCodeGenString* _stringLiteral466966292;
+extern const uint32_t iOSMusic_UserDidCancel_m559539567_MetadataUsageId;
+extern "C"  void iOSMusic_UserDidCancel_m559539567 (iOSMusic_t2155735576 * __this, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (iOSMusic_UserDidCancel_m559539567_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	{
+		iOSMusic_ResetButtonStates_m420947620(__this, /*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(Debug_t1588791936_il2cpp_TypeInfo_var);
+		Debug_Log_m1731103628(NULL /*static, unused*/, _stringLiteral466966292, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void iOSMusic/<LoadMusic>c__Iterator2::.ctor()
+extern "C"  void U3CLoadMusicU3Ec__Iterator2__ctor_m1626840534 (U3CLoadMusicU3Ec__Iterator2_t274259292 * __this, const MethodInfo* method)
+{
+	{
+		Object__ctor_m1772956182(__this, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Object iOSMusic/<LoadMusic>c__Iterator2::System.Collections.Generic.IEnumerator<object>.get_Current()
+extern "C"  Il2CppObject * U3CLoadMusicU3Ec__Iterator2_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m3857085894 (U3CLoadMusicU3Ec__Iterator2_t274259292 * __this, const MethodInfo* method)
+{
+	{
+		Il2CppObject * L_0 = __this->get_U24current_2();
+		return L_0;
+	}
+}
+// System.Object iOSMusic/<LoadMusic>c__Iterator2::System.Collections.IEnumerator.get_Current()
+extern "C"  Il2CppObject * U3CLoadMusicU3Ec__Iterator2_System_Collections_IEnumerator_get_Current_m3680027994 (U3CLoadMusicU3Ec__Iterator2_t274259292 * __this, const MethodInfo* method)
+{
+	{
+		Il2CppObject * L_0 = __this->get_U24current_2();
+		return L_0;
+	}
+}
+// System.Boolean iOSMusic/<LoadMusic>c__Iterator2::MoveNext()
+extern Il2CppClass* String_t_il2cpp_TypeInfo_var;
+extern Il2CppClass* WWW_t1522972100_il2cpp_TypeInfo_var;
+extern Il2CppClass* iOSMusic_t2155735576_il2cpp_TypeInfo_var;
+extern Il2CppClass* MenuManager_t3994435886_il2cpp_TypeInfo_var;
+extern Il2CppClass* Debug_t1588791936_il2cpp_TypeInfo_var;
+extern Il2CppCodeGenString* _stringLiteral3439929502;
+extern Il2CppCodeGenString* _stringLiteral2880067634;
+extern Il2CppCodeGenString* _stringLiteral2931933504;
+extern Il2CppCodeGenString* _stringLiteral1580330804;
+extern Il2CppCodeGenString* _stringLiteral448373963;
+extern const uint32_t U3CLoadMusicU3Ec__Iterator2_MoveNext_m4033278022_MetadataUsageId;
+extern "C"  bool U3CLoadMusicU3Ec__Iterator2_MoveNext_m4033278022 (U3CLoadMusicU3Ec__Iterator2_t274259292 * __this, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (U3CLoadMusicU3Ec__Iterator2_MoveNext_m4033278022_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	uint32_t V_0 = 0;
+	bool V_1 = false;
+	{
+		int32_t L_0 = __this->get_U24PC_1();
+		V_0 = L_0;
+		__this->set_U24PC_1((-1));
+		uint32_t L_1 = V_0;
+		if (L_1 == 0)
+		{
+			goto IL_0021;
+		}
+		if (L_1 == 1)
+		{
+			goto IL_007e;
+		}
+	}
+	{
+		goto IL_0134;
+	}
+
+IL_0021:
+	{
+		String_t* L_2 = __this->get_songPath_0();
+		bool L_3 = File_Exists_m1326262381(NULL /*static, unused*/, L_2, /*hidden argument*/NULL);
+		if (!L_3)
+		{
+			goto IL_0123;
+		}
+	}
+	{
+		iOSMusic_t2155735576 * L_4 = __this->get_U3CU3Ef__this_4();
+		NullCheck(L_4);
+		AudioSource_t3628549054 * L_5 = iOSMusic_get_iOSMusicAudioSource_m1695760824(L_4, /*hidden argument*/NULL);
+		NullCheck(L_5);
+		AudioSource_Stop_m1454243038(L_5, /*hidden argument*/NULL);
+		iOSMusic_t2155735576 * L_6 = __this->get_U3CU3Ef__this_4();
+		String_t* L_7 = __this->get_songPath_0();
+		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
+		String_t* L_8 = String_Concat_m138640077(NULL /*static, unused*/, _stringLiteral3439929502, L_7, /*hidden argument*/NULL);
+		WWW_t1522972100 * L_9 = (WWW_t1522972100 *)il2cpp_codegen_object_new(WWW_t1522972100_il2cpp_TypeInfo_var);
+		WWW__ctor_m1985874080(L_9, L_8, /*hidden argument*/NULL);
+		NullCheck(L_6);
+		L_6->set__musicLoader_4(L_9);
+		iOSMusic_t2155735576 * L_10 = __this->get_U3CU3Ef__this_4();
+		NullCheck(L_10);
+		WWW_t1522972100 * L_11 = L_10->get__musicLoader_4();
+		__this->set_U24current_2(L_11);
+		__this->set_U24PC_1(1);
+		goto IL_0136;
+	}
+
+IL_007e:
+	{
+		iOSMusic_t2155735576 * L_12 = __this->get_U3CU3Ef__this_4();
+		NullCheck(L_12);
+		WWW_t1522972100 * L_13 = L_12->get__musicLoader_4();
+		if (!L_13)
+		{
+			goto IL_011e;
+		}
+	}
+	{
+		iOSMusic_t2155735576 * L_14 = __this->get_U3CU3Ef__this_4();
+		NullCheck(L_14);
+		WWW_t1522972100 * L_15 = L_14->get__musicLoader_4();
+		NullCheck(L_15);
+		bool L_16 = WWW_get_isDone_m634060017(L_15, /*hidden argument*/NULL);
+		if (!L_16)
+		{
+			goto IL_011e;
+		}
+	}
+	{
+		iOSMusic_t2155735576 * L_17 = __this->get_U3CU3Ef__this_4();
+		NullCheck(L_17);
+		WWW_t1522972100 * L_18 = L_17->get__musicLoader_4();
+		NullCheck(L_18);
+		AudioClip_t3714538611 * L_19 = WWW_GetAudioClip_m1447938731(L_18, (bool)0, (bool)1, ((int32_t)24), /*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(iOSMusic_t2155735576_il2cpp_TypeInfo_var);
+		((iOSMusic_t2155735576_StaticFields*)iOSMusic_t2155735576_il2cpp_TypeInfo_var->static_fields)->set__audioClip_6(L_19);
+		iOSMusic_t2155735576 * L_20 = __this->get_U3CU3Ef__this_4();
+		NullCheck(L_20);
+		WWW_t1522972100 * L_21 = L_20->get__musicLoader_4();
+		NullCheck(L_21);
+		AudioClip_t3714538611 * L_22 = WWW_GetAudioClip_m1447938731(L_21, (bool)0, (bool)1, ((int32_t)24), /*hidden argument*/NULL);
+		((iOSMusic_t2155735576_StaticFields*)iOSMusic_t2155735576_il2cpp_TypeInfo_var->static_fields)->set__audioClip2_7(L_22);
+		int32_t L_23 = ((MenuManager_t3994435886_StaticFields*)MenuManager_t3994435886_il2cpp_TypeInfo_var->static_fields)->get_sceneNumber_2();
+		if ((!(((uint32_t)L_23) == ((uint32_t)3))))
+		{
+			goto IL_00ef;
+		}
+	}
+	{
+		SceneManager_LoadScene_m2167814033(NULL /*static, unused*/, _stringLiteral2880067634, /*hidden argument*/NULL);
+		goto IL_0113;
+	}
+
+IL_00ef:
+	{
+		int32_t L_24 = ((MenuManager_t3994435886_StaticFields*)MenuManager_t3994435886_il2cpp_TypeInfo_var->static_fields)->get_sceneNumber_2();
+		if ((!(((uint32_t)L_24) == ((uint32_t)4))))
+		{
+			goto IL_0109;
+		}
+	}
+	{
+		SceneManager_LoadScene_m2167814033(NULL /*static, unused*/, _stringLiteral2931933504, /*hidden argument*/NULL);
+		goto IL_0113;
+	}
+
+IL_0109:
+	{
+		SceneManager_LoadScene_m2167814033(NULL /*static, unused*/, _stringLiteral1580330804, /*hidden argument*/NULL);
+	}
+
+IL_0113:
+	{
+		iOSMusic_t2155735576 * L_25 = __this->get_U3CU3Ef__this_4();
+		NullCheck(L_25);
+		iOSMusic_ResetButtonStates_m420947620(L_25, /*hidden argument*/NULL);
+	}
+
+IL_011e:
+	{
+		goto IL_012d;
+	}
+
+IL_0123:
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(Debug_t1588791936_il2cpp_TypeInfo_var);
+		Debug_Log_m1731103628(NULL /*static, unused*/, _stringLiteral448373963, /*hidden argument*/NULL);
+	}
+
+IL_012d:
+	{
+		__this->set_U24PC_1((-1));
+	}
+
+IL_0134:
+	{
+		return (bool)0;
+	}
+
+IL_0136:
+	{
+		return (bool)1;
+	}
+	// Dead block : IL_0138: ldloc.1
+}
+// System.Void iOSMusic/<LoadMusic>c__Iterator2::Dispose()
+extern "C"  void U3CLoadMusicU3Ec__Iterator2_Dispose_m4218907795 (U3CLoadMusicU3Ec__Iterator2_t274259292 * __this, const MethodInfo* method)
+{
+	{
+		__this->set_U24PC_1((-1));
+		return;
+	}
+}
+// System.Void iOSMusic/<LoadMusic>c__Iterator2::Reset()
+extern Il2CppClass* NotSupportedException_t1374155497_il2cpp_TypeInfo_var;
+extern const uint32_t U3CLoadMusicU3Ec__Iterator2_Reset_m3568240771_MetadataUsageId;
+extern "C"  void U3CLoadMusicU3Ec__Iterator2_Reset_m3568240771 (U3CLoadMusicU3Ec__Iterator2_t274259292 * __this, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (U3CLoadMusicU3Ec__Iterator2_Reset_m3568240771_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	{
+		NotSupportedException_t1374155497 * L_0 = (NotSupportedException_t1374155497 *)il2cpp_codegen_object_new(NotSupportedException_t1374155497_il2cpp_TypeInfo_var);
+		NotSupportedException__ctor_m149930845(L_0, /*hidden argument*/NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_0);
+	}
+}
+// System.Void iOSMusicGUI::.ctor()
+extern "C"  void iOSMusicGUI__ctor_m1535670984 (iOSMusicGUI_t3167605763 * __this, const MethodInfo* method)
+{
+	{
+		MonoBehaviour__ctor_m2022291967(__this, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void iOSMusicGUI::Start()
+extern "C"  void iOSMusicGUI_Start_m482808776 (iOSMusicGUI_t3167605763 * __this, const MethodInfo* method)
+{
+	{
+		return;
+	}
+}
+// System.Void iOSMusicGUI::Update()
+extern "C"  void iOSMusicGUI_Update_m2088022341 (iOSMusicGUI_t3167605763 * __this, const MethodInfo* method)
+{
+	{
+		return;
+	}
+}
+// System.Void iOSMusicGUI::ShowMusicLibrary()
+extern Il2CppClass* iOSMusic_t2155735576_il2cpp_TypeInfo_var;
+extern const uint32_t iOSMusicGUI_ShowMusicLibrary_m843460271_MetadataUsageId;
+extern "C"  void iOSMusicGUI_ShowMusicLibrary_m843460271 (iOSMusicGUI_t3167605763 * __this, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (iOSMusicGUI_ShowMusicLibrary_m843460271_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(iOSMusic_t2155735576_il2cpp_TypeInfo_var);
+		iOSMusic_t2155735576 * L_0 = ((iOSMusic_t2155735576_StaticFields*)iOSMusic_t2155735576_il2cpp_TypeInfo_var->static_fields)->get_instance_2();
+		NullCheck(L_0);
+		AudioSource_t3628549054 * L_1 = iOSMusic_get_iOSMusicAudioSource_m1695760824(L_0, /*hidden argument*/NULL);
+		NullCheck(L_1);
+		bool L_2 = AudioSource_get_isPlaying_m4213444423(L_1, /*hidden argument*/NULL);
+		if (!L_2)
+		{
+			goto IL_002e;
+		}
+	}
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(iOSMusic_t2155735576_il2cpp_TypeInfo_var);
+		iOSMusic_t2155735576 * L_3 = ((iOSMusic_t2155735576_StaticFields*)iOSMusic_t2155735576_il2cpp_TypeInfo_var->static_fields)->get_instance_2();
+		NullCheck(L_3);
+		AudioSource_t3628549054 * L_4 = iOSMusic_get_iOSMusicAudioSource_m1695760824(L_3, /*hidden argument*/NULL);
+		NullCheck(L_4);
+		AudioSource_Stop_m1454243038(L_4, /*hidden argument*/NULL);
+		iOSMusic_t2155735576 * L_5 = ((iOSMusic_t2155735576_StaticFields*)iOSMusic_t2155735576_il2cpp_TypeInfo_var->static_fields)->get_instance_2();
+		NullCheck(L_5);
+		iOSMusic_set_HasAudioClipStartedPlaying_m3277054318(L_5, (bool)0, /*hidden argument*/NULL);
+	}
+
+IL_002e:
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(iOSMusic_t2155735576_il2cpp_TypeInfo_var);
+		iOSMusic_t2155735576 * L_6 = ((iOSMusic_t2155735576_StaticFields*)iOSMusic_t2155735576_il2cpp_TypeInfo_var->static_fields)->get_instance_2();
+		NullCheck(L_6);
+		bool L_7 = iOSMusic_get_ShouldAppendToPlaylist_m2359950168(L_6, /*hidden argument*/NULL);
+		musicManager_openNativeMusicPicker_m553592858(NULL /*static, unused*/, L_7, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void iOSMusicGUI::PlayPause()
+extern "C"  void iOSMusicGUI_PlayPause_m3816763400 (iOSMusicGUI_t3167605763 * __this, const MethodInfo* method)
+{
+	{
+		musicManager_playPause_m1295781299(NULL /*static, unused*/, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void iOSMusicGUI::LoadAudioClip()
+extern Il2CppClass* iOSMusic_t2155735576_il2cpp_TypeInfo_var;
+extern const uint32_t iOSMusicGUI_LoadAudioClip_m90374374_MetadataUsageId;
+extern "C"  void iOSMusicGUI_LoadAudioClip_m90374374 (iOSMusicGUI_t3167605763 * __this, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (iOSMusicGUI_LoadAudioClip_m90374374_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	{
+		iOSMusicGUI_PlayPause_m3816763400(__this, /*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(iOSMusic_t2155735576_il2cpp_TypeInfo_var);
+		iOSMusic_t2155735576 * L_0 = ((iOSMusic_t2155735576_StaticFields*)iOSMusic_t2155735576_il2cpp_TypeInfo_var->static_fields)->get_instance_2();
+		NullCheck(L_0);
+		iOSMusic_set_HasAudioClipStartedPlaying_m3277054318(L_0, (bool)0, /*hidden argument*/NULL);
+		iOSMusicGUI_DisableButtons_m1382367477(__this, /*hidden argument*/NULL);
+		iOSMusic_t2155735576 * L_1 = ((iOSMusic_t2155735576_StaticFields*)iOSMusic_t2155735576_il2cpp_TypeInfo_var->static_fields)->get_instance_2();
+		NullCheck(L_1);
+		bool L_2 = iOSMusic_get_ShouldAppendToPlaylist_m2359950168(L_1, /*hidden argument*/NULL);
+		musicManager_loadAudioClip_m2207913160(NULL /*static, unused*/, L_2, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void iOSMusicGUI::NextSong()
+extern Il2CppClass* iOSMusic_t2155735576_il2cpp_TypeInfo_var;
+extern const uint32_t iOSMusicGUI_NextSong_m4163255460_MetadataUsageId;
+extern "C"  void iOSMusicGUI_NextSong_m4163255460 (iOSMusicGUI_t3167605763 * __this, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (iOSMusicGUI_NextSong_m4163255460_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(iOSMusic_t2155735576_il2cpp_TypeInfo_var);
+		iOSMusic_t2155735576 * L_0 = ((iOSMusic_t2155735576_StaticFields*)iOSMusic_t2155735576_il2cpp_TypeInfo_var->static_fields)->get_instance_2();
+		NullCheck(L_0);
+		iOSMusic_set_HasAudioClipStartedPlaying_m3277054318(L_0, (bool)0, /*hidden argument*/NULL);
+		iOSMusicGUI_DisableButtons_m1382367477(__this, /*hidden argument*/NULL);
+		musicManager_nextSong_m64060825(NULL /*static, unused*/, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void iOSMusicGUI::PreviousSong()
+extern Il2CppClass* iOSMusic_t2155735576_il2cpp_TypeInfo_var;
+extern const uint32_t iOSMusicGUI_PreviousSong_m3780994088_MetadataUsageId;
+extern "C"  void iOSMusicGUI_PreviousSong_m3780994088 (iOSMusicGUI_t3167605763 * __this, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (iOSMusicGUI_PreviousSong_m3780994088_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(iOSMusic_t2155735576_il2cpp_TypeInfo_var);
+		iOSMusic_t2155735576 * L_0 = ((iOSMusic_t2155735576_StaticFields*)iOSMusic_t2155735576_il2cpp_TypeInfo_var->static_fields)->get_instance_2();
+		NullCheck(L_0);
+		iOSMusic_set_HasAudioClipStartedPlaying_m3277054318(L_0, (bool)0, /*hidden argument*/NULL);
+		iOSMusicGUI_DisableButtons_m1382367477(__this, /*hidden argument*/NULL);
+		musicManager_previousSong_m3001361053(NULL /*static, unused*/, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void iOSMusicGUI::DisableButtons()
+extern const MethodInfo* GameObject_GetComponent_TisButton_t990034267_m2812094092_MethodInfo_var;
+extern Il2CppCodeGenString* _stringLiteral243742757;
+extern Il2CppCodeGenString* _stringLiteral2794538281;
+extern const uint32_t iOSMusicGUI_DisableButtons_m1382367477_MetadataUsageId;
+extern "C"  void iOSMusicGUI_DisableButtons_m1382367477 (iOSMusicGUI_t3167605763 * __this, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (iOSMusicGUI_DisableButtons_m1382367477_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	{
+		GameObject_t4012695102 * L_0 = GameObject_Find_m332785498(NULL /*static, unused*/, _stringLiteral243742757, /*hidden argument*/NULL);
+		NullCheck(L_0);
+		Button_t990034267 * L_1 = GameObject_GetComponent_TisButton_t990034267_m2812094092(L_0, /*hidden argument*/GameObject_GetComponent_TisButton_t990034267_m2812094092_MethodInfo_var);
+		NullCheck(L_1);
+		Selectable_set_interactable_m2686686419(L_1, (bool)0, /*hidden argument*/NULL);
+		GameObject_t4012695102 * L_2 = GameObject_Find_m332785498(NULL /*static, unused*/, _stringLiteral2794538281, /*hidden argument*/NULL);
+		NullCheck(L_2);
+		Button_t990034267 * L_3 = GameObject_GetComponent_TisButton_t990034267_m2812094092(L_2, /*hidden argument*/GameObject_GetComponent_TisButton_t990034267_m2812094092_MethodInfo_var);
+		NullCheck(L_3);
+		Selectable_set_interactable_m2686686419(L_3, (bool)0, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void iOSMusicGUI::GoToScene2()
+extern Il2CppCodeGenString* _stringLiteral2470765894;
+extern const uint32_t iOSMusicGUI_GoToScene2_m1498097541_MetadataUsageId;
+extern "C"  void iOSMusicGUI_GoToScene2_m1498097541 (iOSMusicGUI_t3167605763 * __this, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (iOSMusicGUI_GoToScene2_m1498097541_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	{
+		SceneManager_LoadScene_m2167814033(NULL /*static, unused*/, _stringLiteral2470765894, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void iOSMusicGUI::GoToMainScene()
+extern Il2CppCodeGenString* _stringLiteral2155735576;
+extern const uint32_t iOSMusicGUI_GoToMainScene_m3134741238_MetadataUsageId;
+extern "C"  void iOSMusicGUI_GoToMainScene_m3134741238 (iOSMusicGUI_t3167605763 * __this, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (iOSMusicGUI_GoToMainScene_m3134741238_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	{
+		SceneManager_LoadScene_m2167814033(NULL /*static, unused*/, _stringLiteral2155735576, /*hidden argument*/NULL);
+		return;
+	}
+}
 // System.Void MenuManager::.ctor()
 extern "C"  void MenuManager__ctor_m1757457917 (MenuManager_t3994435886 * __this, const MethodInfo* method)
 {
@@ -2031,7 +3453,8 @@ extern "C"  void MenuManager__ctor_m1757457917 (MenuManager_t3994435886 * __this
 	}
 }
 // System.Void MenuManager::GoToThree()
-extern Il2CppCodeGenString* _stringLiteral2880067634;
+extern Il2CppClass* MenuManager_t3994435886_il2cpp_TypeInfo_var;
+extern Il2CppClass* iOSMusic_t2155735576_il2cpp_TypeInfo_var;
 extern const uint32_t MenuManager_GoToThree_m1345822006_MetadataUsageId;
 extern "C"  void MenuManager_GoToThree_m1345822006 (MenuManager_t3994435886 * __this, const MethodInfo* method)
 {
@@ -2042,12 +3465,21 @@ extern "C"  void MenuManager_GoToThree_m1345822006 (MenuManager_t3994435886 * __
 		s_Il2CppMethodIntialized = true;
 	}
 	{
-		SceneManager_LoadScene_m2167814033(NULL /*static, unused*/, _stringLiteral2880067634, /*hidden argument*/NULL);
+		((MenuManager_t3994435886_StaticFields*)MenuManager_t3994435886_il2cpp_TypeInfo_var->static_fields)->set_sceneNumber_2(3);
+		IL2CPP_RUNTIME_CLASS_INIT(iOSMusic_t2155735576_il2cpp_TypeInfo_var);
+		iOSMusic_t2155735576 * L_0 = ((iOSMusic_t2155735576_StaticFields*)iOSMusic_t2155735576_il2cpp_TypeInfo_var->static_fields)->get_instance_2();
+		NullCheck(L_0);
+		iOSMusic_set_HasAudioClipStartedPlaying_m3277054318(L_0, (bool)0, /*hidden argument*/NULL);
+		iOSMusic_t2155735576 * L_1 = ((iOSMusic_t2155735576_StaticFields*)iOSMusic_t2155735576_il2cpp_TypeInfo_var->static_fields)->get_instance_2();
+		NullCheck(L_1);
+		bool L_2 = iOSMusic_get_ShouldAppendToPlaylist_m2359950168(L_1, /*hidden argument*/NULL);
+		musicManager_loadAudioClip_m2207913160(NULL /*static, unused*/, L_2, /*hidden argument*/NULL);
 		return;
 	}
 }
 // System.Void MenuManager::GoTo_Four()
-extern Il2CppCodeGenString* _stringLiteral2931933504;
+extern Il2CppClass* MenuManager_t3994435886_il2cpp_TypeInfo_var;
+extern Il2CppClass* iOSMusic_t2155735576_il2cpp_TypeInfo_var;
 extern const uint32_t MenuManager_GoTo_Four_m1542755357_MetadataUsageId;
 extern "C"  void MenuManager_GoTo_Four_m1542755357 (MenuManager_t3994435886 * __this, const MethodInfo* method)
 {
@@ -2058,12 +3490,21 @@ extern "C"  void MenuManager_GoTo_Four_m1542755357 (MenuManager_t3994435886 * __
 		s_Il2CppMethodIntialized = true;
 	}
 	{
-		SceneManager_LoadScene_m2167814033(NULL /*static, unused*/, _stringLiteral2931933504, /*hidden argument*/NULL);
+		((MenuManager_t3994435886_StaticFields*)MenuManager_t3994435886_il2cpp_TypeInfo_var->static_fields)->set_sceneNumber_2(4);
+		IL2CPP_RUNTIME_CLASS_INIT(iOSMusic_t2155735576_il2cpp_TypeInfo_var);
+		iOSMusic_t2155735576 * L_0 = ((iOSMusic_t2155735576_StaticFields*)iOSMusic_t2155735576_il2cpp_TypeInfo_var->static_fields)->get_instance_2();
+		NullCheck(L_0);
+		iOSMusic_set_HasAudioClipStartedPlaying_m3277054318(L_0, (bool)0, /*hidden argument*/NULL);
+		iOSMusic_t2155735576 * L_1 = ((iOSMusic_t2155735576_StaticFields*)iOSMusic_t2155735576_il2cpp_TypeInfo_var->static_fields)->get_instance_2();
+		NullCheck(L_1);
+		bool L_2 = iOSMusic_get_ShouldAppendToPlaylist_m2359950168(L_1, /*hidden argument*/NULL);
+		musicManager_loadAudioClip_m2207913160(NULL /*static, unused*/, L_2, /*hidden argument*/NULL);
 		return;
 	}
 }
 // System.Void MenuManager::GoTo_Five()
-extern Il2CppCodeGenString* _stringLiteral1580330804;
+extern Il2CppClass* MenuManager_t3994435886_il2cpp_TypeInfo_var;
+extern Il2CppClass* iOSMusic_t2155735576_il2cpp_TypeInfo_var;
 extern const uint32_t MenuManager_GoTo_Five_m1537231529_MetadataUsageId;
 extern "C"  void MenuManager_GoTo_Five_m1537231529 (MenuManager_t3994435886 * __this, const MethodInfo* method)
 {
@@ -2074,7 +3515,15 @@ extern "C"  void MenuManager_GoTo_Five_m1537231529 (MenuManager_t3994435886 * __
 		s_Il2CppMethodIntialized = true;
 	}
 	{
-		SceneManager_LoadScene_m2167814033(NULL /*static, unused*/, _stringLiteral1580330804, /*hidden argument*/NULL);
+		((MenuManager_t3994435886_StaticFields*)MenuManager_t3994435886_il2cpp_TypeInfo_var->static_fields)->set_sceneNumber_2(5);
+		IL2CPP_RUNTIME_CLASS_INIT(iOSMusic_t2155735576_il2cpp_TypeInfo_var);
+		iOSMusic_t2155735576 * L_0 = ((iOSMusic_t2155735576_StaticFields*)iOSMusic_t2155735576_il2cpp_TypeInfo_var->static_fields)->get_instance_2();
+		NullCheck(L_0);
+		iOSMusic_set_HasAudioClipStartedPlaying_m3277054318(L_0, (bool)0, /*hidden argument*/NULL);
+		iOSMusic_t2155735576 * L_1 = ((iOSMusic_t2155735576_StaticFields*)iOSMusic_t2155735576_il2cpp_TypeInfo_var->static_fields)->get_instance_2();
+		NullCheck(L_1);
+		bool L_2 = iOSMusic_get_ShouldAppendToPlaylist_m2359950168(L_1, /*hidden argument*/NULL);
+		musicManager_loadAudioClip_m2207913160(NULL /*static, unused*/, L_2, /*hidden argument*/NULL);
 		return;
 	}
 }
@@ -2153,6 +3602,236 @@ IL_003f:
 	}
 
 IL_004e:
+	{
+		return;
+	}
+}
+// System.Void musicManager::.ctor()
+extern "C"  void musicManager__ctor_m3897392595 (musicManager_t2706273736 * __this, const MethodInfo* method)
+{
+	{
+		Object__ctor_m1772956182(__this, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void musicManager::_openNativeMusicPicker(System.Boolean)
+extern "C" void DEFAULT_CALL _openNativeMusicPicker(int32_t);
+extern "C"  void musicManager__openNativeMusicPicker_m2281960699 (Il2CppObject * __this /* static, unused */, bool ___toggle0, const MethodInfo* method)
+{
+	typedef void (DEFAULT_CALL *PInvokeFunc) (int32_t);
+
+	// Marshaling of parameter '___toggle0' to native representation
+
+	// Native function invocation
+	reinterpret_cast<PInvokeFunc>(_openNativeMusicPicker)(___toggle0);
+
+	// Marshaling cleanup of parameter '___toggle0' native representation
+
+}
+// System.Void musicManager::openNativeMusicPicker(System.Boolean)
+extern "C"  void musicManager_openNativeMusicPicker_m553592858 (Il2CppObject * __this /* static, unused */, bool ___toggle0, const MethodInfo* method)
+{
+	{
+		int32_t L_0 = Application_get_platform_m2918632856(NULL /*static, unused*/, /*hidden argument*/NULL);
+		if ((!(((uint32_t)L_0) == ((uint32_t)8))))
+		{
+			goto IL_0011;
+		}
+	}
+	{
+		bool L_1 = ___toggle0;
+		musicManager__openNativeMusicPicker_m2281960699(NULL /*static, unused*/, L_1, /*hidden argument*/NULL);
+	}
+
+IL_0011:
+	{
+		return;
+	}
+}
+// System.Void musicManager::_playPause()
+extern "C" void DEFAULT_CALL _playPause();
+extern "C"  void musicManager__playPause_m3247616468 (Il2CppObject * __this /* static, unused */, const MethodInfo* method)
+{
+	typedef void (DEFAULT_CALL *PInvokeFunc) ();
+
+	// Native function invocation
+	reinterpret_cast<PInvokeFunc>(_playPause)();
+
+}
+// System.Void musicManager::playPause()
+extern "C"  void musicManager_playPause_m1295781299 (Il2CppObject * __this /* static, unused */, const MethodInfo* method)
+{
+	{
+		int32_t L_0 = Application_get_platform_m2918632856(NULL /*static, unused*/, /*hidden argument*/NULL);
+		if ((!(((uint32_t)L_0) == ((uint32_t)8))))
+		{
+			goto IL_0010;
+		}
+	}
+	{
+		musicManager__playPause_m3247616468(NULL /*static, unused*/, /*hidden argument*/NULL);
+	}
+
+IL_0010:
+	{
+		return;
+	}
+}
+// System.Void musicManager::_loadAudioClip(System.Boolean)
+extern "C" void DEFAULT_CALL _loadAudioClip(int32_t);
+extern "C"  void musicManager__loadAudioClip_m2013680297 (Il2CppObject * __this /* static, unused */, bool ___toggle0, const MethodInfo* method)
+{
+	typedef void (DEFAULT_CALL *PInvokeFunc) (int32_t);
+
+	// Marshaling of parameter '___toggle0' to native representation
+
+	// Native function invocation
+	reinterpret_cast<PInvokeFunc>(_loadAudioClip)(___toggle0);
+
+	// Marshaling cleanup of parameter '___toggle0' native representation
+
+}
+// System.Void musicManager::loadAudioClip(System.Boolean)
+extern "C"  void musicManager_loadAudioClip_m2207913160 (Il2CppObject * __this /* static, unused */, bool ___toggle0, const MethodInfo* method)
+{
+	{
+		int32_t L_0 = Application_get_platform_m2918632856(NULL /*static, unused*/, /*hidden argument*/NULL);
+		if ((!(((uint32_t)L_0) == ((uint32_t)8))))
+		{
+			goto IL_0011;
+		}
+	}
+	{
+		bool L_1 = ___toggle0;
+		musicManager__loadAudioClip_m2013680297(NULL /*static, unused*/, L_1, /*hidden argument*/NULL);
+	}
+
+IL_0011:
+	{
+		return;
+	}
+}
+// System.Void musicManager::_previousSong()
+extern "C" void DEFAULT_CALL _previousSong();
+extern "C"  void musicManager__previousSong_m560660188 (Il2CppObject * __this /* static, unused */, const MethodInfo* method)
+{
+	typedef void (DEFAULT_CALL *PInvokeFunc) ();
+
+	// Native function invocation
+	reinterpret_cast<PInvokeFunc>(_previousSong)();
+
+}
+// System.Void musicManager::previousSong()
+extern "C"  void musicManager_previousSong_m3001361053 (Il2CppObject * __this /* static, unused */, const MethodInfo* method)
+{
+	{
+		int32_t L_0 = Application_get_platform_m2918632856(NULL /*static, unused*/, /*hidden argument*/NULL);
+		if ((!(((uint32_t)L_0) == ((uint32_t)8))))
+		{
+			goto IL_0010;
+		}
+	}
+	{
+		musicManager__previousSong_m560660188(NULL /*static, unused*/, /*hidden argument*/NULL);
+	}
+
+IL_0010:
+	{
+		return;
+	}
+}
+// System.Void musicManager::_nextSong()
+extern "C" void DEFAULT_CALL _nextSong();
+extern "C"  void musicManager__nextSong_m2482327896 (Il2CppObject * __this /* static, unused */, const MethodInfo* method)
+{
+	typedef void (DEFAULT_CALL *PInvokeFunc) ();
+
+	// Native function invocation
+	reinterpret_cast<PInvokeFunc>(_nextSong)();
+
+}
+// System.Void musicManager::nextSong()
+extern "C"  void musicManager_nextSong_m64060825 (Il2CppObject * __this /* static, unused */, const MethodInfo* method)
+{
+	{
+		int32_t L_0 = Application_get_platform_m2918632856(NULL /*static, unused*/, /*hidden argument*/NULL);
+		if ((!(((uint32_t)L_0) == ((uint32_t)8))))
+		{
+			goto IL_0010;
+		}
+	}
+	{
+		musicManager__nextSong_m2482327896(NULL /*static, unused*/, /*hidden argument*/NULL);
+	}
+
+IL_0010:
+	{
+		return;
+	}
+}
+// System.Void musicManager::_queryAppleMusic(System.String)
+extern "C" void DEFAULT_CALL _queryAppleMusic(char*);
+extern "C"  void musicManager__queryAppleMusic_m631507869 (Il2CppObject * __this /* static, unused */, String_t* ___productID0, const MethodInfo* method)
+{
+	typedef void (DEFAULT_CALL *PInvokeFunc) (char*);
+
+	// Marshaling of parameter '___productID0' to native representation
+	char* ____productID0_marshaled = NULL;
+	____productID0_marshaled = il2cpp_codegen_marshal_string(___productID0);
+
+	// Native function invocation
+	reinterpret_cast<PInvokeFunc>(_queryAppleMusic)(____productID0_marshaled);
+
+	// Marshaling cleanup of parameter '___productID0' native representation
+	il2cpp_codegen_marshal_free(____productID0_marshaled);
+	____productID0_marshaled = NULL;
+
+}
+// System.Void musicManager::queryAppleMusic(System.String)
+extern "C"  void musicManager_queryAppleMusic_m2357759326 (Il2CppObject * __this /* static, unused */, String_t* ___productID0, const MethodInfo* method)
+{
+	{
+		int32_t L_0 = Application_get_platform_m2918632856(NULL /*static, unused*/, /*hidden argument*/NULL);
+		if ((!(((uint32_t)L_0) == ((uint32_t)8))))
+		{
+			goto IL_0011;
+		}
+	}
+	{
+		String_t* L_1 = ___productID0;
+		musicManager__queryAppleMusic_m631507869(NULL /*static, unused*/, L_1, /*hidden argument*/NULL);
+	}
+
+IL_0011:
+	{
+		return;
+	}
+}
+// System.Void musicManager::_stopAppleMusic()
+extern "C" void DEFAULT_CALL _stopAppleMusic();
+extern "C"  void musicManager__stopAppleMusic_m3900323517 (Il2CppObject * __this /* static, unused */, const MethodInfo* method)
+{
+	typedef void (DEFAULT_CALL *PInvokeFunc) ();
+
+	// Native function invocation
+	reinterpret_cast<PInvokeFunc>(_stopAppleMusic)();
+
+}
+// System.Void musicManager::stopAppleMusic()
+extern "C"  void musicManager_stopAppleMusic_m66743870 (Il2CppObject * __this /* static, unused */, const MethodInfo* method)
+{
+	{
+		int32_t L_0 = Application_get_platform_m2918632856(NULL /*static, unused*/, /*hidden argument*/NULL);
+		if ((!(((uint32_t)L_0) == ((uint32_t)8))))
+		{
+			goto IL_0010;
+		}
+	}
+	{
+		musicManager__stopAppleMusic_m3900323517(NULL /*static, unused*/, /*hidden argument*/NULL);
+	}
+
+IL_0010:
 	{
 		return;
 	}

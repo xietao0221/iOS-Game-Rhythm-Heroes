@@ -18,6 +18,8 @@ struct String_t;
 struct FileStream_t1527309539;
 // System.IO.StreamReader
 struct StreamReader_t717565226;
+// System.Byte[]
+struct ByteU5BU5D_t58506160;
 
 #include "codegen/il2cpp-codegen.h"
 #include "mscorlib_System_String968488902.h"
@@ -33,3 +35,5 @@ extern "C"  FileStream_t1527309539 * File_Open_m1918038371 (Il2CppObject * __thi
 extern "C"  FileStream_t1527309539 * File_OpenRead_m3104031109 (Il2CppObject * __this /* static, unused */, String_t* ___path0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.IO.StreamReader System.IO.File::OpenText(System.String)
 extern "C"  StreamReader_t717565226 * File_OpenText_m396847893 (Il2CppObject * __this /* static, unused */, String_t* ___path0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Byte[] System.IO.File::ReadAllBytes(System.String)
+extern "C"  ByteU5BU5D_t58506160* File_ReadAllBytes_m621899937 (Il2CppObject * __this /* static, unused */, String_t* ___path0, const MethodInfo* method) IL2CPP_METHOD_ATTR;

@@ -25,6 +25,8 @@ struct AudioCallbacks_t2473994680;
 
 // System.Void AudioProcessor::.ctor()
 extern "C"  void AudioProcessor__ctor_m3341396639 (AudioProcessor_t2423098748 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void AudioProcessor::Awake()
+extern "C"  void AudioProcessor_Awake_m3579001858 (AudioProcessor_t2423098748 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Int64 AudioProcessor::getCurrentTimeMillis()
 extern "C"  int64_t AudioProcessor_getCurrentTimeMillis_m2494678154 (AudioProcessor_t2423098748 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void AudioProcessor::initArrays()

@@ -1,4 +1,4 @@
-//Generated on : 6/28/2016 8:21:32 PM
+//Generated on : 6/30/2016 7:03:38 PM
 void RegisterAllStrippedInternalCalls()
 {
 	//Start Registrations for type : UnityEngine.AnimationCurve
@@ -42,6 +42,10 @@ void RegisterAllStrippedInternalCalls()
 		//System.Boolean UnityEngine.Application::get_isPlaying()
 		void Register_UnityEngine_Application_get_isPlaying();
 		Register_UnityEngine_Application_get_isPlaying();
+
+		//System.String UnityEngine.Application::get_persistentDataPath()
+		void Register_UnityEngine_Application_get_persistentDataPath();
+		Register_UnityEngine_Application_get_persistentDataPath();
 
 		//UnityEngine.RuntimePlatform UnityEngine.Application::get_platform()
 		void Register_UnityEngine_Application_get_platform();
@@ -115,9 +119,29 @@ void RegisterAllStrippedInternalCalls()
 		void Register_UnityEngine_AudioSource_GetSpectrumDataHelper();
 		Register_UnityEngine_AudioSource_GetSpectrumDataHelper();
 
+		//System.Void UnityEngine.AudioSource::Play(System.UInt64)
+		void Register_UnityEngine_AudioSource_Play();
+		Register_UnityEngine_AudioSource_Play();
+
 		//System.Void UnityEngine.AudioSource::PlayDelayed(System.Single)
 		void Register_UnityEngine_AudioSource_PlayDelayed();
 		Register_UnityEngine_AudioSource_PlayDelayed();
+
+		//System.Void UnityEngine.AudioSource::Stop()
+		void Register_UnityEngine_AudioSource_Stop();
+		Register_UnityEngine_AudioSource_Stop();
+
+		//System.Void UnityEngine.AudioSource::set_clip(UnityEngine.AudioClip)
+		void Register_UnityEngine_AudioSource_set_clip();
+		Register_UnityEngine_AudioSource_set_clip();
+
+		//System.Void UnityEngine.AudioSource::set_loop(System.Boolean)
+		void Register_UnityEngine_AudioSource_set_loop();
+		Register_UnityEngine_AudioSource_set_loop();
+
+		//UnityEngine.AudioClip UnityEngine.AudioSource::get_clip()
+		void Register_UnityEngine_AudioSource_get_clip();
+		Register_UnityEngine_AudioSource_get_clip();
 
 	//End Registrations for type : UnityEngine.AudioSource
 
@@ -1791,6 +1815,10 @@ void RegisterAllStrippedInternalCalls()
 
 	//Start Registrations for type : UnityEngine.Resources
 
+		//UnityEngine.AsyncOperation UnityEngine.Resources::UnloadUnusedAssets()
+		void Register_UnityEngine_Resources_UnloadUnusedAssets();
+		Register_UnityEngine_Resources_UnloadUnusedAssets();
+
 		//UnityEngine.Object UnityEngine.Resources::Load(System.String,System.Type)
 		void Register_UnityEngine_Resources_Load();
 		Register_UnityEngine_Resources_Load();
@@ -1967,6 +1995,10 @@ void RegisterAllStrippedInternalCalls()
 		void Register_UnityEngine_Sprite_INTERNAL_get_textureRect();
 		Register_UnityEngine_Sprite_INTERNAL_get_textureRect();
 
+		//UnityEngine.Sprite UnityEngine.Sprite::INTERNAL_CALL_Create(UnityEngine.Texture2D,UnityEngine.Rect&,UnityEngine.Vector2&,System.Single,System.UInt32,UnityEngine.SpriteMeshType,UnityEngine.Vector4&)
+		void Register_UnityEngine_Sprite_INTERNAL_CALL_Create();
+		Register_UnityEngine_Sprite_INTERNAL_CALL_Create();
+
 		//UnityEngine.Texture2D UnityEngine.Sprite::get_texture()
 		void Register_UnityEngine_Sprite_get_texture();
 		Register_UnityEngine_Sprite_get_texture();
@@ -2050,6 +2082,10 @@ void RegisterAllStrippedInternalCalls()
 	//End Registrations for type : UnityEngine.Texture
 
 	//Start Registrations for type : UnityEngine.Texture2D
+
+		//System.Boolean UnityEngine.Texture2D::LoadImage(System.Byte[],System.Boolean)
+		void Register_UnityEngine_Texture2D_LoadImage();
+		Register_UnityEngine_Texture2D_LoadImage();
 
 		//System.Void UnityEngine.Texture2D::INTERNAL_CALL_GetPixelBilinear(UnityEngine.Texture2D,System.Single,System.Single,UnityEngine.Color&)
 		void Register_UnityEngine_Texture2D_INTERNAL_CALL_GetPixelBilinear();
@@ -2212,5 +2248,25 @@ void RegisterAllStrippedInternalCalls()
 		Register_UnityEngine_UnhandledExceptionHandler_NativeUnhandledExceptionHandler();
 
 	//End Registrations for type : UnityEngine.UnhandledExceptionHandler
+
+	//Start Registrations for type : UnityEngine.WWW
+
+		//System.Boolean UnityEngine.WWW::get_isDone()
+		void Register_UnityEngine_WWW_get_isDone();
+		Register_UnityEngine_WWW_get_isDone();
+
+		//System.Void UnityEngine.WWW::DestroyWWW(System.Boolean)
+		void Register_UnityEngine_WWW_DestroyWWW();
+		Register_UnityEngine_WWW_DestroyWWW();
+
+		//System.Void UnityEngine.WWW::InitWWW(System.String,System.Byte[],System.String[])
+		void Register_UnityEngine_WWW_InitWWW();
+		Register_UnityEngine_WWW_InitWWW();
+
+		//UnityEngine.AudioClip UnityEngine.WWW::GetAudioClipInternal(System.Boolean,System.Boolean,System.Boolean,UnityEngine.AudioType)
+		void Register_UnityEngine_WWW_GetAudioClipInternal();
+		Register_UnityEngine_WWW_GetAudioClipInternal();
+
+	//End Registrations for type : UnityEngine.WWW
 
 }

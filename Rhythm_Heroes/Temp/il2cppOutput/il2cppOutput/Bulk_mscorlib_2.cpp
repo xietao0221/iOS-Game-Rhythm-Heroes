@@ -13871,6 +13871,167 @@ extern "C"  StreamReader_t717565226 * File_OpenText_m396847893 (Il2CppObject * _
 		return L_1;
 	}
 }
+// System.Byte[] System.IO.File::ReadAllBytes(System.String)
+extern Il2CppClass* IOException_t544650864_il2cpp_TypeInfo_var;
+extern Il2CppClass* ByteU5BU5D_t58506160_il2cpp_TypeInfo_var;
+extern Il2CppClass* IDisposable_t1628921374_il2cpp_TypeInfo_var;
+extern Il2CppCodeGenString* _stringLiteral4096448362;
+extern Il2CppCodeGenString* _stringLiteral406451061;
+extern const uint32_t File_ReadAllBytes_m621899937_MetadataUsageId;
+extern "C"  ByteU5BU5D_t58506160* File_ReadAllBytes_m621899937 (Il2CppObject * __this /* static, unused */, String_t* ___path0, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (File_ReadAllBytes_m621899937_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	FileStream_t1527309539 * V_0 = NULL;
+	int64_t V_1 = 0;
+	int32_t V_2 = 0;
+	int32_t V_3 = 0;
+	ByteU5BU5D_t58506160* V_4 = NULL;
+	int32_t V_5 = 0;
+	ByteU5BU5D_t58506160* V_6 = NULL;
+	Exception_t1967233988 * __last_unhandled_exception = 0;
+	NO_UNUSED_WARNING (__last_unhandled_exception);
+	Exception_t1967233988 * __exception_local = 0;
+	NO_UNUSED_WARNING (__exception_local);
+	int32_t __leave_target = 0;
+	NO_UNUSED_WARNING (__leave_target);
+	{
+		String_t* L_0 = ___path0;
+		FileStream_t1527309539 * L_1 = File_OpenRead_m3104031109(NULL /*static, unused*/, L_0, /*hidden argument*/NULL);
+		V_0 = L_1;
+	}
+
+IL_0007:
+	try
+	{ // begin try (depth: 1)
+		{
+			FileStream_t1527309539 * L_2 = V_0;
+			NullCheck(L_2);
+			int64_t L_3 = VirtFuncInvoker0< int64_t >::Invoke(8 /* System.Int64 System.IO.FileStream::get_Length() */, L_2);
+			V_1 = L_3;
+			int64_t L_4 = V_1;
+			if ((((int64_t)L_4) <= ((int64_t)(((int64_t)((int64_t)((int32_t)2147483647LL)))))))
+			{
+				goto IL_0025;
+			}
+		}
+
+IL_001a:
+		{
+			IOException_t544650864 * L_5 = (IOException_t544650864 *)il2cpp_codegen_object_new(IOException_t544650864_il2cpp_TypeInfo_var);
+			IOException__ctor_m249933518(L_5, _stringLiteral4096448362, /*hidden argument*/NULL);
+			IL2CPP_RAISE_MANAGED_EXCEPTION(L_5);
+		}
+
+IL_0025:
+		{
+			V_2 = 0;
+			int64_t L_6 = V_1;
+			V_3 = (((int32_t)((int32_t)L_6)));
+			int64_t L_7 = V_1;
+			if ((int64_t)(L_7) > INTPTR_MAX) IL2CPP_RAISE_MANAGED_EXCEPTION(il2cpp_codegen_get_overflow_exception());
+			V_4 = ((ByteU5BU5D_t58506160*)SZArrayNew(ByteU5BU5D_t58506160_il2cpp_TypeInfo_var, (uint32_t)(((intptr_t)L_7))));
+			goto IL_0060;
+		}
+
+IL_0038:
+		{
+			FileStream_t1527309539 * L_8 = V_0;
+			ByteU5BU5D_t58506160* L_9 = V_4;
+			int32_t L_10 = V_2;
+			int32_t L_11 = V_3;
+			NullCheck(L_8);
+			int32_t L_12 = VirtFuncInvoker3< int32_t, ByteU5BU5D_t58506160*, int32_t, int32_t >::Invoke(14 /* System.Int32 System.IO.FileStream::Read(System.Byte[],System.Int32,System.Int32) */, L_8, L_9, L_10, L_11);
+			V_5 = L_12;
+			int32_t L_13 = V_5;
+			if (L_13)
+			{
+				goto IL_0056;
+			}
+		}
+
+IL_004b:
+		{
+			IOException_t544650864 * L_14 = (IOException_t544650864 *)il2cpp_codegen_object_new(IOException_t544650864_il2cpp_TypeInfo_var);
+			IOException__ctor_m249933518(L_14, _stringLiteral406451061, /*hidden argument*/NULL);
+			IL2CPP_RAISE_MANAGED_EXCEPTION(L_14);
+		}
+
+IL_0056:
+		{
+			int32_t L_15 = V_2;
+			int32_t L_16 = V_5;
+			V_2 = ((int32_t)((int32_t)L_15+(int32_t)L_16));
+			int32_t L_17 = V_3;
+			int32_t L_18 = V_5;
+			V_3 = ((int32_t)((int32_t)L_17-(int32_t)L_18));
+		}
+
+IL_0060:
+		{
+			int32_t L_19 = V_3;
+			if ((((int32_t)L_19) > ((int32_t)0)))
+			{
+				goto IL_0038;
+			}
+		}
+
+IL_0067:
+		{
+			ByteU5BU5D_t58506160* L_20 = V_4;
+			V_6 = L_20;
+			IL2CPP_LEAVE(0x82, FINALLY_0075);
+		}
+
+IL_0070:
+		{
+			; // IL_0070: leave IL_0082
+		}
+	} // end try (depth: 1)
+	catch(Il2CppExceptionWrapper& e)
+	{
+		__last_unhandled_exception = (Exception_t1967233988 *)e.ex;
+		goto FINALLY_0075;
+	}
+
+FINALLY_0075:
+	{ // begin finally (depth: 1)
+		{
+			FileStream_t1527309539 * L_21 = V_0;
+			if (!L_21)
+			{
+				goto IL_0081;
+			}
+		}
+
+IL_007b:
+		{
+			FileStream_t1527309539 * L_22 = V_0;
+			NullCheck(L_22);
+			InterfaceActionInvoker0::Invoke(0 /* System.Void System.IDisposable::Dispose() */, IDisposable_t1628921374_il2cpp_TypeInfo_var, L_22);
+		}
+
+IL_0081:
+		{
+			IL2CPP_END_FINALLY(117)
+		}
+	} // end finally (depth: 1)
+	IL2CPP_CLEANUP(117)
+	{
+		IL2CPP_JUMP_TBL(0x82, IL_0082)
+		IL2CPP_RETHROW_IF_UNHANDLED(Exception_t1967233988 *)
+	}
+
+IL_0082:
+	{
+		ByteU5BU5D_t58506160* L_23 = V_6;
+		return L_23;
+	}
+}
 // System.Void System.IO.FileNotFoundException::.ctor()
 extern Il2CppCodeGenString* _stringLiteral3868306468;
 extern const uint32_t FileNotFoundException__ctor_m1040614905_MetadataUsageId;

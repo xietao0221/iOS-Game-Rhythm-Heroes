@@ -4,16 +4,23 @@ using System.Collections;
 using UnityEngine.SceneManagement;
 
 public class MenuManager : MonoBehaviour {
+	public static int sceneNumber;
 	public void GoToThree() {
-		SceneManager.LoadScene ("GameScene_ThreeTrack");
+		sceneNumber = 3;
+		iOSMusic.instance.HasAudioClipStartedPlaying = false;
+		musicManager.loadAudioClip(iOSMusic.instance.ShouldAppendToPlaylist);
 	}
 
 	public void GoTo_Four() {
-		SceneManager.LoadScene ("GameScene_FourTrack");
+		sceneNumber = 4;
+		iOSMusic.instance.HasAudioClipStartedPlaying = false;
+		musicManager.loadAudioClip(iOSMusic.instance.ShouldAppendToPlaylist);
 	}
 
 	public void GoTo_Five() {
-		SceneManager.LoadScene ("GameScene_FiveTrack");
+		sceneNumber = 5;
+		iOSMusic.instance.HasAudioClipStartedPlaying = false;
+		musicManager.loadAudioClip(iOSMusic.instance.ShouldAppendToPlaylist);
 	}
 
 	public void GoTo_MainScene() {

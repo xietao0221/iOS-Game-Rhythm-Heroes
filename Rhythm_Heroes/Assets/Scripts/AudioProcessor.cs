@@ -59,8 +59,14 @@ public class AudioProcessor : MonoBehaviour {
     Autoco auco;
 
     private float alph; // trade-off constant between tempo deviation penalty and onset strength
+	void Awake(){
+		audioSource = GetComponent<AudioSource>();
+		audioSource.clip = iOSMusic._audioClip;
+		audioSource.loop = false;
+		audioSource.Play ();
+	}
+    
 
-    //////////////////////////////////
     private long getCurrentTimeMillis()
     {
         long milliseconds = System.DateTime.Now.Ticks / System.TimeSpan.TicksPerMillisecond;
@@ -81,15 +87,8 @@ public class AudioProcessor : MonoBehaviour {
     
     void Start() {
         callbacks = new List<AudioCallbacks>();
-
         initArrays();
-
-        audioSource = GetComponent<AudioSource>();
-//        samplingRate = audioSource.clip.frequency; //44100
 		samplingRate = 4410;
-		//print (samplingRate);
-//		samplingRate /= 10;//doesn't
-
         framePeriod = (float)bufferSize / (float)samplingRate;//0.023
 
         //initialize record of previous spectrum

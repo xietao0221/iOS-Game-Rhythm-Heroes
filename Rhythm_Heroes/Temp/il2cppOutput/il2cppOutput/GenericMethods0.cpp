@@ -363,6 +363,8 @@ struct List_1_t1634065389;
 struct List_1_t2923905571;
 // UnityEngine.UI.LayoutGroup
 struct LayoutGroup_t2646131550;
+// System.String
+struct String_t;
 // UnityEngine.Object[]
 struct ObjectU5BU5D_t3051965477;
 // System.Converter`2<System.Object,System.Object>
@@ -762,12 +764,12 @@ struct Converter_2_t113996300;
 #include "mscorlib_System_Activator690001546.h"
 #include "mscorlib_System_Activator690001546MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_CastHelper_1_gen4244616972.h"
+#include "UnityEngine_UnityEngine_Resources1543782994.h"
+#include "UnityEngine_UnityEngine_Resources1543782994MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_ScriptableObject184905905.h"
 #include "UnityEngine_UnityEngine_ScriptableObject184905905MethodDeclarations.h"
 #include "UnityEngine_UI_UnityEngine_UI_Dropdown2916437562.h"
 #include "mscorlib_System_Reflection_CustomAttributeData2584644259.h"
-#include "UnityEngine_UnityEngine_Resources1543782994MethodDeclarations.h"
-#include "UnityEngine_UnityEngine_Resources1543782994.h"
 #include "mscorlib_System_Converter_2_gen113996300.h"
 #include "mscorlib_System_Converter_2_gen113996300MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_Transform284553113.h"
@@ -3471,6 +3473,9 @@ extern "C"  Il2CppObject * Object_FindObjectOfType_TisIl2CppObject_m2892359027_g
 // T UnityEngine.Object::Instantiate<System.Object>(T)
 extern "C"  Il2CppObject * Object_Instantiate_TisIl2CppObject_m3133387403_gshared (Il2CppObject * __this /* static, unused */, Il2CppObject * ___original0, const MethodInfo* method);
 #define Object_Instantiate_TisIl2CppObject_m3133387403(__this /* static, unused */, ___original0, method) ((  Il2CppObject * (*) (Il2CppObject * /* static, unused */, Il2CppObject *, const MethodInfo*))Object_Instantiate_TisIl2CppObject_m3133387403_gshared)(__this /* static, unused */, ___original0, method)
+// T UnityEngine.Resources::Load<System.Object>(System.String)
+extern "C"  Il2CppObject * Resources_Load_TisIl2CppObject_m2208345422_gshared (Il2CppObject * __this /* static, unused */, String_t* ___path0, const MethodInfo* method);
+#define Resources_Load_TisIl2CppObject_m2208345422(__this /* static, unused */, ___path0, method) ((  Il2CppObject * (*) (Il2CppObject * /* static, unused */, String_t*, const MethodInfo*))Resources_Load_TisIl2CppObject_m2208345422_gshared)(__this /* static, unused */, ___path0, method)
 // T UnityEngine.ScriptableObject::CreateInstance<System.Object>()
 extern "C"  Il2CppObject * ScriptableObject_CreateInstance_TisIl2CppObject_m512360883_gshared (Il2CppObject * __this /* static, unused */, const MethodInfo* method);
 #define ScriptableObject_CreateInstance_TisIl2CppObject_m512360883(__this /* static, unused */, method) ((  Il2CppObject * (*) (Il2CppObject * /* static, unused */, const MethodInfo*))ScriptableObject_CreateInstance_TisIl2CppObject_m512360883_gshared)(__this /* static, unused */, method)
@@ -53164,6 +53169,26 @@ extern "C"  Il2CppObject * Object_Instantiate_TisIl2CppObject_m3133387403_gshare
 		Il2CppObject * L_1 = ___original0;
 		Object_t3878351788 * L_2 = Object_Internal_CloneSingle_m3129073756(NULL /*static, unused*/, (Object_t3878351788 *)L_1, /*hidden argument*/NULL);
 		return ((Il2CppObject *)Castclass(L_2, IL2CPP_RGCTX_DATA(method->rgctx_data, 0)));
+	}
+}
+// T UnityEngine.Resources::Load<System.Object>(System.String)
+// T UnityEngine.Resources::Load<System.Object>(System.String)
+extern Il2CppClass* Type_t_il2cpp_TypeInfo_var;
+extern const uint32_t Resources_Load_TisIl2CppObject_m2208345422_MetadataUsageId;
+extern "C"  Il2CppObject * Resources_Load_TisIl2CppObject_m2208345422_gshared (Il2CppObject * __this /* static, unused */, String_t* ___path0, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (Resources_Load_TisIl2CppObject_m2208345422_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	{
+		String_t* L_0 = ___path0;
+		IL2CPP_RUNTIME_CLASS_INIT(Type_t_il2cpp_TypeInfo_var);
+		Type_t * L_1 = Type_GetTypeFromHandle_m3806905434(NULL /*static, unused*/, (RuntimeTypeHandle_t1864875887 )LoadTypeToken(IL2CPP_RGCTX_TYPE(method->rgctx_data, 0)), /*hidden argument*/NULL);
+		Object_t3878351788 * L_2 = Resources_Load_m3601699608(NULL /*static, unused*/, (String_t*)L_0, (Type_t *)L_1, /*hidden argument*/NULL);
+		return ((Il2CppObject *)Castclass(L_2, IL2CPP_RGCTX_DATA(method->rgctx_data, 1)));
 	}
 }
 // T UnityEngine.ScriptableObject::CreateInstance<System.Object>()

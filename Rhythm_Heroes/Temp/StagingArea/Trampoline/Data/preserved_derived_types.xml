@@ -12,6 +12,9 @@
 <type fullname="TouchController" preserve="all"/>
 <type fullname="TouchZoneMaterialController" preserve="all"/>
 <type fullname="WordController" preserve="all"/>
+<type fullname="AppleMusicController" preserve="all"/>
+<type fullname="iOSMusic" preserve="all"/>
+<type fullname="iOSMusicGUI" preserve="all"/>
 </assembly>
 <assembly fullname="UnityEngine.UI">
 <type fullname="UnityEngine.EventSystems.EventSystem" preserve="all"/>

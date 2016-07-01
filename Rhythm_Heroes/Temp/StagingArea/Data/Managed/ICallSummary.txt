@@ -6,6 +6,7 @@ UnityEngine.Animator::SetTriggerString
 UnityEngine.Animator::get_runtimeAnimatorController
 UnityEngine.Application::get_isEditor
 UnityEngine.Application::get_isPlaying
+UnityEngine.Application::get_persistentDataPath
 UnityEngine.Application::get_platform
 UnityEngine.AssetBundleCreateRequest::DisableCompatibilityChecks
 UnityEngine.AssetBundleCreateRequest::get_assetBundle
@@ -20,7 +21,12 @@ UnityEngine.AsyncOperation::set_allowSceneActivation
 UnityEngine.AsyncOperation::set_priority
 UnityEngine.AudioSource::get_isPlaying
 UnityEngine.AudioSource::GetSpectrumDataHelper
+UnityEngine.AudioSource::Play
 UnityEngine.AudioSource::PlayDelayed
+UnityEngine.AudioSource::Stop
+UnityEngine.AudioSource::set_clip
+UnityEngine.AudioSource::set_loop
+UnityEngine.AudioSource::get_clip
 UnityEngine.Behaviour::get_enabled
 UnityEngine.Behaviour::get_isActiveAndEnabled
 UnityEngine.Behaviour::set_enabled
@@ -392,6 +398,7 @@ UnityEngine.Renderer::INTERNAL_get_bounds
 UnityEngine.Renderer::get_material
 UnityEngine.RenderTexture::Internal_GetHeight
 UnityEngine.RenderTexture::Internal_GetWidth
+UnityEngine.Resources::UnloadUnusedAssets
 UnityEngine.Resources::Load
 UnityEngine.SceneManagement.SceneManager::LoadSceneAsyncNameIndexInternal
 UnityEngine.Screen::get_height
@@ -428,6 +435,7 @@ UnityEngine.Sprite::get_pixelsPerUnit
 UnityEngine.Sprite::INTERNAL_get_border
 UnityEngine.Sprite::INTERNAL_get_rect
 UnityEngine.Sprite::INTERNAL_get_textureRect
+UnityEngine.Sprite::INTERNAL_CALL_Create
 UnityEngine.Sprite::get_texture
 UnityEngine.Sprites.DataUtility::INTERNAL_CALL_GetInnerUV
 UnityEngine.Sprites.DataUtility::INTERNAL_CALL_GetOuterUV
@@ -445,6 +453,7 @@ UnityEngine.TextGenerator::INTERNAL_get_rectExtents
 UnityEngine.TextGenerator::Init
 UnityEngine.Texture::Internal_GetHeight
 UnityEngine.Texture::Internal_GetWidth
+UnityEngine.Texture2D::LoadImage
 UnityEngine.Texture2D::INTERNAL_CALL_GetPixelBilinear
 UnityEngine.Texture2D::Internal_Create
 UnityEngine.Texture2D::get_whiteTexture
@@ -481,3 +490,7 @@ UnityEngine.Transform::set_parentInternal
 UnityEngine.Transform::GetChild
 UnityEngine.Transform::get_parentInternal
 UnityEngine.UnhandledExceptionHandler::NativeUnhandledExceptionHandler
+UnityEngine.WWW::get_isDone
+UnityEngine.WWW::DestroyWWW
+UnityEngine.WWW::InitWWW
+UnityEngine.WWW::GetAudioClipInternal

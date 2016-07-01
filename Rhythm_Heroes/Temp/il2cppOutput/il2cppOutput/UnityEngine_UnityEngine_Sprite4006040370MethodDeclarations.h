@@ -18,9 +18,16 @@ struct Sprite_t4006040370;
 struct Texture2D_t2509538522;
 
 #include "codegen/il2cpp-codegen.h"
+#include "UnityEngine_UnityEngine_Texture2D2509538522.h"
 #include "UnityEngine_UnityEngine_Rect1525428817.h"
+#include "UnityEngine_UnityEngine_Vector23525329788.h"
+#include "UnityEngine_UnityEngine_SpriteMeshType2246008089.h"
 #include "UnityEngine_UnityEngine_Vector43525329790.h"
 
+// UnityEngine.Sprite UnityEngine.Sprite::Create(UnityEngine.Texture2D,UnityEngine.Rect,UnityEngine.Vector2,System.Single)
+extern "C"  Sprite_t4006040370 * Sprite_Create_m2242007923 (Il2CppObject * __this /* static, unused */, Texture2D_t2509538522 * ___texture0, Rect_t1525428817  ___rect1, Vector2_t3525329788  ___pivot2, float ___pixelsPerUnit3, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// UnityEngine.Sprite UnityEngine.Sprite::INTERNAL_CALL_Create(UnityEngine.Texture2D,UnityEngine.Rect&,UnityEngine.Vector2&,System.Single,System.UInt32,UnityEngine.SpriteMeshType,UnityEngine.Vector4&)
+extern "C"  Sprite_t4006040370 * Sprite_INTERNAL_CALL_Create_m1601644917 (Il2CppObject * __this /* static, unused */, Texture2D_t2509538522 * ___texture0, Rect_t1525428817 * ___rect1, Vector2_t3525329788 * ___pivot2, float ___pixelsPerUnit3, uint32_t ___extrude4, int32_t ___meshType5, Vector4_t3525329790 * ___border6, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // UnityEngine.Rect UnityEngine.Sprite::get_rect()
 extern "C"  Rect_t1525428817  Sprite_get_rect_m132626493 (Sprite_t4006040370 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void UnityEngine.Sprite::INTERNAL_get_rect(UnityEngine.Rect&)
