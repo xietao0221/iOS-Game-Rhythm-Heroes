@@ -50,6 +50,7 @@
      <Compile Include="assets\Scripts\BackgroundMusicController.cs" />
      <Compile Include="assets\Scripts\MenuManager.cs" />
      <Compile Include="assets\Scripts\NoteMaterialController.cs" />
+     <Compile Include="assets\Scripts\ParticleEmission.cs" />
      <Compile Include="assets\Scripts\PlaneController.cs" />
      <Compile Include="assets\Scripts\PlaneMaterialController.cs" />
      <Compile Include="assets\Scripts\ScoreController.cs" />
@@ -62,12 +63,6 @@
      <Compile Include="assets\iosmusic\iOSMusic.cs" />
      <Compile Include="assets\iosmusic\iOSMusicGUI.cs" />
      <Compile Include="assets\particle ribbon\Scripts\ReverseNormals.cs" />
-     <Compile Include="assets\sky fx pack\Scripts\LightBeamsControlScript.cs" />
-     <Compile Include="assets\sky fx pack\Scripts\LookAtBehaviour.cs" />
-     <Compile Include="assets\sky fx pack\Scripts\LookAtCameraBehaviour.cs" />
-     <Compile Include="assets\sky fx pack\Scripts\RayBehavior.cs" />
-     <Compile Include="assets\sky fx pack\Scripts\RotateBehaviour.cs" />
-     <Compile Include="assets\sky fx pack\Scripts\ScrollBehaviour.cs" />
      <None Include="assets\iosmusic\readme.txt" />
      <None Include="assets\particle ribbon\readme_Simple_Particle_Ribbon.txt" />
  <Reference Include="UnityEngine.UI">

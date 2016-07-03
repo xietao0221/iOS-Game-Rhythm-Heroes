@@ -4,7 +4,7 @@ using System.Collections;
 public class NoteMaterialController : MonoBehaviour {
 
 	//public Texture[] textures = new Texture[2];
-	public Renderer rend;
+	private Renderer rend;
 
 	void Start() {
 		rend = this.GetComponent<Renderer>();

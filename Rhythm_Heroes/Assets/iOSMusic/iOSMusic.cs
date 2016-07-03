@@ -31,7 +31,6 @@ public class iOSMusic : MonoBehaviour {
 		get { return _audioClip; }
 		set { _audioClip = value; }
 	}
-
 	static public void readLocalMusic(int musicNum){
 		if (musicNum == 0) {
 			_audioClip = Resources.Load<AudioClip> ("Canon");
@@ -132,17 +131,31 @@ public class iOSMusic : MonoBehaviour {
 
 				_audioClip = _musicLoader.GetAudioClip(false,true,AudioType.AUDIOQUEUE) as AudioClip;
 				_audioClip2 = _musicLoader.GetAudioClip(false,true,AudioType.AUDIOQUEUE) as AudioClip;
-
-				if (MenuManager.sceneNumber == 3) {
-					SceneManager.LoadScene ("GameScene_ThreeTrack");
-				} else if (MenuManager.sceneNumber == 4) {
-					SceneManager.LoadScene ("GameScene_FourTrack");
+				if (_audioClip == null) {
+					//loader music failure . now do nothing
+					SceneManager.LoadScene ("MainScene");
 				} else {
-					SceneManager.LoadScene ("GameScene_FiveTrack");
+					int scene = MenuManager.sceneNumber;
+					if (scene == 3) {
+						SceneManager.LoadScene ("GameScene_ThreeTrack");
+					} else if (scene == 4) {
+						SceneManager.LoadScene ("GameScene_FourTrack");
+					} else {
+						SceneManager.LoadScene ("GameScene_FiveTrack");
+					}
 				}
+				// Use GetData() to access audio sample data
+				//_audioClip.GetData(musicData, 0);
+//				iOSMusicAudioSource.clip = _audioClip;
+//				iOSMusicAudioSource.loop = false;
+//				iOSMusicAudioSource.Play ();
+//				HasAudioClipStartedPlaying = true;
+				Debug.Log("Playing song using Audio Source!");
 				ResetButtonStates();
+
 			}
-		} else {
+		} else 
+		{
 			Debug.Log("Unable to locate converted song file.");
 		}
 	}

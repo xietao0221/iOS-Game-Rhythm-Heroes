@@ -11,12 +11,14 @@ public class TouchController : MonoBehaviour {
 	private int comboBonus;
 
 	private GameObject[] planeObj = new GameObject[5], touchObj = new GameObject[5];
-	private GameObject note;
+	private GameObject note, particleSysObj;
+	private ParticleSystem ps;
 	private GameObject scoreTextObj, wordTextObj;
 	private int channelNum;
 
 	public static int comboCount = 0;
 	public static bool hasChanged = false;
+	public static bool getScore = false;
 
 	void Start () {
 		channelNum = PlaneController.channelNum;
@@ -29,6 +31,8 @@ public class TouchController : MonoBehaviour {
 		note = GameObject.Find ("Note2");
 		scoreTextObj = GameObject.Find ("Score");
 		wordTextObj = GameObject.Find ("Word");
+		particleSysObj = GameObject.Find ("ring3");
+		ps = particleSysObj.GetComponent<ParticleSystem> ();
 		comboBonus = PlaneController.comboBonus;
 		note.SendMessage ("changeMaterial", false, SendMessageOptions.RequireReceiver);
 	}
@@ -83,7 +87,8 @@ public class TouchController : MonoBehaviour {
 									wordTextObj.SendMessage("wordTextDisplay", 1, SendMessageOptions.RequireReceiver);
 									scoreTextObj.SendMessage("scorePlus", SendMessageOptions.RequireReceiver);
 
-									// add animation
+									ps.transform.position = hit.point;
+									ps.Play();
 
 									comboCount++;
 									if(comboCount >= comboBonus && !hasChanged) {
@@ -96,7 +101,7 @@ public class TouchController : MonoBehaviour {
 										}
 										note.SendMessage("changeMaterial", true, SendMessageOptions.RequireReceiver);
 									}
-								}	
+								}
 							}
 
 							while(count[choose]-- > 0) {
@@ -124,6 +129,8 @@ public class TouchController : MonoBehaviour {
 				}
 			}
 		}
+			  
+
 		#endif
 
 
@@ -179,6 +186,8 @@ public class TouchController : MonoBehaviour {
 										scoreTextObj.SendMessage("scorePlus", SendMessageOptions.RequireReceiver);
 
 										// add animation
+										ps.transform.position = hit.point;
+										ps.Play();
 
 										comboCount++;
 										if(comboCount >= comboBonus && !hasChanged) {

@@ -11,7 +11,6 @@ public class WordController : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		wordText.text = "";
-		//anim = GetComponent<Animator> ();
 		outline = GetComponent<Outline> ();
 	}
 

@@ -43,6 +43,9 @@ public class PlaneController : MonoBehaviour, AudioProcessor.AudioCallbacks {
 		Random.seed = 42;
 		calculatePosition ();
 		initiateBlocks (blockNumPerChannel);
+	}
+
+	void Start() {
 		note.SendMessage ("changeMaterial", false, SendMessageOptions.RequireReceiver);
 	}
 

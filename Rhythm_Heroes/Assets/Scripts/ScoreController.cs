@@ -15,6 +15,7 @@ public class ScoreController : MonoBehaviour {
 		blockNum = 0;
 		missNum = 0;
 		perfectNum = 0;
+		combo = 0;
 	}
 
 	void Update () {
