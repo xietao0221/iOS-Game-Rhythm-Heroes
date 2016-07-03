@@ -1,5 +1,4 @@
-﻿
-using UnityEngine;
+﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.SceneManagement;
 
@@ -15,6 +14,7 @@ public class MenuManager : MonoBehaviour {
 		#if UNITY_IPHONE
 		sceneNumber = 3;
 		iOSMusic.instance.HasAudioClipStartedPlaying = false;
+//		SceneManager.LoadScene("LoadScene");
 		musicManager.loadAudioClip(iOSMusic.instance.ShouldAppendToPlaylist);
 		#endif
 	}
@@ -28,6 +28,7 @@ public class MenuManager : MonoBehaviour {
 		#if UNITY_IPHONE
 		sceneNumber = 4;
 		iOSMusic.instance.HasAudioClipStartedPlaying = false;
+//		SceneManager.LoadScene("LoadScene");
 		musicManager.loadAudioClip(iOSMusic.instance.ShouldAppendToPlaylist);
 		#endif
 	}
@@ -41,6 +42,7 @@ public class MenuManager : MonoBehaviour {
 		#if UNITY_IPHONE
 		sceneNumber = 5;
 		iOSMusic.instance.HasAudioClipStartedPlaying = false;
+//		SceneManager.LoadScene("LoadScene");
 		musicManager.loadAudioClip(iOSMusic.instance.ShouldAppendToPlaylist);
 		#endif
 	}

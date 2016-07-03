@@ -8,11 +8,14 @@ public class PlaneController : MonoBehaviour, AudioProcessor.AudioCallbacks {
 	public static int blockNumPerChannel = 6;
 	public static int[] blockSpeed = new int[]{10, 10, 10, 10, 10};	// the smaller the val, the faster the speed
 	public static int comboBonus = 5;
+	public static float beatMinInterval = 0.3f;
+	public static float countDownInterval = 3.0f;
 
 	public static Queue<BlockWrapper>[] blocksInPool = new Queue<BlockWrapper>[5];
 	public static Queue<BlockWrapper>[] blocksInChannel = new Queue<BlockWrapper>[5];
 	public GameObject prefabBlock;
 	public static GameObject[] planeObj = new GameObject[5], touchZoneObj = new GameObject[5];
+	public static GameObject note;
 	public static BlockWrapper[] blockClone;
 	private GameObject wordObj, scoreObj;
 	public static Object mutex;
@@ -20,6 +23,7 @@ public class PlaneController : MonoBehaviour, AudioProcessor.AudioCallbacks {
 	public static Vector3[] startingPoint = new Vector3[5];
 	public static float endingPointLocalMin = 0, touchZoneLocalMin = 0; 
 	private int delay = 0;
+	private float timePrev = 0.0f, timeNow = 0.0f;
 
 	void Awake() {
 		mutex = new Object ();
@@ -32,14 +36,15 @@ public class PlaneController : MonoBehaviour, AudioProcessor.AudioCallbacks {
 			planeObj [i] = GameObject.Find ("Plane" + i);
 			touchZoneObj [i] = GameObject.Find ("TouchZone" + i);
 		}
+		note = GameObject.Find ("Note2");
 		wordObj = GameObject.Find ("Word");
 		scoreObj = GameObject.Find ("Score");
 		blockClone = new BlockWrapper[channelNum * blockNumPerChannel];
 		Random.seed = 42;
 		calculatePosition ();
 		initiateBlocks (blockNumPerChannel);
+		note.SendMessage ("changeMaterial", false, SendMessageOptions.RequireReceiver);
 	}
-
 
 	void activeBeat(){
 		AudioProcessor processor = FindObjectOfType<AudioProcessor>();
@@ -47,6 +52,12 @@ public class PlaneController : MonoBehaviour, AudioProcessor.AudioCallbacks {
 	}
 
 	public void onOnbeatDetected() {
+		float timeElaps = timeNow - timePrev;
+		timePrev = timeNow;
+		if (timeElaps < beatMinInterval) {
+			return;
+		}
+
 		float tmp = Random.value * channelNum;
 		if(tmp <= 1) {
 			generateBlocks (0);
@@ -62,10 +73,11 @@ public class PlaneController : MonoBehaviour, AudioProcessor.AudioCallbacks {
 	}
 
 	void FixedUpdate () {
+		timeNow += Time.deltaTime;
 		if (delay++ == 10) {
 			activeBeat ();
 		}
-			
+
 		for(int i=0; i<channelNum; i++) {
 			int[] count = new int[channelNum];
 			lock(mutex) {
@@ -82,11 +94,16 @@ public class PlaneController : MonoBehaviour, AudioProcessor.AudioCallbacks {
 						wordObj.SendMessage ("wordTextDisplay", 0, SendMessageOptions.RequireReceiver);
 						scoreObj.SendMessage("comboChange", 0, SendMessageOptions.RequireReceiver);
 						scoreObj.SendMessage ("statChange", 1, SendMessageOptions.RequireReceiver);
+						TouchController.comboCount = 0;
 
 						if(TouchController.hasChanged) {
 							PlaneMaterialController.isHot = false;
 							TouchZoneMaterialController.isHot = false;
-							TouchController.comboCount = 0;
+							for(int j=0; j<channelNum; j++) {
+								planeObj[j].SendMessage("changeMaterial", false, SendMessageOptions.RequireReceiver);
+								touchZoneObj[j].SendMessage("changeMaterial", false, SendMessageOptions.RequireReceiver);
+							}
+							note.SendMessage ("changeMaterial", false, SendMessageOptions.RequireReceiver);
 							TouchController.hasChanged = false;
 						}
 					}
@@ -125,7 +142,7 @@ public class PlaneController : MonoBehaviour, AudioProcessor.AudioCallbacks {
 			for(int j=0; j<blockNumPerChannel; j++) {
 				GameObject tmpObj = Instantiate (prefabBlock, new Vector3(100, 0, 0), Quaternion.identity) as GameObject;
 				blockClone [i*blockNumPerChannel+j] = new BlockWrapper (tmpObj);
-				blocksInPool[i].Enqueue (blockClone [i*blockNumPerChannel+j]);
+				blocksInPool [i].Enqueue (blockClone [i * blockNumPerChannel + j]);
 			}
 		}
 	}

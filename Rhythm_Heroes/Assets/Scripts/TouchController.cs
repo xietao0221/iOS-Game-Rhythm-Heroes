@@ -10,35 +10,27 @@ public class TouchController : MonoBehaviour {
 	private RaycastHit hit;
 	private int comboBonus;
 
-	private GameObject[] planeObj = new GameObject[5];
+	private GameObject[] planeObj = new GameObject[5], touchObj = new GameObject[5];
+	private GameObject note;
 	private GameObject scoreTextObj, wordTextObj;
-	private int channelNum = 5;
+	private int channelNum;
 
 	public static int comboCount = 0;
 	public static bool hasChanged = false;
 
 	void Start () {
+		channelNum = PlaneController.channelNum;
 		myCamera = GetComponent<Camera>();
-		GameObject[] tmpPlaneObj = new GameObject[5];
-		for(int i=0; i<5; i++) {
-			tmpPlaneObj [i] = GameObject.Find ("Plane" + i);
-			if(tmpPlaneObj[i] == null) {
-				channelNum = i;
-				planeObj = new GameObject[channelNum];
-				for(int j=0; j<channelNum; j++) {
-					planeObj [j] = tmpPlaneObj [j];
-				}
-				break;
-			}
-			if(i == 4 && tmpPlaneObj[4] != null) {
-				for(int j=0; j<channelNum; j++) {
-					planeObj [j] = tmpPlaneObj [j];
-				}
-			}
+		planeObj = new GameObject[channelNum];
+		for(int i=0; i<channelNum; i++) {
+			planeObj [i] = GameObject.Find ("Plane" + i);
+			touchObj [i] = GameObject.Find ("TouchZone" + i);
 		}
+		note = GameObject.Find ("Note2");
 		scoreTextObj = GameObject.Find ("Score");
 		wordTextObj = GameObject.Find ("Word");
 		comboBonus = PlaneController.comboBonus;
+		note.SendMessage ("changeMaterial", false, SendMessageOptions.RequireReceiver);
 	}
 
 	void Update () {
@@ -98,6 +90,11 @@ public class TouchController : MonoBehaviour {
 										hasChanged = true;
 										PlaneMaterialController.isHot = true;
 										TouchZoneMaterialController.isHot = true;
+										for(int i=0; i<channelNum; i++) {
+											planeObj[i].SendMessage("changeMaterial", true, SendMessageOptions.RequireReceiver);
+											touchObj[i].SendMessage("changeMaterial", true, SendMessageOptions.RequireReceiver);
+										}
+										note.SendMessage("changeMaterial", true, SendMessageOptions.RequireReceiver);
 									}
 								}	
 							}
@@ -188,6 +185,11 @@ public class TouchController : MonoBehaviour {
 											hasChanged = true;
 											PlaneMaterialController.isHot = true;
 											TouchZoneMaterialController.isHot = true;
+											for(int i=0; i<channelNum; i++) {
+												planeObj[i].SendMessage("changeMaterial", true, SendMessageOptions.RequireReceiver);
+												touchObj[i].SendMessage("changeMaterial", true, SendMessageOptions.RequireReceiver);
+											}
+											note.SendMessage("changeMaterial", true, SendMessageOptions.RequireReceiver);
 										}
 									}	
 								}

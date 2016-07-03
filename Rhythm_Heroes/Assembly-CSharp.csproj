@@ -45,30 +45,31 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Particle Ribbon\Scripts\ReverseNormals.cs" />
-     <Compile Include="Assets\Scripts\AnimationController.cs" />
-     <Compile Include="Assets\Scripts\AudioProcessor.cs" />
-     <Compile Include="Assets\Scripts\BackgroundMusicController.cs" />
-     <Compile Include="Assets\Scripts\MenuManager.cs" />
-     <Compile Include="Assets\Scripts\PlaneController.cs" />
-     <Compile Include="Assets\Scripts\PlaneMaterialController.cs" />
-     <Compile Include="Assets\Scripts\ScoreController.cs" />
-     <Compile Include="Assets\Scripts\StatController.cs" />
-     <Compile Include="Assets\Scripts\TouchController.cs" />
-     <Compile Include="Assets\Scripts\TouchZoneMaterialController.cs" />
-     <Compile Include="Assets\Scripts\WordController.cs" />
-     <Compile Include="Assets\Sky FX Pack\Scripts\LightBeamsControlScript.cs" />
-     <Compile Include="Assets\Sky FX Pack\Scripts\LookAtBehaviour.cs" />
-     <Compile Include="Assets\Sky FX Pack\Scripts\LookAtCameraBehaviour.cs" />
-     <Compile Include="Assets\Sky FX Pack\Scripts\RayBehavior.cs" />
-     <Compile Include="Assets\Sky FX Pack\Scripts\RotateBehaviour.cs" />
-     <Compile Include="Assets\Sky FX Pack\Scripts\ScrollBehaviour.cs" />
-     <Compile Include="Assets\iOSMusic\Apple Music Example\AppleMusicController.cs" />
-     <Compile Include="Assets\iOSMusic\Plugins\musicManager.cs" />
-     <Compile Include="Assets\iOSMusic\iOSMusic.cs" />
-     <Compile Include="Assets\iOSMusic\iOSMusicGUI.cs" />
-     <None Include="Assets\iOSMusic\readme.txt" />
-     <None Include="Assets\Particle Ribbon\readme_Simple_Particle_Ribbon.txt" />
+     <Compile Include="assets\Scripts\AnimationController.cs" />
+     <Compile Include="assets\Scripts\AudioProcessor.cs" />
+     <Compile Include="assets\Scripts\BackgroundMusicController.cs" />
+     <Compile Include="assets\Scripts\MenuManager.cs" />
+     <Compile Include="assets\Scripts\NoteMaterialController.cs" />
+     <Compile Include="assets\Scripts\PlaneController.cs" />
+     <Compile Include="assets\Scripts\PlaneMaterialController.cs" />
+     <Compile Include="assets\Scripts\ScoreController.cs" />
+     <Compile Include="assets\Scripts\StatController.cs" />
+     <Compile Include="assets\Scripts\TouchController.cs" />
+     <Compile Include="assets\Scripts\TouchZoneMaterialController.cs" />
+     <Compile Include="assets\Scripts\WordController.cs" />
+     <Compile Include="assets\iosmusic\Apple Music Example\AppleMusicController.cs" />
+     <Compile Include="assets\iosmusic\Plugins\musicManager.cs" />
+     <Compile Include="assets\iosmusic\iOSMusic.cs" />
+     <Compile Include="assets\iosmusic\iOSMusicGUI.cs" />
+     <Compile Include="assets\particle ribbon\Scripts\ReverseNormals.cs" />
+     <Compile Include="assets\sky fx pack\Scripts\LightBeamsControlScript.cs" />
+     <Compile Include="assets\sky fx pack\Scripts\LookAtBehaviour.cs" />
+     <Compile Include="assets\sky fx pack\Scripts\LookAtCameraBehaviour.cs" />
+     <Compile Include="assets\sky fx pack\Scripts\RayBehavior.cs" />
+     <Compile Include="assets\sky fx pack\Scripts\RotateBehaviour.cs" />
+     <Compile Include="assets\sky fx pack\Scripts\ScrollBehaviour.cs" />
+     <None Include="assets\iosmusic\readme.txt" />
+     <None Include="assets\particle ribbon\readme_Simple_Particle_Ribbon.txt" />
  <Reference Include="UnityEngine.UI">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>

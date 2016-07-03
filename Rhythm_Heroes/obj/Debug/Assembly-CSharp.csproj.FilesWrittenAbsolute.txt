@@ -83,3 +83,37 @@
 /Users/apple/Downloads/CS526_RhythmHeroes-master 2/Rhythm_Heroes/Temp/bin/Debug/Mono.Cecil.Mdb.dll
 /Users/apple/Downloads/CS526_RhythmHeroes-master 2/Rhythm_Heroes/Temp/bin/Debug/Assembly-CSharp.dll.mdb
 /Users/apple/Downloads/CS526_RhythmHeroes-master 2/Rhythm_Heroes/Temp/bin/Debug/Assembly-CSharp.dll
+/Users/taoxie/Downloads/Rhythm_Heroes/obj/Debug/Assembly-CSharp.dll
+/Users/taoxie/Downloads/Rhythm_Heroes/obj/Debug/Assembly-CSharp.dll.mdb
+/Users/taoxie/Downloads/Rhythm_Heroes/Temp/bin/Debug/UnityEngine.dll
+/Users/taoxie/Downloads/Rhythm_Heroes/Temp/bin/Debug/UnityEditor.dll
+/Users/taoxie/Downloads/Rhythm_Heroes/Temp/bin/Debug/UnityEngine.UI.dll
+/Users/taoxie/Downloads/Rhythm_Heroes/Temp/bin/Debug/UnityEngine.Networking.dll
+/Users/taoxie/Downloads/Rhythm_Heroes/Temp/bin/Debug/Mono.Cecil.dll
+/Users/taoxie/Downloads/Rhythm_Heroes/Temp/bin/Debug/Unity.SerializationLogic.dll
+/Users/taoxie/Downloads/Rhythm_Heroes/Temp/bin/Debug/Unity.DataContract.dll
+/Users/taoxie/Downloads/Rhythm_Heroes/Temp/bin/Debug/ICSharpCode.NRefactory.dll
+/Users/taoxie/Downloads/Rhythm_Heroes/Temp/bin/Debug/Unity.UNetWeaver.dll
+/Users/taoxie/Downloads/Rhythm_Heroes/Temp/bin/Debug/Unity.UNetWeaver.dll.mdb
+/Users/taoxie/Downloads/Rhythm_Heroes/Temp/bin/Debug/Unity.CecilTools.dll
+/Users/taoxie/Downloads/Rhythm_Heroes/Temp/bin/Debug/Mono.Cecil.Pdb.dll
+/Users/taoxie/Downloads/Rhythm_Heroes/Temp/bin/Debug/Mono.Cecil.Mdb.dll
+/Users/taoxie/Downloads/Rhythm_Heroes/Temp/bin/Debug/Assembly-CSharp.dll.mdb
+/Users/taoxie/Downloads/Rhythm_Heroes/Temp/bin/Debug/Assembly-CSharp.dll
+/Users/apple/Downloads/Rhythm_Heroes/Temp/bin/Debug/Assembly-CSharp.dll.mdb
+/Users/apple/Downloads/Rhythm_Heroes/Temp/bin/Debug/Assembly-CSharp.dll
+/Users/apple/Downloads/Rhythm_Heroes/obj/Debug/Assembly-CSharp.dll
+/Users/apple/Downloads/Rhythm_Heroes/obj/Debug/Assembly-CSharp.dll.mdb
+/Users/apple/Downloads/Rhythm_Heroes/Temp/bin/Debug/UnityEngine.dll
+/Users/apple/Downloads/Rhythm_Heroes/Temp/bin/Debug/UnityEditor.dll
+/Users/apple/Downloads/Rhythm_Heroes/Temp/bin/Debug/UnityEngine.Networking.dll
+/Users/apple/Downloads/Rhythm_Heroes/Temp/bin/Debug/UnityEngine.UI.dll
+/Users/apple/Downloads/Rhythm_Heroes/Temp/bin/Debug/Mono.Cecil.dll
+/Users/apple/Downloads/Rhythm_Heroes/Temp/bin/Debug/Unity.SerializationLogic.dll
+/Users/apple/Downloads/Rhythm_Heroes/Temp/bin/Debug/Unity.DataContract.dll
+/Users/apple/Downloads/Rhythm_Heroes/Temp/bin/Debug/ICSharpCode.NRefactory.dll
+/Users/apple/Downloads/Rhythm_Heroes/Temp/bin/Debug/Unity.UNetWeaver.dll
+/Users/apple/Downloads/Rhythm_Heroes/Temp/bin/Debug/Unity.UNetWeaver.dll.mdb
+/Users/apple/Downloads/Rhythm_Heroes/Temp/bin/Debug/Unity.CecilTools.dll
+/Users/apple/Downloads/Rhythm_Heroes/Temp/bin/Debug/Mono.Cecil.Pdb.dll
+/Users/apple/Downloads/Rhythm_Heroes/Temp/bin/Debug/Mono.Cecil.Mdb.dll

@@ -13,7 +13,7 @@ public class PlaneMaterialController : MonoBehaviour {
 
 	void onTouchDown() {
 		if(isHot) {
-			mat.mainTexture = textures [1];			// change	
+			mat.mainTexture = textures [3];			// change	
 		} else {
 			mat.mainTexture = textures [1];
 		}
@@ -21,7 +21,7 @@ public class PlaneMaterialController : MonoBehaviour {
 
 	void onTouchUp() {
 		if(isHot) {
-			mat.mainTexture = textures [0];			// change	
+			mat.mainTexture = textures [2];			// change	
 		} else {
 			mat.mainTexture = textures [0];
 		}
@@ -29,7 +29,7 @@ public class PlaneMaterialController : MonoBehaviour {
 
 	void onTouchStay() {
 		if(isHot) {
-			mat.mainTexture = textures [1];			// change	
+			mat.mainTexture = textures [3];			// change	
 		} else {
 			mat.mainTexture = textures [1];
 		}
@@ -37,7 +37,16 @@ public class PlaneMaterialController : MonoBehaviour {
 
 	void onTouchExit() {
 		if(isHot) {
-			mat.mainTexture = textures [0];			// change	
+			mat.mainTexture = textures [2];			// change	
+		} else {
+			mat.mainTexture = textures [0];
+		}
+	}
+
+	void changeMaterial(bool isHot) {
+		if(isHot) {
+			// change
+			mat.mainTexture = textures [2];
 		} else {
 			mat.mainTexture = textures [0];
 		}
