@@ -2,43 +2,51 @@
 using System.Collections;
 
 public class AnimationController : MonoBehaviour {
-	public Animator anim;
-	public Animator planeAnim;
+	private GameObject ribbonEffect, effect1, effect2, leftEff, rightEff, leftP, rightP;
+	private ParticleSystem ribbon, particle1, particle2, leftPar, rightPar;
+	private Animator leftAnim, rightAnim;
 
 	// Use this for initialization
 	void Start () {
-		anim = GetComponent<Animator> ();
-		planeAnim = GetComponent<Animator> ();
+		
+		ribbonEffect = GameObject.Find ("ribbon");
+		effect1 = GameObject.Find ("eff1");
+		effect2 = GameObject.Find ("eff2");
+		leftEff = GameObject.Find ("leftEff");
+		rightEff = GameObject.Find ("rightEff");
+		leftP = GameObject.Find ("leftPlane");
+		rightP = GameObject.Find ("rightPlane");
+
+		ribbon = ribbonEffect.GetComponent<ParticleSystem> ();
+		particle1 = effect1.GetComponent<ParticleSystem> ();
+		particle2 = effect2.GetComponent<ParticleSystem> ();
+		leftPar = leftEff.GetComponent<ParticleSystem> ();
+		rightPar = rightEff.GetComponent<ParticleSystem> ();
+		leftAnim = leftP.GetComponent<Animator> ();
+		rightAnim = rightP.GetComponent<Animator> ();
 	}
-	
-	// Update is called once per frame
-//	void Update () {
-////		if (Input.GetKeyDown (KeyCode.Space)) {
-////			anim.SetTrigger ("touchPlane");
-////		}
-////		if (Input.GetKeyDown (KeyCode.A)) {
-////			anim.SetTrigger ("getScoreTouchPlane");
-////		}
-//		if (Input.GetMouseButton (0)) {
-//			Ray ray = Camera.main.ScreenPointToRay (Input.mousePosition);
-//			RaycastHit rayCastHit;
-//			if (Physics.Raycast (ray.origin, ray.direction, out rayCastHit, Mathf.Infinity)) {
-//				this.transform.position = rayCastHit.point;
-//				//print ("Mouse Click!");
-//				//anim.SetTrigger ("touchPlane");
-//			}
-//		}
-//	}
-//	void getScoreBlooming () {
-//		this.transform.position = rayCastHit.point;
-//		anim.SetTrigger ("getScoreTouchPlane");
-//	}
-	void changeLeftPlane (bool change) {
+
+	public void changePlaneAni (bool change) {
 		if (change) {
-			planeAnim.SetTrigger ("redFlashing");	
+			leftAnim.SetTrigger ("redFlashing");	
+			rightAnim.SetTrigger ("redFlashing");
 		} else {
-			planeAnim.SetTrigger ("blueFlashing");
+			leftAnim.SetTrigger ("blueFlashing");
+			rightAnim.SetTrigger ("blueFlashing");
 		}
 	}
 
+	public void particleEmit() {
+		particle1.Play ();
+		leftPar.Play ();
+		rightPar.Play ();
+	}
+
+	public void particleEmit1() {
+		particle2.Play ();
+	}
+
+	public void particleEmit2() {
+		ribbon.Play ();
+	}
 }

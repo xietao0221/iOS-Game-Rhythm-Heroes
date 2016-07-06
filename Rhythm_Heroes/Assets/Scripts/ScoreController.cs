@@ -5,27 +5,31 @@ using UnityEngine.UI;
 public class ScoreController : MonoBehaviour {
 
 	public Text scoreText;
-	public static float scoreCount = 0, comboMax = 0, combo = 0;
-	public static float blockNum = 0, missNum = 0, perfectNum = 0;
+	public static float scoreCount, comboMax, combo;
+	public static float blockNum, missNum, perfectNum, superNoteNum;
 
 	void Start () {
 		scoreText.text = "SCORE : 0";
 		scoreCount = 0;
 		comboMax = 0;
+		combo = 0;
+
 		blockNum = 0;
 		missNum = 0;
 		perfectNum = 0;
-		combo = 0;
+		superNoteNum = 0;
 	}
 
-	void Update () {
+	void FixedUpdate () {
 		scoreText.text = "SCORE : " + scoreCount;
 	}
 
 	public void scorePlus() {
-		//scoreCount++;
 		scoreCount += (1 + combo * 2);
-//		print ("Score" + scoreCount);
+	}
+
+	public void superNotePlus() {
+		scoreCount += 500;
 	}
 
 	public void comboChange(int val) {
@@ -35,7 +39,6 @@ public class ScoreController : MonoBehaviour {
 			comboMax = Mathf.Max (comboMax, combo);
 			combo = 0;
 		}
-//		print ("Combo: " + combo + ", MaxCombo: " + comboMax);
 	}
 
 	public void statChange(int val) {
@@ -49,7 +52,9 @@ public class ScoreController : MonoBehaviour {
 		case 2:
 			perfectNum++;
 			break;
+		case 3:
+			superNoteNum++;
+			break;
 		}
-//		print ("Block: " + blockNum + ", Perfect: " + perfectNum + ", Miss: " + missNum);
 	}
 }

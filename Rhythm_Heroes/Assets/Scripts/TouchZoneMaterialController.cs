@@ -5,17 +5,18 @@ public class TouchZoneMaterialController : MonoBehaviour {
 
 	private Material mat;
 	public Texture[] textures;
-	public static bool isHot = false;
+	public static bool isHot;
 //	public Animator anim;
 
 	void Start() {
 		mat = this.GetComponent<Renderer> ().material;
 //		anim = this.GetComponent<Animator> ();
+		isHot = false;
 	}
 //	void Update() {
 //		if (Input.GetKeyDown (KeyCode.Space)) {
 //			//anim.enabled = false;
-//			Destroy (GetComponent<Animator> ());
+//			Destroy (anim> ());
 //		}
 //	}
 

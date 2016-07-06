@@ -11,16 +11,18 @@ public class TouchController : MonoBehaviour {
 	private int comboBonus;
 
 	private GameObject[] planeObj = new GameObject[5], touchObj = new GameObject[5];
-	private GameObject note, particleSysObj;
-	private ParticleSystem ps;
+	private GameObject note, clickParticle, getScoreParticle;
+	private ParticleSystem clickEff, getScoreEff;
 	private GameObject scoreTextObj, wordTextObj;
 	private int channelNum;
+	private AnimationController ac;
 
-	public static int comboCount = 0;
-	public static bool hasChanged = false;
-	public static bool getScore = false;
+	public static int comboCount;
+	public static bool hasChanged;
 
 	void Start () {
+		comboCount = 0;
+		hasChanged = false;
 		channelNum = PlaneController.channelNum;
 		myCamera = GetComponent<Camera>();
 		planeObj = new GameObject[channelNum];
@@ -31,10 +33,13 @@ public class TouchController : MonoBehaviour {
 		note = GameObject.Find ("Note2");
 		scoreTextObj = GameObject.Find ("Score");
 		wordTextObj = GameObject.Find ("Word");
-		particleSysObj = GameObject.Find ("ring3");
-		ps = particleSysObj.GetComponent<ParticleSystem> ();
+		getScoreParticle = GameObject.Find ("ring3");
+		clickParticle = GameObject.Find ("clickEffect");
+		clickEff = clickParticle.GetComponent<ParticleSystem> ();
+		getScoreEff = getScoreParticle.GetComponent<ParticleSystem> ();
 		comboBonus = PlaneController.comboBonus;
 		note.SendMessage ("changeMaterial", false, SendMessageOptions.RequireReceiver);
+		ac = gameObject.GetComponent<AnimationController> ();
 	}
 
 	void Update () {
@@ -67,12 +72,37 @@ public class TouchController : MonoBehaviour {
 				if(Input.GetMouseButtonDown(0)) {
 					recepient.SendMessage ("onTouchDown", hit.point, SendMessageOptions.DontRequireReceiver);
 					planeObj[choose].SendMessage ("onTouchDown", hit.point, SendMessageOptions.DontRequireReceiver);
+					// mouse click effect
+					clickEff.transform.position = hit.point;
+					clickEff.Play();
+
+					// deal with super note
+					lock(PlaneController.mutex) {
+						if(choose == PlaneController.superBlockPos) {
+							BlockWrapper superBlockWrapper = PlaneController.superBlockClone;
+							float tmpSuperBlockPos = planeObj[choose].transform.InverseTransformPoint (
+								superBlockWrapper.blockObj.transform.position).z;
+							if(tmpSuperBlockPos <= PlaneController.touchZoneLocalMin && 
+								tmpSuperBlockPos >= PlaneController.endingPointLocalMin) {
+								// catch super note, get score
+								superBlockWrapper.blockObj.transform.position = new Vector3 (100, 0, 0);
+								PlaneController.isSuperBlockOnPlane = false;
+								PlaneController.isSuperBlockMove = false;
+								scoreTextObj.SendMessage ("statChange", 3, SendMessageOptions.RequireReceiver);
+								scoreTextObj.SendMessage ("superNotePlus", SendMessageOptions.RequireReceiver);
+								wordTextObj.SendMessage("wordTextDisplay", 2, SendMessageOptions.RequireReceiver);
+							}	
+						}
+					}
+
+
+					// deal with regular note
 					if(PlaneController.blocksInChannel[choose].Count > 0) {
 						lock(PlaneController.mutex) {
 							foreach(BlockWrapper tmpBlockWrapper in PlaneController.blocksInChannel[choose]) {
 								// get each block's current position
 								float tmpPos = planeObj[choose].transform.InverseTransformPoint (
-									tmpBlockWrapper.blockObj.transform.position).z;
+									tmpBlockWrapper.blockObj.transform.position).z;								
 
 								// get score
 								if(tmpPos <= PlaneController.touchZoneLocalMin && 
@@ -86,20 +116,34 @@ public class TouchController : MonoBehaviour {
 									scoreTextObj.SendMessage("comboChange", 1, SendMessageOptions.RequireReceiver);
 									wordTextObj.SendMessage("wordTextDisplay", 1, SendMessageOptions.RequireReceiver);
 									scoreTextObj.SendMessage("scorePlus", SendMessageOptions.RequireReceiver);
-
-									ps.transform.position = hit.point;
-									ps.Play();
+									// mouse click & get score effect
+									clickEff.Stop();
+									getScoreEff.transform.position = hit.point;
+									getScoreEff.Play();
 
 									comboCount++;
 									if(comboCount >= comboBonus && !hasChanged) {
 										hasChanged = true;
-										PlaneMaterialController.isHot = true;
-										TouchZoneMaterialController.isHot = true;
 										for(int i=0; i<channelNum; i++) {
 											planeObj[i].SendMessage("changeMaterial", true, SendMessageOptions.RequireReceiver);
 											touchObj[i].SendMessage("changeMaterial", true, SendMessageOptions.RequireReceiver);
 										}
+										PlaneMaterialController.isHot = true;
+										TouchZoneMaterialController.isHot = true;
+										// enable the emission of note material
 										note.SendMessage("changeMaterial", true, SendMessageOptions.RequireReceiver);
+										// change left & right plane animation
+										ac.changePlaneAni(true);
+									}
+									// emit particles
+									if (comboCount == comboBonus) { // 20
+										ac.particleEmit1();
+									}
+									if (comboCount % 15 == 0) {   // 35
+										ac.particleEmit();
+									}
+									if (comboCount % 35 == 0) {   // 48
+										ac.particleEmit2(); 
 									}
 								}
 							}
@@ -129,7 +173,7 @@ public class TouchController : MonoBehaviour {
 				}
 			}
 		}
-			  
+
 
 		#endif
 
@@ -164,13 +208,38 @@ public class TouchController : MonoBehaviour {
 					if(touch.phase == TouchPhase.Began) {
 						recepient.SendMessage ("onTouchDown", hit.point, SendMessageOptions.DontRequireReceiver);
 						planeObj[choose].SendMessage ("onTouchDown", hit.point, SendMessageOptions.DontRequireReceiver);
+						// touch effect
+						clickEff.transform.position = hit.point;
+						clickEff.Play();
 
+
+						// deal with super note
+						lock(PlaneController.mutex) {
+							if(choose == PlaneController.superBlockPos) {
+								BlockWrapper superBlockWrapper = PlaneController.superBlockClone;
+								float tmpSuperBlockPos = planeObj[choose].transform.InverseTransformPoint (
+									superBlockWrapper.blockObj.transform.position).z;
+								if(tmpSuperBlockPos <= PlaneController.touchZoneLocalMin && 
+									tmpSuperBlockPos >= PlaneController.endingPointLocalMin) {
+									// catch super note, get score
+									superBlockWrapper.blockObj.transform.position = new Vector3 (100, 0, 0);
+									PlaneController.isSuperBlockOnPlane = false;
+									PlaneController.isSuperBlockMove = false;
+									scoreTextObj.SendMessage ("statChange", 3, SendMessageOptions.RequireReceiver);
+									scoreTextObj.SendMessage ("superNotePlus", SendMessageOptions.RequireReceiver);
+									wordTextObj.SendMessage("wordTextDisplay", 2, SendMessageOptions.RequireReceiver);
+								}	
+							}
+						}
+
+
+						// deal with regular note
 						if(PlaneController.blocksInChannel[choose].Count > 0) {
 							lock(PlaneController.mutex) {
 								foreach(BlockWrapper tmpBlockWrapper in PlaneController.blocksInChannel[choose]) {
 									// get each block's current position
 									float tmpPos = planeObj[choose].transform.InverseTransformPoint (
-										tmpBlockWrapper.blockObj.transform.position).z;
+										tmpBlockWrapper.blockObj.transform.position).z;								
 
 									// get score
 									if(tmpPos <= PlaneController.touchZoneLocalMin && 
@@ -184,23 +253,36 @@ public class TouchController : MonoBehaviour {
 										scoreTextObj.SendMessage("comboChange", 1, SendMessageOptions.RequireReceiver);
 										wordTextObj.SendMessage("wordTextDisplay", 1, SendMessageOptions.RequireReceiver);
 										scoreTextObj.SendMessage("scorePlus", SendMessageOptions.RequireReceiver);
-
-										// add animation
-										ps.transform.position = hit.point;
-										ps.Play();
+										// mouse click & get score effect
+										clickEff.Stop();
+										getScoreEff.transform.position = hit.point;
+										getScoreEff.Play();
 
 										comboCount++;
 										if(comboCount >= comboBonus && !hasChanged) {
 											hasChanged = true;
-											PlaneMaterialController.isHot = true;
-											TouchZoneMaterialController.isHot = true;
 											for(int i=0; i<channelNum; i++) {
 												planeObj[i].SendMessage("changeMaterial", true, SendMessageOptions.RequireReceiver);
 												touchObj[i].SendMessage("changeMaterial", true, SendMessageOptions.RequireReceiver);
 											}
+											PlaneMaterialController.isHot = true;
+											TouchZoneMaterialController.isHot = true;
+											// enable the emission of note material
 											note.SendMessage("changeMaterial", true, SendMessageOptions.RequireReceiver);
+											// change left & right plane animation
+											ac.changePlaneAni(true);
 										}
-									}	
+										// emit particles
+										if (comboCount == comboBonus) { // 20
+											ac.particleEmit1();
+										}
+										if (comboCount % 15 == 0) {   // 35
+											ac.particleEmit();
+										}
+										if (comboCount % 35 == 0) {   // 48
+											ac.particleEmit2(); 
+										}
+									}
 								}
 
 								while(count[choose]-- > 0) {

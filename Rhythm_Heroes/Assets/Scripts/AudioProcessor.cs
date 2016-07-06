@@ -132,7 +132,7 @@ public class AudioProcessor : MonoBehaviour {
 	}
 
 
-	void Update() {
+	void FixedUpdate() {
 		if(!hasBegun) {
 			return;
 		}

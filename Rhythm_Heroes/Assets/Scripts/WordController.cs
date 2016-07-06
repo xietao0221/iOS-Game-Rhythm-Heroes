@@ -17,8 +17,10 @@ public class WordController : MonoBehaviour {
 	public void wordTextDisplay(int val) {
 		if(val == 0) {				// miss
 			StartCoroutine (showWord("Miss", (float)0.4));
-		} else {					// perfect + combo
+		} else if(val == 1) {					// perfect + combo
 			StartCoroutine (showWord("Perfect\n" + ScoreController.combo, (float)0.4));
+		} else {
+			StartCoroutine (showWord("Great", (float)0.4));
 		}
 	}
 

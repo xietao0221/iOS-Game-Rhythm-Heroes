@@ -7,35 +7,35 @@ public class MenuManager : MonoBehaviour {
 
 	public void GoToThree() {
 		#if UNITY_EDITOR
-		iOSMusic.readLocalMusic(1);
+		iOSMusic.readLocalMusic(0);
 		SceneManager.LoadScene ("GameScene_ThreeTrack");
 		#endif
 
 		#if UNITY_IPHONE
 		sceneNumber = 3;
 		iOSMusic.instance.HasAudioClipStartedPlaying = false;
-//		SceneManager.LoadScene("LoadScene");
+		SceneManager.LoadScene("LoadScene");
 		musicManager.loadAudioClip(iOSMusic.instance.ShouldAppendToPlaylist);
 		#endif
 	}
 
 	public void GoTo_Four() {
 		#if UNITY_EDITOR
-		iOSMusic.readLocalMusic(1);
+		iOSMusic.readLocalMusic(0);
 		SceneManager.LoadScene ("GameScene_FourTrack");
 		#endif
 
 		#if UNITY_IPHONE
 		sceneNumber = 4;
 		iOSMusic.instance.HasAudioClipStartedPlaying = false;
-//		SceneManager.LoadScene("LoadScene");
+		SceneManager.LoadScene("LoadScene");
 		musicManager.loadAudioClip(iOSMusic.instance.ShouldAppendToPlaylist);
 		#endif
 	}
 
 	public void GoTo_Five() {
 		#if UNITY_EDITOR
-		iOSMusic.readLocalMusic(1);
+		iOSMusic.readLocalMusic(0);
 		SceneManager.LoadScene ("GameScene_FiveTrack");
 		#endif
 

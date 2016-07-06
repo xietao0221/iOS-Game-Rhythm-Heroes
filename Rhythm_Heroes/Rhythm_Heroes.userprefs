@@ -1,21 +1,6 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="assets/Scripts/TouchController.cs">
-    <Files>
-      <File FileName="assets/Scripts/TouchController.cs" Line="235" Column="1" />
-      <File FileName="assets/Scripts/MenuManager.cs" Line="45" Column="5" />
-      <File FileName="assets/Scripts/AnimationController.cs" Line="18" Column="8" />
-      <File FileName="assets/Scripts/WordController.cs" Line="19" Column="50" />
-      <File FileName="assets/Scripts/PlaneController.cs" Line="49" Column="82" />
-      <File FileName="assets/Scripts/PlaneMaterialController.cs" Line="46" Column="9" />
-      <File FileName="assets/Scripts/NoteMaterialController.cs" Line="17" Column="22" />
-      <File FileName="assets/ParticleEmission.cs" Line="24" Column="16" />
-      <File FileName="assets/Scripts/TouchZoneMaterialController.cs" Line="13" Column="3" />
-      <File FileName="assets/Scripts/ScoreController.cs" Line="18" Column="13" />
-      <File FileName="assets/iosmusic/iOSMusic.cs" Line="132" Column="13" />
-      <File FileName="assets/Scripts/BackgroundMusicController.cs" Line="30" Column="25" />
-    </Files>
-  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workbench />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

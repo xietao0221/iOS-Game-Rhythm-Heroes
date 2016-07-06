@@ -8,24 +8,37 @@ public class PlaneController : MonoBehaviour, AudioProcessor.AudioCallbacks {
 	public static int blockNumPerChannel = 6;
 	public static int[] blockSpeed = new int[]{10, 10, 10, 10, 10};	// the smaller the val, the faster the speed
 	public static int comboBonus = 5;
-	public static float beatMinInterval = 0.3f;
+	public static float beatMinInterval = 0.2f;
 	public static float countDownInterval = 3.0f;
+	public static float superBlockInterval = 5.0f;
 
 	public static Queue<BlockWrapper>[] blocksInPool = new Queue<BlockWrapper>[5];
 	public static Queue<BlockWrapper>[] blocksInChannel = new Queue<BlockWrapper>[5];
-	public GameObject prefabBlock;
 	public static GameObject[] planeObj = new GameObject[5], touchZoneObj = new GameObject[5];
-	public static GameObject note;
+	public static GameObject note, superNote;
 	public static BlockWrapper[] blockClone;
+	public static BlockWrapper superBlockClone;
 	private GameObject wordObj, scoreObj;
 	public static Object mutex;
+	private AnimationController ac;
 
 	public static Vector3[] startingPoint = new Vector3[5];
 	public static float endingPointLocalMin = 0, touchZoneLocalMin = 0; 
 	private int delay = 0;
 	private float timePrev = 0.0f, timeNow = 0.0f;
 
+	private float superBlockTimePrev = 0.0f;
+	public static bool isSuperBlockOnPlane = false, isSuperBlockMove = false;
+	public static int superBlockPos = 5;
+	private int superBlockSpeed = 5;
+
 	void Awake() {
+		timePrev = 0.0f;
+		timeNow = 0.0f;
+		superBlockTimePrev = 0.0f;
+		isSuperBlockOnPlane = false;
+		isSuperBlockMove = false;
+		superBlockPos = 5;
 		mutex = new Object ();
 		channelNum = MenuManager.sceneNumber;
 		planeObj = new GameObject[channelNum];
@@ -37,6 +50,7 @@ public class PlaneController : MonoBehaviour, AudioProcessor.AudioCallbacks {
 			touchZoneObj [i] = GameObject.Find ("TouchZone" + i);
 		}
 		note = GameObject.Find ("Note2");
+		superNote = GameObject.Find ("Note4");
 		wordObj = GameObject.Find ("Word");
 		scoreObj = GameObject.Find ("Score");
 		blockClone = new BlockWrapper[channelNum * blockNumPerChannel];
@@ -44,9 +58,9 @@ public class PlaneController : MonoBehaviour, AudioProcessor.AudioCallbacks {
 		calculatePosition ();
 		initiateBlocks (blockNumPerChannel);
 	}
-
 	void Start() {
 		note.SendMessage ("changeMaterial", false, SendMessageOptions.RequireReceiver);
+		ac = gameObject.GetComponent<AnimationController> ();
 	}
 
 	void activeBeat(){
@@ -60,18 +74,41 @@ public class PlaneController : MonoBehaviour, AudioProcessor.AudioCallbacks {
 		if (timeElaps < beatMinInterval) {
 			return;
 		}
+		generateBlocks (getRandomValue (superBlockPos));
+	}
 
+	int getRandomValue(int superBlockPosParam) {
 		float tmp = Random.value * channelNum;
 		if(tmp <= 1) {
-			generateBlocks (0);
+			if(!isSuperBlockOnPlane || (isSuperBlockOnPlane && superBlockPosParam != 0)) {
+				return 0;
+			} else {
+				return 1;
+			}
 		} else if(tmp <= 2) {
-			generateBlocks (1);
+			if(!isSuperBlockOnPlane || (isSuperBlockOnPlane && superBlockPosParam != 1)) {
+				return 1;
+			} else {
+				return 2;
+			}
 		} else if(tmp <= 3) {
-			generateBlocks (2);
+			if(!isSuperBlockOnPlane || (isSuperBlockOnPlane && superBlockPosParam != 2)) {
+				return 2;
+			} else {
+				return 3;
+			}
 		} else if(channelNum >= 4 && tmp <= 4){
-			generateBlocks (3);
+			if(!isSuperBlockOnPlane || (isSuperBlockOnPlane && superBlockPosParam != 3)) {
+				return 3;
+			} else {
+				return 4;
+			}
 		} else {
-			generateBlocks (4);
+			if(!isSuperBlockOnPlane || (isSuperBlockOnPlane && superBlockPosParam != 4)) {
+				return 4;
+			} else {
+				return 0;
+			}
 		}
 	}
 
@@ -81,6 +118,66 @@ public class PlaneController : MonoBehaviour, AudioProcessor.AudioCallbacks {
 			activeBeat ();
 		}
 
+
+		// deal with super note
+		if(BackgroundMusicController.music.isPlaying) {
+			if(isSuperBlockOnPlane) {
+				if(!isSuperBlockMove && timeNow - superBlockTimePrev >= 2.5f) {
+					// block 2.5s and then begin to move
+					superBlockTimePrev = timeNow;
+					isSuperBlockMove = true;
+				}
+
+				if(isSuperBlockMove) {
+					// move
+					superBlockClone.blockObj.transform.position -= 
+						planeObj[superBlockPos].transform.forward / superBlockSpeed;
+
+					// check if it is miss
+					lock(mutex) {
+						if (planeObj[superBlockPos].transform.InverseTransformPoint (superBlockClone.blockObj.transform.position).z
+							<= endingPointLocalMin) {
+							// miss the super note
+							superBlockClone.blockObj.transform.position = new Vector3 (100, 0, 0);
+							superBlockTimePrev = timeNow;
+							isSuperBlockOnPlane = false;
+							isSuperBlockMove = false;
+							scoreObj.SendMessage ("statChange", 1, SendMessageOptions.RequireReceiver);
+							wordObj.SendMessage ("wordTextDisplay", 0, SendMessageOptions.RequireReceiver);
+						}
+					}
+				}
+			} else {
+				if(timeNow - superBlockTimePrev >= superBlockInterval) {
+					// move super note to the starting point of plane
+					isSuperBlockOnPlane = true;
+					superBlockTimePrev = timeNow;
+					superBlockPos = getRandomValue (10);
+					superBlockClone.blockObj.transform.position = startingPoint[superBlockPos];
+					scoreObj.SendMessage ("statChange", 0, SendMessageOptions.RequireReceiver);
+				}
+			}	
+		} else {
+			if(isSuperBlockMove) {
+				// move
+				superBlockClone.blockObj.transform.position -= 
+					planeObj[superBlockPos].transform.forward / superBlockSpeed;
+
+				// check if it is miss
+				lock(mutex) {
+					if (planeObj[superBlockPos].transform.InverseTransformPoint (superBlockClone.blockObj.transform.position).z
+						<= endingPointLocalMin) {
+						superBlockClone.blockObj.transform.position = new Vector3 (100, 0, 0);
+						superBlockTimePrev = timeNow;
+						isSuperBlockOnPlane = false;
+						isSuperBlockMove = false;
+					}
+				}
+			}
+		}
+
+
+		// deal with regular note
 		for(int i=0; i<channelNum; i++) {
 			int[] count = new int[channelNum];
 			lock(mutex) {
@@ -107,6 +204,7 @@ public class PlaneController : MonoBehaviour, AudioProcessor.AudioCallbacks {
 								touchZoneObj[j].SendMessage("changeMaterial", false, SendMessageOptions.RequireReceiver);
 							}
 							note.SendMessage ("changeMaterial", false, SendMessageOptions.RequireReceiver);
+							ac.changePlaneAni (false);
 							TouchController.hasChanged = false;
 						}
 					}
@@ -142,8 +240,10 @@ public class PlaneController : MonoBehaviour, AudioProcessor.AudioCallbacks {
 		for(int i=0; i<channelNum; i++) {
 			blocksInChannel [i] = new Queue<BlockWrapper> ();
 			blocksInPool [i] = new Queue<BlockWrapper> ();
+			GameObject tmpSuperBlockObj = Instantiate (superNote, new Vector3(100, 0, 0), Quaternion.identity) as GameObject;
+			superBlockClone = new BlockWrapper (tmpSuperBlockObj);
 			for(int j=0; j<blockNumPerChannel; j++) {
-				GameObject tmpObj = Instantiate (prefabBlock, new Vector3(100, 0, 0), Quaternion.identity) as GameObject;
+				GameObject tmpObj = Instantiate (note, new Vector3(100, 0, 0), Quaternion.identity) as GameObject;
 				blockClone [i*blockNumPerChannel+j] = new BlockWrapper (tmpObj);
 				blocksInPool [i].Enqueue (blockClone [i * blockNumPerChannel + j]);
 			}

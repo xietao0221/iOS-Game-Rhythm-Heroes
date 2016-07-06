@@ -13,7 +13,6 @@ public class StatController : MonoBehaviour {
 		miss = ScoreController.missNum;
 		perfect = ScoreController.perfectNum;
 
-		//strTotalScore = (score + combo * 2).ToString ();
 		strTotalScore = score.ToString ();
 		strPerfectVal = perfect.ToString ();
 		strMissVal = miss.ToString ();

@@ -50,7 +50,6 @@
      <Compile Include="assets\Scripts\BackgroundMusicController.cs" />
      <Compile Include="assets\Scripts\MenuManager.cs" />
      <Compile Include="assets\Scripts\NoteMaterialController.cs" />
-     <Compile Include="assets\Scripts\ParticleEmission.cs" />
      <Compile Include="assets\Scripts\PlaneController.cs" />
      <Compile Include="assets\Scripts\PlaneMaterialController.cs" />
      <Compile Include="assets\Scripts\ScoreController.cs" />

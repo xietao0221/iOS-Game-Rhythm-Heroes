@@ -5,10 +5,11 @@ public class PlaneMaterialController : MonoBehaviour {
 
 	private Material mat;
 	public Texture[] textures;
-	public static bool isHot = false;
+	public static bool isHot;
 
 	void Start() {
 		mat = this.GetComponent<Renderer> ().material;
+		isHot = false;
 	}
 
 	void onTouchDown() {
