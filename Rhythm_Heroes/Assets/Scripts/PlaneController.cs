@@ -50,16 +50,14 @@ public class PlaneController : MonoBehaviour, AudioProcessor.AudioCallbacks {
 			touchZoneObj [i] = GameObject.Find ("TouchZone" + i);
 		}
 		note = GameObject.Find ("Note2");
-		superNote = GameObject.Find ("Note4");
+		superNote = GameObject.Find ("Note");
 		wordObj = GameObject.Find ("Word");
 		scoreObj = GameObject.Find ("Score");
 		blockClone = new BlockWrapper[channelNum * blockNumPerChannel];
 		Random.seed = 42;
 		calculatePosition ();
 		initiateBlocks (blockNumPerChannel);
-	}
-	void Start() {
-		note.SendMessage ("changeMaterial", false, SendMessageOptions.RequireReceiver);
+//		note.SendMessage ("changeMaterial", false, SendMessageOptions.RequireReceiver);
 		ac = gameObject.GetComponent<AnimationController> ();
 	}
 
@@ -189,6 +187,11 @@ public class PlaneController : MonoBehaviour, AudioProcessor.AudioCallbacks {
 						blocksInPool[i].Enqueue(tmpBlockWrapper);
 						count [i]++;
 						tmpBlockWrapper.blockObj.transform.position = new Vector3(100, 0, 0);
+
+						// when combo >= 50, the first miss will have vibration effect
+						if (TouchController.comboCount >= 50) {
+							Handheld.Vibrate ();
+						}
 
 						// miss
 						wordObj.SendMessage ("wordTextDisplay", 0, SendMessageOptions.RequireReceiver);

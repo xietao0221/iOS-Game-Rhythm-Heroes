@@ -7,7 +7,7 @@ public class MenuManager : MonoBehaviour {
 
 	public void GoToThree() {
 		#if UNITY_EDITOR
-		iOSMusic.readLocalMusic(0);
+		iOSMusic.readLocalMusic(1);
 		SceneManager.LoadScene ("GameScene_ThreeTrack");
 		#endif
 
@@ -21,7 +21,7 @@ public class MenuManager : MonoBehaviour {
 
 	public void GoTo_Four() {
 		#if UNITY_EDITOR
-		iOSMusic.readLocalMusic(0);
+		iOSMusic.readLocalMusic(1);
 		SceneManager.LoadScene ("GameScene_FourTrack");
 		#endif
 
@@ -35,7 +35,7 @@ public class MenuManager : MonoBehaviour {
 
 	public void GoTo_Five() {
 		#if UNITY_EDITOR
-		iOSMusic.readLocalMusic(0);
+		iOSMusic.readLocalMusic(1);
 		SceneManager.LoadScene ("GameScene_FiveTrack");
 		#endif
 

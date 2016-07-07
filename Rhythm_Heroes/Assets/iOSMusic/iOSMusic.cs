@@ -104,7 +104,6 @@ public class iOSMusic : MonoBehaviour {
 
 	public void LoadAudioClip() 
 	{
-		
 		if(iOSMusicAudioSource.isPlaying) {
 			iOSMusicAudioSource.Stop();
 			Resources.UnloadUnusedAssets();
@@ -117,7 +116,8 @@ public class iOSMusic : MonoBehaviour {
 		string path = Application.persistentDataPath.Substring (0, Application.persistentDataPath.Length - 5);
 		path = path.Substring (0, path.LastIndexOf ('/'));
 		string songPath = path + "/Documents/" + "song" + ".m4a";
-		StartCoroutine (LoadMusic (songPath));
+		StartCoroutine(LoadMusic (songPath));
+	
 	}
 
 	IEnumerator LoadMusic(string songPath) {

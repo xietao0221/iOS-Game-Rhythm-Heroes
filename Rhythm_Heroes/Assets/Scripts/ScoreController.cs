@@ -29,7 +29,7 @@ public class ScoreController : MonoBehaviour {
 	}
 
 	public void superNotePlus() {
-		scoreCount += 500;
+		scoreCount += 200;
 	}
 
 	public void comboChange(int val) {

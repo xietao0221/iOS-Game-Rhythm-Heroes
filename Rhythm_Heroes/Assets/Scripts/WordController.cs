@@ -20,7 +20,7 @@ public class WordController : MonoBehaviour {
 		} else if(val == 1) {					// perfect + combo
 			StartCoroutine (showWord("Perfect\n" + ScoreController.combo, (float)0.4));
 		} else {
-			StartCoroutine (showWord("Great", (float)0.4));
+			StartCoroutine (showWord("Well Done!", (float)0.4));
 		}
 	}
 
@@ -28,9 +28,11 @@ public class WordController : MonoBehaviour {
 		wordText.text = s;
 		wordText.enabled = true;
 		if (s == "Miss") {
-			//wordText.color = new Color ((float)0.89, (float)0.41, (float)0.91);
 			wordText.color = new Color ((float)0.96, (float)0.82, (float)0.43);
 			outline.effectColor = Color.white;
+		} else if (s == "Well Done!"){
+			wordText.color = new Color ((float)0.96, (float)0.31, (float)0.16);
+			outline.effectColor = new Color ((float)0.98, (float)0.96, (float)0.85);
 		} else {
 			wordText.color = Color.white;
 			outline.effectColor = new Color((float)0.14, (float)0.92, (float)0.69);

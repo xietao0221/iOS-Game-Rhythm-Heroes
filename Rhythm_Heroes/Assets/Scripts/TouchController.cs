@@ -35,10 +35,12 @@ public class TouchController : MonoBehaviour {
 		wordTextObj = GameObject.Find ("Word");
 		getScoreParticle = GameObject.Find ("ring3");
 		clickParticle = GameObject.Find ("clickEffect");
+//		supernoteParticle = GameObject.Find ("frameBall");
 		clickEff = clickParticle.GetComponent<ParticleSystem> ();
 		getScoreEff = getScoreParticle.GetComponent<ParticleSystem> ();
+//		supernoteEff = supernoteParticle.GetComponent<ParticleSystem> ();
 		comboBonus = PlaneController.comboBonus;
-		note.SendMessage ("changeMaterial", false, SendMessageOptions.RequireReceiver);
+//		note.SendMessage ("changeMaterial", false, SendMessageOptions.RequireReceiver);
 		ac = gameObject.GetComponent<AnimationController> ();
 	}
 
@@ -91,6 +93,11 @@ public class TouchController : MonoBehaviour {
 								scoreTextObj.SendMessage ("statChange", 3, SendMessageOptions.RequireReceiver);
 								scoreTextObj.SendMessage ("superNotePlus", SendMessageOptions.RequireReceiver);
 								wordTextObj.SendMessage("wordTextDisplay", 2, SendMessageOptions.RequireReceiver);
+								// super note effect
+								clickEff.Stop();
+								getScoreEff.transform.position = hit.point;
+								getScoreEff.Play();
+								ac.emitGreenCore();
 							}	
 						}
 					}
@@ -228,6 +235,11 @@ public class TouchController : MonoBehaviour {
 									scoreTextObj.SendMessage ("statChange", 3, SendMessageOptions.RequireReceiver);
 									scoreTextObj.SendMessage ("superNotePlus", SendMessageOptions.RequireReceiver);
 									wordTextObj.SendMessage("wordTextDisplay", 2, SendMessageOptions.RequireReceiver);
+									// super note effect
+									clickEff.Stop();
+									getScoreEff.transform.position = hit.point;
+									getScoreEff.Play();
+									ac.emitGreenCore();
 								}	
 							}
 						}
@@ -276,10 +288,10 @@ public class TouchController : MonoBehaviour {
 										if (comboCount == comboBonus) { // 20
 											ac.particleEmit1();
 										}
-										if (comboCount % 15 == 0) {   // 35
+										if (comboCount % 35 == 0) {   // 35
 											ac.particleEmit();
 										}
-										if (comboCount % 35 == 0) {   // 48
+										if (comboCount % 48 == 0) {   // 48
 											ac.particleEmit2(); 
 										}
 									}

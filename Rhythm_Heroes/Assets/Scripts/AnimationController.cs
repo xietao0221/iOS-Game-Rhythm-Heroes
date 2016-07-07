@@ -2,8 +2,8 @@
 using System.Collections;
 
 public class AnimationController : MonoBehaviour {
-	private GameObject ribbonEffect, effect1, effect2, leftEff, rightEff, leftP, rightP;
-	private ParticleSystem ribbon, particle1, particle2, leftPar, rightPar;
+	private GameObject ribbonEffect, effect1, effect2, leftEff, rightEff, leftP, rightP, leftBubble, rightBubble, green;
+	private ParticleSystem ribbon, particle1, particle2, leftPar, rightPar, leftBubblePar, rightBubblePar, greenPar;
 	private Animator leftAnim, rightAnim;
 
 	// Use this for initialization
@@ -16,6 +16,9 @@ public class AnimationController : MonoBehaviour {
 		rightEff = GameObject.Find ("rightEff");
 		leftP = GameObject.Find ("leftPlane");
 		rightP = GameObject.Find ("rightPlane");
+		green = GameObject.Find ("GreenCore");
+		leftBubble = GameObject.Find ("leftBubble");
+		rightBubble = GameObject.Find ("rightBubble");
 
 		ribbon = ribbonEffect.GetComponent<ParticleSystem> ();
 		particle1 = effect1.GetComponent<ParticleSystem> ();
@@ -24,6 +27,9 @@ public class AnimationController : MonoBehaviour {
 		rightPar = rightEff.GetComponent<ParticleSystem> ();
 		leftAnim = leftP.GetComponent<Animator> ();
 		rightAnim = rightP.GetComponent<Animator> ();
+		greenPar = green.GetComponent<ParticleSystem> ();
+		leftBubblePar = leftBubble.GetComponent<ParticleSystem> ();
+		rightBubblePar = rightBubble.GetComponent<ParticleSystem> ();
 	}
 
 	public void changePlaneAni (bool change) {
@@ -47,6 +53,12 @@ public class AnimationController : MonoBehaviour {
 	}
 
 	public void particleEmit2() {
+		leftBubblePar.Play ();
+		rightBubblePar.Play ();
 		ribbon.Play ();
+	}
+
+	public void emitGreenCore() {
+		greenPar.Play ();
 	}
 }
