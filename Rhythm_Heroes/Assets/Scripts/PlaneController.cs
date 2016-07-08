@@ -153,7 +153,7 @@ public class PlaneController : MonoBehaviour, AudioProcessor.AudioCallbacks {
 							isSuperBlockOnPlane = false;
 							isSuperBlockMove = false;
 //							scoreObj.SendMessage ("statChange", 1, SendMessageOptions.RequireReceiver);
-							wordObj.SendMessage ("wordTextDisplay", 0, SendMessageOptions.RequireReceiver);
+							// wordObj.SendMessage ("wordTextDisplay", 0, SendMessageOptions.RequireReceiver);
 						}
 					}
 				}
