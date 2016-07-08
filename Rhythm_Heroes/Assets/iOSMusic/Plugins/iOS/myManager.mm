@@ -163,6 +163,7 @@ BOOL isPad() {
 
 #pragma mark - MPMediaPickerController delegate
 
+
 -(void)mediaPicker:(MPMediaPickerController *)mediaPicker didPickMediaItems:(MPMediaItemCollection *) mediaItemCollection
 {
     if(!_isAppending)
@@ -219,6 +220,8 @@ BOOL isPad() {
     
     UnitySendMessage("iOSMusic", "UserDidCancel", "");
     [UnityGetGLViewController() dismissViewControllerAnimated:YES completion:nil];
+    //    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Opps!" message:@"One music must be selected" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
+    //    [alert show];
     UnityPause(0);
     
 }
@@ -303,6 +306,7 @@ BOOL isPad() {
     
     //Start the export asynchronously in order to prevent blocking the main thread.
     NSLog(@"Starting export of song %@ ...", [song title]);
+    UnitySendMessage("iOSMusic", "SelectedSuccess", "");
     [exporter exportAsynchronouslyWithCompletionHandler:^{
         int exportStatus = exporter.status;
         switch (exportStatus) {

@@ -4,6 +4,12 @@ using UnityEngine.SceneManagement;
 
 public class MenuManager : MonoBehaviour {
 	public static int sceneNumber;
+	public static int blockNumPerChannel = 6;
+	public static int blockSpeed = 10;		// the smaller the val, the faster the speed
+	public static int superBlockSpeed = 5;
+	public static float backgroundTimeDelay = 2.5f;
+	public static float beatMinInterval = 0.2f;
+
 
 	public void GoToThree() {
 		#if UNITY_EDITOR
@@ -12,9 +18,15 @@ public class MenuManager : MonoBehaviour {
 		#endif
 
 		#if UNITY_IPHONE
+
 		sceneNumber = 3;
+		blockNumPerChannel = 4;
+		blockSpeed = 12;		// the smaller the val, the faster the speed
+		superBlockSpeed = 6;
+		backgroundTimeDelay = 3.1f;
+		beatMinInterval = 0.25f;
+
 		iOSMusic.instance.HasAudioClipStartedPlaying = false;
-		SceneManager.LoadScene("LoadScene");
 		musicManager.loadAudioClip(iOSMusic.instance.ShouldAppendToPlaylist);
 		#endif
 	}
@@ -26,9 +38,15 @@ public class MenuManager : MonoBehaviour {
 		#endif
 
 		#if UNITY_IPHONE
+
 		sceneNumber = 4;
+		blockNumPerChannel = 6;
+		blockSpeed = 10;		// the smaller the val, the faster the speed
+		superBlockSpeed = 5;
+		backgroundTimeDelay = 2.5f;
+		beatMinInterval = 0.2f;
+
 		iOSMusic.instance.HasAudioClipStartedPlaying = false;
-		SceneManager.LoadScene("LoadScene");
 		musicManager.loadAudioClip(iOSMusic.instance.ShouldAppendToPlaylist);
 		#endif
 	}
@@ -40,9 +58,15 @@ public class MenuManager : MonoBehaviour {
 		#endif
 
 		#if UNITY_IPHONE
+
 		sceneNumber = 5;
+		blockNumPerChannel = 10;
+		blockSpeed = 7;		// the smaller the val, the faster the speed
+		superBlockSpeed = 4;
+		backgroundTimeDelay = 1.8f;
+		beatMinInterval = 0.2f;
+
 		iOSMusic.instance.HasAudioClipStartedPlaying = false;
-//		SceneManager.LoadScene("LoadScene");
 		musicManager.loadAudioClip(iOSMusic.instance.ShouldAppendToPlaylist);
 		#endif
 	}

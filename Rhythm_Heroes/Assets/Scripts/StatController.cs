@@ -22,13 +22,13 @@ public class StatController : MonoBehaviour {
 			strGrade = "Ss";
 		} else {
 			float missPerc = (float)(miss) / (float)(block);
-			if(missPerc <= 0.01) {
+			if(missPerc <= 0.03) {
 				strGrade = "S";
-			} else if(missPerc <= 0.02) {
+			} else if(missPerc <= 0.10) {
 				strGrade = "A";
-			} else if(missPerc <= 0.05) {
+			} else if(missPerc <= 0.15) {
 				strGrade = "B";
-			} else if(missPerc <= 0.1) {
+			} else if(missPerc <= 0.20) {
 				strGrade = "C";
 			} else {
 				strGrade = "F";

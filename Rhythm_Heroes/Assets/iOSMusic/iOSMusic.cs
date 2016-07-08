@@ -7,21 +7,21 @@ using UnityEngine.SceneManagement;
 [RequireComponent (typeof(AudioSource))]
 public class iOSMusic : MonoBehaviour {
 
-    public static iOSMusic instance = null;
+	public static iOSMusic instance = null;
 	private float[] musicData;
 
 	private WWW _musicLoader;
 	public WWW MusicLoader
 	{
-	    get { return _musicLoader; }
-	    set { _musicLoader = value; }
+		get { return _musicLoader; }
+		set { _musicLoader = value; }
 	}
 
 	private AudioSource _audioSource;
 	public AudioSource iOSMusicAudioSource
 	{
-	    get { return _audioSource; }
-	    set { _audioSource = value; }
+		get { return _audioSource; }
+		set { _audioSource = value; }
 	}
 
 	static public AudioClip _audioClip;
@@ -51,59 +51,60 @@ public class iOSMusic : MonoBehaviour {
 	private bool _shouldAppendToPlaylist;
 	public bool ShouldAppendToPlaylist
 	{
-	    get { return _shouldAppendToPlaylist; }
-	    set { _shouldAppendToPlaylist = value; }
+		get { return _shouldAppendToPlaylist; }
+		set { _shouldAppendToPlaylist = value; }
 	}
 
 	void Awake () {
-        if (instance == null)   
-        {             
-            instance = this;
-        } else if (instance != this)
-        {
+		if (instance == null)   
+		{             
+			instance = this;
+		} else if (instance != this)
+		{
 			Destroy(gameObject);
-        }
-        DontDestroyOnLoad(gameObject);
-    }
-	
+		}
+		DontDestroyOnLoad(gameObject);
+	}
+
 	// Use this for initialization
 	void Start () {
 		_audioSource = GetComponent<AudioSource> ();
 		ShouldAppendToPlaylist = HasAudioClipStartedPlaying = false;
 	}
-	
+
 	// Update is called once per frame
 	void Update () {
-	    CheckAudioSourcePlayback();
+		CheckAudioSourcePlayback();
 	}
 
 	void CheckAudioSourcePlayback()
 	{
-	    // If an song playing via an Audio Source finishes playing, attempt to load the next song in the playlist via an Audio Source.
+		// If an song playing via an Audio Source finishes playing, attempt to load the next song in the playlist via an Audio Source.
 		if(HasAudioClipStartedPlaying && !iOSMusicAudioSource.isPlaying)
-	    {
+		{
 			HasAudioClipStartedPlaying = false;
-	        musicManager.nextSong();
-	    }
+			musicManager.nextSong();
+		}
 	}
 
 	public void HandleAppendToggleChange(bool toggle)
 	{
-	    // Handles the "Append to Playlist" toggle state change.
-	    ShouldAppendToPlaylist = toggle;
+		// Handles the "Append to Playlist" toggle state change.
+		ShouldAppendToPlaylist = toggle;
 	}
 
 	void ResetButtonStates()
 	{
-	    if(GameObject.Find("NextButton") && GameObject.Find("PreviousButton"))
-	    {
-		    GameObject.Find("NextButton").GetComponent<Button>().interactable = true;
-		    GameObject.Find("PreviousButton").GetComponent<Button>().interactable = true;
+		if(GameObject.Find("NextButton") && GameObject.Find("PreviousButton"))
+		{
+			GameObject.Find("NextButton").GetComponent<Button>().interactable = true;
+			GameObject.Find("PreviousButton").GetComponent<Button>().interactable = true;
 		}
 	}
 
 	public void LoadAudioClip() 
 	{
+
 		if(iOSMusicAudioSource.isPlaying) {
 			iOSMusicAudioSource.Stop();
 			Resources.UnloadUnusedAssets();
@@ -116,8 +117,8 @@ public class iOSMusic : MonoBehaviour {
 		string path = Application.persistentDataPath.Substring (0, Application.persistentDataPath.Length - 5);
 		path = path.Substring (0, path.LastIndexOf ('/'));
 		string songPath = path + "/Documents/" + "song" + ".m4a";
-		StartCoroutine(LoadMusic (songPath));
-	
+
+		StartCoroutine (LoadMusic (songPath));
 	}
 
 	IEnumerator LoadMusic(string songPath) {
@@ -127,13 +128,13 @@ public class iOSMusic : MonoBehaviour {
 			_musicLoader = new WWW ("file://"+ songPath);
 			yield return _musicLoader;
 
-			if(_musicLoader != null && _musicLoader.isDone) {
+			if (_musicLoader != null && _musicLoader.isDone) {
 
-				_audioClip = _musicLoader.GetAudioClip(false,true,AudioType.AUDIOQUEUE) as AudioClip;
-				_audioClip2 = _musicLoader.GetAudioClip(false,true,AudioType.AUDIOQUEUE) as AudioClip;
+				_audioClip = _musicLoader.GetAudioClip (false, true, AudioType.AUDIOQUEUE) as AudioClip;
+				_audioClip2 = _musicLoader.GetAudioClip (false, true, AudioType.AUDIOQUEUE) as AudioClip;
 				if (_audioClip == null) {
 					//loader music failure . now do nothing
-					SceneManager.LoadScene ("MainScene");
+					//					SceneManager.LoadScene ("MainScene");
 				} else {
 					int scene = MenuManager.sceneNumber;
 					if (scene == 3) {
@@ -146,24 +147,30 @@ public class iOSMusic : MonoBehaviour {
 				}
 				// Use GetData() to access audio sample data
 				//_audioClip.GetData(musicData, 0);
-//				iOSMusicAudioSource.clip = _audioClip;
-//				iOSMusicAudioSource.loop = false;
-//				iOSMusicAudioSource.Play ();
-//				HasAudioClipStartedPlaying = true;
-				Debug.Log("Playing song using Audio Source!");
-				ResetButtonStates();
+				//				iOSMusicAudioSource.clip = _audioClip;
+				//				iOSMusicAudioSource.loop = false;
+				//				iOSMusicAudioSource.Play ();
+				//				HasAudioClipStartedPlaying = true;
+				Debug.Log ("Playing song using Audio Source!");
+				ResetButtonStates ();
 
-			}
+			} 
 		} else 
 		{
+			//			SceneManager.LoadScene ("MainScene");
 			Debug.Log("Unable to locate converted song file.");
 		}
 	}
-	
+
 	#region Metadata extraction
+
+	void SelectedSuccess(){
+		SceneManager.LoadScene("LoadScene");
+	}
 
 	void ExtractTitle (string title) {
 		Debug.Log ("Title: " + title);
+
 	}
 
 	void ExtractArtist (string artist) {
@@ -189,12 +196,12 @@ public class iOSMusic : MonoBehaviour {
 	void ExtractDuration (string duration) {
 		Debug.Log ("Duration: " + duration);		
 	}
-	
+
 	void ExtractArtwork () {
 		Texture2D tex = null;
 		byte[] fileData;
 		string artworkPath = Application.persistentDataPath + "/songArtwork.png";
-		
+
 		if (File.Exists(artworkPath))     {
 			fileData = File.ReadAllBytes(artworkPath);
 			tex = new Texture2D(2, 2);
@@ -205,12 +212,13 @@ public class iOSMusic : MonoBehaviour {
 			GameObject.Find("AlbumArtwork").GetComponent<Image>().sprite = artworkSprite;
 		}		
 	}
-	
+
 	#endregion
 
 
 	void UserDidCancel () {
-	    ResetButtonStates();
+		ResetButtonStates();
+		//		SceneManager.LoadScene ("MainScene");
 		Debug.Log("User has cancelled the song selection.");
 	}
 }

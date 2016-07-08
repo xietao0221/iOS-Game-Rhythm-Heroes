@@ -3,12 +3,17 @@ using System.Collections;
 using System.Collections.Generic;
 
 public class PlaneController : MonoBehaviour, AudioProcessor.AudioCallbacks {
-	public static bool keepPlaying = true;
+
 	public static int channelNum;
 	public static int blockNumPerChannel = 6;
-	public static int[] blockSpeed = new int[]{10, 10, 10, 10, 10};	// the smaller the val, the faster the speed
-	public static int comboBonus = 5;
+	public static int blockSpeed = 10;		// the smaller the val, the faster the speed
+	public static int superBlockSpeed = 5;
+	public static float backgroundTimeDelay = 2.5f;
 	public static float beatMinInterval = 0.2f;
+
+
+	public static bool keepPlaying = true;
+	public static int comboBonus = 20;
 	public static float countDownInterval = 3.0f;
 	public static float superBlockInterval = 5.0f;
 
@@ -30,9 +35,17 @@ public class PlaneController : MonoBehaviour, AudioProcessor.AudioCallbacks {
 	private float superBlockTimePrev = 0.0f;
 	public static bool isSuperBlockOnPlane = false, isSuperBlockMove = false;
 	public static int superBlockPos = 5;
-	private int superBlockSpeed = 5;
+
 
 	void Awake() {
+		// override the static variable
+		blockNumPerChannel = MenuManager.blockNumPerChannel;
+		blockSpeed = MenuManager.blockSpeed;				// the smaller the val, the faster the speed
+		superBlockSpeed = MenuManager.superBlockSpeed;
+		backgroundTimeDelay = MenuManager.backgroundTimeDelay;
+		beatMinInterval = MenuManager.beatMinInterval;
+		channelNum = MenuManager.sceneNumber;
+
 		timePrev = 0.0f;
 		timeNow = 0.0f;
 		superBlockTimePrev = 0.0f;
@@ -40,7 +53,7 @@ public class PlaneController : MonoBehaviour, AudioProcessor.AudioCallbacks {
 		isSuperBlockMove = false;
 		superBlockPos = 5;
 		mutex = new Object ();
-		channelNum = MenuManager.sceneNumber;
+
 		planeObj = new GameObject[channelNum];
 		touchZoneObj = new GameObject[channelNum];
 		blocksInPool = new Queue<BlockWrapper>[channelNum];
@@ -57,7 +70,6 @@ public class PlaneController : MonoBehaviour, AudioProcessor.AudioCallbacks {
 		Random.seed = 42;
 		calculatePosition ();
 		initiateBlocks (blockNumPerChannel);
-//		note.SendMessage ("changeMaterial", false, SendMessageOptions.RequireReceiver);
 		ac = gameObject.GetComponent<AnimationController> ();
 	}
 
@@ -120,8 +132,8 @@ public class PlaneController : MonoBehaviour, AudioProcessor.AudioCallbacks {
 		// deal with super note
 		if(BackgroundMusicController.music.isPlaying) {
 			if(isSuperBlockOnPlane) {
-				if(!isSuperBlockMove && timeNow - superBlockTimePrev >= 2.5f) {
-					// block 2.5s and then begin to move
+				if(!isSuperBlockMove && timeNow - superBlockTimePrev >= backgroundTimeDelay) {
+					// block xs and then begin to move
 					superBlockTimePrev = timeNow;
 					isSuperBlockMove = true;
 				}
@@ -140,7 +152,7 @@ public class PlaneController : MonoBehaviour, AudioProcessor.AudioCallbacks {
 							superBlockTimePrev = timeNow;
 							isSuperBlockOnPlane = false;
 							isSuperBlockMove = false;
-							scoreObj.SendMessage ("statChange", 1, SendMessageOptions.RequireReceiver);
+//							scoreObj.SendMessage ("statChange", 1, SendMessageOptions.RequireReceiver);
 							wordObj.SendMessage ("wordTextDisplay", 0, SendMessageOptions.RequireReceiver);
 						}
 					}
@@ -152,7 +164,7 @@ public class PlaneController : MonoBehaviour, AudioProcessor.AudioCallbacks {
 					superBlockTimePrev = timeNow;
 					superBlockPos = getRandomValue (10);
 					superBlockClone.blockObj.transform.position = startingPoint[superBlockPos];
-					scoreObj.SendMessage ("statChange", 0, SendMessageOptions.RequireReceiver);
+//					scoreObj.SendMessage ("statChange", 0, SendMessageOptions.RequireReceiver);
 				}
 			}	
 		} else {
@@ -180,7 +192,7 @@ public class PlaneController : MonoBehaviour, AudioProcessor.AudioCallbacks {
 			int[] count = new int[channelNum];
 			lock(mutex) {
 				foreach(BlockWrapper tmpBlockWrapper in blocksInChannel[i]) {
-					tmpBlockWrapper.blockObj.transform.position -= planeObj[i].transform.forward / blockSpeed[i];
+					tmpBlockWrapper.blockObj.transform.position -= planeObj[i].transform.forward / blockSpeed;
 					if(planeObj[i].transform.InverseTransformPoint(tmpBlockWrapper.blockObj.transform.position).z 
 						<= endingPointLocalMin) {
 						// blocks are out of plane
