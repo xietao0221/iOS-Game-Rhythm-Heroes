@@ -1,6 +1,20 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench />
+  <MonoDevelop.Ide.Workbench ActiveDocument="assets/Scripts/TouchController.cs">
+    <Files>
+      <File FileName="assets/Scripts/AnimationController.cs" Line="6" Column="31" />
+      <File FileName="assets/Scripts/PlaneController.cs" Line="155" Column="11" />
+      <File FileName="assets/Scripts/TouchZoneMaterialController.cs" Line="1" Column="1" />
+      <File FileName="assets/Scripts/PlaneMaterialController.cs" Line="1" Column="1" />
+      <File FileName="assets/Scripts/TouchController.cs" Line="1" Column="1" />
+      <File FileName="assets/Scripts/MenuManager.cs" Line="1" Column="1" />
+      <File FileName="assets/Scripts/WordController.cs" Line="1" Column="1" />
+      <File FileName="assets/Scripts/ScoreController.cs" Line="1" Column="1" />
+      <File FileName="assets/Scripts/StatController.cs" Line="1" Column="1" />
+      <File FileName="assets/Scripts/NoteMaterialController.cs" Line="1" Column="1" />
+      <File FileName="assets/Scripts/BackgroundMusicController.cs" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

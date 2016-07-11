@@ -152,7 +152,7 @@ public class PlaneController : MonoBehaviour, AudioProcessor.AudioCallbacks {
 							superBlockTimePrev = timeNow;
 							isSuperBlockOnPlane = false;
 							isSuperBlockMove = false;
-//							scoreObj.SendMessage ("statChange", 1, SendMessageOptions.RequireReceiver);
+							// scoreObj.SendMessage ("statChange", 1, SendMessageOptions.RequireReceiver);
 							// wordObj.SendMessage ("wordTextDisplay", 0, SendMessageOptions.RequireReceiver);
 						}
 					}
@@ -164,7 +164,7 @@ public class PlaneController : MonoBehaviour, AudioProcessor.AudioCallbacks {
 					superBlockTimePrev = timeNow;
 					superBlockPos = getRandomValue (10);
 					superBlockClone.blockObj.transform.position = startingPoint[superBlockPos];
-//					scoreObj.SendMessage ("statChange", 0, SendMessageOptions.RequireReceiver);
+					//					scoreObj.SendMessage ("statChange", 0, SendMessageOptions.RequireReceiver);
 				}
 			}	
 		} else {
