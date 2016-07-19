@@ -1,0 +1,25 @@
+Rhythm Heroes: An easy-to-learn fascinating rhythm game will test your skills to follow the rhythm of the music.
+Are you ready to rock and roll? Rhythm Heroes provides fantastic visual experience with lighting effects and animations. Let’s play Rhythm Heroes with music stored in your mobile phone by simple operation. Hit the notes at the right time to get the highest score!
+
+Game Features:
+- You can select or search a song from your own music libraries to play.
+- The game includes exclusive music analysis system, notes will be produced from the rhythm of the music.
+- The game can make different kinds of game even with the same music.
+- The game has three modes: easy, medium, hard. In each mode, the number of tracks and the speed of notes are different. You can enjoy the game by selecting a mode suits for you.
+- When you have more combo hits, you’ll get score bonus and amazing visual effects.
+- It’s visually striking user interface, animations and effects will make you immersed in this game.
+- The game has random super notes, you can hit it at the right time to get score bonus.
+- You can retry the game without loading.
+
+
+想要跟随音乐节奏玩游戏吗？选择操作简易又吸引人的节奏大师吧！
+节奏大师提供了丰富的视觉体验（动画，色彩，特效），你可以从自己的曲库中选择歌曲来进行游戏，在合适的时候击中音符来获取分数，击中特殊的音符还有额外加分哦！
+
+游戏简介：
+自主选歌：你可以从自己的曲库中选择或搜索一首喜爱的歌曲来进行游戏。
+伴随节奏玩游戏：节奏大师能够根据音乐的节奏产生音符，使得你能够根据音乐的节奏来击中音符。
+一首歌曲多种玩法：即使是演奏同一首歌曲，每一次的音符都随机产生，不尽相同。
+多种模式供你选择：节奏大师有简单、中等、困难三种模式，每种模式下的轨道数目和音符掉落速度都不相同，你可以根据游戏难度选择适合自己的模式。
+游戏奖励：当连击数增加，你会得到相应的分数以及视觉效果奖励。
+视觉体验：一起摇滚吧，你将会被游戏炫酷的用户界面、动画和视觉特效所吸引。
+加分音符：游戏提供了随机的特殊音符，击中该音符后会得到额外加分。
