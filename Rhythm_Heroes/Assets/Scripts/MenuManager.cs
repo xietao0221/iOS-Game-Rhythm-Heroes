@@ -75,6 +75,10 @@ public class MenuManager : MonoBehaviour {
 		SceneManager.LoadScene ("MainScene");
 	}
 
+	public void GoTo_CreditsScene() {
+		SceneManager.LoadScene ("CreditsScene");
+	}
+
 	public void GoTo_PlayAgain() {
 		int channelNum = PlaneController.channelNum;
 		switch(channelNum) {
