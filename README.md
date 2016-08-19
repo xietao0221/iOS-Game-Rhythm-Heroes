@@ -14,3 +14,11 @@ Game Features:
 - It’s visually striking user interface, animations and effects will make you immersed in this game.
 - The game has random super notes, you can hit it at the right time to get score bonus.
 - You can retry the game without loading.
+
+Credits:
+Tao Xie, Lead Game Programmer
+Wei Xie, Lead Game Designer
+Wenye Yu, Algorithm Designer
+Jianing Zhang, Game Programmer
+Xiaoxu Sun, UI Artist
+Yunan Zhou, UI Artist
