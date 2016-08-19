@@ -1,11 +1,11 @@
 # CS526_RhythmHeroes
 iTunes Download Link: https://itunes.apple.com/us/app/rhythm-heroes/id1136898371?mt=8
 
-Description:
+## Description:
 Rhythm Heroes: An easy-to-learn fascinating music rhythm game will test your skills to follow the rhythm of the music.
 Are you ready to rock and roll? Rhythm Heroes provides fantastic visual experience with lighting effects and animations. Let’s play Rhythm Heroes with music stored in your mobile phone by simple operation. Hit the notes at the right time to get the highest score!
 
-Game Features:
+## Game Features:
 - You can select or search a song from your own music libraries to play.
 - The game includes exclusive music analysis system, notes will be produced from the rhythm of the music.
 - The game can make different kinds of game even with the same music.
@@ -15,10 +15,10 @@ Game Features:
 - The game has random super notes, you can hit it at the right time to get score bonus.
 - You can retry the game without loading.
 
-Credits:
-Tao Xie, Lead Game Programmer
-Wei Xie, Lead Game Designer
-Wenye Yu, Algorithm Designer
-Jianing Zhang, Game Programmer
-Xiaoxu Sun, UI Artist
-Yunan Zhou, UI Artist
+## Credits:
+- Tao Xie, Lead Game Programmer
+- Wei Xie, Lead Game Designer
+- Wenye Yu, Algorithm Designer
+- Jianing Zhang, Game Programmer
+- Xiaoxu Sun, UI Artist
+- Yunan Zhou, UI Artist
