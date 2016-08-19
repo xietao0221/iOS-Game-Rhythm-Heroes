@@ -1,5 +1,5 @@
 # CS526_RhythmHeroes
-iTunes Download Link: https://itunes.apple.com/us/app/rhythm-heroes/id1136898371?mt=8
+iTunes Download Link: http://bit.ly/rhythmheroes
 
 ## Description:
 Rhythm Heroes: An easy-to-learn fascinating music rhythm game will test your skills to follow the rhythm of the music.
