@@ -1,4 +1,4 @@
-# CS526_RhythmHeroes
+# iOS Game: Rhythm Heroes
 iTunes Download Link: http://bit.ly/rhythmheroes
 
 ## Description:
