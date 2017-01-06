@@ -1,0 +1,79 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!241 &24100000
+AudioMixerController:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: iOSMusicMixer
+  m_OutputGroup: {fileID: 0}
+  m_MasterGroup: {fileID: 24300001}
+  m_Snapshots:
+  - {fileID: 24500003}
+  m_StartSnapshot: {fileID: 24500003}
+  m_SuspendThreshold: -80
+  m_EnableSuspend: 0
+  m_ExposedParameters: []
+  m_AudioMixerGroupViews:
+  - guids:
+    - a00c64fc574bb43e197ac4e7e67bbad6
+    name: View
+  m_CurrentViewIndex: 0
+  m_TargetSnapshot: {fileID: 24500003}
+--- !u!243 &24300001
+AudioMixerGroupController:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Master
+  m_AudioMixer: {fileID: 24100000}
+  m_GroupID: a00c64fc574bb43e197ac4e7e67bbad6
+  m_Children: []
+  m_Volume: b159f2776fe1d4b4798469e6d5f33362
+  m_Pitch: d1de2c4e511fe4e66a420c64dbb45e96
+  m_Effects:
+  - {fileID: 24400002}
+  m_UserColorIndex: 0
+  m_Mute: 0
+  m_Solo: 0
+  m_BypassEffects: 0
+--- !u!244 &24400002
+AudioMixerEffectController:
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: 
+  m_EffectID: 37e5bb37947f5480da0be9c5e845b748
+  m_EffectName: Attenuation
+  m_MixLevel: 4b5c37ff650b34ecc93a56e4495d7c89
+  m_Parameters: []
+  m_SendTarget: {fileID: 0}
+  m_EnableWetMix: 0
+  m_Bypass: 0
+--- !u!245 &24500003
+AudioMixerSnapshotController:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Snapshot
+  m_AudioMixer: {fileID: 24100000}
+  m_SnapshotID: c69ca7c12cd4844d8bf70915d8be623e
+  m_FloatValues:
+    d5a64f2070e204575aa7fb99e12f683d: 1
+    871e7a02ba6c14a7fb413cfe9930d020: 6.2
+    92f0f9a22c79f47c7ad82af4bb6c6756: 0.01
+    e62bdec2bdc1942ad835d42e3139bf58: 1
+    ad9135237cce540618271332491b990c: 0
+    45d28726bd35140209b71d7e9822d8ee: 1
+    b7198896daf054d7a94c286708a092cc: 1
+    5ee4e448138144d1c81c75dd46908c3f: 0
+    87344df89ad7a4f08a6328d2679e5c70: 1
+    0bbabe6912b834d318dfbd7a8d6e8779: 1
+    473963a91b8a7442086923db41d8914f: 7.1
+    d16dffb9574bb475fa86a19847391bc7: 1
+    25846ddafce394c30a0da848e2065d11: 1
+    f028ed6bb5a6a492488d2f06b22c7ad6: 1
+    18f6c39bf23294f0b8763aee21b737fa: 20
+    e08e802c2759e44e996051a3c1317bda: 4
+    ee3a3ebed1ca9486da7058940755214e: 0.01
+  m_TransitionOverrides: {}

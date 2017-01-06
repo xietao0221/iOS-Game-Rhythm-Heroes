@@ -1,0 +1,13 @@
+Thank you for downloading the iOS Music asset!
+
+As of version 2.1, iOS Music integrates with Apple Music. The plugin exposes two new functions: one for querying Apple Music with a Product ID string and starting playback, and another to stop playback. Product IDs can be found by using iTunes Link Maker available at https://linkmaker.itunes.apple.com/ Make sure to select the appropriate Store Country when using iTunes Link Maker, as a song will have different Product IDs across regions. Ex: 401136641 (The Beatles - Revolver), on the Canadian Store. The plugin also extracts metadata about the queried item in a similar fashion to the native and Audio Source modes. The Apple Music integration uses the system music player and has different behaviours from the other modes of playback used in the iOS Music plugin. For example, the currently playing Apple Music song will persist even when exiting and closing the active app. An example scene is included which demonstrates making a query and starting and stopping playback of a song using Apple Music. The query depends on an iOS framework called StoreKit, which is added automatically to the generated Xcode project using the ConfigureBuild.cs PostProcessBuild script. 
+
+As of version 2.0, iOS Music now supports playlist functionality using both the native iOS player and Audio Sources! When a song finishes playing, the plugin will automatically load the next song in the playlist. The iOS Music plugin implements a "lazy loading" system for playback via an Audio Source. When the plugin loads a song via an Audio Source, you can expect to wait a short time (up to a few seconds) while the song is extracted from the device's music library and converted to a suitable format. Playback will begin automatically once the conversion has taken place. Opening the iOS Music library when a song is already playing will pause the currently playing song. 
+
+The plugin also supports an "Append to Playlist" mode which will add newly selected songs to the current playlist instead of replacing the current playlist.
+
+The asset's main script, iOSMusic.cs, contains a callback function for handling user cancellation of song selection. Use this function UserDidCancel() to handle the cancellation in a manner that's appropriate for your game.
+
+As of version 1.2, iOS Music will extract metadata for the selected song, including song title, artist, album name, genre, duration (in seconds), lyrics, and BPM. The plugin also extracts and loads the song artwork as a Texture. See the demo scene for an example of how to access the extracted metadata.
+
+Full source code is included with the purchase of this asset. If you have questions, please contact administrator@anor.ac.
